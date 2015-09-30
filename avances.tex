@@ -20,21 +20,24 @@
 
 \textbf{{\LARGE 2. Theoretical Framework}}
 
+
 - Cumulos globulares (definiciones, propiedades, formacion, y evolucion, poblaciones estelares, etc)
 
-\textbf{{\Large Globular Clusters}}
+\textbf{{\Large 2.1 Globular Clusters}}
 
 Typical galaxies all around the Universe hold different structures such as stellar systems of between $ 10^{2} $ and $ 10^{6} $ stars which orbit their galactic core. We call these interesting systems star clusters and they are basically divided into two main types: Open Clusters and \textbf{Globular Clusters}.
 
 Globular clusters are very massive stellar systems that can contain from thousands to millions of stars in a nearly spherical distribution. These stellar systems are composed of old stars and they do not contain gas or dust. 
 
-- Dinamica
+\textbf{{\Large 2.2 Stellar Systems Dynamics}}
 
-- Observaciones
+(we focus on globular clusters)
 
-- "Simulaciones"
+\textbf{{\Large 2.3 Scenario and Observatios}}
 
-\textbf{{\LARGE 3. Observations}}
+\textbf{{\Large 2.4 Simulations}}
+
+\textbf{{\LARGE 3. Observations and Analysis}}
 
 - Describir todo el experimento de observacion
 
@@ -50,13 +53,17 @@ Globular clusters are very massive stellar systems that can contain from thousan
 
 - RVSAO y determinacion de velocidades radiales
 
+\textbf{{\Large 3.1 Observational Procedures}}
+
 Under supervision of proffesor Juan Carlos Mu\~noz Cuartas and with three other undergraduate students from the University of Antioquia a trip to the OPD (Pico dos Dias Observatory) was made to Brazil in May 2014, besides the observational experience for the students, the main purpose of the trip was to get important data for the proyect "Dynamics and mass models of the central region of globular clusters in the local Milky Way"
 
 The spectroscopic data allows us to determine the velocity dispersion profile in the inner region of globular clusters; while the photometric data allows us to study the surface brightness distribution for them. We can use all of this information to infer the properties of the globular clusters' mass distribution and build complete dynamical models and therefore infer the amount of dark matter present in the globular clusters (if there is any).
 
+\textbf{{\large 3.1.1 Spectroscopic data}}
+
 The first two days (May 14th and 15th) we took the spectroscopic data in the telescope P\&E with a diameter of 1.6m. The main instrument was the Cassegrain spectrograph with a CCD Ikon-L camera and Filters BVR. The software we used was the recently installed software TCSPD which is built in a LabView environment for Windows (2010)
 
-We made the observations of dome flats, certain globular clusters of the milky Way organized by the best observation times using Simbad and Stellarium for the estimations of the coordinates and times respectivley. We also took calibration stars data, flat fields with different calibration lamps, bias frames and the necessary images to calibrate the instrument.
+We made the observations of dome flats, certain globular clusters of the milky Way organized by the best observation times using Simbad and Stellarium for the estimations of the coordinates and times respectivley. We also took calibration stars data, flat fields, different calibration lamps, bias frames and the necessary images to calibrate the instrument.
 
 Here some of the objects we observed organized by "chunks":
 
@@ -74,18 +81,14 @@ On May 14th, we used the slit of 2.52" and obtained data for the globular cluste
 
 On May 15th, we used the slit of 3.0" and observed the following objects: NGC-2802, NGC-5024, NGC-4590, NGC-5139, NGC-5286, NGC-5272, NGC-6362, NGC-6397, NGC-6723, NGC-6502, NGC-6541, NGC-7078, NGC-7099, the stars HR-4468 and HR-7950 and we also observed Mars for pedagogical reasons. We used pretty much the same exposition times than the day before, this time though, our comparison lamps were or He-Ar. All the data we took was in FITS format (Flexible Image Transfer System).
 
-\textbf{First steps for Analysis}
+\textbf{{\large 3.1.2 Photometric Data:}}
 
-Our first goal in starting the analysis of all the relevant data was to organize all the images in order to reduce the time required to make the reductions. For every day the calibrations images, trash, calibration stars and objects were separated and they were given their correct names as they were in the headers and compared with the information sheets we filled at the time we were doing the observations. With the use of an account on the galaxy.udea.edu.co cluster, for proper and quicker analysis and safety of the data, all the files were correctly organized.
+The photometric data were acquired in four days, from May 16th to May 19th. 
 
-The next step was the reduction of all the images with the calibration files for each day, I started the photometric data to acquire certain skills in the use of IRAF because the reduction of the spectroscopic data was to be a little more complex and needed a deeper understanding of IRAF packages. 
+On May 16th, we took all the calibration images, consisting of 20 bias frames with an exposition time of 0,00001 seconds; also 22, 11, 11, 20 and 10 flat frames for the B,I,R.U.V filters respectively, their exposition times differed . 
 
+May 17th was a terrible night for observations because the sky was too cloudy and the only useful data we could get were flat field images for the filters I,R and V that we could use to fix 
 
-
-The reduction was made carefully taking into account the different filters used in the observations 
-
---------------------------
-photometric reduction!!!!
 
 \begin{center}
 \includegraphics[scale=0.5]{ngc_5139_dirty.png}
@@ -94,13 +97,24 @@ photometric reduction!!!!
 \end{center}
 ------------------------
 
+\textbf{{\Large 3.2 First steps for Analysis}}
+
+Our first goal in starting the analysis of all the relevant data was to organize all the images in order to reduce the time required to make the reductions. For every day the calibrations images, trash, calibration stars and objects were separated and they were given their correct names as they were in the headers and compared with the information sheets we filled at the time we were doing the observations. With the use of an account on the galaxy.udea.edu.co cluster, for proper and quicker analysis and safety of the data, all the files were correctly organized.
+
+The next step was the reduction of all the images with the calibration files for each day, I started the photometric data to acquire certain skills in the use of IRAF because the reduction of the spectroscopic data was to be a little more complex and needed a deeper understanding of IRAF packages. 
+
 I started with the cluster NGC-5139 because we got lots of data for that cluster in OPD and also because Omega Centauri is a well known globular cluster since it is the largest in our galaxy and we can get a lot of information from the web. The photometry was made by the two methods, PSF photometry and Aperture Photometry, even though the magnitudes are quite different, the calibration constant between the two methods gave me a good relation between them and made me trust the photometry results.
 
 After the photometry of that cluster, the most relevant part of the reduction was to be made. The reduction of the spectroscopic data (May 14th and 15th), the methods for these reductions are quite special and are the most relevant part of the analysis because that is our most valuable information. The reduction was to be made very carefully because a good spectroscopic analysis depends upon a good reduction of the data. 
 
 As with the photometric data, the first procedures were made for the Cluster NGC5139 to understand and master the techniques of the reduction and extractions.
 
-\textbf{Spectroscopic Reduction}
+
+\textbf{{\Large 3.3 Photometry}}
+
+\textbf{{\Large 3.4 Spectroscopy}}
+
+\textbf{{\large 3.4.1 Spectroscopic Reduction}}
 
 - First we make a Superbias combining all the bias frames and then we subtract it from all the lamp, targets and flat field frames.
 
@@ -122,7 +136,7 @@ blkrep AvgFlatCols AvgFlatColsMaster 475 1
 
 - Finally, the task we use to remove the cosmic rays is lacos, and it gives very accurate results, as it shows the "mask" image with the removed cosmic rays.
 
-\textbf{Extraction}
+\textbf{{\large 3.4.2 Extraction}}
 
 Once the reduction is ready, we can proceed with the extraction of the spectra of the calibration stars and also the spectra of the stars in the clusters, this procedure is made with the task apall.
 
@@ -144,7 +158,7 @@ Interactively, one must choose very precisely the background regions to extract 
 
 The extraction of the spectrum for the calibration lamps is done with apsum, which is very similar to apall.
 
-\textbf{Wavelength calibrations}
+\textbf{{\large 3.4.3 Wavelength calibrations}}
 
 The wavelength calibration is made many tasks of IRAF like Identify, Refspec and Dispcor. First, with identify I use the interactive window in IRAF to select some prominent lines in the spectrum and assign them their correct wavelength using the theoretic spectrum of the lamp. In this case our calibration lamps were Ne-Ar (for May 14th) and He-Ar (for May 15th)  and OPD observatory provided us the theoretic distribution of emission lines of them.
 
@@ -152,7 +166,7 @@ Using "m" to select the larger lines and typing the wavelength, the task creates
 
 The task that actually does the calibration on wavelength is dispcor, it is only necessary to run the task over all the targets with their own calibrated arc to get the calibrated spectrum which is the useful and important file to make the analysis of the width of the lines and their redshift.
 
-\textbf{Flux Calibration}
+\textbf{{\large 3.4.4 Flux Calibration}}
 
 The aim is to calibrate the CCD chip response, spectrograph+telescope throughput and allow for atmospheric extinction. The result is a spectrum as observed from outside the atmosphere with an ideal uniformly sensitive detector+telescope+spectrograph. Basically, what the flux calibration does is, it takes from a tabular compilation the energy distribution of the standard star, it corrects this energy distribution for wavelength-dependent atmospheric extinction, it compares it to the energy distribution of the observed spectrum and derives from such a comparison the function that gives the response of our system for every wavelength.
 
@@ -200,6 +214,8 @@ Now, with the image ready in 1D, I use the task wspectext to create the Ascii ta
 \begin{center}
 wspectext ready\_flux\_star.0001.fits normal\_cut\_flux\_star\_calib.txt
 \end{center}
+
+\textbf{{\Large 3.5 RVSAO and radial velocity determination}}
 
 
 
