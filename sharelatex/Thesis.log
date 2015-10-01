@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.1)  30 SEP 2015 19:42
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.1)  1 OCT 2015 00:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -463,11 +463,7 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 ) (./vector.sty)
 Package hyperref Info: Option `colorlinks' set `true' on input line 13.
 
-(./Thesis.aux
-
-Package natbib Warning: Citation `latexcompanion' multiply defined.
-
-)
+(./Thesis.aux)
 \openout1 = `Thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
@@ -622,67 +618,53 @@ Missing character: There is no ° in font cmr10!
 Missing character: There is no Â in font cmr10!
 Missing character: There is no ° in font cmr10!
  [4 <./9.png>]
-<ngc_5139_dirty.png, id=177, 487.06969pt x 483.30562pt>
+[5] <ngc_5139_dirty.png, id=181, 487.06969pt x 483.30562pt>
 File: ngc_5139_dirty.png Graphic file (type png)
 
 <use ngc_5139_dirty.png>
-Package pdftex.def Info: ngc_5139_dirty.png used on input line 43.
+Package pdftex.def Info: ngc_5139_dirty.png used on input line 63.
 (pdftex.def)             Requested size: 243.53424pt x 241.65222pt.
- [5 <./ngc_5139_dirty.png>] [6] [7] [8] [9])
-(./Chapters/Chapter4.tex [10]
+ [6] [7 <./ngc_5139_dirty.png>] [8] [9] [10])
+(./Chapters/Chapter4.tex [11]
 Chapter 4.
 ------------------------------------------------------------------------------
  4 Modelling
 ------------------------------------------------------------------------------
-) (./Chapters/Chapter5.tex [11
+) (./Chapters/Chapter5.tex [12
 
 ]
 Chapter 5.
 ------------------------------------------------------------------------------
  5 Conclusions
 ------------------------------------------------------------------------------
-) [12
+) [13
 
 ]
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no “ in font cmr10!
-
 No file Thesis.bbl.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 210.
+[14
 
-Package natbib Warning: There were multiply defined citations.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 223.
-[13
-
-pdfTeX warning (ext4): destination with the same identifier (name{cite.latexcom
-panion}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.223 \end{document}
-                    ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 223.
- (./Thesis.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 223.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 223.
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 210.
+ (./Thesis.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 210.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 210.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 5763A027857B964FA134A799DDA53615;3616.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 223.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 210.
  ) 
 Here is how much of TeX's memory you used:
- 12835 strings out of 494985
- 181237 string characters out of 6180357
- 248483 words of memory out of 5000000
- 15825 multiletter control sequences out of 15000+600000
- 13241 words of font info for 48 fonts, out of 8000000 for 9000
+ 12823 strings out of 494985
+ 181055 string characters out of 6180357
+ 248403 words of memory out of 5000000
+ 15816 multiletter control sequences out of 15000+600000
+ 12721 words of font info for 46 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 49i,12n,45p,13209b,388s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,12n,45p,13209b,396s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/te
@@ -692,13 +674,11 @@ st/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10
-.pfb>
-Output written on Thesis.pdf (19 pages, 1198900 bytes).
+nts/cm/cmti12.pfb>
+Output written on Thesis.pdf (20 pages, 1177820 bytes).
 PDF statistics:
- 275 PDF objects out of 1000 (max. 8388607)
- 237 compressed objects within 3 object streams
- 47 named destinations out of 1000 (max. 500000)
+ 269 PDF objects out of 1000 (max. 8388607)
+ 232 compressed objects within 3 object streams
+ 46 named destinations out of 1000 (max. 500000)
  187 words of extra memory for PDF output out of 10000 (max. 10000000)
 
