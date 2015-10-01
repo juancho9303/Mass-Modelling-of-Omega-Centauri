@@ -184,6 +184,9 @@
   \hypersetup{pdfkeywords=\keywordnames}
   \thispagestyle{empty}
   \begin{titlepage}
+  \begin{center}
+\includegraphics[scale=0.5]{Escudo-UdeA.png}
+\end{center} 
     \let\footnotesize\small
     \let\footnoterule\relax
     \let \footnote \thanks
