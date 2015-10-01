@@ -1,3 +1,5 @@
+%\usepackage{subfig}
+
 \chapter{Observations and Analysis}
 
 In order to study this problem about the dynamics of Globular Clusters in our galaxy we need scientific data that allows us to build a model that fits our observations. Under supervision of proffesor Juan Carlos Mu\~noz Cuartas and with three other undergraduate students from the University of Antioquia a trip to the OPD (Pico dos Dias Observatory) was made to Brazil in May 2014, besides the observational experience of the students, the main purpose of the trip was to get important data for this project. We needed two sets of data corresponding to spectra and photometric images of the Globular Clusters
@@ -8,29 +10,29 @@ The spectroscopic data allows us to determine the velocity dispersion profile in
 
 Our stay in OPD consisted of two days in the main dome for the spectroscopic data (using the Perkin-Elmer (P\&E) telescope with a 1.6m mirror and the Cassegrain Spectrograph) and four days in a smaller dome for the photometric data in the IAG telescope with a 0.6m mirror. In the following photograph, the domes of the observatory that we used for our observations:
 
-\begin{center}
-\includegraphics[scale=4.0]{images/opd.jpg}
-
-\textit{\textbf{Figure:}} OPD observatory seen from the air, the big dome was used for the spectroscopic data and the small dome at the low right part of the photo for the photometric data. 
-\end{center}
+\begin{figure}[h]
+\centering
+\includegraphics[width=10cm]{images/opd.jpg}
+\caption{OPD observatory seen from the air, the big dome was used for the spectroscopic data and the small dome at the low right part of the photo for the photometric data.}
+\end{figure}
 
 \subsection{Spectroscopic Data}
 
 The first two days (May 14th and 15th) we took the spectroscopic data in the telescope P\&E with a diameter of 1.6m. The main instrument was the Cassegrain spectrograph with a CCD Ikon-L camera and Filters BVR. The software we used was the recently installed software TCSPD which is built in a LabView environment for Windows (2010). Here's a photo of the telescope from inside the dome:
 
-\begin{center}
-\includegraphics[scale=0.5]{images/opd-spectrograph.jpg}
-
-\textit{\textbf{Figure:}} Perkin-Elmer telescope in the main dome in OPD used for the spectroscopic observations
-\end{center}
+\begin{figure}[h]
+\centering
+\includegraphics[width=10cm]{images/opd-spectrograph.jpg}
+\caption{Perkin-Elmer telescope in the main dome in OPD used for the spectroscopic observations}
+\end{figure}
 
 We made the observations of dome flats, bias frames, comparison lamp frames, calibration stars and certain globular clusters of the milky Way organized by the best observation times using Simbad and Stellarium for the estimations of the coordinates and times respectively. We needed to keep an order of the observations to make the most of our observation time in OPD so we decided to organize our Globular Clusters in different groups or "chunks":
 
-\begin{center}
-\includegraphics[scale=0.6]{images/9.png}
-
-\textit{\textbf{Figure:}} Organized globular Clusters in groups for the proper times. 
-\end{center}
+\begin{figure}[h]
+\centering
+\includegraphics[width=10cm]{images/9.png}
+\caption{Organized globular Clusters in groups for the proper times}
+\end{figure}
 
 Now, our set up configuration for the spectrograph was the following:
 
@@ -42,11 +44,11 @@ On May 15th, we used the slit of 3.0", and used a central wavelength of 5500 Ang
 
 The photometric data were acquired in the next four days (from May 16th to May 19th) in the 0.6m IAG telescope in OPD. We used the Johnson system for the different filters which were easily shifted with the given software in the control computers. Here a picture of the telescope from inside the dome:
 
-\begin{center}
-\includegraphics[scale=0.3]{images/opd-photometry.jpg}
-
-\textit{\textbf{Figure:}} IAG telescope used for the photometric data
-\end{center}
+\begin{figure}[h]
+\centering
+\includegraphics[width=8cm]{images/opd-photometry.jpg}
+\caption{IAG telescope used for the photometric data}
+\end{figure}
 
 On May 16th, we took all the calibration images, consisting of 20 bias frames with an exposition time of 0,00001 seconds; also 22, 11, 11, 20 and 10 flat frames for the B,I,R,U,V filters respectively, their exposition times differed, for  U filter we took various frames of 60 and 30 seconds, for the B filter we took frames of 30 seconds each, 15s for I, 60s for R and 3s for V. We took our "focus" images to calibrate the instrument, and also various skyflats for all the filters. We targeted the following globular clusters and calibration stars in different filters: NGC5272, HR4961, NGC4590, NGC5139 AND NGC6397. The exposition time for the clusters was of 600 seconds and 2 and 4 seconds for the calibration star. 
 
@@ -56,26 +58,47 @@ On May 18th we were more organized since we were getting familiar with the obser
 
 On May 19th we observed the Globular Clusters NGC5139, NGC4590, NGC6723, NGC6715, NGC6541, NGC6970, NGC5286, NGC639, NGC6541 and NGC6715, the calibration stars HR6386 and HR6386, 20 bias frames and flats for each filter.
 
-
 \section{First step for Anaysis}
 
 Our first goal in starting the analysis of all the relevant data was to organize all the images in order to reduce the time required to make the reductions. For every day the calibrations images, trash, calibration stars and objects were separated and they were given their correct names as they were in the headers and compared with the information sheets we filled at the time we were doing the observations. With the use of an account on the galaxy.udea.edu.co cluster, for proper and quicker analysis and safety of the data, all the files were correctly organized.
 
 The next step was the reduction of all the images with the calibration files for each day, I started the photometric data to acquire certain skills in the use of IRAF because the reduction of the spectroscopic data was to be a little more complex and needed a deeper understanding of IRAF packages. 
 
-I started with the cluster NGC-5139 because we got lots of data for that cluster in OPD and also because Omega Centauri is a well known globular cluster since it is the largest in our galaxy and we can get a lot of information from the web. The photometry was made by the two methods, PSF photometry and Aperture Photometry, even though the magnitudes are quite different, the calibration constant between the two methods gave me a good relation between them and made me trust the photometry results.
+I started with the cluster NGC-5139 ($ \Omega $ Centauri) because we got lots of data for that cluster in OPD and also because $ \Omega $ Centauri is a well known globular cluster since it is the largest in our galaxy and we can get a lot of information from the web. 
 
-After the photometry of that cluster, the most relevant part of the reduction was to be made. The reduction of the spectroscopic data (May 14th and 15th), the methods for these reductions are quite special and are the most relevant part of the analysis because that is our most valuable information. The reduction was to be made very carefully because a good spectroscopic analysis depends upon a good reduction of the data. 
-
-As with the photometric data, the first procedures were made for the Cluster NGC5139 to understand and master the techniques of the reduction and extractions.
+After the photometry of that cluster, the most relevant part of the reduction was to be made. The reduction and analysis of the spectroscopic data (May 14th and 15th), the methods for these reductions are quite special and are the most relevant part of the analysis because that is our most valuable information. The reduction was to be made very carefully because a good spectroscopic analysis depends upon a good reduction of the data. Just as with the photometric data, the first procedures were made for the Cluster NGC5139 to understand and master the techniques of the reduction and extractions.
 
 \section{Photometry}
 
-\begin{center}
-\includegraphics[scale=0.5]{images/ngc_5139_dirty.png}
+The photometry was made by the two traditional methods, PSF photometry and Aperture Photometry; even though the magnitudes calculated using both methods are quite different, the calibration constant between the two methods gave a good relation between them and made me trust the photometry results.
 
-\textit{\textbf{Figure:}} Dirty NGC5139 to visualize noice and the need for a proper reduction
-\end{center}
+Reduction:
+Hago un Superbias a partir de los bias que tenga
+Le resto ese Superbias a todos los flats
+Hago un Superflat para cada filtro
+A esos superflats los divido por la media de cada uno
+Las imágenes originales las divido por esos flats
+
+Photometry using Phot
+
+\begin{figure}[h]
+  \centering
+  \begin{minipage}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{images/ngc_5139_dirty.png}
+    \caption{Composite image of NGC5139 without being previously reduced}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{images/ruido.png}
+    \caption{Composite image of the flats showing the noise that needs to be extracted}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=8cm]{images/flat_I.png}
+\caption{Normalized Superflat for the I filter}
+\end{figure}
 
 \section{Spectroscopy}
 
