@@ -1,0 +1,25 @@
+\contentsline {chapter}{Abstract}{ii}{dummy.1}
+\vspace {1em}
+\contentsline {chapter}{Acknowledgements}{iii}{dummy.2}
+\vspace {1em}
+\vspace {2em}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.4}
+\contentsline {chapter}{\numberline {2}Theoretical Framework}{2}{chapter.5}
+\contentsline {section}{\numberline {2.1}Globular Clusters}{2}{section.6}
+\contentsline {section}{\numberline {2.2}Stellar System Dynamics}{2}{section.7}
+\contentsline {section}{\numberline {2.3}Scenario and Observations}{2}{section.8}
+\contentsline {section}{\numberline {2.4}Simulations}{2}{section.9}
+\contentsline {chapter}{\numberline {3}Observations and Analysis}{3}{chapter.10}
+\contentsline {section}{\numberline {3.1}Observational Procedures}{3}{section.11}
+\contentsline {subsection}{\numberline {3.1.1}Spectroscopic Data}{3}{subsection.12}
+\contentsline {subsection}{\numberline {3.1.2}Photometric Data}{5}{subsection.13}
+\contentsline {section}{\numberline {3.2}First step for Anaysis}{5}{section.14}
+\contentsline {section}{\numberline {3.3}Photometry}{6}{section.15}
+\contentsline {section}{\numberline {3.4}Spectroscopy}{6}{section.16}
+\contentsline {subsection}{\numberline {3.4.1}Spectroscopic Reduction}{6}{subsection.17}
+\contentsline {subsection}{\numberline {3.4.2}Extraction}{7}{subsection.18}
+\contentsline {subsection}{\numberline {3.4.3}Wavelength Calibration}{8}{subsection.19}
+\contentsline {subsection}{\numberline {3.4.4}Flux Calibration}{8}{subsection.20}
+\contentsline {section}{\numberline {3.5}RVSAO and radial velocity determination}{10}{section.21}
+\contentsline {chapter}{\numberline {4}Modelling}{11}{chapter.22}
+\contentsline {chapter}{\numberline {5}Conclusions}{12}{chapter.23}
