@@ -244,18 +244,18 @@
   \null\vfil
   \begin{center}
     \setlength{\parskip}{0pt}
-    {\normalsize \UNIVNAME \par}
+    %{\normalsize \UNIVNAME \par}
     \bigskip
     {\huge{\textit{Abstract}} \par}
     \bigskip
     {\normalsize \facname \par}
     {\normalsize \deptname \par}
     \bigskip
-    {\normalsize Astronomer\par}
+    %{\normalsize Astronomer\par}
     \bigskip
     {\normalsize\bf \@title \par}
     \medskip
-    {\normalsize by \authornames \par}
+    %{\normalsize by \authornames \par}
     \bigskip
   \end{center}
 }

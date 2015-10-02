@@ -110,10 +110,13 @@ Once all the characterization is made we can reduce our important data using IRA
 
 - Reduce the science data: Finally, we divide the original images of the clusters and stars (with the bias substractet) by the normalized Superflat to get the reduced images. This can easliy be made using the task imarith.
 
+Now that the reduction has been made and the corrections pixel by pixel have been applied, we can proceed to do the photometry using the simplest technique, known as Aperture Photometry which consists of adding up the pixel counts within a circle centered on each star of the cluster and subtracting the quotient of the per-pixel average value of nearby sky count divided by the number of pixels within the aperture. This will result in the raw flux value of the target object. This Aperture Photometry was done using Phot:
 
-Now that the reduction has been made and the corrections pixel by pixel have been applied, we can proceed with the Aperture Photometry using Phot:
+For stars in the cluster, one must choose a very small aperture of the sky because the surrounding stars contribute to the flux that needs to be extracted, for the size of the aperture containgin each star I chose an aperture size of three times the FWHM (calculated for some stars pressing "a" with the imexamine task) and for the 
 
+PSF 
 
+When doing photometry in a very crowded field, such as a globular cluster, where the profiles of stars overlap significantly, one must use de-blending techniques, such as point spread function (PSF) fitting,[5] to determine the individual flux values of the overlapping sources.
 
 \section{Spectroscopy}
 

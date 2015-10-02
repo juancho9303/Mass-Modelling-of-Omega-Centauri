@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.1)  2 OCT 2015 11:09
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.1)  2 OCT 2015 17:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -539,7 +539,7 @@ LaTeX Info: Redefining \nameref on input line 16.
 ------------------------------------------------------------------------------
  Title Page
 ------------------------------------------------------------------------------
-<Escudo-UdeA.png, id=92, 245.91875pt x 349.305pt>
+<Escudo-UdeA.png, id=100, 245.91875pt x 349.305pt>
 File: Escudo-UdeA.png Graphic file (type png)
  <use Escudo-UdeA.png>
 Package pdftex.def Info: Escudo-UdeA.png used on input line 38.
@@ -604,12 +604,12 @@ Chapter 2.
 ------------------------------------------------------------------------------
 ) (./Chapters/Chapter3.tex [2
 
-]
+] [3]
 Chapter 3.
 ------------------------------------------------------------------------------
  3 Observations and Analysis
 ------------------------------------------------------------------------------
-<images/opd.jpg, id=168, 66.9702pt x 55.04565pt>
+<images/opd.jpg, id=183, 66.9702pt x 55.04565pt>
 File: images/opd.jpg Graphic file (type jpg)
  <use images/opd.jpg>
 Package pdftex.def Info: images/opd.jpg used on input line 15.
@@ -618,15 +618,15 @@ Package pdftex.def Info: images/opd.jpg used on input line 15.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[3
+[4
 
-] <images/opd-spectrograph.jpg, id=173, 602.25pt x 401.5pt>
+] <images/opd-spectrograph.jpg, id=188, 602.25pt x 401.5pt>
 File: images/opd-spectrograph.jpg Graphic file (type jpg)
 
 <use images/opd-spectrograph.jpg>
 Package pdftex.def Info: images/opd-spectrograph.jpg used on input line 25.
 (pdftex.def)             Requested size: 284.52756pt x 189.69136pt.
- [4 <./images/opd.jpg> <./images/opd-spectrograph.jpg>] <images/9.png, id=181, 
+ [5 <./images/opd.jpg> <./images/opd-spectrograph.jpg>] <images/9.png, id=196, 
 499.11469pt x 395.22656pt>
 File: images/9.png Graphic file (type png)
  <use images/9.png>
@@ -639,88 +639,89 @@ Missing character: There is no ° in font cmr10!
 Missing character: There is no Â in font cmr10!
 Missing character: There is no ° in font cmr10!
 
-[5 <./images/9.png>] <images/opd-photometry.jpg, id=187, 770.88pt x 578.16pt>
+[6 <./images/9.png>] <images/opd-photometry.jpg, id=202, 770.88pt x 578.16pt>
 File: images/opd-photometry.jpg Graphic file (type jpg)
 
 <use images/opd-photometry.jpg>
 Package pdftex.def Info: images/opd-photometry.jpg used on input line 49.
 (pdftex.def)             Requested size: 227.62204pt x 170.71451pt.
- [6 <./images/opd-photometry.jpg>]
+ [7 <./images/opd-photometry.jpg>]
 Overfull \hbox (15.82811pt too wide) in paragraph at lines 59--60
 []\OT1/cmr/m/n/10.95 On May 19th we ob-served the Glob-u-lar Clus-ters NGC5139,
  NGC4590, NGC6723, NGC6715,
  []
 
-[7] <images/ngc_5139_dirty.png, id=198, 487.06969pt x 483.30562pt>
+[8] <images/ngc_5139_dirty.png, id=213, 487.06969pt x 483.30562pt>
 File: images/ngc_5139_dirty.png Graphic file (type png)
 
 <use images/ngc_5139_dirty.png>
 Package pdftex.def Info: images/ngc_5139_dirty.png used on input line 82.
 (pdftex.def)             Requested size: 187.8616pt x 186.40878pt.
 
-<images/ruido.png, id=199, 484.05844pt x 483.30562pt>
+<images/ruido.png, id=214, 484.05844pt x 483.30562pt>
 File: images/ruido.png Graphic file (type png)
  <use images/ruido.png>
 Package pdftex.def Info: images/ruido.png used on input line 87.
 (pdftex.def)             Requested size: 187.8616pt x 187.5666pt.
 
-[8 <./images/ngc_5139_dirty.png> <./images/ruido.png>]
-<images/flat_I.png, id=205, 356.83313pt x 317.68687pt>
+[9 <./images/ngc_5139_dirty.png> <./images/ruido.png>]
+<images/flat_I.png, id=220, 356.83313pt x 317.68687pt>
 File: images/flat_I.png Graphic file (type png)
  <use images/flat_I.png>
 Package pdftex.def Info: images/flat_I.png used on input line 107.
 (pdftex.def)             Requested size: 227.62204pt x 202.64993pt.
 
-[9 <./images/flat_I.png>] [10] [11] [12]) (./Chapters/Chapter4.tex [13]
+[10 <./images/flat_I.png>] [11] [12] [13]) (./Chapters/Chapter4.tex [14]
 Chapter 4.
 ------------------------------------------------------------------------------
  4 Modelling
 ------------------------------------------------------------------------------
-) (./Chapters/Chapter5.tex [14
+) (./Chapters/Chapter5.tex [15
 
 ]
 Chapter 5.
 ------------------------------------------------------------------------------
  5 Conclusions
 ------------------------------------------------------------------------------
-) [15
+) [16
 
 ]
 No file Thesis.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 218.
-[16
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 216.
+[17
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 218.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 216.
  (./Thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 218.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 218.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 216.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 216.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 9D4EF61A12DE4208E6A02C60E8DEA488;3616.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 218.
+(rerunfilecheck)             Checksum: FC04CC86D4DA708757F0BBA0C180A839;4012.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 216.
  ) 
 Here is how much of TeX's memory you used:
- 12873 strings out of 494985
- 182031 string characters out of 6180357
- 248594 words of memory out of 5000000
- 15849 multiletter control sequences out of 15000+600000
+ 12879 strings out of 494985
+ 182105 string characters out of 6180357
+ 248564 words of memory out of 5000000
+ 15851 multiletter control sequences out of 15000+600000
  14217 words of font info for 52 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  49i,12n,45p,13209b,390s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmti12.pfb>
-Output written on Thesis.pdf (22 pages, 2611210 bytes).
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmti12.pfb>
+Output written on Thesis.pdf (23 pages, 2620052 bytes).
 PDF statistics:
- 290 PDF objects out of 1000 (max. 8388607)
- 244 compressed objects within 3 object streams
- 54 named destinations out of 1000 (max. 500000)
- 217 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 309 PDF objects out of 1000 (max. 8388607)
+ 261 compressed objects within 3 object streams
+ 58 named destinations out of 1000 (max. 500000)
+ 233 words of extra memory for PDF output out of 10000 (max. 10000000)
 
