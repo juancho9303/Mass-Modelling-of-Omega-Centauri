@@ -185,14 +185,14 @@
   \thispagestyle{empty}
   \begin{titlepage}
   \begin{center}
-\includegraphics[scale=0.5]{Escudo-UdeA.png}
+\includegraphics[scale=0.4]{Escudo-UdeA.png}
 \end{center} 
     \let\footnotesize\small
     \let\footnoterule\relax
     \let \footnote \thanks
     \setcounter{footnote}{0}
     \null\vfil
-    \vskip 60\p@
+    \vskip 20\p@
     \begin{center}
       \setlength{\parskip}{0pt}
       {\large\textbf{\UNIVNAME}\par}
@@ -201,8 +201,12 @@
       \vfill
       {\LARGE by \par}
       \smallskip
-      {\LARGE \authornames \par}
+      {\LARGE \textbf \authornames \par}
       \vfill
+      {\Large Advisor: \par}
+      {\Large \textbf{Juan Carlos Mu\~noz Cuartas} \par}   
+       {\large $ \quad $ \par}    
+      
       {\large A thesis submitted in partial fulfillment for the \par}
       {\large degree of Astronomer \par}
       \bigskip
