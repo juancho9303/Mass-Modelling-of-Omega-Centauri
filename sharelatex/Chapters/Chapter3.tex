@@ -93,24 +93,27 @@ What we can infer from these images is that the flat fields and the bias frames 
 
 Once all the characterization is made we can reduce our important data using IRAF following the conventional steps consisting of: 
 
-building a super-bias
+- Building a Superbias: Zerocombine allows us to create the superbias using the median.
 
-Hago un Superbias a partir de los bias que tenga
-Le resto ese Superbias a todos los flats
-Hago un Superflat para cada filtro
-A esos superflats los divido por la media de cada uno
-Las imágenes originales las divido por esos flats
+- Substracting the Superbias to every flat and science data: We substract the Superbias to every flat frame with no distiction on the filter, this is easily made using the task imarith, we also substract them from the original science images.
+
+- Building Superflats: It is necessary to create a Superflat frame for each filter because the response of the CCD and will be different for different wavelengths, we use imcombine to do this and this time we use the mode for better results.   
+
+- Divide the Superflats by the median: In order to normalize the flatfields we find the mode of each frame with imstatistics and then divide them by that value
+
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=8cm]{images/flat_I.png}
-\caption{Normalized Superflat for the I filter}
+\caption{Example of one of the Normalized Superflats for the I filter}
 \end{figure}
 
+- Reduce the science data: Finally, we divide the original images of the clusters and stars (with the bias substractet) by the normalized Superflat to get the reduced images. This can easliy be made using the task imarith.
 
 
+Now that the reduction has been made and the corrections pixel by pixel have been applied, we can proceed with the Aperture Photometry using Phot:
 
-Photometry using Phot
+
 
 \section{Spectroscopy}
 

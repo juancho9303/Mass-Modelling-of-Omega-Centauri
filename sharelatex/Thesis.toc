@@ -15,8 +15,8 @@
 \contentsline {subsection}{\numberline {3.1.2}Photometric Data}{6}{subsection.16}
 \contentsline {section}{\numberline {3.2}First step for Anaysis}{7}{section.18}
 \contentsline {section}{\numberline {3.3}Photometry}{8}{section.19}
-\contentsline {section}{\numberline {3.4}Spectroscopy}{9}{section.22}
-\contentsline {subsection}{\numberline {3.4.1}Spectroscopic Reduction}{9}{subsection.23}
+\contentsline {section}{\numberline {3.4}Spectroscopy}{10}{section.22}
+\contentsline {subsection}{\numberline {3.4.1}Spectroscopic Reduction}{10}{subsection.23}
 \contentsline {subsection}{\numberline {3.4.2}Extraction}{10}{subsection.24}
 \contentsline {subsection}{\numberline {3.4.3}Wavelength Calibration}{11}{subsection.25}
 \contentsline {subsection}{\numberline {3.4.4}Flux Calibration}{11}{subsection.26}
