@@ -155,22 +155,22 @@
 \UNIVERSITY  {\texorpdfstring{\href{http://www.udea.edu.co}
                 {UNIVERSITY OF ANTIOQUIA}}
                 {UNIVERSITY OF ANTIOQUIA}}
-\department  {\texorpdfstring{\href{Department or School Web Site URL Here (include http://)}
+\department  {\texorpdfstring{\href{http://fisica.udea.edu.co/}
                 {Institute of Physics}}
                 {Institute of Physics}}
-\DEPARTMENT  {\texorpdfstring{\href{Department or School Web Site URL Here (include http://)}
+\DEPARTMENT  {\texorpdfstring{\href{http://fisica.udea.edu.co/}
                 {INSTITUTE OF PHYSICS}}
                 {INSTITUTE OF PHYSICS}}
-\group       {\texorpdfstring{\href{Research Group Web Site URL Here (include http://)}
+\group       {\texorpdfstring{\href{http://urania.udea.edu.co/sitios/facom/}
                 {Facom}}
                 {Facom}}
-\GROUP       {\texorpdfstring{\href{Research Group Web Site URL Here (include http://)}
+\GROUP       {\texorpdfstring{\href{http://urania.udea.edu.co/sitios/facom/}
                 {FACOM}}
                 {FACOM}}
-\faculty     {\texorpdfstring{\href{Faculty Web Site URL Here (include http://)}
+\faculty     {\texorpdfstring{\href{http://portal.udea.edu.co/wps/portal/udea/web/inicio/institucional/unidades-academicas/facultades/ciencias-exactas-naturales}
                 {Natural Sciences Faculty}}
                 {Natural Sciences Faculty}}
-\FACULTY     {\texorpdfstring{\href{Faculty Web Site URL Here (include http://)}
+\FACULTY     {\texorpdfstring{\href{http://portal.udea.edu.co/wps/portal/udea/web/inicio/institucional/unidades-academicas/facultades/ciencias-exactas-naturales}
                 {NATURAL SCIENCES FACULTY}}
                 {NATURAL SCIENCES FACULTY}}
 \addresses   {}
