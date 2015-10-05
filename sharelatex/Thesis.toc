@@ -22,8 +22,8 @@
 \contentsline {section}{\numberline {3.4}Spectroscopy}{14}{section.32}
 \contentsline {subsection}{\numberline {3.4.1}Spectroscopic Reduction}{15}{subsection.33}
 \contentsline {subsection}{\numberline {3.4.2}Extraction}{16}{subsection.35}
-\contentsline {subsection}{\numberline {3.4.3}Wavelength Calibration}{17}{subsection.36}
-\contentsline {subsection}{\numberline {3.4.4}Flux Calibration}{17}{subsection.37}
-\contentsline {section}{\numberline {3.5}RVSAO and radial velocity determination}{19}{section.38}
-\contentsline {chapter}{\numberline {4}Modelling}{20}{chapter.39}
-\contentsline {chapter}{\numberline {5}Conclusions}{21}{chapter.40}
+\contentsline {subsection}{\numberline {3.4.3}Wavelength Calibration}{17}{subsection.37}
+\contentsline {subsection}{\numberline {3.4.4}Flux Calibration}{18}{subsection.39}
+\contentsline {section}{\numberline {3.5}RVSAO and radial velocity determination}{20}{section.41}
+\contentsline {chapter}{\numberline {4}Modelling}{21}{chapter.42}
+\contentsline {chapter}{\numberline {5}Conclusions}{22}{chapter.43}

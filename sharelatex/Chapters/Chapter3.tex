@@ -204,20 +204,22 @@ blkrep AvgFlatCols AvgFlatColsMaster 475 1
 
 - Finally, the task we use to remove the cosmic rays is \textit{lacos}, and it gives very accurate results, as it shows the "mask" image with the removed cosmic rays.
 
-
+The vertical axis of the spectra is the dispersion axis and the horizontal axis is the spatial separation between stars. To visualize the reductions we have the following figures taken from the dirty and reduced NGC5139 spectrum (Day of observation May 14th):
 
 \begin{figure}[h]
   \centering
   \begin{minipage}[b]{0.45\textwidth}
     \includegraphics[width=\textwidth]{images/cluster_dirty.png}
-    \caption{Cd}
+    \caption{The dirty cluster spectrum has a small signal to noise ratio, besides border effects (such as a big gradient) that need to be trimmed and cosmic rays as we can see above}
   \end{minipage}
   \hfill
   \begin{minipage}[b]{0.45\textwidth}
     \includegraphics[width=\textwidth]{images/cluster_clean.png}
-    \caption{Cd}
+    \caption{The clean spectrum without the bad data at the borders that needed to be trimmed, with a higher signal to noise ratio and the cosmic rays removed, }
   \end{minipage}
 \end{figure}
+
+The images above are just a fraction of the whole image which is actually longer in the vertical direction, we chow only a fraction for visual purposes. As we did not take skyflats, some telluric lines are visible even in the reduced spectrum but this can be solved doing a correct calibration and carefully examining the extraction of the spectra of the stars.
 
 \subsection{Extraction}
 
@@ -239,7 +241,13 @@ gain: 1
 
 Interactively, one must choose very precisely the background regions to extract the spectrum and do the fitting routines with different orders until the best results are reached.
 
-The extraction of the spectrum for the calibration lamps is done with apsum, which is very similar to apall.
+The extraction of the spectrum for the calibration lamps is done with apsum, which is very similar to apall. For an individual star of the cluster, the extracted spectrum looks like this:
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=8cm]{images/calib_star_apall.png}
+\caption{T}
+\end{figure}
 
 \subsection{Wavelength Calibration}
 
@@ -248,6 +256,12 @@ The wavelength calibration is made many tasks of IRAF like Identify, Refspec and
 Using "m" to select the larger lines and typing the wavelength, the task creates a file stored in a new folder "database" with the pixels with their corresponding values in units of Angstroms. After that, the targets were to be calibrated with these files so it is necessary to edit their header to assign them the reference frames. It is enough to change the REFSPEC1 image header on each lamp file in order to do the wavelength calibration. 
 
 The task that actually does the calibration on wavelength is dispcor, it is only necessary to run the task over all the targets with their own calibrated arc to get the calibrated spectrum which is the useful and important file to make the analysis of the width of the lines and their redshift.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=8cm]{images/calib_star_wave.png}
+\caption{T}
+\end{figure}
 
 \subsection{Flux Calibration}
 
@@ -287,6 +301,12 @@ For the star calibration I cut from 0 to 45 and from 1860 to the end, using imco
 \begin{center}
 imcopy flux\_calib\_star\_fits[45:1860,*] cut\_flux\_calib\_star.fits
 \end{center}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=8cm]{images/calib_star_flux.png}
+\caption{T}
+\end{figure}
 
 In order to normalize the spectrum, first I find the maximum value in the spectrum using minmax and then I divide the whole image by this value.
 
