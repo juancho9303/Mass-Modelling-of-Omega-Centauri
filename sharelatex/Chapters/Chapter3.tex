@@ -72,9 +72,9 @@ After the photometry of that cluster, the most relevant part of the reduction wa
 
 The photometry was made by the two traditional methods, PSF photometry and Aperture Photometry; even though the magnitudes calculated using both methods are quite different, the calibration constant between the two methods gave a good relation between them and made me trust the photometry results.
 
-But first, the reduction of the data had to be done. The first step is to characterize the calibration images in order to see if there are any errors associated with the instrument or the way that the observations were made. By doing this we found that most of the flat-field images had brightness gradients in the corners and this was a problem we needed to correct because the increased value on the counts in these corners would affect the normalization of the super-flat that we would use to reduce the science data. Another systematic error that we found in all of our calibration and science frames was the prescence of a strange water-looking figure at the top left corner of them, although it can be removed with the correct reduction, it obviously affected the CCD sensitivity by the time of the observations. Also, some filters showed a higher sensitivity to this systematic errors but at the end, the photometry could be made in the best data so that the dirty images don't affect our results.
+But first, the reduction of the data had to be done. The first step is to characterize the calibration images in order to see if there are any errors associated with the instrument or the way that the observations were made. By doing this we found that most of the flat-field images had brightness gradients in the corners and this was a problem we needed to correct because the increased value on the counts in these corners would affect the normalization of the super-flat that we would use to reduce the science data. Another systematic error that we found in all of our calibration and science frames was the presence of a strange water-looking figure at the top left corner of them, although it can be removed with the correct reduction, it obviously affected the CCD sensitivity by the time of the observations. Also, some filters showed a higher sensitivity to this systematic errors but at the end, the photometry could be made in the best data so that the dirty images don't affect our results.
 
-In order to see how the data would be affected by the systematic errors we just mentioned, we produced a composite image using three images with the filters U,V and R and we did the same with the flats in those filters, the resultas are shown in the following figure:
+In order to see how the data would be affected by the systematic errors we just mentioned, we produced a composite image using three images with the filters U,V and R and we did the same with the flats in those filters, the results are shown in the following figure:
   
 \begin{figure}[h]
   \centering
@@ -110,6 +110,8 @@ Once all the characterization is made we can reduce our important data using IRA
 
 - Reduce the science data: Finally, we divide the original images of the clusters and stars (with the bias substractet) by the normalized Superflat to get the reduced images. This can easliy be made using the task imarith.
 
+\subsection{Aperture Photometry}
+
 Now that the reduction has been made and the corrections pixel by pixel have been applied, we can proceed to do the photometry using the simplest technique, known as Aperture Photometry which consists of adding up the pixel counts within a circle centered on each star of the cluster and subtracting the quotient of the per-pixel average value of nearby sky count divided by the number of pixels within the aperture. This will result in the raw flux value of the target object. This Aperture Photometry was done using the task Phot:
 
 For stars in the NGC5139 cluster, one must choose a very small aperture of the sky because the surrounding stars contribute to the flux that needs to be extracted and they are very close to each other, as we can see in the following figure: 
@@ -134,7 +136,32 @@ Now the photometry is done by changing some of the parameters including the read
 
 As we can see in the figure above, the magnitude of the chosen star in the cluster decreases for bigger appertures but so does the error because the space around the star is crowded of more stars and noice coming from the stars in the background so we infer that for crowded areas like this one the best choice is a small aperture. Although the results may not be as convincing, the use of another technique of photometry allows us to compare the results and see if the choice of a small aperture is a good way to fix or avoid the problem of the big noice of the background. For this purpose we use the technique of Point Spread Function (PSF) Photometry.
 
-When doing photometry in a very crowded field, such as a globular cluster, where the profiles of stars overlap significantly, one must use de-blending techniques, such as point spread function (PSF) fitting, to determine the individual flux values of the overlapping sources.
+\subsection{PSF Photometry}
+
+There exist many ways to count photons for an image taken with a CCD camera, but all of these ways obey the same principle of energy distribution in luminous objects. The point spread function for each of these objects is an assigned measure from the probabilistic distributions that approach quite well to the count of photons that one wants to do in the photometric analysis of astronomical images. The PSF photometry technique makes the most of the PSF of the obejtcs using certain packages and tasks in a slightly different way than aperture photometry.
+
+When doing photometry in a very crowded field, such as a globular cluster (NGC5139 in this case), where the profiles of stars overlap significantly, one must use de-blending techniques, such as point spread function (PSF) fitting, to determine the individual flux values of the overlapping sources. 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=10cm]{images/psf.png}
+\caption{The magnitude decreases for bigger appertures}
+\end{figure}
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=5cm]{images/psf2.png}
+\caption{The magnitude decreases for bigger appertures}
+\end{figure}
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=5cm]{images/psf3.png}
+\caption{The magnitude decreases for bigger appertures}
+\end{figure}
+
 
 \section{Spectroscopy}
 
