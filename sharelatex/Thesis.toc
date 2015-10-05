@@ -17,11 +17,11 @@
 \contentsline {subsection}{\numberline {3.1.2}Photometric Data}{7}{subsection.19}
 \contentsline {section}{\numberline {3.2}First step for Anaysis}{8}{section.21}
 \contentsline {section}{\numberline {3.3}Photometry}{9}{section.22}
-\contentsline {section}{\numberline {3.4}Spectroscopy}{11}{section.25}
-\contentsline {subsection}{\numberline {3.4.1}Spectroscopic Reduction}{11}{subsection.26}
-\contentsline {subsection}{\numberline {3.4.2}Extraction}{12}{subsection.27}
-\contentsline {subsection}{\numberline {3.4.3}Wavelength Calibration}{12}{subsection.28}
-\contentsline {subsection}{\numberline {3.4.4}Flux Calibration}{13}{subsection.29}
-\contentsline {section}{\numberline {3.5}RVSAO and radial velocity determination}{15}{section.30}
-\contentsline {chapter}{\numberline {4}Modelling}{16}{chapter.31}
-\contentsline {chapter}{\numberline {5}Conclusions}{17}{chapter.32}
+\contentsline {section}{\numberline {3.4}Spectroscopy}{12}{section.27}
+\contentsline {subsection}{\numberline {3.4.1}Spectroscopic Reduction}{12}{subsection.28}
+\contentsline {subsection}{\numberline {3.4.2}Extraction}{13}{subsection.29}
+\contentsline {subsection}{\numberline {3.4.3}Wavelength Calibration}{14}{subsection.30}
+\contentsline {subsection}{\numberline {3.4.4}Flux Calibration}{14}{subsection.31}
+\contentsline {section}{\numberline {3.5}RVSAO and radial velocity determination}{16}{section.32}
+\contentsline {chapter}{\numberline {4}Modelling}{17}{chapter.33}
+\contentsline {chapter}{\numberline {5}Conclusions}{18}{chapter.34}

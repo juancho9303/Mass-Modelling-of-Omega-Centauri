@@ -110,11 +110,29 @@ Once all the characterization is made we can reduce our important data using IRA
 
 - Reduce the science data: Finally, we divide the original images of the clusters and stars (with the bias substractet) by the normalized Superflat to get the reduced images. This can easliy be made using the task imarith.
 
-Now that the reduction has been made and the corrections pixel by pixel have been applied, we can proceed to do the photometry using the simplest technique, known as Aperture Photometry which consists of adding up the pixel counts within a circle centered on each star of the cluster and subtracting the quotient of the per-pixel average value of nearby sky count divided by the number of pixels within the aperture. This will result in the raw flux value of the target object. This Aperture Photometry was done using Phot:
+Now that the reduction has been made and the corrections pixel by pixel have been applied, we can proceed to do the photometry using the simplest technique, known as Aperture Photometry which consists of adding up the pixel counts within a circle centered on each star of the cluster and subtracting the quotient of the per-pixel average value of nearby sky count divided by the number of pixels within the aperture. This will result in the raw flux value of the target object. This Aperture Photometry was done using the task Phot:
 
-For stars in the cluster, one must choose a very small aperture of the sky because the surrounding stars contribute to the flux that needs to be extracted, for the size of the aperture containing each star I chose an aperture size of three times the FWHM of the point spread function associated to the stars (calculated for some stars pressing "a" with the imexamine task) and for the f.
+For stars in the NGC5139 cluster, one must choose a very small aperture of the sky because the surrounding stars contribute to the flux that needs to be extracted and they are very close to each other, as we can see in the following figure: 
 
-PSF 
+\begin{figure}[h]
+\centering
+\includegraphics[width=8cm]{images/NGC5139_V.png}
+\caption{NGC5139 in the V filter with an exposition time of 480 seconds}
+\end{figure}
+
+with the task imexamine I find a value for the FWHM of 6.4 which I will use to set the size of the apertures to do the photometry. For the size of the aperture containing each star I chose an aperture size of four times the FWHM of the point spread function associated to the stars because it is the one that best fits the photometry and minimizes the error (calculated for some stars pressing "a" with the imexamine task) and for the width of the aperture I chose I value of 2.5 times the FWHM.
+
+Another important value to take into account before editing the parameters in phot is the medium value of the background on the sky, in the case of this cluster, I do an average on many different places in the background of the image and find a value of sigma for the image that is equal to 53.45.
+
+Now the photometry is done by changing some of the parameters including the readnoise and the gain. In the fitskyparts task inside phot I set the inner raidus called annulus to be 25.6 (4FWHM) and the intermediate width called dannulus of 16 (2.5FWHM). Finally, before running the task I make sure I do the photometry using various apertures because I want to see which one minimizes the errors. I set apertures to be 1FWHM, 1.5FWHM, 2FWHM, 2.5FWHM, 3FWHM, 3.5FWHM and finally run the task. The results of the magnitude found for one of the star as a funtion of the size of the aperture is displayed below:
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=12cm]{images/mag_vs_ap_size.png}
+\caption{The magnitude decreases for bigger appertures}
+\end{figure}
+
+As we can see in the figure above, the magnitude of the chosen star in the cluster decreases for bigger appertures but so does the error because the space around the star is crowded of more stars and noice coming from the stars in the background so we infer that for crowded areas like this one the best choice is a small aperture. Although the results may not be as convincing, the use of another technique of photometry allows us to compare the results and see if the choice of a small aperture is a good way to fix or avoid the problem of the big noice of the background. For this purpose we use the technique of Point Spread Function (PSF) Photometry.
 
 When doing photometry in a very crowded field, such as a globular cluster, where the profiles of stars overlap significantly, one must use de-blending techniques, such as point spread function (PSF) fitting, to determine the individual flux values of the overlapping sources.
 
