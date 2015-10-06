@@ -10,7 +10,7 @@ The spectroscopic data allows us to determine the velocity dispersion profile in
 
 Our stay in OPD consisted of two days in the main dome for the spectroscopic data (using the Perkin-Elmer (P\&E) telescope with a 1.6m mirror and the Cassegrain Spectrograph) and four days in a smaller dome for the photometric data in the IAG telescope with a 0.6m mirror. In the following photograph, the domes of the observatory that we used for our observations:
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{images/opd.jpg}
 \caption{OPD observatory seen from the air, the big dome was used for the spectroscopic data and the small dome at the low right part of the photo for the photometric data.}
@@ -20,7 +20,7 @@ Our stay in OPD consisted of two days in the main dome for the spectroscopic dat
 
 The first two days (May 14th and 15th) we took the spectroscopic data in the telescope P\&E with a diameter of 1.6m. The main instrument was the Cassegrain spectrograph with a CCD Ikon-L camera and Filters BVR. The software we used was the recently installed software TCSPD which is built in a LabView environment for Windows (2010). Here's a photo of the telescope from inside the dome:
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{images/opd-spectrograph.jpg}
 \caption{Perkin-Elmer telescope in the main dome in OPD used for the spectroscopic observations}
@@ -28,7 +28,7 @@ The first two days (May 14th and 15th) we took the spectroscopic data in the tel
 
 We made the observations of dome flats, bias frames, comparison lamp frames, calibration stars and certain globular clusters of the milky Way organized by the best observation times using Simbad and Stellarium for the estimations of the coordinates and times respectively. We needed to keep an order of the observations to make the most of our observation time in OPD so we decided to organize our Globular Clusters in different groups or "chunks":
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{images/9.png}
 \caption{Organized globular Clusters in groups for the proper times}
@@ -44,7 +44,7 @@ On May 15th, we used the slit of 3.0", and used a central wavelength of 5500 Ang
 
 The photometric data were acquired in the next four days (from May 16th to May 19th) in the 0.6m IAG telescope in OPD. We used the Johnson system for the different filters which were easily shifted with the given software in the control computers. Here a picture of the telescope from inside the dome:
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{images/opd-photometry.jpg}
 \caption{IAG telescope used for the photometric data}
@@ -76,7 +76,7 @@ But first, the reduction of the data had to be done. The first step is to charac
 
 In order to see how the data would be affected by the systematic errors we just mentioned, we produced a composite image using three images with the filters U,V and R and we did the same with the flats in those filters, the results are shown in the following figure:
   
-\begin{figure}[h]
+\begin{figure}[H]
   \centering
   \begin{minipage}[b]{0.45\textwidth}
     \includegraphics[width=\textwidth]{images/ngc_5139_dirty.png}
@@ -102,7 +102,7 @@ Once all the characterization is made we can reduce our important data using IRA
 - Divide the Superflats by the median: In order to normalize the flatfields we find the mode of each frame with imstatistics and then divide them by that value
 
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{images/flat_I.png}
 \caption{Example of one of the Normalized Superflats for the I filter}
@@ -116,7 +116,7 @@ Now that the reduction has been made and the corrections pixel by pixel have bee
 
 For stars in the NGC5139 cluster, one must choose a very small aperture of the sky because the surrounding stars contribute to the flux that needs to be extracted and they are very close to each other, as we can see in the following figure: 
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{images/NGC5139_red.png}
 \caption{One of our observations of NGC5139 in the V filter with an exposition time of 480 seconds}
@@ -128,7 +128,7 @@ Another important value to take into account before editing the parameters in ph
 
 Now the photometry is done by changing some of the parameters including the readnoise and the gain. In the fitskyparts task inside phot I set the inner radius called annulus to be 25.6 (4FWHM) and the intermediate width called dannulus of 16 (2.5FWHM). Finally, before running the task I make sure I do the photometry using various apertures because I want to see which one minimizes the errors. I set apertures to be 1FWHM, 1.5FWHM, 2FWHM, 2.5FWHM, 3FWHM, 3.5FWHM and finally run the task. The results of the magnitude found for one of the star as a funtion of the size of the aperture is displayed below:
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[width=12cm]{images/mag_vs_ap_size.png}
 \caption{The magnitude decreases for bigger appertures}
@@ -152,26 +152,26 @@ The best way to correctly select the stars that will be used for the modelling o
 
 Once the stars are selected, the next step is to use the task \textit{psf} which matches the point spread functions of the input images, by running this task, one can visualize how the PSF is modelled for each star and accept or decline the results to be stored, the interactive mode allows us to take the decision by analysing the modelling like the one we can see in the following image of the xterm:
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
-\includegraphics[width=10cm]{images/psf.png}
+\includegraphics[width=8cm]{images/psf.png}
 \caption{PSF modelling, the interactive mode allows us to accept of decline the result by pressing "a" or "d", in this case the PSF is not a soft curve with a gaussian behavior so it can probably be discarded}
 \end{figure}
 
 After running \textit{psf}, there will be created an image that contains the residuals of the psf modelling which can be seen like this:
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[width=5cm]{images/psf2.png}
-\caption{T}
+\caption{PSF residuals}
 \end{figure}
 
 With the task \textit{seepsf} another image will be created but this time it will actually look like a star:
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[width=5cm]{images/psf3.png}
-\caption{T}
+\caption{Seepsf converts a sampled PSF lookup table to a PSF image which can be visualized}
 \end{figure}
 
 Finally, after the modelling of the PSF was made, the task \textit{allsar} does the photometry of the cluster using the results we just stored in the current directory. The results of the PSF photometry gave us magnitudes smaller for those stars than the results given by the aperture photometry but there is a constant difference for all the stars which we can assume to be a calibration constant between the two methods. 
@@ -206,7 +206,7 @@ blkrep AvgFlatCols AvgFlatColsMaster 475 1
 
 The vertical axis of the spectra is the dispersion axis and the horizontal axis is the spatial separation between stars. To visualize the reductions we have the following figures taken from the dirty and reduced NGC5139 spectrum (Day of observation May 14th):
 
-\begin{figure}[h]
+\begin{figure}[H]
   \centering
   \begin{minipage}[b]{0.45\textwidth}
     \includegraphics[width=\textwidth]{images/cluster_dirty.png}
@@ -223,7 +223,7 @@ The images above are just a fraction of the whole image which is actually longer
 
 \subsection{Extraction}
 
-Once the reduction is ready, we can proceed with the extraction of the spectra of the calibration stars and also the spectra of the stars in the clusters, this procedure is made with the task apall.
+Once the reduction is ready, we can proceed with the extraction of the spectra of the calibration stars and also the spectra of the stars in the clusters, this procedure is made with the task \textit{apall}. First, I did the extraction of the two calibration stars for each night of observation. For May 14th our calibration stars were HR-4963 and HR-4468 and for May 15th our calibration stars were HR-4468 and HR-7950.
 
 Taking special care of correctly choosing the background, and with the following parameter configuration:
 
@@ -231,7 +231,7 @@ b\_number: 100
 
 background: fit
 
-weight: vairance
+weight: variance
 
 saturate: 65215
 
@@ -239,25 +239,40 @@ rdnoise: 6
 
 gain: 1
 
-Interactively, one must choose very precisely the background regions to extract the spectrum and do the fitting routines with different orders until the best results are reached.
+Interactively, one must choose very precisely the background regions to extract the spectrum and do the fitting routines with different orders until the best results are reached, the areas of the background are changed using the commands "b" (for setting the background mode) and "s" (for setting the range). A good choice for the background in the case of the calibration star is relatively easy but in the case of the extraction of the stars in the clusters one must take into account the high noise introduced by the other stars and the background so for every star one mut zoom into the window using "w" and "a" between the boundaries of the range to be zoomed.
 
-The extraction of the spectrum for the calibration lamps is done with apsum, which is very similar to apall. For an individual star of the cluster, the extracted spectrum looks like this:
+If a good choice of the background and the dispersion axis is ell fit, the task runs stragighforward to get the spectrum of the star. In the case of the calibration lamps, the procedure is quite similar because the extraction of their spectrum is done with apsum, which is very similar to apall. 
 
-\begin{figure}[h]
+For the calibration star HR4468, the extracted spectrum looks like this:
+
+\begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{images/calib_star_apall.png}
-\caption{T}
+\caption{Extracted spectrum of HR4468, note that the dispersion axis is still in terms of pixels instead of Angstroms, this is fixed by doing the wavelength calibration}
 \end{figure}
 
 \subsection{Wavelength Calibration}
 
-The wavelength calibration is made many tasks of IRAF like Identify, Refspec and Dispcor. First, with identify I use the interactive window in IRAF to select some prominent lines in the spectrum and assign them their correct wavelength using the theoretic spectrum of the lamp. In this case our calibration lamps were Ne-Ar (for May 14th) and He-Ar (for May 15th)  and OPD observatory provided us the theoretic distribution of emission lines of them.
+Once the spectrum is extracted, the follwoing step is to calibrate it in wavelength in order to make it useful for scientific analysis.The wavelength calibration is made many tasks of IRAF like \textit{Identify}, \textit{Refspec} and \textit{Dispcor}. First, with \textit{identify} I use the interactive window in IRAF to select some prominent lines in the spectrum and assign them their correct wavelength using the theoretic spectrum of the lamp. In this case our calibration lamps were Ne-Ar (for May 14th) and He-Ar (for May 15th)  and OPD observatory provided us the theoretic distribution of emission lines of them. As we can see below:
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{images/lamp_day1_2.png}
+    \caption{Emission lines of the Ne-Ar calibration lamp that need to be wavelength calibrated}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{images/lamp1.png}
+    \caption{The theoretic emission lines of the NE-Ar lamp provided by OPD that we use to make the wavelength calibration}
+  \end{minipage}
+\end{figure}
 
 Using "m" to select the larger lines and typing the wavelength, the task creates a file stored in a new folder "database" with the pixels with their corresponding values in units of Angstroms. After that, the targets were to be calibrated with these files so it is necessary to edit their header to assign them the reference frames. It is enough to change the REFSPEC1 image header on each lamp file in order to do the wavelength calibration. 
 
 The task that actually does the calibration on wavelength is dispcor, it is only necessary to run the task over all the targets with their own calibrated arc to get the calibrated spectrum which is the useful and important file to make the analysis of the width of the lines and their redshift.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{images/calib_star_wave.png}
 \caption{T}
@@ -302,7 +317,7 @@ For the star calibration I cut from 0 to 45 and from 1860 to the end, using imco
 imcopy flux\_calib\_star\_fits[45:1860,*] cut\_flux\_calib\_star.fits
 \end{center}
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{images/calib_star_flux.png}
 \caption{T}
