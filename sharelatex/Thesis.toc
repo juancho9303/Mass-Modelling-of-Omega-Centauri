@@ -24,6 +24,6 @@
 \contentsline {subsection}{\numberline {3.4.2}Extraction}{17}{subsection.35}
 \contentsline {subsection}{\numberline {3.4.3}Wavelength Calibration}{19}{subsection.37}
 \contentsline {subsection}{\numberline {3.4.4}Flux Calibration}{20}{subsection.40}
-\contentsline {section}{\numberline {3.5}RVSAO and radial velocity determination}{22}{section.42}
-\contentsline {chapter}{\numberline {4}Modelling}{23}{chapter.43}
-\contentsline {chapter}{\numberline {5}Conclusions}{24}{chapter.44}
+\contentsline {section}{\numberline {3.5}RVSAO and radial velocity determination}{23}{section.43}
+\contentsline {chapter}{\numberline {4}Modelling}{24}{chapter.44}
+\contentsline {chapter}{\numberline {5}Conclusions}{25}{chapter.45}

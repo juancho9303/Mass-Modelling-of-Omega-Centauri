@@ -174,7 +174,7 @@ With the task \textit{seepsf} another image will be created but this time it wil
 \caption{Seepsf converts a sampled PSF lookup table to a PSF image which can be visualized}
 \end{figure}
 
-Finally, after the modelling of the PSF was made, the task \textit{allsar} does the photometry of the cluster using the results we just stored in the current directory. The results of the PSF photometry gave us magnitudes smaller for those stars than the results given by the aperture photometry but there is a constant difference for all the stars which we can assume to be a calibration constant between the two methods. 
+Finally, after the modelling of the PSF was made, the task \textit{allstar} does the photometry of the cluster using the results we just stored in the current directory. The results of the PSF photometry gave us magnitudes smaller for those stars than the results given by the aperture photometry but there is a constant difference for all the stars which we can assume to be a calibration constant between the two methods. 
 
 \section{Spectroscopy}
 
@@ -241,54 +241,56 @@ gain: 1
 
 Interactively, one must choose very precisely the background regions to extract the spectrum and do the fitting routines with different orders until the best results are reached, the areas of the background are changed using the commands "b" (for setting the background mode) and "s" (for setting the range). A good choice for the background in the case of the calibration star is relatively easy but in the case of the extraction of the stars in the clusters one must take into account the high noise introduced by the other stars and the background so for every star one mut zoom into the window using "w" and "a" between the boundaries of the range to be zoomed.
 
-If a good choice of the background and the dispersion axis is ell fit, the task runs stragighforward to get the spectrum of the star. In the case of the calibration lamps, the procedure is quite similar because the extraction of their spectrum is done with apsum, which is very similar to apall. 
+If a good choice of the background and the dispersion axis is well fit, the task runs straightforward to get the spectrum of the star. In the case of the calibration lamps, the procedure is quite similar because the extraction of their spectrum is done with \textit{apsum}, which is very similar to \textit{apall}. 
 
 For the calibration star HR4468, the extracted spectrum looks like this:
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{images/calib_star_apall.png}
-\caption{Extracted spectrum of HR4468, note that the dispersion axis is still in terms of pixels instead of Angstroms, this is fixed by doing the wavelength calibration}
+\caption{Extracted spectrum of HR4468, note that the dispersion axis is still in terms of pixels instead of Angstroms, this is fixed by doing the wavelength calibration, also the direction will be shifted because the strong sodium absortion lines are in the left end of the spectrum and they should be in the right end}
 \end{figure}
 
 \subsection{Wavelength Calibration}
 
-Once the spectrum is extracted, the follwoing step is to calibrate it in wavelength in order to make it useful for scientific analysis.The wavelength calibration is made many tasks of IRAF like \textit{Identify}, \textit{Refspec} and \textit{Dispcor}. First, with \textit{identify} I use the interactive window in IRAF to select some prominent lines in the spectrum and assign them their correct wavelength using the theoretic spectrum of the lamp. In this case our calibration lamps were Ne-Ar (for May 14th) and He-Ar (for May 15th)  and OPD observatory provided us the theoretic distribution of emission lines of them. As we can see below:
+Once the spectrum is extracted, the following step is to calibrate it in wavelength in order to make it useful for scientific analysis.The wavelength calibration is made many tasks of IRAF like \textit{Identify}, \textit{Refspec} and \textit{Dispcor}. First, with \textit{identify} I use the interactive window in IRAF to select some prominent lines in the spectrum of the calibration lamps and assign them their correct wavelength using the theoretic spectrum of the lamp. In this case our calibration lamps were Ne-Ar (for May 14th) and He-Ar (for May 15th)  and OPD observatory provided us the theoretic distribution of emission lines of them. As we can see below:
 
 \begin{figure}[H]
   \centering
   \begin{minipage}[b]{0.45\textwidth}
     \includegraphics[width=\textwidth]{images/lamp_day1_2.png}
-    \caption{Emission lines of the Ne-Ar calibration lamp that need to be wavelength calibrated}
+    \caption{Emission lines of the Ne-Ar calibration lamp that need to be wavelength calibrated ,the horizontal axis is in pixels and needs to be calibrated to units of wavelength}
   \end{minipage}
   \hfill
   \begin{minipage}[b]{0.45\textwidth}
     \includegraphics[width=\textwidth]{images/lamp1.png}
-    \caption{The theoretic emission lines of the NE-Ar lamp provided by OPD that we use to make the wavelength calibration}
+    \caption{The theoretic emission lines of the NE-Ar lamp provided by OPD that we use to make the wavelength calibration, note that the lines to be matched are going in the opposite direction}
   \end{minipage}
 \end{figure}
 
-Using "m" to select the larger lines and typing the wavelength, the task creates a file stored in a new folder "database" with the pixels with their corresponding values in units of Angstroms. After that, the targets were to be calibrated with these files so it is necessary to edit their header to assign them the reference frames. It is enough to change the REFSPEC1 image header on each lamp file in order to do the wavelength calibration. 
+Running \textit{identify} in the interactive mode and using "m" to select the larger lines and typing the wavelength, the task creates a file stored in a new folder "database" with the pixels with their corresponding values in units of Angstroms. After that, the targets (Calibration Stars and Globular Clusters) were to be calibrated with these files so it is necessary to edit their header to assign them the reference frames. It is enough to change the REFSPEC1 image header on each lamp file in order to set the wavelength calibration. 
 
-The task that actually does the calibration on wavelength is dispcor, it is only necessary to run the task over all the targets with their own calibrated arc to get the calibrated spectrum which is the useful and important file to make the analysis of the width of the lines and their redshift.
+The task that actually does the calibration on wavelength for the science targets is \textit{dispcor}, it is only necessary to run the task over all the targets with their own wavelength calibrated lamp to get the calibrated spectrum which is the useful and important file to make the analysis of the width of the lines and their redshift.
+
+The wavelength calibrated spectrum of the star HR4468, after running \textit{dispcor} is:
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{images/calib_star_wave.png}
-\caption{T}
+\caption{The spectrum has been wavelength calibrated as we can see in the horizontal axis which is in units of Angstroms. Note that the strong absorption lines are now in the right part of the spectrum, this is because in the process of making the wavelength calibration, the direction of the axis was changed.}
 \end{figure}
 
 \subsection{Flux Calibration}
 
-The aim is to calibrate the CCD chip response, spectrograph+telescope throughput and allow for atmospheric extinction. The result is a spectrum as observed from outside the atmosphere with an ideal uniformly sensitive detector+telescope+spectrograph. Basically, what the flux calibration does is, it takes from a tabular compilation the energy distribution of the standard star, it corrects this energy distribution for wavelength-dependent atmospheric extinction, it compares it to the energy distribution of the observed spectrum and derives from such a comparison the function that gives the response of our system for every wavelength.
+This final part of the extraction and calibrations has the aim of calibrating the CCD chip response, spectrograph+telescope throughput and allow for atmospheric extinction. The result is a spectrum as observed from outside the atmosphere with an ideal uniformly sensitive detector+telescope+spectrograph. Basically, what the flux calibration does is, it takes from a tabular compilation the energy distribution of the standard star, it corrects this energy distribution for wavelength-dependent atmospheric extinction, it compares it to the energy distribution of the observed spectrum and derives from such a comparison the function that gives the response of our system for every wavelength.
 
-The flux calibration takes place in three parts: Calibrating from the standard star, calculating the sensitivity function of the instrument, and finally, applying the calibration to the spectra. We will use the task observatory to determine observatory parameters, standard to flux calibrate each standard star, and sensfunc to finally determine the wavelength response and the solution will be applied to the spectra by the task calibrate.
+The flux calibration takes place in three parts: Calibrating from the standard star, calculating the sensitivity function of the instrument, and finally, applying the calibration to the spectra. We will use the task \textit{observatory} to determine observatory parameters, \textit{standard} to flux calibrate each standard star, and \textit{sensfunc} to finally determine the wavelength response and the solution will be applied to the spectra by the task \textit{calibrate}.
 
-In the first part, the calibration is made with one of the stars that are already included in IRAF, there are many stars so there's quite a good amount of options to choose. So the first task is the task standard. The observatory parameter is specified as LNA which is in IRAF's database. 
+In the first part, the calibration is made with one of the stars that are already included in IRAF, there are many stars so there's quite a good amount of options to choose. So the first task is the task \textit{standard}. The observatory parameter is specified as LNA (Laborat\'orio Nacional de Astrof\'isica) which is in IRAF's database. 
 
 \textbf{The task standard}
 
-The task standard determines calibration pass-bands and writes them to a file called std. The thrick here is to specify the location of the the input extinction and flux calibration files. To do that, I edit the parameters of standard with the following routes:
+The task standard determines calibration pass-bands and writes them to a file called "std". The trick here is to specify the location of the the input extinction and flux calibration files. To do that, I edit the parameters of standard with the following routes:
 
 Extinction file:                              onedstds\$/ctioextindt.dat
 
@@ -300,16 +302,16 @@ Where I chose the Star l9239 because it has the spectral range that we use in ou
 
 \textbf{The task sensfunc}
 
-Standard task just recorded response of each standard star so the next step is to put the results together and find a proper wavelength dependence of instrumental sensitivity and atmosphere transparency using the task sensfunc. It creates an image with a default name sens.0001. IRAF needs to have some general idea of atmospheric extinction before to start, so I set again extinct onedstds\$ /ctioextinct.dat.
+The task \textit{standard} just recorded response of each standard star so the next step is to put the results together and find a proper wavelength dependence of instrumental sensitivity and atmosphere transparency using the task \textit{sensfunc}. It creates an image with a default name sens.0001. IRAF needs to have some general idea of atmospheric extinction before to start, so I set again extinct onedstds\$ /ctioextinct.dat.
 
 Now, running the task interactively and taking into account that the function used to fit the instrumental response will be usually of very high order. A good idea is to use spline3 fitting (:function spline3) with some 20 pieces, i.e. (:order 20).
-Finally q exists the sensfunc task and writes the sens.0001 image.
+Finally "q" exists the \textit{sensfunc} task and writes the sens.0001 image.
 
 \textbf{The task calibrate}
 
-The solution to each star to be calibrated is done with the task calibrate. Editting the parameters of calibrate to set the appropriate extinction table: extinct onedstds\$ /ctioextinct.dat would be enough for this purpose. The task is run over all the wavelength calibrated spectra which had their airmass and other parameters appropriately set by the eso.set procedure. And finally it gives the flux-calibrated spectra ready for the relevant analysis concerning radial velocities.
+The solution to each star to be calibrated is done with the task \textit{calibrate}. Editing the parameters of calibrate to set the appropriate extinction table: extinct onedstds\$ /ctioextinct.dat would be enough for this purpose. The task is run over all the wavelength calibrated spectra which had their airmass and other parameters appropriately set by the eso.set procedure. And finally it gives the flux-calibrated spectra ready for the relevant analysis concerning radial velocities.
 
-After the flux calibration, I notice that the extremes of the spectra have irregularities but that can be cut because they don't have any relevant information.
+After the flux calibration, I notice that the extremes of the spectra have irregularities given by the flux calibration procedures, but that can be cut because they don't have any relevant information.
 
 For the star calibration I cut from 0 to 45 and from 1860 to the end, using imcopy:
 
@@ -317,20 +319,32 @@ For the star calibration I cut from 0 to 45 and from 1860 to the end, using imco
 imcopy flux\_calib\_star\_fits[45:1860,*] cut\_flux\_calib\_star.fits
 \end{center}
 
+The wavelength and flux calibrated spectrum of the star HR4468, now ready to be used for radial velocities determination looks like this:
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{images/calib_star_flux.png}
 \caption{T}
 \end{figure}
 
-In order to normalize the spectrum, first I find the maximum value in the spectrum using minmax and then I divide the whole image by this value.
+In order to normalize the spectrum, first I find the maximum value in the spectrum using minmax and then I divide the whole image by this value. 
 
-Now, to create the Ascii table from the spectrum I need to first convert my image to a 1D image using the task scopy and setting format=onedspec
+Something that can be very usefull is to have the data of the spectrum in a different format so that it's information can be well used and analyzed with simple programs like gnuplot, for this purpose, it is useful to create an Ascii table from the spectrum. For this purpose I need to first convert my image to a 1D image using the task \textit{scopy} and setting format=onedspec (this is only neccesary if the specrtum was extracted in 2-D).
 
-Now, with the image ready in 1D, I use the task wspectext to create the Ascii table like this:
+Now, with the image ready in 1-D, I use the task \textit{wspectext} to create the Ascii table like this:
 
 \begin{center}
 wspectext ready\_flux\_star.0001.fits normal\_cut\_flux\_star\_calib.txt
 \end{center}
+
+In principle, the same procedures halt for the star in the Globular Clusters, even though it must be made more carefully because the background noise and the crowded space surrounding them affects the spectra and it might change the values of the radial velocities, an example of a wavelength and flux calibrated spectrum of one of the stars in the NGC5139 cluster is:
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm]{images/cluster_star_flux.png}
+\caption{Spectrum of one of the most prominent stars in the NGC5139 cluster, after all the calibrations have been made}
+\end{figure}
+
+Although the noice is evidently higher than in the case of the spectrum of the calibration star, it is possible to see (even with the naked eye) two of the calcium strong absorption lines around 8543\AA$ $ and 8663\AA. After all of these procedures have been made to the important stars in the clusters and the calibration stars, the next step is to explore the best way to determine radial velocities with the use of some sophisticated tasks in IRAF such as \textit{RVSAO}, as we discuss in the next section. 
 
 \section{RVSAO and radial velocity determination}
