@@ -70,7 +70,7 @@ After the photometry of that cluster, the most relevant part of the reduction wa
 
 \section{Photometry}
 
-The photometry was made by the two traditional methods, PSF photometry and Aperture Photometry; even though the magnitudes calculated using both methods are quite different, the calibration constant between the two methods gave a good relation between them and made me trust the photometry results.
+The photometry was made by the two traditional methods, PSF photometry and Aperture Photometry; even though the magnitudes calculated using both methods are quite different, the calibration constant between the two methods gave a good relation between them and made us trust the photometry results.
 
 But first, the reduction of the data had to be done. The first step is to characterize the calibration images in order to see if there are any errors associated with the instrument or the way that the observations were made. By doing this we found that most of the flat-field images had brightness gradients in the corners and this was a problem we needed to correct because the increased value on the counts in these corners would affect the normalization of the super-flat that we would use to reduce the science data. Another systematic error that we found in all of our calibration and science frames was the presence of a strange water-looking figure at the top left corner of them, although it can be removed with the correct reduction, it obviously affected the CCD sensitivity by the time of the observations. Also, some filters showed a higher sensitivity to this systematic errors but at the end, the photometry could be made in the best data so that the dirty images don't affect our results.
 
@@ -93,13 +93,13 @@ What we can infer from these images is that the flat fields and the bias frames 
 
 Once all the characterization is made we can reduce our important data using IRAF following the conventional steps consisting of: 
 
-- Building a Superbias: Zerocombine allows us to create the superbias using the median.
+- Building a Superbias: \textit{Zerocombine} allows us to create the superbias using the median.
 
-- Substracting the Superbias to every flat and science data: We substract the Superbias to every flat frame with no distiction on the filter, this is easily made using the task imarith, we also substract them from the original science images.
+- Substracting the Superbias to every flat and science data: We substract the Superbias to every flat frame with no distiction on the filter, this is easily made using the task \textit{imarith}, we also substract them from the original science images.
 
-- Building Superflats: It is necessary to create a Superflat frame for each filter because the response of the CCD and will be different for different wavelengths, we use imcombine to do this and this time we use the mode for better results.   
+- Building Superflats: It is necessary to create a Superflat frame for each filter because the response of the CCD and will be different for different wavelengths, we use \textit{imcombine} to do this and this time we use the mode for better results.   
 
-- Divide the Superflats by the median: In order to normalize the flatfields we find the mode of each frame with imstatistics and then divide them by that value
+- Divide the Superflats by the median: In order to normalize the flatfields we find the mode of each frame with \textit{imstatistics} and then divide them by that value
 
 
 \begin{figure}[H]
@@ -108,11 +108,11 @@ Once all the characterization is made we can reduce our important data using IRA
 \caption{Example of one of the Normalized Superflats for the I filter}
 \end{figure}
 
-- Reduce the science data: Finally, we divide the original images of the clusters and stars (with the bias substractet) by the normalized Superflat to get the reduced images. This can easliy be made using the task imarith.
+- Reduce the science data: Finally, we divide the original images of the clusters and stars (with the bias substractet) by the normalized Superflat to get the reduced images. This can easliy be made using the task \textit{imarith}.
 
 \subsection{Aperture Photometry}
 
-Now that the reduction has been made and the corrections pixel by pixel have been applied, we can proceed to do the photometry using the simplest technique, known as Aperture Photometry which consists of adding up the pixel counts within a circle centered on each star of the cluster and subtracting the quotient of the per-pixel average value of nearby sky count divided by the number of pixels within the aperture. This will result in the raw flux value of the target object. This Aperture Photometry was done using the task Phot:
+Now that the reduction has been made and the corrections pixel by pixel have been applied, we can proceed to do the photometry using the simplest technique, known as Aperture Photometry which consists of adding up the pixel counts within a circle centered on each star of the cluster and subtracting the quotient of the per-pixel average value of nearby sky count divided by the number of pixels within the aperture. This will result in the raw flux value of the target object. This Aperture Photometry was done using the task \textit{Phot}:
 
 For stars in the NGC5139 cluster, one must choose a very small aperture of the sky because the surrounding stars contribute to the flux that needs to be extracted and they are very close to each other, as we can see in the following figure: 
 
@@ -122,11 +122,11 @@ For stars in the NGC5139 cluster, one must choose a very small aperture of the s
 \caption{One of our observations of NGC5139 in the V filter with an exposition time of 480 seconds}
 \end{figure}
 
-with the task imexamine I find a value for the FWHM of 6.4 which I will use to set the size of the apertures to do the photometry. For the size of the aperture containing each star I chose an aperture size of four times the FWHM of the point spread function associated to the stars because it is the one that best fits the photometry and minimizes the error (calculated for some stars pressing "a" with the imexamine task) and for the width of the aperture I chose I value of 2.5 times the FWHM.
+with the task \textit{imexamine} I find a value for the FWHM of 6.4 which I will use to set the size of the apertures to do the photometry. For the size of the aperture containing each star I chose an aperture size of four times the FWHM of the point spread function associated to the stars because it is the one that best fits the photometry and minimizes the error (calculated for some stars pressing "a" with the \textit{imexamine} task) and for the width of the aperture I chose I value of 2.5 times the FWHM.
 
-Another important value to take into account before editing the parameters in phot is the medium value of the background on the sky, in the case of this cluster, I do an average on many different places in the background of the image and find a value of sigma for the image that is equal to 53.45.
+Another important value to take into account before editing the parameters in \textit{phot} is the medium value of the background on the sky, in the case of this cluster, I do an average on many different places in the background of the image and find a value of sigma for the image that is equal to 53.45.
 
-Now the photometry is done by changing some of the parameters including the readnoise and the gain. In the fitskyparts task inside phot I set the inner radius called annulus to be 25.6 (4FWHM) and the intermediate width called dannulus of 16 (2.5FWHM). Finally, before running the task I make sure I do the photometry using various apertures because I want to see which one minimizes the errors. I set apertures to be 1FWHM, 1.5FWHM, 2FWHM, 2.5FWHM, 3FWHM, 3.5FWHM and finally run the task. The results of the magnitude found for one of the star as a funtion of the size of the aperture is displayed below:
+Now the photometry is done by changing some of the parameters including the readnoise and the gain. In the \textit{fitskyparts} task inside phot I set the inner radius called annulus to be 25.6 (4FWHM) and the intermediate width called dannulus of 16 (2.5FWHM). Finally, before running the task I make sure I do the photometry using various apertures because I want to see which one minimizes the errors. I set apertures to be 1FWHM, 1.5FWHM, 2FWHM, 2.5FWHM, 3FWHM, 3.5FWHM and finally run the task. The results of the magnitude found for one of the star as a function of the size of the aperture is displayed below:
 
 \begin{figure}[H]
 \centering
@@ -138,24 +138,24 @@ As we can see in the figure above, the magnitude of the chosen star in the clust
 
 \subsection{PSF Photometry}
 
-There exist many ways to count photons for an image taken with a CCD camera, but all of these ways obey the same principle of energy distribution in luminous objects. The point spread function for each of these objects is an assigned measure from the probabilistic distributions that approach quite well to the count of photons that one wants to do in the photometric analysis of astronomical images. The PSF photometry technique makes the most of the PSF of the obejtcs using certain packages and tasks in a slightly different way than aperture photometry.
+There exist many ways to count photons for an image taken with a CCD camera, but all of these ways obey the same principle of energy distribution in luminous objects. The point spread function for each of these objects is an assigned measure from the probabilistic distributions that approach quite well to the count of photons that one wants to do in the photometric analysis of astronomical images. The PSF photometry technique makes the most of the PSF of the objects using certain packages and tasks in a slightly different way than aperture photometry.
 
 When doing photometry in a very crowded field, such as a globular cluster (NGC5139 in this case), where the profiles of stars overlap significantly, one must use de-blending techniques, such as point spread function (PSF) fitting, to determine the individual flux values of the overlapping sources. 
 
-This time, I made PSF photometry to some of the stars in the same cluster I started with (NGC5139), I chose bright ones that were relatively isolated to surrounding stars in order to make the estimations more accurate. First I use the same value of the PSF of some of those stars that I found doing the aperture photometry (6.4), this time the value of the sky is going to be higher because this value is going to determine the ammount of stars that the task daofind will select to do the photometry and I'm only interested in the brighter ones, a value of 2000 would filter out many of the fainter stars and the background. This values is using the standard deviation and making an average over many values found by the command "m" in the interactive mode of imexamine. 
+This time, I made PSF photometry to some of the stars in the same cluster I started with (NGC5139), I chose bright ones that were relatively isolated to surrounding stars in order to make the estimations more accurate. First I use the same value of the PSF of some of those stars that I found doing the aperture photometry (6.4), this time the value of the sky is going to be higher because this value is going to determine the ammount of stars that the task \textit{daofind} will select to do the photometry and I'm only interested in the brighter ones, a value of 2000 would filter out many of the fainter stars and the background. This values is using the standard deviation and making an average over many values found by the command "m" in the interactive mode of \textit{imexamine}. 
 
-After setting all the parameters of phot, daopars and findpars, I run daofind which will find the stars that match the criteria I mentioned above and will create a text file with the coordinates of those stars and will give to each star an ID.
+After setting all the parameters of \textit{phot}, \textit{daopars} and \textit{findpars}, I run \textit{daofind} which will find the stars that match the criteria I mentioned above and will create a text file with the coordinates of those stars and will give to each star an ID.
 
 The task \textit{tvmark} allows me to highlight the stars of the cluster in the display mode using the text file with the coordinates, and \textit{txdump} allows me to  put explicitly the coordinates of those stars in a text file that I use for the aperture photometry to make the first guess of the PSF of the stars.
 
-The best way to correctly select the stars that will be used for the modelling of the PSF is by using the task pstselect that will select the stars that are well isolated using statistical techniques. 
+The best way to correctly select the stars that will be used for the modelling of the PSF is by using the task \textit{pstselect} that will select the stars that are well isolated using statistical techniques. 
 
 Once the stars are selected, the next step is to use the task \textit{psf} which matches the point spread functions of the input images, by running this task, one can visualize how the PSF is modelled for each star and accept or decline the results to be stored, the interactive mode allows us to take the decision by analysing the modelling like the one we can see in the following image of the xterm:
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{images/psf.png}
-\caption{PSF modelling, the interactive mode allows us to accept of decline the result by pressing "a" or "d", in this case the PSF is not a soft curve with a gaussian behavior so it can probably be discarded}
+\caption{PSF modelling, the interactive mode allows us to accept of decline the result by pressing "a" or "d", in this case the PSF is not a soft curve with a Gaussian behaviour so it can probably be discarded}
 \end{figure}
 
 After running \textit{psf}, there will be created an image that contains the residuals of the psf modelling which can be seen like this:
@@ -178,7 +178,7 @@ Finally, after the modelling of the PSF was made, the task \textit{allstar} does
 
 \section{Spectroscopy}
 
-This is the most important part of the observational part of this project since the spectroscipc data has the most valuable information about the Globular Clusters and because our data were obtained in the largest and best telescope in OPD. Also, spectra of this kind is not easy to find in the scientific databases so we have important data to work with. The first spectroscopic procedures were also made for the $ \Omega $ Centauri cluster since we need to master the reduction and extraction techniques first in order to be able to start the scientific work about the mass modelling of the clusters.
+This is the most important part of the observational part of this project since the spectroscopic data has the most valuable information about the Globular Clusters and because our data were obtained in the largest and best telescope in OPD. Also, spectra of this kind is not easy to find in the scientific databases so we have important data to work with. The first spectroscopic procedures were also made for the $ \Omega $ Centauri cluster since we need to master the reduction and extraction techniques first in order to be able to start the scientific work about the mass modelling of the clusters.
 
 \subsection{Spectroscopic Reduction}
 
@@ -186,7 +186,7 @@ The spectroscopic reduction is made by following some steps taking into account 
 
 - First we make a Superbias combining all the bias frames and then we subtract it from all the lamp, targets and flat field frames.
 
-- It was important to analize the flats to see which ones are saturated, we consider that values over 65,000 counts (using implot) show saturated data. The ones that we could trust for May 14th were ten images called flats\_0012 to flats\_0021.
+- It was important to analyse the flats to see which ones are saturated, we consider that values over 65,000 counts (using implot) show saturated data. The ones that we could trust for May 14th were ten images called flats\_0012 to flats\_0021.
 
 - The pre-superflat is made using the median given the number of images.
 
@@ -239,7 +239,7 @@ rdnoise: 6
 
 gain: 1
 
-Interactively, one must choose very precisely the background regions to extract the spectrum and do the fitting routines with different orders until the best results are reached, the areas of the background are changed using the commands "b" (for setting the background mode) and "s" (for setting the range). A good choice for the background in the case of the calibration star is relatively easy but in the case of the extraction of the stars in the clusters one must take into account the high noise introduced by the other stars and the background so for every star one mut zoom into the window using "w" and "a" between the boundaries of the range to be zoomed.
+Interactively, one must choose very precisely the background regions to extract the spectrum and do the fitting routines with different orders until the best results are reached, the areas of the background are changed using the commands "b" (for setting the background mode) and "s" (for setting the range). A good choice for the background in the case of the calibration star is relatively easy but in the case of the extraction of the stars in the clusters one must take into account the high noise introduced by the other stars and the background so for every star one must zoom into the window using "w" and "a" between the boundaries of the range to be zoomed.
 
 If a good choice of the background and the dispersion axis is well fit, the task runs straightforward to get the spectrum of the star. In the case of the calibration lamps, the procedure is quite similar because the extraction of their spectrum is done with \textit{apsum}, which is very similar to \textit{apall}. 
 
@@ -248,7 +248,7 @@ For the calibration star HR4468, the extracted spectrum looks like this:
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{images/calib_star_apall.png}
-\caption{Extracted spectrum of HR4468, note that the dispersion axis is still in terms of pixels instead of Angstroms, this is fixed by doing the wavelength calibration, also the direction will be shifted because the strong sodium absortion lines are in the left end of the spectrum and they should be in the right end}
+\caption{Extracted spectrum of HR4468, note that the dispersion axis is still in terms of pixels instead of Angstroms, this is fixed by doing the wavelength calibration, also the direction will be shifted because the strong sodium absorption lines are in the left end of the spectrum and they should be in the right end}
 \end{figure}
 
 \subsection{Wavelength Calibration}
@@ -348,3 +348,11 @@ In principle, the same procedures halt for the star in the Globular Clusters, ev
 Although the noice is evidently higher than in the case of the spectrum of the calibration star, it is possible to see (even with the naked eye) two of the calcium strong absorption lines around 8543\AA$ $ and 8663\AA. After all of these procedures have been made to the important stars in the clusters and the calibration stars, the next step is to explore the best way to determine radial velocities with the use of some sophisticated tasks in IRAF such as \textit{RVSAO}, as we discuss in the next section. 
 
 \section{RVSAO and radial velocity determination}
+
+bcvcor:
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=10cm]{images/bcvcor.png}
+\caption{Correction of radial velocity observed from the earth to that which would be observed from the center of mass of teh solar system is shown at two different times in the earth's orbit, taken from the RVSAO paper!!!!!!}
+\end{figure}

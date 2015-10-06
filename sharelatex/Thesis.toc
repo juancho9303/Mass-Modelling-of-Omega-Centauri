@@ -4,26 +4,26 @@
 \vspace {1em}
 \vspace {2em}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.4}
-\contentsline {chapter}{\numberline {2}Theoretical Framework}{2}{chapter.5}
-\contentsline {section}{\numberline {2.1}Globular Clusters}{2}{section.6}
-\contentsline {subsection}{\numberline {2.1.1}Photometric Properties}{2}{subsection.7}
-\contentsline {section}{\numberline {2.2}Stellar System Dynamics}{2}{section.8}
-\contentsline {subsection}{\numberline {2.2.1}Colisionless Systems}{2}{subsection.9}
-\contentsline {section}{\numberline {2.3}Scenario and Observations}{3}{section.11}
-\contentsline {section}{\numberline {2.4}Simulations}{3}{section.12}
-\contentsline {chapter}{\numberline {3}Observations and Analysis}{4}{chapter.13}
-\contentsline {section}{\numberline {3.1}Observational Procedures}{4}{section.14}
-\contentsline {subsection}{\numberline {3.1.1}Spectroscopic Data}{5}{subsection.16}
-\contentsline {subsection}{\numberline {3.1.2}Photometric Data}{7}{subsection.19}
-\contentsline {section}{\numberline {3.2}First step for Anaysis}{8}{section.21}
-\contentsline {section}{\numberline {3.3}Photometry}{9}{section.22}
-\contentsline {subsection}{\numberline {3.3.1}Aperture Photometry}{10}{subsection.25}
-\contentsline {subsection}{\numberline {3.3.2}PSF Photometry}{12}{subsection.28}
-\contentsline {section}{\numberline {3.4}Spectroscopy}{15}{section.32}
-\contentsline {subsection}{\numberline {3.4.1}Spectroscopic Reduction}{15}{subsection.33}
-\contentsline {subsection}{\numberline {3.4.2}Extraction}{17}{subsection.35}
-\contentsline {subsection}{\numberline {3.4.3}Wavelength Calibration}{19}{subsection.37}
-\contentsline {subsection}{\numberline {3.4.4}Flux Calibration}{20}{subsection.40}
-\contentsline {section}{\numberline {3.5}RVSAO and radial velocity determination}{23}{section.43}
-\contentsline {chapter}{\numberline {4}Modelling}{24}{chapter.44}
-\contentsline {chapter}{\numberline {5}Conclusions}{25}{chapter.45}
+\contentsline {chapter}{\numberline {2}Theoretical Framework}{3}{chapter.5}
+\contentsline {section}{\numberline {2.1}Globular Clusters}{3}{section.6}
+\contentsline {subsection}{\numberline {2.1.1}Photometric Properties}{4}{subsection.7}
+\contentsline {section}{\numberline {2.2}Stellar System Dynamics}{4}{section.8}
+\contentsline {subsection}{\numberline {2.2.1}Colisionless Systems}{4}{subsection.9}
+\contentsline {section}{\numberline {2.3}Scenario and Observations}{4}{section.11}
+\contentsline {section}{\numberline {2.4}Simulations}{4}{section.12}
+\contentsline {chapter}{\numberline {3}Observations and Analysis}{5}{chapter.13}
+\contentsline {section}{\numberline {3.1}Observational Procedures}{5}{section.14}
+\contentsline {subsection}{\numberline {3.1.1}Spectroscopic Data}{6}{subsection.16}
+\contentsline {subsection}{\numberline {3.1.2}Photometric Data}{8}{subsection.19}
+\contentsline {section}{\numberline {3.2}First step for Anaysis}{9}{section.21}
+\contentsline {section}{\numberline {3.3}Photometry}{10}{section.22}
+\contentsline {subsection}{\numberline {3.3.1}Aperture Photometry}{11}{subsection.25}
+\contentsline {subsection}{\numberline {3.3.2}PSF Photometry}{13}{subsection.28}
+\contentsline {section}{\numberline {3.4}Spectroscopy}{16}{section.32}
+\contentsline {subsection}{\numberline {3.4.1}Spectroscopic Reduction}{16}{subsection.33}
+\contentsline {subsection}{\numberline {3.4.2}Extraction}{18}{subsection.35}
+\contentsline {subsection}{\numberline {3.4.3}Wavelength Calibration}{20}{subsection.37}
+\contentsline {subsection}{\numberline {3.4.4}Flux Calibration}{21}{subsection.40}
+\contentsline {section}{\numberline {3.5}RVSAO and radial velocity determination}{24}{section.43}
+\contentsline {chapter}{\numberline {4}Modelling}{26}{chapter.45}
+\contentsline {chapter}{\numberline {5}Conclusions}{27}{chapter.46}
