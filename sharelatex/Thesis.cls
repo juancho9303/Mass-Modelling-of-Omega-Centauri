@@ -185,7 +185,7 @@
   \thispagestyle{empty}
   \begin{titlepage}
   \begin{center}
-\includegraphics[scale=0.4]{Escudo-UdeA.png}
+\includegraphics[scale=0.4]{images/Escudo-UdeA.png}
 \end{center} 
     \let\footnotesize\small
     \let\footnoterule\relax
