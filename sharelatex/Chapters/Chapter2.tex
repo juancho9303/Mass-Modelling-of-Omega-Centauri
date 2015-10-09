@@ -1,10 +1,11 @@
 \chapter{Theoretical Framework}
 
+Typical galaxies all around the Universe hold different structures such as stellar systems of between $ 10^{2} $ and $ 10^{6} $ stars which orbit their galactic core . We call these interesting systems star clusters and they are basically divided into two main types: Open Clusters and \textbf{Globular Clusters}.
+
 - Cumulos globulares (definiciones, propiedades, formacion y evolucion, poblaciones estelares, etc)
 
 \section{Globular Clusters}
 
-Typical galaxies all around the Universe hold different structures such as stellar systems of between $ 10^{2} $ and $ 10^{6} $ stars which orbit their galactic core . We call these interesting systems star clusters and they are basically divided into two main types: Open Clusters and \textbf{Globular Clusters}.
 
 Globular clusters are very massive stellar systems that can contain from thousands to millions of stars in a nearly spherical distribution spread over a volume of several tens to about 200 light years in diameter. These stellar systems are composed of old stars and they do not contain gas or dust. 
 
@@ -61,19 +62,9 @@ Radial velocity measurements have revealed that most globulars are moving in hig
 
 To determine the physical orbits of globular clusters, it is required to know their proper motions in addition to the radial velocities. Cudworth and Hanson (1993) undertook some first rough determinations of proper motions with respect to background galaxies. From these and similar measurements, Van den Bergh (1995) estimated perigalactic distances, and Dauphole et.al. (1996) calculated first approximate orbits. Much more acurate data for proper motions became only available from astrometrical data obtained with ESA's Hipparcos satellite in 1997, from which space motions (Geffert et.al. 1997) and approximate orbits (Brosche et.al. 1997) could be determined.
 
-\subsection{Photometric Properties}
+\subsection{Basics}
 
-The HR diagram for a typical globular cluster looks very different than that of an open cluster. There are no Main Sequence stars of types OBAF, but there are many red giants. The brightest stars in a globular cluster are those at the tip of the red giant branch in the HR diagram, which explains the red appearance of the bright stars in color images of the clusters. You can also see stars populating the horizontal branch (and also why it is called the horizontal branch), the asymptotic giant branch, and even some stars that have colors and magnitudes of F stars, but far fewer than the G stars just below and to the right of them on the Main Sequence.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=10cm]{images/m55_diagram.jpg}
-\caption{Color Magnitude diagram of M55. Image by NASA}
-\end{figure}
-
-\subsection{Formation}
-
-
+\subsection{Formation and evolution}
 
 Efforts are under way by several groups to produce more realistic simulations that properly include the effects
 of star formation, but the existing results suggest that the first star formation may occur in gas that has become highly condensed at the centers of the first dark-matter halos to form; even though such systems may not closely resemble most present-day galaxies, they may still be of interest as the possible birth sites
@@ -93,11 +84,23 @@ An important recent advance in our understanding of star formation has
 been the realization that nearly all stars are formed in groups or clusters of
 some kind. Even in the nearby Taurus-Auriga region, which has been regarded
 as prototypical of isolated star formation, the T-Tauri stars are actually mostly
-distributed in a hierarchy of small groups of various sizes 
+distributed in a hierarchy of small groups of various sizes
 
+\subsection{Observational Properties}
 
+The HR diagram for a typical globular cluster looks very different than that of an open cluster. There are no Main Sequence stars of types OBAF, but there are many red giants. The brightest stars in a globular cluster are those at the tip of the red giant branch in the HR diagram, which explains the red appearance of the bright stars in color images of the clusters. You can also see stars populating the horizontal branch (and also why it is called the horizontal branch), the asymptotic giant branch, and even some stars that have colors and magnitudes of F stars, but far fewer than the G stars just below and to the right of them on the Main Sequence.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=10cm]{images/m55_diagram.jpg}
+\caption{Color Magnitude diagram of M55. Image by NASA}
+\end{figure}
+
+(incluir poblaciones estelares)
 
 \section{Stellar System Dynamics}
+
+\subsection{Potential Theory of Spherical Systems}
 
 (we focus on globular clusters)
 
@@ -109,6 +112,44 @@ The velocity dispersion profile of bright stars flattens when dark matter is pre
 \dfrac{df}{dt}=0
 \end{equation}
 
+\subsection{Dynamics}
+
+(Collisionless Boltzmann equation, Distribution Function, Jeans equations)
+
+\begin{equation}
+\frac{df}{dt}=0
+\end{equation}
+
+\begin{equation}
+\frac{\partial f}{\partial t}+\sum_{i=1}^{3}\frac{\partial f}{\partial x_{i}}\dot{x_{i}}+\sum_{i=1}^{3}\frac{\partial f}{\partial v_{i}}\dot{v_{i}}=0
+\end{equation}
+
+
+\begin{equation}
+\dot{v_{i}}=-\frac{\partial\phi}{\partial x_{i}}
+\end{equation}
+
+\begin{equation}
+\frac{\partial f}{\partial t}+\nabla f\cdot\vec{v}+\frac{\partial f}{\partial\overrightarrow{v}}\cdot\nabla\phi=0
+\end{equation}
+
+Moment of order $j$ of the distribution $f$
+
+\begin{equation}
+\overline{x^{j}}=\frac{\int x^{j}fdx}{fdx}
+\end{equation}
+
+velocity dispersion tensor:
+
+\begin{equation}
+\sigma_{ij}^{2}=\overline{v_{i}v_{j}}-\overline{v_{i}}\:\overline{v_{j}}
+\end{equation}
+
+Anysotropy parameter:
+
+\begin{equation}
+\beta=1-\frac{\left(\sigma_{\theta}^{2}+\sigma_{\phi}^{2}\right)}{2\sigma_{r}^{2}}
+\end{equation}
 
 \section{Scenario and Observations}
 
@@ -127,3 +168,5 @@ However, if a dark component is also present, in the form of low-mass objects fo
 where the index $i$ refers to the different stellar species, and $E_{p}$ is the potential energy of the cluster.
 
 \section{Simulations}
+
+(N-body simulations, plummer sphere)
