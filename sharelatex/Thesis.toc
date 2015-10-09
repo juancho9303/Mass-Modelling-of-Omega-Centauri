@@ -2,7 +2,7 @@
 \vspace {1em}
 \contentsline {chapter}{Acknowledgements}{iii}{dummy.2}
 \vspace {1em}
-\contentsline {chapter}{List of Figures}{v}{dummy.4}
+\contentsline {chapter}{List of Figures}{vi}{dummy.4}
 \vspace {2em}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.6}
 \contentsline {chapter}{\numberline {2}Theoretical Framework}{4}{chapter.7}
@@ -29,3 +29,4 @@
 \contentsline {section}{\numberline {3.5}RVSAO and radial velocity determination}{31}{section.50}
 \contentsline {chapter}{\numberline {4}Modelling}{33}{chapter.52}
 \contentsline {chapter}{\numberline {5}Conclusions}{34}{chapter.53}
+\contentsline {chapter}{Bibliography}{35}{chapter*.54}
