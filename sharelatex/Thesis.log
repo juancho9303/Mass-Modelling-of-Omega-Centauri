@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.1)  8 OCT 2015 20:51
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.1)  8 OCT 2015 21:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -640,7 +640,7 @@ Chapter 2.
 ------------------------------------------------------------------------------
 [4
 
-] <images/m15.jpg, id=284, 903.375pt x 752.8125pt>
+] <images/m15.jpg, id=283, 903.375pt x 752.8125pt>
 File: images/m15.jpg Graphic file (type jpg)
  <use images/m15.jpg>
 Package pdftex.def Info: images/m15.jpg used on input line 19.
@@ -676,7 +676,7 @@ Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
  [7]
-<images/m55_diagram.jpg, id=300, 410.18108pt x 410.18108pt>
+<images/m55_diagram.jpg, id=299, 410.18108pt x 410.18108pt>
 File: images/m55_diagram.jpg Graphic file (type jpg)
 
 <use images/m55_diagram.jpg>
@@ -701,7 +701,7 @@ Chapter 3.
 ------------------------------------------------------------------------------
  3 Observations and Analysis
 ------------------------------------------------------------------------------
-<images/opd.jpg, id=326, 66.9702pt x 55.04565pt>
+<images/opd.jpg, id=325, 66.9702pt x 55.04565pt>
 File: images/opd.jpg Graphic file (type jpg)
  <use images/opd.jpg>
 Package pdftex.def Info: images/opd.jpg used on input line 15.
@@ -709,13 +709,13 @@ Package pdftex.def Info: images/opd.jpg used on input line 15.
  [12
 
 ]
-<images/opd-spectrograph.jpg, id=331, 602.25pt x 401.5pt>
+<images/opd-spectrograph.jpg, id=330, 602.25pt x 401.5pt>
 File: images/opd-spectrograph.jpg Graphic file (type jpg)
 
 <use images/opd-spectrograph.jpg>
 Package pdftex.def Info: images/opd-spectrograph.jpg used on input line 25.
 (pdftex.def)             Requested size: 284.52756pt x 189.69136pt.
- [13 <./images/opd.jpg> <./images/opd-spectrograph.jpg>] <images/9.png, id=336,
+ [13 <./images/opd.jpg> <./images/opd-spectrograph.jpg>] <images/9.png, id=335,
  499.11469pt x 395.22656pt>
 File: images/9.png Graphic file (type png)
 
@@ -729,102 +729,102 @@ Missing character: There is no ° in font cmr10!
 Missing character: There is no Â in font cmr10!
 Missing character: There is no ° in font cmr10!
  [14 <./images/9.png>]
-<images/opd-photometry.jpg, id=341, 770.88pt x 578.16pt>
+<images/opd-photometry.jpg, id=340, 770.88pt x 578.16pt>
 File: images/opd-photometry.jpg Graphic file (type jpg)
 
 <use images/opd-photometry.jpg>
 Package pdftex.def Info: images/opd-photometry.jpg used on input line 49.
 (pdftex.def)             Requested size: 227.62204pt x 170.71451pt.
  [15 <./images/opd-photometry.jpg>] [16]
-<images/ngc_5139_dirty.png, id=350, 487.06969pt x 483.30562pt>
+<images/ngc_5139_dirty.png, id=349, 487.06969pt x 483.30562pt>
 File: images/ngc_5139_dirty.png Graphic file (type png)
 
 <use images/ngc_5139_dirty.png>
 Package pdftex.def Info: images/ngc_5139_dirty.png used on input line 82.
 (pdftex.def)             Requested size: 196.21284pt x 194.69788pt.
 
-<images/ruido.png, id=351, 484.05844pt x 483.30562pt>
+<images/ruido.png, id=350, 484.05844pt x 483.30562pt>
 File: images/ruido.png Graphic file (type png)
  <use images/ruido.png>
 Package pdftex.def Info: images/ruido.png used on input line 87.
 (pdftex.def)             Requested size: 196.21284pt x 195.90732pt.
 
 [17 <./images/ngc_5139_dirty.png> <./images/ruido.png>]
-<images/flat_I.png, id=357, 356.83313pt x 317.68687pt>
+<images/flat_I.png, id=356, 356.83313pt x 317.68687pt>
 File: images/flat_I.png Graphic file (type png)
  <use images/flat_I.png>
 Package pdftex.def Info: images/flat_I.png used on input line 107.
 (pdftex.def)             Requested size: 227.62204pt x 202.64993pt.
 
 [18 <./images/flat_I.png>]
-<images/NGC5139_red.png, id=362, 294.34969pt x 297.36093pt>
+<images/NGC5139_red.png, id=361, 294.34969pt x 297.36093pt>
 File: images/NGC5139_red.png Graphic file (type png)
 
 <use images/NGC5139_red.png>
 Package pdftex.def Info: images/NGC5139_red.png used on input line 121.
 (pdftex.def)             Requested size: 227.62204pt x 229.95322pt.
  [19 <./images/NGC5139_red.png>]
-<images/mag_vs_ap_size.png, id=367, 515.67656pt x 286.82156pt>
+<images/mag_vs_ap_size.png, id=366, 515.67656pt x 286.82156pt>
 File: images/mag_vs_ap_size.png Graphic file (type png)
 
 <use images/mag_vs_ap_size.png>
 Package pdftex.def Info: images/mag_vs_ap_size.png used on input line 133.
 (pdftex.def)             Requested size: 341.43306pt x 189.91113pt.
  [20 <./images/mag_vs_ap_size.png>]
-<images/psf.png, id=372, 480.29437pt x 359.09157pt>
+<images/psf.png, id=371, 480.29437pt x 359.09157pt>
 File: images/psf.png Graphic file (type png)
  <use images/psf.png>
 Package pdftex.def Info: images/psf.png used on input line 157.
 (pdftex.def)             Requested size: 227.62204pt x 170.18123pt.
 
-[21] <images/psf2.png, id=377, 223.58531pt x 224.33812pt>
+[21] <images/psf2.png, id=376, 223.58531pt x 224.33812pt>
 File: images/psf2.png Graphic file (type png)
 
 <use images/psf2.png>
 Package pdftex.def Info: images/psf2.png used on input line 165.
 (pdftex.def)             Requested size: 142.26378pt x 142.74408pt.
- <images/psf3.png, id=378, 191.21437pt x 213.79875pt>
+ <images/psf3.png, id=377, 191.21437pt x 213.79875pt>
 File: images/psf3.png Graphic file (type png)
 
 <use images/psf3.png>
 Package pdftex.def Info: images/psf3.png used on input line 173.
 (pdftex.def)             Requested size: 142.26378pt x 159.07309pt.
  [22 <./images/psf.png> <./images/psf2.png>] [23 <./images/psf3.png>] <images/c
-luster_dirty.png, id=388, 207.02344pt x 320.69812pt>
+luster_dirty.png, id=387, 207.02344pt x 320.69812pt>
 File: images/cluster_dirty.png Graphic file (type png)
 
 <use images/cluster_dirty.png>
 Package pdftex.def Info: images/cluster_dirty.png used on input line 212.
 (pdftex.def)             Requested size: 187.8616pt x 291.02342pt.
 
-<images/cluster_clean.png, id=389, 206.27063pt x 320.69812pt>
+<images/cluster_clean.png, id=388, 206.27063pt x 320.69812pt>
 File: images/cluster_clean.png Graphic file (type png)
 
 <use images/cluster_clean.png>
 Package pdftex.def Info: images/cluster_clean.png used on input line 217.
 (pdftex.def)             Requested size: 187.8616pt x 292.08041pt.
  [24] [25 <./images/cluster_dirty.png> <./images/cluster_clean.png>]
-<images/calib_star_apall.png, id=398, 459.21562pt x 350.05782pt>
+<images/calib_star_apall.png, id=397, 459.21562pt x 350.05782pt>
 File: images/calib_star_apall.png Graphic file (type png)
 
 <use images/calib_star_apall.png>
 Package pdftex.def Info: images/calib_star_apall.png used on input line 250.
 (pdftex.def)             Requested size: 227.62204pt x 173.51683pt.
  [26 <./images/calib_star_apall.png>]
-<images/lamp_day1_2.png, id=403, 463.7325pt x 350.05782pt>
+<images/lamp_day1_2.png, id=402, 463.7325pt x 350.05782pt>
 File: images/lamp_day1_2.png Graphic file (type png)
 
 <use images/lamp_day1_2.png>
 Package pdftex.def Info: images/lamp_day1_2.png used on input line 261.
 (pdftex.def)             Requested size: 187.8616pt x 141.81001pt.
 
-<images/lamp1.png, id=404, 776.9025pt x 577.40718pt>
+<images/lamp1.png, id=403, 776.9025pt x 577.40718pt>
 File: images/lamp1.png Graphic file (type png)
  <use images/lamp1.png>
 Package pdftex.def Info: images/lamp1.png used on input line 266.
 (pdftex.def)             Requested size: 187.8616pt x 139.6202pt.
 
-<images/calib_star_wave.png, id=405, 465.99094pt x 353.06906pt>
+<images/calib_star_wave.png, id=404, 465.99094pt x 353.06906pt>
 File: images/calib_star_wave.png Graphic file (type png)
 
 <use images/calib_star_wave.png>
@@ -832,21 +832,21 @@ Package pdftex.def Info: images/calib_star_wave.png used on input line 279.
 (pdftex.def)             Requested size: 227.62204pt x 172.46121pt.
  [27 <./images/lamp_day1_2.png> <./images/lamp1.png>] [28 <./images/calib_star_
 wave.png>]
-<images/calib_star_flux.png, id=414, 462.97969pt x 356.0803pt>
+<images/calib_star_flux.png, id=413, 462.97969pt x 356.0803pt>
 File: images/calib_star_flux.png Graphic file (type png)
 
 <use images/calib_star_flux.png>
 Package pdftex.def Info: images/calib_star_flux.png used on input line 326.
 (pdftex.def)             Requested size: 227.62204pt x 175.06767pt.
  [29]
-<images/cluster_star_flux.png, id=420, 444.91219pt x 346.29375pt>
+<images/cluster_star_flux.png, id=419, 444.91219pt x 346.29375pt>
 File: images/cluster_star_flux.png Graphic file (type png)
 
 <use images/cluster_star_flux.png>
 Package pdftex.def Info: images/cluster_star_flux.png used on input line 344.
 (pdftex.def)             Requested size: 227.62204pt x 177.16757pt.
  [30 <./images/calib_star_flux.png>]
-<images/bcvcor.png, id=426, 469.00218pt x 421.575pt>
+<images/bcvcor.png, id=425, 469.00218pt x 421.575pt>
 File: images/bcvcor.png Graphic file (type png)
  <use images/bcvcor.png>
 Package pdftex.def Info: images/bcvcor.png used on input line 356.
@@ -914,7 +914,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 240.
 Here is how much of TeX's memory you used:
  13170 strings out of 494985
  187334 string characters out of 6180357
- 256531 words of memory out of 5000000
+ 257531 words of memory out of 5000000
  16074 multiletter control sequences out of 15000+600000
  14824 words of font info for 54 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
@@ -933,10 +933,10 @@ s/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Thesis.pdf (43 pages, 3713922 bytes).
+Output written on Thesis.pdf (43 pages, 3713902 bytes).
 PDF statistics:
- 524 PDF objects out of 1000 (max. 8388607)
- 434 compressed objects within 5 object streams
+ 523 PDF objects out of 1000 (max. 8388607)
+ 433 compressed objects within 5 object streams
  99 named destinations out of 1000 (max. 500000)
  345 words of extra memory for PDF output out of 10000 (max. 10000000)
 
