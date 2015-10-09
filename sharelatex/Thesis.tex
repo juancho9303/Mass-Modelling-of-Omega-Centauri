@@ -11,6 +11,7 @@
 \usepackage{verbatim}  % Needed for the "comment" environment to make LaTeX comments
 \usepackage{vector}  % Allows "\bvec{}" and "\buvec{}" for "blackboard" style bold vectors in maths
 \usepackage{float}
+\usepackage[labelfont=bf,labelsep=space]{caption}
 \hypersetup{urlcolor=blue, colorlinks=true}  % Colours hyperlinks in blue, but this can be distracting if there are many links.
 
 %% ----------------------------------------------------------------
@@ -129,7 +130,7 @@ The acknowledgements and the people to thank go here, don't forget to include yo
 
 %% ----------------------------------------------------------------
 %\lhead{\emph{List of Figures}}  % Set the left side page header to "List if Figures"
-%\listoffigures  % Write out the List of Figures
+\listoffigures  % Write out the List of Figures
 
 %% ----------------------------------------------------------------
 %\lhead{\emph{List of Tables}}  % Set the left side page header to "List of Tables"
@@ -202,10 +203,21 @@ The acknowledgements and the people to thank go here, don't forget to include yo
 \input{Chapters/Chapter5} % Conclusions
 
 \begin{thebibliography}{9}
+
 \bibitem{latexcompanion} 
 Michael J. Kurtz, Douglas J. Mink. 
 \textit{RVSAO 2.0: Digital Redshifts and Radial Velocities}. 
 Harvard-Smithonian Center for Astrophysics, Cambirdge, MA 02138, 1993.
+
+\bibitem{latexcompanion} 
+Roueff F., Salati P., Tillet R. 
+\textit{The velocity dispersion profile of globular clusters: a closer look}. 
+preprint astro-ph/9707174v1.
+
+\bibitem{latexcompanion} 
+Binney J., Tremaine S.. 
+\textit{Galactic Dynamics}. 
+Princeton University Press, 1994.
 
 \bibitem{latexcompanion} 
 http://messier.seds.org/glob.html
