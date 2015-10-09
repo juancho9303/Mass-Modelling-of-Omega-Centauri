@@ -3,30 +3,31 @@
 \contentsline {chapter}{Acknowledgements}{iii}{dummy.2}
 \vspace {1em}
 \contentsline {chapter}{List of Figures}{vi}{dummy.4}
+\contentsline {chapter}{List of Tables}{vii}{dummy.6}
 \vspace {2em}
-\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.6}
-\contentsline {chapter}{\numberline {2}Theoretical Framework}{4}{chapter.7}
-\contentsline {section}{\numberline {2.1}Globular Clusters}{4}{section.8}
-\contentsline {subsection}{\numberline {2.1.1}Photometric Properties}{8}{subsection.10}
-\contentsline {subsection}{\numberline {2.1.2}Formation}{9}{subsection.12}
-\contentsline {section}{\numberline {2.2}Stellar System Dynamics}{10}{section.13}
-\contentsline {subsection}{\numberline {2.2.1}Colisionless Systems}{10}{subsection.14}
-\contentsline {section}{\numberline {2.3}Scenario and Observations}{11}{section.16}
-\contentsline {section}{\numberline {2.4}Simulations}{11}{section.19}
-\contentsline {chapter}{\numberline {3}Observations and Analysis}{12}{chapter.20}
-\contentsline {section}{\numberline {3.1}Observational Procedures}{12}{section.21}
-\contentsline {subsection}{\numberline {3.1.1}Spectroscopic Data}{13}{subsection.23}
-\contentsline {subsection}{\numberline {3.1.2}Photometric Data}{15}{subsection.26}
-\contentsline {section}{\numberline {3.2}First step for Anaysis}{16}{section.28}
-\contentsline {section}{\numberline {3.3}Photometry}{17}{section.29}
-\contentsline {subsection}{\numberline {3.3.1}Aperture Photometry}{18}{subsection.32}
-\contentsline {subsection}{\numberline {3.3.2}PSF Photometry}{20}{subsection.35}
-\contentsline {section}{\numberline {3.4}Spectroscopy}{23}{section.39}
-\contentsline {subsection}{\numberline {3.4.1}Spectroscopic Reduction}{23}{subsection.40}
-\contentsline {subsection}{\numberline {3.4.2}Extraction}{25}{subsection.42}
-\contentsline {subsection}{\numberline {3.4.3}Wavelength Calibration}{27}{subsection.44}
-\contentsline {subsection}{\numberline {3.4.4}Flux Calibration}{28}{subsection.47}
-\contentsline {section}{\numberline {3.5}RVSAO and radial velocity determination}{31}{section.50}
-\contentsline {chapter}{\numberline {4}Modelling}{33}{chapter.52}
-\contentsline {chapter}{\numberline {5}Conclusions}{34}{chapter.53}
-\contentsline {chapter}{Bibliography}{35}{chapter*.54}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.8}
+\contentsline {chapter}{\numberline {2}Theoretical Framework}{4}{chapter.9}
+\contentsline {section}{\numberline {2.1}Globular Clusters}{4}{section.10}
+\contentsline {subsection}{\numberline {2.1.1}Photometric Properties}{8}{subsection.12}
+\contentsline {subsection}{\numberline {2.1.2}Formation}{9}{subsection.14}
+\contentsline {section}{\numberline {2.2}Stellar System Dynamics}{10}{section.15}
+\contentsline {subsection}{\numberline {2.2.1}Colisionless Systems}{10}{subsection.16}
+\contentsline {section}{\numberline {2.3}Scenario and Observations}{11}{section.18}
+\contentsline {section}{\numberline {2.4}Simulations}{11}{section.21}
+\contentsline {chapter}{\numberline {3}Observations and Analysis}{12}{chapter.22}
+\contentsline {section}{\numberline {3.1}Observational Procedures}{12}{section.23}
+\contentsline {subsection}{\numberline {3.1.1}Spectroscopic Data}{13}{subsection.25}
+\contentsline {subsection}{\numberline {3.1.2}Photometric Data}{15}{subsection.28}
+\contentsline {section}{\numberline {3.2}First step for Anaysis}{16}{section.30}
+\contentsline {section}{\numberline {3.3}Photometry}{17}{section.31}
+\contentsline {subsection}{\numberline {3.3.1}Aperture Photometry}{18}{subsection.34}
+\contentsline {subsection}{\numberline {3.3.2}PSF Photometry}{20}{subsection.37}
+\contentsline {section}{\numberline {3.4}Spectroscopy}{23}{section.41}
+\contentsline {subsection}{\numberline {3.4.1}Spectroscopic Reduction}{23}{subsection.42}
+\contentsline {subsection}{\numberline {3.4.2}Extraction}{25}{subsection.44}
+\contentsline {subsection}{\numberline {3.4.3}Wavelength Calibration}{27}{subsection.46}
+\contentsline {subsection}{\numberline {3.4.4}Flux Calibration}{28}{subsection.49}
+\contentsline {section}{\numberline {3.5}RVSAO and radial velocity determination}{31}{section.52}
+\contentsline {chapter}{\numberline {4}Modelling}{33}{chapter.54}
+\contentsline {chapter}{\numberline {5}Conclusions}{34}{chapter.55}
+\contentsline {chapter}{Bibliography}{35}{chapter*.56}

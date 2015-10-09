@@ -13,7 +13,7 @@ Our stay in OPD consisted of two days in the main dome for the spectroscopic dat
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{images/opd.jpg}
-\caption{OPD observatory seen from the air, the big dome was used for the spectroscopic data and the small dome at the low right part of the photo for the photometric data.}
+\caption[OPD Observatory]{OPD observatory seen from the air, the big dome was used for the spectroscopic data and the small dome at the low right part of the photo for the photometric data.}
 \end{figure}
 
 \subsection{Spectroscopic Data}
@@ -23,7 +23,7 @@ The first two days (May 14th and 15th) we took the spectroscopic data in the tel
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{images/opd-spectrograph.jpg}
-\caption{Perkin-Elmer telescope in the main dome in OPD used for the spectroscopic observations}
+\caption[Perkin-Elmer telescope used for Spectroscopy]{Perkin-Elmer telescope in the main dome in OPD used for the spectroscopic observations}
 \end{figure}
 
 We made the observations of dome flats, bias frames, comparison lamp frames, calibration stars and certain globular clusters of the milky Way organized by the best observation times using Simbad and Stellarium for the estimations of the coordinates and times respectively. We needed to keep an order of the observations to make the most of our observation time in OPD so we decided to organize our Globular Clusters in different groups or "chunks":
@@ -31,7 +31,7 @@ We made the observations of dome flats, bias frames, comparison lamp frames, cal
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{images/9.png}
-\caption{Organized globular Clusters in groups for the proper times}
+\caption[Observed Globular Clusters]{Organized globular Clusters in groups for the proper times}
 \end{figure}
 
 Now, our set up configuration for the spectrograph was the following:
@@ -47,7 +47,7 @@ The photometric data were acquired in the next four days (from May 16th to May 1
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{images/opd-photometry.jpg}
-\caption{IAG telescope used for the photometric data}
+\caption[IAG Telescope used for Photometry]{IAG telescope used for the photometric data}
 \end{figure}
 
 On May 16th, we took all the calibration images, consisting of 20 bias frames with an exposition time of 0,00001 seconds; also 22, 11, 11, 20 and 10 flat frames for the B,I,R,U,V filters respectively, their exposition times differed, for  U filter we took various frames of 60 and 30 seconds, for the B filter we took frames of 30 seconds each, 15s for I, 60s for R and 3s for V. We took our "focus" images to calibrate the instrument, and also various skyflats for all the filters. We targeted the following globular clusters and calibration stars in different filters: NGC5272, HR4961, NGC4590, NGC5139 AND NGC6397. The exposition time for the clusters was of 600 seconds and 2 and 4 seconds for the calibration star. 
@@ -80,12 +80,12 @@ In order to see how the data would be affected by the systematic errors we just 
   \centering
   \begin{minipage}[b]{0.47\textwidth}
     \includegraphics[width=\textwidth]{images/ngc_5139_dirty.png}
-    \caption{Composite image of NGC5139 without being previously reduced}
+    \caption[Dirty image of NGC5139]{Composite image of NGC5139 without being previously reduced}
   \end{minipage}
   \hfill
   \begin{minipage}[b]{0.47\textwidth}
     \includegraphics[width=\textwidth]{images/ruido.png}
-    \caption{Composite image of the flats showing the noise that needs to be extracted}
+    \caption[Clean image of NGC5139]{Composite image of the flats showing the noise that needs to be extracted}
   \end{minipage}
 \end{figure}
 
@@ -105,7 +105,7 @@ Once all the characterization is made we can reduce our important data using IRA
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{images/flat_I.png}
-\caption{Example of one of the Normalized Superflats for the I filter}
+\caption[Normalized Superflat for the filter I]{Example of one of the Normalized Superflats for the I filter}
 \end{figure}
 
 - Reduce the science data: Finally, we divide the original images of the clusters and stars (with the bias substractet) by the normalized Superflat to get the reduced images. This can easliy be made using the task \textit{imarith}.
@@ -119,7 +119,7 @@ For stars in the NGC5139 cluster, one must choose a very small aperture of the s
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{images/NGC5139_red.png}
-\caption{One of our observations of NGC5139 in the V filter with an exposition time of 480 seconds}
+\caption[NGC5139 as observed in the V filter]{One of our observations of NGC5139 in the V filter with an exposition time of 480 seconds}
 \end{figure}
 
 with the task \textit{imexamine} I find a value for the FWHM of 6.4 which I will use to set the size of the apertures to do the photometry. For the size of the aperture containing each star I chose an aperture size of four times the FWHM of the point spread function associated to the stars because it is the one that best fits the photometry and minimizes the error (calculated for some stars pressing "a" with the \textit{imexamine} task) and for the width of the aperture I chose I value of 2.5 times the FWHM.
@@ -131,7 +131,7 @@ Now the photometry is done by changing some of the parameters including the read
 \begin{figure}[H]
 \centering
 \includegraphics[width=12cm]{images/mag_vs_ap_size.png}
-\caption{The magnitude decreases for bigger appertures}
+\caption[Photometry results of Magnitudes vs Size of apertures]{The magnitude decreases for bigger appertures}
 \end{figure}
 
 As we can see in the figure above, the magnitude of the chosen star in the cluster decreases for bigger appertures but so does the error because the space around the star is crowded of more stars and noice coming from the stars in the background so we infer that for crowded areas like this one the best choice is a small aperture. Although the results may not be as convincing, the use of another technique of photometry allows us to compare the results and see if the choice of a small aperture is a good way to fix or avoid the problem of the big noice of the background. For this purpose we use the technique of Point Spread Function (PSF) Photometry.
@@ -155,7 +155,7 @@ Once the stars are selected, the next step is to use the task \textit{psf} which
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{images/psf.png}
-\caption{PSF modelling, the interactive mode allows us to accept of decline the result by pressing "a" or "d", in this case the PSF is not a soft curve with a Gaussian behaviour so it can probably be discarded}
+\caption[PSF modelling]{PSF modelling, the interactive mode allows us to accept of decline the result by pressing "a" or "d", in this case the PSF is not a soft curve with a Gaussian behaviour so it can probably be discarded}
 \end{figure}
 
 After running \textit{psf}, there will be created an image that contains the residuals of the psf modelling which can be seen like this:
@@ -163,7 +163,7 @@ After running \textit{psf}, there will be created an image that contains the res
 \begin{figure}[H]
 \centering
 \includegraphics[width=5cm]{images/psf2.png}
-\caption{PSF residuals}
+\caption[PSF residuals]{PSF residuals}
 \end{figure}
 
 With the task \textit{seepsf} another image will be created but this time it will actually look like a star:
@@ -171,7 +171,7 @@ With the task \textit{seepsf} another image will be created but this time it wil
 \begin{figure}[H]
 \centering
 \includegraphics[width=5cm]{images/psf3.png}
-\caption{Seepsf converts a sampled PSF lookup table to a PSF image which can be visualized}
+\caption[PSF image created by the task Seepsf]{Seepsf converts a sampled PSF lookup table to a PSF image which can be visualized}
 \end{figure}
 
 Finally, after the modelling of the PSF was made, the task \textit{allstar} does the photometry of the cluster using the results we just stored in the current directory. The results of the PSF photometry gave us magnitudes smaller for those stars than the results given by the aperture photometry but there is a constant difference for all the stars which we can assume to be a calibration constant between the two methods. 
@@ -210,12 +210,12 @@ The vertical axis of the spectra is the dispersion axis and the horizontal axis 
   \centering
   \begin{minipage}[b]{0.45\textwidth}
     \includegraphics[width=\textwidth]{images/cluster_dirty.png}
-    \caption{The dirty cluster spectrum has a small signal to noise ratio, besides border effects (such as a big gradient) that need to be trimmed and cosmic rays.}
+    \caption[Dirty spectrum of NGC5139]{The dirty cluster spectrum has a small signal to noise ratio, besides border effects (such as a big gradient) that need to be trimmed and cosmic rays.}
   \end{minipage}
   \hfill
   \begin{minipage}[b]{0.45\textwidth}
     \includegraphics[width=\textwidth]{images/cluster_clean.png}
-    \caption{The clean spectrum without the bad data at the borders that needed to be trimmed, with a higher signal to noise ratio and the cosmic rays removed, }
+    \caption[Clean spectrum of NGC5139]{The clean spectrum without the bad data at the borders that needed to be trimmed, with a higher signal to noise ratio and the cosmic rays removed, }
   \end{minipage}
 \end{figure}
 
@@ -248,7 +248,7 @@ For the calibration star HR4468, the extracted spectrum looks like this:
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{images/calib_star_apall.png}
-\caption{Extracted spectrum of HR4468, note that the dispersion axis is still in terms of pixels instead of Angstroms, this is fixed by doing the wavelength calibration, also the direction will be shifted because the strong sodium absorption lines are in the left end of the spectrum and they should be in the right end}
+\caption[Spectrum of calibration star HR4468]{Extracted spectrum of HR4468, note that the dispersion axis is still in terms of pixels instead of Angstroms, this is fixed by doing the wavelength calibration, also the direction will be shifted because the strong sodium absorption lines are in the left end of the spectrum and they should be in the right end}
 \end{figure}
 
 \subsection{Wavelength Calibration}
@@ -259,12 +259,12 @@ Once the spectrum is extracted, the following step is to calibrate it in wavelen
   \centering
   \begin{minipage}[b]{0.45\textwidth}
     \includegraphics[width=\textwidth]{images/lamp_day1_2.png}
-    \caption{Emission lines of the Ne-Ar calibration lamp that need to be wavelength calibrated ,the horizontal axis is in pixels and needs to be calibrated to units of wavelength}
+    \caption[Emission lines for the Ne-Ar calibration lamp]{Emission lines of the Ne-Ar calibration lamp that need to be wavelength calibrated ,the horizontal axis is in pixels and needs to be calibrated to units of wavelength}
   \end{minipage}
   \hfill
   \begin{minipage}[b]{0.45\textwidth}
     \includegraphics[width=\textwidth]{images/lamp1.png}
-    \caption{The theoretic emission lines of the NE-Ar lamp provided by OPD that we use to make the wavelength calibration, note that the lines to be matched are going in the opposite direction}
+    \caption[Theoric emisison lines of a Ne-Ar lamp]{The theoretic emission lines of the Ne-Ar lamp provided by OPD that we use to make the wavelength calibration, note that the lines to be matched are going in the opposite direction}
   \end{minipage}
 \end{figure}
 
@@ -277,7 +277,7 @@ The wavelength calibrated spectrum of the star HR4468, after running \textit{dis
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{images/calib_star_wave.png}
-\caption{The spectrum has been wavelength calibrated as we can see in the horizontal axis which is in units of Angstroms. Note that the strong absorption lines are now in the right part of the spectrum, this is because in the process of making the wavelength calibration, the direction of the axis was changed.}
+\caption[Wavelength calibrated spectrum of HR4468]{The spectrum has been wavelength calibrated as we can see in the horizontal axis which is in units of Angstroms. Note that the strong absorption lines are now in the right part of the spectrum, this is because in the process of making the wavelength calibration, the direction of the axis was changed.}
 \end{figure}
 
 \subsection{Flux Calibration}
@@ -324,7 +324,7 @@ The wavelength and flux calibrated spectrum of the star HR4468, now ready to be 
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{images/calib_star_flux.png}
-\caption{T}
+\caption[Flux calibrated spectrum of HR4468]{Flux calibrated spectrum of HR4468 calibration star}
 \end{figure}
 
 In order to normalize the spectrum, first I find the maximum value in the spectrum using minmax and then I divide the whole image by this value. 
@@ -342,7 +342,7 @@ In principle, the same procedures halt for the star in the Globular Clusters, ev
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{images/cluster_star_flux.png}
-\caption{Spectrum of one of the most prominent stars in the NGC5139 cluster, after all the calibrations have been made}
+\caption[Spectrum of a prominent star of the NGC5139 globular cluster]{Spectrum of one of the most prominent stars in the NGC5139 cluster, after all the calibrations have been made}
 \end{figure}
 
 Although the noise is evidently higher than in the case of the spectrum of the calibration star, it is possible to see (even with the naked eye) two of the calcium strong absorption lines around 8543\AA$ $ and 8663\AA. After all of these procedures have been made to the important stars in the clusters and the calibration stars, the next step is to explore the best way to determine radial velocities with the use of some sophisticated tasks in IRAF such as \textit{RVSAO}, as we discuss in the next section. 
@@ -354,5 +354,5 @@ bcvcor:
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{images/bcvcor.png}
-\caption{Correction of radial velocity observed from the earth to that which would be observed from the center of mass of teh solar system is shown at two different times in the earth's orbit, taken from the RVSAO paper!!!!!!}
+\caption[The nature of the barycenter shift of radial velocities]{Correction of radial velocity observed from the earth to that which would be observed from the center of mass of teh solar system is shown at two different times in the earth's orbit, taken from the RVSAO paper!!!!!!}
 \end{figure}
