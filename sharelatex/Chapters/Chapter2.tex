@@ -72,13 +72,27 @@ Clusters lose mass from stellar evolution: Our stellar evolution theories show u
 
 The mass lost by a cluster due to stellar evolution depends on the initial mass function  which specifes the distribution of masses of stars just after they have formed and the initial-final mass function. 
 
-Now, when we talk about the evolution of the Globular Clusters, we must see how the mass distribution evolves over time. In an isolated cluster, that began as a Plummer model 
+Now, when we talk about the evolution of the Globular Clusters, we must see how the mass distribution evolves over time. the evolution of the mass distribution in an isolated cluster, that began as a Plummer model is shown in the next figure:
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=12cm]{images/core_collapse.png}
-\caption[M]{GA}
+\caption[Evolution of an ergodic Plummer model over time]{Evolution of an ergodic Plummer model, according to an orbit-averaged Monte-Carlo solution of the Fokker Planck equation with $3\times10^{5}$ superstars (heavy solid lines) and an N-body simulation with $65536$ superstars (dots, connected by solid lines). From Freigat, Rasio, \& Baumgardt (2006)}
 \end{figure}
+
+As we can see above, the outer half of the cluster expands, mainly due to the gradual growth of the halo as stars in the core diffuse towards the escape energy. But most importantly, we can see that the center contracts, this process is known as \textbf{core collapse} and it leads to a dramatic growth in the central density that may indicate the existence of an apparent singularity in the central density.
+
+By solving the orbit-averaged Fokker-Planck equation for an isolated, spherical cluster (without binaries) and starting from a Plummer model, Takahashi (1995) found a more accurate calculation of core collapse. His calculations allow greater dynamic range than Monte Carlo or N-body methods. His results show that as the cluster evolves, the core radius shrinks  and the central density grows. Outside the core, the density profile approaches a power law $\rho\varpropto r^{-2.23}$.
+
+Another interesting result regarding the direct solutinos of the orbit-avergaed Fokker Planck equations is the behaviour of the anisotropy parameter $\beta=1-\overline{v_{\theta}^{2}}/\overline{v_{r}^{2}}$ as we can see in the following figure:
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=12cm]{images/anisotropy_core_collapse.png}
+\caption[Evolution of the velocity anisotropy parameter]{The evolution of the velocity anisotropy parameter for an orbit-averaged Fokker Planck calculation of core collapse. From Takahashi (1995)}
+\end{figure}
+
+At large radii, the anisotropy parameter tends to unity ($\beta\simeq1$), and that indicates that the orbits are nearly radial, at the smalest radii, inside the shrinking core, we have $\beta\simeq0$, which indicates that the velocity distribution is isotropic. We note that in the radiu range in which the density profile in the top panel is a power law, there is a constant small radial anisotropy of $\beta\simeq0.08$ or  $\overline{v_{\theta}^{2}}/\overline{v_{r}^{2}}\simeq0.92$
 
 Efforts are under way by several groups to produce more realistic simulations that properly include the effects
 of star formation, but the existing results suggest that the first star formation may occur in gas that has become highly condensed at the centers of the first dark-matter halos to form; even though such systems may not closely resemble most present-day galaxies, they may still be of interest as the possible birth sites

@@ -10,27 +10,27 @@
 \contentsline {section}{\numberline {2.1}Globular Clusters}{4}{section.10}
 \contentsline {subsection}{\numberline {2.1.1}Basics}{8}{subsection.12}
 \contentsline {subsection}{\numberline {2.1.2}Formation and evolution}{8}{subsection.13}
-\contentsline {subsection}{\numberline {2.1.3}Observational Properties}{10}{subsection.15}
-\contentsline {section}{\numberline {2.2}Stellar System Dynamics}{11}{section.17}
-\contentsline {subsection}{\numberline {2.2.1}Potential Theory of Spherical Systems}{11}{subsection.18}
-\contentsline {subsection}{\numberline {2.2.2}Colisionless Systems}{11}{subsection.19}
-\contentsline {subsection}{\numberline {2.2.3}Dynamics}{11}{subsection.21}
-\contentsline {section}{\numberline {2.3}Scenario and Observations}{12}{section.29}
-\contentsline {section}{\numberline {2.4}Simulations}{13}{section.32}
-\contentsline {chapter}{\numberline {3}Observations and Analysis}{14}{chapter.33}
-\contentsline {section}{\numberline {3.1}Observational Procedures}{14}{section.34}
-\contentsline {subsection}{\numberline {3.1.1}Spectroscopic Data}{15}{subsection.36}
-\contentsline {subsection}{\numberline {3.1.2}Photometric Data}{17}{subsection.39}
-\contentsline {section}{\numberline {3.2}First step for Anaysis}{18}{section.41}
-\contentsline {section}{\numberline {3.3}Photometry}{19}{section.42}
-\contentsline {subsection}{\numberline {3.3.1}Aperture Photometry}{20}{subsection.45}
-\contentsline {subsection}{\numberline {3.3.2}PSF Photometry}{22}{subsection.48}
-\contentsline {section}{\numberline {3.4}Spectroscopy}{25}{section.52}
-\contentsline {subsection}{\numberline {3.4.1}Spectroscopic Reduction}{25}{subsection.53}
-\contentsline {subsection}{\numberline {3.4.2}Extraction}{27}{subsection.55}
-\contentsline {subsection}{\numberline {3.4.3}Wavelength Calibration}{29}{subsection.57}
-\contentsline {subsection}{\numberline {3.4.4}Flux Calibration}{30}{subsection.60}
-\contentsline {section}{\numberline {3.5}RVSAO and radial velocity determination}{33}{section.63}
-\contentsline {chapter}{\numberline {4}Modelling}{35}{chapter.65}
-\contentsline {chapter}{\numberline {5}Conclusions}{36}{chapter.66}
-\contentsline {chapter}{Bibliography}{37}{chapter*.67}
+\contentsline {subsection}{\numberline {2.1.3}Observational Properties}{11}{subsection.16}
+\contentsline {section}{\numberline {2.2}Stellar System Dynamics}{12}{section.18}
+\contentsline {subsection}{\numberline {2.2.1}Potential Theory of Spherical Systems}{12}{subsection.19}
+\contentsline {subsection}{\numberline {2.2.2}Colisionless Systems}{12}{subsection.20}
+\contentsline {subsection}{\numberline {2.2.3}Dynamics}{12}{subsection.22}
+\contentsline {section}{\numberline {2.3}Scenario and Observations}{13}{section.30}
+\contentsline {section}{\numberline {2.4}Simulations}{14}{section.33}
+\contentsline {chapter}{\numberline {3}Observations and Analysis}{15}{chapter.34}
+\contentsline {section}{\numberline {3.1}Observational Procedures}{15}{section.35}
+\contentsline {subsection}{\numberline {3.1.1}Spectroscopic Data}{16}{subsection.37}
+\contentsline {subsection}{\numberline {3.1.2}Photometric Data}{18}{subsection.40}
+\contentsline {section}{\numberline {3.2}First step for Anaysis}{19}{section.42}
+\contentsline {section}{\numberline {3.3}Photometry}{20}{section.43}
+\contentsline {subsection}{\numberline {3.3.1}Aperture Photometry}{21}{subsection.46}
+\contentsline {subsection}{\numberline {3.3.2}PSF Photometry}{23}{subsection.49}
+\contentsline {section}{\numberline {3.4}Spectroscopy}{26}{section.53}
+\contentsline {subsection}{\numberline {3.4.1}Spectroscopic Reduction}{26}{subsection.54}
+\contentsline {subsection}{\numberline {3.4.2}Extraction}{28}{subsection.56}
+\contentsline {subsection}{\numberline {3.4.3}Wavelength Calibration}{30}{subsection.58}
+\contentsline {subsection}{\numberline {3.4.4}Flux Calibration}{31}{subsection.61}
+\contentsline {section}{\numberline {3.5}RVSAO and radial velocity determination}{34}{section.64}
+\contentsline {chapter}{\numberline {4}Modelling}{36}{chapter.66}
+\contentsline {chapter}{\numberline {5}Conclusions}{37}{chapter.67}
+\contentsline {chapter}{Bibliography}{38}{chapter*.68}
