@@ -109,7 +109,7 @@ To determine the physical orbits of globular clusters, it is required to know th
 
 \section{Mass models and Dynamics}
 
-
+In order to get into the physical discussions about the stability and modelling of globular clusters, we need to understand first the basics of potential theory, and more specifically the potential theory of spherical systems. The next step is to discuss the physical implications behind these models so that the mass modelling can be made. The last but most important part is to discuss the criteria regarding the mathematical treatment of the dynamics of these systems in the context of the collisionless Boltzmann equation and the approximations to the solutions of the Jeans equations that will be used for the fitting of the observational data to do the final modelling.
 
 \subsection{Potential Theory of Spherical Systems}
 
@@ -258,7 +258,39 @@ According to equation (2.17) the mass inside the radius $r$ is:
 M(r)=4\pi \rho_{0}a^{3}\int_{0}^{r/a}ds\frac{s^{2-\alpha}}{(1+s)^{\beta-\alpha}}
 \end{equation}
 
-The velocity dispersion profile of bright stars flattens when dark matter is present.
+For the important cases we discuss, the mass is
+
+\begin{equation}
+M(r) = 4\pi \rho_{0}a^{3} \times \left\lbrace
+\begin{array}{lll}
+\frac{r/a}{1+r/a} & \text{for a Jaffe model}\\
+\frac{(r/a)^{2}}{2(1+r/a)^{2}} & \text{for a Hernquist model}\\
+ln(1+r/a)-\frac{r/a}{1+r/a} & \text{for a NFW model}
+\end{array}
+\right.
+\end{equation} 
+
+We can directly integrate the mass to get the potential for the three discussed models:
+
+\begin{equation}
+\Phi(r) = -4\pi G\rho_{0}a^{2} \times \left\lbrace
+\begin{array}{lll}
+ln(1+r/a) & \text{for a Jaffe model}\\
+\frac{1}{2(1+r/a)} & \text{for a Hernquist model}\\
+\frac{ln(1+r/a)}{r/a} & \text{for a NFW model}
+\end{array}
+\right.
+\end{equation} 
+
+From the above equations, and taking into account the potential energy for each model, it can be proved that the Jaffe and Hernquist models have gravitational radii $r_{r}=2a$ and $6a$ respectively, while for the NFW model $r_{g}$ is undefined. The circular speed, given by these potentials for each model is shown in the following figure: 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=10cm]{images/circular_velocity_vs_radius.png}
+\caption[Circular speed vs radius for the Jaffe, Hernquist, and NFW models]{Circular speed vs radius for the models of Jaffe, Hernquist and NFW, taken from Binney \& Tremaine, Galactic Dynamics 2nd edition.}
+\end{figure}
+
+The next step in the analysis of the dynamics and stability of Globular Clusters is to understand the physics of spherical distribution of systems and how the solutions for their dynamics can be easily reached. As we shall see, a good consideration for the simplification of the mathematical treatment of Globular Clusters (with good physical reasons) is that these systems are not collisional.
 
 \subsection{Colisionless Systems}
 
