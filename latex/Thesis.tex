@@ -1,0 +1,261 @@
+%% ----------------------------------------------------------------
+%% Thesis.tex -- MAIN FILE (the one that you compile with LaTeX)
+%% ---------------------------------------------------------------- 
+
+% Set up the document
+\documentclass[a4paper, 11pt, oneside]{Thesis}  % Use the "Thesis" style, based on the ECS Thesis style by Steve Gunn
+\graphicspath{Figures/}  % Location of the graphics files (set up for graphics to be in PDF format)
+
+% Include any extra LaTeX packages required
+\usepackage[square, numbers, comma, sort&compress]{natbib}  % Use the "Natbib" style for the references in the Bibliography
+\usepackage{verbatim}  % Needed for the "comment" environment to make LaTeX comments
+\usepackage{vector}  % Allows "\bvec{}" and "\buvec{}" for "blackboard" style bold vectors in maths
+\usepackage{float}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{caption}
+%\usepackage[labelfont=bf]{caption}
+\captionsetup{
+format = plain,
+font = footnotesize,
+figurename = FIGURE,
+labelfont = {sc,bf}
+}
+%\usepackage[labelfont=bf,labelsep=space]{caption}
+\hypersetup{urlcolor=blue, colorlinks=true}  % Colours hyperlinks in blue, but this can be distracting if there are many links.
+
+%% ----------------------------------------------------------------
+\begin{document}
+\frontmatter      % Begin Roman style (i, ii, iii, iv...) page numbering
+
+% Set up the Title Page
+\title  {Mass Modelling of Globular Clusters in the Milky Way}
+%\authors  {\texorpdfstring
+%            {\href{juancho9303@gmail.com}{Juan Manuel Espejo Salcedo}}
+%            {Juan Manuel Espejo Salcedo}
+%            }
+            
+\authors  
+            {{Juan Manuel Espejo Salcedo}}
+            
+           
+\addresses  {\groupname\\\deptname\\\univname}  % Do not change this here, instead these must be set in the "Thesis.cls" file, please look through it instead
+\date       {\today}
+\subject    {}
+\keywords   {}
+%\begin{center}
+%\includegraphics[scale=0.5]{Escudo-UdeA.png}
+%\end{center} 
+
+\maketitle
+%% ----------------------------------------------------------------
+
+\setstretch{1.3}  % It is better to have smaller font and larger line spacing than the other way round
+
+% Define the page headers using the FancyHdr package and set up for one-sided printing
+\fancyhead{}  % Clears all page headers and footers
+\rhead{\thepage}  % Sets the right side header to show the page number
+\lhead{}  % Clears the left side page header
+
+\pagestyle{fancy}  % Finally, use the "fancy" page style to implement the FancyHdr headers
+
+%% ----------------------------------------------------------------
+% Declaration Page required for the Thesis, your institution may give you a different text to place here
+%\Declaration{
+
+%\addtocontents{toc}{\vspace{1em}}  % Add a gap in the Contents, for aesthetics
+
+%I, AUTHOR NAME, declare that this thesis titled, `THESIS TITLE' and the work presented in it are my own. I confirm that:
+
+%\begin{itemize} 
+%\item[\tiny{$\blacksquare$}] This work was done wholly or mainly while in candidature for a research degree at this University.
+ 
+%\item[\tiny{$\blacksquare$}] Where any part of this thesis has previously been submitted for a degree or any other qualification at this University or any other institution, this has been clearly stated.
+ 
+%\item[\tiny{$\blacksquare$}] Where I have consulted the published work of others, this is always clearly attributed.
+ 
+%\item[\tiny{$\blacksquare$}] Where I have quoted from the work of others, the source is always given. With the exception of such quotations, this thesis is entirely my own work.
+ 
+%\item[\tiny{$\blacksquare$}] I have acknowledged all main sources of help.
+ 
+%\item[\tiny{$\blacksquare$}] Where the thesis is based on work done by myself jointly with others, I have made clear exactly what was done by others and what I have contributed myself.
+%\\
+%\end{itemize}
+ 
+ 
+%Signed:\\
+%\rule[1em]{25em}{0.5pt}  % This prints a line for the signature
+ 
+%Date:\\
+%\rule[1em]{25em}{0.5pt}  % This prints a line to write the date
+%}
+%\clearpage  % Declaration ended, now start a new page
+
+%% ----------------------------------------------------------------
+% The "Funny Quote Page"
+\pagestyle{empty}  % No headers or footers for the following pages
+
+\null\vfill
+% Now comes the "Funny Quote", written in italics
+\textit{``We are just and advanced breed of monkeys on a minor planet of a very average star. But we can understand the Universe. That makes us something very special.''}
+
+\begin{flushright}
+Stephen Hawking
+\end{flushright}
+
+\vfill\vfill\vfill\vfill\vfill\vfill\null
+\clearpage  % Funny Quote page ended, start a new page
+%% ----------------------------------------------------------------
+
+% The Abstract Page
+\addtotoc{Abstract}  % Add the "Abstract" page entry to the Contents
+\abstract{
+\addtocontents{toc}{\vspace{1em}}  % Add a gap in the Contents, for aesthetics
+
+The study of the dynamics and mass modelling of galaxies is a very complex but beautiful branch of modern Astrophysics and Cosmology. When you follow this route it is perhaps inevitable the need of studying stellar sytems inside galaxies because they are inherent all along the way of the history and the formation and structure of galaxies themselves. This thesis work is intended to show our work on mass models of Globular Clusters in the Milky Way with our own data obtained in OPD observatory. By using spectra of the central region of the clusters we compute radial velocities of the stars to obtain information about the velocity dispersion profile thus obtaining information about the potential well responsible for the dynamics of those individual stars. With this information, aside the mass estimations given by the photometry results we can build mass models of the clusters looking for insight on the amount of dark matter present in this kind of structures, if dark matter is present at all\ldots
+
+}
+
+\clearpage  % Abstract ended, start a new page
+%% ----------------------------------------------------------------
+
+\setstretch{1.3}  % Reset the line-spacing to 1.3 for body text (if it has changed)
+
+% The Acknowledgements page, for thanking everyone
+\acknowledgements{
+\addtocontents{toc}{\vspace{1em}}  % Add a gap in the Contents, for aesthetics
+
+The acknowledgements and the people to thank go here, don't forget to include your project advisor\ldots
+
+}
+\clearpage  % End of the Acknowledgements
+%% ----------------------------------------------------------------
+
+\pagestyle{fancy}  %The page style headers have been "empty" all this time, now use the "fancy" headers as defined before to bring them back
+
+
+%% ----------------------------------------------------------------
+\lhead{\emph{Contents}}  % Set the left side page header to "Contents"
+\tableofcontents  % Write out the Table of Contents
+
+%% ----------------------------------------------------------------
+%\lhead{\emph{List of Figures}}  % Set the left side page header to "List if Figures"
+\listoffigures  % Write out the List of Figures
+
+%% ----------------------------------------------------------------
+\lhead{\emph{List of Tables}}  % Set the left side page header to "List of Tables"
+\listoftables  % Write out the List of Tables
+
+%% ----------------------------------------------------------------
+%\setstretch{1.5}  % Set the line spacing to 1.5, this makes the following tables easier to read
+%\clearpage  % Start a new page
+%\lhead{\emph{Abbreviations}}  % Set the left side page header to "Abbreviations"
+%\listofsymbols{ll}  % Include a list of Abbreviations (a table of two columns)
+%{
+% \textbf{Acronym} & \textbf{W}hat (it) \textbf{S}tands \textbf{F}or \\
+%\textbf{LAH} & \textbf{L}ist \textbf{A}bbreviations \textbf{H}ere \\
+%
+%}
+
+%% ----------------------------------------------------------------
+%\clearpage  % Start a new page
+%\lhead{\emph{Physical Constants}}  % Set the left side page header to "Physical Constants"
+%\listofconstants{lrcl}  % Include a list of Physical Constants (a four column table)
+%{
+% Constant Name & Symbol & = & Constant Value (with units) \\
+%Speed of Light & $c$ & $=$ & $2.997\ 924\ 58\times10^{8}\ \mbox{ms}^{-\mbox{s}}$ (exact)\\
+%
+%}
+
+%% ----------------------------------------------------------------
+%\clearpage  %Start a new page
+%\lhead{\emph{Symbols}}  % Set the left side page header to "Symbols"
+%\listofnomenclature{lll}  % Include a list of Symbols (a three column table)
+%{
+% symbol & name & unit \\
+%$a$ & distance & m \\
+%$P$ & power & W (Js$^{-1}$) \\
+%& & \\ % Gap to separate the Roman symbols from the Greek
+%$\omega$ & angular frequency & rads$^{-1}$ \\
+%}
+%% ----------------------------------------------------------------
+% End of the pre-able, contents and lists of things
+% Begin the Dedication page
+
+\setstretch{1.3}  % Return the line spacing back to 1.3
+
+\pagestyle{empty}  % Page style needs to be empty for this page
+\dedicatory{For/Dedicated to/To my\ldots}
+
+\addtocontents{toc}{\vspace{2em}}  % Add a gap in the Contents, for aesthetics
+
+
+%% ----------------------------------------------------------------
+\mainmatter	  % Begin normal, numeric (1,2,3...) page numbering
+\pagestyle{fancy}  % Return the page headers back to the "fancy" style
+
+% Include the chapters of the thesis, as separate files
+% Just uncomment the lines as you write the chapters
+
+\lhead{\emph{Introduction}}
+\input{Chapters/Chapter1} % Introduction
+
+\lhead{\emph{Theoretical Framework}} 
+\input{Chapters/Chapter2} % Theoretical Framework 
+
+\lhead{\emph{Obervational Procedures}}
+\input{Chapters/Chapter3} % Observational Procedures
+ 
+\lhead{\emph{Modelling}} 
+\input{Chapters/Chapter4} % Modelling
+
+\lhead{\emph{Conclusions}} 
+\input{Chapters/Chapter5} % Conclusions
+
+\begin{thebibliography}{9}
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibitem{latexcompanion} 
+Michael J. Kurtz, Douglas J. Mink. 
+\textit{RVSAO 2.0: Digital Redshifts and Radial Velocities}. 
+Harvard-Smithonian Center for Astrophysics, Cambirdge, MA 02138, 1993.
+
+\bibitem{latexcompanion} 
+Roueff F., Salati P., Tillet R. 
+\textit{The velocity dispersion profile of globular clusters: a closer look}. 
+preprint astro-ph/9707174v1.
+
+\bibitem{latexcompanion} 
+Binney J., Tremaine S.. 
+\textit{Galactic Dynamics}. 
+Princeton University Press, 1994.
+
+%http://messier.seds.org/glob.html.
+
+\end{thebibliography}
+
+\label{Bibliography}
+\lhead{\emph{Bibliography}}  % Change the left side page header to "Bibliography"
+\bibliographystyle{unsrtnat}  % Use the "unsrtnat" BibTeX style for formatting the Bibliography
+\bibliography{Bibliography}  % The references (bibliography) information are stored in the file named "Bibliography.bib"
+
+\end{document} 
+
+%% ----------------------------------------------------------------
+% Now begin the Appendices, including them as separate files
+
+%\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+
+%\appendix % Cue to tell LaTeX that the following 'chapters' are Appendices
+
+%\input{Appendices/AppendixA}	% Appendix Title
+
+%\input{Appendices/AppendixB} % Appendix Title
+
+%\input{Appendices/AppendixC} % Appendix Title
+
+%\addtocontents{toc}{\vspace{2em}}  % Add a gap in the Contents, for aesthetics
+%\backmatter
+
+%% ----------------------------------------------------------------
+
+ % The End
+%% ----------------------------------------------------------------
