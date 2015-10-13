@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.1)  12 OCT 2015 15:42
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.1)  12 OCT 2015 19:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -649,61 +649,90 @@ Chapter 2.
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
-[4
-
-] <images/m15.jpg, id=300, 903.375pt x 752.8125pt>
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no © in font cmr10!
+<images/m15.jpg, id=300, 903.375pt x 752.8125pt>
 File: images/m15.jpg Graphic file (type jpg)
  <use images/m15.jpg>
-Package pdftex.def Info: images/m15.jpg used on input line 17.
+Package pdftex.def Info: images/m15.jpg used on input line 15.
 (pdftex.def)             Requested size: 341.43306pt x 284.53246pt.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
-(Font)              using `OT1/cmr/bx/n' instead on input line 18.
+(Font)              using `OT1/cmr/bx/n' instead on input line 16.
 
-[5 <./images/m15.jpg>] [6] [7]
-<images/core_collapse.png, id=318, 496.85625pt x 459.96844pt>
+[4
+
+] [5 <./images/m15.jpg>]
+<images/3_gcs.png, id=313, 961.34157pt x 316.18124pt>
+File: images/3_gcs.png Graphic file (type png)
+ <use images/3_gcs.png>
+Package pdftex.def Info: images/3_gcs.png used on input line 41.
+(pdftex.def)             Requested size: 412.56496pt x 135.68993pt.
+
+[6 <./images/3_gcs.png>] [7] [8]
+<images/core_collapse.png, id=331, 496.85625pt x 459.96844pt>
 File: images/core_collapse.png Graphic file (type png)
 
 <use images/core_collapse.png>
-Package pdftex.def Info: images/core_collapse.png used on input line 77.
+Package pdftex.def Info: images/core_collapse.png used on input line 99.
 (pdftex.def)             Requested size: 341.43306pt x 316.08716pt.
- [8 <./images/core_collapse.png>]
-<images/anisotropy_core_collapse.png, id=328, 632.3625pt x 365.86688pt>
+ [9]
+<images/anisotropy_core_collapse.png, id=336, 632.3625pt x 365.86688pt>
 File: images/anisotropy_core_collapse.png Graphic file (type png)
 
 <use images/anisotropy_core_collapse.png>
 Package pdftex.def Info: images/anisotropy_core_collapse.png used on input line
- 89.
+ 111.
 (pdftex.def)             Requested size: 341.43306pt x 197.54842pt.
- [9 <./images/anisotropy_core_collapse.png>] <images/m55_diagram.jpg, id=333, 4
-10.18108pt x 410.18108pt>
+ [10 <./images/core_collapse.png>]
+Overfull \hbox (4.72482pt too wide) in paragraph at lines 125--126
+[]\OT1/cmr/m/n/10.95 A way of analysing the stel-lar pop-u-la-tions in Glob-u-l
+ar Clus-ters is to use Colour-Magnitude
+ []
+
+[11 <./images/anisotropy_core_collapse.png>]
+<images/m55_diagram.jpg, id=349, 410.18108pt x 410.18108pt>
 File: images/m55_diagram.jpg Graphic file (type jpg)
 
 <use images/m55_diagram.jpg>
-Package pdftex.def Info: images/m55_diagram.jpg used on input line 120.
+Package pdftex.def Info: images/m55_diagram.jpg used on input line 131.
 (pdftex.def)             Requested size: 284.52756pt x 284.53989pt.
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
- [10 <./images/m55_diagram.jpg>] [11] [12]
+ [12 <./images/m55_diagram.jpg>]
+<images/metallicity_gcs.jpg, id=354, 310.2792pt x 216.81pt>
+File: images/metallicity_gcs.jpg Graphic file (type jpg)
+
+<use images/metallicity_gcs.jpg>
+Package pdftex.def Info: images/metallicity_gcs.jpg used on input line 143.
+(pdftex.def)             Requested size: 284.52756pt x 198.83243pt.
+
+<images/orbits_gcs.jpg, id=355, 488.0634pt x 515.0442pt>
+File: images/orbits_gcs.jpg Graphic file (type jpg)
+
+<use images/orbits_gcs.jpg>
+Package pdftex.def Info: images/orbits_gcs.jpg used on input line 155.
+(pdftex.def)             Requested size: 284.52756pt x 300.27406pt.
+ [13 <./images/metallicity_gcs.jpg>] [14 <./images/orbits_gcs.jpg>] [15]
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 195.
+(amsmath)                 on input line 220.
 
-[13] [14] [15]
-<images/circular_velocity_vs_radius.png, id=379, 465.23813pt x 403.5075pt>
+[16] [17] [18]
+<images/circular_velocity_vs_radius.png, id=401, 465.23813pt x 403.5075pt>
 File: images/circular_velocity_vs_radius.png Graphic file (type png)
 
 <use images/circular_velocity_vs_radius.png>
 Package pdftex.def Info: images/circular_velocity_vs_radius.png used on input l
-ine 318.
+ine 343.
 (pdftex.def)             Requested size: 284.52756pt x 246.77954pt.
- [16 <./images/circular_velocity_vs_radius.png>]
+ [19 <./images/circular_velocity_vs_radius.png>]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no © in font cmr10!
- [17]
+ [20]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ˜ in font cmr10!
@@ -716,32 +745,32 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
- [18] <images/merger.png, id=405, 567.62062pt x 419.31656pt>
+ [21] <images/merger.png, id=426, 567.62062pt x 419.31656pt>
 File: images/merger.png Graphic file (type png)
 
 <use images/merger.png>
-Package pdftex.def Info: images/merger.png used on input line 402.
+Package pdftex.def Info: images/merger.png used on input line 427.
 (pdftex.def)             Requested size: 284.52756pt x 210.1952pt.
-) [19] (./Chapters/Chapter3.tex [20 <./images/merger.png>]
+) [22] (./Chapters/Chapter3.tex [23 <./images/merger.png>]
 Chapter 3.
 ------------------------------------------------------------------------------
  3 Observations and Analysis
 ------------------------------------------------------------------------------
-<images/opd.jpg, id=414, 66.9702pt x 55.04565pt>
+<images/opd.jpg, id=436, 66.9702pt x 55.04565pt>
 File: images/opd.jpg Graphic file (type jpg)
  <use images/opd.jpg>
 Package pdftex.def Info: images/opd.jpg used on input line 15.
 (pdftex.def)             Requested size: 284.52756pt x 233.86946pt.
- [21
+ [24
 
 ]
-<images/opd-spectrograph.jpg, id=419, 602.25pt x 401.5pt>
+<images/opd-spectrograph.jpg, id=441, 602.25pt x 401.5pt>
 File: images/opd-spectrograph.jpg Graphic file (type jpg)
 
 <use images/opd-spectrograph.jpg>
 Package pdftex.def Info: images/opd-spectrograph.jpg used on input line 25.
 (pdftex.def)             Requested size: 284.52756pt x 189.69136pt.
- [22 <./images/opd.jpg> <./images/opd-spectrograph.jpg>] <images/9.png, id=425,
+ [25 <./images/opd.jpg> <./images/opd-spectrograph.jpg>] <images/9.png, id=447,
  499.11469pt x 395.22656pt>
 File: images/9.png Graphic file (type png)
 
@@ -754,144 +783,144 @@ Missing character: There is no Â in font cmr10!
 Missing character: There is no ° in font cmr10!
 Missing character: There is no Â in font cmr10!
 Missing character: There is no ° in font cmr10!
- [23 <./images/9.png>]
-<images/opd-photometry.jpg, id=430, 770.88pt x 578.16pt>
+ [26 <./images/9.png>]
+<images/opd-photometry.jpg, id=452, 770.88pt x 578.16pt>
 File: images/opd-photometry.jpg Graphic file (type jpg)
 
 <use images/opd-photometry.jpg>
 Package pdftex.def Info: images/opd-photometry.jpg used on input line 49.
 (pdftex.def)             Requested size: 227.62204pt x 170.71451pt.
- [24 <./images/opd-photometry.jpg>] [25]
-<images/ngc_5139_dirty.png, id=440, 487.06969pt x 483.30562pt>
+ [27 <./images/opd-photometry.jpg>] [28]
+<images/ngc_5139_dirty.png, id=462, 487.06969pt x 483.30562pt>
 File: images/ngc_5139_dirty.png Graphic file (type png)
 
 <use images/ngc_5139_dirty.png>
 Package pdftex.def Info: images/ngc_5139_dirty.png used on input line 82.
 (pdftex.def)             Requested size: 196.21284pt x 194.69788pt.
 
-<images/ruido.png, id=441, 484.05844pt x 483.30562pt>
+<images/ruido.png, id=463, 484.05844pt x 483.30562pt>
 File: images/ruido.png Graphic file (type png)
  <use images/ruido.png>
 Package pdftex.def Info: images/ruido.png used on input line 87.
 (pdftex.def)             Requested size: 196.21284pt x 195.90732pt.
 
-[26 <./images/ngc_5139_dirty.png> <./images/ruido.png>]
-<images/flat_I.png, id=446, 356.83313pt x 317.68687pt>
+[29 <./images/ngc_5139_dirty.png> <./images/ruido.png>]
+<images/flat_I.png, id=468, 356.83313pt x 317.68687pt>
 File: images/flat_I.png Graphic file (type png)
  <use images/flat_I.png>
 Package pdftex.def Info: images/flat_I.png used on input line 107.
 (pdftex.def)             Requested size: 227.62204pt x 202.64993pt.
 
-[27 <./images/flat_I.png>]
-<images/NGC5139_red.png, id=451, 294.34969pt x 297.36093pt>
+[30 <./images/flat_I.png>]
+<images/NGC5139_red.png, id=473, 294.34969pt x 297.36093pt>
 File: images/NGC5139_red.png Graphic file (type png)
 
 <use images/NGC5139_red.png>
 Package pdftex.def Info: images/NGC5139_red.png used on input line 121.
 (pdftex.def)             Requested size: 227.62204pt x 229.95322pt.
- [28 <./images/NGC5139_red.png>]
-<images/mag_vs_ap_size.png, id=457, 515.67656pt x 286.82156pt>
+ [31 <./images/NGC5139_red.png>]
+<images/mag_vs_ap_size.png, id=478, 515.67656pt x 286.82156pt>
 File: images/mag_vs_ap_size.png Graphic file (type png)
 
 <use images/mag_vs_ap_size.png>
 Package pdftex.def Info: images/mag_vs_ap_size.png used on input line 133.
 (pdftex.def)             Requested size: 341.43306pt x 189.91113pt.
- [29 <./images/mag_vs_ap_size.png>]
-<images/psf.png, id=462, 480.29437pt x 359.09157pt>
+ [32 <./images/mag_vs_ap_size.png>]
+<images/psf.png, id=483, 480.29437pt x 359.09157pt>
 File: images/psf.png Graphic file (type png)
  <use images/psf.png>
 Package pdftex.def Info: images/psf.png used on input line 157.
 (pdftex.def)             Requested size: 227.62204pt x 170.18123pt.
 
-[30] <images/psf2.png, id=467, 223.58531pt x 224.33812pt>
+[33] <images/psf2.png, id=488, 223.58531pt x 224.33812pt>
 File: images/psf2.png Graphic file (type png)
 
 <use images/psf2.png>
 Package pdftex.def Info: images/psf2.png used on input line 165.
 (pdftex.def)             Requested size: 142.26378pt x 142.74408pt.
- <images/psf3.png, id=468, 191.21437pt x 213.79875pt>
+ <images/psf3.png, id=489, 191.21437pt x 213.79875pt>
 File: images/psf3.png Graphic file (type png)
 
 <use images/psf3.png>
 Package pdftex.def Info: images/psf3.png used on input line 173.
 (pdftex.def)             Requested size: 142.26378pt x 159.07309pt.
- [31 <./images/psf.png> <./images/psf2.png>] [32 <./images/psf3.png>] <images/c
-luster_dirty.png, id=477, 207.02344pt x 320.69812pt>
+ [34 <./images/psf.png> <./images/psf2.png>] [35 <./images/psf3.png>] <images/c
+luster_dirty.png, id=499, 207.02344pt x 320.69812pt>
 File: images/cluster_dirty.png Graphic file (type png)
 
 <use images/cluster_dirty.png>
 Package pdftex.def Info: images/cluster_dirty.png used on input line 212.
 (pdftex.def)             Requested size: 187.8616pt x 291.02342pt.
 
-<images/cluster_clean.png, id=478, 206.27063pt x 320.69812pt>
+<images/cluster_clean.png, id=500, 206.27063pt x 320.69812pt>
 File: images/cluster_clean.png Graphic file (type png)
 
 <use images/cluster_clean.png>
 Package pdftex.def Info: images/cluster_clean.png used on input line 217.
 (pdftex.def)             Requested size: 187.8616pt x 292.08041pt.
- [33] [34 <./images/cluster_dirty.png> <./images/cluster_clean.png>]
-<images/calib_star_apall.png, id=488, 459.21562pt x 350.05782pt>
+ [36] [37 <./images/cluster_dirty.png> <./images/cluster_clean.png>]
+<images/calib_star_apall.png, id=509, 459.21562pt x 350.05782pt>
 File: images/calib_star_apall.png Graphic file (type png)
 
 <use images/calib_star_apall.png>
 Package pdftex.def Info: images/calib_star_apall.png used on input line 250.
 (pdftex.def)             Requested size: 227.62204pt x 173.51683pt.
- [35 <./images/calib_star_apall.png>]
-<images/lamp_day1_2.png, id=493, 463.7325pt x 350.05782pt>
+ [38 <./images/calib_star_apall.png>]
+<images/lamp_day1_2.png, id=514, 463.7325pt x 350.05782pt>
 File: images/lamp_day1_2.png Graphic file (type png)
 
 <use images/lamp_day1_2.png>
 Package pdftex.def Info: images/lamp_day1_2.png used on input line 261.
 (pdftex.def)             Requested size: 187.8616pt x 141.81001pt.
 
-<images/lamp1.png, id=494, 776.9025pt x 577.40718pt>
+<images/lamp1.png, id=515, 776.9025pt x 577.40718pt>
 File: images/lamp1.png Graphic file (type png)
  <use images/lamp1.png>
 Package pdftex.def Info: images/lamp1.png used on input line 266.
 (pdftex.def)             Requested size: 187.8616pt x 139.6202pt.
 
-<images/calib_star_wave.png, id=495, 465.99094pt x 353.06906pt>
+<images/calib_star_wave.png, id=516, 465.99094pt x 353.06906pt>
 File: images/calib_star_wave.png Graphic file (type png)
 
 <use images/calib_star_wave.png>
 Package pdftex.def Info: images/calib_star_wave.png used on input line 279.
 (pdftex.def)             Requested size: 227.62204pt x 172.46121pt.
- [36 <./images/lamp_day1_2.png> <./images/lamp1.png>] [37 <./images/calib_star_
+ [39 <./images/lamp_day1_2.png> <./images/lamp1.png>] [40 <./images/calib_star_
 wave.png>]
-<images/calib_star_flux.png, id=504, 462.97969pt x 356.0803pt>
+<images/calib_star_flux.png, id=526, 462.97969pt x 356.0803pt>
 File: images/calib_star_flux.png Graphic file (type png)
 
 <use images/calib_star_flux.png>
 Package pdftex.def Info: images/calib_star_flux.png used on input line 326.
 (pdftex.def)             Requested size: 227.62204pt x 175.06767pt.
- [38]
-<images/cluster_star_flux.png, id=509, 444.91219pt x 346.29375pt>
+ [41]
+<images/cluster_star_flux.png, id=531, 444.91219pt x 346.29375pt>
 File: images/cluster_star_flux.png Graphic file (type png)
 
 <use images/cluster_star_flux.png>
 Package pdftex.def Info: images/cluster_star_flux.png used on input line 344.
 (pdftex.def)             Requested size: 227.62204pt x 177.16757pt.
- [39 <./images/calib_star_flux.png>]
-<images/bcvcor.png, id=514, 469.00218pt x 421.575pt>
+ [42 <./images/calib_star_flux.png>]
+<images/bcvcor.png, id=536, 469.00218pt x 421.575pt>
 File: images/bcvcor.png Graphic file (type png)
  <use images/bcvcor.png>
 Package pdftex.def Info: images/bcvcor.png used on input line 356.
 (pdftex.def)             Requested size: 284.52756pt x 255.7516pt.
 )
-[40 <./images/cluster_star_flux.png>] (./Chapters/Chapter4.tex [41 <./images/bc
+[43 <./images/cluster_star_flux.png>] (./Chapters/Chapter4.tex [44 <./images/bc
 vcor.png>]
 Chapter 4.
 ------------------------------------------------------------------------------
  4 Modelling
 ------------------------------------------------------------------------------
-) (./Chapters/Chapter5.tex [42
+) (./Chapters/Chapter5.tex [45
 
 ]
 Chapter 5.
 ------------------------------------------------------------------------------
  5 Conclusions
 ------------------------------------------------------------------------------
-) [43
+) [46
 
 ]
 No file Thesis.bbl.
@@ -899,7 +928,7 @@ No file Thesis.bbl.
 Package natbib Warning: There were multiply defined citations.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 241.
-[44
+[47
 
 pdfTeX warning (ext4): destination with the same identifier (name{cite.latexcom
 panion}) has been already used, duplicate ignored
@@ -924,7 +953,7 @@ Package natbib Warning: Citation(s) may have changed.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 241.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 241.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 4D0A681A8480E531DF443757B1931B2E;5488.
+(rerunfilecheck)             Checksum: E87C0D33F1BE1480F09FB24D2E4AC27B;5488.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -932,10 +961,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 241.
  ) 
 Here is how much of TeX's memory you used:
- 13265 strings out of 494985
- 188760 string characters out of 6180357
- 255530 words of memory out of 5000000
- 16107 multiletter control sequences out of 15000+600000
+ 13286 strings out of 494985
+ 189183 string characters out of 6180357
+ 256530 words of memory out of 5000000
+ 16119 multiletter control sequences out of 15000+600000
  17336 words of font info for 64 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  49i,14n,45p,13209b,403s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -958,10 +987,10 @@ st/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/symbols/msam10.pfb>
-Output written on Thesis.pdf (53 pages, 4248546 bytes).
+Output written on Thesis.pdf (56 pages, 5519399 bytes).
 PDF statistics:
- 637 PDF objects out of 1000 (max. 8388607)
- 527 compressed objects within 6 object streams
- 147 named destinations out of 1000 (max. 500000)
- 405 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 660 PDF objects out of 1000 (max. 8388607)
+ 544 compressed objects within 6 object streams
+ 153 named destinations out of 1000 (max. 500000)
+ 420 words of extra memory for PDF output out of 10000 (max. 10000000)
 
