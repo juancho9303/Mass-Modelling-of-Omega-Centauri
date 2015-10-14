@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.1)  12 OCT 2015 19:07
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.1)  14 OCT 2015 11:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -749,7 +749,7 @@ Missing character: There is no ™ in font cmr10!
 File: images/merger.png Graphic file (type png)
 
 <use images/merger.png>
-Package pdftex.def Info: images/merger.png used on input line 427.
+Package pdftex.def Info: images/merger.png used on input line 429.
 (pdftex.def)             Requested size: 284.52756pt x 210.1952pt.
 ) [22] (./Chapters/Chapter3.tex [23 <./images/merger.png>]
 Chapter 3.
