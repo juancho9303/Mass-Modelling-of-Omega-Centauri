@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.1)  14 OCT 2015 11:03
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.1)  16 OCT 2015 11:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -729,10 +729,10 @@ File: images/circular_velocity_vs_radius.png Graphic file (type png)
 Package pdftex.def Info: images/circular_velocity_vs_radius.png used on input l
 ine 343.
 (pdftex.def)             Requested size: 284.52756pt x 246.77954pt.
- [19 <./images/circular_velocity_vs_radius.png>]
+ [19 <./images/circular_velocity_vs_radius.png>] [20]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no © in font cmr10!
- [20]
+ [21]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ˜ in font cmr10!
@@ -745,11 +745,11 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
- [21] <images/merger.png, id=426, 567.62062pt x 419.31656pt>
+ <images/merger.png, id=426, 567.62062pt x 419.31656pt>
 File: images/merger.png Graphic file (type png)
 
 <use images/merger.png>
-Package pdftex.def Info: images/merger.png used on input line 429.
+Package pdftex.def Info: images/merger.png used on input line 431.
 (pdftex.def)             Requested size: 284.52756pt x 210.1952pt.
 ) [22] (./Chapters/Chapter3.tex [23 <./images/merger.png>]
 Chapter 3.
@@ -987,7 +987,7 @@ st/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/symbols/msam10.pfb>
-Output written on Thesis.pdf (56 pages, 5519399 bytes).
+Output written on Thesis.pdf (56 pages, 5519928 bytes).
 PDF statistics:
  660 PDF objects out of 1000 (max. 8388607)
  544 compressed objects within 6 object streams
