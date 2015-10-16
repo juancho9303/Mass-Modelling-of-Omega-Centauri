@@ -354,14 +354,12 @@ In the context of stellar systems, collision refers to any interaction between i
 
 One of the other approximations we make is that the orbits of stars in the system can be determined by assuming that the mass of the Globular Cluster is distributed smoothly in space, rather than concentrated in certain positions as point masses. The true orbits deviate significantly from this approximated model, but in systems with more than a few thousand stars like a globular cluster (that can easily reach hundreds of thousands or millions of stars), the deviation is small for a time smaller than the relaxation time $t_{relax}$ that is much larger than the crossing time $t_{cross}$.
 
+As a star moves through a stellar system, it will feel the gravitational force due to all other stars. We want to determine if the motion of the stars is mainly determined by the average gravitational force of all other stars combined, or if it is mostly sensitive to the force due to near stars, in order to do this we must  
+
 relaxation usually means the return of a perturbed system into equilibrium
 
 Stellar encounters lead to dynamical relaxation, wheby
 the system is in a thermal equilibrium. 
-
-Define this as
-the relaxation time - time required for the star to lose all memory
-of its initial orbit.
 
 crossing time:
 
@@ -374,6 +372,13 @@ The relaxation time in terms of the crossing time is:
 \begin{equation}
 t_{relax}=\frac{N}{6ln(N)}t_{cr}
 \end{equation}
+
+\begin{equation}
+t_{c}\ll t_{r}\ll t_{e}
+\end{equation}
+
+GCs represent an interesting class of dynamical stellar systems in which
+various dynamical processes take place on timescales shorter then the age of the universe.
 
 \begin{equation}
 \dfrac{df}{dt}=0
