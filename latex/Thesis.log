@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.1)  16 OCT 2015 11:39
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.1)  16 OCT 2015 13:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -745,13 +745,13 @@ Missing character: There is no ˜ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
- <images/merger.png, id=425, 567.62062pt x 419.31656pt>
+ [22]
+<images/merger.png, id=431, 567.62062pt x 419.31656pt>
 File: images/merger.png Graphic file (type png)
-
-<use images/merger.png>
-Package pdftex.def Info: images/merger.png used on input line 431.
+ <use images/merger.png>
+Package pdftex.def Info: images/merger.png used on input line 435.
 (pdftex.def)             Requested size: 284.52756pt x 210.1952pt.
-) [22] (./Chapters/Chapter3.tex [23 <./images/merger.png>]
+) (./Chapters/Chapter3.tex [23 <./images/merger.png>]
 Chapter 3.
 ------------------------------------------------------------------------------
  3 Observations and Analysis
@@ -952,15 +952,9 @@ Package natbib Warning: Citation(s) may have changed.
 )
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 241.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 241.
+Package rerunfilecheck Info: File `Thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 10274E3571277511310231BC518F8DDA;5493.
 
-
-Package rerunfilecheck Warning: File `Thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Thesis.out':
-(rerunfilecheck)             Before: E87C0D33F1BE1480F09FB24D2E4AC27B;5488
-(rerunfilecheck)             After:  10274E3571277511310231BC518F8DDA;5493.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -993,7 +987,7 @@ st/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/symbols/msam10.pfb>
-Output written on Thesis.pdf (56 pages, 5520892 bytes).
+Output written on Thesis.pdf (56 pages, 5521615 bytes).
 PDF statistics:
  660 PDF objects out of 1000 (max. 8388607)
  544 compressed objects within 6 object streams
