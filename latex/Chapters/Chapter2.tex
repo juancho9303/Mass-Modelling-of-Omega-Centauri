@@ -350,11 +350,30 @@ The next step in the analysis of the dynamics and stability of Globular Clusters
 
 The problem of modelling the structure and dynamics of Globular Clusters is not trivial whatsoever. Several assumptions and physical approaches need to be made to simplify the problem and reach results that fit the observational data. One of the main assumptions is that the stellar systems that we will study are \textbf{collisionless}. This assumption not only reduces the problem of determining the functional form of the position and velocities of the stars but also has strong physical reasons that must be mentioned.
 
-In this context, collision refers to any interaction between individual particles, such as direct encounters, gravitational assistance, sudden disruption of the orbit, or any interaction that changes the stars orbit in a significant way. That the system is collisionless refers to a system in which the interaction cross-section between particles (stars in this case) is so low that collisions between particles have no significant effect on the system, and that the dominant component of the dynamics is the potential well produced by the system as a whole.  
+In the context of stellar systems, collision refers to any interaction between individual particles, such as direct encounters, gravitational assistance, sudden disruption of the orbit, or any interaction that changes the stars orbit in a significant way. That the system is collisionless means that it is a system in which the interaction cross-section between particles (stars in this case) is so low that collisions between particles have no significant effect on the system, and that the dominant component of the dynamics is the potential well produced by the system as a whole.  
 
-We use the approximation that the calculations of the orbits of stars could be determined by assuming that the mass of the GC is distributed smoothly in space, rather than concentrated in certain positions as point masses. The true orbits deviate significantly from this approximated model, but in systems with more than a few thousand stars like a globular cluster (that can easily reach hundreds of thousands or millions of stars), the deviation is small for a time smaller than the relaxation time $t_{relax}$ that is much larger than the crossing time $t_{cross}$.
+One of the other approximations we make is that the orbits of stars in the system can be determined by assuming that the mass of the Globular Cluster is distributed smoothly in space, rather than concentrated in certain positions as point masses. The true orbits deviate significantly from this approximated model, but in systems with more than a few thousand stars like a globular cluster (that can easily reach hundreds of thousands or millions of stars), the deviation is small for a time smaller than the relaxation time $t_{relax}$ that is much larger than the crossing time $t_{cross}$.
 
+relaxation usually means the return of a perturbed system into equilibrium
 
+Stellar encounters lead to dynamical relaxation, wheby
+the system is in a thermal equilibrium. 
+
+Define this as
+the relaxation time - time required for the star to lose all memory
+of its initial orbit.
+
+crossing time:
+
+\begin{equation}
+t_{cross}=\frac{R}{V}=\frac{6ln(N)}{N}v^{2}
+\end{equation}
+
+The relaxation time in terms of the crossing time is:
+
+\begin{equation}
+t_{relax}=\frac{N}{6ln(N)}t_{cr}
+\end{equation}
 
 \begin{equation}
 \dfrac{df}{dt}=0
@@ -424,7 +443,7 @@ where the index $i$ refers to the different stellar species, and $E_{p}$ is the 
 
 Efforts are under way by several groups to produce more realistic simulations that properly include the effects
 of star formation, but the existing results suggest that the first star formation may occur in gas that has become highly condensed at the centers of the first dark-matter halos to form; even though such systems may not closely resemble most present-day galaxies, they may still be of interest as the possible birth sites
-of globular clusters, as will be discussed further below. The most realistic simulations of the formation of a spiral galaxy like our own have been made by Katz (1992) and Steinmetz \& Muller (1994, 1995), who have simulated the evolution of a spherical galaxy-sized piece of a standard ‘cold dark matter’ universe which is arbitrarily given the appropriate amount of angular momentum. The results show an initial chaotic stage during which mergers between clumps build up a dark halo and a stellar spheroid, followed by a period during which the remaining gas organizes itself into a disk. During the initial chaotic stage several small satellites are formed by the condensation of gas in peripheral dark-matter clumps, and these satellites may survive for a few
+of globular clusters, as will be discussed further below. The most realistic simulations of the formation of a spiral galaxy like our own have been made by Katz (1992) and Steinmetz \& Muller (1994, 1995), who have simulated the evolution of a spherical galaxy-sized piece of a standard "cold dark matter" universe which is arbitrarily given the appropriate amount of angular momentum. The results show an initial chaotic stage during which mergers between clumps build up a dark halo and a stellar spheroid, followed by a period during which the remaining gas organizes itself into a disk. During the initial chaotic stage several small satellites are formed by the condensation of gas in peripheral dark-matter clumps, and these satellites may survive for a few
 orbits before being disrupted and merged into the forming galaxy. It is plausible that such small satellites could be the birth sites of globular clusters, as in the hypothesis of Searle (1977) and Searle \& Zinn (1978) that the globular clusters in the outer halo of our Galaxy were formed in protogalactic ‘fragments’ which
 survived for a time as independent star-forming systems before being merged to build up the halo
 

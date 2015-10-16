@@ -14,23 +14,23 @@
 \contentsline {section}{\numberline {2.2}Mass models and Dynamics}{14}{section.22}
 \contentsline {subsection}{\numberline {2.2.1}Potential Theory of Spherical Systems}{15}{subsection.23}
 \contentsline {subsection}{\numberline {2.2.2}Collisionless Systems}{20}{subsection.46}
-\contentsline {subsection}{\numberline {2.2.3}Dynamics}{20}{subsection.48}
-\contentsline {section}{\numberline {2.3}Scenario and Observations}{21}{section.56}
-\contentsline {section}{\numberline {2.4}Simulations}{22}{section.59}
-\contentsline {chapter}{\numberline {3}Observations and Analysis}{24}{chapter.61}
-\contentsline {section}{\numberline {3.1}Observational Procedures}{24}{section.62}
-\contentsline {subsection}{\numberline {3.1.1}Spectroscopic Data}{25}{subsection.64}
-\contentsline {subsection}{\numberline {3.1.2}Photometric Data}{27}{subsection.67}
-\contentsline {section}{\numberline {3.2}First step for Anaysis}{28}{section.69}
-\contentsline {section}{\numberline {3.3}Photometry}{29}{section.70}
-\contentsline {subsection}{\numberline {3.3.1}Aperture Photometry}{30}{subsection.73}
-\contentsline {subsection}{\numberline {3.3.2}PSF Photometry}{32}{subsection.76}
-\contentsline {section}{\numberline {3.4}Spectroscopy}{35}{section.80}
-\contentsline {subsection}{\numberline {3.4.1}Spectroscopic Reduction}{35}{subsection.81}
-\contentsline {subsection}{\numberline {3.4.2}Extraction}{37}{subsection.83}
-\contentsline {subsection}{\numberline {3.4.3}Wavelength Calibration}{39}{subsection.85}
-\contentsline {subsection}{\numberline {3.4.4}Flux Calibration}{40}{subsection.88}
-\contentsline {section}{\numberline {3.5}RVSAO and radial velocity determination}{43}{section.91}
-\contentsline {chapter}{\numberline {4}Modelling}{45}{chapter.93}
-\contentsline {chapter}{\numberline {5}Conclusions}{46}{chapter.94}
-\contentsline {chapter}{Bibliography}{47}{chapter*.95}
+\contentsline {subsection}{\numberline {2.2.3}Dynamics}{21}{subsection.50}
+\contentsline {section}{\numberline {2.3}Scenario and Observations}{22}{section.58}
+\contentsline {section}{\numberline {2.4}Simulations}{23}{section.61}
+\contentsline {chapter}{\numberline {3}Observations and Analysis}{25}{chapter.63}
+\contentsline {section}{\numberline {3.1}Observational Procedures}{25}{section.64}
+\contentsline {subsection}{\numberline {3.1.1}Spectroscopic Data}{26}{subsection.66}
+\contentsline {subsection}{\numberline {3.1.2}Photometric Data}{28}{subsection.69}
+\contentsline {section}{\numberline {3.2}First step for Anaysis}{29}{section.71}
+\contentsline {section}{\numberline {3.3}Photometry}{30}{section.72}
+\contentsline {subsection}{\numberline {3.3.1}Aperture Photometry}{31}{subsection.75}
+\contentsline {subsection}{\numberline {3.3.2}PSF Photometry}{33}{subsection.78}
+\contentsline {section}{\numberline {3.4}Spectroscopy}{36}{section.82}
+\contentsline {subsection}{\numberline {3.4.1}Spectroscopic Reduction}{36}{subsection.83}
+\contentsline {subsection}{\numberline {3.4.2}Extraction}{38}{subsection.85}
+\contentsline {subsection}{\numberline {3.4.3}Wavelength Calibration}{40}{subsection.87}
+\contentsline {subsection}{\numberline {3.4.4}Flux Calibration}{41}{subsection.90}
+\contentsline {section}{\numberline {3.5}RVSAO and radial velocity determination}{44}{section.93}
+\contentsline {chapter}{\numberline {4}Modelling}{46}{chapter.95}
+\contentsline {chapter}{\numberline {5}Conclusions}{47}{chapter.96}
+\contentsline {chapter}{Bibliography}{48}{chapter*.97}
