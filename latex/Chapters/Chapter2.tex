@@ -352,7 +352,7 @@ The problem of modelling the structure and dynamics of Globular Clusters is not 
 
 In the context of stellar systems, collision refers to any interaction between individual particles, such as direct encounters, gravitational assistance, sudden disruption of the orbit, or any interaction that changes the stars orbit in a significant way. That the system is collisionless means that it is a system in which the interaction cross-section between particles (stars in this case) is so low that collisions between particles have no significant effect on the system so that the dominant component of the dynamics is the potential well produced by the system as a whole.  
 
-One of the other approximations we make is that the orbits of stars in the system can be determined by assuming that the mass of the Globular Cluster is distributed smoothly in space, rather than concentrated in certain positions as point masses. The true orbits deviate significantly from this approximated model, but in systems with more than a few thousand stars like a globular cluster (that can easily reach hundreds of thousands or millions of stars), the deviation is small. 
+One of the other approximations we make is that the orbits of stars in the system can be determined by assuming that the mass of the Globular Cluster is distributed smoothly in space, rather than concentrated in certain positions as point masses. The true orbits deviate significantly from this approximated model, but in systems with more than a few thousand stars like a globular cluster (that can easily reach hundreds of thousands or millions of stars), the deviation is small and the potential and mass distribution can be approximate as continuous functions. 
 
 As a star moves through a stellar system, it will feel the gravitational force due to all other stars. We want to determine if the motion of the stars is mainly determined by the average gravitational force of all other stars combined, or if it is mostly sensitive to the force due to near stars, in order to do this we must refer to some parameters of time that we properly define like \textbf{relaxation} and \textbf{crossing} time. 
 
@@ -370,20 +370,32 @@ The relaxation time in terms of the crossing time and the number of stars $N$ is
 t_{relax}=\frac{N}{8ln(N)}t_{cr}
 \end{equation}
 
-As these quantities parametrize the interactions between stars, their values really give us a strong idea on how the dynamics can be modelled, as it was mentioned before, for a typical Globular Cluster, the evolution time $t_{evo}$ is usually much larger than the relaxing time which is much larger than the crossing time, so the interaction between stars is not as dominant as for smaller stellar systems and we can use the approximation that the system is collisionless.
+As these quantities parametrize the interactions between stars, their values really give us a strong idea on how the dynamics can be modelled, as it was mentioned before, for a typical Globular Cluster, the evolution time $t_{evo}$ is usually much larger than the relaxing time which is much larger than the crossing time, so the effects of the interaction between stars is minimal and we can use the approximation that the system is collisionless.
 
 \begin{equation}
 t_{cross}\ll t_{relax}\ll t_{evo}
 \end{equation}
 
-GCs still represent an interesting class of dynamical stellar systems in which various dynamical processes take place on timescales shorter then the age of the universe, but for our purposes, these times are long enough to give us good confidence on the collisionless systems approximation.
-
 \subsection{Dynamics}
 
-(Collisionless Boltzmann equation, Distribution Function, Jeans equations)
+Using the approximations we just mentioned, the dynamics of stars in Globular Systems can be solved assuming that the those stars are moving under a smooth potential $\phi (x,y,z,t)$ and that at any time $t$ a full description of the state of these systems is given by specifying a function of the number of stars with their position and velocities $f(x,y,z,v_{x},v_{y},v_{z},t)$ or $f(\vec{\textbf{x}},\vec{\textbf{v}},t)$ which is called the distribution function of phase space density because it is given in the phase space. This function is the number of stars in volume $d\vec{x}$ with velocities in range $d\vec{v}$ (centered on $\vec{x},\vec{v}$).
+
+This flow of points (or stars) of $f$ is incompressible in the phase space (the density remains conserved along a flow-line) so that
 
 \begin{equation}
 \frac{df}{dt}=0
+\end{equation}
+
+To infer properly the equation above and understand the time evolution, we define a coordinate $\vec{w}$ for the stars in phase space:
+
+\begin{equation}
+\vec{w}\equiv (\vec{x},\vec{v})\equiv (w_{1},w_{2},...w_{6})
+\end{equation}
+
+The flow of the star is given by 
+
+\begin{equation}
+\dot{\vec{w}}= (\dot{\vec{x}},\dot{\vec{v}})=(\vec{v},-\vec{\nabla} \Phi)
 \end{equation}
 
 \begin{equation}
