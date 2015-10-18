@@ -12,21 +12,21 @@
 \contentsline {subsection}{\numberline {2.1.2}Formation and evolution}{7}{subsection.15}
 \contentsline {subsection}{\numberline {2.1.3}Observational Properties}{11}{subsection.18}
 \contentsline {section}{\numberline {2.2}Mass models and Dynamics}{15}{section.23}
-\contentsline {subsection}{\numberline {2.2.1}Potential Theory of Spherical Systems}{16}{subsection.24}
+\contentsline {subsection}{\numberline {2.2.1}Potential Theory of Spherical Systems}{15}{subsection.24}
 \contentsline {subsection}{\numberline {2.2.2}Collisionless Systems}{20}{subsection.47}
 \contentsline {subsection}{\numberline {2.2.3}Dynamics}{22}{subsection.51}
-\contentsline {section}{\numberline {2.3}Scenario and Observations}{26}{section.70}
-\contentsline {section}{\numberline {2.4}Simulations}{27}{section.73}
+\contentsline {section}{\numberline {2.3}Scenario and Observations}{25}{section.70}
+\contentsline {section}{\numberline {2.4}Simulations}{26}{section.73}
 \contentsline {chapter}{\numberline {3}Observations and Analysis}{29}{chapter.75}
 \contentsline {section}{\numberline {3.1}Observational Procedures}{29}{section.76}
 \contentsline {subsection}{\numberline {3.1.1}Spectroscopic Data}{30}{subsection.78}
 \contentsline {subsection}{\numberline {3.1.2}Photometric Data}{32}{subsection.81}
 \contentsline {section}{\numberline {3.2}First step for Anaysis}{33}{section.83}
 \contentsline {section}{\numberline {3.3}Photometry}{34}{section.84}
-\contentsline {subsection}{\numberline {3.3.1}Aperture Photometry}{35}{subsection.87}
-\contentsline {subsection}{\numberline {3.3.2}PSF Photometry}{37}{subsection.90}
+\contentsline {subsection}{\numberline {3.3.1}Aperture Photometry}{36}{subsection.87}
+\contentsline {subsection}{\numberline {3.3.2}PSF Photometry}{38}{subsection.90}
 \contentsline {section}{\numberline {3.4}Spectroscopy}{40}{section.94}
-\contentsline {subsection}{\numberline {3.4.1}Spectroscopic Reduction}{40}{subsection.95}
+\contentsline {subsection}{\numberline {3.4.1}Spectroscopic Reduction}{41}{subsection.95}
 \contentsline {subsection}{\numberline {3.4.2}Extraction}{42}{subsection.97}
 \contentsline {subsection}{\numberline {3.4.3}Wavelength Calibration}{44}{subsection.99}
 \contentsline {subsection}{\numberline {3.4.4}Flux Calibration}{45}{subsection.102}
