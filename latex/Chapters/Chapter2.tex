@@ -350,39 +350,33 @@ The next step in the analysis of the dynamics and stability of Globular Clusters
 
 The problem of modelling the structure and dynamics of Globular Clusters is not trivial whatsoever. Several assumptions and physical approaches need to be made to simplify the problem and reach results that fit the observational data. One of the main assumptions is that the stellar systems that we will study are \textbf{collisionless}. This assumption not only reduces the problem of determining the functional form of the position and velocities of the stars but also has strong physical reasons that must be mentioned.
 
-In the context of stellar systems, collision refers to any interaction between individual particles, such as direct encounters, gravitational assistance, sudden disruption of the orbit, or any interaction that changes the stars orbit in a significant way. That the system is collisionless means that it is a system in which the interaction cross-section between particles (stars in this case) is so low that collisions between particles have no significant effect on the system, and that the dominant component of the dynamics is the potential well produced by the system as a whole.  
+In the context of stellar systems, collision refers to any interaction between individual particles, such as direct encounters, gravitational assistance, sudden disruption of the orbit, or any interaction that changes the stars orbit in a significant way. That the system is collisionless means that it is a system in which the interaction cross-section between particles (stars in this case) is so low that collisions between particles have no significant effect on the system so that the dominant component of the dynamics is the potential well produced by the system as a whole.  
 
-One of the other approximations we make is that the orbits of stars in the system can be determined by assuming that the mass of the Globular Cluster is distributed smoothly in space, rather than concentrated in certain positions as point masses. The true orbits deviate significantly from this approximated model, but in systems with more than a few thousand stars like a globular cluster (that can easily reach hundreds of thousands or millions of stars), the deviation is small for a time smaller than the relaxation time $t_{relax}$ that is much larger than the crossing time $t_{cross}$.
+One of the other approximations we make is that the orbits of stars in the system can be determined by assuming that the mass of the Globular Cluster is distributed smoothly in space, rather than concentrated in certain positions as point masses. The true orbits deviate significantly from this approximated model, but in systems with more than a few thousand stars like a globular cluster (that can easily reach hundreds of thousands or millions of stars), the deviation is small. 
 
-As a star moves through a stellar system, it will feel the gravitational force due to all other stars. We want to determine if the motion of the stars is mainly determined by the average gravitational force of all other stars combined, or if it is mostly sensitive to the force due to near stars, in order to do this we must  
+As a star moves through a stellar system, it will feel the gravitational force due to all other stars. We want to determine if the motion of the stars is mainly determined by the average gravitational force of all other stars combined, or if it is mostly sensitive to the force due to near stars, in order to do this we must refer to some parameters of time that we properly define like \textbf{relaxation} and \textbf{crossing} time. 
 
-relaxation usually means the return of a perturbed system into equilibrium
+Relaxation usually means the return of a perturbed system into equilibrium. In the clusters, stellar encounters eventually lead to dynamical relaxation, until we say that the system is in a thermal equilibrium. 
 
-Stellar encounters lead to dynamical relaxation, wheby
-the system is in a thermal equilibrium. 
-
-crossing time:
+The crossing time refers to the typical time that would take to a star to cross the whole system, in terms of the number of stars $N$ of the system, this time is:
 
 \begin{equation}
-t_{cross}=\frac{R}{V}=\frac{6ln(N)}{N}v^{2}
+t_{cross}=\frac{R}{V}=\frac{8ln(N)}{N}v^{2}
 \end{equation}
 
 The relaxation time in terms of the crossing time is:
 
 \begin{equation}
-t_{relax}=\frac{N}{6ln(N)}t_{cr}
+t_{relax}=\frac{N}{8ln(N)}t_{cr}
 \end{equation}
+
+As these quantities parametrize the interactions between stars, their values really give us a strong idea on how the dynamics can be modelled, as it was mentioned before, for a typical Globular Cluster, the evolution time $t_{evo}$ is usually much larger than the relaxing time which is much larger than the crossing time, so the interaction between stars is not as dominant as for smaller stellar systems and we can use the approximation that the system is collisionless.
 
 \begin{equation}
-t_{c}\ll t_{r}\ll t_{e}
+t_{cross}\ll t_{relax}\ll t_{evo}
 \end{equation}
 
-GCs represent an interesting class of dynamical stellar systems in which
-various dynamical processes take place on timescales shorter then the age of the universe.
-
-\begin{equation}
-\dfrac{df}{dt}=0
-\end{equation}
+GCs still represent an interesting class of dynamical stellar systems in which various dynamical processes take place on timescales shorter then the age of the universe, but for our purposes, these times are long enough to give us good confidence on the collisionless systems approximation.
 
 \subsection{Dynamics}
 
