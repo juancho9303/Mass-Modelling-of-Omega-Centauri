@@ -398,38 +398,109 @@ The flow of the star is given by
 \dot{\vec{w}}= (\dot{\vec{x}},\dot{\vec{v}})=(\vec{v},-\vec{\nabla} \Phi)
 \end{equation}
 
+The flow $\dot{\vec{v}}$ conserves stars so we have the continuity equation:
+
+\begin{equation}
+\frac{\partial f}{\partial t}+\sum_{\alpha=1}^{6}\frac{\partial (f\dot{w}_{\alpha})}{\partial w_{\alpha}}=0
+\end{equation}
+
+Using the chain rule for $w$ our continuity equation explicitily in terms of the position and velicities is:
+
 \begin{equation}
 \frac{\partial f}{\partial t}+\sum_{i=1}^{3}\frac{\partial f}{\partial x_{i}}\dot{x_{i}}+\sum_{i=1}^{3}\frac{\partial f}{\partial v_{i}}\dot{v_{i}}=0
 \end{equation}
 
+It is more useful to use the derivative of the velocity in terms of the potential with the relation $\dot{v_{i}}=-\partial\phi / \partial x_{i}$ as:
 
 \begin{equation}
-\dot{v_{i}}=-\frac{\partial\phi}{\partial x_{i}}
+\frac{\partial f}{\partial t}+\sum_{i=1}^{3}\frac{\partial f}{\partial x_{i}}v_{i}-\sum_{i=1}^{3}\frac{\partial f}{\partial v_{i}}\frac{\partial\phi}{\partial x_{i}}=0
 \end{equation}
+
+or
 
 \begin{equation}
-\frac{\partial f}{\partial t}+\nabla f\cdot\vec{v}+\frac{\partial f}{\partial\overrightarrow{v}}\cdot\nabla\phi=0
+\frac{\partial f}{\partial t}+\nabla f\cdot\vec{v}-\frac{\partial f}{\partial\overrightarrow{v}}\cdot\nabla\phi=0
 \end{equation}
 
-Moment of order $j$ of the distribution $f$
+These equations are the Collisionless Boltzmann Equations (CEB) and they are sufficient to calculate the evolution of any distribution function $f$ with time. As the CBE is a very complicated equation of 7 variables, its solution is a challenging task and some assumptions and creative methods have been developed for its solutions, one of them refers to the moments of the distribution function and the other is based on the Jeans theorem.
+
+The moments approximation consists of considering that if the dependence of the phase space density upon velocity is relatively smooth and free of singularities, one can collapse the 6-dimensional phase space density into a set of functions of 3-dimensional position by taking moments of the velocities. First, let's note that the moment of order $j$ of the distribution $f$ is
 
 \begin{equation}
-\overline{x^{j}}=\frac{\int x^{j}fdx}{fdx}
+\overline{x^{j}}=\frac {\int x^{j}fdx}{\int fdx}
 \end{equation}
 
-velocity dispersion tensor:
+We can define functions for the characterization of the distribution function on terms of one of its variables:
+
+\begin{equation}
+\nu(\vec{\textbf{x}})\equiv \int f(\vec{\textbf{x}},\vec{\textbf{v}})d^{3}v\quad\quad or \quad\quad  \xi(\vec{\textbf{x}})\equiv \int f(\vec{\textbf{x}},\vec{\textbf{v}})d^{3}x
+\end{equation}
+
+So that the zeroth moment of the velocity is just the number density $\nu(\vec{\textbf{x}})$ and for each of three velocity components the first moment gives a mean velocity:
+
+\begin{equation}
+\bar{v_{i}}(\vec{\textbf{x}})\equiv \frac{1}{\nu(\vec{\textbf{x}})}\int v_{i}f(\vec{\textbf{x}},\vec{\textbf{v}})d^{3}\vec{v}
+\end{equation}
+
+Likewise, we can define higher order moments with combinations of powrs of the three velocity components. The second moments give a really important and useful quantity related to the \textbf{velocity dispersion tensor} $\sigma^{2}_{ij}$
+
+\begin{equation}
+\overline{v_{i}v_{j}}(\vec{\textbf{x}})\equiv \frac{1}{\nu(\vec{\textbf{x}})}\int v_{i}v_{j}f(\vec{\textbf{x}},\vec{\textbf{v}})d^{3}\vec{v}=\sigma^{2}
+_{ij}+\bar{v_{i}}\bar{v_{j}}
+\end{equation}
+
+The velocity dispersion tensor which will be fundamental in the mass modelling is thus defined as:
 
 \begin{equation}
 \sigma_{ij}^{2}=\overline{v_{i}v_{j}}-\overline{v_{i}}\:\overline{v_{j}}
 \end{equation}
 
-Anisotropy parameter:
+There is quite some observational support that ideally the velocity distribution functions are reasonably well described by the low order moments; a density and a set of low order moments may therefore give a reasonably complete description of a galaxy or a Globular Cluster. 
+
+Now to find the Jeans equations and show a different approach for the solution of the CBE we need to manipulate the results for the moments of the DF. By multiplying the CBE by powers of the velocity components, and integrating over velocity space we obtain a series of differential equations for the various velocity components on the zeroth moment, we have (using Einstein's notation of summation):
+
+\begin{equation}
+\int \frac{\partial f}{\partial t}d^{3}\vec{v}+ \int v_{i}\frac{\partial f}{\partial x_{i}} d^{3}\vec{v}- \frac{\partial\Phi}{\partial x_{i}}\int \frac{\partial f}{\partial v_{}i} d^{3}\vec{v}= 0
+\end{equation}
+
+Using the divergence theorem for the last term and replacing by the definitions of $\nu(x)$ and $\overline{v}_{i}\nu(x)$ we get:
+
+\begin{equation}
+\frac{\partial}{\partial t}\nu+\frac{\partial}{\partial x_{i}}(\nu \overline{v}_{i})=0
+\end{equation}
+
+Which looks just like a standard 3-D continuity equation. Now, we do the same procedure for the first moment, (again taking the spatial and temporal derivatives outside the velocity integrals) and integrating by pats and expressing the results in terms of our average velocities:
+
+\begin{equation}
+\frac{\partial}{\partial t}(\nu \overline{v}_{j})+\frac{\partial}{\partial x_{i}}(\nu \overline{v_{i}v_{j}})+\frac{\partial \Phi}{\partial x_{i}}\int f\frac{\partial v_{j}}{\partial v_{i}}d^{3}\vec{v}=0
+\end{equation} 
+
+The last term on the left hand side becomes $\nu \delta_{ij}$ in an orthogonal coordinate system. So applying the product rule and our continuity equation to the first term we get
+
+\begin{equation}
+\nu \frac{\partial \overline{v}_{j}}{\partial t}-\overline{v}_{j}\frac{\partial}{\partial x_{i}}(\nu \overline{v}_{j})+\frac{\partial}{\partial x_{i}}[\nu(\sigma_{ij}^{2}+\overline{v}_{i}\overline{v}_{j})]=-\nu \overline{v}_{i}\frac{\partial \Phi}{\partial x_{j}}
+\end{equation}
+
+Where we used the relation between the second moments and the velocity dispersion, finally differentiating the second term on the left hand side, part of the result cancels part of the third term and we arrive to the \textbf{Jeans' equations} for a collisionless fluid
+
+\begin{equation}
+\begin{aligned}	
+	\nu \frac{\partial \overline{v}_j}{\partial t} + \overline{v}_i\nu \frac{\partial\overline{v}_j}{\partial x_{i}} &= -\nu \frac{\Phi}{\partial x_{j}}-\frac{\partial}{\partial x_{i}}(\nu \sigma_{ij}^{2})\quad\quad (j=1,2,3) \\     acceleration + viscosity &= gravity + pressure
+	\end{aligned}
+\end{equation}
+
+One important use of the Jeans' equations is to calculate the number density and potential self-consistently, assuming
+a given model for the velocity dispersion.
+
+The Jeans theorem states that any steady state solution of the CBE depends on the phase-space coordinates $(x,v)$ only through integrals of motion in a static potential, and any function of the integrals yields a steady state solution of the CBE. The value of this theorem is that it gives us a way of closing the loop for solving the Boltzmann equation. 
+
+Finally, it is important to introduce a useful parameter called the \textbf{Anisotropy parameter} $\beta$ which gives us information about the preferred directions of the stars in the system, if there are any. In spherical coordinates the anisotropy parameter is
 
 \begin{equation}
 \beta=1-\frac{\left(\sigma_{\theta}^{2}+\sigma_{\phi}^{2}\right)}{2\sigma_{r}^{2}}
 \end{equation}
 
-When $\beta=1$ total anisotropy
+If $\beta=0$, then $\overline{v}_{r}^{2}=\overline{v}_{\phi}^{2}=\overline{v}_{\theta}^{2}$ and we have zero anisotropy (there are no preferred directions for the stars in the system and the velocity dispersion tensor is completely symmetric) as in the ideal case of a spherical system in equilibrium. On the other hand, when $\beta=1$ we have that the system has total anisotropy.
 
 \section{Scenario and Observations}
 
