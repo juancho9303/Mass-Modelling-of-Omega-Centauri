@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.1)  18 OCT 2015 21:51
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.1)  26 OCT 2015 18:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -494,6 +494,9 @@ Package natbib Warning: Citation `latexcompanion' multiply defined.
 
 Package natbib Warning: Citation `latexcompanion' multiply defined.
 
+
+Package natbib Warning: Citation `latexcompanion' multiply defined.
+
 )
 \openout1 = `Thesis.aux'.
 
@@ -924,7 +927,7 @@ Package pdftex.def Info: images/cluster_star_flux.png used on input line 376.
 <images/bcvcor.png, id=584, 469.00218pt x 421.575pt>
 File: images/bcvcor.png Graphic file (type png)
  <use images/bcvcor.png>
-Package pdftex.def Info: images/bcvcor.png used on input line 388.
+Package pdftex.def Info: images/bcvcor.png used on input line 390.
 (pdftex.def)             Requested size: 284.52756pt x 255.7516pt.
 )
 [49 <./images/cluster_star_flux.png>] (./Chapters/Chapter4.tex [50 <./images/bc
@@ -947,7 +950,7 @@ No file Thesis.bbl.
 
 Package natbib Warning: There were multiply defined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 243.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 246.
 [53
 
 pdfTeX warning (ext4): destination with the same identifier (name{cite.latexcom
@@ -955,30 +958,36 @@ panion}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.243 \end{document}
+l.246 \end{document}
                     pdfTeX warning (ext4): destination with the same identifier
  (name{cite.latexcompanion}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.243 \end{document}
+l.246 \end{document}
+                    pdfTeX warning (ext4): destination with the same identifier
+ (name{cite.latexcompanion}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.246 \end{document}
                     ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 243.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 246.
  (./Thesis.aux
 
 Package natbib Warning: Citation(s) may have changed.
 (natbib)                Rerun to get citations correct.
 
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 243.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 243.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 246.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 246.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
 (rerunfilecheck)             Checksum: E91B23670EE20D2FC6220EAEEA66A25A;5499.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 243.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 246.
  ) 
 Here is how much of TeX's memory you used:
  13371 strings out of 494985
@@ -1009,7 +1018,7 @@ e1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfdi
 ng/uzdr.pfb>
-Output written on Thesis.pdf (62 pages, 6063213 bytes).
+Output written on Thesis.pdf (62 pages, 6063290 bytes).
 PDF statistics:
  716 PDF objects out of 1000 (max. 8388607)
  590 compressed objects within 6 object streams
