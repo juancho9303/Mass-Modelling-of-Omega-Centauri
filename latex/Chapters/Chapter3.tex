@@ -154,7 +154,7 @@ For stars in the NGC5139 cluster, one must choose a very small aperture of the s
 \caption[NGC5139 as observed in the V filter]{One of our observations of NGC5139 in the V filter with an exposition time of 480 seconds}
 \end{figure}
 
-with the task \textit{imexamine} I find a value for the FWHM of 6.4 which I will use to set the size of the apertures to do the photometry. For the size of the aperture containing each star I chose an aperture size of four times the FWHM of the point spread function associated to the stars because it is the one that best fits the photometry and minimizes the error (calculated for some stars pressing "a" with the \textit{imexamine} task) and for the width of the aperture I chose I value of 2.5 times the FWHM.
+with the task \textit{imexamine} I find a value for the FWHM of 6.4 which I will use to set the size of the apertures to do the photometry. For the size of the aperture containing each star I chose an aperture size of four times the FWHM of the point spread function associated to the stars because it is the one that best fits the photometry and minimizes the error (calculated for some stars pressing ``a" with the \textit{imexamine} task) and for the width of the aperture I chose I value of 2.5 times the FWHM.
 
 Another important value to take into account before editing the parameters in \textit{phot} is the medium value of the background on the sky, in the case of this cluster, I do an average on many different places in the background of the image and find a value of sigma for the image that is equal to 53.45.
 
@@ -174,7 +174,7 @@ There exist many ways to count photons for an image taken with a CCD camera, but
 
 When doing photometry in a very crowded field, such as a globular cluster (NGC5139 in this case), where the profiles of stars overlap significantly, one must use de-blending techniques, such as point spread function (PSF) fitting, to determine the individual flux values of the overlapping sources. 
 
-This time, I made PSF photometry to some of the stars in the same cluster I started with (NGC5139), I chose bright ones that were relatively isolated to surrounding stars in order to make the estimations more accurate. First I use the same value of the PSF of some of those stars that I found doing the aperture photometry (6.4), this time the value of the sky is going to be higher because this value is going to determine the ammount of stars that the task \textit{daofind} will select to do the photometry and I'm only interested in the brighter ones, a value of 2000 would filter out many of the fainter stars and the background. This values is using the standard deviation and making an average over many values found by the command "m" in the interactive mode of \textit{imexamine}. 
+This time, I made PSF photometry to some of the stars in the same cluster I started with (NGC5139), I chose bright ones that were relatively isolated to surrounding stars in order to make the estimations more accurate. First I use the same value of the PSF of some of those stars that I found doing the aperture photometry (6.4), this time the value of the sky is going to be higher because this value is going to determine the ammount of stars that the task \textit{daofind} will select to do the photometry and I'm only interested in the brighter ones, a value of 2000 would filter out many of the fainter stars and the background. This values is using the standard deviation and making an average over many values found by the command ``m" in the interactive mode of \textit{imexamine}. 
 
 After setting all the parameters of \textit{phot}, \textit{daopars} and \textit{findpars}, I run \textit{daofind} which will find the stars that match the criteria I mentioned above and will create a text file with the coordinates of those stars and will give to each star an ID.
 
@@ -187,7 +187,7 @@ Once the stars are selected, the next step is to use the task \textit{psf} which
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{images/psf.png}
-\caption[PSF modelling]{PSF modelling, the interactive mode allows us to accept of decline the result by pressing "a" or "d", in this case the PSF is not a soft curve with a Gaussian behaviour so it can probably be discarded}
+\caption[PSF modelling]{PSF modelling, the interactive mode allows us to accept of decline the result by pressing ``a" or ``d", in this case the PSF is not a soft curve with a Gaussian behaviour so it can probably be discarded}
 \end{figure}
 
 After running \textit{psf}, there will be created an image that contains the residuals of the psf modelling which can be seen like this:
@@ -255,7 +255,7 @@ The images above are just a fraction of the whole image which is actually longer
 
 \subsection{Extraction}
 
-Once the reduction is ready, we can proceed with the extraction of the spectra of the calibration stars and also the spectra of the stars in the clusters, this procedure is made with the task \textit{apall}. First, I did the extraction of the two calibration stars for each night of observation. For May 14th our calibration stars were HR-4963 and HR-4468 and for May 15th our calibration stars were HR-4468 and HR-7950.
+Once the reduction is ready, we can proceed with the extraction of the spectra of the calibration stars and also the spectra of the stars in the clusters, this procedure is made with the task \textit{apall}. First, I did the extraction of the two calibration stars for each night of observation. For May 14th our calibration stars were HR4963 and HR4468 and for May 15th our calibration stars were HR4468 and HR7950.
 
 Taking special care of correctly choosing the background, and with the following parameter configuration:
 
@@ -266,7 +266,7 @@ saturate: 65215
 rdnoise: 6
 gain: 1
 
-Interactively, one must choose very precisely the background regions to extract the spectrum and do the fitting routines with different orders until the best results are reached, the areas of the background are changed using the commands "b" (for setting the background mode) and "s" (for setting the range). A good choice for the background in the case of the calibration star is relatively easy but in the case of the extraction of the stars in the clusters one must take into account the high noise introduced by the other stars and the background so for every star one must zoom into the window using "w" and "a" between the boundaries of the range to be zoomed.
+Interactively, one must choose very precisely the background regions to extract the spectrum and do the fitting routines with different orders until the best results are reached, the areas of the background are changed using the commands ``b" (for setting the background mode) and ``s" (for setting the range). A good choice for the background in the case of the calibration star is relatively easy but in the case of the extraction of the stars in the clusters one must take into account the high noise introduced by the other stars and the background so for every star one must zoom into the window using ``w" and "a" between the boundaries of the range to be zoomed.
 
 If a good choice of the background and the dispersion axis is well fit, the task runs straightforward to get the spectrum of the star. In the case of the calibration lamps, the procedure is quite similar because the extraction of their spectrum is done with \textit{apsum}, which is very similar to \textit{apall}. 
 
@@ -295,7 +295,7 @@ Once the spectrum is extracted, the following step is to calibrate it in wavelen
   \end{minipage}
 \end{figure}
 
-Running \textit{identify} in the interactive mode and using "m" to select the larger lines and typing the wavelength, the task creates a file stored in a new folder "database" with the pixels with their corresponding values in units of Angstroms. After that, the targets (Calibration Stars and Globular Clusters) were to be calibrated with these files so it is necessary to edit their header to assign them the reference frames. It is enough to change the REFSPEC1 image header on each lamp file in order to set the wavelength calibration. 
+Running \textit{identify} in the interactive mode and using ``m" to select the larger lines and typing the wavelength, the task creates a file stored in a new folder ``database" with the pixels with their corresponding values in units of Angstroms. After that, the targets (Calibration Stars and Globular Clusters) were to be calibrated with these files so it is necessary to edit their header to assign them the reference frames. It is enough to change the REFSPEC1 image header on each lamp file in order to set the wavelength calibration. 
 
 The task that actually does the calibration on wavelength for the science targets is \textit{dispcor}, it is only necessary to run the task over all the targets with their own wavelength calibrated lamp to get the calibrated spectrum which is the useful and important file to make the analysis of the width of the lines and their redshift.
 
@@ -307,6 +307,33 @@ The wavelength calibrated spectrum of the star HR4468, after running \textit{dis
 \caption[Wavelength calibrated spectrum of HR4468]{The spectrum has been wavelength calibrated as we can see in the horizontal axis which is in units of Angstroms. Note that the strong absorption lines are now in the right part of the spectrum, this is because in the process of making the wavelength calibration, the direction of the axis was changed.}
 \end{figure}
 
+In order to see if the wavelength calibration (using the lamps spectra) was correct we used another technique consisting of using a sky spectrum (with no stars or contaminating objects) and identifying some of the atmospheric lines on it, the calibration of the science data is then made with the identified lines in this spectrum. This should be an accurate procedure since the spectrum of the sky is taken exactly with the same instrument and configuration than the science objects and it contains the same atmospheric lines that the GCs spectra. 
+
+A secure way to extract the spectrum of the sky was using the original spectrum of a calibration star (reduced HR4468 in this case) and putting the aperture in an empty region in the image that does not contain any stellar absorption or emission lines. Of course the lines in the extracted spectrum are hard to identify so that the best way to do so is by looking at the already wavelength calibrated spectra of the star (calibrated with the comparisson lamps) and identifying its prominent lines, then those lines had to be searched in the web to see how prominent they could be in the atmosphere and what their corresponding wavelength is. Once the information about the prominent emission lines is ready, one can identify them with the task \textit{identify} doing a careful zoom with ``w" and ``e"  in the sky spectrum. 
+
+The same procedure consisting on saving a database file with the emission lines and changing the header of the image to calibrate needs to be done in order to complete the calibration.
+
+We used this procedure to wavelength calibrate HR4468 and see if both methods gave different results. The relevance of this procedure is that it allows us to see if we have any systematic problems or errors in the calibrations that would then affect our science data.
+
+After the wavelength calibration was made for the stellar spectrum, we note a difference of around 0.65$\textrm{\AA}$ as we can see in the following figure:
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{images/Espectros.png}
+    \caption[Comparisson between the two wavelength calibration methods]{Comparisson between the two wavelength calibration methods. The black line is the spectrum of HR4468 calibrated with the lamp spectra and the red line is the same spectrum calibrated with the sky spectrum}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{images/Espectros2.png}
+    \caption[Zoomed comparisson between the two wavelength calibration methods]{The same comparisson zoomed in a small region to see the shift of the red and black lines. The difference is about 0.65$\textrm{\AA}$ in this region which could mean a difference of about $20km/s$ in the measured velocities for both spectra.}
+  \end{minipage}
+\end{figure}
+
+
+What this shows is that the radial velocities that we compute might chance by a big factor depending on the method we use for the wavelength calibration since even a small shift on the lines would be equal to a difference in velocities of tenths of kilometers per second, thus introducing a big systematic error in our data that would completely affect our modelling. The error bar in the velocities associated with the position of the lines of the spectrum is then too big to give us reliable information about the velocity dispersion in the inner region of the clusters so the calibrations have to be perfected.
+
+
 \subsection{Flux Calibration}
 
 This final part of the extraction and calibrations has the aim of calibrating the CCD chip response, spectrograph+telescope throughput and allow for atmospheric extinction. The result is a spectrum as observed from outside the atmosphere with an ideal uniformly sensitive detector+telescope+spectrograph. Basically, what the flux calibration does is, it takes from a tabular compilation the energy distribution of the standard star, it corrects this energy distribution for wavelength-dependent atmospheric extinction, it compares it to the energy distribution of the observed spectrum and derives from such a comparison the function that gives the response of our system for every wavelength.
@@ -317,12 +344,10 @@ In the first part, the calibration is made with one of the stars that are alread
 
 \textbf{The task standard}
 
-The task standard determines calibration pass-bands and writes them to a file called "std". The trick here is to specify the location of the the input extinction and flux calibration files. To do that, I edit the parameters of standard with the following routes:
+The task standard determines calibration pass-bands and writes them to a file called ``std". The trick here is to specify the location of the the input extinction and flux calibration files. To do that, I edit the parameters of standard with the following routes:
 
 Extinction file:                              onedstds\$/ctioextindt.dat
-
 Directory containing calibration data:   onedstds\$ctionewcal/
-
 Starname in calibration list:                l9239
 
 Where I chose the Star l9239 because it has the spectral range that we use in our calibration Stars. And running the task interactively would be enough for this step.
