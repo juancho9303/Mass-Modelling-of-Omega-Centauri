@@ -2,7 +2,7 @@
 
 \chapter{Observations and Analysis}
 
-In order to study this problem about the dynamics of Globular Clusters in our galaxy we need scientific data that allows us to build a model that fits our observations. Under supervision of proffesor Juan Carlos Mu\~noz Cuartas and with three other undergraduate students from the University of Antioquia a trip to the OPD (Pico dos Dias Observatory) was made to Brazil in May 2014, besides the observational experience of the students, the main purpose of the trip was to get important data for this project. We needed two sets of data corresponding to spectra and photometric images of the Globular Clusters
+In order to study this problem about the dynamics of Globular Clusters in our galaxy we need scientific data that allows us to build a model that fits our observations. Under supervision of professor Juan Carlos Mu\~noz Cuartas and with three other undergraduate students from the University of Antioquia a trip to the OPD (Pico dos Dias Observatory) was made to Brazil in May 2014, besides the observational experience of the students, the main purpose of the trip was to get important data for this project. We needed two sets of data corresponding to spectra and photometric images of the Globular Clusters
 
 The spectroscopic data allows us to determine the velocity dispersion profile in the inner region of globular clusters while the photometric data allows us to study the surface brightness distribution for them. We can use all of this information to infer the properties of the globular clusters' mass distribution in order to build complete dynamical models and therefore infer the amount of dark matter present in the globular clusters (if there is any).
 
@@ -140,7 +140,7 @@ Once all the characterization is made we can reduce our important data using IRA
 \caption[Normalized Superflat for the filter I]{Example of one of the Normalized Superflats for the I filter}
 \end{figure}
 
-- Reduce the science data: Finally, we divide the original images of the clusters and stars (with the bias substractet) by the normalized Superflat to get the reduced images. This can easliy be made using the task \textit{imarith}.
+- Reduce the science data: Finally, we divide the original images of the clusters and stars (with the bias substractet) by the normalized Superflat to get the reduced images. This can easily be made using the task \textit{imarith}.
 
 \subsection{Aperture Photometry}
 
@@ -166,7 +166,7 @@ Now the photometry is done by changing some of the parameters including the read
 \caption[Photometry results of Magnitudes vs Size of apertures]{The magnitude decreases for bigger appertures}
 \end{figure}
 
-As we can see in the figure above, the magnitude of the chosen star in the cluster decreases for bigger appertures but so does the error because the space around the star is crowded of more stars and noice coming from the stars in the background so we infer that for crowded areas like this one the best choice is a small aperture. Although the results may not be as convincing, the use of another technique of photometry allows us to compare the results and see if the choice of a small aperture is a good way to fix or avoid the problem of the big noice of the background. For this purpose we use the technique of Point Spread Function (PSF) Photometry.
+As we can see in the figure above, the magnitude of the chosen star in the cluster decreases for bigger appertures but so does the error because the space around the star is crowded of more stars and noise coming from the stars in the background so we infer that for crowded areas like this one the best choice is a small aperture. Although the results may not be as convincing, the use of another technique of photometry allows us to compare the results and see if the choice of a small aperture is a good way to fix or avoid the problem of the big noise of the background. For this purpose we use the technique of Point Spread Function (PSF) Photometry.
 
 \subsection{PSF Photometry}
 
@@ -247,7 +247,7 @@ The vertical axis of the spectra is the dispersion axis and the horizontal axis 
   \hfill
   \begin{minipage}[b]{0.45\textwidth}
     \includegraphics[width=\textwidth]{images/cluster_clean.png}
-    \caption[Clean spectrum of NGC5139]{The clean spectrum without the bad data at the borders that needed to be trimmed, with a higher signal to noise ratio and the cosmic rays removed, }
+    \caption[Clean spectrum of NGC5139]{The clean spectrum without the bad data at the borders that needed to be trimmed, with a higher signal to noise ratio and the cosmic rays removed}
   \end{minipage}
 \end{figure}
 
@@ -260,15 +260,10 @@ Once the reduction is ready, we can proceed with the extraction of the spectra o
 Taking special care of correctly choosing the background, and with the following parameter configuration:
 
 b\_number: 100
-
 background: fit
-
 weight: variance
-
 saturate: 65215
-
 rdnoise: 6
-
 gain: 1
 
 Interactively, one must choose very precisely the background regions to extract the spectrum and do the fitting routines with different orders until the best results are reached, the areas of the background are changed using the commands "b" (for setting the background mode) and "s" (for setting the range). A good choice for the background in the case of the calibration star is relatively easy but in the case of the extraction of the stars in the clusters one must take into account the high noise introduced by the other stars and the background so for every star one must zoom into the window using "w" and "a" between the boundaries of the range to be zoomed.
@@ -361,7 +356,7 @@ The wavelength and flux calibrated spectrum of the star HR4468, now ready to be 
 
 In order to normalize the spectrum, first I find the maximum value in the spectrum using minmax and then I divide the whole image by this value. 
 
-Something that can be very usefull is to have the data of the spectrum in a different format so that it's information can be well used and analyzed with simple programs like gnuplot, for this purpose, it is useful to create an Ascii table from the spectrum. For this purpose I need to first convert my image to a 1D image using the task \textit{scopy} and setting format=onedspec (this is only neccesary if the specrtum was extracted in 2-D).
+Something that can be very useful is to have the data of the spectrum in a different format so that it's information can be well used and analysed with simple programs like gnuplot, for this purpose, it is useful to create an Ascii table from the spectrum. For this purpose I need to first convert my image to a 1D image using the task \textit{scopy} and setting format=onedspec (this is only necessary if the spectrum was extracted in 2-D).
 
 Now, with the image ready in 1-D, I use the task \textit{wspectext} to create the Ascii table like this:
 
