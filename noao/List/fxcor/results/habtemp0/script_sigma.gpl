@@ -1,0 +1,7 @@
+set terminal png
+set output 'sigma.png'
+set nokey
+set title 'Ga'
+set size square
+set logscale y
+plot 'sigma.txt' u 2 w d

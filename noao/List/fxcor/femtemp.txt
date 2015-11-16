@@ -1,0 +1,1108 @@
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:01                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+47_Tuc           s_1.fits    A  INDEF       1    BNS/gau   -7672.1 0.08 904.40  1.69   INDEF      -0.3136     INDEF      264.357
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:01                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+NGC1851          s_2.fits    A  INDEF       1    BNS/gau   -9962.8 0.10 939.68  2.48   INDEF      -0.3865     INDEF      212.326
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:01                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+NGC1904          s_3.fits    A  INDEF       1    BNS/gau   -9904.2 0.11 916.36  2.84   INDEF      -0.3847     INDEF      187.453
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:01                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+NGC1904          s_4.fits    A  INDEF       1    BNS/gau   -9905.2 0.12 983.31  3.20   INDEF      -0.3848     INDEF      183.714
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:01                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+NGC2298          s_5.fits    A  INDEF       1    BNS/gau   -9963.1 0.09 1157.32 2.70   INDEF      -0.3865     INDEF      245.722
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:01                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+NGC2298          s_6.fits    A  INDEF       1    BNS/gau   -9966.6 0.12 1382.39 3.54   INDEF      -0.3866     INDEF      239.326
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:01                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+NGC2808          s_7.fits    A  INDEF       1    BNS/gau   -9903.5 0.11 770.94  2.56   INDEF      -0.3847     INDEF      169.906
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:01                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+NGC2808          s_8.fits    A  INDEF       1    BNS/gau   -9903.8 0.11 767.57  2.51   INDEF      -0.3847     INDEF      171.888
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:01                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+NGC3201          s_9.fits    A  INDEF       1    BNS/gau   -9960.3 0.03 813.27  1.04   INDEF      -0.3864     INDEF      312.470
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:01                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    VOBS      VREL       VHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       km/s      km/s       km/s       km/s
+#
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+NGC3201          s_10.fits   A  INDEF       1    BNS/gau   -3335.5 0.12 162.07  4.46   INDEF     -45238.02  INDEF      23.308 
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:01                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+NGC5286          s_11.fits   A  INDEF       1    BNS/gau   -9903.3 0.12 1111.27 3.33   INDEF      -0.3847     INDEF      201.796
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:01                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+NGC5286          s_12.fits   A  INDEF       1    BNS/gau   -9904.6 0.12 1085.75 3.20   INDEF      -0.3848     INDEF      203.226
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:02                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    VOBS      VREL       VHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       km/s      km/s       km/s       km/s
+#
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+NGC5286          s_13.fits   A  INDEF       1    BNS/gau   -3322.3 0.23 341.40  5.66   INDEF     -45073.42  INDEF      40.246 
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:02                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+NGC5904          s_14.fits   A  INDEF       1    BNS/gau   -9904.3 0.12 875.88  3.05   INDEF      -0.3847     INDEF      170.055
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:02                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+NGC5904          s_15.fits   A  INDEF       1    BNS/gau   -9903.7 0.12 891.33  3.10   INDEF      -0.3847     INDEF      170.884
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:02                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+NGC5927          s_16.fits   A  INDEF       1    BNS/gau   -7662.1 0.08 1507.11 1.85   INDEF      -0.3132     INDEF      414.933
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:02                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+NGC5927          s_17.fits   A  INDEF       1    BNS/gau   -7663.1 0.08 1175.42 1.78   INDEF      -0.3133     INDEF      331.908
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:02                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+NGC5927          s_18.fits   A  INDEF       1    BNS/gau   -7660.5 0.08 1362.97 1.86   INDEF      -0.3132     INDEF      374.720
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:02                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    VOBS      VREL       VHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       km/s      km/s       km/s       km/s
+#
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+NGC5946          s_19.fits   A  INDEF       1    BNS/gau   -3318.9 0.10 297.12  2.79   INDEF     -45030.97  INDEF      61.577 
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:02                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+NGC5986          s_20.fits   A  INDEF       1    BNS/gau   -9903.1 0.13 1301.88 3.93   INDEF      -0.3847     INDEF      207.487
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:02                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+NGC6121          s_21.fits   A  INDEF       1    BNS/gau   -9902.5 0.12 972.41  3.06   INDEF      -0.3847     INDEF      188.188
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:02                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    VOBS      VREL       VHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       km/s      km/s       km/s       km/s
+#
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+NGC6171          s_22.fits   A  INDEF       1    BNS/gau   -3304.8 0.40 277.41  10.93  INDEF     -44855.48  INDEF      18.267 
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:02                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    VOBS      VREL       VHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       km/s      km/s       km/s       km/s
+#
+NGC6171          s_23.fits   A  INDEF       1    BNS/gau   -3307.7 0.64 299.20  22.95  INDEF     -44890.86  INDEF      9.814  
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:02                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    VOBS      VREL       VHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       km/s      km/s       km/s       km/s
+#
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+NGC6218          s_24.fits   A  INDEF       1    BNS/gau   -3308.6 0.40 322.29  9.99   INDEF     -44903.00  INDEF      23.039 
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:02                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    VOBS      VREL       VHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       km/s      km/s       km/s       km/s
+#
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+NGC6235          s_25.fits   A  INDEF       1    BNS/gau   -3311.1 0.25 215.40  9.81   INDEF     -44933.79  INDEF      15.652 
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:03                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    VOBS      VREL       VHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       km/s      km/s       km/s       km/s
+#
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+NGC6254          s_26.fits   A  INDEF       1    BNS/gau   -3310.6 0.14 241.28  3.65   INDEF     -44927.60  INDEF      40.710 
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:03                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+NGC6266          s_27.fits   A  INDEF       1    BNS/gau   -9904.1 0.13 905.21  3.24   INDEF      -0.3847     INDEF      167.537
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:03                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+NGC6284          s_28.fits   A  INDEF       1    BNS/gau   -9903.7 0.12 952.44  2.88   INDEF      -0.3847     INDEF      192.757
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:03                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+NGC6284          s_29.fits   A  INDEF       2    BNS/gau   -9903.4 0.11 920.91  2.79   INDEF      -0.3847     INDEF      190.604
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:03                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+NGC6304          s_30.fits   A  INDEF       1    BNS/gau   -9962.0 0.07 858.19  1.62   INDEF      -0.3865     INDEF      256.902
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:03                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+NGC6316          s_31.fits   A  INDEF       1    BNS/gau   -9960.9 0.05 704.36  1.30   INDEF      -0.3865     INDEF      240.961
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:03                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+NGC6316          s_32.fits   A  INDEF       1    BNS/gau   -9960.1 0.09 827.34  1.91   INDEF      -0.3864     INDEF      223.205
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:03                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+NGC6333          s_33.fits   A  INDEF       1    BNS/gau   -9901.7 0.10 1206.95 2.51   INDEF      -0.3847     INDEF      269.839
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:03                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    VOBS      VREL       VHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       km/s      km/s       km/s       km/s
+#
+NGC6342          s_34.fits   A  INDEF       1    BNS/gau   -3318.0 0.11 277.70  2.54   INDEF     -45019.54  INDEF      61.680 
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:03                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    VOBS      VREL       VHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       km/s      km/s       km/s       km/s
+#
+NGC6342          s_35.fits   A  INDEF       2    BNS/gau   -3320.6 0.16 285.97  3.60   INDEF     -45052.70  INDEF      48.857 
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:03                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    VOBS      VREL       VHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       km/s      km/s       km/s       km/s
+#
+NGC6352          s_36.fits   A  INDEF       1    BNS/gau   -3312.3 0.41 235.02  14.78  INDEF     -44948.58  INDEF      11.701 
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:03                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+NGC6356          s_37.fits   A  INDEF       1    BNS/gau   -7668.2 0.08 1190.93 1.75   INDEF      -0.3134     INDEF      340.616
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:03                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+NGC6362          s_38.fits   A  INDEF       1    BNS/gau   -9905.1 0.05 790.12  1.42   INDEF      -0.3848     INDEF      256.237
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:04                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+NGC6388          s_39.fits   A  INDEF       1    BNS/gau   -9961.5 0.09 807.15  1.96   INDEF      -0.3865     INDEF      213.901
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:04                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+NGC6441          s_40.fits   A  INDEF       1    BNS/gau   -9961.9 0.09 849.01  1.85   INDEF      -0.3865     INDEF      234.331
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:04                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+NGC6441          s_41.fits   A  INDEF       2    BNS/gau   -9961.8 0.09 848.60  1.79   INDEF      -0.3865     INDEF      238.564
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:04                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+NGC6522          s_42.fits   A  INDEF       1    BNS/gau   -9959.8 0.09 956.44  2.24   INDEF      -0.3864     INDEF      231.639
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:04                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    VOBS      VREL       VHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       km/s      km/s       km/s       km/s
+#
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+NGC6528          s_43.fits   A  INDEF       1    BNS/gau   -3324.5 0.13 306.89  2.94   INDEF     -45101.73  INDEF      61.226 
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:04                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    VOBS      VREL       VHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       km/s      km/s       km/s       km/s
+#
+NGC6528          s_44.fits   A  INDEF       2    BNS/gau   -3323.1 0.16 297.67  3.52   INDEF     -45083.24  INDEF      51.762 
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:04                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    VOBS      VREL       VHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       km/s      km/s       km/s       km/s
+#
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+NGC6528          s_45.fits   A  INDEF       1    BNS/gau   -3330.7 0.09 347.43  1.94   INDEF     -45178.43  INDEF      92.868 
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:04                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+NGC6528          s_46.fits   A  INDEF       2    BNS/gau   -7669.3 0.09 1065.27 1.89   INDEF      -0.3135     INDEF      289.888
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:04                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+NGC6528          s_47.fits   A  INDEF       1    BNS/gau   -7669.3 0.09 953.10  1.84   INDEF      -0.3135     INDEF      263.214
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:04                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+NGC6528          s_48.fits   A  INDEF       2    BNS/gau   -7669.2 0.09 956.52  1.98   INDEF      -0.3135     INDEF      251.842
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:04                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    VOBS      VREL       VHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       km/s      km/s       km/s       km/s
+#
+NGC6544          s_49.fits   A  INDEF       1    BNS/gau   -3199.4 0.06 805.33  1.83   INDEF     -43534.25  INDEF      223.331
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:04                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    VOBS      VREL       VHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       km/s      km/s       km/s       km/s
+#
+NGC6553          s_50.fits   A  INDEF       1    BNS/gau   -3323.9 0.20 217.12  5.35   INDEF     -45093.70  INDEF      26.874 
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:04                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+NGC6569          s_51.fits   A  INDEF       1    BNS/gau   -9903.9 0.09 670.78  2.23   INDEF      -0.3847     INDEF      163.103
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:05                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+NGC6624          s_52.fits   A  INDEF       1    BNS/gau   -9960.9 0.09 745.31  1.91   INDEF      -0.3865     INDEF      201.146
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:05                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+NGC6624          s_53.fits   A  INDEF       2    BNS/gau   -9958.9 0.09 730.16  1.89   INDEF      -0.3864     INDEF      198.257
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:05                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+NGC6626          s_54.fits   A  INDEF       1    BNS/gau   -9904.2 0.13 984.54  3.25   INDEF      -0.3847     INDEF      181.943
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:05                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+NGC6637          s_55.fits   A  INDEF       1    BNS/gau   -9960.7 0.08 739.73  1.74   INDEF      -0.3864     INDEF      212.175
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:05                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+NGC6638          s_56.fits   A  INDEF       1    BNS/gau   -9961.0 0.08 993.57  2.00   INDEF      -0.3865     INDEF      259.780
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:05                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+NGC6652          s_57.fits   A  INDEF       1    BNS/gau   -9960.8 0.09 744.03  2.02   INDEF      -0.3864     INDEF      193.404
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:05                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+NGC6652          s_58.fits   A  INDEF       1    BNS/gau   -9960.3 0.09 836.11  2.03   INDEF      -0.3864     INDEF      216.416
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:05                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+NGC6723          s_59.fits   A  INDEF       1    BNS/gau   -9904.3 0.08 755.69  2.26   INDEF      -0.3847     INDEF      182.325
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:05                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+NGC6752          s_60.fits   A  INDEF       1    BNS/gau   -9904.1 0.14 1026.30 3.62   INDEF      -0.3847     INDEF      174.379
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:05                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+NGC7078          s_61.fits   A  INDEF       1    BNS/gau   -9966.0 0.13 3414.02 3.68   INDEF      -0.3866     INDEF      572.760
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:05                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+NGC7078          s_62.fits   A  INDEF       2    BNS/gau   -9967.6 0.13 2333.68 3.48   INDEF      -0.3867     INDEF      408.897
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-12                     yyyy-mm-dd
+#K TIME       = 15:12:05                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'FAST_Emission_line_Template'                   \*
+#                   Image  = 'femtemp.fits'                    Vhelio = INDEF
+# 
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    ZOBS      ZREL       ZHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       z         z          z          km/s
+#
+#  Velocity Dispersion = 14.70 Km/sec/pixel     Rebinned WPC = 2.12984E-5
+NGC7089          s_63.fits   A  INDEF       1    BNS/gau   -9904.5 0.12 955.65  3.24   INDEF      -0.3848     INDEF      176.906

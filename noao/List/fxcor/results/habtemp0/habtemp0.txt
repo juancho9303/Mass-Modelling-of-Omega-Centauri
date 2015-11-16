@@ -1,0 +1,71 @@
+#T Template ' A' -- Object = 'Hectospec_template'                            \*
+#                   Image  = 'habtemp0.fits'                   Vhelio = INDEF
+# 
+#  Velocity Dispersion = 63.38 Km/sec/pixel     Rebinned WPC = 9.18149E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    VOBS      VREL       VHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       km/s      km/s       km/s       km/s
+#
+47_Tuc           s_1.fits    A  INDEF       1    BNS/gau   -0.979  0.63 940.43  9.78   INDEF     -62.0595   INDEF      68.527 
+NGC1851          s_2.fits    A  INDEF       1    BNS/gau   -0.325  0.57 926.72  12.12  INDEF     -20.5958   INDEF      55.468 
+NGC1904          s_3.fits    A  INDEF       1    BNS/gau   -0.171  0.50 939.32  8.49   INDEF     -10.8294   INDEF      77.764 
+NGC1904          s_4.fits    A  INDEF       1    BNS/gau   -0.160  0.50 943.65  8.31   INDEF     -10.1133   INDEF      79.615 
+NGC2298          s_5.fits    A  INDEF       1    BNS/gau   0.053   0.33 927.11  7.39   INDEF     3.3320     INDEF      86.827 
+NGC2298          s_6.fits    A  INDEF       1    BNS/gau   -0.073  0.41 912.71  8.18   INDEF     -4.5998    INDEF      78.110 
+NGC2808          s_7.fits    A  INDEF       1    BNS/gau   -0.442  0.62 896.79  14.56  INDEF     -28.0252   INDEF      45.261 
+NGC2808          s_8.fits    A  INDEF       1    BNS/gau   -0.367  0.59 924.45  14.01  INDEF     -23.2747   INDEF      48.378 
+NGC3201          s_9.fits    A  INDEF       1    BNS/gau   1209.50 0.17 1838.77 3.73   INDEF      0.29137     INDEF      305.097
+NGC3201          s_10.fits   A  INDEF       1    BNS/gau   -0.631  0.25 873.95  7.46   INDEF     -39.9696   INDEF      81.119 
+NGC5286          s_11.fits   A  INDEF       1    BNS/gau   -0.215  0.51 909.38  10.59  INDEF     -13.6378   INDEF      61.642 
+NGC5286          s_12.fits   A  INDEF       1    BNS/gau   -0.146  0.49 912.07  10.40  INDEF     -9.2829    INDEF      62.824 
+NGC5286          s_13.fits   A  INDEF       1    BNS/gau   -0.154  0.50 896.08  10.40  INDEF     -9.7482    INDEF      61.743 
+NGC5904          s_14.fits   A  INDEF       1    BNS/gau   -0.311  0.57 911.79  10.81  INDEF     -19.7008   INDEF      60.631 
+NGC5904          s_15.fits   A  INDEF       1    BNS/gau   -0.315  0.58 923.50  10.91  INDEF     -19.9634   INDEF      60.884 
+NGC5927          s_16.fits   A  INDEF       1    BNS/gau   -0.420  0.56 866.45  12.95  INDEF     -26.5967   INDEF      48.787 
+NGC5927          s_17.fits   A  INDEF       1    BNS/gau   -0.389  0.58 854.95  13.91  INDEF     -24.6719   INDEF      45.034 
+NGC5927          s_18.fits   A  INDEF       1    BNS/gau   -0.371  0.59 866.22  14.59  INDEF     -23.5426   INDEF      43.648 
+NGC5946          s_19.fits   A  INDEF       1    BNS/gau   -0.399  0.45 919.85  9.18   INDEF     -25.2780   INDEF      70.958 
+NGC5986          s_20.fits   A  INDEF       1    BNS/gau   -0.262  0.45 879.88  7.81   INDEF     -16.5754   INDEF      78.475 
+NGC6121          s_21.fits   A  INDEF       1    BNS/gau   -0.268  0.57 901.45  13.40  INDEF     -16.9784   INDEF      49.182 
+NGC6171          s_22.fits   A  INDEF       1    BNS/gau   -0.124  0.46 884.90  13.00  INDEF     -7.8825    INDEF      49.653 
+NGC6171          s_23.fits   A  INDEF       1    BNS/gau   0.170   0.33 850.78  9.01   INDEF     10.7908    INDEF      66.770 
+NGC6218          s_24.fits   A  INDEF       1    BNS/gau   0.031   0.46 896.50  8.90   INDEF     1.9921     INDEF      71.130 
+NGC6235          s_25.fits   A  INDEF       1    BNS/gau   -0.301  0.27 920.09  9.93   INDEF     -19.0853   INDEF      66.118 
+NGC6254          s_26.fits   A  INDEF       1    BNS/gau   -0.252  0.50 913.43  11.43  INDEF     -15.9735   INDEF      57.735 
+NGC6266          s_27.fits   A  INDEF       1    BNS/gau   -0.222  0.60 872.86  12.47  INDEF     -14.0687   INDEF      50.902 
+NGC6284          s_28.fits   A  INDEF       1    BNS/gau   -0.188  0.55 892.88  12.49  INDEF     -11.9017   INDEF      51.999 
+NGC6284          s_29.fits   A  INDEF       2    BNS/gau   -0.229  0.55 886.18  12.39  INDEF     -14.4923   INDEF      51.983 
+NGC6304          s_30.fits   A  INDEF       1    BNS/gau   -0.302  0.59 890.73  15.83  INDEF     -19.1339   INDEF      41.570 
+NGC6316          s_31.fits   A  INDEF       1    BNS/gau   -0.652  0.36 906.49  7.34   INDEF     -41.2938   INDEF      85.325 
+NGC6316          s_32.fits   A  INDEF       1    BNS/gau   -0.561  0.59 898.74  14.30  INDEF     -35.5406   INDEF      46.142 
+NGC6333          s_33.fits   A  INDEF       1    BNS/gau   -0.351  0.46 946.87  9.02   INDEF     -22.2218   INDEF      74.213 
+NGC6342          s_34.fits   A  INDEF       1    BNS/gau   -0.443  0.58 887.02  15.90  INDEF     -28.1050   INDEF      41.218 
+NGC6342          s_35.fits   A  INDEF       2    BNS/gau   -0.440  0.57 870.03  14.78  INDEF     -27.9146   INDEF      43.292 
+NGC6352          s_36.fits   A  INDEF       1    BNS/gau   0.198   0.32 921.44  12.90  INDEF     12.5527    INDEF      52.071 
+NGC6356          s_37.fits   A  INDEF       1    BNS/gau   -0.523  0.61 920.51  15.70  INDEF     -33.1237   INDEF      43.304 
+NGC6362          s_38.fits   A  INDEF       1    BNS/gau   -0.577  0.32 948.83  7.53   INDEF     -36.5507   INDEF      87.331 
+NGC6388          s_39.fits   A  INDEF       1    BNS/gau   -0.516  0.65 876.02  18.23  INDEF     -32.6845   INDEF      35.782 
+NGC6441          s_40.fits   A  INDEF       1    BNS/gau   -0.373  0.61 863.75  14.50  INDEF     -23.6437   INDEF      43.772 
+NGC6441          s_41.fits   A  INDEF       2    BNS/gau   -0.398  0.61 865.13  14.81  INDEF     -25.2234   INDEF      42.975 
+NGC6522          s_42.fits   A  INDEF       1    BNS/gau   -0.224  0.54 871.54  11.77  INDEF     -14.1816   INDEF      53.599 
+NGC6528          s_43.fits   A  INDEF       1    BNS/gau   -0.585  0.57 848.97  11.50  INDEF     -37.0623   INDEF      53.347 
+NGC6528          s_44.fits   A  INDEF       2    BNS/gau   -0.565  0.57 846.14  11.49  INDEF     -35.8326   INDEF      53.207 
+NGC6528          s_45.fits   A  INDEF       1    BNS/gau   -0.652  0.59 861.56  11.57  INDEF     -41.3327   INDEF      53.825 
+NGC6528          s_46.fits   A  INDEF       2    BNS/gau   -0.558  0.59 862.87  11.88  INDEF     -35.3373   INDEF      52.618 
+NGC6528          s_47.fits   A  INDEF       1    BNS/gau   -0.852  0.57 855.56  10.27  INDEF     -54.0110   INDEF      59.598 
+NGC6528          s_48.fits   A  INDEF       2    BNS/gau   -0.738  0.57 853.68  11.49  INDEF     -46.7526   INDEF      53.702 
+NGC6544          s_49.fits   A  INDEF       1    BNS/gau   -0.131  0.43 830.44  9.00   INDEF     -8.3204    INDEF      65.225 
+NGC6553          s_50.fits   A  INDEF       1    BNS/gau   -0.302  0.47 841.52  9.55   INDEF     -19.1133   INDEF      62.633 
+NGC6569          s_51.fits   A  INDEF       1    BNS/gau   -0.276  0.57 859.69  11.97  INDEF     -17.4635   INDEF      52.042 
+NGC6624          s_52.fits   A  INDEF       1    BNS/gau   -0.484  0.64 902.67  17.25  INDEF     -30.6523   INDEF      38.853 
+NGC6624          s_53.fits   A  INDEF       2    BNS/gau   -0.073  0.63 899.00  17.35  INDEF     -4.5990    INDEF      38.482 
+NGC6626          s_54.fits   A  INDEF       1    BNS/gau   -0.049  0.54 871.93  11.29  INDEF     -3.1223    INDEF      55.731 
+NGC6637          s_55.fits   A  INDEF       1    BNS/gau   -0.526  0.61 929.25  14.17  INDEF     -33.3668   INDEF      48.125 
+NGC6638          s_56.fits   A  INDEF       1    BNS/gau   -0.381  0.51 905.88  10.32  INDEF     -24.1271   INDEF      62.858 
+NGC6652          s_57.fits   A  INDEF       1    BNS/gau   -0.554  0.63 922.52  12.09  INDEF     -35.0992   INDEF      55.340 
+NGC6652          s_58.fits   A  INDEF       1    BNS/gau   -0.066  0.60 937.04  11.51  INDEF     -4.1829    INDEF      58.817 
+NGC6723          s_59.fits   A  INDEF       1    BNS/gau   -0.371  0.43 944.37  9.93   INDEF     -23.5234   INDEF      67.839 
+NGC6752          s_60.fits   A  INDEF       1    BNS/gau   -0.010  0.53 900.89  9.89   INDEF     -0.6323    INDEF      64.960 
+NGC7078          s_61.fits   A  INDEF       1    BNS/gau   -0.384  0.36 854.95  5.98   INDEF     -24.3220   INDEF      96.240 
+NGC7078          s_62.fits   A  INDEF       2    BNS/gau   -0.383  0.36 870.33  6.34   INDEF     -24.2626   INDEF      93.081 
+NGC7089          s_63.fits   A  INDEF       1    BNS/gau   -0.191  0.51 920.34  9.86   INDEF     -12.0983   INDEF      66.551 
