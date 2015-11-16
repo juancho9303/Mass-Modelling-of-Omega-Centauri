@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.1)  27 OCT 2015 00:19
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.1)  27 OCT 2015 16:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -887,7 +887,7 @@ File: images/calib_star_apall.png Graphic file (type png)
 
 <use images/calib_star_apall.png>
 Package pdftex.def Info: images/calib_star_apall.png used on input line 277.
-(pdftex.def)             Requested size: 227.62204pt x 173.51683pt.
+(pdftex.def)             Requested size: 256.0748pt x 195.21379pt.
  [44 <./images/calib_star_apall.png>]
 <images/lamp_day1_2.png, id=565, 463.7325pt x 350.05782pt>
 File: images/lamp_day1_2.png Graphic file (type png)
@@ -927,20 +927,20 @@ r_flux.png, id=589, 462.97969pt x 356.0803pt>
 File: images/calib_star_flux.png Graphic file (type png)
 
 <use images/calib_star_flux.png>
-Package pdftex.def Info: images/calib_star_flux.png used on input line 378.
+Package pdftex.def Info: images/calib_star_flux.png used on input line 377.
 (pdftex.def)             Requested size: 227.62204pt x 175.06767pt.
 
 <images/cluster_star_flux.png, id=590, 444.91219pt x 346.29375pt>
 File: images/cluster_star_flux.png Graphic file (type png)
 
 <use images/cluster_star_flux.png>
-Package pdftex.def Info: images/cluster_star_flux.png used on input line 396.
+Package pdftex.def Info: images/cluster_star_flux.png used on input line 395.
 (pdftex.def)             Requested size: 227.62204pt x 177.16757pt.
  [49 <./images/calib_star_flux.png>]
 <images/bcvcor.png, id=595, 469.00218pt x 421.575pt>
 File: images/bcvcor.png Graphic file (type png)
  <use images/bcvcor.png>
-Package pdftex.def Info: images/bcvcor.png used on input line 410.
+Package pdftex.def Info: images/bcvcor.png used on input line 409.
 (pdftex.def)             Requested size: 284.52756pt x 255.7516pt.
 )
 [50 <./images/cluster_star_flux.png>] (./Chapters/Chapter4.tex [51 <./images/bc
@@ -1031,7 +1031,7 @@ e1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfdi
 ng/uzdr.pfb>
-Output written on Thesis.pdf (63 pages, 6086118 bytes).
+Output written on Thesis.pdf (63 pages, 6086090 bytes).
 PDF statistics:
  728 PDF objects out of 1000 (max. 8388607)
  597 compressed objects within 6 object streams
