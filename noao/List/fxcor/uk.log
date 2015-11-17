@@ -1,0 +1,3277 @@
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:49 17-Nov-2015
+
+Obj  = `                s_1.fits[1]'   star = `47_Tuc'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 5
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 6.152E-5
+	Fit Coefficients:
+		c[1] =   0.6875  +/- 0.4209                     # Amplitude
+		c[2] =  -0.7458  +/- 15.422                     # Center
+		c[3] = 124.7249  +/- 785.32                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0052071
+	Sigma of Residuals = 0.0182125
+	Maximum of cross-correlation is in bin = -1.
+	Variance of cross-correlation = 0.06741987
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 7.210661
+
+Velocity Results:
+	Shift of peak = -0.7458 pixels
+	Correlation height = 0.688
+	FWHM of peak = 1666.801 Km/sec	(=26.2987 pixels)
+
+	Velocity computed from shift = -47.2631 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 159.439 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:49 17-Nov-2015
+
+Obj  = `                s_2.fits[1]'   star = `NGC1851'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 2.236E-5
+	Fit Coefficients:
+		c[1] =   0.4240  +/- 0.4266                     # Amplitude
+		c[2] =  -0.0353  +/- 18.952                     # Center
+		c[3] =  88.9696  +/- 698.60                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0033105
+	Sigma of Residuals = 0.0115678
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.08458136
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 3.544507
+
+Velocity Results:
+	Shift of peak = -0.0353 pixels
+	Correlation height = 0.424
+	FWHM of peak = 1407.759 Km/sec	(=22.21154 pixels)
+
+	Velocity computed from shift = -2.2395 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 243.294 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:49 17-Nov-2015
+
+Obj  = `                s_3.fits[1]'   star = `NGC1904'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 1.659E-5
+	Fit Coefficients:
+		c[1] =   0.2918  +/- 0.4300                     # Amplitude
+		c[2] =   0.0464  +/- 24.724                     # Center
+		c[3] =  77.4535  +/- 801.09                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0027605
+	Sigma of Residuals = 0.0094901
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.0959719
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 2.149709
+
+Velocity Results:
+	Shift of peak = 0.0464 pixels
+	Correlation height = 0.292
+	FWHM of peak = 1313.493 Km/sec	(=20.72422 pixels)
+
+	Velocity computed from shift = 2.9417 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 327.527 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:49 17-Nov-2015
+
+Obj  = `                s_4.fits[1]'   star = `NGC1904'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 1.471E-5
+	Fit Coefficients:
+		c[1] =   0.2761  +/- 0.4315                     # Amplitude
+		c[2] =   0.0639  +/- 25.078                     # Center
+		c[3] =  73.3832  +/- 773.19                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0025567
+	Sigma of Residuals = 0.0090254
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.09504856
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 2.053885
+
+Velocity Results:
+	Shift of peak = 0.0639 pixels
+	Correlation height = 0.276
+	FWHM of peak = 1278.514 Km/sec	(=20.17233 pixels)
+
+	Velocity computed from shift = 4.0499 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 328.808 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:49 17-Nov-2015
+
+Obj  = `                s_5.fits[1]'   star = `NGC2298'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 3.419E-6
+	Fit Coefficients:
+		c[1] =   0.1336  +/- 0.4248                     # Amplitude
+		c[2] = 1133.208  +/- 69.744                     # Center
+		c[3] = 106.2481  +/- 3074.1                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0003069
+	Sigma of Residuals = 0.0030496
+	Maximum of cross-correlation is in bin = 1134.
+	Variance of cross-correlation = 0.06316931
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 1.495112
+
+Velocity Results:
+	Shift of peak = 1133.2083 pixels
+	Correlation height = 0.134
+	FWHM of peak = 1538.395 Km/sec	(=24.27272 pixels)
+
+	Velocity computed from shift = 81155.8594 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 484.248 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:49 17-Nov-2015
+
+Obj  = `                s_6.fits[1]'   star = `NGC2298'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 1.167E-6
+	Fit Coefficients:
+		c[1] =   0.1737  +/- 0.4265                     # Amplitude
+		c[2] = -590.335  +/- 49.901                     # Center
+		c[3] =  97.3880  +/- 2022.4                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0005111
+	Sigma of Residuals = 0.0023737
+	Maximum of cross-correlation is in bin = -591.
+	Variance of cross-correlation = 0.07072669
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 1.73683
+
+Velocity Results:
+	Shift of peak = -590.3352 pixels
+	Correlation height = 0.174
+	FWHM of peak = 1472.854 Km/sec	(=23.23862 pixels)
+
+	Velocity computed from shift = -35174.5977 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 422.670 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:49 17-Nov-2015
+
+Obj  = `                s_7.fits[1]'   star = `NGC2808'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 4.184E-5
+	Fit Coefficients:
+		c[1] =   0.4415  +/- 0.4313                     # Amplitude
+		c[2] =  -0.2292  +/- 16.062                     # Center
+		c[3] =  75.6893  +/- 510.46                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0047282
+	Sigma of Residuals = 0.0165068
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.08530501
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 3.659798
+
+Velocity Results:
+	Shift of peak = -0.2292 pixels
+	Correlation height = 0.442
+	FWHM of peak = 1298.448 Km/sec	(=20.48684 pixels)
+
+	Velocity computed from shift = -14.5238 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 218.850 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:49 17-Nov-2015
+
+Obj  = `                s_8.fits[1]'   star = `NGC2808'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 2.624E-5
+	Fit Coefficients:
+		c[1] =   0.4076  +/- 0.4318                     # Amplitude
+		c[2] =  -0.1760  +/- 17.085                     # Center
+		c[3] =  73.9167  +/- 530.84                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0039990
+	Sigma of Residuals = 0.0132425
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.0911759
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 3.161006
+
+Velocity Results:
+	Shift of peak = -0.1760 pixels
+	Correlation height = 0.408
+	FWHM of peak = 1283.153 Km/sec	(=20.24553 pixels)
+
+	Velocity computed from shift = -11.1572 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 242.198 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:49 17-Nov-2015
+
+Obj  = `                s_9.fits[1]'   star = `NGC3201'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 4.448E-7
+	Fit Coefficients:
+		c[1] =   0.1108  +/- 0.4242                     # Amplitude
+		c[2] = 1601.749  +/- 86.480                     # Center
+		c[3] = 109.9376  +/- 3936.1                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0000869
+	Sigma of Residuals = 0.0011742
+	Maximum of cross-correlation is in bin = 1601.
+	Variance of cross-correlation = 0.02294689
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 3.412823
+
+Velocity Results:
+	Shift of peak = 1601.7485 pixels
+	Correlation height = 0.111
+	FWHM of peak = 1564.878 Km/sec	(=24.69055 pixels)
+
+	Velocity computed from shift = 120822.8984 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 278.518 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:49 17-Nov-2015
+
+Obj  = `               s_10.fits[1]'   star = `NGC3201'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 3
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 2.095E-6
+	Fit Coefficients:
+		c[1] =   0.1189  +/- 0.4560                     # Amplitude
+		c[2] =  -0.9675  +/- 36.882                     # Center
+		c[3] =  37.6866  +/- 633.63                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0012201
+	Sigma of Residuals = 0.0033064
+	Maximum of cross-correlation is in bin = -1.
+	Variance of cross-correlation = 0.04537445
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 1.852649
+
+Velocity Results:
+	Shift of peak = -0.9675 pixels
+	Correlation height = 0.119
+	FWHM of peak = 916.2226 Km/sec	(=14.45611 pixels)
+
+	Velocity computed from shift = -61.3112 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 252.257 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:49 17-Nov-2015
+
+Obj  = `               s_11.fits[1]'   star = `NGC5286'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 1.297E-5
+	Fit Coefficients:
+		c[1] =   0.2194  +/- 0.4477                     # Amplitude
+		c[2] =   0.0906  +/- 22.553                     # Center
+		c[3] =  45.6019  +/- 455.06                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0012350
+	Sigma of Residuals = 0.0078731
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.1043794
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 1.485987
+
+Velocity Results:
+	Shift of peak = 0.0906 pixels
+	Correlation height = 0.219
+	FWHM of peak = 1007.856 Km/sec	(=15.90191 pixels)
+
+	Velocity computed from shift = 5.7416 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 318.412 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:49 17-Nov-2015
+
+Obj  = `               s_12.fits[1]'   star = `NGC5286'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 1.095E-5
+	Fit Coefficients:
+		c[1] =   0.2223  +/- 0.4468                     # Amplitude
+		c[2] =   0.2853  +/- 22.861                     # Center
+		c[3] =  47.4664  +/- 478.38                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0011156
+	Sigma of Residuals = 0.0068433
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.106435
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 1.476755
+
+Velocity Results:
+	Shift of peak = 0.2853 pixels
+	Correlation height = 0.222
+	FWHM of peak = 1028.254 Km/sec	(=16.22373 pixels)
+
+	Velocity computed from shift = 18.0842 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 326.067 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:49 17-Nov-2015
+
+Obj  = `               s_13.fits[1]'   star = `NGC5286'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 2.175E-5
+	Fit Coefficients:
+		c[1] =   0.2336  +/- 0.4464                     # Amplitude
+		c[2] =   0.0392  +/- 21.568                     # Center
+		c[3] =  46.8774  +/- 445.52                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0016930
+	Sigma of Residuals = 0.0104965
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.1012226
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 1.631593
+
+Velocity Results:
+	Shift of peak = 0.0392 pixels
+	Correlation height = 0.234
+	FWHM of peak = 1021.854 Km/sec	(=16.12276 pixels)
+
+	Velocity computed from shift = 2.4854 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 304.972 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:49 17-Nov-2015
+
+Obj  = `               s_14.fits[1]'   star = `NGC5904'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 3
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 2.482E-5
+	Fit Coefficients:
+		c[1] =   0.3590  +/- 0.4304                     # Amplitude
+		c[2] =  -0.0938  +/- 19.957                     # Center
+		c[3] =  76.7457  +/- 641.37                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0032926
+	Sigma of Residuals = 0.0121355
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.1109947
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 2.286837
+
+Velocity Results:
+	Shift of peak = -0.0938 pixels
+	Correlation height = 0.359
+	FWHM of peak = 1307.477 Km/sec	(=20.62931 pixels)
+
+	Velocity computed from shift = -5.9456 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 312.425 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:49 17-Nov-2015
+
+Obj  = `               s_15.fits[1]'   star = `NGC5904'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 2.402E-5
+	Fit Coefficients:
+		c[1] =   0.3680  +/- 0.4294                     # Amplitude
+		c[2] =  -0.0579  +/- 19.994                     # Center
+		c[3] =  79.4743  +/- 663.53                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0031728
+	Sigma of Residuals = 0.0117617
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.0964313
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 2.698431
+
+Velocity Results:
+	Shift of peak = -0.0579 pixels
+	Correlation height = 0.368
+	FWHM of peak = 1330.518 Km/sec	(=20.99283 pixels)
+
+	Velocity computed from shift = -3.6678 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 282.549 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:49 17-Nov-2015
+
+Obj  = `               s_16.fits[1]'   star = `NGC5927'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 5
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 5.991E-5
+	Fit Coefficients:
+		c[1] =   0.5215  +/- 0.4305                     # Amplitude
+		c[2] =  -0.3412  +/- 14.126                     # Center
+		c[3] =  79.4773  +/- 470.70                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0062282
+	Sigma of Residuals = 0.0197782
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.08936892
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 4.126585
+
+Velocity Results:
+	Shift of peak = -0.3412 pixels
+	Correlation height = 0.522
+	FWHM of peak = 1330.543 Km/sec	(=20.99323 pixels)
+
+	Velocity computed from shift = -21.6218 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 203.841 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:49 17-Nov-2015
+
+Obj  = `               s_17.fits[1]'   star = `NGC5927'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 7.050E-5
+	Fit Coefficients:
+		c[1] =   0.5361  +/- 0.4309                     # Amplitude
+		c[2] =  -0.2744  +/- 13.483                     # Center
+		c[3] =  77.5867  +/- 438.76                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0065584
+	Sigma of Residuals = 0.0210182
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.08810759
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 4.302819
+
+Velocity Results:
+	Shift of peak = -0.2744 pixels
+	Correlation height = 0.536
+	FWHM of peak = 1314.622 Km/sec	(=20.74203 pixels)
+
+	Velocity computed from shift = -17.3919 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 194.708 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:49 17-Nov-2015
+
+Obj  = `               s_18.fits[1]'   star = `NGC5927'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 7.422E-5
+	Fit Coefficients:
+		c[1] =   0.5676  +/- 0.4294                     # Amplitude
+		c[2] =  -0.2452  +/- 13.283                     # Center
+		c[3] =  81.9447  +/- 454.51                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0065614
+	Sigma of Residuals = 0.0214736
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.08039919
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 4.991829
+
+Velocity Results:
+	Shift of peak = -0.2452 pixels
+	Correlation height = 0.568
+	FWHM of peak = 1351.039 Km/sec	(=21.31661 pixels)
+
+	Velocity computed from shift = -15.5429 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 177.092 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:49 17-Nov-2015
+
+Obj  = `               s_19.fits[1]'   star = `NGC5946'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 3
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 1.232E-7
+	Fit Coefficients:
+		c[1] =   0.1875  +/- 0.4132                     # Amplitude
+		c[2] = 753.2451  +/- 97.255                     # Center
+		c[3] = 231.0549  +/- 9010.1                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = -0.0000864
+	Sigma of Residuals = 0.0011467
+	Maximum of cross-correlation is in bin = 753.
+	Variance of cross-correlation = 0.09523544
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 1.392189
+
+Velocity Results:
+	Shift of peak = 753.2451 pixels
+	Correlation height = 0.188
+	FWHM of peak = 2268.635 Km/sec	(=35.79442 pixels)
+
+	Velocity computed from shift = 51751.6289 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 744.833 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:49 17-Nov-2015
+
+Obj  = `               s_20.fits[1]'   star = `NGC5986'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 1.403E-6
+	Fit Coefficients:
+		c[1] =   0.1855  +/- 0.4154                     # Amplitude
+		c[2] = -590.025  +/- 75.487                     # Center
+		c[3] = 172.2881  +/- 5235.1                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0007519
+	Sigma of Residuals = 0.0030803
+	Maximum of cross-correlation is in bin = -590.
+	Variance of cross-correlation = 0.07485542
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 1.751819
+
+Velocity Results:
+	Shift of peak = -590.0250 pixels
+	Correlation height = 0.185
+	FWHM of peak = 1959.002 Km/sec	(=30.90903 pixels)
+
+	Velocity computed from shift = -35157.2617 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 559.120 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:49 17-Nov-2015
+
+Obj  = `               s_21.fits[1]'   star = `NGC6121'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 3
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 3.085E-5
+	Fit Coefficients:
+		c[1] =   0.3461  +/- 0.4359                     # Amplitude
+		c[2] =  -0.0733  +/- 17.918                     # Center
+		c[3] =  63.2456  +/- 482.42                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0035749
+	Sigma of Residuals = 0.0132515
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.1055252
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 2.319212
+
+Velocity Results:
+	Shift of peak = -0.0733 pixels
+	Correlation height = 0.346
+	FWHM of peak = 1186.922 Km/sec	(=18.7272 pixels)
+
+	Velocity computed from shift = -4.6476 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 280.852 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:49 17-Nov-2015
+
+Obj  = `               s_22.fits[1]'   star = `NGC6171'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 2.842E-5
+	Fit Coefficients:
+		c[1] =   0.3597  +/- 0.4336                     # Amplitude
+		c[2] =   0.1379  +/- 18.361                     # Center
+		c[3] =  68.9013  +/- 534.66                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0037002
+	Sigma of Residuals = 0.0124801
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.0661931
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 3.842846
+
+Velocity Results:
+	Shift of peak = 0.1379 pixels
+	Correlation height = 0.360
+	FWHM of peak = 1238.857 Km/sec	(=19.5466 pixels)
+
+	Velocity computed from shift = 8.7371 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 200.914 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:49 17-Nov-2015
+
+Obj  = `               s_23.fits[1]'   star = `NGC6171'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 1.860E-5
+	Fit Coefficients:
+		c[1] =   0.2378  +/- 0.4432                     # Amplitude
+		c[2] =   0.4699  +/- 23.041                     # Center
+		c[3] =  52.9924  +/- 532.65                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0024458
+	Sigma of Residuals = 0.0091829
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.06082137
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 2.765178
+
+Velocity Results:
+	Shift of peak = 0.4699 pixels
+	Correlation height = 0.238
+	FWHM of peak = 1086.46 Km/sec	(=17.14211 pixels)
+
+	Velocity computed from shift = 29.7818 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 226.630 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:49 17-Nov-2015
+
+Obj  = `               s_24.fits[1]'   star = `NGC6218'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 2.230E-5
+	Fit Coefficients:
+		c[1] =   0.2933  +/- 0.4344                     # Amplitude
+		c[2] =   0.4289  +/- 22.699                     # Center
+		c[3] =  69.4788  +/- 669.43                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0020736
+	Sigma of Residuals = 0.0096463
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.09962925
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 2.081476
+
+Velocity Results:
+	Shift of peak = 0.4289 pixels
+	Correlation height = 0.293
+	FWHM of peak = 1244.037 Km/sec	(=19.62835 pixels)
+
+	Velocity computed from shift = 27.1850 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 317.077 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:49 17-Nov-2015
+
+Obj  = `               s_25.fits[1]'   star = `NGC6235'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 3.348E-6
+	Fit Coefficients:
+		c[1] =   0.1700  +/- 0.4391                     # Amplitude
+		c[2] =  -0.2729  +/- 34.551                     # Center
+		c[3] =  58.6097  +/- 870.58                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0016129
+	Sigma of Residuals = 0.0048537
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.04625634
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 2.599215
+
+Velocity Results:
+	Shift of peak = -0.2729 pixels
+	Correlation height = 0.170
+	FWHM of peak = 1142.594 Km/sec	(=18.02779 pixels)
+
+	Velocity computed from shift = -17.2970 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 249.330 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:49 17-Nov-2015
+
+Obj  = `               s_26.fits[1]'   star = `NGC6254'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 1.347E-5
+	Fit Coefficients:
+		c[1] =   0.2668  +/- 0.4385                     # Amplitude
+		c[2] =   0.0386  +/- 21.857                     # Center
+		c[3] =  58.0470  +/- 544.72                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0021770
+	Sigma of Residuals = 0.0085625
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.095437
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 1.976744
+
+Velocity Results:
+	Shift of peak = 0.0386 pixels
+	Correlation height = 0.267
+	FWHM of peak = 1137.096 Km/sec	(=17.94103 pixels)
+
+	Velocity computed from shift = 2.4479 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 300.017 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:49 17-Nov-2015
+
+Obj  = `               s_27.fits[1]'   star = `NGC6266'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 2
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 2.280E-5
+	Fit Coefficients:
+		c[1] =   0.2854  +/- 0.4568                     # Amplitude
+		c[2] =  -0.0987  +/- 15.262                     # Center
+		c[3] =  37.2681  +/- 259.88                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0033191
+	Sigma of Residuals = 0.0114462
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.1058698
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 1.905887
+
+Velocity Results:
+	Shift of peak = -0.0987 pixels
+	Correlation height = 0.285
+	FWHM of peak = 911.1206 Km/sec	(=14.37562 pixels)
+
+	Velocity computed from shift = -6.2568 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 246.256 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:49 17-Nov-2015
+
+Obj  = `               s_28.fits[1]'   star = `NGC6284'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 2.929E-5
+	Fit Coefficients:
+		c[1] =   0.3090  +/- 0.4392                     # Amplitude
+		c[2] =   0.0192  +/- 18.567                     # Center
+		c[3] =  56.7176  +/- 453.24                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0030112
+	Sigma of Residuals = 0.0122131
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.1092677
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 1.999439
+
+Velocity Results:
+	Shift of peak = 0.0192 pixels
+	Correlation height = 0.309
+	FWHM of peak = 1124. Km/sec	(=17.73441 pixels)
+
+	Velocity computed from shift = 1.2155 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 294.318 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:50 17-Nov-2015
+
+Obj  = `               s_29.fits[2]'   star = `NGC6284'
+Temp = `                 uk.fits[2]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 3.064E-5
+	Fit Coefficients:
+		c[1] =   0.3174  +/- 0.4397                     # Amplitude
+		c[2] =  -0.0336  +/- 17.914                     # Center
+		c[3] =  56.0072  +/- 432.45                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0032779
+	Sigma of Residuals = 0.0127194
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.1075123
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 2.087639
+
+Velocity Results:
+	Shift of peak = -0.0336 pixels
+	Correlation height = 0.317
+	FWHM of peak = 1116.938 Km/sec	(=17.62299 pixels)
+
+	Velocity computed from shift = -2.1268 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 284.114 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:50 17-Nov-2015
+
+Obj  = `               s_30.fits[1]'   star = `NGC6304'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 5.929E-5
+	Fit Coefficients:
+		c[1] =   0.5232  +/- 0.4313                     # Amplitude
+		c[2] =  -0.1553  +/- 13.461                     # Center
+		c[3] =  75.0408  +/- 423.98                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0056772
+	Sigma of Residuals = 0.0186671
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.09253154
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 3.998565
+
+Velocity Results:
+	Shift of peak = -0.1553 pixels
+	Correlation height = 0.523
+	FWHM of peak = 1292.874 Km/sec	(=20.39888 pixels)
+
+	Velocity computed from shift = -9.8405 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 203.142 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:50 17-Nov-2015
+
+Obj  = `               s_31.fits[1]'   star = `NGC6316'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 1.793E-5
+	Fit Coefficients:
+		c[1] =   0.2717  +/- 0.4370                     # Amplitude
+		c[2] =  -0.6266  +/- 23.115                     # Center
+		c[3] =  64.1427  +/- 635.00                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0029362
+	Sigma of Residuals = 0.0094735
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.05192618
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 3.69987
+
+Velocity Results:
+	Shift of peak = -0.6266 pixels
+	Correlation height = 0.272
+	FWHM of peak = 1195.311 Km/sec	(=18.85955 pixels)
+
+	Velocity computed from shift = -39.7107 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 199.749 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:50 17-Nov-2015
+
+Obj  = `               s_32.fits[1]'   star = `NGC6316'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 3.624E-5
+	Fit Coefficients:
+		c[1] =   0.4522  +/- 0.4382                     # Amplitude
+		c[2] =  -0.5291  +/- 13.466                     # Center
+		c[3] =  61.5050  +/- 355.74                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0045326
+	Sigma of Residuals = 0.0140501
+	Maximum of cross-correlation is in bin = -1.
+	Variance of cross-correlation = 0.08013283
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 3.989892
+
+Velocity Results:
+	Shift of peak = -0.5291 pixels
+	Correlation height = 0.452
+	FWHM of peak = 1170.476 Km/sec	(=18.46771 pixels)
+
+	Velocity computed from shift = -33.5350 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 184.230 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:50 17-Nov-2015
+
+Obj  = `               s_33.fits[1]'   star = `NGC6333'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 7.637E-6
+	Fit Coefficients:
+		c[1] =   0.2244  +/- 0.4417                     # Amplitude
+		c[2] =  -0.4544  +/- 25.138                     # Center
+		c[3] =  55.2329  +/- 602.68                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0026917
+	Sigma of Residuals = 0.0081007
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.092839
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 1.708803
+
+Velocity Results:
+	Shift of peak = -0.4544 pixels
+	Correlation height = 0.224
+	FWHM of peak = 1109.191 Km/sec	(=17.50075 pixels)
+
+	Velocity computed from shift = -28.8000 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 321.602 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:50 17-Nov-2015
+
+Obj  = `               s_34.fits[1]'   star = `NGC6342'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 4.712E-5
+	Fit Coefficients:
+		c[1] =   0.3996  +/- 0.4379                     # Amplitude
+		c[2] =  -0.2528  +/- 15.347                     # Center
+		c[3] =  62.0505  +/- 409.42                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0042606
+	Sigma of Residuals = 0.0144669
+	Maximum of cross-correlation is in bin = -1.
+	Variance of cross-correlation = 0.09497856
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 2.975305
+
+Velocity Results:
+	Shift of peak = -0.2528 pixels
+	Correlation height = 0.400
+	FWHM of peak = 1175.656 Km/sec	(=18.54943 pixels)
+
+	Velocity computed from shift = -16.0214 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 232.273 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:50 17-Nov-2015
+
+Obj  = `               s_35.fits[2]'   star = `NGC6342'
+Temp = `                 uk.fits[2]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 5.333E-5
+	Fit Coefficients:
+		c[1] =   0.4148  +/- 0.4389                     # Amplitude
+		c[2] =  -0.3284  +/- 14.461                     # Center
+		c[3] =  60.2055  +/- 375.18                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0046934
+	Sigma of Residuals = 0.0155906
+	Maximum of cross-correlation is in bin = -1.
+	Variance of cross-correlation = 0.09763939
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 3.00427
+
+Velocity Results:
+	Shift of peak = -0.3284 pixels
+	Correlation height = 0.415
+	FWHM of peak = 1158.045 Km/sec	(=18.27157 pixels)
+
+	Velocity computed from shift = -20.8137 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 227.139 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:50 17-Nov-2015
+
+Obj  = `               s_36.fits[1]'   star = `NGC6352'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 5
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 2.641E-5
+	Fit Coefficients:
+		c[1] =   0.2811  +/- 0.4303                     # Amplitude
+		c[2] =   0.4630  +/- 26.777                     # Center
+		c[3] =  81.5907  +/- 917.21                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0025862
+	Sigma of Residuals = 0.0108042
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.03903884
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 5.091588
+
+Velocity Results:
+	Shift of peak = 0.4630 pixels
+	Correlation height = 0.281
+	FWHM of peak = 1348.117 Km/sec	(=21.27051 pixels)
+
+	Velocity computed from shift = 29.3440 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 173.815 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:50 17-Nov-2015
+
+Obj  = `               s_37.fits[1]'   star = `NGC6356'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 4.777E-5
+	Fit Coefficients:
+		c[1] =   0.5551  +/- 0.4289                     # Amplitude
+		c[2] =  -0.4212  +/- 14.290                     # Center
+		c[3] =  87.1697  +/- 521.41                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0054336
+	Sigma of Residuals = 0.0169586
+	Maximum of cross-correlation is in bin = -1.
+	Variance of cross-correlation = 0.09392628
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 4.178678
+
+Velocity Results:
+	Shift of peak = -0.4212 pixels
+	Correlation height = 0.555
+	FWHM of peak = 1393.446 Km/sec	(=21.98571 pixels)
+
+	Velocity computed from shift = -26.6938 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 211.330 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:50 17-Nov-2015
+
+Obj  = `               s_38.fits[1]'   star = `NGC6362'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 8.114E-6
+	Fit Coefficients:
+		c[1] =   0.2494  +/- 0.4243                     # Amplitude
+		c[2] =  -0.2250  +/- 36.171                     # Center
+		c[3] = 102.7029  +/- 1529.7                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0018274
+	Sigma of Residuals = 0.0064637
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.03374359
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 5.227248
+
+Velocity Results:
+	Shift of peak = -0.2250 pixels
+	Correlation height = 0.249
+	FWHM of peak = 1512.512 Km/sec	(=23.86432 pixels)
+
+	Velocity computed from shift = -14.2621 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 190.762 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:50 17-Nov-2015
+
+Obj  = `               s_39.fits[1]'   star = `NGC6388'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 6.370E-5
+	Fit Coefficients:
+		c[1] =   0.5409  +/- 0.4344                     # Amplitude
+		c[2] =  -0.4656  +/- 12.403                     # Center
+		c[3] =  70.1489  +/- 369.74                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0061166
+	Sigma of Residuals = 0.0188289
+	Maximum of cross-correlation is in bin = -1.
+	Variance of cross-correlation = 0.09538626
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 4.010109
+
+Velocity Results:
+	Shift of peak = -0.4656 pixels
+	Correlation height = 0.541
+	FWHM of peak = 1250.022 Km/sec	(=19.72278 pixels)
+
+	Velocity computed from shift = -29.5107 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 195.957 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:50 17-Nov-2015
+
+Obj  = `               s_40.fits[1]'   star = `NGC6441'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 6.015E-5
+	Fit Coefficients:
+		c[1] =   0.4900  +/- 0.4368                     # Amplitude
+		c[2] =  -0.3335  +/- 12.678                     # Center
+		c[3] =  63.3146  +/- 342.81                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0064425
+	Sigma of Residuals = 0.0201942
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.1124618
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 3.080822
+
+Velocity Results:
+	Shift of peak = -0.3335 pixels
+	Correlation height = 0.490
+	FWHM of peak = 1187.57 Km/sec	(=18.73742 pixels)
+
+	Velocity computed from shift = -21.1342 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 228.561 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:50 17-Nov-2015
+
+Obj  = `               s_41.fits[2]'   star = `NGC6441'
+Temp = `                 uk.fits[2]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 6.125E-5
+	Fit Coefficients:
+		c[1] =   0.4980  +/- 0.4358                     # Amplitude
+		c[2] =  -0.3310  +/- 12.768                     # Center
+		c[3] =  65.3704  +/- 355.40                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0064242
+	Sigma of Residuals = 0.0203466
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.1106125
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 3.18362
+
+Velocity Results:
+	Shift of peak = -0.3310 pixels
+	Correlation height = 0.498
+	FWHM of peak = 1206.697 Km/sec	(=19.03919 pixels)
+
+	Velocity computed from shift = -20.9807 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 226.535 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:50 17-Nov-2015
+
+Obj  = `               s_42.fits[1]'   star = `NGC6522'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 3
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 3.347E-5
+	Fit Coefficients:
+		c[1] =   0.3188  +/- 0.4458                     # Amplitude
+		c[2] =  -0.0867  +/- 15.994                     # Center
+		c[3] =  47.7311  +/- 335.66                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0036657
+	Sigma of Residuals = 0.0135908
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.09337302
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 2.413936
+
+Velocity Results:
+	Shift of peak = -0.0867 pixels
+	Correlation height = 0.319
+	FWHM of peak = 1031.117 Km/sec	(=16.26891 pixels)
+
+	Velocity computed from shift = -5.4966 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 237.215 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:50 17-Nov-2015
+
+Obj  = `               s_43.fits[1]'   star = `NGC6528'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 5.120E-5
+	Fit Coefficients:
+		c[1] =   0.5118  +/- 0.4377                     # Amplitude
+		c[2] =  -0.7294  +/- 11.826                     # Center
+		c[3] =  61.1023  +/- 309.32                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0056676
+	Sigma of Residuals = 0.0172634
+	Maximum of cross-correlation is in bin = -1.
+	Variance of cross-correlation = 0.08399885
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 4.308363
+
+Velocity Results:
+	Shift of peak = -0.7294 pixels
+	Correlation height = 0.512
+	FWHM of peak = 1166.638 Km/sec	(=18.40715 pixels)
+
+	Velocity computed from shift = -46.2257 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 172.610 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:50 17-Nov-2015
+
+Obj  = `               s_44.fits[2]'   star = `NGC6528'
+Temp = `                 uk.fits[2]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 5.196E-5
+	Fit Coefficients:
+		c[1] =   0.5093  +/- 0.4379                     # Amplitude
+		c[2] =  -0.7174  +/- 11.840                     # Center
+		c[3] =  60.7795  +/- 308.28                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0057349
+	Sigma of Residuals = 0.0174202
+	Maximum of cross-correlation is in bin = -1.
+	Variance of cross-correlation = 0.08495152
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 4.238876
+
+Velocity Results:
+	Shift of peak = -0.7174 pixels
+	Correlation height = 0.509
+	FWHM of peak = 1163.552 Km/sec	(=18.35846 pixels)
+
+	Velocity computed from shift = -45.4669 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 174.437 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:50 17-Nov-2015
+
+Obj  = `               s_45.fits[1]'   star = `NGC6528'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 5.374E-5
+	Fit Coefficients:
+		c[1] =   0.5158  +/- 0.4373                     # Amplitude
+		c[2] =  -0.7422  +/- 11.828                     # Center
+		c[3] =  61.7879  +/- 312.44                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0056510
+	Sigma of Residuals = 0.0173925
+	Maximum of cross-correlation is in bin = -1.
+	Variance of cross-correlation = 0.09838922
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 3.707065
+
+Velocity Results:
+	Shift of peak = -0.7422 pixels
+	Correlation height = 0.516
+	FWHM of peak = 1173.165 Km/sec	(=18.51013 pixels)
+
+	Velocity computed from shift = -47.0369 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 195.749 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:50 17-Nov-2015
+
+Obj  = `               s_46.fits[2]'   star = `NGC6528'
+Temp = `                 uk.fits[2]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 5.365E-5
+	Fit Coefficients:
+		c[1] =   0.5191  +/- 0.4374                     # Amplitude
+		c[2] =  -0.6661  +/- 11.814                     # Center
+		c[3] =  62.2003  +/- 314.37                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0058207
+	Sigma of Residuals = 0.0176647
+	Maximum of cross-correlation is in bin = -1.
+	Variance of cross-correlation = 0.09311292
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 3.941959
+
+Velocity Results:
+	Shift of peak = -0.6661 pixels
+	Correlation height = 0.519
+	FWHM of peak = 1177.073 Km/sec	(=18.5718 pixels)
+
+	Velocity computed from shift = -42.2147 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 187.066 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:50 17-Nov-2015
+
+Obj  = `               s_47.fits[1]'   star = `NGC6528'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 4.821E-5
+	Fit Coefficients:
+		c[1] =   0.4962  +/- 0.4381                     # Amplitude
+		c[2] =  -1.0137  +/- 11.814                     # Center
+		c[3] =  58.4816  +/- 296.37                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0054672
+	Sigma of Residuals = 0.0166536
+	Maximum of cross-correlation is in bin = -1.
+	Variance of cross-correlation = 0.08722316
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 4.022586
+
+Velocity Results:
+	Shift of peak = -1.0137 pixels
+	Correlation height = 0.496
+	FWHM of peak = 1141.346 Km/sec	(=18.00808 pixels)
+
+	Velocity computed from shift = -64.2435 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 178.476 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:50 17-Nov-2015
+
+Obj  = `               s_48.fits[2]'   star = `NGC6528'
+Temp = `                 uk.fits[2]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 5.375E-5
+	Fit Coefficients:
+		c[1] =   0.5177  +/- 0.4371                     # Amplitude
+		c[2] =  -0.9052  +/- 11.662                     # Center
+		c[3] =  60.9339  +/- 303.66                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0057346
+	Sigma of Residuals = 0.0175793
+	Maximum of cross-correlation is in bin = -1.
+	Variance of cross-correlation = 0.07691219
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 4.759531
+
+Velocity Results:
+	Shift of peak = -0.9052 pixels
+	Correlation height = 0.518
+	FWHM of peak = 1165.029 Km/sec	(=18.38176 pixels)
+
+	Velocity computed from shift = -57.3654 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 158.869 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:50 17-Nov-2015
+
+Obj  = `               s_49.fits[1]'   star = `NGC6544'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 2.798E-5
+	Fit Coefficients:
+		c[1] =   0.2619  +/- 0.4511                     # Amplitude
+		c[2] =   0.0283  +/- 17.873                     # Center
+		c[3] =  41.8635  +/- 335.21                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0034207
+	Sigma of Residuals = 0.0120248
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.08526383
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 2.172155
+
+Velocity Results:
+	Shift of peak = 0.0283 pixels
+	Correlation height = 0.262
+	FWHM of peak = 965.6627 Km/sec	(=15.23617 pixels)
+
+	Velocity computed from shift = 1.7966 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 239.090 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:50 17-Nov-2015
+
+Obj  = `               s_50.fits[1]'   star = `NGC6553'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 4.564E-5
+	Fit Coefficients:
+		c[1] =   0.3750  +/- 0.4454                     # Amplitude
+		c[2] =  -0.3414  +/- 14.027                     # Center
+		c[3] =  49.8830  +/- 307.74                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0047744
+	Sigma of Residuals = 0.0148005
+	Maximum of cross-correlation is in bin = -1.
+	Variance of cross-correlation = 0.06646365
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 3.989773
+
+Velocity Results:
+	Shift of peak = -0.3414 pixels
+	Correlation height = 0.375
+	FWHM of peak = 1054.104 Km/sec	(=16.6316 pixels)
+
+	Velocity computed from shift = -21.6375 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 165.918 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:50 17-Nov-2015
+
+Obj  = `               s_51.fits[1]'   star = `NGC6569'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 4.348E-5
+	Fit Coefficients:
+		c[1] =   0.3492  +/- 0.4462                     # Amplitude
+		c[2] =  -0.1478  +/- 14.562                     # Center
+		c[3] =  47.5427  +/- 304.70                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0047642
+	Sigma of Residuals = 0.0160423
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.07748286
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 3.186894
+
+Velocity Results:
+	Shift of peak = -0.1478 pixels
+	Correlation height = 0.349
+	FWHM of peak = 1029.08 Km/sec	(=16.23677 pixels)
+
+	Velocity computed from shift = -9.3699 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 193.040 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:50 17-Nov-2015
+
+Obj  = `               s_52.fits[1]'   star = `NGC6624'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 5
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 6.289E-5
+	Fit Coefficients:
+		c[1] =   0.5681  +/- 0.4287                     # Amplitude
+		c[2] =  -0.3360  +/- 13.736                     # Center
+		c[3] =  85.5667  +/- 490.25                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0063200
+	Sigma of Residuals = 0.0206880
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.09134729
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 4.397331
+
+Velocity Results:
+	Shift of peak = -0.3360 pixels
+	Correlation height = 0.568
+	FWHM of peak = 1380.574 Km/sec	(=21.78262 pixels)
+
+	Velocity computed from shift = -21.2922 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 200.896 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:50 17-Nov-2015
+
+Obj  = `               s_53.fits[2]'   star = `NGC6624'
+Temp = `                 uk.fits[2]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 6.446E-5
+	Fit Coefficients:
+		c[1] =   0.5643  +/- 0.4276                     # Amplitude
+		c[2] =   0.0906  +/- 13.871                     # Center
+		c[3] =  86.0400  +/- 495.71                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0054523
+	Sigma of Residuals = 0.0186342
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.09176416
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 4.34816
+
+Velocity Results:
+	Shift of peak = 0.0906 pixels
+	Correlation height = 0.564
+	FWHM of peak = 1384.387 Km/sec	(=21.84278 pixels)
+
+	Velocity computed from shift = 5.7414 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 203.303 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:50 17-Nov-2015
+
+Obj  = `               s_54.fits[1]'   star = `NGC6626'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 2.614E-5
+	Fit Coefficients:
+		c[1] =   0.2490  +/- 0.4546                     # Amplitude
+		c[2] =   0.1571  +/- 18.043                     # Center
+		c[3] =  39.2033  +/- 320.51                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0028315
+	Sigma of Residuals = 0.0112470
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.09611045
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 1.831994
+
+Velocity Results:
+	Shift of peak = 0.1571 pixels
+	Correlation height = 0.249
+	FWHM of peak = 934.4767 Km/sec	(=14.74413 pixels)
+
+	Velocity computed from shift = 9.9556 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 259.159 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:50 17-Nov-2015
+
+Obj  = `               s_55.fits[1]'   star = `NGC6637'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 4.840E-5
+	Fit Coefficients:
+		c[1] =   0.5332  +/- 0.4267                     # Amplitude
+		c[2] =  -0.2820  +/- 15.554                     # Center
+		c[3] =  92.4630  +/- 596.33                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0052722
+	Sigma of Residuals = 0.0175400
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.07196929
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 5.23854
+
+Velocity Results:
+	Shift of peak = -0.2820 pixels
+	Correlation height = 0.533
+	FWHM of peak = 1435.131 Km/sec	(=22.64341 pixels)
+
+	Velocity computed from shift = -17.8753 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 180.675 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:50 17-Nov-2015
+
+Obj  = `               s_56.fits[1]'   star = `NGC6638'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 2.921E-5
+	Fit Coefficients:
+		c[1] =   0.3599  +/- 0.4350                     # Amplitude
+		c[2] =  -0.2129  +/- 17.807                     # Center
+		c[3] =  66.1245  +/- 499.88                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0040773
+	Sigma of Residuals = 0.0131740
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.07138675
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 3.564985
+
+Velocity Results:
+	Shift of peak = -0.2129 pixels
+	Correlation height = 0.360
+	FWHM of peak = 1213.636 Km/sec	(=19.14869 pixels)
+
+	Velocity computed from shift = -13.4946 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 208.804 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:50 17-Nov-2015
+
+Obj  = `               s_57.fits[1]'   star = `NGC6652'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 5
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 5.392E-5
+	Fit Coefficients:
+		c[1] =   0.5413  +/- 0.4260                     # Amplitude
+		c[2] =  -0.2711  +/- 16.359                     # Center
+		c[3] =  99.9330  +/- 679.78                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0051757
+	Sigma of Residuals = 0.0170701
+	Maximum of cross-correlation is in bin = -1.
+	Variance of cross-correlation = 0.08261224
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 4.633371
+
+Velocity Results:
+	Shift of peak = -0.2711 pixels
+	Correlation height = 0.541
+	FWHM of peak = 1491.975 Km/sec	(=23.54031 pixels)
+
+	Velocity computed from shift = -17.1786 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 208.009 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:50 17-Nov-2015
+
+Obj  = `               s_58.fits[1]'   star = `NGC6652'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 5
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 4.534E-5
+	Fit Coefficients:
+		c[1] =   0.5037  +/- 0.4237                     # Amplitude
+		c[2] =   0.2452  +/- 18.420                     # Center
+		c[3] = 106.2571  +/- 804.80                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0041088
+	Sigma of Residuals = 0.0150377
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.08040171
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 4.430135
+
+Velocity Results:
+	Shift of peak = 0.2452 pixels
+	Correlation height = 0.504
+	FWHM of peak = 1538.46 Km/sec	(=24.27374 pixels)
+
+	Velocity computed from shift = 15.5383 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 222.518 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:50 17-Nov-2015
+
+Obj  = `               s_59.fits[1]'   star = `NGC6723'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 1.279E-5
+	Fit Coefficients:
+		c[1] =   0.2969  +/- 0.4257                     # Amplitude
+		c[2] =  -0.1654  +/- 28.550                     # Center
+		c[3] =  95.1140  +/- 1121.9                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0025046
+	Sigma of Residuals = 0.0084723
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.06226052
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 3.37219
+
+Velocity Results:
+	Shift of peak = -0.1654 pixels
+	Correlation height = 0.297
+	FWHM of peak = 1455.559 Km/sec	(=22.96572 pixels)
+
+	Velocity computed from shift = -10.4820 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 261.469 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:50 17-Nov-2015
+
+Obj  = `               s_60.fits[1]'   star = `NGC6752'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 1.688E-5
+	Fit Coefficients:
+		c[1] =   0.2441  +/- 0.4402                     # Amplitude
+		c[2] =   0.4309  +/- 23.782                     # Center
+		c[3] =  57.5773  +/- 591.48                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0022165
+	Sigma of Residuals = 0.0085743
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.09910871
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 1.741861
+
+Velocity Results:
+	Shift of peak = 0.4309 pixels
+	Correlation height = 0.244
+	FWHM of peak = 1132.486 Km/sec	(=17.8683 pixels)
+
+	Velocity computed from shift = 27.3110 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 324.397 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:50 17-Nov-2015
+
+Obj  = `               s_61.fits[1]'   star = `NGC7078'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 1.885E-6
+	Fit Coefficients:
+		c[1] =   0.2376  +/- 0.4150                     # Amplitude
+		c[2] = -590.991  +/- 60.512                     # Center
+		c[3] = 177.5349  +/- 4320.4                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0009569
+	Sigma of Residuals = 0.0035638
+	Maximum of cross-correlation is in bin = -591.
+	Variance of cross-correlation = 0.08136047
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 2.064649
+
+Velocity Results:
+	Shift of peak = -590.9910 pixels
+	Correlation height = 0.238
+	FWHM of peak = 1988.608 Km/sec	(=31.37615 pixels)
+
+	Velocity computed from shift = -35211.3047 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 509.634 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:50 17-Nov-2015
+
+Obj  = `               s_62.fits[2]'   star = `NGC7078'
+Temp = `                 uk.fits[2]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 5
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 1.401E-6
+	Fit Coefficients:
+		c[1] =   0.2172  +/- 0.4179                     # Amplitude
+		c[2] = -590.586  +/- 61.217                     # Center
+		c[3] = 161.8995  +/- 4028.1                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0011213
+	Sigma of Residuals = 0.0038386
+	Maximum of cross-correlation is in bin = -591.
+	Variance of cross-correlation = 0.07599322
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 2.02083
+
+Velocity Results:
+	Shift of peak = -590.5855 pixels
+	Correlation height = 0.217
+	FWHM of peak = 1899.022 Km/sec	(=29.96267 pixels)
+
+	Velocity computed from shift = -35188.6211 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 493.735 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
+             Description of Fit to CCF Peak and Cross-Correlation
+	   NOAO/IRAF V2.16.1 juan@juan-UX303LA Tue 12:39:50 17-Nov-2015
+
+Obj  = `               s_63.fits[1]'   star = `NGC7089'
+Temp = `                 uk.fits[1]'   star = `'
+Deltav = 63.380 Km/sec                 Tempvel = INDEF Km/sec
+
+Fit Parameters:
+         Function = `gaussian'               Width = INDEF
+           Height = 0.                    Minwidth = 3.
+             Peak = no                    Maxwidth = 21.
+          Weights = YES                 Background = 0.
+        Wincenter = INDEF                   Window = INDEF
+
+	Number of points fit = 21
+	Number of iterations = 4
+	Number of coeffs fit = 1 - 3
+	Chi Squared of fit = 1.756E-5
+	Fit Coefficients:
+		c[1] =   0.2721  +/- 0.4342                     # Amplitude
+		c[2] =   0.1406  +/- 23.897                     # Center
+		c[3] =  67.4757  +/- 682.73                     # Sigma^2
+		c[4] =   0.0000  (fixed)                        # Background
+
+	Mean Residual = 0.0018835
+	Sigma of Residuals = 0.0090814
+	Maximum of cross-correlation is in bin = 0.
+	Variance of cross-correlation = 0.1004183
+	HJD of observation = INDEF               MJD = INDEF
+	Object sample used in correlation = `*'
+	Template sample used in correlation = `*'
+	Tonry&Davis R value = 1.916368
+
+Velocity Results:
+	Shift of peak = 0.1406 pixels
+	Correlation height = 0.272
+	FWHM of peak = 1225.973 Km/sec	(=19.34334 pixels)
+
+	Velocity computed from shift = 8.9082 Km/sec
+	Observed velocity = INDEF Km/sec
+	Heliocentric velocity = INDEF +/- 330.163 Km/sec
+
+Comments:
+	WARNING: Using template velocity of 0 km/s.
+	ERROR: Error getting 'DATE-OBS' from temp image header.
+	ERROR: Error getting 'RA' from temp image header.
+	ERROR: Error getting 'DEC' from temp image header.
+	ERROR: Missing EPOCH keyword.
+	ERROR: Missing exposure time keyword.
+	
+
+
