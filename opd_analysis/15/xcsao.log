@@ -1,0 +1,119 @@
+IRAF rvsao.xcsao 2.8.2 juan@juan-UX303LA  18-Nov-2015 18:43
+
+w.cluster.1 Object: NGC5139 
+RA: 13:26:47.00 Dec: -47:28:46.0 2000.0
+2014-May-16 00:00:00.00 =HJD2456793.5046 BCV:   0.00
+4830.0A- 6125.0A 2048 points, filter: 5 20 125 250 apodize 0.05 fit 0.5 best 1
+Temp:      w.cluster.8 vel:   0.00  tsh:   0.00 HCV:   0.00 Peak: 14939.5 h:0.170 R:   2.66 CZ: 14939.5 +/-  33.118 1
+IRAF rvsao.xcsao 2.8.2 juan@juan-UX303LA  18-Nov-2015 18:44
+
+w.cluster.1 Object: NGC5139 
+RA: 13:26:47.00 Dec: -47:28:46.0 2000.0
+2014-May-16 00:00:00.00 =HJD2456793.5046 BCV:   0.00
+4830.0A- 6125.0A 2048 points, filter: 5 20 125 250 apodize 0.05 fit 0.5 best 1
+Temp:      w.cluster.8 vel:   0.00  tsh:   0.00 HCV:   0.00 Peak: 14939.5 h:0.170 R:   2.66 CZ: 14939.5 +/-  33.118 1
+IRAF rvsao.xcsao 2.8.2 juan@juan-UX303LA  18-Nov-2015 18:44
+
+w.cluster.2 Object: NGC5139 
+RA: 13:26:47.00 Dec: -47:28:46.0 2000.0
+2014-May-16 00:00:00.00 =HJD2456793.5046 BCV:   0.00
+4830.0A- 6125.0A 2048 points, filter: 5 20 125 250 apodize 0.05 fit 0.5 best 1
+Temp:      w.cluster.8 vel:   0.00  tsh:   0.00 HCV:   0.00 Peak: 267.762 h:0.162 R:   2.17 CZ: 267.762 +/-  41.035 1
+IRAF rvsao.xcsao 2.8.2 juan@juan-UX303LA  18-Nov-2015 18:44
+
+w.cluster.3.fits Object: NGC5139 
+RA: 13:26:47.00 Dec: -47:28:46.0 2000.0
+2014-May-16 00:00:00.00 =HJD2456793.5046 BCV:   0.00
+4830.0A- 6125.0A 2048 points, filter: 5 20 125 250 apodize 0.05 fit 0.5 best 1
+Temp:      w.cluster.8 vel:   0.00  tsh:   0.00 HCV:   0.00 Peak: 28484.3 h:0.211 R:   3.37 CZ: 28484.3 +/-  16.936 1
+IRAF rvsao.xcsao 2.8.2 juan@juan-UX303LA  18-Nov-2015 18:45
+
+w.cluster.4.fits Object: NGC5139 
+RA: 13:26:47.00 Dec: -47:28:46.0 2000.0
+2014-May-16 00:00:00.00 =HJD2456793.5046 BCV:   0.00
+4830.0A- 6125.0A 2048 points, filter: 5 20 125 250 apodize 0.05 fit 0.5 best 1
+Temp:      w.cluster.8 vel:   0.00  tsh:   0.00 HCV:   0.00 Peak: 35709.0 h:0.123 R:   1.88 CZ: 35709.0 +/-  32.640 1
+IRAF rvsao.xcsao 2.8.2 juan@juan-UX303LA  18-Nov-2015 18:45
+
+w.cluster.5.fits Object: NGC5139 
+RA: 13:26:47.00 Dec: -47:28:46.0 2000.0
+2014-May-16 00:00:00.00 =HJD2456793.5046 BCV:   0.00
+4830.0A- 6125.0A 2048 points, filter: 5 20 125 250 apodize 0.05 fit 0.5 best 1
+Temp:      w.cluster.8 vel:   0.00  tsh:   0.00 HCV:   0.00 Peak: 14276.9 h:0.155 R:   1.99 CZ: 14276.9 +/-  27.118 1
+IRAF rvsao.xcsao 2.8.2 juan@juan-UX303LA  18-Nov-2015 18:46
+
+w.cluster.6.fits Object: NGC5139 
+RA: 13:26:47.00 Dec: -47:28:46.0 2000.0
+2014-May-16 00:00:00.00 =HJD2456793.5046 BCV:   0.00
+4830.0A- 6125.0A 2048 points, filter: 5 20 125 250 apodize 0.05 fit 0.5 best 1
+Temp:      w.cluster.8 vel:   0.00  tsh:   0.00 HCV:   0.00 Peak: 14272.3 h:0.157 R:   2.01 CZ: 14272.3 +/-  26.995 1
+IRAF rvsao.xcsao 2.8.2 juan@juan-UX303LA  18-Nov-2015 18:46
+
+w.cluster.7.fits Object: NGC5139 
+RA: 13:26:47.00 Dec: -47:28:46.0 2000.0
+2014-May-16 00:00:00.00 =HJD2456793.5046 BCV:   0.00
+4830.0A- 6125.0A 2048 points, filter: 5 20 125 250 apodize 0.05 fit 0.5 best 1
+Temp:      w.cluster.8 vel:   0.00  tsh:   0.00 HCV:   0.00 Peak: -246.75 h:0.192 R:   2.62 CZ: -246.75 +/-  18.923 1
+IRAF rvsao.xcsao 2.8.2 juan@juan-UX303LA  18-Nov-2015 18:46
+
+w.cluster.8.fits Object: NGC5139 
+RA: 13:26:47.00 Dec: -47:28:46.0 2000.0
+2014-May-16 00:00:00.00 =HJD2456793.5046 BCV:   0.00
+4830.0A- 6125.0A 2048 points, filter: 5 20 125 250 apodize 0.05 fit 0.5 best 1
+Temp:      w.cluster.8 vel:   0.00  tsh:   0.00 HCV:   0.00 Peak:   0.000 h:0.988 R: 1.966E8 CZ:   0.000 +/-   0.000 1
+IRAF rvsao.xcsao 2.8.2 juan@juan-UX303LA  18-Nov-2015 18:46
+
+w.cluster.9.fits Object: NGC5139 
+RA: 13:26:47.00 Dec: -47:28:46.0 2000.0
+2014-May-16 00:00:00.00 =HJD2456793.5046 BCV:   0.00
+4830.0A- 6125.0A 2048 points, filter: 5 20 125 250 apodize 0.05 fit 0.5 best 1
+Temp:      w.cluster.8 vel:   0.00  tsh:   0.00 HCV:   0.00 Peak: 309.122 h:0.138 R:   1.77 CZ: 309.122 +/-  77.623 1
+IRAF rvsao.xcsao 2.8.2 juan@juan-UX303LA  18-Nov-2015 18:46
+
+w.cluster.10.fits Object: NGC5139 
+RA: 13:26:47.00 Dec: -47:28:46.0 2000.0
+2014-May-16 00:00:00.00 =HJD2456793.5046 BCV:   0.00
+4830.0A- 6125.0A 2048 points, filter: 5 20 125 250 apodize 0.05 fit 0.5 best 1
+Temp:      w.cluster.8 vel:   0.00  tsh:   0.00 HCV:   0.00 Peak: 11390.3 h:0.141 R:   2.00 CZ: 11390.3 +/-  35.112 1
+IRAF rvsao.xcsao 2.8.2 juan@juan-UX303LA  18-Nov-2015 18:46
+
+w.cluster.11.fits Object: NGC5139 
+RA: 13:26:47.00 Dec: -47:28:46.0 2000.0
+2014-May-16 00:00:00.00 =HJD2456793.5046 BCV:   0.00
+4830.0A- 6125.0A 2048 points, filter: 5 20 125 250 apodize 0.05 fit 0.5 best 1
+Temp:      w.cluster.8 vel:   0.00  tsh:   0.00 HCV:   0.00 Peak: 5725.10 h:0.147 R:   2.19 CZ: 5725.10 +/-  30.620 1
+IRAF rvsao.xcsao 2.8.2 juan@juan-UX303LA  18-Nov-2015 18:46
+
+w.cluster.12.fits Object: NGC5139 
+RA: 13:26:47.00 Dec: -47:28:46.0 2000.0
+2014-May-16 00:00:00.00 =HJD2456793.5046 BCV:   0.00
+4830.0A- 6125.0A 2048 points, filter: 5 20 125 250 apodize 0.05 fit 0.5 best 1
+Temp:      w.cluster.8 vel:   0.00  tsh:   0.00 HCV:   0.00 Peak: 5729.39 h:0.152 R:   2.22 CZ: 5729.39 +/-  30.279 1
+IRAF rvsao.xcsao 2.8.2 juan@juan-UX303LA  18-Nov-2015 18:46
+
+w.cluster.13.fits Object: NGC5139 
+RA: 13:26:47.00 Dec: -47:28:46.0 2000.0
+2014-May-16 00:00:00.00 =HJD2456793.5046 BCV:   0.00
+4830.0A- 6125.0A 2048 points, filter: 5 20 125 250 apodize 0.05 fit 0.5 best 1
+Temp:      w.cluster.8 vel:   0.00  tsh:   0.00 HCV:   0.00 Peak: 14343.9 h:0.155 R:   2.21 CZ: 14343.9 +/-  33.090 1
+IRAF rvsao.xcsao 2.8.2 juan@juan-UX303LA  18-Nov-2015 18:47
+
+w.cluster.14.fits Object: NGC5139 
+RA: 13:26:47.00 Dec: -47:28:46.0 2000.0
+2014-May-16 00:00:00.00 =HJD2456793.5046 BCV:   0.00
+4830.0A- 6125.0A 2048 points, filter: 5 20 125 250 apodize 0.05 fit 0.5 best 1
+Temp:      w.cluster.8 vel:   0.00  tsh:   0.00 HCV:   0.00 Peak: 3383.11 h:0.176 R:   2.48 CZ: 3383.11 +/-  22.365 1
+IRAF rvsao.xcsao 2.8.2 juan@juan-UX303LA  18-Nov-2015 18:47
+
+w.cluster.15.fits Object: NGC5139 
+RA: 13:26:47.00 Dec: -47:28:46.0 2000.0
+2014-May-16 00:00:00.00 =HJD2456793.5046 BCV:   0.00
+4830.0A- 6125.0A 2048 points, filter: 5 20 125 250 apodize 0.05 fit 0.5 best 1
+Temp:      w.cluster.8 vel:   0.00  tsh:   0.00 HCV:   0.00 Peak:  88.675 h:0.152 R:   2.28 CZ:  88.675 +/-  31.233 1
+IRAF rvsao.xcsao 2.8.2 juan@juan-UX303LA  18-Nov-2015 18:47
+
+w.cluster.16.fits Object: NGC5139 
+RA: 13:26:47.00 Dec: -47:28:46.0 2000.0
+2014-May-16 00:00:00.00 =HJD2456793.5046 BCV:   0.00
+4830.0A- 6125.0A 2048 points, filter: 5 20 125 250 apodize 0.05 fit 0.5 best 1
+Temp:      w.cluster.8 vel:   0.00  tsh:   0.00 HCV:   0.00 Peak: 34442.6 h:0.155 R:   2.14 CZ: 34442.6 +/-  22.495 1

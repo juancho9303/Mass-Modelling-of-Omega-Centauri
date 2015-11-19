@@ -1,0 +1,22 @@
+IRAF rvsao.xcsao 2.8.2 juan@juan-UX303LA  17-Nov-2015 22:51
+
+eatemp Object: Elliptical + A stars template 
+RA: 09:17:29.92 Dec: 29:15:09.6 2000.0
+2005-Mar-17 05:27:00.00 =HJD2453446.7259 BCV: -19.91
+7800.0A- 6884.0A 2048 points, filter: 10 20 125 250 apodize 0.05 fit 0.5 best 1
+Temp:           eatemp vel:   0.00  tsh:   0.00 HCV:   0.00 Peak:   0.000 h:0.000 R:   0.00 CZ: -4986.1 +/-   0.000 1 -el
+IRAF rvsao.xcsao 2.8.2 juan@juan-UX303LA  17-Nov-2015 22:52
+
+eatemp Object: Elliptical + A stars template 
+RA: 09:17:29.92 Dec: 29:15:09.6 2000.0
+2005-Mar-17 05:27:00.00 =HJD2453446.7259 BCV: -19.91
+7800.0A- 7000.0A 2048 points, filter: 10 20 125 250 apodize 0.05 fit 0.5 best 1
+Temp:           eatemp vel: -4986.1  tsh:   0.00 HCV: -19.91 Peak:   0.000 h:0.000 R:   0.00 CZ: -4986.1 +/-   0.000 1 -el
+IRAF rvsao.xcsao 2.8.2 juan@juan-UX303LA  17-Nov-2015 22:52
+IRAF rvsao.xcsao 2.8.2 juan@juan-UX303LA  17-Nov-2015 22:54
+
+eatemp Object: Elliptical + A stars template 
+RA: 09:17:29.92 Dec: 29:15:09.6 2000.0
+2005-Mar-17 05:27:00.00 =HJD2453446.7259 BCV: -19.91
+2979.2A- 7000.0A 2048 points, filter: 5 20 125 250 apodize 0.05 fit 0.5 best 1
+Temp:           eatemp vel: -4986.1  tsh:   0.00 HCV: -19.91 Peak:   0.000 h:0.984 R: 1.556E8 CZ: -4986.1 +/-   0.000 1

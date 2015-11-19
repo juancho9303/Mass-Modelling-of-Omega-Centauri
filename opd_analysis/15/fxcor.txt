@@ -1,0 +1,32 @@
+#K IRAF       = NOAO/IRAF V2.16.1              version   
+#K USER       = juan                           name      
+#K HOST       = juan-UX303LA                   computer  
+#K DATE       = 2015-11-18                     yyyy-mm-dd
+#K TIME       = 18:38:08                       hh:mm:ss  
+#K PACKAGE    = rv                             name      
+#K TASK       = fxcor                          name      
+# 
+#T Template ' A' -- Object = 'NGC5139'                                       \*
+#                   Image  = 'w.cluster.8.fits'                Vhelio = INDEF
+# 
+#  Velocity Dispersion = 35.08 Km/sec/pixel     Rebinned WPC = 5.08187E-5
+# 
+#N OBJECT        IMAGE     REF   HJD       AP    CODES     SHIFT   HGHT FWHM    TDR    VOBS      VREL       VHELIO     VERR
+#U name          image           days            cfr/fun   pixel                       km/s      km/s       km/s       km/s
+#
+NGC5139          w.cluster.1.fits  A  6793.53388  1    BNS/gau   -502.02 0.11 88.33   2.34   -17097.91 -17103.44  -17103.77  20.781 
+NGC5139          w.cluster.2.fits  A  6793.53388  1    BNS/gau   -214.80 0.10 115.53  2.50   -7435.467 -7441.181  -7441.326  25.910 
+NGC5139          w.cluster.3.fits  A  6793.53388  1    BNS/gau   -682.01 0.11 121.02  2.45   -22989.89 -22995.30  -22995.75  27.538 
+NGC5139          w.cluster.4.fits  A  6793.53388  1    BNS/gau   48.900  0.09 177.60  2.10   1726.2258 1720.3326  1720.3663  45.064 
+NGC5139          w.cluster.5.fits  A  6793.53388  1    BNS/gau   -54.640 0.12 646.11  2.58   -1904.828 -1910.650  -1910.688  141.735
+NGC5139          w.cluster.6.fits  A  6793.53388  1    BNS/gau   -54.864 0.12 704.26  2.51   -1912.653 -1918.475  -1918.513  157.543
+NGC5139          w.cluster.7.fits  A  6793.53388  1    BNS/gau   -153.73 0.09 154.02  2.26   -5338.736 -5344.491  -5344.596  37.114 
+NGC5139          w.cluster.8.fits  A  6793.53388  1    BNS/gau   -0.000  1.00 71.68   6.521E7 5.8595    -0.0000    -0.0000    0.000  
+NGC5139          w.cluster.9.fits  A  6793.53388  1    BNS/gau   6.154   0.15 898.75  2.53   221.8084  215.9447   215.9489   199.708
+NGC5139          w.cluster.10.fits  A  6793.53388  1    BNS/gau   -544.35 0.09 141.03  2.23   -18494.98 -18500.48  -18500.84  34.265 
+NGC5139          w.cluster.11.fits  A  6793.53388  1    BNS/gau   163.051 0.10 447.95  1.67   5780.7311 5774.7588  5774.8715  131.682
+NGC5139          w.cluster.12.fits  A  6793.53388  1    BNS/gau   162.962 0.10 428.86  2.24   5777.5344 5771.5620  5771.6749  103.832
+NGC5139          w.cluster.13.fits  A  6793.53388  1    BNS/gau   61.548  0.13 160.93  3.53   2172.7988 2166.8970  2166.9393  27.884 
+NGC5139          w.cluster.14.fits  A  6793.53388  1    BNS/gau   -117.40 0.05 208.97  1.26   -4084.496 -4090.275  -4090.355  72.489 
+NGC5139          w.cluster.15.fits  A  6793.53388  1    BNS/gau   3.550   0.11 176.84  2.87   130.4303  124.5683   124.5707   35.922 
+NGC5139          w.cluster.16.fits  A  6793.53388  1    BNS/gau   627.408 0.07 352.07  1.78   22843.849 22837.541  22837.989  99.580 
