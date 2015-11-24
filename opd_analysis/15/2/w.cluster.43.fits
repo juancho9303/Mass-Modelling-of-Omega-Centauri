@@ -1,0 +1,183 @@
+SIMPLE  =                    T / Fits standard                                  BITPIX  =                  -32 / Bits per pixel                                 NAXIS   =                    3 / Number of axes                                 NAXIS1  =                 2048 / Axis length                                    NAXIS2  =                    1 / Axis length                                    NAXIS3  =                    4 / Axis length                                    EXTEND  =                    T / File may contain extensions                    ORIGIN  = 'NOAO-IRAF FITS Image Kernel July 2003' / FITS file originator        DATE    = '2015-11-20T14:53:17' / Date FITS file was generated                  IRAF-TLM= '2015-11-20T14:53:17' / Time of last modification                     OBJECT  = 'NGC5139 '           / Name of the object observed                    COMMENT   FITS (Flexible Image Transport System) format is defined in 'AstronomyCOMMENT   and Astrophysics', volume 376, page 359; bibcode: 2001A&A...376..359H HEAD    = 'DZ936_FS,BR'        / Head Model                                     ACQMODE = 'Single  '           / Acquisition Mode                               READMODE= 'Image   '           / Readout Mode                                   IMGRECT = '1, 2048, 2048, 1'   / Image Format                                   HBIN    = '1       '           / Horizontal Binning                             VBIN    = '1       '           / Vertical Binning                               SUBRECT = '624, 1268,2048,1'   / Subimage Format                                XTYPE   = 'Pixel number'       / Calibration type                               XUNIT   =                    0 / Calibration units                              TRIGGER = 'Internal'           / Trigger Mode                                   CALIB   = '0,1,0,0 '           / Calibration                                    DLLVER  = '2.93.30006.0'       / Software Version                               EXPOSURE= '900,00000'          / Total Exposure Time                            TEMP    = '-74,7   '           / Temperature                                    READTIME=              1.0E-06 / Pixel readout time                             OPERATN =                    4 / Type of system                                 GAIN    = '1.0     '           / Ganho                                          EMREALGN=                    0 / EM Real Gain                                   VCLKAMP =                    0 / Vertical Clock Amplitude                       VSHIFT  = '76,95   '           / Vertical Shift Speed                           PREAMP  = '4x      '           / Pre Amplifier Gain                             SERNO   = '13739   '           / Serial Number                                  UNSTTEMP= '-999    '           / Unstabilized Temperature                       BLCLAMP =                    F / Baseline Clamp                                 PRECAN  =                    0 / Prescans                                       FLIPX   =                    0 / Horizontally Flipped                           FLIPY   =                    0 / Vertically Flipped                             CNTCVTMD=                    0 / Count Convert Mode                             CNTCVT  =                    0 / Count Convert                                  DTNWLGTH=                 500. / Detection Wavelength                           SNTVTY  =                   0. / Sensitivity                                    SPSNFLTR=                    0 / Spurious Noise Filter Mode                     THRSHLD =                   0. / Threshold                                      PCNTENLD=                    0 / Photon Counting Enabled                        NSETHSLD=                    0 / Number of Photon Counting Thresholds           PTNTHLD1=                   0. / Photon Counting Threshold 1                    PTNTHLD2=                   0. / Photon Counting Threshold 2                    PTNTHLD3=                   0. / Photon Counting Threshold 3                    PTNTHLD4=                   0. / Photon Counting Threshold 4                    AVGFTRMD=                    0 / Averaging Filter Mode                          AVGFCTR =                    1 / Averaging factor                               FRMCNT  =                    1 / Frame Count                                    USERTXT1= '        '           / User text                                      USERTXT2= '        '           / User text                                      USERTXT3= '        '           / User text                                      USERTXT4= '        '           / User text                                      FRAME   = '2014-05-16T00:34:39.941' / Start of Frame Exposure                   ESHTMODE=                    0 / Electronic Shuttering Mode                     DETECTOR= 'DZ936_FS,BR'        / Head Model                                     EXPTIME = '900,00000'          / Total Exposure Time                            OUTPTAMP= 'Conventional'       / Output Amplifier                               CAMGAIN = '4x      '           / Pre Amplifier Gain                             DATE-OBS= '2014-05-16T00:34:39.941' / Start of Frame Exposure                   RA      = '13:26:47'           / Alfa                                           DEC     = '-47:28:46'          / Delta                                          EPOCH   = '2000.0  '           / Epoca                                          AIRMASS = '1.104   '           / Massa de Ar                                    JD      = '2456793.53455'      / Data Juliana                                   ST      = '13:22:02'           / Tempo Sideral                                  HA      = '-0:05:39'           / Angulo Horario                                 IMAGE   = 'target_0008'        / Nome da imagem                                 TELESCOP= '1.60m   '           / Telescopio                                     PLATESCL= '0.18    '           / Escala de Placa ("/pixel)                      INSTRUME= 'Ecass+Ikon'         / Instrumento                                    OBSERVER= 'J.C.Munoz'          / Observador                                     RDNOISE = '6.0     '           / Ruido de Leitura                               FILTER  = 'Clear   '           / Filtro                                         COMMENT target NGC 5139                                                         WCSDIM  =                    3                                                  LTM1_1  =                   1.                                                  LTM2_2  =                   1.                                                  WAT0_001= 'system=equispec'                                                     WAT1_001= 'wtype=linear label=Wavelength units=angstroms'                       WAT2_001= 'wtype=linear'                                                        BANDID1 = 'spectrum: background fit, weights variance, clean no'                BANDID2 = 'spectrum: background fit, weights none, clean no'                    BANDID3 = 'background: background fit'                                          BANDID4 = 'sigma - background fit, weights variance, clean no'                  APNUM1  = '1 1 364.28 368.74'                                                   CTYPE1  = 'LINEAR  '                                                            CTYPE2  = 'LINEAR  '                                                            CTYPE3  = 'LINEAR  '                                                            CRVAL1  =      4825.5963013941                                                  CRPIX1  =                   1.                                                  CD1_1   =    0.638029636256591                                                  CD2_2   =                   1.                                                  CD3_3   =                   1.                                                  LTM3_3  =                   1.                                                  WAT3_001= 'wtype=linear'                                                        DC-FLAG =                    0                                                  DCLOG1  = 'REFSPEC1 = apsum_0012.fits'                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          END                                                                             BákpCrCriC;°ÜB¸•
+BçêâC@ÚCð/Bî)ÁC(…5C1m_CS¿CC[æCcR¤CMC"uC()bCKCC~Ï‡C;{BÄ8BQi¹BÛvaBÅûC5² CM |C:Û¨C`“ŒCáãCgªC/7GC~\¡CƒÍºC~Â5C`\pCH¨VC	!áCVŽŒC7]C¶#C)	C”\C$K]CmMÁCh‘mC:t“C3’C)3ÂC)8·CÑ_Cä¡C0ÿòC Ï‡ChöºCUOBòÆC=²Bé±‰BÌ'CÅC*ÉC'6C25ôCf%C		CaaCdk©C:$ìC;éMC;æÁC,£öCE¼CJM CvÀ¦CDñCkCŒ,*C<á¡CMØQCUå8C?kC_˜CQˆdC'¼C*ðC5C6ÙCPÀCC†¬CW•C2{C\2±CTÍCRÃïC…JÕCˆS¤CGKþC@¼{CNöCYB%CM˜CP"
+C<Ý#C$çCZ‘œC}ÊCE/ÏBÃAYB²ZþBÇl<C$¸ÍC„”ÔC“ª•CR#ÓCEÙ?Cq-/C†îCj<Co:ëCJêýC;ç4CSjxC\ACE¢C?àêCWZxCJÄ˜Cv~,C8tPCDŠXC3[C$§}Cú‚C%ý€C†s^C{¤CÁ-C/sxC6ùQCxTCƒ/?C~³ÚCyƒQC`‰CF<ûC{D±Cr¶‚CÕ_C^ßC<‡íC<F~CƒmÍCgLçCH¡dC}Cj`°C^sÃCF
+Cb=Cc]C‡¾äClã~CR	6CJéCz¦ˆCkè·C1lNC4,C«NC‡rC7)CÅDCm…ÒC|J~C&óðC‚E-C6ÀCD€C_qÕC’ 8Cb#½C„C™HÎCcí€CY€©C€¶yC„cÏC•¥ÍCœžCvÿ"C^"1Cd“VC•¥ÖC£y˜C®`C‚4sC:úECfš·C†x”Ch_›C…–°C€-5C‡YŒC O¼CP©ÐC%ŒqC‹×*Cb‡ÖC#0C•‰†C¥i)CpæC¬C‘¨ÒCcïC­òMC˜KCÅøõC¡MéCŒ™C…F2CT˜8Ck`ICkXLCy$C|j‚CŠÐYC´lC¤ÓªC¾àìC½ßCÄ‰+CœãÖC“ãµCªß²C“ÈaC~Y=C+SC|GC„F§C§ð¼C¤¾CtXbC‚Ù§C’ÓÔC¨Å^C¦°½C‹×PCr¿_C„
+CŒ† Cœ–HC§jMC¥Ë`C¼zC¢·CpüCƒ$ªC–óôC”æŽC“Í¢C§
+C­©¸C†Y³C‘‰CC­SC§õŽC‡Å¤C²ÜC­=C–:dCˆ]MC‡ù™C–´cC—øC¡TÚC¢èÎC—¶þC%wCiüôCˆ™C«9ÛC¥ôC¹1C¹KoCÀJøC®ÿ`CÄÆCÈ++C¸ðCuõC›¬3CµüC¼ˆ¶C’fÁCtOðC›ÊC¥Ž¾C¢Z*C“sÖCˆŽC’VÅCˆ»àC¡`C˜ôxC‰½ˆCˆÙ)C‘ºÌCŸ/×Cº	_CÈž†Cž2¼C“ålC¹ö€CÒ‹}C³ç¸C’?‹CïC´UÊC™;yC™îC¼;CÇñCÕ­ëC² ²C'C½tCËiÛC·/ãC‘ÊõCŠ¡(Cžn,CpjcCŠÁ;CŒtC“ÛC¬ŠCz™¦C›0·C‹8C’lLCŒ'ÄC¤ÿECÈJ1C¦{uCŠœC•ÌòC¥†vCÊý?C¾ÈåC¬7vCÇ©ZC© rCŒNèC”óC§¤C”¼~C¿ÙC½‹ÅC¿Í‘CØ/ÑCÅD®C¦/ÃC%xCŽ:C¦Z(C¨ÒnC»èCÀ!§C¹ceCÜå?CÐÅRC¨È€CÀJ¯CÁ¶&C¨'CšIŽC˜âRC¤&ÔCˆ^¦C	ºC°HAC¶ZCÔDÄC¶%ÐCž‡CÉgÍCÏ¦°C¬Ó:CªSzC¦“»C³Æ`C«FC­®ÐCÂ³yC¼ONC´O’CÀÄdC—ë…C²bSC³žýCÃVCÞ/£CÅ¬õC¬[äCƒæCÇzD'ÕCÏ•…CµæSC©ÂC°¡¶CÎ´ñCäöC¸·‹CÍD þjCÓ@üCÈ¨)CéPïCÔi­Cì{*CæOÙCËÉC¬îYC»€CÈ÷'CÉódCÌ³’CÇlLC¸8ñC™ ºC /5C³j£C ©>C±
+=C¾³ÉCYC-ØC•'C±àtC­LìC¢°9C†‹ØC¸ÚfCªg@CdöDC«ŸC¥)œC›ÿ?C¾*wC¡T›CÍ3ÃCâ6C·A~C¡ ÷C½S¥C¾ã©CÀ–ÑCÒ-ÎCà;CßñÓCÀÍ"CÜÄCéaCÊ–½CåÜ«CÄ?CÄ±îC·5C¥ëCµæÍCâA<Ck>;C¤yéC§µ&CÎICÛIC²PCÆ¾C®à¹C¼;"CºžCÐŠ]C›ã!CÛ·ñCúC¡ÊACž\CÐ&}CØíŒC×ö‹CÃ$#C¼>¶C¹ã\C©?C¶k/CÄ[LCÐÅ:CÄeøC»&,C·qWCÀRÍCûTCØžiCÑ™eC»uòCà*rCÙäÓCøöúCÛ¹FCÃèCé¢CËÑrC¾ŒCãQfCË)CÇˆ"Cï CÊ•CËú+C×CËWCÏÓCÁê4CÆÀ.CÒ·VC¼¶)CÄwCñØDceCänCÓ^MCò_­CàŒ¯CÃ+C×tCÝäËCÐý8CÎõgC¡XC€?dC— «C§I_CÀÉ5CÆuYCÙØªChC…¡‡C¸“ÁCÀþ±CµFÐCÂÈ•CåŠ‘Cð¯CçþŠCÙ,zCé{FDè‚CêxOCÏw:CŸy§C•,<CÓ“‡CÃØÙC•sC©!YCæ=¬Cðá&C¼s£C×=CÚÀôCÇì-CÑJ{C§I‰CÀ{/CýÈCñiD¡D xSCÌJCŒX×CãBC²ûÉC›ªXCÛ"CÓ=D »Dk™DKžCëj¸CÜš2Cô«¡CÖëCµÄCÆbCë1CìÕ³CéåCÜGCØ$ÃCå »Cñg	CäóžC·:ðCÊnCêç•CëCÍaÎCéCD`ŸCïŠíCÈÑCêÕ²CÙÎÃCô>âCÔpC×š8CàCØ‡žCíç Cê+‰Có„CÉCââCý²CéÔCÕRÖCòõC¶(xCËÂßCË­C¬2ƒCÐ¨pCÊ{©C°PÊC¶dVCËhJC±…ŒCÊ HDÃÒCò•àCÅU&CÈ}CÈ«ØCÈ˜¼CÎPC©ÎºCÕ»‡DJßCûž³D© Cÿ§DBVC÷~CÂáFD ÂC÷¢/CÅÚñCæûÁDšåCôõDŒCÚ‚ýCéÑ¯CéÑCæÍDvXCÝ€óC±F^C××ÊCÕCÊÏÄCŽüíC d+CÓq·DDÓCÓžÕCÓÞ5CÚyCåé6Cå_C÷HiCö*šCëÎÁCÖ3MC»?C¿ŸCÍ{­CÚñ–Cê¥€CÜ÷C¬õÈCº¯âCÛ×ÑCÙÂ	CÅÜZCÊÁtCÖ2ùCê¶ºCè¸’Cár°D­
+DßVD V=C¿{_CÁ³-CÌCÃšÒCâ7ÙCÞÆ-Cò~ CìîDxCü‡ÅC·BýCÎEUCÍåÉCÙ–CçþïCðPCÌesC½É‘CÙô•CØ6œDVxCåWËCÛmNCìAáCêè†Cà8ÄCüª€Cô¡CÓãCÉ`HCÃ°ÇCê+JCó4wCë×Cã…bCââ;CíªöCâ³ÉCã·CìWeCÿ4ºCã®fCëüÎDî‡CþÄCÓ ùC¿óŠCå»RCÙÌÍCÅù>C½„CßFTDHaDIoCÜ‡ÀCýÍDëÆCâ®CØìCÕê¾Cß
+ÍC÷iQD^–DdSCíâ*CãÝCäæYD–·Cë^»Cé¤CÝöÆCõAÐCØ0QCù@ÛDº&Cõ}ñCå~ÒCíÍÕCÙÈCÞ™ºD¥©CÔ!†CÒy¦CíNCÜ(CÁÚÁC¸øœCÈ7CÖDk÷Cå?!Cý?¸Cø7CãéôD‘ÝCá0CàýCû;VCþmODe£CùÓïCÎh¤CÞ ŽDÃ3Cõ¦ŠCò­DÊ:D ©ZCåŸjDƒD#Cæ§Câ&÷CÎ&iCÑk	Câ¯„CònŠD	áëCñWÙCüOUD¦÷CÚCÒ³vCâ ˆCýÔÓD¬¦CÏù¬CÜ$öD
+/›Cút’D ÌÛC÷vCê‹­CàßUCîKDaÖD±úCåZCùÝ]Cà‰CâŸÑCðª¥CÍ®~CÀ.CúRCék‹Cß'CÞÿÉCâˆMCÔ;^CØÝ¹Cî"D×«CÓ6CÕ$yCì˜gCø« DÛD .D¶D ›NCçÐCÑ$KCÚ™ÑC¹#‹CÓ´vD$ÂD ÿ¸CúÁUCä^CÈA¨CðBrD þŸCè CÜ°Cçî¸CòoJCûv<CìÒCß­CÝÃçCÒ:D I¬DúCô¡Cù÷CýIDïÓD
+öD|„D«$DÔîCì÷8DïŒCøÊ CàEQCë"ÝDwYDl
+CúÜCèùCóRjD
+\
+Cõ&ÏCþv“D ŽÕD²šD—JCÞ×ÁCÿ°CäÇŠC×géCûö¤Cé¢±CùÈ“CñJÕD,D}‘Cõ5‡CôgŽCü§hCðù¶Cÿ˜?C¿e=Cæ¥Có8™CæêCþ`bCòU^Cä_Cö‹sD=uCì=CåÅCé:Côa‰DTeD¸pD	ÍÙCë1CCÕºPD<ÈD™D
+U_CæðºDŠD4¡D¢åCã<¾CØ”(CàÖaCÏ­Cà¨ND¯MD	HrD
+r¡C÷PCøú8D`MDûRCú.C÷Z]CãaNDDÚ—DN´D²ÆCì¼ßCømÎDF@Cÿ‚WD ´åD	:˜DÞÖDXD
+µ|CõrCú§ðDCDrkCïòDŸ;D!CCÿEBCæèCÛmÏDÍØCú£ªCûƒD
+1DœPCèŸCÖÄ(DùDÅ D ÝD­ÀCìOCä{­Cä+VDî¸Dª–D æßD·ùD™Dþ¯DÝUD‰ŸDCcDFPCè€vDu	D¶xCø;D
+L4D
+J«D`CöªD¢UD¨dDeCÿ^ÏDkC÷U€Cà—CõÏqCñÉYD^·DôbDJÖD«vDûdDÜ¾CùÝCð´ÎD»žCþ%ÓCàåkCëPCýè®CüÜCD_-DáFCíu™Cö_ICùíACË]èCëj8D	õ©CóûCðïëD	¸áD(âCù>šDwkD ÉªCýÅØCô0ADMßCû¾bCôZöCù)>D·D
+‘D¦üCãCíÓ›D±WD
+ÌCîÅ‹CøÓÓDAhDBMCó ±CàÓfD? CþÕCá'bCæ,DÐD”ÚDÙ
+CúÝÄDQDº¡DvèD‰>DÚ›D‡D†sD]>DüžDDc3Dº9DÅµDô£CìñQCßvãCû˜Cë’ÎCô“&D,¨DyD´!Dâ}DOƒCÞºqDcD	šDGCðBvDkD£šDwlDþCúÞíDBÕDØTD1YDqKD
+ÎJDüDÑCão†DHkDJ4D
+€±DODŽæCøƒŒCùHQCòA½D x…DïµCö6YDiÙDo1Du	D	»wCþñÁD-FCðúÙCì±¡D)ZDšD
+aDHDF/CøQôDÉD¾'DêDõçCúG¬CñÒDD)D/ñD 
+lDßCà¶(D¬D
+@DˆcD ágDÞvD ûìCúˆæD‡ôDUŒCæw·D¦)D Î—DR\Cô%çCè†ÐD	D¡ÄCúõCëSD« Cé.¬D¯œD"2\CýhnCñ£AD*D	/Do€DS³Cä’oCÿuhD	–CþôDCßÆ°Cï¶¦Cç·†DÁDŒÙCêþóCêéjCÿø{D *yCü=–Cñ¡_CùáøD*ŽD‡D€ÂD‚XD…3D¢“DeDàßCí0Cû“§DnüDÐ<CçWCü ¤Dƒ%Cù(šCÖ_`DÏŽD$²éCú=ÝD¾àDè¦D4ôDÅD‰šD D@¾DSÕCñCìLD êDó›DECø²pCù{˜DûD/ÁDsD‘çD'D(‡DNÚCæœpD\©CØBîCÏóCî:ND°DštDöžD	ùDm/D”ŠDdCõ“D;§Cý]=D	˜ÇDàQD!#ìDºDIVDê]Cüx+D É‹Cà¹ñCè?VDÃDûD·-DtjD ±mD°»D
+WÄDHD¤šCú/hD RCøÿCCýÿ¨D
+¸qD^.D¡D%·DµD«ãD~ID:¤DDnDúCCÿøCì²Có`jCù¡¬CéCÿfCöÍúCæÏ
+DÙCDÑD˜­D“‘D!VòD¦Dõ›DJD R:D?ýD–DCöš­D+DaÊDùÈDí!Dr·DŽÖD'xDdED‘ICäâ´DIùD<ûCõ¸D—kDžýDHD
+!ÓDáCÕöèCïËªCôîQCúh×Cõ¦’Cú—ÞC÷K'DKŒD-†DçÇD,·Cñ	CÎ†“D»Cû¢™D,D&4’D¾˜Cö—uD$1D´dD·»Cæ5DÎ™D&3ÜDãÒDdKDj€D(LBD»D–ØDšªD…ÇD‚ûDRkD	ÿÙDi,D'(°DD9QD9•DŸ	D75CñtZC×ÉŽDÕ³DÎ÷Dv@D ®DPhDŸÆD|ßD/yçD_}D|*DºDã¯D2Cë²DÚöDúìD*ºDœD2UDØnDJ™DÓëD,‹DA[D=_Cã[D™ÜD›ÚDÌ°D ^§D&!…D¾ÊDÍßDÔD
+eõDîEDÜ-DADj™D)÷CïiÓCô.DÎCî—}D–õDÿ¾D“‹DäÑDÏ:D&'D?ÇD-D<ÚDë÷DMFCõäÜDueD)n$D
+ºD&©†DX÷DðþDED	7´D1î*D-ô‰D{@CþëDA4D+D#èD	ÝÛD]Dò[D^uD­ADEsD(4¾D %DDrbDG¡DJÜD!D¹D!X€D˜ÃCâîD	jDO–D@'DŠvD \°DÎD"Ö£D,O[DvbDòbDŸD;˜D	tQDÝŒDüD^°D¬DÑ]DçËD
+åCþÒ|D!@D4°Cù‹Dª<Cï—HCÑ(ãCön®DS$Cç†CÐíUCç`,DúD#ëÍD{~DÀËD]VDX½CöäùDÏzD<DªD•jDT¹D"ÃcDý.D IuD³dD è DÊxDgþD	M Dû©D |àCòðWD ÀDD'YDÝðD²-D ÙqDDêÿDy,D øµCù>WCÞ¾áCûªÝD}D	ÁÉDzòDhÎD YDÏ”DÀ¸Cúé€Cýf¡C÷dÕDWD„ÒCýÖ3Dˆ§D&Ï°DWmDÕCò‹DÄqD!¾D‚DÄ˜D¹%DQ¬DÕD³³D!V-D#*D$Ö,D·oDt¤D!žD'†ÇD#âßDU…D"Y>D¤ZD¿AD EDj6DÂDxŒDQœD#V@D…¢D³·DÎÉD
+5YD
+.ØDÒDÆÛDæD›D«÷Dê$DŠDyD·±DûD&ãDÓDƒ…DÎnD Þ>DØÀD½¢DaçDi@DLåD"v±D[ÄDÑÿD<Cü/CÙësD€ùD
+ùÌD
+%DäÉDSCößCñMªD'»D'Dý.D	 þD‚DbDç¾D
+¹ÎD¨DüCãu?D$—eDÕ$Cþ}šDX™D“nD2YDnDHTD „D@\D
+aÈCþŒDÞD8CCú»7Cñ¨KDƒD‚ýD	ÞDÏ(D
+ípD=6DzD¶DBD	òTCöCDK!CñBDæÐCôµÕCÐÀÁCý•yCíDNDcD¸1CîöýCõ¼oCâ#CÛwCàÓpCÍŸCÆ6Cç¾DCû ED"'CèLCÜ¡[Cß_D;ôDÇ‹CýÔ¬DX¿D
+ÝD	»bDãÇD]D	èñDéÛD „ôDGRDŽžDžD8CüúDï<D³.D2ÓD±¼D3D‡”D¥[D €çD¥ÎDþTD	•[Dç¦DED}&Db©DO	DæÈDÅAD­#D!:ŽD“]D@tD!™CéÿDé.DÖCìšCìŠçD qŽD vDDD
+DUZDÚD'ÜDž¨D	_?DQiCò—GDÑDRD8\³D1ëCì=DœD%‘D)@D¼D§CôëÙCþïüDvtD™CõƒGDi\D«€D
+£ÆDìÎCó=CþŠ¶D¸ßD“ëD	sýDÚwCÏ•&CãBC÷ãDþ^DÝTCü©ÆCàBþD³@CökCþËpD<CúšÑDÓrDEMD½DÛ_CüK)D°¥D1?D¡ÀDuéDéâDèíCíwCù«—Cþƒ­DšD²jD	úCö¯òD–êDcöDõWDzÃD4ÈD	ÌÇDyºCÔîD1D¬hD­±Dô£D™YD|þD–iCìÏíD«ÖDûD¸³D%›“DìYD	š›DáD-D sgD$[·DÜÀDäÓDFXCõG¦Dc$DßOD3ôDšDb+D!õDeKD*7£D÷—D£EDZDî„DwšD4\D#œöDÊAD/D4ÑDD]:D*¿D,
+DœðD#ƒC÷ñD:D]·D³gCü2õDý1DÝD	DóD¥—DøæDGoD™DtDBÜDDGòDœõDwÕDpáC÷oJD JDl©CýŸyCý?4D˜&DPDýbD›jD…ND ïCúÿbD‚}D
+QcDƒD
+½®Cë‰¹D
+üYD	Š?D»UCúƒDjD%	ãD›þD=ÞDÑ]Dµ½D D%õÕDrŽD~\D |ˆD®ÀDÈD(¬D…(DVxDRçD§%D3DÓlDtzCìÛ`CöXDcD<D>_D™sD(¿Dw¤Cþ=/DGD†Dó–DèòD>PD'´D«´DnãDRDpÀD©D bD÷2D1TCøƒíDK…D
+ô¿DoD³hD	ŸˆD0UD£ËDü0Dò<D“D
+ü¤Dx9Dñ©DÑoDo5DB‹DFD¼nDåD5C÷&DÛUDZCý®D	Ï“D&“pCÿ®!DÄxD«™CÝ×Dî6CëðöD—DPÚD§%Cÿ8‘D4D	V[CóMDj¹DzDLúDŠD´<D
+D'«ÓD¨=D[D
+YçD5LD°0D	­ëD³kDOûDX<Cû;€DìDÔMDÙCó¡àDígD{ºD.åDJD	mDcSDèmD
+ìLD„DW‹CÔ‡äCñH›DœÃD	é‚Cä•ÿDÍDÇ1D%BCýïCÛX€DÍDC¬Dÿ¤D†ÚD Dé…Db`DO@D «·DÀ[Cø-wCßY‹DãDpçDJ°DÐD¢ÇDç¼DÞ‘Dð­Cín—CÿŒ˜CñˆkDD•]DpÏD:9D›4DõÝD®	B¥iôB“–ÁCŒ“CõÛCBdôBšÊ2BÉâaCGÝ½Cì	BðÂcCÀ}C0tÆBóìUBé¶XCVnÝCTnCGÚ`CÚ²C,}°CûWC
+ìoC‚.kC8púB¾%B1êÏBÞ$|B¤åÚCØCMW‰CGKCaìbC%K|BòOC)(C„ƒëC†þC€"C]„@CcÚšCYCTÐCðC ‚\C9)þC
+C¬xCa˜ÀCTìC<:ðCCÎÍC1)jC9yC$ÚwC$C()¸C'õÂC`‡¯CW­2BùÊ¤CpDBÁ%BÐßÈC•C&2KC$óC0<Ce5CcCT“ÍCi_0CS"°CKÉ£CL¡äC:ßØC";cC;£qCtÒCFú~Ce|C‚èëC@ujCLTKCN'CPgíCsO>CEÃæCn±C.œŒC=kêC6p#CLNGCƒ­@CC°C(_mCYCKR/CITC„4C€]CDnC6R7CU¿fCqÖíCM®ûCMXCP ¨C)lCZ†CùâC0{hBÆvRB²š³BÌ„¹C+œ^CŠÿÐC‘¤C6#ÒC8LCVx§Cw>¥C]ŽƒC^ÐyC6–C#žCE:CT‡C>,ÖC5 \C?ÐŒCFiCr³C+ÔCKïžC;ÿÙC,mCf§C,-xC‡ÓCwØ¤C‰¤ C'–ŸC_CqiC‰<çC†YeCyÞÖCWeC3WêCg×9C{áÛC(‚YCTC6KC?¬ßC‰öøCh¨6C4>CqH	Cb;0C^O„CB5üCÛrCiJC†RaCUSCKjÀCKÐCsi±CnC5þCûC®uC†¿ËC8¢OC3ËC~ÕXCo_CƒC~Ø;CDûC5XCP&øC’+C^ôCƒHÃC˜ÔÑCa›xCfzCšìC!­C“oCœž{C„xfCa¶“CVC…'åCŸ›¤C¼ïÆC€ÑÁC<ÁRCiQPC‡–nCxzCƒ:QC€oõC’ÏïC£ëªCO½kC [ÙC‡VJCgLC)RqC—Ø×C¤|ïCcµhCy”}C’‘CdíTC°]ÆC›Ã÷CÉ' C˜pÿCƒ^yCƒõOCiëC‚l«Cs§rCzïÁCsæ*C„‰C‹=?C¥›ÓCÀ8…C¹MxCÉ=\C§GCÜ‚C¬õC™?¬Cpó€C*âBCŠEßC‰$ÑCª“C¦Z–CþlC€îCxØC©”C¦ŸÖC‹$*Cf¶ÂC€ÌC¸«C¢;µC©Ô0C Þ„C¶o4CŸŸCl×ŒC~RC’%hC–C…C‘eÜC©ÙaC®¼ØC‡F/Cˆ~?C¢TC­ì±C„¦‹C³\1C¯gYC¥EC‰]CzUŠC•£ÆC˜;¯CŸu=C¡äñC™ýÃC’>aCqZ¯C‡ÇC¯Ê¡C§°C¿+/C»@CÀMûC¬Ÿ˜C¹ÙC¸DiC† pC{¸QCñsC·lOC¶roC‰°÷CfCýCncC—	¸Cš.¹C’£C‚ÀC‰ÆZC‰Ù”C£¤”CŽ}iCäûCwâC”¢KCŸC¹ËCÌóC˜OSCÆ{C¿fCÒ{rCµ0CT¼C‚‚ÌC¸¼ŠC—"¡C”*mC¶Ð@CÂ¬CÛvnC¶¶C•xKCº¢CÇ×C¹°ƒC˜CC‘/AC™ÝhCfrC‹(C·C’™*CªÔØC‚é¥C¤¾ìC‡›mC."C‹ŒñC¤sÝCÏ£bC¦CŒîC˜™C¤ónCÌ;²C¸¥»C§o†CÌ.ÀC³0|C•,/C’…C `C„H¸CÇ!ñC¹)•CÀ/
+CåWWCÂ¾;C¤2CSPCvÒC¯ŽôC¦^C·˜C¾ŽËCÀ+CÝ_CÇÔÔC­Ž”CÅaC¿áC£§ïC˜ÆC«ÏC¬°xC|G°C”_5CµLRC¿Z%CÕéC¶ÜæC–»×CÆVCÇ´¶C¥hƒC¤¤-Cš)C¶ÁÝC±|ŒC¨xCÀûxCÀóC´ü]CÀY¾CŽ)ÄC·#ÄCµwöCº$ÒCßœéCÆ=çC­ DC€¨ìCÂõ¥D	—CÊ…C²²pC¤üCºúÀCÖÀõCá«”C½¡ÃCÍ
+DœßCÖCÉÞ”CåejCÊrõCôŠòCñ=›CÑ*C¦ÞÂC´9{CÉøCÃìuCÍXÊCÍ¦C·Æ[C™zóCÝPC±ýC£Å*C¬ä9C¶•øCw4ÙC%QC•¸”C°Y C­OïC¦ÓiC†3ƒC½„ŒC­€÷C\QCC¨:6C«ÀNC¡ëMC³’hCÄéCÌXCÛCƒC«ë¤C )àC¼’°C¶èC¹ÎaCÌ7aCáàÄCðTªCÊºICâ˜ÛCðiCÎânCïn“CÄÚCÆD C«áíC›évC¶b>CåæCsˆòC™ÚCªH	CÍäUCÔ˜XC­ááCÁ›ÎC¤âíCÀ›RCºï>CË/tCš‹ÉCÚ}sD2¦C¬C ÷†CÊ)ÔCÔ”CCÓè¹CÀzóCÅlvCÅ(3C®G$C½B§CÎ©×C×eGCÊNC¸]-C¹¾ÃC³’ECðˆõCÓ³rCÜ³OCºÂ	Cß_èCÈ>¦Cðâ¸CÖiC¾…®Cîo7CÒïKCÈ“3Cè©ŸCÉW	C¼M*Cã-GCÊœCÑˆ%CÐÐjC¹mACÈ¡ÕCÇ¼ÐCÊê^CÇß›C¯U©CÉ18Cõi®D=€Cç¢¥CÒCî-ÑCÛmûCÁwCÑq/C×
+ˆCÑ†ØCÑ‹¤C›IóCwPÙC˜ZC¢CÇ8ACÇ#CÖ‘SCÛÉC€ÝzC´ [CÄÂ•CµÚC»ªÁCãã&Cóà6Cô)CãCî—GDbƒCìØCÒöC¤áQC›(óCßwÎCÌ{(C“µC›ùªCèývCù<ûC½ô"CÕæ­Cß3qCÎªàCÖ\C±=ÑCÇ€ÁD?Cþ……D®ÍD ãCÕaœC‹
+šCæDÓC´+UC™*ñCÜcÿCÆnDgvD®D ›—CâãçCÜzœCõATCØðFC²À¸C¿ÎCCãÍCñ³@CécfCÑE‘CÐ
+CÞ[ÍCóËCæ¶?C¶ÀÂCÇ±õCåÐ2CîØÅC×z_CëÏåDèRCú8áCÐ²’CåfCÙþÇCóTªCÔƒ CÞ­CÙÊCÞv+Cå86CâkCø­˜CÆ!CÏ/D?¯CîÖ×CÔÖCðåŠC²÷¼CÒM?CÍòýC¢§¿C¿ä°CÏUC¿¢wC¶·CÅß¦C©ÆCÎÎmD‚CãrrC¼DñCÑÓÓCÖÌECÎ.CÊ†C¬þ|C×ÔŒD/Cõh½DðFCýwD‡bCõó&Cº°®D€Cò„¬Cº^lCØqDÒ®CôÃD ØCÖYëCâžâCé]¹CäwbD\yCÛmÓC±ŸCÇúCÖ›gCÛŒ)C±­C¦¬CÖÈôD…~D
+bCÒd°CÕs§CÜØ©CÕeCå~OCùïÑCï2$Cî·pCÏÙÙC°2C·ZCÈbçCÜDCíEèCÞÄ¾Cž7†C²Ñ±CíÝCó§œCÑ6;CÌ6bCáäwCÝâýCímCå‹ÅDôÊD2D¶øC±o‰C¹­«CÌ‡CÆTÖCÎ~CÒ&CïÞoCð“ÔD•Cý¢CÅ«Cß¶lCÒ§«C×¹ØCãôCîæºCÆðC³¬CÑXPCÌ*ßCÿðFCî°·CÙýçCâômCèzŸCåÉQDh¢Cù–¬CÚ“äCÌÄCÁï`Côâ‚D ËCíEíCÔÜëCÖ¢˜Cì"hCÔQ±CÞð9Cû…WDÚ˜CçGÙCè©DwDL™CÕƒ‹C¯u¼Cá#CØÖ©C¾P>C²SNCÜñºD¼
+DšwCÓKVCï×_Cù¤¥CäŠ\CÐ|CÁšCÑ1pD ¨D­D6FCæ¼CérˆCÔ¢ÍDç¢Cî˜UCìëžCßæòCýCäD¹“D\D˜)CòDµC÷ÝÎCäè9Cå†ìD ˆLCÈÜCÞÛC÷à«CÝ”CÆ8ŒC²mC¾?>CàŠFD-Có+DLFD¼sCéD[lCåTßCç–Cû—Có&oD¨™Dp‘CÃ&
+CÛÆMD(éCö€C÷tDnàCÿŠùCæMõCüu™D
+œqCãädCÛ3yCÃxCË,Cá ŽCóãsD©Cê›dD±ˆDƒ¹Cà(2CÃ+ŸCé¨D*`Cûœ•CÐ CÝaêD¦±Có?¤DÏ'Cï¾ëCï1ºCß|CärND¸ÎD
+’=CÜ!Cøp‹CóNBCçPCß„ëCÈ=ÊC¿DfCø¬bCò]ëCèÔgCåº·Cé-¾CÊ]¦CÖ‰ŸCó_JD¦BCÅ­CÎOCÞz¹CêKOD™\D½õD†Dú?CïKICÒõCÑA5C¯nTCÛº½DýACû{ÈCýØ-Cä•\C¿¯×CízyD 0fCÚø¢CÌŒîCá±¸Cðð	CñCè™CéqCÙiÐCÅ¹½DpSDD¾ÛD™¹D YFDÀÒDÊGDþD	8DËCñK™D€rCøkCØ‹nCë™ºD|D‘éCñ¿‹Cä„C÷4ÂDVCûíÃC÷_ÚCð€ÑD3DÎ
+CÐ§Có¨ƒCÜ¯CÎxD(ºCõ Cò¥zCæRÖD ùÏD©UCÿ-Cù{CöNCö7­Cû,¼C¿S]Cã˜Cú"†CñSnCûÚKCöññCó…­CîÜ³D%—CïXCÜÃCó%ÓCôãDDD6tD2•CôCÚû¸DDÛD™ñDJ¾Cë.àCÿËkD=ÝD¸ŸCÞ¦»CçÀöCã>CÄ<Cæ	»Dv DSD4¯Cñ¥CõDî§D]1D ´ˆCð1CÛ ãDQçDHVD¿D5aCßRìCñÞ2D NÆCù8CûhßD	/VDÎmD&BD	vD §;Dw9D™}Dž
+CõZ¨DŒ°D#CïpCåíÕCÖ6ƒDÃpCøÈZD0:DSDÁCáfCØ«öCþõ´D¡CùíËDW0Cê¥êCÞ‚CÞ)8DÛnDkÜDº¥D
+vDª9DÃ<D¨DxøDŸ:Dn©Cñ÷òD%µD	7µCùFDiÊDlkDP¯Cò«ªDxD©ªDîÓD÷àD ØCþ;Cå„^Cý”WCð‰Cü±ßD>ÚD[“DÕaD$•DïCùM\Cç"OD ·DËCÔ>ÑCï±D<íD¢ODæ§D¦ŒCøEâCüYCù‹cCÅ¿êCêfÐD
+F‰Cû»pCõ:XD	²ÇDý]DÑÅDCõÀèCö‚C÷Z;D<¿CõnÙCÝœêCë*D´KD`DcCô¥zCï›ŒD@SDØÙCÚ§CóUDL4DŠCø$“Cçë¡DCÔCõiåCÖ¹Cà2×DUèDÂ´D 6CîòõCûNID†D	¡éD‡iDÊ©CþŒëDÖDòÙD ‘°DÉ#Ds°DWÀDØ–DR,Cìt\CÙnCúD°C×=Cê	D „ÏD/òD¿DütDÿCß¹D H-Dg¤DhÝCé/5CûRâDÊfDõ×D{­CånDMhD.£DþVDºgDÎyD%ÝDØóCÊãuDýœD+ÀDþ«D§D½CþPCñ·—CùjÒD1†D`*Cë0§D2mD"s–D"ÈD³cCý©DD1òD8CùC¨D	DšÎD&3DID‘¹Cî¦¨D°@DÓDçXDÙéCúýCðPÊDU–D
+šJDÉ{DÅ+CÞYÙD°<DÎICù”+D jD AD)dDÎÕDÎ¸D ½†CÜ‘D	c,DœÏDñ¸Cê–CäQÑD@ïDý(D :ÈCæz­DæöCé½
+D7ÐD5ÒCðñCó>'DïïDÎ~D	á?DWCòçDRD ßCþÂ¥C×}_Cñx…Cæ <DéÒD	Þ¤CÞý€Cß£D£*DÑ”Cð@Cß6ÔCöâMDˆDaÕDþJDå·DùADìD¡¨D>CëC÷¿ÍDÍ¬CþÒøCæçúCÿÔ]D'°D ³üCÐ¦C÷‡ÜD$oºCü	þDN<DMôDcDtÅDDêD1œDh;Cà£OCØvëD -ÿDLTCýØOD ÷·D²D0VDDð“D»$D9…DƒvCüØoCä³rDDCÞ\CË×CÿUøD
+µ±DŸ¼D
+'-DX>D	Ø<DíáD
+”¥Có·ŽDÁŸDÌ%D
+yD!‹D+u9CõÎ/D	¸Dè­D TD ÝpCÝV>CÝº.D	GD¼qD“ÊD'ÁDòˆDW¶D YDÌDCûx.DÜÜCÿCÿ~=D’ñD]nD¬uD$;óD
+ÀÜDÆD "ÈD0ÉDÚ½DÿôDÁUD¸CõÆ·DíDé6Cå’7CïiÕCðÌìCñ«/D
+† DaDÞ¤DD$½ôD§"D@XD³8D%­ÒDuÚD‘FDeŽCëÕ×DC!DD]•DC2DC’DgDE7De	D	£—Cå0;D]ëD	ôTCÝnèD±D&»qDÀÛD
+×ÍCÿ—CÎŠ³Cè_ÛCû$™CþT	Cú|´CëÚJD D	úD(eCü™¦D7ŠCî›+CÀEâDÍ[CóÀD´0D)X-D+KCìí»CþW D!„„D)yCÕE—DíDkÐDD!D
+D'ÌËD ä Ds2DœÈDè»DáDDF~DìQDxòD&˜ÝDKøDD˜¬Dã×D‰åCê¼‹CÞÁDØSD’lDéGD<kDpËDÃ[D""ÝD,¥\DDŒDD×+D!ð´Cð0ÂD“wDºBD&Ê_D!öÎD
+ZtD¸ËDÿcCûD
+DD€ºCýÐCßò|DycD‹þDÜ±D(HHD+½DD/D;rDŸßD$‘ÙD jXDdÉDKþDÁ©Cõv@Cè)`D-JCëcÏD‡D?ÔDó±D#ÆjDÊ°D(ˆDÀÂDÙãD¡DIÍD‚¹Dq(DÇ!D+	WDß‡D)²½D¬ÎD@nD¡íDcÈD;Q™D8«—D‹ÂCóªDÝ²DeDÓ¨D€NDUèDØtDI•D_ÀDh&D-Ò,D$–øD3ÇDz/D#ûD€D
+;WD _¶D –CÏ¯qD
+Dô×Cÿh‘D	RfD$ç>DØD&*D.FBDË£DÊÜDƒCþããDÅsD!ÓCý›D0D1”D TŽDD
+œCø¡§Dv¦D\ÖCýóÈDÉýCúðºCÊ,‰CìgD;?CîøCÇ*=Cë÷€D%mD+yD"ÃHD}žDÍÜDcCô¼jCùßaD’D;[D³¿DíD&‘uD?CûÞbDÉãDéòD:»DßZD¼°D)Cþ']Cè]©D"e@D Ô¸D¿D±‰D±äD `¾DöD
+¤D
+2¡DüD”HCà/©CûèœCðkDDnÂDÒôDÁD–áDÉÓCþ#TCîW?DJ–Cþ‰yDP	D!ÜCüçÌD	ÒSD)¯ÖD%ãkDÚ¸Cù§aDÿRDöÑDÑŠDò•CüOBD	óDÅ+DáÏDØ8DÔ¦D4~Dä‰D(D+]þD'”D#·WD
+D%îcD7DÆOD´wDïÕCþ<•DäD¡±D*¢@DtDfD§ÚDw“DÄFDºDŒ>D;¿DvD1D.*D'¶DÍDS2D—üD$'fDmDÈ§Dë^DDï‡D!,žD…úD	¤5D
+-LD,v’DáEDùÀD¢_CþÑÔCÐáæDxuD
+çzDë½D¿*DßCç‡±CÙ¨CïzÞD
+Do›D96DíµD÷°DššDc·DªD \CÜ‹D(A«DÇÆCôÁüDbˆDWÎDØDäbCø¯9DcpDQDCð˜ODC-DyîCä‡Cë~#DieD"6!D5OD‡dDNtDÒ?DÿDÑ¯D	“'DÖ3Cür2DN2Cð‡«DÆ”Cô•CÒ±ÆD
+øÏCõù{DßD‡3CñÄìCò<CØFCÐ=ŠCà©CÏpSCÊd¯Cà\LDš>D ëDè%Cä.¸CÎ{³CÐDžCöúÏCþ˜D¡$DÝÄDšDæUDR±D¯D%¾MD%ZD”ID„¡D¢D Cò[ÂD‚jDæœD6ÁDï!DAD'TD
+PDë`Dj®DDµDÆDbçDÝÔDŸÖD¨çD‘mDjÒCýÔtDMD+HD™yDä«D
+Y™Cé¨cDfÕDFêCæéCæ“C÷×-Cû_\CûW>DúDtýD´ÃD,ùuD N|DX6D¸CÜæùCúNZD#i‰DAÊëD }Cï›×DLDP#DñüD…¹DR¢Cå‰^Cú DëãD(CãQáCÿ’WDûÝDj!D¿YCé=™DŠACø;ÓCûMõD	½·DkœCÌQÁCà‚âCîôÅD¬ÇDþUCù[ÆCÇ:Cû»CæËVCýj.D»CñOÙCü«?DXÎDŽ”D%#\Cò“DÿDü`DqDøD#HD›'CêUD Ý»D .…DÛ¨DŒôDË9CîE±DÞDõDieDÇJD‡_D\5Cüò²CÓjßD RD¶4D(lD#U¬DÄkDI÷DÄCé†&D‰ÑD
+¶UD­˜D #rDÎ?D
+ÐDÃ”DŒED'xD1k†D¦YD‰ƒD
+5Cì¿DoqD[8D‰•DÌD§JDÄmD
+Z«D&ùlD!É*DTóDÍÈDåwDc8CøäÓD*PöDÍ^D
+ÆoDŠ D DƒD0dDEDeœD‹@D¯~D ND¼ÌD¨lD <DãðDåúDtsDøªDO¤D
+ÔD	*D|àDÄjD	õDŽÅDÞ%Dˆ›DŒˆD#-ÚC÷ÌDtDV©Cò‹Cõ?8Dj’D(PCý2CùDëDeÆD=aCì›úDhaDO|Dx²D)@CõÉ4D
+ÚeDÊ-D-ÉC÷Ò|DS¾D(ˆNDíÚD®–DÏD›D$iâD( ¨D8­DdÊD$)·DßêD
+Y#D“YDÒD×¾D­—DCªDí D®aDHnCßj Cð{9D{ýD—´D§ºD–tDÓGD	4¬Cù@=DÁŸDŠcD
+(ADÙeDXD¯D»‡DÖÍDÕkDkD#ýD&LLDT-Da÷Cþ­‡DC<D
+6SD_”DcéDt7D‚DTDj½D<­D
+DýDË„DŠŠD{ÜDªŽD$JÉD"l¸DµòDD
+ÐCÿ³zCïEæDS¢D(.DŠ·DD&xD÷#Dü[D'šCÔ«pDÕ×Cåä-D ·DDÎhCöáDòkDD½ÐD÷DÔ†D
+FD·/DÕÓD	ñlD$¶DD²ÂDC£CöÿD„D	ZD¸‘DaGD„2D@=Dl’DÖÀD`¹CîØåCõµŸDôÕCÿçEDí/D	’D	GÏD\ÿD …DéêCüxdCÊ¶¡Cñ«ÇDº’DçCí6DJ˜D¢«DÃXCù=nCÛV³DDÜDD¿€D¹.D³ÞCúúàDèØDØID.=Dî¡D°ªCðNZD
+,ÚCîz¬D‰ºD^õD	SD™ñD@ƒDæŠCòxÖD	GÂCôQDpZDmüDWŸD>ÌCó”@D`‹DÍýB5†fDÀV¸D·lD³F]D±0bD´ÛGD³1—D¯6D°ò™D·VD¹-DµE¤D¶§²D¸ïkD²¨ID® D²nDµPÝD³BçD²*Dµ·\D±úD´å”D·¡9D½%èD·ú“D»¾D½ZD·7D·JD·®™D·ßpD»OD»QžD¸(‹DµCÛD°SD³jàD´WçD·ËáD·ø@D¶ëœDµž‚D²’D²¢D±\gD¬nÀD¬æwD­&|D¨«öD§7aD¢;èDžUÓDŸ}DŸ	 D¡ÙD DŸ¬D¡ŸD©ÈdD©asD§wD©.ØDªíbD¬ÀgD®óùD²f¡D´éÀD²¡¿D°–TD°¶+D°™ÞD³ªTD´«pD´‚ÈD²\¯D·6†D¸o'D¸æ^D·0©D¶…–DºRŠD¼ôD¾˜wDº3Dº¨FDÀÌÍD½¶øD¼žœD¾aÆD¾1D¾î#DÁ”ÜDÃ<}DÀñÉD¾D»•>D¹
+ÓD¾´?D¿ô‹DÂÔD¾H¿D¾á€DÃ÷¦DÂ$àDÂt°DÆ‡¬DÇ(ADÆPDÇÄþDÎË&DÐ DÐâuDÌ¿\DÇ/lDÃ¯DÅÛDÌñáDÊ‘DÅïDÊþDÈ¦DÄ­6DÇSDÆJ¨DÆbDËÆDÊß–DÇ¯IDÇ¦ADËQwDÌaDÇ¬æDÉ†iDÍ¢DÐgDËÐDÊ]DÊÉ{DÊ"ºDÈøDÊ¯ÌDÃçZDÀéDÅwDÇ—DÈžæDÉ®óDÆyDÆŽDÏVvDÍîDÌ›IDËD(DÊ@]DÌÊ˜DÍeDÏáDÓc9DÓ]÷DÕqDÙJ¯DÓÇ0DÓÆ„DÙšDÔ·çDÔ$ùD×^|DÒ¼rDÓÂ8DÔzÄDÏEŽDÎH³DÒ¤ËDÐ'4DÐÙDÍÜ‚DÑ—ìDÓo`DÜT`DÙm[DÜÃ±DÖQ0DØË©DÜŽ0DÙ¸DÙT£DÚ7tD×€ÅDÖšDÚ,¡DÝNVDàØßDÞ6FDÜÝDÙ¤¥DÖÆDÖ/¦DÙÇðDÞó^DÙSâDÕ&…DÛï1DÛGŸD×oîD×]D×<[DÚÂDÞžDßeaDâQ<DáŽDÙ„DÜâ®Dà;œDÞßDÚCDÛ¿BDÙã±DÙ­ÖDÙËDß+³Dà.§Dßä*DäBDÞ¤¨Dá.DçžáDäÓóDÞ8DáÃ&DãÄ¹DßZDãDæûŒDæ¾DæìDäBpDäopDé±hDåòÉDãìDáù„Dä4Dâ.ñDÝûÊDá7‰Dß¦DÚDäDoDâ’ADãËËDè4tDâgDÞM³DâU^Dæ7@Dâu+Då&CDê	hDæ·DèÖ‚Dèï2DãÐDß~)DædXDæ.çDå/ÐDãûDä,éDç[Dá¿XDàþDá4SDâDà÷?DâOÊDäÄÐDã‹ DàP DÞanDàqSDà*Då½DâYDßê[DÜ.IDÞ³,Dß#aDÙáËDßœÝDàB°DàI>DãDâ	ÁDÞVDÛ»åDßýþDâMTDâøDå2GDâaDßVªDâÔLDã9DãÚDåØoDåÿæDç?tDçÉÃDä†}DäÞÊDà2DäÉEDé”õDâ¹´DßåjDæDæÇDê„¼DïÏÿDê(ýDéWDæù…DáÙkDâæºDæ Dç´¯DäpŽDà¢Dà¼Dà¤Dæû#DêõåDåp#DàyDâEDäšóDáœ'Dâ5Då$4DáŽDå6çDæ˜£DæXkDáÊ\DßÈ?DäŸÒDè9¿Dê¶¸Dì›DéW]DåÖDå|ŽDç`¢DíéÁDð&DçâXDî+åDñè¨Dï€¿DïDñTúDî^9DíÒ™DótŽDó
+#Dó-ïDó\äDð’„Dö Dõ†ƒDïl4Dé0âDë›|Dì3úDè×'DëyzDêhÆDçîDèüZDëF#DïZDìDí“…Dêj[Då¼þDëiÅDïûìDé°¶Då	~Dì˜ÚDê?™DìÖDì„=Dæä÷DäúmDäâDâƒXDå¢Dæ7ØDé›ùDæßóDëÉDê¶ÓDçßmDñRFDò8GDñCƒDîôÑDè¯žDðDðŒ4DñÎÍDñ0!Dò&±DíØ_Dï\KDðíDêaÙDï7\DëCDè¾ÌDêÛ5DìŠvDê×ãDëýÙDéªÆDç)pDæÞåDèDçˆÁDé°Díñ¹Dî:~DìØàDïònDñDî·Dò¢ßDôdDñ£Dò bDêDeDé dDîÎ$DñM±Dôê”Dî«DópìDñN$Dñ[4Dôð[DõtvDñåhDì@„DðkRDô6@D÷_DóÖfDñŸöDðåºDîº¶Dð? DïBØDëâ¹DçI!Dç?DíGZDíÛDí‹]Dí$DDïcDñ ÚDî›’Dí†Dò©æDìá‘Dê¼ÌDñdmDîÁDïZÚDîmÄDóø7DñóDòF÷Dí£[DìþDëÍDèKfDëP”Dï­DïY(DéÔ«Dém;DêA‚DëÇ¥DñmöDïŒÆDëÔDë#éDë ØDç
+öDëE¨DïÛDîúùDíã&DóZãDìT Dð!ûDì£%Dôú$Dïç¹DîcDõ9«Dîó^DóûXDöÑDî¤jDð»ŸDô#åDò_DózçDòéúDïÐþDòFDó„Dõœ9D÷¼%DïÑDéwSDèØDã[hDÝóSDÝÓ1Dà€˜DÞÌDßúDã$DÜZnDÙR´D×ã«DÙ[DáºDäÊKDáŽÔDçDæÃÉDêviDìâ(DïEjDñX!DëiØDógDöÍ(DòL9Dè«àDáäKDßúDä²»DãÈüDÞæDábDäÍuDëøDïþ€Dê:úDì1<DïiADì[ÞDåàIDåuçDïö¨Dñ¯NDí™Dê^óDè® Dò„×DùêÍDñ0YD÷Dî£rDðgSDøª“DútÄDóáDù‡ãDú+ãDõ¨DøÐDï;»DïóDï-Dð"ÔDñèÖDíö:Dð*Dòx©Dó/›Dì5DîMªDñ×bDïˆyDôÕßD÷»WD÷ õDø™D÷6ûDóþ<DõÄûDõ–|D÷"lDôsÙDðY·DôÖÞDþ¹LDøædD÷²0Dü»	DüµCDþúñDø2¨DùDø˜îDô=LDô	*Dö
+pDòÛ¨DïûDî -Dñt~Dò5”DùŠD÷âD÷ò`DöÝ¼DðùûDðÊœDö¿rDóÏ\DóUDû·úDõsíDðU°DøúSDÿNCDý)„Dû&ÜE3EŒÊE á›DýÈ^Dþm{E ‘Dú_XDõÉÈDòIÐDûƒ—E]cDû	äDúÅ=E ^»DúB'Dû–DüófDúõ~DýöDõæDöë¯Dûa~D÷î°Dú¨†DûÐåDüxùDûóLDý ¼E ÿ®DþëÖDý~]DýÔXDüÖWDø—ºDü•GDùqDòõãDðÁ Dê DëÌDì#…DîUÛDð·YDë Dé9=Dé;Dì‹ëDò83DôábDòöÔDñtVDðs¡Dø¾wDøùmDôÂ[DóZVDóGßDû#ÔDö ¾Dø…dDüßVEÎÉDú–DüméE ¢Dü¸ÜDú$DúŸÃD÷WÏDú‚ Dú\°DþƒUEÏøEl|E b‡Eâ÷EÅ‚EÁ°E:~EùÞEZ^EòÖE dE³xEwEö'E´™DÿÍeE?ÌEºDût´DüDù`DøDþŠ¡E/-EšE ·E ×ÊEÈ”E îwDÿBDÿÌ…E xE ^$E'yEª¶Eb[EREäEƒxE¹°EEÃE EžEÅˆEŸ Eè+EvËEMZE5ÁE"ÎEJ Eq(Dù€ÈE?FE10ERÚDÿ!lDû$E @aE ñDúµDû„ND÷ÅDõB1DùnXDöwEDúP6E 	cDú«µDþâ{E åMENE_^EyúEE7²E‘(EµtE	ÏE±÷E ÉîE TSE‡µEE ÇDÿ·ŽDÿ>ÔE u„E n†E ÉøEÛEãPDÿš·Dþ}´E¸QEuSE³6EIšEyúEÞ€Eó¤ESFENAEVEŠE‹,Eø‰E	ÄDEç	E7E
+xÓE
+}¸E»BEKíEÝ^E‡¤Eœ¢E¸EEyE‘NEÙSEÄœEÛEáâEYmE)ùEžºDýµØDý›E˜SEòE ìÅEÊíDÿúE 6ÖE°WE¦*Ew+Eó$EŒ³EìE`NEÔËE8…EÊËE ßE®±ExþESQET^E£”EˆE	áEß"E«#E°4E” E²äEéªEEkEºE¼E	ØEû£E¸ÕE$ßEHÞEÆEEmðE ]Eo‰E{¡E ydE •pEÆ¾E #ŒE Õ˜Dþ÷ˆDÿTGE UÝE
+EJ¼E Æ>E`ØEÖ£E²öDÿÕEyE "DüÌ–DýÝETïE%ÔEzEGDý”XEÌE×ˆEì®Eö_EEO™EóE™Eg EKiEuEaEë;E*’E.E‚ýE‹ÒEóuE¡Ep¤EÐ E%¾E¨
+EaäE1éEEHÝEmDþ¼ÛE ÑDÿÛþE©ëENèE]ÚE»ÕE6SE}ùEšHE€ŸE~E®E[„EÙ~EØuEÁE0ÑE'ÇEŠwEñëEkE˜EåE–ƒEcE3ÁEðUEÌhEnÑE¡EE&NEr¯ENE=EßEiõEƒE»EnEÁ=E]E\áEÁE[EW²E~ºEÃŽE E9íEiqE²²E	?-E¿€E’ûEÉ>EÕ­Eñ;E˜†E÷EÀ8EÛE	0{EdßEßžEmFEeŸE§E8ŸE'ETÖEE"ãE×éE$ëEoâE
+VE!®E´EMôEÎEcšEæ½EBÆEAØE	E3ÒE;ùEG£E™vEÖ$E¢EâE–`EhÑEãEEÌEÞŠE‘ƒEQvE4E>E­¥E^uE:¿E¤gE FöEËE	SìEÐ EméE€¹EÑ°EÉHEÑ½E¦òEX•E˜^EkQEZôE€ÓEÖKE±_E‰MEÑYEþE”ðEå³EÏãE_öEô§E‰QEþ¸EçE¾OE×<EdE+eEb=E
+W)E›ùE¯ïE”ŸE	ÅŽEQÕE»E¬þEŒíEækEWE£ÕEÝ¾E:EªuEœøEÕçEæE™¸Ew]EïÔE‚ÛEß×E~ìE	ž‡E	T¨E?¿E	‹EàcE	’»E
+âFEÕTEÔE 8E9.E	'ÓEEOáE«¹E	ýE%’E†ùEyìEž9E	XòE]OE…´E
+†ÜE3EÍíEå,E%ÖE{nE	_aE	P¨E–vE´/EÒ{EÐqEEQ2EÃ"EÔE	¢ÝED—E—*E	Š0E	ÊE¸ E…E	“ÚEE	¢sEEªÉE¡–E(kE»EÁ	EsÐEøWEçøE
+LEE’+EôÑEAE&¿E(wðE*kÿE(óRE&V¸E$¦E#¡E”ŒEè¢E	Û‚EEœE
+Eµ·EBEˆ¢EU2EéëE?ÖE«ËE“=EÛ¥EñqEE SîELE3.E·fE4E4ÐElšEiºEZ¨EˆÎE\TEŠE˜EÑ¢EjEZmE4ÉEƒE\E}åE¹aEÜE'E¾dE®‚E:ETâECÔE
+0
+EME˜aE(E
+wÝE™ÊEë®E2MEhE˜ÒE¹_E‚÷Eˆ7EM]EÔEïE\°EÛE‹¸EFÛE}•EDEtE±7EÊE¢8EzEŽ‚EåPE¶ERhEæ_E8ŒE?E‘lE‚ÛE	5QE
+¢óE
+~àEû/E¡åE€zE#ÕE=uEÛvEQdE6;EÈ+EÜÁE¸|E,!E0GEãÚEÆEJ(E2 EVÖE	” E%E“ÝEÄEo”EfE|KEA(EêEä²EIEãBEÛE[`EsÐE'EaÖEŽLEêmEÖØEæÒEqyE¤ØE¾%E™	EEk°EêÑEVÈEv‡ErºEGîEæE
+nÅEÆŸEMzE	TEv%E#™E	uEÃ5E4uEnE
+ËLEÈCEJñE
+E
+3›E
+E>E	,rE?E~hE†¤EyqE	VzE=¿EEXsE½E8E[fEâßEW(EBûEÜEÚlEyE‘¨EÍEV´Eû0E•Ež$E-ÒEæE¬üEñE•ºEþEÆlE	ËEE	§E	E
+æE¹E
+vÝEë‘EÖKE^ùEûgE-DEøRE´E2>EhE@êE E–¹E³REa¤EhEEî’E0ÇEl·EE?ESECæE3ÚELZEGSEN¢E®EVðEýlE%äE0,E	âE»âE	8TE¡ŽEÕE	„¡E
+,ÊEb¹EÏÔEÂ·E€(E
+-‡E	zÙE	g†E
+PœE-½E•"E[E±(EÄEóXEºÏEi²EÃEeE6ƒE÷EÝNE‹æEã-EÕtE6+E
+ÿíE	6EÔ\E‚êEm°E^¯E:E<E{¯EÍE‡E@¾EçŠEE9EE4'EuGEÔ&EWGE~zEpžEþ¹E)EúŠEôPEŠE0DEA»EoìEØE£E äED#E&E	ÃXEÍE,EIÞEÃnE¾°E	¿—E	OèEÓ÷E<×E+ÁEùEfE&ûEÕüE‘Eu“EÓNEr+E¹»E¯]E¯ÚE”»E–E‹´E<gEŠ8ERrE	—½E­™EëoEY§EOóEZjEOE¦eEI‚EZSEPE_ÔE
+`3E
+±âEÏEæ.EhÂE—•EòEÁÉE¤XEÁ,E
+¥aEÃ‘E7EA\E	”YE'=E¹E9E˜3E	ý¬E¼ÖE½EïZEÌGE
+ã¬E
+œéE-ÚE	»E
+x_EšœEïƒE–E_ZE%ÅEžnE	¿E	>úE_jEŸBEŠE
+4ÈE$;Eã¨E
+SEÓE>NE¿ŠEèúEýKEHrEÕ£E	)7E5ùE¾EKE
+—NEmNEÚE|çEéõE
+)ÂE
+uE
+ÎEðEgE OE¼™E
+‘ÌE	KÐE»¦Eo²EútEQEÉEÔSEDE™EÌ1E	ž‚E¡kE	ËQEGE¾‰E^ÍEžKEðYEè°E	3´E!ÑEEP"E	M¶E¢ƒE	±E•ÿE
+2ºE
+ÆYE	DØE	.ÖE	µEÙËEXƒESŽE%™EŠÕE ñE«°E	{ŒE
+RSE	'ÇEùEÏE	[(EyfE–ûE	`;E	ô¢E£hE±¡E	EéE	”ëE
+oiEðûE:úE‚TEÛE¨¤E]"Eþ9E	ÐEE	]E
+Õ¯E
+ƒàEC¿E
+A·E~JE
+d‹E	ëìE	;^EL$EGELŒEˆE+-EùEÌYEúE
+E¯7Ev‰E´©EKLE`æE'E›E<ZEeE}ëE÷åE‰TEàØES@E>_E~ÄE E ÉE êéDû§Dø½ DþºÀDø5%Dþ<•E E ˆØE rHEp¶E£E,;E†õDþC6E?;Eô0EFRE+BEÀÌEðE´°EX‡E³	EÛüEuEúpEÿºEÏJE·²EbeEÏÙEù«Ep`E³èE÷EÇEoEõ†EŽEÆPE|ñEdjE“rE*E#CEš™E…sE“EâˆE•ßE
+«BEpFEkQEÉ'E
+#ÂE©²E
+¯éEfƒE‘ÇE
+{¶E	 yE
+aE	ß2E	>¬EnZEµùE&EfxEZLE	dEÎ9E	kEL EšE¬7EÿE…ÞE;EÇÙE`REÉóEæ<E³ýE	{,EÊPEàðE7E™EõEKVE ŸEªüEgE¶ÚE	BÀE	võEþüE
+gE
+†sE	ÑEeèEquEê×EKEi¦E
+”óEì€E_¸EÀ"E®¦Eê[EªÀEµ¦E	JdE´¬Ew‚EhñE­=E¨bE¬CEHhE«dE hE&BEÎsE°E	×TEšEKEHEEu¬E©E£ñEÀþE%E½6ER§E“ùExŒE” E	,:E›+Eª"EE6EÓÙEüNE° EÏEémESEV²EÅfEy|E°E˜èEt²EQ*E¢#EËE$E"æE¹ßEº_E‡]Ea8EviEIE½E‰öE!FE‰JEÄEQE¬¢E`'EèëE)EˆŒE òEA¸E#ŠE×E³\E‘ØEùEMkEQ<Eñ}Eò÷EíE8yE¢wEÏèEN|E–¯E´âENEç EàEEç'E|EBÑE"˜E”›E ¤EEECƒE2E½˜E1E™òE˜ÎDÿ95EM=EÂ€E}]E¬ÀEpñEú&EâBEürE)©EkE	ÚE¦ËEv€EŽšEöWE¯EÌE«‰Ef„EQKE6E…ÂE¿öE„·E ëáEPNEZE!÷EÖÛE–E VEHE÷±EO°EƒEEücE›EW“EVEé·EoÜE 
+E
+UEµ°EŒVE ‰³EÞEzE™YEþ)E)5E%EECYE”EvƒEÖ%EãEçEÊtE&…E L1E*ZEEEâE`E ‰EEI}EEnE¼§EöEQ|E]ÏEe}EX6DÿÐEÛBE6•Dýž E.0E‚EÝùE……E…yEî#EZpE)2EµãE®DûcùDÿ En]E ’‚E ÌDÿÅNDþ|‰DýÓ¸E :¬E ›]EK'E ‘‡E ½YE F’Dý'åEtENÎDþï÷E uE È²EÉE«ŠEãGDüýÍE iüE §oDü×D÷©ÑDýƒàDÿ³ŽE ÜE´NE‚ØDü_¦DýÙaE *DDý;âDüØgDü»¥Dÿ'ÜE]AEÞ°EÙCE ãÍE ìEE©EnJE?¸EzE p‹DýãDþEóE ‹SDÿ{!Eõ]E—ÔDþ„‘E IEHÔDû„êDùèDüßDüÈEDû6ZDùKnD÷à1Dý”âDü¯bEt¸Ep¸E(D!CB»>BIrB]¼B.Bz7BãB/®Bj'BÙ´BõÞBBð6B’8BýtBjB5gB"B1BSšB¾øB =ìBÝeBBÃBè†B¶×BN#B 1ÄBVCBr*B jAB&®Bè6B	iB!Ü‘B!;]BúB§^BŒ*BÀUBÀ^B¸ÁBrB^ÑBæ„Bª…B©ôB dBLWB>¯BœBL¦BPB°{B˜àBçîB	2B×#B±BíB,fB‘BËBˆÂB%BŒBr3B‡ÅB$èBƒBx7BŽ‡B²ãB2Bô¯Bû¹B áœB‰(B Ë:B"„ÀB¹aBÞB ØhB §ÇB ¥–B ”B 4ÔBQÉB{B 
+›B!N¥B$}DB"ÃüB!ˆ^B"ÔÖB!wB B"e×B$¢B!bìB!Ö·B!#IB!ÀOB"ïÌB"—ÂB!±)B!¥¼B$cËB&¬B#ÞÈB!P‹B!9UB!þHB#×nB&È&B'ÃB#§wB%dB&ÃÂB&GúB&;\B%øB"ÌîB"×KB#ÖB$]{B$À×B$m³B$qgB#ÖáB':/B${ŽB#œB#\-B#Ì¶B#b-B#B_B'ËÑB'14B'uWB"ãŒB#ã'B$çpB$†{B%“ÏB&	'B%E^B$LB%ÕZB%bB$>ËB&ÍÔB%+B$œ÷B'Þ¨B'>.B%ôAB)QèB)ÚB(ðÊB(tpB'×°B)u/B+‘dB+ÛWB)VB(–ŠB+á÷B)˜öB'@(B,·íB-ŽKB)Ò•B'4ÂB%QàB)X¨B)8‡B&Z¢B+_ÆB*p•B(lfB,ÊœB.	ïB+ÀnB.ž²B/ÒôB,:¯B,–B,öB,à&B/°€B16B/»ÇB-ÆB-U§B/ÌB0,gB0ë›B.âB,¥{B,Ð½B-%4B-×ÞB/GmB-{NB.<B0kÎB,oDB+ýrB1\øB/ðìB,²B0-¯B2¼B0DB0
+tB0/—B.ìB2¹xB0é#B4Õ¯B37`B2)B1N©B0KB/¦‡B0mÞB3ÌB2v0B1muB2»mB5!B6)B7OðB9B5x‚B4ÂÕB6-®B4K°B4;	B/„B1»‚B25B5úÍB5áB0%eB1ÕÈB2¤B3åB5ãêB3(…B1ùëB4T\B3"ÎB3$ôB5H•B6GB7/¦B5êùB3ï\B3Á«B6ÉB5ÝB3ëåB4nB7\B3ÀZB4cóB6<"B5âJB4'?B5áÝB5S˜B3@–B2D{B2"5B3ÂßB4¦‘B5ôB4.»B2¦CB2 B0*ÃB3oFB58¯B4)B4Š1B5T˜B6„B2åNB6_hB6¿GB2
+âB1¥‚B3Í…B4°'B4Z%B284B0Î:B3nŒB5j6B4<ÐB2 oB2^B2ã¦B2~fB5"B4iB3¤jB3¯mB3LB4Š_B5]B7´=B5ËáB2ÌÇB4ï%B8ÀAB6QÙB4ßêB5(ˆB7{ªB4ô§B4_¼B5p1B6œëB8¦ÚB6]ÞB3¸ B5KB6 B4DPB3góB4³B3à?B.ù3B1ðB1¢0B1uÌB3ÁpB0Ð©B1ù,B1áÑB2Þ>B28lB2Ô`B4âB3™IB2jRB4:¬B5æÇB7»jB5’7B4C#B6þüB6x`B4ß@B2íB6BQB5®sB8vB8bTB9ûB9ôèB8LºB7rTB5_OB5q{B78‚B6›ÒB9·ÎB9ìýB7ZB8X§B85B5ÄB5ípB6˜B41ZB2sB2•B4nB2ÞêB2—B5µQB584B5öÈB5CŽB4Ñ¼B6:LB5A`B4ßùB3ÖºB4= B57žB2Þ¶B8¬B;ôÚB:LB:J±B;Ï9B9KNB:KB;âHB=ÑB>…6B?HB=KÉB9“òB>r(BBFB?L¥B=I@B<…ÜB= {B?ÂB@%oB<úB?:BA9hB>ílB<Ø2B>ª	B=_QB?è°B>òŒB=·B9œéB:	B;óB;†gB;‡‰B;¾!B;“B8ýÉB93XB;ÕB:}B:Ï½B=v"B8eHB3½€B9§DB9Š¨B8ÖûB9Œ}B7,B=ïB:¦B6ß«B:ôœB:0BB:xB=TB:¾B;ÿÿB>Ç¸B<oØB;›B<âBB<TB<AB<ãB>©.B>FúB:žB;yêB<p8B;¨B=ôB;O÷B;5yB:wB9²JB:DB=rØB6%B8KB7ÞdB=ÏB=O¬B:ŽB;RŠB;(ËB;sæB;®ÐB<&B7zB<aõB=ÆB7YMB8+gB<xcB;£“B;FB9ÌB9­B; ¯B9[7B9!hB:‚B:üZB8úÎB9xÅB:W¼B:××B?EyB>CíB;•B:æôB<â•B>ÑPB?àáB<ômB=-gB>_tB=JiB=ÂB=¸üB<dáB=%B?¢B=SB<Â(B<Ó&B<½¬B=JoB=´B=ù¦B<w€B8ÊöB9ÃB;PæB:ý}B8oB7ìøB:ïB8éB7fAB6ÕìB6”B5'B56œB3ÆÓB2YB3lB6*B8¹B9{ˆB;ô§B6œ“B6mÊB8Ó-B;ÆßB;ô}B;’øB;sðB:?^B8ÛB9,B:2·B:‹tB9|óB8W<B6Œ“B6Ý+B:ýB9V÷B6…B7'úB:ÛB:È®B9†¬B<K»B;'¨B8ÊŽB8ö¬B8…ÁB<Ê]B>ÆíB?!B?}B>¿¿B=êB8kB='“B:ý”B9NDB<Í·B<ðhB=È
+B>kÏB>RB<1›B;‰‰B<"B:\‹B8u_B9Ô]B:aB;/RB;Ò&B:AB;AB<ñB=ªôB=B8óCB9„ÈB<wÚB<FìB:RB;¨B<—B< B;£zB<£hB:Ü…B>GB;·wB<roB:äB:„qB;õ’B:hnB:ëB8¥B8êœB:fB8B7Y-B9À™B6ñpB8'B7ý'B5¨B6$B5†ÖB4÷‰B4‡B6ŽB6^B6VDB9´WB:*—B8]­B8ÚB7FÒB9'TB:H¯B6eØB8®¨B<V]B<ÒB=#yB9C^B9/B:‹B8xäB:|±B9‘B7R]B7ùB; B9…ÑB:HãB7ïB6ˆÀB6¶;B7¤ÁB9]ãB6flB3VGB6pB5ò…B5Š±B2wB2yWB6	_B;˜2B9cÅB4~B5†ðB5B4ÞB3X@B2Û&B3QB2fåB1%B/µèB.·‘B/‡B/÷ùB2 B2mB/ghB/ú¥B2ÀB1­ÓB2dÎB2Æ’B2VdB3B3l!B5ÜB6ýÑB9¶WB7ÚãB4”¼B24%B3|…B4-B5S…B4lêB6B4¯B7â™B6ÑôB2pÂB5œQB5p`B5½¹B88ÁB8´ƒB<ÌhB=¬oB@°ÅBAkBC—HBABA&BB‹	BBJ7B@	®BAucBAoB>®½B;’ûB;^ÐB=¾žB>QUB?<˜B?‰‚B@‰—B@6B?äB@&QB?·@B@§ßB>ˆ9B?>BAÞ±BAÓÇB@šiB?K„B@™ÐB?iŸB>˜åB<ÕÞB>û”BBZ!BBa]B?ÀYBAS6BA¡3B?Œ¹B=H§B>U1B=ÚíB@ý@BBËBAðFB?›wB>§@B>CnB@ñ˜B<¤zB=ÞµB=WNB=}B;¼B<’B=±®B<Ô²B:†/B<RÞB<LâB;)5B?WB<¢B< B>tB=`™B:ÐB:]lB;ï½B=°ñB?á%B=²«B?3ÆB> B>šB?ø»B<Þ6B<MÅB>PuB?ÅB@×B>ÛÇB<ñýB?[B?~™B=„»B?·™BBHžBAþ)B?’+BAj\BC*ÜB?ñ†B?À0B>–B?VøB@ÖdB@’aBBƒ¬BBÀ³BB±
+BCf£BA)¤B@¢BA mBBîôBAŸëB>×”B>£¬BCñBA“óBAK{BB4©BA+mB>+B?P!BA³B@d…B>–B=ŽÉB;GSB=4"B>–½B:þ„B:ûÖB=ízB<úgB=UÑB=î¡B=·^B<¬æB?‹B?‚]B@:éB>EwB> ‘B?B?ËíBBîBADÜBB§žBAlB>×©B>+B>tÉB;ÜB>T
+BBÅB@nçB?xçB>5VB=<XB?/­B@ßB?È«B>¸B?0B?B?ÖúB?“GB=PB<ãÑB<Ú¹B?¡B@w¿B>&ÃB>ŸpB?©ØBAFïBAB?­kB@ËvB@­IB>ïXB?ñ_B>èÐB=­îB>Ó'BCABAÆÆB?¯uB=(B=XB?ðwB>ì‰B@"¿B?áhBBÌB@ñ¹B?t¥BA UB>X#B>X1BAtÁB@žB?¢+B@2ÇBAÞòBB¯%BA`ÁB@ÉÏBBk'BAŽ¾BB7NB<ìB>µÖB?hQB=‡ÉBAB?Ó3B>Í7B?gžBBíB@‡B=¯½B>¢8B>ÿ€B@C®B@M0B@$B>Ô«B<Û%B@ÏBBc¹BA›B>JÍB?ø0BA±bBBCB>ÂªB=¶B?s)B>{OB>ß´BAs¿BBg¹BCÌLB?ðÿB@sïBAÅ¹BAl÷B?_?B?Œ¯B>ïBBì€BBÎ±B@ÐBC¨BB?hB?óaB@© B@¸ËB@àÕBB£BC’¡BBrDBB!ÄB@,©B?lÖBC5)BEýÑBE«¦BJìBKHÄBJ8ÝBH¥
+BFFfBJðUBG˜BD‘ÒBCÊB@ý[B?2B=e§BAžºBBÄ”B@ƒBB@‚B>SÜB><B>æ¤BALUBCLB?ÚBAAªBAç¤BBeBAsÈB@ILB>5KB=`B<ç¡B>Ø?B?(ÊB>€ßB?âB>V1B=‡;B;ï$B?f¶B??_B?
+‹B?Q‚B@.B=gB;™¬B=ÓŽB=¤B?é@B>žþB?'B?b›B?ÿðB=ð3B;ü$B<9B=õ‘B<Ö¬B:ßúB:–ÆB<™¡B<¨ÐB>»<B>~hB:(~B9
+“B; ^B9ä;B:·%B<^°B;»_B:Š¸B<ÈOB=gžB:nÑB=VB<’£B<¥ðB;4ÿB<*¢B;\×B:B9´°B;ÑüB<Ù7B<w9B9yB8¸«B<ÌB=j0B:xŠB:|EB<¨B;¦¶B9õÁB9rXB<~9B;æðB:{æB;`ÊB=9àB?’²B<õbB;7B<n-B;ímB;WWB;SÁB;ƒÖB9ÿšB;ÛB<„êB;B>ãB>œÂB<gÆB;¹ÇB8÷IB6…B6ËŠB8¶B9(B:nYB;ýB;$-B=R$B=Ö¶B;ÌPB8ú4B9ÓàB;Ú£B<Û]B8ìbB;%ÉB<§‡B;mÂB;S¸B8„­B:ÏÎB<lB<ªŸB:Q[B<B=B(B<:RB8«¬B<>ÅB=áB;<B:&zB;QB9u«B9“B7›ˆB9n˜B:ÕB:‘HB:*6B;¸}B:àgB: {B:!ìB9]B7úûB8¥òB<¤çB=½B:¬ÓB<+B;ì1B9£œB;G`B:¡ËB9·—B;áB8cÅB7îB;§™BBÂOBA÷pBECBBˆvBJ9BNEöBR—qBSßBV”ìBXM¶BQn³BRÓXBPºÔBKXÔBGžÍBCŸ~BC9ÙBB{BB_«BDpÃBCDB@}—B>äYBB‚B?;B@ùËBE+[B?ÃÓB=±šB>¶BA‹àBBé%B@ánB<e¦B>.{BA„:B?¼;B>ÝB>`¦B?’vBB‰>BBõêB?”]B<{}B?¼B@HB?ZB>Í8B?_B@ ¥BAÎ+BBÉCB@ÇXB@|BB©7BDÏBCæÓB@™¡B?¡¹BC-BC B@B@à‘BBWB?ÇêB<áB@sìBD@B>HBB@BBA­ÍBBÙBC“BAábB@~oBC!”BBv˜B?tÓB>¸B?ºkBB"°B@ôB?§4B@õBB±çBB-øBA¢]BBP[B@Œ`BA„!B@5¢B>xEB?ç›B=z‘B=kûB?èB@ñ³BB:B@_BBAmB@2WBCà8B@ªGB?~B?ºB? B@ÖBBêBDÝ5BA•±BBôjB@ƒ¼B?0ëB@²êB>j8B=úzBB ¿BC¼¥BBæ3BAIÑBFP[BC\B@»ZB@øBAÍAB> B?*B@J×B@×(BA"ŸBB6¼B@ŒGBD±yB@Ü\B@6BC/BAÕBDŸBBµ¢B@K5B@ëB?©:B?ðmB?¼B?»BA~ÅB@É‚B@®îBD›ÖBE–BFvBEBGBEBEèBF0BI	èBHp¾BF“pBHùBBTBEé#BFËÑBG?BF'BF‚BBE¸üBCD)BF »BF£ÎBB¶«BGG+BHN~BE~1BGÁBJ_ZBG$®BG7.BG1?BDFBFüµBF­™BIôBHr)BHüîBGû—BH¼‰BK½GBIBI{ýBF¥BBßðBFtwBF›DBJçžBKYBGËyBEÞ^BF4BHu÷BHEâBEM¦BF÷4BHhËBGÂ¨BEz§BFÃ}BI¿/BGûBFrSBE®¢BF¤qBDGýBC˜âBD„ÆBEYBH—×BEò¹BDê|BG³BFÑèBD¢BCÍEBA›BGÐ¯BG¾¼BGAnBG¯ BGšoBDÑ”BF%ÍBKÄÔBF$ÅBFëBHßåBIaÑBIBBDQØBF?kBGSsBK¸ÅBHÒëBG»	BHaòBG9BFtcBFÐòBGâBBDjgBB–ÝBFqBGô„BF³!BFi½BHc¥BH¿IBE­BFÈXBDíjBGÏBFo[BG0¦BG„œBGÌBBþÓBCcBDlBB%XBDdBF6jBF§ïBHCBF¡BH7BDÙ–BC\ÖBE9¥BGÑªBDÊ×BBqBEî±BG‚òBD¤BG“BEÍ£BE_/BCÕùBD>ûBGî#BGK"BC¸»BBABC5yBE ƒBB¬‰BC“§BFóNBFkBFXâBDBWBEÒ"BGPÐBFŠBF·eBCEBFŠ#BGdBG¼öBJ>üBE2³BD2BG·‹BG×ŒBCû¤BFpBH†ÔBC8BEdøBFBcBCBCnÖBDº	BAÝÇB@;»BD€BAè¿BAQBAÌˆB?BA˜uB?âKB>ë@BC˜TBAEB>Á7BBšeB=?ÇB<Á^B@BB“B?È+B?JB@’ÞBDuBFß)BF_BC«¥BD—BBñ0B?ˆ—BAl$BD[îBA,ÜBA8BB)qBD‡8B@ÿEB>»¦BBÝËBB³ÛBBÆ“BA¸ãB@ýBBÍ•B?zB>5ABAÓBBR‰B@”B?Û#BB¡,BBèúB@QB?IB>¾ÎB=ŒEB<»(B;Ñ¸B=óB=ruB@ûBA4ûB?P¨BBETBANlB=ÈtB>ËÄB<+hB<ÍB>mBAªžB>·`B?à“BCBAõóB?ïçB=VB@a
+BAÃ}B?ùqB@AïB? ŽB?Ð/B@7ÞB@!BB@³BB5šBBG¢B@ÐsB@ÇB@%²BB6íBCJ:B>ËIBAÁ›B?ÔðB@UTB?ôgB@B>2B?ÚÿB? ¨B@.B=¬B=èhB>¬‹B>cíB>ùB>ºÓB=ªÌB=×LB@B@òêBA@B@j;B?ß7B<_ìB={*BA0¶B?KÀB=¨VB=#íB?Ö¹B?5²B??B>·ÚB>;ˆB>4mBADÑB<×÷B;a‘B<¡/B:Š°B7Û3B;>¤B;™
+B;…‰B@r¿BH‚¥BCRºBC•ÓBE¿¾BI¸BHÃBFïÈBHIëBIÌîBGdôBFÁ“BF2=BElÏBA_ŒBHûCBH@IBD áBGšÓBDiBCŸBDÕzBCABF‚BF¾nBC8BB'BD þBE¨BAÁBA8…BCÊøBC­®BAPºBB0BB¿BEgBCK BCÝ0BBË¬BAzB?A°B?è
+B?1B@IÄB={ÜB;—³B=Ô/B<\­B>…B>QB;¼"B:ŸlB:dB:&ªB:Î²B9½B8ûqB<¦B>ÏŸB=Æ|B>mB;Þ B;	B<Œ£BB€ˆBBšBAY@BE„bBBÞèBAuÛBCB¶B@²BAÜ5BD†&BE¿›BA™BCßBA«£BB÷B@B)B@¡BDfÉBB¯FBAºBC!‘BC™XBBjšBA B@t×BC5BA'jB?öhBD<¿BD+[B@P6B?vóBBV!BB˜BCò:BEó>BF#‚BEáBAf‚B@‰^BAýÀBB4B@³nB?å#BBv	BB!BB“BC¢¼BESŽBDä+BG*%BBTéBC}BC:žB@ˆSBAëFBD÷BH{BD<¶B?4ÜBAŒóBBÞGBC]ŸBA8ÄBB÷JB@#³BA¸ÈBE[0BC:sB?S9B@¨ÊB?2BA¢BD½B?ˆwB@S™B@î¦BBù›BCµ;BCYB>$îB@/PBA; BA ÆBA»ŒB@b™B=¶tBB®QBAáBAÐBCV™BA\BAœBDÀ(BD7_BEÈUBAîBCÎóBC0BAíåBDhYBC)‹BB)ôB?½–B@^ÉB?êóBAUÐBEh¼BE“BAú8BAbËBF€BF:ÜBDƒBDLBB0×BB-QB>…BBŸÈBE.BDƒBDå!BC‡3BCêpBGŽÜB@ÄBC?âBC; BBBF@BE@=BB5BBÁÙBCéÔBEjèBE<BC6kBBôªBCšÑB@r*BClBD-«BCÿrBB¦BC[­BCBQBD$âBHðBEqZBFÉ,BCG~BBÐŽBCE=BBapBG{BF’QBBÇTBC"ÿBD_ZBDµàBG¯‹BG$>BDÌ¼BDCBAbðBCã«BC_9BEã‘BAö¡BF BFÂBCwÇBCN;BB BCZ#BDÌBED?BE¢"BD†ÐBC‘çBEÇµBEÇÚBEÒûBE9BBzyBAð„BCˆBA1B@©ÎB@çéBGÛBDÃ§BC™BD™<BEÐmBAºPB@áÎBA]qBBÒ“BD¨)B@þ—BC¯éBDègBBBB“šBEÇBH¹”BEîsBB¹ÑBDj¿BEî>BF$¾BGn[BFGàBD¦ÎBG_öBG³˜BEæuBF³ÔBC>(BEy-BBz3BDP BDD¿BCñ«BDÐ(BAm‘BB<¥BBÁ°BD]zBDÄ¶BC¡zBD+eBDÔHBAhMBC¼úBE~˜BD«BFBE†5BCIÉBDeFBBBD'aBDòZBDËBFf¸BDÖgBB BAËÃBCx5BE'BD*4BCDÖBBjBC¤DBBOABDþ'BBÞ·BB÷B@øêBA]cBC!BBÏ>BDçWBDÔBBÀBCT)BAðýBAi–B?¢­BC¾BEfcB@-²BAÎÀBDb·B@}¤BB-rB@_5B<¾B@Ð B?*CBAeËBA•%BA
+OB?©¥B@è6B@NzB=RB>œ˜BAhB?“ÁB@ÀeB@4kB?W‡BC˜¤B=ŠÓB@'ØB?±ZB>¬ËB>ÒîB?³uB@öBAèB?œ/B>²#BAiRB@%¶B?|¬B>±¸B@›\BB®JB>ZéB?OŸB@°B>²YB<÷œB?™²BBHñB?…ŒB<ÂÞB?$¼B@JB?ÿÃB<éÿB?‡xBA;´BAB?<éB?qªBA§lBAøZBBCåBC”|BDwXBCÝ`BFŒRBE‚ËBGŒBCžjB@¼€B?~‹BDŽžBD®ŽBE@„BBæJBD1×BErBF+BCiBA5CBC'BA—¬BE&{BD¾BEjÆBCô8BF3'BNhÒBJ>AÂ’J                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                

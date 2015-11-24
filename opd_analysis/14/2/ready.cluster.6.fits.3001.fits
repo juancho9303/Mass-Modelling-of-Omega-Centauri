@@ -1,0 +1,113 @@
+SIMPLE  =                    T / Fits standard                                  BITPIX  =                  -32 / Bits per pixel                                 NAXIS   =                    1 / Number of axes                                 NAXIS1  =                 2048 / Axis length                                    EXTEND  =                    T / File may contain extensions                    ORIGIN  = 'NOAO-IRAF FITS Image Kernel July 2003' / FITS file originator        DATE    = '2015-11-20T14:06:13' / Date FITS file was generated                  IRAF-TLM= '2015-11-20T14:06:13' / Time of last modification                     OBJECT  = 'NGC5139 '           / Name of the object observed                    COMMENT   FITS (Flexible Image Transport System) format is defined in 'AstronomyCOMMENT   and Astrophysics', volume 376, page 359; bibcode: 2001A&A...376..359H HEAD    = 'DZ936_FS,BR'        / Head Model                                     ACQMODE = 'Single  '           / Acquisition Mode                               READMODE= 'Image   '           / Readout Mode                                   IMGRECT = '1, 2048, 2048, 1'   / Image Format                                   HBIN    = '1       '           / Horizontal Binning                             VBIN    = '1       '           / Vertical Binning                               SUBRECT = '580, 1270,2048,1'   / Subimage Format                                XTYPE   = 'Pixel number'       / Calibration type                               XUNIT   =                    0 / Calibration units                              TRIGGER = 'Internal'           / Trigger Mode                                   CALIB   = '0,1,0,0 '           / Calibration                                    DLLVER  = '2.93.30006.0'       / Software Version                               EXPOSURE= '600,00000'          / Total Exposure Time                            TEMP    = '-69,5   '           / Temperature                                    READTIME=              1.0E-06 / Pixel readout time                             OPERATN =                    4 / Type of system                                 GAIN    = '1.0     '           / Ganho                                          EMREALGN=                    0 / EM Real Gain                                   VCLKAMP =                    0 / Vertical Clock Amplitude                       VSHIFT  = '76,95   '           / Vertical Shift Speed                           PREAMP  = '4x      '           / Pre Amplifier Gain                             SERNO   = '13739   '           / Serial Number                                  UNSTTEMP= '-999    '           / Unstabilized Temperature                       BLCLAMP =                    F / Baseline Clamp                                 PRECAN  =                    0 / Prescans                                       FLIPX   =                    0 / Horizontally Flipped                           FLIPY   =                    0 / Vertically Flipped                             CNTCVTMD=                    0 / Count Convert Mode                             CNTCVT  =                    0 / Count Convert                                  DTNWLGTH=                 500. / Detection Wavelength                           SNTVTY  =                   0. / Sensitivity                                    SPSNFLTR=                    0 / Spurious Noise Filter Mode                     THRSHLD =                   0. / Threshold                                      PCNTENLD=                    0 / Photon Counting Enabled                        NSETHSLD=                    0 / Number of Photon Counting Thresholds           PTNTHLD1=                   0. / Photon Counting Threshold 1                    PTNTHLD2=                   0. / Photon Counting Threshold 2                    PTNTHLD3=                   0. / Photon Counting Threshold 3                    PTNTHLD4=                   0. / Photon Counting Threshold 4                    AVGFTRMD=                    0 / Averaging Filter Mode                          AVGFCTR =                    1 / Averaging factor                               FRMCNT  =                    1 / Frame Count                                    USERTXT1= '        '           / User text                                      USERTXT2= '        '           / User text                                      USERTXT3= '        '           / User text                                      USERTXT4= '        '           / User text                                      FRAME   = '2014-05-15T02:53:43.587' / Start of Frame Exposure                   ESHTMODE=                    0 / Electronic Shuttering Mode                     DETECTOR= 'DZ936_FS,BR'        / Head Model                                     EXPTIME = '600,00000'          / Total Exposure Time                            OUTPTAMP= 'Conventional'       / Output Amplifier                               CAMGAIN = '4x      '           / Pre Amplifier Gain                             DATE-OBS= '2014-05-15T02:53:43.587' / Start of Frame Exposure                   RA      = '13:26:47'           / Alfa                                           DEC     = '-47:28:46'          / Delta                                          EPOCH   = '2000.0  '           / Epoca                                          AIRMASS = '1.225   '           / Massa de Ar                                    JD      = '2456792.62765'      / Data Juliana                                   ST      = '15:32:32'           / Tempo Sideral                                  HA      = '02:04:47'           / Angulo Horario                                 IMAGE   = 'target_0014'        / Nome da imagem                                 TELESCOP= '1.60m   '           / Telescopio                                     PLATESCL= '0.18    '           / Escala de Placa ("/pixel)                      INSTRUME= 'Ecass+Ikon'         / Instrumento                                    OBSERVER= 'Munoz, J.C.'        / Observador                                     RDNOISE = '6.0     '           / Ruido de Leitura                               FILTER  = 'Clear   '           / Filtro                                         COMMENT target NGC5139                                                          WCSDIM  =                    1                                                  LTM1_1  =                   1.                                                  WAT0_001= 'system=equispec'                                                     WAT1_001= 'wtype=linear label=Wavelength units=angstroms'                       APNUM1  = '1 1 90.13 95.27'                                                     CTYPE1  = 'LINEAR  '                                                            CRVAL1  =     7744.99930004461                                                  CRPIX1  =                   1.                                                  CD1_1   =    0.545247774028321                                                  DC-FLAG =                    0                                                  DCLOG1  = 'REFSPEC1 = HR4468_sky_simple.fits'                                   BANDID1 = 'sigma - background fit, weights variance, clean no'                  CDELT1  =    0.545247774028322                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  END                                                                             Aƒ¶¬A»zçA ØGAÕ”SA’Ù¿Aÿ"A÷¡MA€|sA‹ó9A⁄âAﬁî?A⁄˛ËA›d2A‹1≈A‚≠#AÁÉåAÂr&AÊ•ÎAÎëIAÌcﬂAÒ	AÛóIAÓRgAÛ(ÂAÚ}˚AÒùÈAÙáAÙ∏AÛïNAˆ›ÇA˜Ω√A˝<ÁBÄA˝8B4bB5dA¸>˚Aˇ¯BFãBè}B;ßB≠Bo¢B MFBa!B8ÄBà1B§öB`˘Bh…B˝B:B…CBæıBõCBÂôBÒÚB™˚BÚªBäDBh[BìêBF∫BÏúB1BÈkBäB£ŒBFﬁB%ËBt/B√-BÛ Bæ¸B@ºBDpB¥ﬁB©ÌB+äB–›B›^B±:BÙ'BﬂQBKÔBß}BB`BÿÍBÎQB/cBıB‹SB4›BçfBÛ¡B#àBµÚBB µBJ B®EB„BÑ}B˛¥B( B√ÓBPˇBGÇB‰TBäkB√ÂBTuB	R?B-B)≈B	VHB˙QBmBkB
+©„BÓßB
+*3B	€B
++ıB	‡cB“CB
+ÚB
+„ÂB≥õB	ôñBöÒB^∏B
+BïÑBc•B^ÌBü*BèIB”ïBqqB:BıÄBèB≤HBX…B
+	ZB«–B	åBB„‚B
+ƒªB@B	4PB$ﬁB	UÜB9.Bﬁ÷B
+/7B	ïB
+V7BG¡BògBMEB£·BÛüB	ÛB‰B÷—BΩBlòB{gB	3ßBï>B
+SFB	Ü9B
+p/BõBÔlB
+B™÷BôkB8ÃBBÀBRBi÷BèB”¥BÀ´B∫≠B+B¶B	¿∫B(=B<"B∞ûB		ÜBf∫B°yBπ∆B	¨B	›BˇmB⁄„B
+B˚sByuBºB®èBòπBπOB¸B'ÖBíBdBJıB'©BDBY•BêïB'BÜB≠7B°QB«€B'aBææBŸÕBÜÍB[•B*óB%(B)øB≤”BﬂÔB#~BÄ•B§§By®B
+xB;B/ßBíB‚„BÏ·B≤lBıÈBÔ”B€ôB≤èB®ÆBµBŸèBëB4BB‘{BéﬁBÒµB(‘BïBıXBùB∏BjŸB	J`B	0B]ByB
+ BóqB\cBÌdB”BˆB@cB4«Bï“B5»B	¨@BLB¬ˇBÊ≠B”WBÕìBt©BáàBëÉB!pBë™BëB∏;B
+ ‘B˚9B-—BÜB aB|Bò>BuhBòBQ„B
+S*B«çBmòBX“BŒIB9pB4BrIBí¸BGB2bB¥åB@<BDB
+C°Bv@B
+ÔB	¢ˆBùXB¿vB
+•&B
+ú™B∆ÅBå≥BghBè∑B
+ö:B(ÆBQBFCBqzBN4Bı⁄BR†B1µBâπB!¬B¿BàTB+ÂB<¨B÷ˇBúBô“B8ÑB€B{`B≤$BJBV°BäæB{ËB!·Bf¥B«)B≥B/BXµB<}B
+¯B˘*BÕB˜ºB	Û¸B	†uB!bBœBSBZñBB«B^òBœBûXB§çB- BÀBlÑBMB
+ë¿B	≤‰B!ÅB
+∆œB¶—B_ìB
+X(B>¨Bå€B
+ÜBÃ¶B!æB	H√BwB
+ B	ŸBó3B
+6NB#°BEB5)BîñB*B[B_TB∆BfB
+ OB	ˆB
+«Be!B
+L,B
+päB
+TB	ÅNBÂZB¯B{&B	RB5“BIòB	_HBU"B'„B	’yB
+/B:?B
+#èBTBí¥B	ÇôB
+ûxB	‡‹B¥ŸBµ‘BNBÌ«B@BŸ5B	WB(òBaÒB•9Bó3BAZB?B?óB
+ÉBv√B®mB	R¨B
+Í@B›^B
+r‚Bp‚BzÚBAqB„XB‰_B
+Ÿ¡B7†B˚}B˘„BØŸBâ/B®BHBGçBõ€B°BOÎBÅ‰B
+l>B	ËB≠B€ÿBfB#ÀBGÖBx‰B'9B‘%B´¢B…=BﬁÇB	û†B RBø´BJ^BÀßB*∂B	¯KB
+qB
+\úB	JSBªßBÇ‘BæB
+{∆B
+ç∑B	DˆBŒB	ÏÓBMBB±hB	
+œB
+òùB\B
+.6B
+óÃB†B	 £B
+§§B◊ÆB∆¥Bö4BY:B£B˜Bç˚BMB0BÙB
+òB5ùBÖB*B
+\ÎB	ÇÛB	€-B
+b@B	
+ùBYbB
+A1B
+œkB	3bB
+õoB›†B
+B
+Ç±B
+€⁄B
+øBïÃBYHB
+œùB∫ØB
+Ñ'B	’ìB{ìB	!]B	ˇWB
+KBD5B
+˛B	‘“B	]"B	¿πB	»?B»BﬁBîHB	r±BL"B
+åEB	ÕB	CáB¬ÜB	üIBHB	mπB	ôÿB2B	ädB∞BÓFB	pâB	˙òB
+˛3B
+ÁqBÒ§BÕB
+∏ÂBïZB	˜‡B
+êLBçÉBOB>
+B™íBB
+HB	ÀBødBfBƒoBÏgBôÅBuÑB¡ÛBÔB!BπBb>BO!B®øB/öB‡dB”[BG˘BA¡BıBA|BtVB‹&Bá¯B“ªB¢…BNãB˘~Bâ+B‘wBm|B9ZBµòB˜ˇB‚B3B]ÙB^-BcB}XB„ãBXƒB[B…©B—;B,B∞„B°ÚBäB¬B¬”B˝vBt%BÅ&B%üBBR^BædBõBı˝BøB+BçB âOB¨ñBÆ√Bè‘BàB∏/B <∂B "BôóBUsB;!BgªB¬ÛB rB RﬁBΩxB∏{B=B ˝ıB -BA˝ó¬B u≠AˇOB ∂ÄB°>B ®∏AˇˇÃAˇà·B Â⁄A˛Ö»B ÊBÜAˇ7≥B IcB Ω'BπAˇï£A˛äB<6B`A˛˚ÁA˛'yA˝'…A˛Z/B≥ÒBoBUhB:rB¨hA˛GABH∑B ±B·ÓBl∆A˝j÷A˝¢ÍA¸|/A¸∫Aˇm∞B êB DlA˛w’B B ÏüBl∫BbƒB +B ÏB ?©A˛ï˙A˛m)BLÇB ñbAˇQrB ÆÈBBê™B˚èBﬂõBSB µ˚B ®mBºBlB ÖB ~A˝åÙB ™B¬|Aˇ?BˇƒBMB √qA˝U≥A˛3øB K˘A˛#FA˝ÛDB…ëB"¥AˇA©B ïìB ‰ßB¿ØBÎxB ƒA¸ú0A˛+øA˚u¨B °_BÎ’A˝,ªAˇGÉBøbB)™B0√BdàB øWB“B£A˝~®A˚gœA¸°?BuÅB‚AˇÒB7BámBí∆B y∫BœØBWÈB¸"B∏WA¸*cA¸,˘B $ByîB rA˝û¥Aˇ˝©B„˘B |B-&B9B°ØB®[BÃxB¨ÒBàOBÀBZâB∞\BnB;%B†<BœóB…œBÅÙBJrBﬁKBó◊B åØB äΩBä	B ÕêB Ù\BÕ#B‚ÇB„ËB €)BÙByBi˚B•BoÜBö‹B˝»B˚1B B›B‹VBAˇ¯;A˛‰:BôÙBÀvB e7BóVBÕPB>LB:/Bi~B˝¬B6,A˛≥ﬁAˇß·B≠†BFB çŸA˛ÂA˛WbA˝&A˚6B¿AˇØB‰^BUåA˚á‡B'íAˇ_¸A˙ÂúA˝0AˇE\B WÌB wB¶ºB ö<A˝rWB.B^oB†•BÓ@B _‹A˚’øA˝†⁄Aˇ√A˙∏A˚≥A˛Í´A˜æ€AÛûÏAÙJ≠Aˆ;øA˚‰{A¯©mAÙc˘A˜¸~Aˆ§⁄A˘éπB ∑eB≤ÌB û}A˛á›BÑÃB/\A˙…öA˚LßA˚∞A˚qIAˇY„B SA˘”B ;⁄A˛ä°A¸L•B‚$A¸#"A˚y)A˘“tA¸ìﬁA˝éNB 3óB ØB|TA˝ª B>A˛ A˘7B⁄B ùA˝%oAˇ|cB ‰¢AˇR∂B ^_B( B5XA˚∑A˚hÊB É…A˝¨ŸA˛√KA¯—8A˜ÌBÛ.B“lB _kA˛›8AˇﬁA˚µËA˝¯A˝©∆A˙`òA˙∑AˇªlB˙A˛i~AˇT B ~˝AˇT•A˚·'B 3∑B«ÅBLgB^èBÓB  ÿB(B ŸªBg(B8áB <∫BMûA˛‰mA˙ívA˚Ñ B"ﬁAˇé≠A˝ûA˙oëA˙uA˚ÑB íjA˙kAAˇÙByjB mB>vB±8BÑÉBÄ—B=˚B›BÊÜB]¸BVkAˇ¨ÿBΩBB^B˘BXÙBgyBxAˇävB<{BCBRjB¿¢BÚ€B<<BH^A˚&…A¸NåBfÒA˛π#A˛G˜B…1BãBªB…Ba¿B&B…8BrΩB–“BÆmB`qB∂WBvÔB ±gB%…B À#BZÍB_„BãB µ≠B•˛BΩ„Bñ˝B¸ÜBÁBŸ°BlõB IÇBÙ€B©cB\‚B≈´B∑BQ£B?eA˛ÊKA¸|ÜBœ™A˝#A˚0¨BÏ˛Bû©BuÚB ˚DB ÷ÄBµB æáA˙@B.AˇPáB €˝B©EBC≈A˛B ∞úA˛”iA˙a¨A˛íA˛#_A¸ÑWA˝çNBKBW÷A¸É7B?cB ñöBÛB!•BBπrB©/BûIB…øAˇãêA˛ø§B åB Ú>B bBÔB ‘ÊA˚ÈÛA˚˛„B#YA¸ÿëBëBΩrBœ`B
+ëBßkBCBXÎB	z!BÂ´B\BaÊA˛’€A˙ÀCA˙◊˝B 4£B ™œB™	Bß>B/¥B ëDAˇ˘⁄BüBTÒB˝µB2A˚åTA˛á6A˝vA˚éuA˚p.B ıBkÌB¸¸BtÊAˇJPA˘ßÕBﬁBâ`BèA¸$tA˝÷\A˛O#B~†B©EA˚úsA˝i◊B°ˆA˛ÌÕBøwB*rB≥A˚˘$A˘„ÁAÙùƒA˘q5B<oAˇÚA¸ëÓBæQBacA˙**B iABËÑA˝OÃAıÛA˛nﬁAˆ|ÖA˝ûMA˚õ»BITB¸OB'&Bä§B‰˝Bœ«B˚ìBUëBÿMB¸˚Bh&B”ãB YA˛SB(-BD«A˜D’AıÆ)A˙Å_Bñ:B  xA¸
+¢A˚’≥A˝ˇ≠A˛ÜuA˝BµA¸¸¡A¸AXA˚âA˜n•B_πB∞¬B ´WBy>BÂüB‘BéMB‹¯BÚBWÅBΩ‡BçB&nB«B ÿ⁄B ¶‰B ›∆A˛¢ƒBùçB¥A˘ˆLA˚2ÆB ‡ÖA˚ƒVA˛ÉB "ÌB-BB,BBGêBBBBõB’·BÂBbÍBıûB3ùBÿõBU·BzHBpB·¢B¢#B #B ÔB–hBà.BÊ^A˛C~BuôB =¬A¸EÁA˛Á«BøB»∂B ¿ÁB «B _yBA˘B5B	©>Bà‹B8ßB∞ôBN»BiGBB£áB_ôBB˘©A˛†A˛+7Bí:B<aBΩrBÀBéûBäZB©ﬁBxB d°B lÀBñB⁄dB¯_AˇgÛB§B@≠A˝<B@}BÃ˙BpjBY1BôB
+^B∆UB¥“BzB ¸
+B∏B£4B^≤B‹ùBÃB B´ΩB±B∞}B¿™BiûB2¢B[B˘GB˚ÏB.øB‘ÔB˚B1‹BıB yB4OBB+pBÿÄB	ÙB≠RBø6B
+Ø•BtÍBÜrBÇB6BéuB7vB A•BmzBTKB2ûBáBË±BL`Bn9B'≥B2sB*¿B ∆ÍBÿyB íyB≈˘B §πB ∏ãB ◊B∑ﬁB∏B1ìB∑?BµŒBÀ¨BÖvBRZBˇBÄ'Bf3Bh‡BôNA˘ÏB≈éB7”B YπB”´A˝A¿AˇòuB]—By˜B4PB èøB_SBûÖB∫⁄Bı=B∞äB˚ΩBÁlB”ZB–¨Bò¶BV®BYqB®wA˚4{AˇÏB I6BæÛB&B4ÏB ÖüA¸a¿B $[BVeB`iBú™B(5B¸B2ëBBmB‡	B ¨ÿAˇíB öBB¯gBàAB -°BpcBt)BÆ#BqBÒÛB πsB«>BZlBP-B–¸B'RB»B∂BÇ)B+ªBQzBFËB^TBNÍBFcBZËB˛XB‚⁄B±RBL.BÔ"B	∞(BŒêBaÎBz®BóJB	JB¬aB#ûBÚBûÍB	ŸøB	!ÁB lBáoB⁄©B°BB∏≥B™B  ⁄BuˆB«ÎAˇ∑ŸB}B$–BÖÌB “∫B:ΩB QA˝i≈B(UB¨êBâ¸Bı˝BP˝B æaA˛–AˇiòB U◊Aˇ8=B :&B â¥BXóB™ÕB‰8B[BB2fB&mB`BBê≥BÏTBlB–∫B"BèºB˙BíB€eBzºBà¬BÕÙB	|B£ÔBLQB~B> B
+úrB$ùB”TBSôBëöB¿€BM+BZ%BºBücB˚yBÚBœBBƒ≤B¯{BAªBÇBˇ\B&˚BxÈB©YB	ZB$\BB,äBBÿBÚèBˇGB’BﬂôBwÎB>ëBΩõB˛·BCEBÄ6BÉ B‡.B◊ÂBX≥BEùBO˙B,B∫B©PBVPB#BA2B£sB]
+B·…B>BBº˚B∏BÈ∫B7B£ëB‡÷BîBy‚B	BB)B1ÄBî	Bê'B,3BJÂBRB√öBYŸB†ñB8B?B,•B^B¯£BßfBÿÙA˝˚¶A¸+≈BR•B0¿B†B†PBW±BûoB.BàMB≠cB;DB	∞ÊB„=B˙BäB√ÉBˇlBìœB±ºB\∏BΩ6B–~BÄ(B≥…B¢ÒB	ì~B—›Bc·BIJBeyB®2B_B4§BÚ„B
+≥BBgqBmYByèBﬂ1Bˆ‚B	'…BFrBUÂBçHB	⁄´B-∆B	5BU#BuB¢B	)∏BàâB∑mB
+±ôB≤ãBÏØB	≤,B˙√B
+YïB&&Bú;B
+∫§BÊçB	jüBêB‚≠B<—B	â˚B	3ûB^@B
+Ü BXBürB	B èB°B
+™√B	obB
+Æ˚B¨B	.”B≥B51B
+'ˇB
+qÍB	ÚáB
+ä‡B
+_FB\»B’«BáÑB%{B¥pBŸ£B	B,4BkËB>ƒB
+#B
+!B	YçB∂≥Bé_BˇÁB†¬Bo-BûìBùÁB≈˜B∂A˛¸CB oA˛ùBBîÙB_nB˝ÏAˇ+bB zŸBßôBÌB=B{«B ‚B9ßB∫EB3ºBÀ~B	ÒB¿äBÌ≥Bw˘BÜKA˛±-BZB⁄BZgB?ñBBB àB⁄B{ñB|)BqB-õB	}^B€%BıxB+;BÔB5±B ÌóAˇjB>óBº†BsîBluBÙ≥B ‘™B&ﬂB àB @óB.|BH"Bˆ“B·ÔBp†B$ÀB´$B[B“√B%“Bè≥B Ì@A˛|;BìB E¿BjiB›ØB‚BÀÓBJsB `BÓúB`ZBo<BÅ?BöÈBe˜BdoBItBÀ≠Bs‰BÿxB,äB5©BXLB=∑Bô B&ËB&Bï⁄B•B¶BOB )ÿB*≤BÄâBÈ/Bô!Bì˘Bå&BO˝BÉÜAˇÒB˚¿BÆ›BFBÀLBïFBQ`BSBÌ-B
+5B¶‚Bò—B.B”B∏4BÜB~êBâIBOÓBÙBBßVBe„Bﬁ(Bà§BîcBÀﬂB±…B„çBâ†BB€ïB	JÃB _B\]B’óB‘≠BzB‹üBìêB}ÀB¬äBr!B1ÔB¯âBr"B$√B"ﬂBùBﬂBÁBœ»B	âÅB?hBÑCBVÆBy!B0·BÔ”B%åB2…BÁçBÁÂB!3BçBÕùB	ÏaB	âoB	xìB	ÏB[ÃB!BÙiB
+ tB„UBﬂKBDFBÊœBHB	ÇÍBúﬂB
+aUBÑfBÂBóBˇ B
+¬ÈBíŸB	wB´¡B3¥BÒ&B»/B	·B´B⁄BŒSBbåB0‰BkRBIBBEBçB3äB’„B
+ŸÔB+B
+|µB
+˚{B0B{6B—cB	3ˇB	ÌB	YBwvB˝B˘xBÎJB•wBõáB	∑åBˇBB÷ﬂB
+ÔB…£B}kB	aäBç(Bz‘B
+K»B\RB®B iB;¡Bñ B	bB˛"BÈBè∂B	ë∏B	∆B	˘~B	´BänB[ôBœB iB¿ÆB	T•B"B]›B¡B
+B∏óB
+(B
+7B	¬–BjèB
+¿(B√ÀB…Bã1B!˚BﬂBZäB‡ŒBzBBî§B%cBv0BRMB
+^≤B⁄MBr«B BÊ¿B≤B
+;ÂB:pBi“BúBiØBKB∫ÿB∆eB
+}ÆB~ÚB¨B”ÜBB
+Bõ)B∏6B(¨B‚LBﬁB∏OBËrBÓsBRBÚ»B &BBõB
+M\BóÔB¬ÉB,eBVˇB…ÜBBSrB‰ıB∆GBDaB	EB5&B_ƒBÙB	_¨B,BkB\,B	kB}HBÍZBÖïB˛BïÓB	˝ùB0πB˜ÛBÈØBtéBﬂ[B‹ˆBÉBdãBéaBÎtBOœB≤ÎB¥óB ˘B›iA¸M¯B ¶∑A˛”ëB b¡BÈ$A¸æﬁA¥"∂                                                                                                                                                                                                                                                                                                                                                                                                                                                                
