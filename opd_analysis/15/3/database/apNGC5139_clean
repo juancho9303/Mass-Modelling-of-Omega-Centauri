@@ -1,0 +1,1760 @@
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 1 20.11323 1024.
+	image	NGC5139_clean
+	aperture	1
+	beam	1
+	center	20.11323 1024.
+	low	-4.078865 -1023.
+	high	3.44763 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-1.85523
+		-0.6945438
+		-0.03270499
+		0.03289711
+		0.133724
+		-1.192173
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 2 30.98899 1024.
+	image	NGC5139_clean
+	aperture	2
+	beam	2
+	center	30.98899 1024.
+	low	-3.085218 -1023.
+	high	2.85458 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-1.666901
+		-0.6791421
+		-0.07049075
+		0.08824496
+		0.07513191
+		-0.576292
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 3 30.98906 1024.
+	image	NGC5139_clean
+	aperture	3
+	beam	3
+	center	30.98906 1024.
+	low	-3.085264 -1023.
+	high	2.854515 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-1.666908
+		-0.6791525
+		-0.07050087
+		0.08823483
+		0.07512172
+		-0.5763022
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 4 48.97982 1024.
+	image	NGC5139_clean
+	aperture	4
+	beam	4
+	center	48.97982 1024.
+	low	-3.212936 -1023.
+	high	2.372353 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-1.986488
+		-0.6661569
+		-0.06362803
+		0.1066813
+		0.03006148
+		-0.8134913
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 5 64.9287 1024.
+	image	NGC5139_clean
+	aperture	5
+	beam	5
+	center	64.9287 1024.
+	low	-3.521187 -1023.
+	high	2.508942 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-2.167315
+		-0.5118785
+		-0.1356915
+		0.1898684
+		-0.2795041
+		30.17073
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 6 70.09505 1024.
+	image	NGC5139_clean
+	aperture	6
+	beam	6
+	center	70.09505 1024.
+	low	-1.830429 -1023.
+	high	1.815948 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-2.197901
+		-0.426617
+		-0.1736593
+		0.2934487
+		-1.104405
+		-71.40619
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 7 92.38525 1024.
+	image	NGC5139_clean
+	aperture	7
+	beam	7
+	center	92.38525 1024.
+	low	-3.600746 -1023.
+	high	2.613556 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-1.249401
+		-0.6255663
+		-0.07511982
+		0.07378981
+		0.1510391
+		-0.4197888
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 8 101.2073 1024.
+	image	NGC5139_clean
+	aperture	8
+	beam	8
+	center	101.2073 1024.
+	low	-3.291519 -1023.
+	high	2.264679 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-1.159143
+		-0.5663508
+		-0.05286257
+		0.07633949
+		0.3936998
+		-0.5757961
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 9 105.335 1024.
+	image	NGC5139_clean
+	aperture	9
+	beam	9
+	center	105.335 1024.
+	low	-1.209625 -1023.
+	high	2.444603 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-1.874867
+		-1.24781
+		-0.7456222
+		-0.604646
+		-0.3061186
+		-1.136916
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 10 124.0678 1024.
+	image	NGC5139_clean
+	aperture	10
+	beam	10
+	center	124.0678 1024.
+	low	-4.356712 -1023.
+	high	4.473747 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-1.129057
+		-0.6096275
+		-0.07469593
+		0.06139271
+		0.2274232
+		-0.5061511
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 11 131.4054 1024.
+	image	NGC5139_clean
+	aperture	11
+	beam	11
+	center	131.4054 1024.
+	low	-1.912552 -1023.
+	high	1.482727 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-2.033272
+		-0.5399178
+		-0.03883714
+		0.1201021
+		0.2296005
+		-0.01647228
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 12 137.7574 1024.
+	image	NGC5139_clean
+	aperture	12
+	beam	12
+	center	137.7574 1024.
+	low	-2.476944 -1023.
+	high	3.53363 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-1.076182
+		-0.5614315
+		-0.08132821
+		0.09634184
+		-0.03975432
+		0.446885
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 13 145.2419 1024.
+	image	NGC5139_clean
+	aperture	13
+	beam	13
+	center	145.2419 1024.
+	low	-2.838837 -1023.
+	high	2.416809 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-1.264981
+		-0.5530374
+		-0.08903442
+		0.09147452
+		0.07763908
+		-0.27178
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 14 152.4473 1024.
+	image	NGC5139_clean
+	aperture	14
+	beam	14
+	center	152.4473 1024.
+	low	-2.238251 -1023.
+	high	2.303314 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-1.538394
+		-0.4257173
+		-0.07778868
+		0.08383077
+		0.3216232
+		48.93758
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 15 166.7037 1024.
+	image	NGC5139_clean
+	aperture	15
+	beam	15
+	center	166.7037 1024.
+	low	-4.460785 -1023.
+	high	2.94809 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-1.339839
+		-0.5216229
+		-0.06918267
+		0.07226076
+		0.1155806
+		1.722648
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 16 173.5618 1024.
+	image	NGC5139_clean
+	aperture	16
+	beam	16
+	center	173.5618 1024.
+	low	-2.663757 -1023.
+	high	3.051117 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-1.179583
+		-0.4988871
+		-0.1044015
+		0.1265278
+		0.1396038
+		0.9903744
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 17 179.6277 1024.
+	image	NGC5139_clean
+	aperture	17
+	beam	17
+	center	179.6277 1024.
+	low	-2.25148 -1023.
+	high	2.555771 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-1.05106
+		-0.5083639
+		-0.07405642
+		0.06896254
+		0.2881662
+		0.2090686
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 18 190.4532 1024.
+	image	NGC5139_clean
+	aperture	18
+	beam	18
+	center	190.4532 1024.
+	low	-4.568466 -1023.
+	high	3.4272 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-0.9389834
+		-0.5134813
+		-0.07945336
+		0.08529039
+		0.1925125
+		0.03757087
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 19 199.8191 1024.
+	image	NGC5139_clean
+	aperture	19
+	beam	19
+	center	199.8191 1024.
+	low	-3.067917 -1023.
+	high	2.725677 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-0.8826027
+		-0.4706919
+		-0.0793779
+		0.07800401
+		0.1130348
+		2.161762
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 20 205.5529 1024.
+	image	NGC5139_clean
+	aperture	20
+	beam	20
+	center	205.5529 1024.
+	low	-1.439743 -1023.
+	high	3.016052 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-1.169848
+		-0.4981997
+		-0.1205423
+		0.06222846
+		-0.01064747
+		5.597582
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 21 213.839 1024.
+	image	NGC5139_clean
+	aperture	21
+	beam	21
+	center	213.839 1024.
+	low	-1.649658 -1023.
+	high	2.704819 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-1.209936
+		-0.5328606
+		-0.137034
+		0.07557117
+		0.1187251
+		1.23914
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 22 218.8664 1024.
+	image	NGC5139_clean
+	aperture	22
+	beam	22
+	center	218.8664 1024.
+	low	-1.742172 -1023.
+	high	1.036545 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-1.406572
+		-0.0737808
+		0.06678154
+		0.3629201
+		0.2338681
+		0.01030928
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 23 221.4985 1024.
+	image	NGC5139_clean
+	aperture	23
+	beam	23
+	center	221.4985 1024.
+	low	-1.357559 -1023.
+	high	3.382477 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-1.66127
+		-0.5506995
+		-0.3508777
+		-0.05815099
+		-0.238752
+		-0.2598897
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 24 231.7844 1024.
+	image	NGC5139_clean
+	aperture	24
+	beam	24
+	center	231.7844 1024.
+	low	-5.345627 -1023.
+	high	5.351303 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-1.108734
+		-0.4732369
+		-0.07706338
+		0.09273414
+		0.1203761
+		-0.3311219
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 25 231.7862 1024.
+	image	NGC5139_clean
+	aperture	25
+	beam	25
+	center	231.7862 1024.
+	low	-5.347214 -1023.
+	high	5.348709 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-1.109039
+		-0.4735419
+		-0.07736883
+		0.09242923
+		0.1200706
+		-0.3314265
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 26 246.4989 1024.
+	image	NGC5139_clean
+	aperture	26
+	beam	26
+	center	246.4989 1024.
+	low	-1.426437 -1023.
+	high	2.343338 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		1.761784
+		-1.012978
+		0.3589261
+		-0.579619
+		3.527299
+		-6.167959
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 27 253.6905 1024.
+	image	NGC5139_clean
+	aperture	27
+	beam	27
+	center	253.6905 1024.
+	low	-3.452438 -1023.
+	high	2.800919 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-0.8873317
+		-0.4707894
+		-0.0449764
+		0.1211737
+		0.3509351
+		-0.2457701
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 28 264.6425 1024.
+	image	NGC5139_clean
+	aperture	28
+	beam	28
+	center	264.6425 1024.
+	low	-2.396332 -1023.
+	high	1.750275 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-0.5420464
+		-0.4700088
+		-0.07447232
+		0.09131468
+		0.4721979
+		0.1817947
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 29 264.6426 1024.
+	image	NGC5139_clean
+	aperture	29
+	beam	29
+	center	264.6426 1024.
+	low	-2.396362 -1023.
+	high	1.750244 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-0.5420601
+		-0.4700121
+		-0.07447834
+		0.09131028
+		0.4721918
+		0.1817959
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 30 272.2683 1024.
+	image	NGC5139_clean
+	aperture	30
+	beam	30
+	center	272.2683 1024.
+	low	-1.91037 -1023.
+	high	2.040375 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-0.6791035
+		-0.4651901
+		-0.08395819
+		0.06006801
+		0.2746054
+		0.2431957
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 31 280.3273 1024.
+	image	NGC5139_clean
+	aperture	31
+	beam	31
+	center	280.3273 1024.
+	low	-2.719269 -1023.
+	high	2.771301 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-0.643158
+		-0.4144492
+		-0.1041025
+		0.1090411
+		0.1729175
+		0.2848532
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 32 294.4427 1024.
+	image	NGC5139_clean
+	aperture	32
+	beam	32
+	center	294.4427 1024.
+	low	-1.367401 -1023.
+	high	1.386963 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		3.635231
+		-0.1210684
+		-0.8220927
+		0.915289
+		0.9792668
+		1.192202
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 33 294.4428 1024.
+	image	NGC5139_clean
+	aperture	33
+	beam	33
+	center	294.4428 1024.
+	low	-1.367462 -1023.
+	high	1.386932 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		3.63525
+		-0.1210852
+		-0.8220983
+		0.915273
+		0.9792675
+		1.192141
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 34 298.2046 1024.
+	image	NGC5139_clean
+	aperture	34
+	beam	34
+	center	298.2046 1024.
+	low	-1.938782 -1023.
+	high	1.418396 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-0.7874971
+		-0.4068426
+		-0.1461124
+		0.1083491
+		0.3830906
+		0.9094228
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 35 298.2046 1024.
+	image	NGC5139_clean
+	aperture	35
+	beam	35
+	center	298.2046 1024.
+	low	-1.938873 -1023.
+	high	1.418335 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-0.7875149
+		-0.4068515
+		-0.1461229
+		0.108339
+		0.3830805
+		0.9094118
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 36 311.1444 1024.
+	image	NGC5139_clean
+	aperture	36
+	beam	36
+	center	311.1444 1024.
+	low	-2.52002 -1023.
+	high	2.699493 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-0.6828139
+		-0.4826988
+		-0.08240204
+		0.02774583
+		0.4081919
+		-1.270501
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 37 327.6752 1024.
+	image	NGC5139_clean
+	aperture	37
+	beam	37
+	center	327.6752 1024.
+	low	-3.255676 -1023.
+	high	3.015869 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-0.7724835
+		-0.4185671
+		-0.09407345
+		0.1095632
+		0.3080609
+		0.5048025
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 38 336.2445 1024.
+	image	NGC5139_clean
+	aperture	38
+	beam	38
+	center	336.2445 1024.
+	low	-2.097382 -1023.
+	high	1.661346 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		0.1646742
+		-0.5560253
+		0.04134073
+		-0.1860607
+		2.64822
+		-3.956685
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 39 341.2346 1024.
+	image	NGC5139_clean
+	aperture	39
+	beam	39
+	center	341.2346 1024.
+	low	-2.109741 -1023.
+	high	1.75177 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-0.592134
+		-0.3898228
+		-0.1014853
+		0.1048638
+		0.3444731
+		1.272626
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 40 345.3724 1024.
+	image	NGC5139_clean
+	aperture	40
+	beam	40
+	center	345.3724 1024.
+	low	-1.237274 -1023.
+	high	3.133209 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-0.9465515
+		-0.2346224
+		-0.1629569
+		0.3124795
+		-1.507742
+		5.375964
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 41 355.8892 1024.
+	image	NGC5139_clean
+	aperture	41
+	beam	41
+	center	355.8892 1024.
+	low	-2.615479 -1023.
+	high	1.010956 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-0.1299631
+		-0.3641415
+		-0.1155496
+		0.1517181
+		0.3911934
+		2.516361
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 42 358.4886 1024.
+	image	NGC5139_clean
+	aperture	42
+	beam	42
+	center	358.4886 1024.
+	low	-1.285645 -1023.
+	high	2.343781 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-0.5427011
+		-0.8017111
+		-0.5461704
+		-0.2815053
+		-0.02692896
+		1.993701
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 43 366.9023 1024.
+	image	NGC5139_clean
+	aperture	43
+	beam	43
+	center	366.9023 1024.
+	low	-2.624878 -1023.
+	high	1.837677 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-0.426015
+		-0.3983384
+		-0.1000089
+		0.08836466
+		0.5461709
+		0.4968669
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 44 366.9023 1024.
+	image	NGC5139_clean
+	aperture	44
+	beam	44
+	center	366.9023 1024.
+	low	-2.624939 -1023.
+	high	1.837616 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-0.4260147
+		-0.398351
+		-0.1000175
+		0.08835245
+		0.5461648
+		0.4968362
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 45 379.3435 1024.
+	image	NGC5139_clean
+	aperture	45
+	beam	45
+	center	379.3435 1024.
+	low	-3.194794 -1023.
+	high	2.833527 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-0.4800843
+		-0.36462
+		-0.1042956
+		0.1029492
+		0.3836386
+		0.8462681
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 46 385.9308 1024.
+	image	NGC5139_clean
+	aperture	46
+	beam	46
+	center	385.9308 1024.
+	low	-1.885834 -1023.
+	high	0.959198 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		0.2402562
+		0.1556109
+		0.4524768
+		0.591049
+		1.016412
+		-0.3411001
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 47 389.3136 1024.
+	image	NGC5139_clean
+	aperture	47
+	beam	47
+	center	389.3136 1024.
+	low	-1.618347 -1023.
+	high	2.205719 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-0.3739033
+		-0.3962758
+		-0.1203264
+		0.04207472
+		0.4147778
+		-0.699348
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 48 407.0634 1024.
+	image	NGC5139_clean
+	aperture	48
+	beam	48
+	center	407.0634 1024.
+	low	-4.708679 -1023.
+	high	4.632935 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-0.5890276
+		-0.258431
+		-0.07584638
+		0.1531192
+		0.4729494
+		0.7102489
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 49 419.6162 1024.
+	image	NGC5139_clean
+	aperture	49
+	beam	49
+	center	419.6162 1024.
+	low	-5.862244 -1023.
+	high	2.499542 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-0.2371725
+		-0.2823014
+		-0.1007908
+		0.1098146
+		0.4893166
+		2.414547
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 50 429.5224 1024.
+	image	NGC5139_clean
+	aperture	50
+	beam	50
+	center	429.5224 1024.
+	low	-1.406433 -1023.
+	high	2.513336 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-0.3205341
+		-0.3267279
+		-0.1272613
+		0.07185882
+		0.4056908
+		0.07024267
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 51 429.5224 1024.
+	image	NGC5139_clean
+	aperture	51
+	beam	51
+	center	429.5224 1024.
+	low	-1.406464 -1023.
+	high	2.513306 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-0.3205376
+		-0.326733
+		-0.1272667
+		0.07185463
+		0.4056835
+		0.07024897
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 52 442.3228 1024.
+	image	NGC5139_clean
+	aperture	52
+	beam	52
+	center	442.3228 1024.
+	low	-2.509949 -1023.
+	high	2.109253 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-0.4038521
+		-0.3207712
+		-0.1061677
+		0.113853
+		0.4363829
+		0.9472363
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 53 448.1484 1024.
+	image	NGC5139_clean
+	aperture	53
+	beam	53
+	center	448.1484 1024.
+	low	-2.537598 -1023.
+	high	2.511719 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-0.2695527
+		-0.3088886
+		-0.1148104
+		0.09876001
+		0.461575
+		1.053234
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 54 467.9307 1024.
+	image	NGC5139_clean
+	aperture	54
+	beam	54
+	center	467.9307 1024.
+	low	-0.837616 -1023.
+	high	2.417603 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-0.2094788
+		-0.2483034
+		-0.2345507
+		0.08542071
+		0.2825026
+		1.564206
+
+# Tue 18:17:13 24-Nov-2015
+begin	aperture NGC5139_clean 55 467.9307 1024.
+	image	NGC5139_clean
+	aperture	55
+	beam	55
+	center	467.9307 1024.
+	low	-0.8376465 -1023.
+	high	2.417511 1024.
+	background
+		xmin -10.
+		xmax 10.
+		function chebyshev
+		order 1
+		sample -10:-6,6:10
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-0.2094952
+		-0.2483063
+		-0.2345569
+		0.0854166
+		0.2824959
+		1.564208
+

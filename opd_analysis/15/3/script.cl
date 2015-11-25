@@ -5,7 +5,7 @@ for (i=1; i <= 55; i+=1) {
   if (access (s1 // ".fits")) 
   {
       fxcor ("w.cluster."//i//".fits",
-"w.cluster.27.fits", apertures="*", cursor="", continuum="both", filter="none",
+"w.cluster.25.fits", apertures="*", cursor="", continuum="both", filter="none",
 rebin="smallest", pixcorr=no, osample="*", rsample="*", apodize=0.2,
 function="gaussian", width=INDEF, height=0., peak=no, minwidth=3.,
 maxwidth=21., weights=1., background=0., window=INDEF, wincenter=INDEF,
