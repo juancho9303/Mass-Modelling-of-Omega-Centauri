@@ -10,43 +10,20 @@
 
 double X_s,I_R,s,R,a,sig_p,beta,rho,re1,re2,result1,error1,result2,error2;
 
-//Defino la funcion corresponiente a la integral 
-double int_1 (double r, void * params) {
-  //  double a = *(double *) params;
-  double int_1 = 1.0/(r*pow((r+a),5));
-  return int_1;
-}
-
 void main()
 {
   
   FILE *mod,*script;
   
   mod=fopen("model.dat","w");
-    
-  gsl_integration_workspace * w 
-    = gsl_integration_workspace_alloc (2000);
-
-  gsl_function F1;
-  F1.function = &int_1;
-  //  F1.params = &a;
-  
-  gsl_integration_qags (&F1, 1, 10000, 0, 1e-4, 2000,
-                        w, &result1, &error1); 
-  
-  printf ("result          = % .18f\n", result1);
-  printf ("estimated error = % .18f\n", error1);
-  printf ("intervals       = %zu\n", w->size);
-  
-  gsl_integration_workspace_free (w);
-  
+      
   for (R = 0.01; R < N; R=R+0.01)
     {      
-      re1 = result1;
+      //re1 = result1;
       
       double int_2 (double r, void * params) {
 	//  double a = *(double *) params;
-	double int_2 = (1.0 - beta*((R*R)/(r*r)))*(re1)*((r)/(sqrt(r*r-R*R)));
+	double int_2 = (1.0 - beta*((R*R)/(r*r)))*(((12.0*pow((a+r),4)*log((a+r)/(r)))-a*(25.0*a*a*a+52.0*a*a*r+42*a*r*r+12*r*r*r))/(12.0*pow(a,5)*pow((a+r),4)))*((r)/(sqrt(r*r-R*R)));
 	//  return int_2;
       } 
       
