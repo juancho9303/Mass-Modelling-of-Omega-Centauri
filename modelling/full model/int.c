@@ -6,19 +6,11 @@
 #define pi 3.141592
 #define M 5000
 #define gamma 1.2
-
-//double s;
-
-double X_s (double s, void * params) {
-//  double a = *(double *) params;
-  double X_s = 1.0 / sqrt(1.0 - s*s) * log(1.0+(sqrt(1-s*s))/(s));
-  return X_s;
-}
  
-  double I_s (double s, void * params) {
+  double int_1 (double r, void * params) {
 //  double a = *(double *) params;
-  double I_s = M/(2*pi*a*a*gamma*(1-s*s)*(1-s*s))*((2+s*s)*(1.0 / sqrt(1.0 - s*s) * log(1.0+(sqrt(1-s*s))/(s)))-3);
-  return I_s;
+  double int_1 = 1.0/(r*pow((r+a),5));
+  return int_1;
   }
 
 int
@@ -26,17 +18,17 @@ main (void)
 {  
 
   gsl_integration_workspace * w 
-    = gsl_integration_workspace_alloc (100);
+    = gsl_integration_workspace_alloc (2000);
   
   double result, error;
   double expected = -4.0;
 //  double a = 1.0;
 
   gsl_function F;
-  F.function = &I_s;
+  F.function = &int_1;
 //  F.params = &a;
 
-  gsl_integration_qags (&F, 0, 1, 0, 1e-5, 100,
+  gsl_integration_qags (&F, 1, 1000, 0, 1e-4, 2000,
                         w, &result, &error); 
 
   printf ("result          = % .18f\n", result);
