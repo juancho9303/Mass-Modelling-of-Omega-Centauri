@@ -2,8 +2,8 @@
 #include <math.h>
 #include <gsl/gsl_integration.h>
 
-#define N 20
-#define M 10e-3
+#define N 10
+#define M 2
 #define GAMMA 1.2
 #define G 43007.1
 
@@ -35,8 +35,8 @@ int main(){
   gsl_integration_workspace *z = gsl_integration_workspace_alloc(Nint);
   gsl_function F2;
   // parametros del problema (o algo asi)
-  double a = 2.0;
-  double a_dm = 2.0;
+  double a = 1.0;
+  double a_dm = 1.0;
   double beta = 2.0;
 
   mod=fopen("model.dat","w");
@@ -50,8 +50,8 @@ int main(){
     F2.params = &params;
     
     // Para todos es la misma integral
-    gsl_integration_qags(&F2, R, 10000, 0, 1e-4, Nint, z, &result2, &error2); 
-    //printf ("result  = % .18f\n", result2);
+    gsl_integration_qags(&F2, R, 1000, 0, 1e-4, Nint, z, &result2, &error2); 
+    printf ("result  = % .18f\n", result2);
 
     if (R < 1.0)
       {      
