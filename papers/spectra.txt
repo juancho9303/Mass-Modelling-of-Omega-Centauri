@@ -1,0 +1,556 @@
+
+                          IRAF TUTORIAL SESSIONS
+
+                                Exercise 5.
+
+
+In this exercise we will continue processing the spectroscopic data that
+was processed through the preliminary reduction phase using CCDPROC 
+(including the response and illumination corrections) in Exercise 3.  This
+exercise will lead you through the extraction of the spectra to 1-d, the
+wavelength calibration of the arc spectra, and then finally applying this
+information to our extracted stellar spectra.
+
+We will assume that you are logged into IRAF in an xgterm window, or a similar
+graphics terminal emulator window.
+
+Go to your IRAF home directory and then go to the subdirectory called spec
+in the exercises directory.
+
+          cl> cd
+          cl> cd exercises/spec
+
+The data that we will work with at this time are sp0018-sp0027.  Are the
+data there?  Check to be sure the images have been reduced - do you remember
+how to check that?
+
+          cl> dir
+          cl> imhead sp*.imh
+          cl> imhead sp0018 l+        # what do you want to look for here?
+
+These are the images that we will be working with.
+
+cl> imhead sp*.imh
+sp0018.imh[41,1022][real]: comp 6707 start of night
+sp0020.imh[41,1022][real]: DHCep 6707
+sp0021.imh[41,1022][real]: DHCep 6707
+sp0022.imh[41,1022][real]: DHCep 6707
+sp0023.imh[41,1022][real]: AHCep 6707
+sp0024.imh[41,1022][real]: AHCep 6707
+sp0025.imh[41,1022][real]: AHCep 6707
+sp0027.imh[41,1022][real]: comp 6707
+
+
+EXTRACTING THE DATA
+-------------------
+
+The first thing we need to do is extract the data to 1-d spectra, both
+the objects and the arcs.  If we wanted to leave the data as 2-d data
+then the problem would be approached in a different way, using tasks in
+the NOAO.TWODSPEC.LONGSLIT package.  Let's load the appropriate packages.
+
+          cl> imred
+          cl> kpnoslit
+
+Our first task is to determine the parameters for the task APALL, the task we
+will use to do the extraction of the spectra.  We need to determine a
+profile centering width that is the number of pixels used to determine the
+center of the profile during the centering and tracing of the profile along
+the dispersion direction; this is usually set to near the FW of the profile.
+
+          cl> implot sp0020          # measure the FW of the profile using
+                                       the "C" key - place the cursors on one
+                                       side of the profile at about the 50
+                                       count level - press "C" - move the 
+                                       cursor to the other side - press "C"
+                                       again (may need to press twice) 
+
+          [you may want to overplot some different lines as well to see how
+           consistent the profile is and how much distortion there is in
+           the spectrum]
+
+              o                      # overplot next plot
+              :l 50                  # line 50
+              o                      
+              :l 1000
+
+              c                      # place cursor on middle of profile and
+                                       type "c" - this will plot the column
+                                       defined by the cursor so you can see
+                                       the spectrum of the star
+
+              :i sp0025              # check another spectrum
+              :l 511
+
+          [when you have decided on a good value of the profile radius quit
+           implot with q]
+
+              q
+
+Many IRAF packages have parameter files like IRAF tasks.  The package 
+parameters are generally used across the board for all tasks in that package. 
+Look at the parameters for the KPNOSLIT package.  For our data set, there is no
+need to modify any of these parameters.
+
+cl> lpar kpnoslit
+  (extinction = "onedstds$kpnoextinct.dat") Extinction file
+      (caldir = "onedstds$spec50cal/") Standard star calibration directory
+ (observatory = "observatory")  Observatory of data
+      (interp = "poly5")        Interpolation type
+    (dispaxis = 2)              Image axis for 2D/3D images
+        (nsum = "1")            Number of lines/columns/bands to sum for 2D/3D 
+    (database = "database")     Database
+     (verbose = no)             Verbose output?
+     (logfile = "logfile")      Log file
+    (plotfile = "")             Plot file\n
+     (records = "")             Record number extensions
+     (version = "KPNOSLIT V3: January 1992") 
+        (mode = "ql")           
+      ($nargs = 0)        
+
+The next step is to edit the parameters for APALL until they resemble the
+parameter file below.  There are many ways to vary the extraction algorithms
+to get the best results for your data.  Our list of input images will be
+an @file containing a list of our stellar images only.  We will use many 
+of the defaults except for a few:  let's turn off the extras parameter, set
+b_order=2 (a straight line fit for the background subtraction rather than a
+constant), set b_naver=-10 (that way a median value will be determined for
+each of our background samples before they are fit with the straight line), 
+type Ctrl/N to go to the next page of the parameter list, set the width=6 (at 
+least that is what I decided from our runs with implot earlier), set nfind=1 
+(we only want to initially find 1 peak), and set background=fit.
+
+        cl> unlearn apall
+        cl> epar apall                # set parameters
+            :q                        # save the parameters
+    
+cl> lpar apall | page
+        input = "@extract"      List of input images
+        nfind = 1               Number of apertures to be found automatically
+      (output = "")             List of output spectra
+   (apertures = "")             Apertures
+      (format = "multispec")    Extracted spectra format
+  (references = "")             List of aperture reference images
+    (profiles = "")             List of aperture profile images\n
+ (interactive = yes)            Run task interactively?
+        (find = yes)            Find apertures?
+    (recenter = yes)            Recenter apertures?
+      (resize = yes)            Resize apertures?
+        (edit = yes)            Edit apertures?
+       (trace = yes)            Trace apertures?
+    (fittrace = yes)            Fit the traced points interactively?
+     (extract = yes)            Extract spectra?
+      (extras = no)             Extract sky, sigma, etc.?
+      (review = yes)            Review extractions?\n
+        (line = INDEF)          Dispersion line
+        (nsum = 10)             Number of dispersion lines to sum\n\n# DEFAULT 
+       (lower = -5.)            Lower aperture limit relative to center
+       (upper = 5.)             Upper aperture limit relative to center
+   (apidtable = "")             Aperture ID table (optional)\n\n# DEFAULT BACKG
+  (b_function = "chebyshev")    Background function
+     (b_order = 2)              Background function order
+    (b_sample = "-10:-6,6:10")  Background sample regions
+  (b_naverage = -10)            Background average or median
+  (b_niterate = 0)              Background rejection iterations
+(b_low_reject = 3.)             Background lower rejection sigma
+(b_high_rejec = 3.)             Background upper rejection sigma
+      (b_grow = 0.)             Background rejection growing radius\n\n# APERTU
+       (width = 6.)             Profile centering width
+      (radius = 10.)            Profile centering radius
+   (threshold = 0.)             Detection threshold for profile centering\n\n# 
+      (minsep = 5.)             Minimum separation between spectra
+      (maxsep = 1000.)          Maximum separation between spectra
+       (order = "increasing")   Order of apertures\n\n# RECENTERING PARAMETERS\n
+  (aprecenter = "")             Apertures for recentering calculation
+      (npeaks = INDEF)          Select brightest peaks
+       (shift = yes)            Use average shift instead of recentering?\n\n#
+      (llimit = INDEF)          Lower aperture limit relative to center
+      (ulimit = INDEF)          Upper aperture limit relative to center
+      (ylevel = 0.1)            Fraction of peak or intensity for automatic wid
+        (peak = yes)            Is ylevel a fraction of the peak?
+         (bkg = yes)            Subtract background in automatic width?
+      (r_grow = 0.)             Grow limits by this factor
+   (avglimits = no)             Average limits over all apertures?\n\n# TRACING
+      (t_nsum = 10)             Number of dispersion lines to sum
+      (t_step = 10)             Tracing step
+     (t_nlost = 3)              Number of consecutive times profile is lost bef
+  (t_function = "legendre")     Trace fitting function
+     (t_order = 2)              Trace fitting function order
+    (t_sample = "*")            Trace sample regions
+  (t_naverage = 1)              Trace average or median
+  (t_niterate = 0)              Trace rejection iterations
+(t_low_reject = 3.)             Trace lower rejection sigma
+(t_high_rejec = 3.)             Trace upper rejection sigma
+      (t_grow = 0.)             Trace rejection growing radius\n\n# EXTRACTION 
+  (background = "fit")          Background to subtract
+      (skybox = 1)              Box car smoothing length for sky
+     (weights = "none")         Extraction weights (none|variance)
+        (pfit = "fit1d")        Profile fitting type (fit1d|fit2d)
+       (clean = no)             Detect and replace bad pixels?
+  (saturation = INDEF)          Saturation level
+   (readnoise = "0.")           Read out noise sigma (photons)
+        (gain = "1.")           Photon gain (photons/data number)
+      (lsigma = 4.)             Lower rejection threshold
+      (usigma = 4.)             Upper rejection threshold
+     (nsubaps = 1)              Number of subapertures per aperture
+        (mode = "ql")    
+
+Let's make up our @file that we will use as input to APALL.
+
+        cl> files sp002?.imh > extract
+        cl> edit extract       # we only want sp0020-25 in the list
+        cl> imhead @extract    # check the list
+
+Now we are ready to extract our stellar spectra.
+
+        cl> apall
+
+        [press "return" to all questions]
+
+        [we are now presented with a profile plot for our first star - the
+         center and the extraction aperture, automatically determined when
+         we answered "yes" to the resize question, have been marked]
+
+            ?                  # for a list of cursor options
+            b                  # go into background fitting mode
+
+        [the default backgrounds are marked but they are not very good - we
+         should move them further away from the star]
+
+            ?                  # for a list of cursor options in this mode
+            t                  # initialize the background regions
+            s                  # mark the left boundary of the first new
+                                 background region
+            s                  # mark the right boundary of the first new
+                                 background region
+            s                  # mark the left boundary of the second new
+                                 background region
+            s                  # mark the right boundary of the second new
+                                 background region
+            f                  # fit the new background
+            :sample            # print out the sky regions being used
+
+        [you should now have one background sample region on either side
+         of the profile of about 6 pixels or so each - notice the fit
+         extended under the star - also notice the median points in each
+         sample region (the small plus sign may be difficult to see) - redo 
+         the procedure above if you are not happy with your sky background]
+
+            q                  # quit the background fitting routine
+
+        [once we have decided that the aperture size, the center and the
+         background are ok, we can move onto the tracing routine.  The next
+         step is to trace the profile of the star along the dispersion axis.
+         We are again in the ICFIT routine (remember the RESPONSE and 
+         ILLUMINATION tasks?]
+
+            q
+
+        [answer yes to all questions - you will now be presented with a plot
+         of the profile centers versus the line number.  Notice the fitting
+         parameters at the top of the plot.  We can adjust the fit if you
+         would like, although the current fit looks quite good.]
+
+            :func spline3
+            :order 3
+            :niter 1
+            f
+           
+            q                  # quit tracing mode and move onto extraction
+
+        [answer yes to all questions - now you will see a plot of the 
+         extracted spectrum - notice the cosmic rays - another option
+         during the extraction process is to clean the spectrum but we
+         did not choose that option]
+
+            q                  # go to next spectrum
+
+        [we will now step through the remaining stars - each will be processed
+         in a similar manner - note the previous background regions have not
+         been remembered so you will need to set these for each star - the
+         previous fitting parameters for the tracing are remembered however]
+
+Our stellar spectra have now been extracted to 1-d images.  The headers
+have been updated with a more complex set of header keywords as well.  And
+all of the extraction information has been saved in individual files in
+a database directory.
+
+        cl> dir
+        cl> imhead *.ms*                # list the newly extracted spectra
+        cl> imhead sp0025.ms l+ | page  # see the long header  
+        cl> dir database
+        cl> page database/apsp0021
+
+Now we need to extract the two arc spectra to 1-d.  But this process is done
+differently than for the star.  We can not trace the arcs since there is no
+continuum, and we need to be sure we do not do any background subtraction or
+we will end up with nothing in our output spectrum.  Why?  So we will use
+a "reference" image to extract the arcs.  In other words, we will use one
+of the database files created earlier when we extracted our stars.  To simplify
+things we will use one reference star to extract both arcs.  But users
+may want to be more particular about this procedure if they are doing radial
+velocity work - you may want to then extract each arc using the reference
+for each star.  As in APALL, there are many options. 
+ 
+Let's use the task APSUM to extract the arc spectra; we could have just as
+easily edited the parameters for APALL but I do not want to disturb your
+parameters in that task.  So edit the parameters for APSUM until they resemble
+those below.
+ 
+        cl> unlearn apsum
+        cl> epar apsum
+
+cl> lpar apsum
+        input = "sp0018,sp0027" List of input images
+      (output = "")             List of output spectra
+   (apertures = "")             Apertures
+      (format = "multispec")    Extracted spectra format
+  (references = "sp0025")       List of aperture reference images
+    (profiles = "")             List of aperture profile images\n
+ (interactive = no)             Run task interactively?
+        (find = no)             Find apertures?
+    (recenter = no)             Recenter apertures?
+      (resize = no)             Resize apertures?
+        (edit = no)             Edit apertures?
+       (trace = no)             Trace apertures?
+    (fittrace = no)             Fit the traced points interactively?
+     (extract = yes)            Extract apertures?
+      (extras = no)             Extract sky, sigma, etc.?
+      (review = yes)            Review extractions?\n
+        (line = INDEF)          Dispersion line
+        (nsum = 10)             Number of dispersion lines to sum\n
+  (background = "none")         Background to subtract (none|average|fit)
+     (weights = "none")         Extraction weights (none|variance)
+        (pfit = "fit1d")        Profile fitting type (fit1d|fit2d)
+       (clean = no)             Detect and replace bad pixels?
+      (skybox = 1)              Box car smoothing length for sky
+  (saturation = INDEF)          Saturation level
+   (readnoise = "0.")           Read out noise sigma (photons)
+        (gain = "1.")           Photon gain (photons/data number)
+      (lsigma = 4.)             Lower rejection threshold
+      (usigma = 4.)             Upper rejection threshold
+     (nsubaps = 1)              Number of subapertures per aperture
+        (mode = "ql")
+
+        cl> apsum
+        cl> imhead *.ms.imh
+        cl> implot sp0018.ms         # check arc extractions
+            :i sp0027.ms
+            l
+            q
+
+The APALL task is a combination of many of the aperture extraction tasks
+that you see in this package, APEDIT, APFIND, APRESIZE, APRECENTER, APTRACE, 
+and APSUM.  A study of these help pages is recommended before doing serious
+spectral extractions.
+
+
+WAVELENGTH CALIBRATION
+----------------------
+
+We are now ready to determine a wavelength calibration for our arc lamps.
+A chart of the lines in the spectrum is in the file spec.eps in the docs
+directory.  We will use the tasks IDENTIFY and REIDENTIFY.  You will need to 
+first determine the width of the line profiles, much like we did for our
+stellar profiles earlier.
+
+        cl> unlearn identify reidentify
+        cl> implot sp0027.ms
+
+Now we are ready to run the task IDENTIFY.  The default profile radius
+may work fine for these data (fwidth=4).  The only parameter that we
+need to modify is the coordlist - set this to "linelists$thorium.dat".
+When we exit IDENTIFY the wavelength solution will be saved in a database.
+
+        cl> lpar identify
+        cl> epar identify
+        cl> identify sp0027.ms
+            ?                          # review cursor options for IDENTIFY
+            w                          # enter the window cursor options
+            ?                          # look at the options
+            w
+            f                          # flip the data so increasing wavelength
+                                         runs to the right 
+
+        [mark 5 strong features on the plot spanning the spectrum - point the
+         cursor, type "m", then type in the wavelength.  If the terminal
+         beeps at you it can not find the line center - on a crowded spectrum
+         like this it may be necessary to window the plot around the line
+         you wish to identify - use "w" followed by "e" at the lower left
+         corner of the box you wish to expand and then "e" at the top right
+         edge of the box - type "w" followed by "a" to go back to the full
+         plot]
+ 
+            f                          # fit the lines and enter ICFIT
+            ?                          # look at cursor options
+            :func cheby                # change function
+            :order 3                   # set to quadratic
+            f                          # refit
+            q                          # go back to IDENTIFY
+            w                          # to get spectrum back if it is not
+            a                            there
+            l                          # to find other lines from thorium.dat
+                                         file
+            f                          # fit the lines and enter ICFIT
+            :nite 2                    # iterate the solution to remove bad
+                                         lines
+            f                          # refit
+            d                          # delete a few other outliers by pointing
+                                         the cursor and typing "d"
+            f                          # redo fit
+            q                          # go back to IDENTIFY
+            .                          # print line id
+            d                          # delete other poor lines - we should
+                                         be able to get a solution with an
+                                         RMS=~0.01 A in ICFIT
+            f                          # redo fit - see RMS value at the end of
+                                         the 3rd line at the top of the plot
+            l                          # look at the fit of the non-linear
+                                         components
+            q                          # go back to IDENTIFY
+            q                          # quit IDENTIFY when you are happy with
+                                         the fit - be sure to save it!
+
+        cl> dir database               # the solution is saved in the 
+                                         idsp0027.ms file
+        cl> page database/idsp0027.ms
+
+Now we can run REIDENTIFY on our other arc spectrum using sp0027.ms as our
+reference image.
+
+        cl> reidentify sp0027.ms sp0018.ms coord=linelists$thorium.dat v+ inter+
+         
+        [or do epar followed by a :go - you will have the option of reviewing
+         the fit with IDENTIFY]
+
+        cl> imhead sp0027.ms l+
+
+Notice the keyword refspec1 set to the name of the image itself.  This keyword
+was added by IDENTIFY/REIDENTIFY and defines the arcs as "reference images".
+The next task, REFSPECTRA, assigns "reference images" to our object frames,
+allowing us to select various ways for determining these assignments.  For
+this data set we should assign the arcs by the UT time at the middle of the
+exposure.  This value is not in our image headers so we will need to put it
+there with the task SETAIRMASS.  SETAIRMASS expects certain information to
+compute this value but we are fortunate that that information is already in
+our headers!
+
+        cl> hselect sp*.ms.imh $I,ut,exptime yes
+        cl> lpar setairmass
+        cl> setairmass sp*.ms.imh update-
+        cl> setairmass sp*.ms.imh
+        cl> imhead sp0027.ms l+
+
+Now edit the parameters for REFSPECTRA so they look like those below.
+REFSPECTRA will then assign reference spectra and their weights based on the
+utmiddle value to our object frames and add this information to our image 
+headers.
+
+        cl> epar refspectra
+
+cl> lpar refspectra
+        input = "sp*.ms.imh"    List of input spectra
+       answer = "no"            Accept assignment?
+  (references = "sp*.ms.imh")   List of reference spectra
+   (apertures = "")             Input aperture selection list
+      (refaps = "")             Reference aperture selection list
+   (ignoreaps = yes)            Ignore input and reference apertures?
+      (select = "interp")       Selection method for reference spectra
+        (sort = "utmiddle")     Sort key
+       (group = "")             Group key
+        (time = yes)            Is sort key a time?
+    (timewrap = 17.)            Time wrap point for time sorting
+    (override = no)             Override previous assignments?
+     (confirm = yes)            Confirm reference spectrum assignments?
+      (assign = yes)            Assign the reference spectra to the input spect
+    (logfiles = "STDOUT,logfile") List of logfiles
+     (verbose = no)             Verbose log output?
+        (mode = "ql")      
+
+        cl> refspectra          # answer "yes" or "YES" - what's the difference?
+        cl> imhead sp0025.ms l+ # note the new keywords
+
+The task that actually applies the wavelength calibration to our data is the
+task DISPCOR.  It uses the refspec keyword information in the header to
+determine what arcs to use to apply the solution.
+
+Edit the parameters for DISPCOR so they resemble those below.  We will linearize
+the data, which means the data is rebinned so each pixel has the same delta
+lambda; if we chose not to linearize then the data values would be unaltered
+and the coefficients for the solution would be stored in the image header.  We
+set global=yes so all frames will have the same starting wavelength and
+wavelength increment.  We will run the task first with listonly=yes.
+
+        cl> epar dispcor
+
+cl> lpar dispcor
+        input = "sp*.ms.imh"    List of input spectra
+       output = "%sp%l%*.ms.imh" List of output spectra
+   (linearize = yes)            Linearize (interpolate) spectra?
+    (database = "database")     Dispersion solution database
+       (table = "")             Wavelength table for apertures
+          (w1 = INDEF)          Starting wavelength
+          (w2 = INDEF)          Ending wavelength
+          (dw = INDEF)          Wavelength interval per pixel
+          (nw = INDEF)          Number of output pixels
+         (log = no)             Logarithmic wavelength scale?
+        (flux = yes)            Conserve flux?
+    (samedisp = no)             Same dispersion in all apertures?
+      (global = yes)            Apply global defaults?
+   (ignoreaps = no)             Ignore apertures?
+     (confirm = yes)            Confirm dispersion coordinates?
+    (listonly = yes)            List the dispersion coordinates only?
+     (verbose = yes)            Print linear dispersion assignments?
+     (logfile = "")             Log file
+        (mode = "ql")           
+
+        cl> dispcor
+
+Now let's do it for real.  Type "NO" when queried about changing assignments.
+
+        cl> dispcor listonly-
+        cl> imhead l0025.ms l+
+
+Congratulations!  You have done it!  Now you can play with this data.
+
+        cl> splot l0025.ms          # welcome to the world of SPLOT - now
+                                      that you are experienced IRAF users
+                                      check out this very versatile analysis
+                                      tool!
+        cl> specplot l0020.ms,l0021.ms,l0022.ms
+
+Since the oberver took 3 frames of each spectrum it may be that he planned
+to combine them in such a way as to eliminate the cosmic rays.
+
+        cl> scombine l0020.ms,l0021.ms,l0022.ms spec1 combine=median scale=mode
+        cl> splot spec1
+            o                        # overplot original spectra
+            g
+            l0020.ms
+            o
+            g
+            l0021.ms
+            o
+            g
+            l0022.ms
+            g
+            spec1
+            q
+
+Note that SPLOT has cursor keys for cleaning bad pixels as well.  Look at
+the line measuring cursor keys in SPLOT too.  Experiment!
+
+-------------------------------------------------------------------------------
+
+                                 References
+
+A User's Guide to Reducing Slit Spectra with IRAF, by Phil Massey, Frank
+Valdes, and Jeannette Barnes, April 1992. 
+
+Online help is available for all tasks.  Especially see
+"phelp onedspec.package" and "phelp onedspec.specwcs".
+
+See "phelp doslit" for doing it all in one big gulp, and better too, since
+it extracts the arcs for each stellar spectrum.
+
+-------------------------------end of exercise---------------------------------
