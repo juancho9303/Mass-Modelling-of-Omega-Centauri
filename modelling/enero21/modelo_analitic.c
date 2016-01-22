@@ -2,7 +2,7 @@
 #include <math.h>
 #include <gsl/gsl_integration.h>
 
-// SE UTILIZA EL MODELO DE HERNQUIST PARA ENCONTRAR LA FORMA DE LA DISPERSION DE VELOCIDADES PROYECTADA Y PODER AJUSTAR LOS PARAMTROS QUE MEJOR SE AJUSTEN A LAS OBSERVACIONES
+// SE UTILIZA EL MODELO DE HERNQUIST PARA ENCONTRAR LA FORMA DE LA DISPERSION DE VELOCIDADES PROYECTADA Y PODER AJUSTAR LOS PARAMETROS QUE MEJOR SE AJUSTEN A LAS OBSERVACIONES
 
 #define N 10
 #define M 10e-3
@@ -10,7 +10,7 @@
 #define G 43007.1
 
 struct param{
-  double a, beta, a_s, a_dm, M_dm, M_s;
+  double beta, a_s, a_dm, M_dm, M_s;
 };
 
 double R;
@@ -20,7 +20,7 @@ double R;
 double tot (double r, void * params) 
 {
   struct param parameters = *(struct param *) params;
-  double a  = parameters.a;
+  
   double a_s = parameters.a_s;
   double a_dm = parameters.a_dm;
   double M_s = parameters.M_s;
@@ -34,7 +34,7 @@ double tot (double r, void * params)
   M_sM_s = M_s*M_s*a_s*(((12.0*pow((a_s+r),4.0)*log((a_s+r)/(r))) - a_s*(25.0*a_s*a_s*a_s+52.0*a_s*a_s*r+42.0*a_s*r*r+12.0*r*r*r))/(12.0*pow(a_s,5)*pow((a_s+r),4)));
   
   M_dmM_dm = M_dm*M_dm*a_dm*(((12.0*pow((a_dm+r),4.0)*log((a_dm+r)/(r))) - a_dm*(25.0*a_dm*a_dm*a_dm+52.0*a_dm*a_dm*r+42.0*a_dm*r*r+12.0*r*r*r))/(12.0*pow(a_dm,5)*pow((a_dm+r),4)));
-    
+  
   //----------------------------------------------------------------
   // Paso a paso sin hacer reducciones para los terminos cruzados.
   //--------------------------------------------------------------
@@ -69,21 +69,19 @@ int main(){
   FILE *mod,*script;
   int warn;
   int Nint = 10000; // Numero de intervalos
-  double X_s, I_R, s, R, sig_p, rho, re1, re2, result1, error1, result2, error2, a, a_dm, a_s, M_s, M_dm, beta;
+  double X_s, I_R, s, R, sig_p, rho, re1, re2, result1, error1, result2, error2, a_dm, a_s, M_s, M_dm, beta;
   struct param params; // structura de parametros
   gsl_integration_workspace *z = gsl_integration_workspace_alloc(Nint);
   gsl_function F1;
   
   // PARAMETROS
   
-  a = 1.0;
-  a_dm = 1.0;
-  a_s = 1.1;
+  a_dm = 0.9;
+  a_s = 1.0;
   M_s = 2.0;
   M_dm = 2.0;
   beta = 2.0;
-
-  params.a = a;
+  
   params.beta = beta;
   params.a_s = a_s;
   params.a_dm = a_dm;
@@ -92,7 +90,7 @@ int main(){
   
   mod=fopen("model.dat","w");
   
-  for(R = 0.1; R < N; R=R+0.1){
+  for(R = 0.01; R < N; R=R+0.01){
     
     F1.function = &tot;
     F1.params = &params;
@@ -100,26 +98,37 @@ int main(){
     gsl_integration_qags(&F1, R, 40, 0, 1e-4, Nint, z, &result1, &error1); 
     //printf ("result  = % .18f\n", result1);
     
-    if (R < 1.0)
+    re1 = result1;
+    s = R/a_s;
+    
+    if (R < a_s-1.0e-9)
       {      	
-	re1 = result1;
-	s = R/a;
 	X_s = (1.0 / sqrt(1.0 - s*s)) * log((1.0+(sqrt(1.0-s*s)))/(s));
-	I_R = (M/(2.0*M_PI*a*a*GAMMA*(1.0-s*s)*(1.0-s*s)))*((2.0+s*s)*X_s-3.0);
-	sig_p = ((2.0*G*M*M*a)/(GAMMA*I_R*2.0*M_PI))*re1;
-	//printf("sig_p^2(R) %6lf\n", sig_p);
-	fprintf(mod,"%16.8e\t %16.8e\n", s, sig_p);
+	I_R = (M/(2.0*M_PI*a_s*a_s*GAMMA*(1.0-s*s)*(1.0-s*s)))*((2.0+s*s)*X_s-3.0);
+	sig_p = ((2.0*G*M*M*a_s)/(GAMMA*I_R*2.0*M_PI))*re1;
+	printf("%16.8e\t %16.8e\n", R, I_R);
+	//printf("sig_p^2(R) %6lf\n", sig_p);	
       }
-    else if(R > 1.01)
+    
+         if(R >= a_s-1.0e-10 && R <= a_s+1.0e-10)
+	  {      	
+	  X_s = 1.0;
+	  I_R = 2.0*M/(15.0*M_PI*a_s*a_s*GAMMA);
+	  sig_p = ((2.0*G*M*M*a_s)/(GAMMA*I_R*2.0*M_PI))*re1;
+	  printf("%16.8e\t %16.8e\n", R, I_R);
+	  //printf("sig_p^2(R) %6lf\n", sig_p);
+	  }
+       
+    if (R > a_s+1.0e-9)
       {	       	  
-	re1 = result1;
-	s = R/a;
 	X_s = (1.0 / sqrt(s*s - 1.0)) * acos(1.0/s);
-	I_R = (M/(2.0*M_PI*a*a*GAMMA*(1.0-s*s)*(1.0-s*s)))*((2.0+s*s)*X_s-3.0);
-	sig_p = ((2.0*G*M*M*a)/(GAMMA*(I_R)*2.0*M_PI))*re1;
+	I_R = (M/(2.0*M_PI*a_s*a_s*GAMMA*(1.0-s*s)*(1.0-s*s)))*((2.0+s*s)*X_s-3.0);
+	sig_p = ((2.0*G*M*M*a_s)/(GAMMA*(I_R)*2.0*M_PI))*re1;
+	printf("%16.8e\t %16.8e\n", R, I_R);
 	//printf("sig_p^2(R) %6lf\n", sig_p);
-	fprintf(mod,"%16.8e\t %16.8e\n", s, sig_p);
+	
       }      
+    fprintf(mod,"%16.8e\t %16.8e\n", s, sig_p);
   }
   
   gsl_integration_workspace_free(z);
@@ -127,9 +136,9 @@ int main(){
   fclose(mod);
   
   script = fopen( "script.gpl", "w" );
-  fprintf(script, "set terminal png\nset output 'sigma.png'\nset nokey\n");
+  fprintf(script, "set grid\nset terminal png\nset output 'sigma.png'\nset nokey\n");
   fprintf( script, "set title 'Sigma Proyectada vs R'\n" );
-  fprintf( script, "plot 'model.dat' u 1:2 w p\n");
+  fprintf( script, "plot 'model.dat' u 1:2 w l\n");
   fclose(script);
   
   warn = system("gnuplot script.gpl");
