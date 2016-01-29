@@ -1,8 +1,12 @@
 Tesis
 
-Acá está el manuscrito de los avances de la tesis escrito en latex. 
+Acá está el manuscrito de los avances de la tesis escrito en latex. Como también los avances en el modelamiento y el analisis de los datos de OPD.
 
 La carpeta latex tiene los avances de una manera muy organizada así que para visualizar los avances, 
 entrar al documento Thesis.pdf
 
 Se incluyen los espectros de los cumulos en la carpeta NOAO, con el analisis de FXCOR, los calculos de la dispersion de velocidades y los programas en c y scripts de IRAF.
+
+La carpeta noao tiene todo el análisis de los datos de Cerro Tololo.
+
+La carpeta Plummer tiene el proyecto de FaCom del modelo de Plummer.
