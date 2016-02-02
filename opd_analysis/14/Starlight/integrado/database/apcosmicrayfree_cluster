@@ -1,0 +1,32 @@
+# Sat 22:31:11 30-Jan-2016
+begin	aperture cosmicrayfree_cluster 1 227.3869 1024.
+	image	cosmicrayfree_cluster
+	aperture	1
+	beam	1
+	center	227.3869 1024.
+	low	-227.5276 -1023.
+	high	240.5328 1024.
+	background
+		xmin -234.9056
+		xmax 241.606
+		function chebyshev
+		order 1
+		sample -10:-6,6:10 -234.9056:-203.3812 216.3864:241.606
+		naverage 100
+		niterate 0
+		low_reject 3.
+		high_reject 3.
+		grow 0.
+	axis	1
+	curve	10
+		3.
+		3.
+		1.
+		2048.
+		-2.989798
+		0.280983
+		0.5046135
+		0.6558113
+		1.033893
+		-0.4166971
+
