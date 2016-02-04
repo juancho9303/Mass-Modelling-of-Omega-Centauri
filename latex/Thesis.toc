@@ -31,6 +31,8 @@
 \contentsline {subsection}{\numberline {3.4.3}Wavelength Calibration}{43}{subsection.99}
 \contentsline {subsection}{\numberline {3.4.4}Flux Calibration}{46}{subsection.103}
 \contentsline {section}{\numberline {3.5}Radial velocity determination}{49}{section.106}
-\contentsline {chapter}{\numberline {4}Modelling}{51}{chapter.108}
-\contentsline {chapter}{\numberline {5}Conclusions}{52}{chapter.109}
-\contentsline {chapter}{Bibliography}{53}{chapter*.110}
+\contentsline {subsection}{\numberline {3.5.1}RVSAO}{49}{subsection.107}
+\contentsline {subsection}{\numberline {3.5.2}FXCOR}{51}{subsection.111}
+\contentsline {chapter}{\numberline {4}Modelling}{52}{chapter.113}
+\contentsline {chapter}{\numberline {5}Conclusions}{53}{chapter.114}
+\contentsline {chapter}{Bibliography}{54}{chapter*.115}

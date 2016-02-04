@@ -400,12 +400,41 @@ Although the noise is evidently higher than in the case of the spectrum of the c
 
 \section{Radial velocity determination}
 
-problems with the radial velocity determination
+\subsection{RVSAO}
 
-bcvcor:
+Emsao, Xcsao, bcvcor
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{images/bcvcor.png}
-\caption[The nature of the barycenter shift of radial velocities]{Correction of radial velocity observed from the earth to that which would be observed from the center of mass of teh solar system is shown at two different times in the earth's orbit, taken from the RVSAO paper!!!!!!}
+\caption[The nature of the barycenter shift of radial velocities]{Correction of radial velocity observed from the earth to that which would be observed from the center of mass of the solar system is shown at two different times in the earth's orbit, taken from the RVSAO paper!!!!!!}
 \end{figure}
+
+%\begin{comment}
+\begin{figure}[H]
+\centering
+\includegraphics[width=10cm]{images/emsao.png}
+\caption[Ts]{C!}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=10cm]{images/xcsao.png}
+\caption[Ts]{C!}
+\end{figure}
+%\end{comment}
+
+\subsection{FXCOR}
+
+This IRAF package, very useful for radial determination decomposes every signal in a sum of sinusoidal functions through the Fourier transformation of a spectrum that has been wavelength calibrated. The product of the transformed signals generates the correlation function, which is similar to a Gaussian function. The stronger the correlation is, the higher the peak of the curve is, to a maximum of 1 for the perfect correlation, i.e. autocorrelation. More in detail, the peak height is index of the superposing grade of the two spectra: it depends on the presence of the same absorption or emission lines. The program also measures the width of the peak at the middle height (FWHM), which is useful to calculate the velocity dispersion.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=10cm]{images/fxcor.png}
+\caption[Ts]{C!}
+\end{figure}
+
+- Problems with the radial velocity determination
+
+
+
