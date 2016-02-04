@@ -400,9 +400,23 @@ Although the noise is evidently higher than in the case of the spectrum of the c
 
 \section{Radial velocity determination}
 
+In order to study the dynamics of the starts within the stellar systems we used two techniques with the spectroscopic data. One consists of extracting the spectrum of each individual star and measuring the shifting of the lines with respect to the rest frame to measure it's radial velocity and using this velocity to obtain the projected velocity dispersion; the other technique consists of using the full integrated spectrum of each cluster and measure the Doppler broadening of the lines to directly get information about the velocity dispersion. 
+
+Our first approach was done using the first technique (analysing spectra of individual stars)with the IRAF package RVSAO:
+
 \subsection{RVSAO}
 
-Emsao, Xcsao, bcvcor
+This package is the radial velocity analysis package of the Smithsonian Astrophysical Observatory and is intended to properly organize a set of programms to obtain redshifts and radial velocities from spectra. It contains (in 2015) 26 programms specified for the users' need. We focus on XCSAO and also study the utilies of EMSAO and BCVCOR for our set of data.
+
+The programm XCSAO is the most important one in the RVSAO package, it implements the cross-correlation method and interactive algorithms to properly prepare the spectra for a correct radial velocity analysis such as the removal of the continuum and the emission line suppression. For using this task, one must provide the spectrum of the object and a template spectrum (preferably in the rest frame so that the emission and absorption lines are in their proper wavelength) that will be used for the cross correlation, the starting and ending wavelength, the type of Fourier filtering and many other details according to the user's desires and interests.
+
+By using one of IRAF's templates \textit{"habtemp0.fits"} we can directly run XCSAO on a stellar spectrum that will use the Fourier transform to cross correlate them and give an approximate value of the radial velocity of the star an printed in a xterm window as seen below: 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=10cm]{images/xcsao.png}
+\caption[XCSAO results]{The relevant part of XCSAO results, the cross correlation in this case is god and shows a well-behaved peack, the radial velocity of the star in this case is around -30km/s}
+\end{figure}
 
 \begin{figure}[H]
 \centering
@@ -410,19 +424,15 @@ Emsao, Xcsao, bcvcor
 \caption[The nature of the barycenter shift of radial velocities]{Correction of radial velocity observed from the earth to that which would be observed from the center of mass of the solar system is shown at two different times in the earth's orbit, taken from the RVSAO paper!!!!!!}
 \end{figure}
 
-%\begin{comment}
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{images/emsao.png}
 \caption[Ts]{C!}
 \end{figure}
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=10cm]{images/xcsao.png}
-\caption[Ts]{C!}
-\end{figure}
-%\end{comment}
+
+
 
 \subsection{FXCOR}
 
