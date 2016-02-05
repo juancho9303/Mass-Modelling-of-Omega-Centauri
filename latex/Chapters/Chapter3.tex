@@ -418,6 +418,10 @@ By using one of IRAF's templates \textit{"habtemp0.fits"} we can directly run XC
 \caption[XCSAO results]{The relevant part of XCSAO results, the cross correlation in this case is god and shows a well-behaved peack, the radial velocity of the star in this case is around -30km/s}
 \end{figure}
 
+The results of RVSAO have a really strong dependence on the quality of the template used for the cross correlation, and some of the IRAF spectra have different wavelength ranges and flux values on the characteristic lines so that they won't give reliable results. One is forced to create a template spectrum with the most prominent lines to be used to correlate the object spectrum, one task that can be useful for this purpose to be achieved is ----------   
+
+Another important issue to be addressed when we analyse radial velocities is the fact that our ground based observations are done in a moving system around the Sun so that the Doppler shift of the lines would be affected by this relative movement to the observed object. The Barycenter correction   
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{images/bcvcor.png}
@@ -430,8 +434,6 @@ By using one of IRAF's templates \textit{"habtemp0.fits"} we can directly run XC
 \includegraphics[width=10cm]{images/emsao.png}
 \caption[Ts]{C!}
 \end{figure}
-
-
 
 
 \subsection{FXCOR}
