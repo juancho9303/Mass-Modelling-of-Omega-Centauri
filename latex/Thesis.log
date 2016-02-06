@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.1)  4 FEB 2016 18:08
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.1)  6 FEB 2016 18:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -481,31 +481,31 @@ LaTeX Font Info:    Try loading font information for U+psy on input line 64.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/upsy.fd
 File: upsy.fd 2001/06/04 font definitions for U/psy.
 ))
-Package caption Info: We need package `newfloat' on input line 23.
+Package caption Info: We need package `newfloat' on input line 25.
 
 (/usr/share/texlive/texmf-dist/tex/latex/caption/newfloat.sty
 Package: newfloat 2013/05/11 v1.1-91 Defining new floating environments (AR)
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 25.
+Package hyperref Info: Option `colorlinks' set `true' on input line 27.
  (./Thesis.aux)
 \openout1 = `Thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
@@ -543,7 +543,7 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 )
-Package hyperref Info: Link coloring ON on input line 30.
+Package hyperref Info: Link coloring ON on input line 32.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -553,9 +553,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count146
 )
-LaTeX Info: Redefining \ref on input line 30.
-LaTeX Info: Redefining \pageref on input line 30.
-LaTeX Info: Redefining \nameref on input line 30.
+LaTeX Info: Redefining \ref on input line 32.
+LaTeX Info: Redefining \pageref on input line 32.
+LaTeX Info: Redefining \nameref on input line 32.
 
 (./Thesis.out) (./Thesis.out)
 \@outlinefile=\write3
@@ -569,14 +569,14 @@ LaTeX Info: Redefining \nameref on input line 30.
 File: images/Escudo-UdeA.png Graphic file (type png)
 
 <use images/Escudo-UdeA.png>
-Package pdftex.def Info: images/Escudo-UdeA.png used on input line 52.
+Package pdftex.def Info: images/Escudo-UdeA.png used on input line 54.
 (pdftex.def)             Requested size: 98.36575pt x 139.71951pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 52.
+LaTeX Font Info:    Try loading font information for U+msa on input line 54.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 52.
+LaTeX Font Info:    Try loading font information for U+msb on input line 54.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -690,11 +690,6 @@ Package pdftex.def Info: images/anisotropy_core_collapse.png used on input line
 (pdftex.def)             Requested size: 341.43306pt x 197.54842pt.
  [10 <./images/core_collapse.png>]
 [11 <./images/anisotropy_core_collapse.png>]
-Overfull \hbox (4.72482pt too wide) in paragraph at lines 121--122
-[]\OT1/cmr/m/n/10.95 A way of analysing the stel-lar pop-u-la-tions in Glob-u-l
-ar Clus-ters is to use Colour-Magnitude
- []
-
 <images/m55_diagram.jpg, id=400, 410.18108pt x 410.18108pt>
 File: images/m55_diagram.jpg Graphic file (type jpg)
 
@@ -732,13 +727,8 @@ File: images/4_gcs.png Graphic file (type png)
 Package pdftex.def Info: images/4_gcs.png used on input line 166.
 (pdftex.def)             Requested size: 284.52756pt x 214.19273pt.
 
-[14 <./images/orbits_gcs.jpg>] [15 <./images/4_gcs.png>] [16]
-
-Package amsmath Warning: Foreign command \over;
-(amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 231.
-
-[17] [18] [19]
+[14 <./images/orbits_gcs.jpg>] [15 <./images/4_gcs.png>] [16] [17] [18]
+[19]
 <images/circular_velocity_vs_radius.png, id=460, 465.23813pt x 403.5075pt>
 File: images/circular_velocity_vs_radius.png Graphic file (type png)
 
@@ -923,24 +913,23 @@ File: images/xcsao.png Graphic file (type png)
 Package pdftex.def Info: images/xcsao.png used on input line 417.
 (pdftex.def)             Requested size: 284.52756pt x 112.96674pt.
 
-<images/bcvcor.png, id=641, 469.00218pt x 421.575pt>
+[50 <./images/xcsao.png>] <images/bcvcor.png, id=645, 469.00218pt x 421.575pt>
 File: images/bcvcor.png Graphic file (type png)
- <use images/bcvcor.png>
-Package pdftex.def Info: images/bcvcor.png used on input line 423.
+
+<use images/bcvcor.png>
+Package pdftex.def Info: images/bcvcor.png used on input line 427.
 (pdftex.def)             Requested size: 284.52756pt x 255.7516pt.
-
-[50 <./images/xcsao.png>]
-<images/emsao.png, id=646, 1014.03844pt x 534.49687pt>
+ <images/emsao.png, id=646, 1014.03844pt x 534.49687pt>
 File: images/emsao.png Graphic file (type png)
- <use images/emsao.png>
-Package pdftex.def Info: images/emsao.png used on input line 430.
-(pdftex.def)             Requested size: 284.52756pt x 149.96802pt.
 
-[51 <./images/bcvcor.png> <./images/emsao.png>]
+<use images/emsao.png>
+Package pdftex.def Info: images/emsao.png used on input line 434.
+(pdftex.def)             Requested size: 284.52756pt x 149.96802pt.
+ [51 <./images/bcvcor.png> <./images/emsao.png>]
 <images/fxcor.png, id=651, 476.53032pt x 360.59718pt>
 File: images/fxcor.png Graphic file (type png)
  <use images/fxcor.png>
-Package pdftex.def Info: images/fxcor.png used on input line 443.
+Package pdftex.def Info: images/fxcor.png used on input line 444.
 (pdftex.def)             Requested size: 284.52756pt x 215.31454pt.
 )
 (./Chapters/Chapter4.tex [52 <./images/fxcor.png>]
@@ -961,24 +950,24 @@ Chapter 5.
 
 ]
 No file Thesis.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 301.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 302.
 [56]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 301.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 302.
  (./Thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 301.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 301.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 302.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 302.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 8D3A8B3BBE3B4F64CC102318AD402D06;5678.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 301.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 302.
  ) 
 Here is how much of TeX's memory you used:
  13462 strings out of 494985
  191585 string characters out of 6180357
- 267266 words of memory out of 5000000
+ 268266 words of memory out of 5000000
  16227 multiletter control sequences out of 15000+600000
  19867 words of font info for 72 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
@@ -1005,7 +994,7 @@ ic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr
 .pfb>
-Output written on Thesis.pdf (65 pages, 5775262 bytes).
+Output written on Thesis.pdf (65 pages, 5776233 bytes).
 PDF statistics:
  794 PDF objects out of 1000 (max. 8388607)
  656 compressed objects within 7 object streams

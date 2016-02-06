@@ -82,7 +82,7 @@ The photometric data were acquired in the next four days (from May 16th to May 1
 \caption[IAG Telescope used for Photometry]{IAG telescope used for the photometric data}
 \end{figure}
 
-On May 16th, we took all the calibration images, consisting of 20 bias frames with an exposition time of 0,00001 seconds; also 22, 11, 11, 20 and 10 flat frames for the B,I,R,U,V filters respectively, their exposition times differed, for  U filter we took various frames of 60 and 30 seconds, for the B filter we took frames of 30 seconds each, 15s for I, 60s for R and 3s for V. We took our "focus" images to calibrate the instrument, and also various skyflats for all the filters. We targeted the following globular clusters and calibration stars in different filters: NGC5272, HR4961, NGC4590, NGC5139 AND NGC6397. The exposition time for the clusters was of 600 seconds and 2 and 4 seconds for the calibration star. 
+On May 16th, we took all the calibration images, consisting of 20 bias frames with an exposition time of 0,00001 seconds; also 22, 11, 11, 20 and 10 flat frames for the B,I,R,U,V filters respectively, their exposition times differed, for  U filter we took various frames of 60 and 30 seconds, for the B filter we took frames of 30 seconds each, 15s for I, 60s for R and 3s for V. We took our ``focus" images to calibrate the instrument, and also various skyflats for all the filters. We targeted the following globular clusters and calibration stars in different filters: NGC5272, HR4961, NGC4590, NGC5139 AND NGC6397. The exposition time for the clusters was of 600 seconds and 2 and 4 seconds for the calibration star. 
 
 May 17th was a terrible night for observations because the sky was too cloudy and the only useful data we could get were dome flats for the filters I,R and V that we could use instead of the bad dome flats of the first day. The reduction using the flats of another day are decent but this is not the ideal situation since mechanical movements of the instrument might slightly change its configuration and therefore it probably ends up with a reduction that is not the ideal one for science purposes.  
 
@@ -166,7 +166,7 @@ Now the photometry is done by changing some of the parameters including the read
 \caption[Photometry results of Magnitudes vs Size of apertures]{The magnitude decreases for bigger appertures}
 \end{figure}
 
-As we can see in the figure above, the magnitude of the chosen star in the cluster decreases for bigger appertures but so does the error because the space around the star is crowded of more stars and noise coming from the stars in the background so we infer that for crowded areas like this one the best choice is a small aperture. Although the results may not be as convincing, the use of another technique of photometry allows us to compare the results and see if the choice of a small aperture is a good way to fix or avoid the problem of the big noise of the background. For this purpose we use the technique of Point Spread Function (PSF) Photometry.
+As we can see in the figure above, the magnitude of the chosen star in the cluster decreases for bigger apertures but so does the error because the space around the star is crowded of more stars and noise coming from the stars in the background so we infer that for crowded areas like this one the best choice is a small aperture. Although the results may not be as convincing, the use of another technique of photometry allows us to compare the results and see if the choice of a small aperture is a good way to fix or avoid the problem of the big noise of the background. For this purpose we use the technique of Point Spread Function (PSF) Photometry.
 
 \subsection{PSF Photometry}
 
@@ -234,7 +234,7 @@ blkrep AvgFlatCols AvgFlatColsMaster 475 1
 
 - The pre-superflat is now divided by the response function we created (AvgFlatColsMaster) and this gives us the Superflat that we will use to reduce our data.
 
-- Finally, the task we use to remove the cosmic rays is \textit{lacos}, and it gives very accurate results, as it shows the "mask" image with the removed cosmic rays.
+- Finally, the task we use to remove the cosmic rays is \textit{lacos}, and it gives very accurate results, as it shows the ``mask" image with the removed cosmic rays.
 
 The vertical axis of the spectra is the dispersion axis and the horizontal axis is the spatial separation between stars. To visualize the reductions we have the following figures taken from the dirty and reduced NGC5139 spectrum (Day of observation May 14th):
 
@@ -266,7 +266,7 @@ saturate: 65215
 rdnoise: 6
 gain: 1
 
-Interactively, one must choose very precisely the background regions to extract the spectrum and do the fitting routines with different orders until the best results are reached, the areas of the background are changed using the commands ``b" (for setting the background mode) and ``s" (for setting the range). A good choice for the background in the case of the calibration star is relatively easy but in the case of the extraction of the stars in the clusters one must take into account the high noise introduced by the other stars and the background so for every star one must zoom into the window using ``w" and "a" between the boundaries of the range to be zoomed.
+Interactively, one must choose very precisely the background regions to extract the spectrum and do the fitting routines with different orders until the best results are reached, the areas of the background are changed using the commands ``b" (for setting the background mode) and ``s" (for setting the range). A good choice for the background in the case of the calibration star is relatively easy but in the case of the extraction of the stars in the clusters one must take into account the high noise introduced by the other stars and the background so for every star one must zoom into the window using ``w" and ``a" between the boundaries of the range to be zoomed.
 
 If a good choice of the background and the dispersion axis is well fit, the task runs straightforward to get the spectrum of the star. In the case of the calibration lamps, the procedure is quite similar because the extraction of their spectrum is done with \textit{apsum}, which is very similar to \textit{apall}. 
 
@@ -280,7 +280,7 @@ For the calibration star HR4468, the extracted spectrum looks like this:
 
 \subsection{Wavelength Calibration}
 
-Once the spectrum is extracted, the following step is to calibrate it in wavelength in order to make it useful for scientific analysis.The wavelength calibration is made many tasks of IRAF like \textit{Identify}, \textit{Refspec} and \textit{Dispcor}. First, with \textit{identify} I use the interactive window in IRAF to select some prominent lines in the spectrum of the calibration lamps and assign them their correct wavelength using the theoretic spectrum of the lamp. In this case our calibration lamps were Ne-Ar (for May 14th) and He-Ar (for May 15th)  and OPD observatory provided us the theoretic distribution of emission lines of them. As we can see below:
+Once the spectrum is extracted, the following step is to calibrate it in wavelength in order to make it useful for scientific analysis.The wavelength calibration is made many tasks of IRAF like \textit{Identify}, \textit{Refspec} and \textit{Dispcor}. First, with \textit{identify} I use the interactive window in IRAF to select some prominent lines in the spectrum of the calibration lamps and assign them their correct wavelength using the theoretic spectrum of the lamp. In this case our calibration lamps were Ne-Ar (for May 14$^{th}$) and He-Ar (for May 15$^{th}$)  and OPD observatory provided us the theoretic distribution of emission lines of them. As we can see below:
 
 \begin{figure}[H]
   \centering
@@ -309,7 +309,7 @@ The wavelength calibrated spectrum of the star HR4468, after running \textit{dis
 
 In order to see if the wavelength calibration (using the lamps spectra) was correct we used another technique consisting of using a sky spectrum (with no stars or contaminating objects) and identifying some of the atmospheric lines on it, the calibration of the science data is then made with the identified lines in this spectrum. This should be an accurate procedure since the spectrum of the sky is taken exactly with the same instrument and configuration than the science objects and it contains the same atmospheric lines that the GCs spectra. 
 
-A secure way to extract the spectrum of the sky was using the original spectrum of a calibration star (reduced HR4468 in this case) and putting the aperture in an empty region in the image that does not contain any stellar absorption or emission lines. Of course the lines in the extracted spectrum are hard to identify so that the best way to do so is by looking at the already wavelength calibrated spectra of the star (calibrated with the comparisson lamps) and identifying its prominent lines, then those lines had to be searched in the web to see how prominent they could be in the atmosphere and what their corresponding wavelength is. Once the information about the prominent emission lines is ready, one can identify them with the task \textit{identify} doing a careful zoom with ``w" and ``e"  in the sky spectrum. 
+A secure way to extract the spectrum of the sky was using the original spectrum of a calibration star (reduced HR4468 in this case) and putting the aperture in an empty region in the image that does not contain any stellar absorption or emission lines. Of course the lines in the extracted spectrum are hard to identify so that the best way to do so is by looking at the already wavelength calibrated spectra of the star (calibrated with the comparison lamps) and identifying its prominent lines, then those lines had to be searched in the web to see how prominent they could be in the atmosphere and what their corresponding wavelength is. Once the information about the prominent emission lines is ready, one can identify them with the task \textit{identify} doing a careful zoom with ``w" and ``e"  in the sky spectrum. 
 
 The same procedure consisting on saving a database file with the emission lines and changing the header of the image to calibrate needs to be done in order to complete the calibration.
 
@@ -321,12 +321,12 @@ After the wavelength calibration was made for the stellar spectrum, we note a di
   \centering
   \begin{minipage}[b]{0.49\textwidth}
     \includegraphics[width=\textwidth]{images/Espectros.png}
-    \caption[Comparisson between the two wavelength calibration methods]{Comparisson between the two wavelength calibration methods. The black line is the spectrum of HR4468 calibrated with the lamp spectra and the red line is the same spectrum calibrated with the sky spectrum}
+    \caption[Comparison between the two wavelength calibration methods]{Comparison between the two wavelength calibration methods. The black line is the spectrum of HR4468 calibrated with the lamp spectra and the red line is the same spectrum calibrated with the sky spectrum}
   \end{minipage}
   \hfill
   \begin{minipage}[b]{0.49\textwidth}
     \includegraphics[width=\textwidth]{images/Espectros2.png}
-    \caption[Zoomed comparisson between the two wavelength calibration methods]{The same comparisson zoomed in a small region to see the shift of the red and black lines. The difference is about 0.65$\textrm{\AA}$ in this region which could mean a difference of about $20km/s$ in the measured velocities for both spectra.}
+    \caption[Zoomed comparison between the two wavelength calibration methods]{The same comparison zoomed in a small region to see the shift of the red and black lines. The difference is about 0.65$\textrm{\AA}$ in this region which could mean a difference of about $20km/s$ in the measured velocities for both spectra.}
   \end{minipage}
 \end{figure}
 
@@ -356,7 +356,7 @@ Where I chose the Star l9239 because it has the spectral range that we use in ou
 The task \textit{standard} just recorded response of each standard star so the next step is to put the results together and find a proper wavelength dependence of instrumental sensitivity and atmosphere transparency using the task \textit{sensfunc}. It creates an image with a default name sens.0001. IRAF needs to have some general idea of atmospheric extinction before to start, so I set again extinct onedstds\$ /ctioextinct.dat.
 
 Now, running the task interactively and taking into account that the function used to fit the instrumental response will be usually of very high order. A good idea is to use spline3 fitting (:function spline3) with some 20 pieces, i.e. (:order 20).
-Finally "q" exists the \textit{sensfunc} task and writes the sens.0001 image.
+Finally ``q" exists the \textit{sensfunc} task and writes the sens.0001 image.
 
 \textbf{The task calibrate}
 
@@ -402,20 +402,20 @@ Although the noise is evidently higher than in the case of the spectrum of the c
 
 In order to study the dynamics of the starts within the stellar systems we used two techniques with the spectroscopic data. One consists of extracting the spectrum of each individual star and measuring the shifting of the lines with respect to the rest frame to measure it's radial velocity and using this velocity to obtain the projected velocity dispersion; the other technique consists of using the full integrated spectrum of each cluster and measure the Doppler broadening of the lines to directly get information about the velocity dispersion. 
 
-Our first approach was done using the first technique (analysing spectra of individual stars)with the IRAF package RVSAO:
+Our first approach was done using the first technique (analysing spectra of individual stars) with the IRAF package RVSAO:
 
 \subsection{RVSAO}
 
-This package is the radial velocity analysis package of the Smithsonian Astrophysical Observatory and is intended to properly organize a set of programms to obtain redshifts and radial velocities from spectra. It contains (in 2015) 26 programms specified for the users' need. We focus on XCSAO and also study the utilies of EMSAO and BCVCOR for our set of data.
+This package is the radial velocity analysis package of the Smithsonian Astrophysical Observatory and is intended to properly organize a set of programs to obtain redshifts and radial velocities from spectra. It contains (by 2015) 26 programs specified for the users' need. We focus on the task XCSAO and also study the utilities of EMSAO and BCVCOR for our set of data.
 
-The programm XCSAO is the most important one in the RVSAO package, it implements the cross-correlation method and interactive algorithms to properly prepare the spectra for a correct radial velocity analysis such as the removal of the continuum and the emission line suppression. For using this task, one must provide the spectrum of the object and a template spectrum (preferably in the rest frame so that the emission and absorption lines are in their proper wavelength) that will be used for the cross correlation, the starting and ending wavelength, the type of Fourier filtering and many other details according to the user's desires and interests.
+The program XCSAO is the most important one in the RVSAO package, it implements the cross-correlation method and interactive algorithms to properly prepare the spectra for a correct radial velocity analysis such as the removal of the continuum and the emission line suppression. For using this task, one must provide the spectrum of the object and a template spectrum (preferably in the rest frame so that the emission and absorption lines are in their proper wavelength) that will be used for the cross correlation, the starting and ending wavelength, the type of Fourier filtering and many other details according to the user's desires and interests.
 
-By using one of IRAF's templates \textit{"habtemp0.fits"} we can directly run XCSAO on a stellar spectrum that will use the Fourier transform to cross correlate them and give an approximate value of the radial velocity of the star an printed in a xterm window as seen below: 
+By using one of IRAF's templates \textit{``habtemp0.fits"} that covers the range of 2884.1547$\textrm{\AA}$ to 7037.3375$\textrm{\AA}$ we can directly run XCSAO on a stellar spectrum that will use the Fourier transform to cross correlate them and give an approximate value of the radial velocity of the star an printed in an irafterm window as seen below: 
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{images/xcsao.png}
-\caption[XCSAO results]{The relevant part of XCSAO results, the cross correlation in this case is god and shows a well-behaved peack, the radial velocity of the star in this case is around -30km/s}
+\caption[XCSAO results]{The relevant part of XCSAO results, the cross correlation in this case is god and shows a well-behaved peack, the radial velocity of the star in this case is around $-30km/s$}
 \end{figure}
 
 The results of RVSAO have a really strong dependence on the quality of the template used for the cross correlation, and some of the IRAF spectra have different wavelength ranges and flux values on the characteristic lines so that they won't give reliable results. One is forced to create a template spectrum with the most prominent lines to be used to correlate the object spectrum, one task that can be useful for this purpose to be achieved is ----------   
@@ -434,7 +434,6 @@ Another important issue to be addressed when we analyse radial velocities is the
 \includegraphics[width=10cm]{images/emsao.png}
 \caption[Ts]{C!}
 \end{figure}
-
 
 \subsection{FXCOR}
 
