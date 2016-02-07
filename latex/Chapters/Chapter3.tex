@@ -400,15 +400,15 @@ Although the noise is evidently higher than in the case of the spectrum of the c
 
 \section{Radial velocity determination}
 
-In order to study the dynamics of the starts within the stellar systems we used various techniques with the spectroscopic data. One consists of extracting the spectrum of each individual star and measuring the shifting of the lines with respect to the rest frame to measure it's radial velocity so that we can obtain the projected velocity dispersion; another technique consists of using the full integrated spectrum of each cluster and measure the Doppler broadening of the lines to directly get information about the velocity dispersion with respect to a rest frame template. 
+In order to study the dynamics of the starts within the stellar systems we used various techniques with the spectroscopic data. One consists of extracting the spectrum of each individual star and measuring the shifting of the lines (with respect to the rest frame) to measure its radial velocity so that we can obtain the projected velocity dispersion; another technique consists of using the full integrated spectrum of each cluster and measure the Doppler broadening of the lines (as shown in Figure 2.9) to directly get information about the velocity dispersion with respect to a rest frame template. 
 
-Our first approach was done using the first technique (analysing spectra of individual stars) with the IRAF package RVSAO:
+Our radial velocity determination started with the first technique (analysing spectra of individual stars) with the IRAF package RVSAO:
 
 \subsection{RVSAO}
 
-This package is the radial velocity analysis package of the Smithsonian Astrophysical Observatory and is intended to properly organize a set of programs to obtain redshifts and radial velocities from spectra. It contains (by 2015) 26 programs specified for the users' need. We focus on the task XCSAO and also study the utilities of EMSAO and BCVCOR for our set of data.
+This package is the radial velocity analysis package of the Smithsonian Astrophysical Observatory and is intended to properly organize a set of programs to obtain redshifts and radial velocities from spectra. It contains (by 2015) 26 programs well documented for the users' need. We focus on the task XCSAO as well as the utilities of EMSAO and BCVCOR for our set of data.
 
-The program XCSAO is the most important one in the RVSAO package, it implements the cross-correlation method and interactive algorithms to properly prepare the spectra for a correct radial velocity analysis such as the removal of the continuum and the emission line suppression. For using this task, one must provide the spectrum of the object and a template spectrum (preferably in the rest frame so that the emission and absorption lines are in their proper wavelength) that will be used for the cross correlation, the starting and ending wavelength, the type of Fourier filtering and many other details according to the user's desires and interests.
+The program XCSAO is the most important one in the RVSAO package, it implements the cross-correlation method and interactive algorithms to properly prepare the spectra for a correct radial velocity analysis such as the removal of the continuum and the emission line suppression. For using this task, one must provide the spectrum of the object and a template spectrum (preferably in the rest frame so that the emission and absorption lines are in their proper wavelength) that will be used for the cross correlation, it also requires the starting and ending wavelength, the type of Fourier filtering and many other details according to the user's desires and interests.
 
 By using one of IRAF's templates \textit{``habtemp0.fits"} that covers the range of 2884.1547$\textrm{\AA}$ to 7037.3375$\textrm{\AA}$ we can directly run XCSAO on a stellar spectrum that will use the Fourier transform to cross correlate them and give an approximate value of the radial velocity of the star an printed in an irafterm window as seen below: 
 
@@ -420,7 +420,7 @@ By using one of IRAF's templates \textit{``habtemp0.fits"} that covers the range
 
 The results of RVSAO have a really strong dependence on the quality of the template used for the cross correlation, and some of the IRAF spectra have different wavelength ranges and flux values on the characteristic lines so that they won't give reliable results. One is forced to create a template spectrum with the most prominent lines to be used to correlate the object spectrum. One task that can be very useful in the creation of the templates is \textit{rspectext} that creates an image spectrum from an ascii table where the user can set the dispersion to be assigned to the spectra, and the appropriate values for the flux and intensity of absorption or emission lines.
 
-One of our created templates that holds information about some absortion lines including the calcium triplet and made using \textit{rspectext} is shown in the following figure:
+One of our created templates that holds information about some absorption lines including the calcium triplet and made using \textit{rspectext} is shown in the following figure:
 
 \begin{figure}[H]
   \centering
@@ -446,7 +446,7 @@ One of our created templates that holds information about some absortion lines i
   \end{minipage}
 \end{figure}
 
-Another important issue to be addressed when we analyse radial velocities is the fact that our ground based observations are done in a moving system around the Sun and around the galaxy so that the Doppler shift of the lines would be affected by this relative movement to the observed object with respect to the Sun and also the movement of the Sun that the Earth is attached to. The issue can be seen in the following figure.
+Another important issue to be addressed when we analyse radial velocities is the fact that our ground based observations are done in a moving system around the Sun and around the galaxy so that the Doppler shift of the lines would be affected by this relative movement of the Earth with respect to the Sun's velocity that the Earth is attached to. The issue can be seen in the following figure.
 
 \begin{figure}[H]
 \centering
@@ -454,7 +454,7 @@ Another important issue to be addressed when we analyse radial velocities is the
 \caption[The nature of the barycenter shift of radial velocities]{Correction of radial velocity observed from the earth to the radial velocity observed from the center of mass of the solar system shown at two different times in the earth's orbit, M. Kurtz, D. Mink 1993 \cite{1}}
 \end{figure}
 
-The barycenter correction of the spectra can be made using the task BCVCOR, the task calculates the correction of the barycenter velocity according to the date of the observation and edits the header of the image so that this information will be stored and read by other tasks like xcsao by the time the radial velocity calculation is to be made. Another important task of the RVSAO package is EMSAO that computes redshifts by identifying shifted emission lines in the spectrum with respect to templates with emission lines in the rest frame. This task might be more useful if the spectra has strong emission features but the cross correlation techniques used by XCSAO might give better results if the spectrum has important absorption lines.
+The barycenter correction of the spectra can be made using the task BCVCOR, the task calculates the correction of the barycenter velocity according to the date of the observation and edits the header of the image so that this information will be stored and read by other tasks like XCSAO by the time the radial velocity calculation is to be made. Another important task of the RVSAO package is EMSAO that computes redshifts by identifying shifted emission lines in the spectrum with respect to templates with emission lines in the rest frame. This task might be very useful if the spectra has strong emission features but the cross correlation techniques used by XCSAO might give a better choice if the spectrum has important absorption lines.
 As seen in the following figure, EMSAO identifies the strong features of the spectrum to be measured using files in the IRAF database that contain information about emission lines with their given wavelength:   
 
 \begin{figure}[H]
@@ -472,12 +472,12 @@ This IRAF package, very useful for radial determination decomposes every signal 
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{images/fxcor.png}
-\caption[FXCOR results for NGC1904]{FXCOR cross correlation results for NGC1904 with the IRAF template habtemp0 with a measured radial velocity of $-9.655km/s$, note that the peak has a well-behaved shape and it is the strongest peack so that the correlation gave good results.}
+\caption[FXCOR results for NGC1904]{FXCOR cross correlation results for NGC1904 with the IRAF template habtemp0 with a measured radial velocity of $-9.655km/s$, note that the peak has a well-behaved shape and it is the strongest peak so that the correlation gave good results.}
 \end{figure}
 
 Besides the radial velocity calculation made by this task, for our purposes its most important feature is the fact that it also measures the width of the peak at the middle height (FWHM), which is useful to calculate the velocity dispersion of integrated spectra with the following relations:
 
-The first thing we have to do is calculate the intrinsic FWHM$_{i}$, which is in terms of the FWHM of the correlation and the FWHM of the autocorrelation of the object spectrum FWHM$_{a}$:
+The first thing we have to do is calculate the intrinsic FWHM$_{i}$, which is in terms of the FWHM of the correlation and the FWHM of the autocorrelation of the object spectrum (FWHM$_{a}$):
 
 \begin{equation}
 FWHM_{i}=\sqrt{{FWHM^{2}}-{FWHM_{a}^{2}}}
@@ -496,6 +496,8 @@ M=\frac{r_{e}\sigma^{2}}{0.33G}
 \end{equation}
 
 With $r_{e}$ the half mass radius (where half of the galaxy light is contained)
+
+Our radial velocity determination involves the necessity of creating or finding very accurate templates because as it has been mentioned, the results of the correlation are highly dependent on the quality of the absorption and emission lines in them.   
 
 
 
