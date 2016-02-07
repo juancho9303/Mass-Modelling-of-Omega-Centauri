@@ -3,7 +3,7 @@
 \contentsline {chapter}{Acknowledgements}{iii}{dummy.2}
 \vspace {1em}
 \contentsline {chapter}{List of Figures}{vi}{dummy.4}
-\contentsline {chapter}{List of Tables}{vii}{dummy.6}
+\contentsline {chapter}{List of Tables}{viii}{dummy.6}
 \vspace {2em}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.8}
 \contentsline {chapter}{\numberline {2}Theoretical Framework}{4}{chapter.9}
@@ -32,7 +32,7 @@
 \contentsline {subsection}{\numberline {3.4.4}Flux Calibration}{46}{subsection.103}
 \contentsline {section}{\numberline {3.5}Radial velocity determination}{49}{section.106}
 \contentsline {subsection}{\numberline {3.5.1}RVSAO}{50}{subsection.107}
-\contentsline {subsection}{\numberline {3.5.2}FXCOR}{51}{subsection.111}
-\contentsline {chapter}{\numberline {4}Modelling}{53}{chapter.113}
-\contentsline {chapter}{\numberline {5}Conclusions}{54}{chapter.114}
-\contentsline {chapter}{Bibliography}{55}{chapter*.115}
+\contentsline {subsection}{\numberline {3.5.2}FXCOR}{53}{subsection.113}
+\contentsline {chapter}{\numberline {4}Modelling}{55}{chapter.118}
+\contentsline {chapter}{\numberline {5}Conclusions}{56}{chapter.119}
+\contentsline {chapter}{Bibliography}{57}{chapter*.120}
