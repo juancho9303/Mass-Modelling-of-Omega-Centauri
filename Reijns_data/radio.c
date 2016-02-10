@@ -6,7 +6,7 @@
 
 int main (void)
 {
-  int i;
+  int i, warn;
 
   double a[N],b[N],c[N],d[N],e[N],f[N],g[N],h[N],j[N],k[N],l[N],AR[N],DEC[N],AR_c[N],DEC_c[N],dis[N];
   
@@ -22,7 +22,7 @@ int main (void)
       if ( 120.0 < j[i] && j[i] < 400.0 )
 	{
 	  fscanf(center, "%lf\t %lf\n", &AR_c[i], &DEC_c[i]);
-	  dis[i] = sqrt(pow((AR[i]-AR_c[i]),2) + pow((DEC[i]-DEC_c[i]),2));
+	  dis[i] = (sqrt(pow((AR[i]-AR_c[i]),2) + pow((DEC[i]-DEC_c[i]),2)))*60.0;
 	  fprintf(radius,"%lf\t %lf\t %lf\n", dis[i], j[i], k[i]);
 	}      
     }
@@ -34,9 +34,14 @@ int main (void)
   script = fopen( "script.gpl", "w" );
   fprintf(script, "set grid\nset terminal png\nset output 'velocity_vs_rad.png'\nset nokey\n");
   fprintf( script, "set title 'Velocity vs Radius'\n" );
-  fprintf( script, "plot 'distancia.dat' u 1:2\n");
+  fprintf( script, "set xlabel 'Radius in Arcmin'\n" );
+  fprintf( script, "set yrange [100:350]\n" );
+  fprintf( script, "set ylabel 'Velocity (km/s)'\n" );
+  fprintf( script, "plot 'distancia.dat' u 1:2:3 w yerrorbars lt 12, '' using 1:2 w p pt 7 ps 0.8 lt 12\n");
   fclose(script);
   
-  //  printf("E. Cinetica: %Lf\t E. Potencial: %Lf\t E. Total: %Lf\n", kin_tot, pot_tot, tot_energy);
+  warn = system("gnuplot script.gpl");
+  
+  return(warn);
   
 }
