@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+#define N 1966
+
+int main (void)
+{
+  int i;
+
+  double a[N],b[N],c[N],d[N],e[N],f[N],g[N],h[N],j[N],k[N],l[N],AR[N],DEC[N],AR_c[N],DEC_c[N],dis[N];
+  
+  FILE *data, *center, *radius;
+  data = fopen("table4.dat", "r");
+  center = fopen("center.dat", "r");
+  radius = fopen("distancia.dat" , "w");
+
+  for(i=0; i<N; i++)
+    {  
+      fscanf(data, "%lf\t %lf\t %lf\t %lf\t %lf\t %lf\t %lf\t %lf\t %lf\t %lf\t %lf\t %lf\t %lf\n", &a[i], &b[i], &c[i], &d[i], &e[i], &f[i], &g[i], &h[i], &j[i], &k[i], &l[i], &AR[i], &DEC[i]);
+      
+      if ( j[i] > 120.0 )
+{
+   fscanf(center, "%lf\t %lf\n", &AR_c[i], &DEC_c[i]);
+      dis[i] = sqrt((AR[i]-AR_c[i])*(AR[i]-AR_c[i])+(DEC[i]-DEC_c[i])*(DEC[i]-DEC_c[i]));
+      fprintf(radius,"%lf\t %lf\t %lf\n", dis[i], j[i], k[i]);
+}
+           
+    }
+
+  fclose(data);
+  fclose(center);
+  fclose(radius); 
+
+//  printf("E. Cinetica: %Lf\t E. Potencial: %Lf\t E. Total: %Lf\n", kin_tot, pot_tot, tot_energy);
+    
+}
