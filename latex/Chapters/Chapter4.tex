@@ -1,3 +1,17 @@
 \chapter{Modelling}
 
-- C
+Extinction correctionn given by
+
+\begin{equation}
+f_{obs}(\lambda)=f_{int}(\lambda)10^{-0.4A_{\lambda}}
+\end{equation}
+
+Where $A_{\lambda}=0.213$ in the I filter around $8000 \textrm{\AA}$
+
+We have to multiply by a factor of 1.216746 after the flux calibration has been made.
+
+Starlight does the stellar population synthesis 
+
+$Mcor_tot = 3.29446 \times 10^{7}$
+
+Yields a stellar mass of $M_{*}=243.462M_{\odot}$
