@@ -5,4 +5,4 @@ set nokey
 set title 'Sigma vs Radius'
 set xlabel 'Radius in Arcmin'
 set ylabel 'Sigma (km/s)'
-plot 'sigma.dat' u 1:2 w p
+plot 'sigma.dat' u 1:2 w l

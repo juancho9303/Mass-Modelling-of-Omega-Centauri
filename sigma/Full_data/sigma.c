@@ -4,7 +4,7 @@
 #include <gsl/gsl_sort.h>
 #include <gsl/gsl_statistics.h>
 
-#define N 1910
+#define N 3749
 
 int main (void)
 {
@@ -76,7 +76,7 @@ int main (void)
       fprintf( script, "set xlabel 'Radius in Arcmin'\n" );
       //fprintf( script, "set yrange [25:100]\n" );
       fprintf( script, "set ylabel 'Sigma (km/s)'\n" );
-      fprintf( script, "plot 'sigma.dat' u 1:2 w p\n");
+      fprintf( script, "plot 'sigma.dat' u 1:2 w l\n");
       fclose(script);
       
       warn = system("gnuplot script1.gpl");
