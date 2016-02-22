@@ -24,11 +24,11 @@ double integrando(double r, void * params)
 {
   struct param parameters = *(struct param *) params;
   
-  double a_s = parameters.a_s;
-  double a_dm = parameters.a_dm;
-  double M_s = parameters.M_s;
-  double M_dm = parameters.M_dm;
-  double beta = parameters.beta;
+  double a_s    =  parameters.a_s;
+  double a_dm   =  parameters.a_dm;
+  double M_s    =  parameters.M_s;
+  double M_dm   =  parameters.M_dm;
+  double beta   =  parameters.beta;
   double alpha, a1, a2, a3, a4, a5, b1, b2, b3, b4, b5;
   double M_sM_dm, M_dmM_s, M_sM_s, M_dmM_dm;
   
@@ -59,8 +59,6 @@ double integrando(double r, void * params)
   
   M_dmM_s = M_dm*M_s*((-1.0)/(b1))*(b2-b3+a_dm*((a_dm-a_s)*a_s*b4-b5));
   
-  //printf ("M_dmM_s  = %6lf\t % .18f\n", r, M_dmM_s);
-  
   double integrando = alpha*(M_sM_s + M_dmM_dm + M_sM_dm + M_dmM_s);
   
   return integrando;
@@ -68,7 +66,6 @@ double integrando(double r, void * params)
 
 int main(){
   
-  //printf("maricada 1");
   FILE *mod,*script;
   int warn;
   int Nint = 1000; // Numero de intervalos
@@ -79,23 +76,19 @@ int main(){
   
   // PARAMETROS
   
-  a_dm = 0.9;
-  a_s = 1.0;
-  M_s = 2.0;
-  M_dm = 2.0;
-  beta = 2.0;
+  beta  =  2.0;
   
   mod=fopen("model.dat","w"); 
   
   for(a_dm = 1.1; a_dm < 1.5;  a_dm = a_dm + 0.1)
     {
-      for(a_s = 1.2; a_s < 1.5;  a_s = a_s+0.1)
+      for(a_s = 1.2; a_s < 1.5;  a_s = a_s + 0.1)
 	{
 	  if (a_s != a_dm)
-	  {
-	  for(M_dm = 1.1; M_dm < 1.3;  M_dm = M_dm+0.1)
 	    {
-	      for(M_s = 1.1; M_s < 1.3;  M_s = M_s+0.1)
+	      for(M_dm = 1.1; M_dm < 1.5;  M_dm = M_dm + 0.1)
+	    {
+	      for(M_s = 1.1; M_s < 1.5;  M_s = M_s + 0.1)
 		{
 		  
 		  params.beta  =  beta;
@@ -104,51 +97,58 @@ int main(){
 		  params.M_s   =  M_s;
 		  params.M_dm  =  M_dm;       
 		  
-		  for(R = 0.01; R < K; R=R+0.01)          
+		  for(R = 0.01; R < K; R = R + 0.01)          
 		    {                                     
 		      
 		      F1.function = &integrando;
 		      F1.params = &params;
 		      
-		      gsl_integration_qags(&F1, R, 40, 0, 1e-4, Nint, z, &result1, &error1); 
-		      //printf ("result  = % .18f\n", result1);
+		      gsl_integration_qags(&F1, R, 30, 0, 1e-4, Nint, z, &result1, &error1); 
+		      printf ("result  = % .18f\n", result1);
 		      
 		      re1 = result1;
 		      s = R/a_s;
 		      
-		      if (s < 1.0-1.0e-9)
+		      if (s < 1.0 - 1.0e-9)
 			{      	
 			  X_s = (1.0 / sqrt(1.0 - s*s)) * log((1.0+(sqrt(1.0-s*s)))/(s));
-			  //printf("sig_p^2(R) %6lf\n", sig_p);	
 			}
 		      
 		      if(s >= 1.0-1.0e-10 && s <= 1.0+1.0e-10)
+			if(s = 1.0)
 			{
 			  X_s = 1.0;
 			}
 		      
-		      if (s > 1.0+1.0e-9)
+		      if (s > 1.0 + 1.0e-9)
 			{	       	  
 			  X_s = (1.0 / sqrt(s*s - 1.0)) * acos(1.0/s);
-			  //printf("sig_p^2(R) %6lf\n", sig_p);
 			}      
 		      
 		      I_R = (M_s/(2.0*M_PI*a_s*a_s*GAMMA*(1.0-s*s)*(1.0-s*s)))*((2.0+s*s)*X_s-3.0);
-		      sig_p = ((2.0*G*M_s*M_s*a_s)/(GAMMA*(I_R)*2.0*M_PI))*re1;
+		      sig_p = ((G)/(GAMMA*(I_R)*M_PI))*re1;
 		      //printf("%16.8e\t %16.8e\n", R, I_R);
 		      fprintf(mod,"%16.8e\t %16.8e\n", R, sig_p);
-		    }
-		  	  
+		    }		  
 		  //gsl_integration_workspace_free(z);
-		  
+		  fprintf(mod,"\n");
 		} 
   	    }
+	    }
 	}
-	}
-    }  
-  fprintf(mod,"\n");  
+    }    
   fclose(mod);
   gsl_integration_workspace_free(z);
-  //fclose(mod);
+  
+  script = fopen( "script.gpl", "w" );
+  fprintf(script, "set grid\nset terminal png\nset output 'sigma.png'\nset nokey\n");
+  fprintf( script, "set title 'Sigma Proyectada vs R'\n" );
+  fprintf( script, "set xtitle 'Rad'\n" );
+  fprintf( script, "set ytitle 'Projected velocity dispersion'\n" );
+  fprintf( script, "plot 'model.dat' u 1:2 w l\n");
+  fclose(script);
+  
+  warn = system("gnuplot script.gpl");
+  
   return(warn);
 }
