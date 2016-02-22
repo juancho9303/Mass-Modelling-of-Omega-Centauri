@@ -1,0 +1,5 @@
+set terminal png
+set output 'sigma.png'
+set nokey
+set title 'Sigma Proyectada vs R'
+plot 'model.dat' u 1:2 w l

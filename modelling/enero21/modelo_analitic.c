@@ -29,7 +29,7 @@ double tot (double r, void * params)
   double alpha, a1, a2, a3, a4, a5, b1, b2, b3, b4, b5;
   double M_sM_dm, M_dmM_s, M_sM_s, M_dmM_dm;
   
-  alpha = ((1.0 - beta*((R*R)/(r*r)))*((r)/(sqrt(r*r-R*R))))/2.0*M_PI;
+  alpha = ((1.0 - beta*((R*R)/(r*r)))*((r)/(sqrt(r*r-R*R))));
   
   M_sM_s = M_s*M_s*a_s*(((12.0*pow((a_s+r),4.0)*log((a_s+r)/(r))) - a_s*(25.0*a_s*a_s*a_s+52.0*a_s*a_s*r+42.0*a_s*r*r+12.0*r*r*r))/(12.0*pow(a_s,5)*pow((a_s+r),4)));
   
@@ -45,7 +45,7 @@ double tot (double r, void * params)
   a4 = 2.0*pow(a_s,4.0)+4.0*pow(a_s,3.0)*r-2.0*a_dm*a_dm*r*(a_dm+r)+3.0*a_s*a_dm*(-a_dm*a_dm+a_dm*r+2.0*r*r)+a_s*a_s*(7.0*a_dm*a_dm+7.0*a_dm*r+2.0*r*r);
   a5 = 2.0*a_s*a_s*(a_s-4.0*a_dm)*(a_s+r)*(a_s+r)*(a_dm+r)*log(a_dm+r);
   
-  M_sM_dm = M_s*M_dm*a_dm*((-1.0)/(a1))*(a2-a3+a_s*((a_s-a_dm)*a_dm*a4-a5));
+  M_sM_dm = M_s*M_dm*((-1.0)/(a1))*(a2-a3+a_s*((a_s-a_dm)*a_dm*a4-a5));
   //printf ("M_sM_dm  = %6lf\t % .18f\n", r, M_sM_dm);
   
   b1 = 2.0*pow(a_dm,3)*pow((a_dm-a_s),4.0)*a_s*a_s*(a_dm+r)*(a_dm+r)*(a_s+r);
@@ -54,7 +54,7 @@ double tot (double r, void * params)
   b4 = 2.0*pow(a_dm,4.0)+4.0*pow(a_dm,3.0)*r-2.0*a_s*a_s*r*(a_s+r)+3.0*a_dm*a_s*(-a_s*a_s+a_s*r+2.0*r*r)+a_dm*a_dm*(7.0*a_s*a_s+7.0*a_s*r+2.0*r*r);
   b5 = 2.0*a_dm*a_dm*(a_dm-4.0*a_s)*(a_dm+r)*(a_dm+r)*(a_s+r)*log(a_s+r);
   
-  M_dmM_s = M_dm*M_s*a_s*((-1.0)/(b1))*(b2-b3+a_dm*((a_dm-a_s)*a_s*b4-b5));
+  M_dmM_s = M_dm*M_s*((-1.0)/(b1))*(b2-b3+a_dm*((a_dm-a_s)*a_s*b4-b5));
   //printf ("M_dmM_s  = %6lf\t % .18f\n", r, M_dmM_s);
   
   double tot = alpha*(M_sM_s + M_dmM_dm + M_sM_dm + M_dmM_s);
@@ -76,6 +76,7 @@ int main(){
   
   // PARAMETROS
   
+
   a_dm = 0.9;
   a_s = 1.0;
   M_s = 2.0;
@@ -104,26 +105,26 @@ int main(){
     if (R < a_s-1.0e-9)
       {      	
 	X_s = (1.0 / sqrt(1.0 - s*s)) * log((1.0+(sqrt(1.0-s*s)))/(s));
-	I_R = (M/(2.0*M_PI*a_s*a_s*GAMMA*(1.0-s*s)*(1.0-s*s)))*((2.0+s*s)*X_s-3.0);
-	sig_p = ((2.0*G*M*M*a_s)/(GAMMA*I_R*2.0*M_PI))*re1;
+	I_R = (M_s/(2.0*M_PI*a_s*a_s*GAMMA*(1.0-s*s)*(1.0-s*s)))*((2.0+s*s)*X_s-3.0);
+	sig_p = ((2.0*G*M_s*M_s*a_s)/(GAMMA*I_R*2.0*M_PI))*re1;
 	printf("%16.8e\t %16.8e\n", R, I_R);
 	//printf("sig_p^2(R) %6lf\n", sig_p);	
       }
     
-         if(R >= a_s-1.0e-10 && R <= a_s+1.0e-10)
+  /*       if(R >= a_s-1.0e-10 && R <= a_s+1.0e-10)
 	  {      	
 	  X_s = 1.0;
-	  I_R = 2.0*M/(15.0*M_PI*a_s*a_s*GAMMA);
-	  sig_p = ((2.0*G*M*M*a_s)/(GAMMA*I_R*2.0*M_PI))*re1;
+	  I_R = 2.0*M_s/(15.0*M_PI*a_s*a_s*GAMMA);
+	  sig_p = ((2.0*G*M_s*M_s*a_s)/(GAMMA*I_R*2.0*M_PI))*re1;
 	  printf("%16.8e\t %16.8e\n", R, I_R);
 	  //printf("sig_p^2(R) %6lf\n", sig_p);
-	  }
+	  }  */
        
     if (R > a_s+1.0e-9)
       {	       	  
 	X_s = (1.0 / sqrt(s*s - 1.0)) * acos(1.0/s);
-	I_R = (M/(2.0*M_PI*a_s*a_s*GAMMA*(1.0-s*s)*(1.0-s*s)))*((2.0+s*s)*X_s-3.0);
-	sig_p = ((2.0*G*M*M*a_s)/(GAMMA*(I_R)*2.0*M_PI))*re1;
+	I_R = (M_s/(2.0*M_PI*a_s*a_s*GAMMA*(1.0-s*s)*(1.0-s*s)))*((2.0+s*s)*X_s-3.0);
+	sig_p = ((2.0*G*M_s*M_s*a_s)/(GAMMA*(I_R)*2.0*M_PI))*re1;
 	printf("%16.8e\t %16.8e\n", R, I_R);
 	//printf("sig_p^2(R) %6lf\n", sig_p);
 	

@@ -1,0 +1,7 @@
+plot 'sigma.dat' u 1:($2*500)
+set grid
+set terminal png
+set output 'sigma.png'
+set nokey
+set title 'Sigma Proyectada vs R'
+replot 'model.dat' u 1:($2*0.05) w l
