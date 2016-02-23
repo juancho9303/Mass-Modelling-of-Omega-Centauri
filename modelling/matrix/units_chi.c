@@ -151,7 +151,7 @@ int main(){
 			    {
 			      if( R_min - R_o[j] < 0.2 && R_min - R_o[j] > -0.2 )
 				{
-				  if(sig_p != "-nan")
+				  if(sig_p > 0.0)
 				  {
 				  shi2 = (sig_p-sig_p_o[j])*(sig_p-sig_p_o[j]);
 				  shi_t = shi_t + shi2;
