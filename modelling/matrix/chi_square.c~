@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <math.h>
+
+#define N 88
+
+int main(){
+  
+  FILE *mod,*sigma;
+  int warn, i, j, k;
+  double R[12], sig_p[12], Re[N], sig_pe[N];
+  
+  sigma=fopen("sigma.dat","r"); 
+  mod=fopen("model.dat","r");
+  
+  for(j=0; j < N; j++)
+    {
+      fscanf(mod,"%lf\t %lf\n", &Re[j], &sig_pe[j]);
+          
+  for(i=0; i < 12;  i++)
+    {
+      fscanf(sigma,"%lf\t %lf\n", &R[i], &sig_p[i]);
+      //printf("%lf\t %lf\n", R[i], sig_p[i]);
+            if( R[i] - Re[j] < 0.5)
+	{
+      printf("%lf\t %lf\n", R[i], Re[j]);
+	}
+    }
+
+    }
+    fclose(sigma);
+    fclose(mod);
+ 
+
+    //printf("%lf\t %lf\n", R[i], sig_p[i]);
+
+  return(warn);
+}
