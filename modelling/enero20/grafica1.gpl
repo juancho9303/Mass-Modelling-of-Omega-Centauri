@@ -1,8 +1,0 @@
-plot 'integrando1.dat' u 1:2 w l
-replot 'integrando2.dat' u 1:2 w l
-replot 'integrando3.dat' u 1:2 w l
-set terminal png
-set output 'integrando1.png'
-set nokey
-set title 'Sigma Proyectada vs R'
-replot 'integrando4.dat' u 1:2 w l

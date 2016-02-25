@@ -1,5 +1,0 @@
-set terminal png
-set output 'integrando4.png'
-set nokey
-set title 'Sigma Proyectada vs R'
-plot 'integrando4.dat' u 1:2 w l

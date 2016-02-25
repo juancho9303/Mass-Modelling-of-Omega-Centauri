@@ -1,8 +1,0 @@
-set terminal png
-set output 'sigma.png'
-set nokey
-set title 'Sigma Proyectada vs R'
-set xlabel 'Radio (Kpc)'
-set ylabel 'Radio (Sigma_p (R))'
-set grid
-plot 'model.dat' u 1:2 w d
