@@ -11,7 +11,7 @@
 */
 
 #define K 90           //90 parsecs que esta por encima de los ~60pc de omega centauri
-#define GAMMA 1.0        //razon masa luminosidad
+//#define GAMMA 1.0        //razon masa luminosidad
 #define G 43007.1        //unidades de Gadget
 #define EPSILON 1     //para suavizar denominadores para evitar indeterminaciones
 
@@ -25,10 +25,9 @@
 */
 
 // GENERO LA ESTRUCTURA DE PARAMETROS QUE VOY A AJUSTAR
-
 struct param
 {
-  double beta, a_s, a_dm, M_s, M_dm, a_s_min, a_dm_min, M_s_min, M_dm_min;  
+  double beta, a_s, a_dm, M_s, M_dm;  
 };
 
 double R;
@@ -73,7 +72,8 @@ double integrando2(double r, void * params)
   M_sM_s = M_s_min*M_s_min*a_s_min*(((12.0*pow((a_s_min+r),4.0)*log((a_s_min+r)/(r))) - a_s_min*(25.0*a_s_min*a_s_min*a_s_min+52.0*a_s_min*a_s_min*r+42.0*a_s_min*r*r+12.0*r*r*r))/(12.0*pow(a_s_min,5)*pow((a_s_min+r),4)));
   
   M_dmM_dm = M_dm_min*M_dm_min*a_dm_min*(((12.0*pow((a_dm_min+r),4.0)*log((a_dm_min+r)/(r))) - a_dm_min*(25.0*a_dm_min*a_dm_min*a_dm_min+52.0*a_dm_min*a_dm_min*r+42.0*a_dm_min*r*r+12.0*r*r*r))/(12.0*pow(a_dm_min,5)*pow((a_dm_min+r),4)));
-
+  
+  
   double integrando2 = alpha*(M_sM_s + M_dmM_dm);
   
   return integrando2;
@@ -91,6 +91,7 @@ int main()
   int Nint = 1000; // Numero de intervalos
   double X_s, I_R, s, R[90], R_arcmin[90], sig_p[90], rho, re1, re2, result1, error1, a_dm, a_s, M_s, M_dm, beta, R_o[12], sig_p_o[12], chi2, chi_t, otra, a_dm_min, a_s_min, M_dm_min, M_s_min, R_arcmin_i, sig_p_i;
   double chi_min = 1000000.0;
+  double gamma, gamma_min;
   struct param params;
   gsl_integration_workspace *z = gsl_integration_workspace_alloc(Nint);
   gsl_function F1;
@@ -116,105 +117,110 @@ int main()
   mod=fopen("model.dat","w"); 
   chi_cua=fopen("chi_cuadrado.dat","w"); 
   
-  for(a_dm = 0.005; a_dm <= 0.06;  a_dm = a_dm + 0.01)
-    {
-      for(a_s = 0.005; a_s <= 0.06;  a_s = a_s + 0.01)
+  
+  for(gamma = 0.1; gamma <= 3.0;  gamma = gamma + 0.5)
+    { 
+      for(a_dm = 0.005; a_dm <= 0.06;  a_dm = a_dm + 0.01)
 	{
-	  // PARA EVITAR INDETERMINACIONES EN ALGUNOS DENOMINADORES
-	  if (a_s != a_dm)
+	  for(a_s = 0.005; a_s <= 0.06;  a_s = a_s + 0.01)
 	    {
-	      for(M_dm = 0.00001; M_dm < 0.0008;  M_dm = M_dm + 0.00003)
+	      // PARA EVITAR INDETERMINACIONES EN ALGUNOS DENOMINADORES
+	      if (a_s != a_dm)
 		{
-		  for(M_s = 0.00001; M_s < 0.0008;  M_s = M_s + 0.00003)
+		  for(M_dm = 0.00001; M_dm < 0.0008;  M_dm = M_dm + 0.0001)
 		    {
-		      params.beta  =  beta;
-		      params.a_s   =  a_s;
-		      params.a_dm  =  a_dm;
-		      params.M_s   =  M_s;
-		      params.M_dm  =  M_dm;       
-		      
-		      // ESTE CICLO ES PARA R (RADIO PROYECTO) YA QUE SIGMA DEPENDE DE R, ADEMAS VA A SER EL LIMITE INFERIOR DE LA INTEGRAL
-		      
-		      for(i = 0; i < K; i ++)          
+		      for(M_s = 0.00001; M_s < 0.0008;  M_s = M_s + 0.0001)
 			{
-			  R[i] = (i+1.0)/(1000.0);
-			  F1.function = &integrando;
-			  F1.params = &params;
+			  params.beta  =  beta;
+			  params.a_s   =  a_s;
+			  params.a_dm  =  a_dm;
+			  params.M_s   =  M_s;
+			  params.M_dm  =  M_dm;       
 			  
-			  gsl_integration_qags(&F1, R[i], 0.1, 0, 1e-4, Nint, z, &result1, &error1); 
+			  // ESTE CICLO ES PARA R (RADIO PROYECTO) YA QUE SIGMA DEPENDE DE R, ADEMAS VA A SER EL LIMITE INFERIOR DE LA INTEGRAL
 			  
-			  re1 = result1;
-			  s = R[i]/a_s;
-			  
-			  // ES NECESARIO PONER ESTOS CONDICIONALES YA QUE LA FUNCION X(S) ESTA DEFINIDA A TRAMOS
-			  
-			  if (s < 1.0 - 1.0e-9)
-			    {      	
-			      X_s = (1.0 / sqrt(1.0 - s*s)) * log((1.0+(sqrt(1.0-s*s)))/(s));
-			      I_R = (M_s/(2.0*M_PI*a_s*a_s*GAMMA*(1.0-s*s)*(1.0-s*s)))*((2.0+s*s)*X_s-3.0);
+			  for(i = 0; i < K; i ++)          
+			    {
+			      R[i] = (i+1.0)/(1000.0);
+			      F1.function = &integrando;
+			      F1.params = &params;
+			      
+			      gsl_integration_qags(&F1, R[i], 0.1, 0, 1e-4, Nint, z, &result1, &error1); 
+			      
+			      re1 = result1;
+			      s = R[i]/a_s;
+			      
+			      // ES NECESARIO PONER ESTOS CONDICIONALES YA QUE LA FUNCION X(S) ESTA DEFINIDA A TRAMOS
+			      
+			      if (s < 1.0 - 1.0e-9)
+				{      	
+				  X_s = (1.0 / sqrt(1.0 - s*s)) * log((1.0+(sqrt(1.0-s*s)))/(s));
+				  I_R = (M_s/(2.0*M_PI*a_s*a_s*gamma*(1.0-s*s)*(1.0-s*s)))*((2.0+s*s)*X_s-3.0);
+				}
+			      
+			      if(s >= 1.0-1.0e-10 && s <= 1.0+1.0e-10)
+				if(s = 1.0)
+				  {
+				    X_s = 1.0;
+				I_R = (2.0*M_s)/(15.0*M_PI*a_s*a_s*gamma);
+				  }
+			      
+			      if (s > 1.0 + 1.0e-9)
+				{	       	  
+				  X_s = (1.0 / sqrt(s*s - 1.0)) * acos(1.0/s);
+				  I_R = (M_s/(2.0*M_PI*a_s*a_s*gamma*(1.0-s*s)*(1.0-s*s)))*((2.0+s*s)*X_s-3.0);
+				}      
+			      
+			      // SE HACEN LOS CALCULOS UNA VEZ SE TIENE EL VALOR DE LA INTEGRAL
+			      
+			      sig_p[i] = sqrt(((G)/(gamma*(I_R)*M_PI))*re1);
+			      //CONVIERTO DE KILOPARSECS A MINUTOS DE ARCO
+			      R_arcmin[i] = R[i]/(4.80839)*3437.75;
+			      //printf ("%g %g\n", R_arcmin[i], sig_p[i]);
 			    }
 			  
-			  if(s >= 1.0-1.0e-10 && s <= 1.0+1.0e-10)
-			    if(s = 1.0)
-			      {
-				X_s = 1.0;
-				I_R = (2.0*M_s)/(15.0*M_PI*a_s*a_s*GAMMA);
-			      }
+			  gsl_spline_init (spline, R_arcmin, sig_p, 90);
 			  
-			  if (s > 1.0 + 1.0e-9)
-			    {	       	  
-			      X_s = (1.0 / sqrt(s*s - 1.0)) * acos(1.0/s);
-			      I_R = (M_s/(2.0*M_PI*a_s*a_s*GAMMA*(1.0-s*s)*(1.0-s*s)))*((2.0+s*s)*X_s-3.0);
-			    }      
-			  
-			  // SE HACEN LOS CALCULOS UNA VEZ SE TIENE EL VALOR DE LA INTEGRAL
-			  
-			  sig_p[i] = sqrt(((G)/(GAMMA*(I_R)*M_PI))*re1);
-			  //CONVIERTO DE KILOPARSECS A MINUTOS DE ARCO
-			  R_arcmin[i] = R[i]/(4.80839)*3437.75;
-			  //printf ("%g %g\n", R_arcmin[i], sig_p[i]);
-			}
-		      
-		      gsl_spline_init (spline, R_arcmin, sig_p, 90);
-		      
-		      for(R_arcmin_i = R_arcmin[0]; R_arcmin_i < R_arcmin[89]; R_arcmin_i += 0.001)
-			{
-			  sig_p_i = gsl_spline_eval (spline, R_arcmin_i, acc);
-			  //printf ("%g %g\n", R_arcmin_i, sig_p_i);
-			  for(j=0.0; j<12.0; j=j+1.0)
+			  for(R_arcmin_i = R_arcmin[0]; R_arcmin_i < R_arcmin[89]; R_arcmin_i += 0.001)
 			    {
-			      if( R_arcmin_i - R_o[j] < 0.001 && R_arcmin_i - R_o[j] > -0.001 )
-				//if( R_arcmin_i = R_o[j] )
+			      sig_p_i = gsl_spline_eval (spline, R_arcmin_i, acc);
+			      //printf ("%g %g\n", R_arcmin_i, sig_p_i);
+			      for(j=0.0; j<12.0; j=j+1.0)
 				{
-				  if(sig_p_i > 0.0)
+				  if( R_arcmin_i - R_o[j] < 0.001 && R_arcmin_i - R_o[j] > -0.001 )
+				    //if( R_arcmin_i = R_o[j] )
 				    {
-				      chi2 = (sig_p_i-sig_p_o[j])*(sig_p_i-sig_p_o[j]);
-				      chi_t = chi_t + chi2;
-				    }       
+				      if(sig_p_i > 0.0)
+					{
+					  chi2 = (sig_p_i-sig_p_o[j])*(sig_p_i-sig_p_o[j]);
+					  chi_t = chi_t + chi2;
+					}       
+				    }
 				}
 			    }
-			}
-		      
-		      //printf("%g\n", chi_t);
-		      
-		      if(chi_t < chi_min)
-			{
-			  chi_min   = chi_t;
-			  a_dm_min  = a_dm;
-			  a_s_min   = a_s;
-			  M_dm_min  = M_dm;
-			  M_s_min   = M_s;
-			  //fprintf(mod,"%16.8e\t %16.8e\n", R_min, sig_p);
 			  
-			  params.beta  =  beta;
-			  params.a_s   =  a_s_min;
-			  params.a_dm  =  a_dm_min;
-			  params.M_s   =  M_s_min;
-			  params.M_dm  =  M_dm_min;	  
+			  //printf("%g\n", chi_t);
+			  
+			  if(chi_t < chi_min)
+			    {
+			      chi_min   = chi_t;
+			      a_dm_min  = a_dm;
+			      a_s_min   = a_s;
+			      M_dm_min  = M_dm;
+			      M_s_min   = M_s;
+			      gamma_min = gamma;
+			      //fprintf(mod,"%16.8e\t %16.8e\n", R_min, sig_p);
+			      
+			      params.beta  =  beta;
+			      params.a_s   =  a_s_min;
+			      params.a_dm  =  a_dm_min;
+			      params.M_s   =  M_s_min;
+			      params.M_dm  =  M_dm_min;	  
+			    }
+			  //printf("%lf\n", chi_t);
+			  chi_t = 0.0;
+			  
 			}
-			//printf("%lf\n", chi_t);
-		      chi_t = 0.0;
-		      
 		    }
 		}
 	    }
@@ -238,30 +244,30 @@ int main()
       if (s < 1.0 - 1.0e-9)
 	{      	
 	  X_s = (1.0 / sqrt(1.0 - s*s)) * log((1.0+(sqrt(1.0-s*s)))/(s));
-	  I_R = (M_s_min/(2.0*M_PI*a_s_min*a_s_min*GAMMA*(1.0-s*s)*(1.0-s*s)))*((2.0+s*s)*X_s-3.0);
+	  I_R = (M_s_min/(2.0*M_PI*a_s_min*a_s_min*gamma_min*(1.0-s*s)*(1.0-s*s)))*((2.0+s*s)*X_s-3.0);
 	}
       
       if(s >= 1.0-1.0e-10 && s <= 1.0+1.0e-10)
 	if(s = 1.0)
 	  {
 	    X_s = 1.0;
-	    I_R = (2.0*M_s_min)/(15.0*M_PI*a_s_min*a_s_min*GAMMA);
+	    I_R = (2.0*M_s_min)/(15.0*M_PI*a_s_min*a_s_min*gamma_min);
 	  }
       
       if (s > 1.0 + 1.0e-9)
 	{	       	  
 	  X_s = (1.0 / sqrt(s*s - 1.0)) * acos(1.0/s);
-	  I_R = (M_s_min/(2.0*M_PI*a_s_min*a_s_min*GAMMA*(1.0-s*s)*(1.0-s*s)))*((2.0+s*s)*X_s-3.0);
+	  I_R = (M_s_min/(2.0*M_PI*a_s_min*a_s_min*gamma_min*(1.0-s*s)*(1.0-s*s)))*((2.0+s*s)*X_s-3.0);
 	}      
       
-      sig_p_i = sqrt(((G)/(GAMMA*(I_R)*M_PI))*re1);
+      sig_p_i = sqrt(((G)/(gamma_min*(I_R)*M_PI))*re1);
       R_arcmin_i = R[i]/(4.80839)*3437.75;
       fprintf(chi_cua,"%16.8e\t %16.8e\n", R_arcmin_i, sig_p_i);
     }
   
   // MUESTRO CUALES SON LOS PARAMETROS QUE MEJOR SE AJUSTAN A LOS DATOS OBSERVACIONALES
   
-  printf("x=%lf\t a_dm=%lf\t a_s=%lf\t M_dm=%lf\t M_s=%lf\n",chi_min,a_dm_min,a_s_min,M_dm_min,M_s_min);
+  printf("xi=%lf\t a_dm=%lf\t a_s=%lf\t M_dm=%lf\t M_s=%lf gamma=%lf\n",chi_min,a_dm_min,a_s_min,M_dm_min,M_s_min,gamma_min);
   
   fclose(mod);
   fclose(chi_cua);

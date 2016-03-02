@@ -10,13 +10,13 @@
   LOS PARAMETROS QUE MEJOR SE AJUSTEN A LAS OBSERVACIONES   
 */
 
-#define K 0.09           //90 parsecs que esta por encima de los ~60pc de omega centauri
-#define GAMMA 1.0        //razon masa luminosidad
-#define G 43007.1        //unidades de Gadget
-#define EPSILON 1e-5     //para suavizar denominadores para evitar indeterminaciones
+#define K 90          //90 parsecs que esta por encima de los ~60pc de omega centauri
+#define G 43007.1     //unidades de Gadget
+#define EPSILON 1     //para suavizar denominadores para evitar indeterminaciones
+
 
 /* UNIDADES:
-
+   
    UnitMass_in_g = 1.989e+43 
    UnitTime_in_s = 3.08568e+16 
    UnitVelocity_in_cm_per_s = 100000 
@@ -110,6 +110,8 @@ double integrando2(double r, void * params)
   return integrando2;
 }
 
+
+
 // AHORA INICIO EL PROGRAMA PRINCIPAL QUE VA A HACER TODOS LOS CALCULOS PARA ENCONTRAR LA DSPERSION DE VELOCIDADES PROYECTADA
 
 int main()
@@ -118,14 +120,17 @@ int main()
   // DEFINO LOS PUNTEROS DE LOS ARCHIVOS, LAS VARIABLES DE TIPO ENTERO Y DOUBLE Y LA ALOCACION DE MEMORIA DE LA RUTINA DE GSL QUE VOY A USAR PARA LA INTEGRAL
   
   FILE *mod,*script,*sigma,*chi_cua;
-  int warn, t, i, j;
+  int warn, t, i, j, k;
   int Nint = 1000; // Numero de intervalos
-  double X_s, I_R, s, R, R_min, sig_p, rho, re1, re2, result1, error1, a_dm, a_s, M_s, M_dm, beta, R_o[12], sig_p_o[12], chi2, chi_t, otra, a_dm_min, a_s_min, M_dm_min, M_s_min;
+  double X_s, I_R, s, R[90], R_arcmin[90], sig_p[90], rho, re1, re2, result1, error1, a_dm, a_s, M_s, M_dm, beta, R_o[12], sig_p_o[12], chi2, chi_t, otra, a_dm_min, a_s_min, M_dm_min, M_s_min, R_arcmin_i, sig_p_i;
   double chi_min = 1000000.0;
+  double gamma, gamma_min;
   struct param params;
   gsl_integration_workspace *z = gsl_integration_workspace_alloc(Nint);
   gsl_function F1;
   gsl_function F2;
+  gsl_interp_accel *acc  =   gsl_interp_accel_alloc ();
+  gsl_spline *spline     =   gsl_spline_alloc (gsl_interp_cspline, 90);
   
   sigma=fopen("sigma.dat","r"); 
   
@@ -140,104 +145,116 @@ int main()
   
   // HAGO LAS VARIACIONES DE LOS PARAMETROS
   
-  beta  =  0.000001;
+  beta  =  0.0001;
   
   mod=fopen("model.dat","w"); 
   chi_cua=fopen("chi_cuadrado.dat","w"); 
   
-  for(a_dm = 0.005; a_dm <= 0.06;  a_dm = a_dm + 0.01)
-    {
-      for(a_s = 0.005; a_s <= 0.06;  a_s = a_s + 0.01)
+  
+  for(gamma = 0.1; gamma <= 3.0;  gamma = gamma + 0.5)
+    { 
+      for(a_dm = 0.005; a_dm <= 0.06;  a_dm = a_dm + 0.01)
 	{
-	  // PARA EVITAR INDETERMINACIONES EN ALGUNOS DENOMINADORES
-	  if (a_s != a_dm)
+	  for(a_s = 0.005; a_s <= 0.06;  a_s = a_s + 0.01)
 	    {
-	      for(M_dm = 0.00001; M_dm < 0.0008;  M_dm = M_dm + 0.0002)
+	      // PARA EVITAR INDETERMINACIONES EN ALGUNOS DENOMINADORES
+	      if (a_s != a_dm)
 		{
-		  for(M_s = 0.0001; M_s < 0.0008;  M_s = M_s + 0.0002)
+		  for(M_dm = 0.00001; M_dm < 0.0008;  M_dm = M_dm + 0.0001)
 		    {
-		      t = t+1;  // T SOLO ES PARA HACER UN CONTADOR PERO NO ES NECESARIO
-		      params.beta  =  beta;
-		      params.a_s   =  a_s;
-		      params.a_dm  =  a_dm;
-		      params.M_s   =  M_s;
-		      params.M_dm  =  M_dm;       
-		      
-		      // ESTE CICLO ES PARA R (RADIO PROYECTO) YA QUE SIGMA DEPENDE DE R, ADEMAS VA A SER EL LIMITE INFERIOR DE LA INTEGRAL
-		      
-		      for(R = 0.001; R < K; R = R + 0.001)          
-			{                                     
+		      for(M_s = 0.00001; M_s < 0.0008;  M_s = M_s + 0.0001)
+			{
+			  params.beta  =  beta;
+			  params.a_s   =  a_s;
+			  params.a_dm  =  a_dm;
+			  params.M_s   =  M_s;
+			  params.M_dm  =  M_dm;       
 			  
-			  F1.function = &integrando;
-			  F1.params = &params;
+			  // ESTE CICLO ES PARA R (RADIO PROYECTO) YA QUE SIGMA DEPENDE DE R, ADEMAS VA A SER EL LIMITE INFERIOR DE LA INTEGRAL
 			  
-			  gsl_integration_qags(&F1, R, 0.1, 0, 1e-4, Nint, z, &result1, &error1); 
-			  
-			  re1 = result1;
-			  s = R/a_s;
-			  
-			  // ES NECESARIO PONER ESTOS CONDICIONALES YA QUE LA FUNCION X(S) ESTA DEFINIDA A TRAMOS
-			  
-			  if (s < 1.0 - 1.0e-9)
-			    {      	
-			      X_s = (1.0 / sqrt(1.0 - s*s)) * log((1.0+(sqrt(1.0-s*s)))/(s));
+			  for(i = 0; i < K; i ++)          
+			    {
+			      R[i] = (i+1.0)/(1000.0);
+			      F1.function = &integrando;
+			      F1.params = &params;
+			      
+			      gsl_integration_qags(&F1, R[i], 0.1, 0, 1e-4, Nint, z, &result1, &error1); 
+			      
+			      re1 = result1;
+			      s = R[i]/a_s;
+			      
+			      // ES NECESARIO PONER ESTOS CONDICIONALES YA QUE LA FUNCION X(S) ESTA DEFINIDA A TRAMOS
+			      
+			      if (s < 1.0 - 1.0e-9)
+				{      	
+				  X_s = (1.0 / sqrt(1.0 - s*s)) * log((1.0+(sqrt(1.0-s*s)))/(s));
+				  I_R = (M_s/(2.0*M_PI*a_s*a_s*gamma*(1.0-s*s)*(1.0-s*s)))*((2.0+s*s)*X_s-3.0);
+				}
+			      
+			      if(s >= 1.0-1.0e-10 && s <= 1.0+1.0e-10)
+				if(s = 1.0)
+				  {
+				    X_s = 1.0;
+				I_R = (2.0*M_s)/(15.0*M_PI*a_s*a_s*gamma);
+				  }
+			      
+			      if (s > 1.0 + 1.0e-9)
+				{	       	  
+				  X_s = (1.0 / sqrt(s*s - 1.0)) * acos(1.0/s);
+				  I_R = (M_s/(2.0*M_PI*a_s*a_s*gamma*(1.0-s*s)*(1.0-s*s)))*((2.0+s*s)*X_s-3.0);
+				}      
+			      
+			      // SE HACEN LOS CALCULOS UNA VEZ SE TIENE EL VALOR DE LA INTEGRAL
+			      
+			      sig_p[i] = sqrt(((G)/(gamma*(I_R)*M_PI))*re1);
+			      //CONVIERTO DE KILOPARSECS A MINUTOS DE ARCO
+			      R_arcmin[i] = R[i]/(4.80839)*3437.75;
+			      //printf ("%g %g\n", R_arcmin[i], sig_p[i]);
 			    }
 			  
-			  if(s >= 1.0-1.0e-10 && s <= 1.0+1.0e-10)
-			    if(s = 1.0)
-			      {
-				X_s = 1.0;
-			      }
+			  gsl_spline_init (spline, R_arcmin, sig_p, 90);
 			  
-			  if (s > 1.0 + 1.0e-9)
-			    {	       	  
-			      X_s = (1.0 / sqrt(s*s - 1.0)) * acos(1.0/s);
-			    }      
-			  
-			  // SE HACEN LOS CALCULOS UNA VEZ SE TIENE EL VALOR DE LA INTEGRAL
-			  
-			  I_R = (M_s/(2.0*M_PI*a_s*a_s*GAMMA*(1.0-s*s)*(1.0-s*s)))*((2.0+s*s)*X_s-3.0);
-			  sig_p = sqrt(((G)/(GAMMA*(I_R)*M_PI))*re1);
-			  //CONVIERTO DE KILOPARSECS A MINUTOS DE ARCO
-			  R_min = R/(4.80839)*3437.75;
-			  //printf("%16.8e\t %16.8e\n", R, I_R);
-			  //fprintf(chi_cua,"%16.8e\t %16.8e\n", Rfprintf(chi_cua,"\n");_min, sig_p);
-			  
-			  // ESTE CICLO ES PARA HACER LA COMPARACION POR EL METODO DE CHI CUADRARO 
-			  
-			  for(j=0.0; j<12.0; j=j+1.0)
+			  for(R_arcmin_i = R_arcmin[0]; R_arcmin_i < R_arcmin[89]; R_arcmin_i += 0.001)
 			    {
-			      if( R_min - R_o[j] < 0.1 && R_min - R_o[j] > -0.1 )
+			      sig_p_i = gsl_spline_eval (spline, R_arcmin_i, acc);
+			      //printf ("%g %g\n", R_arcmin_i, sig_p_i);
+			      for(j=0.0; j<12.0; j=j+1.0)
 				{
-				  if(sig_p > 0.0)
+				  if( R_arcmin_i - R_o[j] < 0.001 && R_arcmin_i - R_o[j] > -0.001 )
+				    //if( R_arcmin_i = R_o[j] )
 				    {
-				      chi2 = (sig_p-sig_p_o[j])*(sig_p-sig_p_o[j]);
-				      chi_t = chi_t + chi2;
-				    }       
+				      if(sig_p_i > 0.0)
+					{
+					  chi2 = (sig_p_i-sig_p_o[j])*(sig_p_i-sig_p_o[j]);
+					  chi_t = chi_t + chi2;
+					}       
+				    }
 				}
 			    }
-			}		  
-		      //printf("%16.8e\t %16.8e\t %16.8e\t %16.8e %d\n", a_dm, a_s, M_dm, M_s, t);
-		      //printf("%lf\n", chi_t); 
-		      
-		      if(chi_t < chi_min)
-			{
-			  chi_min   = chi_t;
-			  a_dm_min  = a_dm;
-			  a_s_min   = a_s;
-			  M_dm_min  = M_dm;
-			  M_s_min   = M_s;
-			  //fprintf(mod,"%16.8e\t %16.8e\n", R_min, sig_p);
 			  
-			  params.beta  =  beta;
-			  params.a_s   =  a_s_min;
-			  params.a_dm  =  a_dm_min;
-			  params.M_s   =  M_s_min;
-			  params.M_dm  =  M_dm_min;	  
+			  //printf("%g\n", chi_t);
+			  
+			  if(chi_t < chi_min)
+			    {
+			      chi_min   = chi_t;
+			      a_dm_min  = a_dm;
+			      a_s_min   = a_s;
+			      M_dm_min  = M_dm;
+			      M_s_min   = M_s;
+			      gamma_min = gamma;
+			      //fprintf(mod,"%16.8e\t %16.8e\n", R_min, sig_p);
+			      
+			      params.beta  =  beta;
+			      params.a_s   =  a_s_min;
+			      params.a_dm  =  a_dm_min;
+			      params.M_s   =  M_s_min;
+			      params.M_dm  =  M_dm_min;	  
+			    }
+			  //printf("%lf\n", chi_t);
+			  chi_t = 0.0;
+			  
 			}
-		      chi_t = 0.0;
-		      fprintf(chi_cua,"\n");
-		    }		    	    
+		    }
 		}
 	    }
 	}
@@ -248,43 +265,48 @@ int main()
   params.M_s   =  M_s_min;
   params.M_dm  =  M_dm_min;
   
-  for(R = 0.001; R < K; R = R + 0.001)          
-    {                                     
+  for(i = 0; i < K; i ++)          
+    { 
+      R[i] = (i+1.0)/(1000.0);
       F2.function = &integrando2;
       F2.params = &params;
-      gsl_integration_qags(&F2, R, 0.1, 0, 1e-4, Nint, z, &result1, &error1); 
+      gsl_integration_qags(&F2, R[i], 0.1, 0, 1e-4, Nint, z, &result1, &error1); 
       re1 = result1;
-      s = R/a_s_min;
+      s = R[i]/a_s_min;
       
       if (s < 1.0 - 1.0e-9)
 	{      	
 	  X_s = (1.0 / sqrt(1.0 - s*s)) * log((1.0+(sqrt(1.0-s*s)))/(s));
+	  I_R = (M_s_min/(2.0*M_PI*a_s_min*a_s_min*gamma_min*(1.0-s*s)*(1.0-s*s)))*((2.0+s*s)*X_s-3.0);
 	}
       
       if(s >= 1.0-1.0e-10 && s <= 1.0+1.0e-10)
 	if(s = 1.0)
 	  {
 	    X_s = 1.0;
+	    I_R = (2.0*M_s_min)/(15.0*M_PI*a_s_min*a_s_min*gamma_min);
 	  }
       
       if (s > 1.0 + 1.0e-9)
 	{	       	  
 	  X_s = (1.0 / sqrt(s*s - 1.0)) * acos(1.0/s);
+	  I_R = (M_s_min/(2.0*M_PI*a_s_min*a_s_min*gamma_min*(1.0-s*s)*(1.0-s*s)))*((2.0+s*s)*X_s-3.0);
 	}      
       
-      I_R = (M_s_min/(2.0*M_PI*a_s_min*a_s_min*GAMMA*(1.0-s*s)*(1.0-s*s)))*((2.0+s*s)*X_s-3.0);
-      sig_p = sqrt(((G)/(GAMMA*(I_R)*M_PI))*re1);
-      R_min = R/(4.80839)*3437.75;
-      fprintf(chi_cua,"%16.8e\t %16.8e\n", R_min, sig_p);
+      sig_p_i = sqrt(((G)/(gamma_min*(I_R)*M_PI))*re1);
+      R_arcmin_i = R[i]/(4.80839)*3437.75;
+      fprintf(chi_cua,"%16.8e\t %16.8e\n", R_arcmin_i, sig_p_i);
     }
   
   // MUESTRO CUALES SON LOS PARAMETROS QUE MEJOR SE AJUSTAN A LOS DATOS OBSERVACIONALES
   
-  printf("x=%lf\t a_dm=%lf\t a_s=%lf\t M_dm=%lf\t M_s=%lf\n",chi_min,a_dm_min,a_s_min,M_dm_min,M_s_min);
+  printf("xi=%lf\t a_dm=%lf\t a_s=%lf\t M_dm=%lf\t M_s=%lf gamma=%lf\n",chi_min,a_dm_min,a_s_min,M_dm_min,M_s_min,gamma_min);
   
   fclose(mod);
   fclose(chi_cua);
   gsl_integration_workspace_free(z);
+  gsl_spline_free (spline);
+  gsl_interp_accel_free (acc);
   
   script = fopen( "script.gpl", "w" );
   fprintf( script, "plot 'sigma.dat'pt 7 ps 1.2\n" );

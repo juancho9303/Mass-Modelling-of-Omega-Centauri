@@ -76,7 +76,7 @@ int main(){
   FILE *mod,*script,*sigma;
   int warn;
   int Nint = 1000; // Numero de intervalos
-  double X_s, I_R, s, R, R_min, sig_p, rho, re1, re2, result1, error1, result2, error2, a_dm, a_s, M_s, M_dm, beta, R_o[12], sig_p_o[12], shi2, shi_t;
+  double X_s, I_R, s, R, R_min, sig_p, rho, re1, re2, result1, error1, result2, error2, a_dm, a_s, M_s, M_dm, beta, R_o[12], sig_p_o[12], chi2, chi_t;
   struct param params; // structura de parametros
   gsl_integration_workspace *z = gsl_integration_workspace_alloc(Nint);
   gsl_function F1;
@@ -155,18 +155,18 @@ int main(){
 				{
 				  if(sig_p > 0.0)
 				  {
-				  shi2 = (sig_p-sig_p_o[j])*(sig_p-sig_p_o[j]);
-				  shi_t = shi_t + shi2;
+				  chi2 = (sig_p-sig_p_o[j])*(sig_p-sig_p_o[j]);
+				  chi_t = chi_t + chi2;
 				  }
-				  //printf("%lf\n", shi_t);       
+				  //printf("%lf\n", chi_t);       
 				}
 			    }
 			}		  
 		      //gsl_integration_workspace_free(z);
 		      fprintf(mod,"#%16.8e\t %16.8e\t %16.8e\t %16.8e\n", a_dm, a_s, M_dm, M_s);
 		      printf("%16.8e\t %16.8e\t %16.8e\t %16.8e\n", a_dm, a_s, M_dm, M_s);
-		      printf("%lf\n", shi_t); 
-		      shi_t = 0.0;
+		      printf("%lf\n", chi_t); 
+		      chi_t = 0.0;
 		      fprintf(mod,"\n");
 		    } 
 		}

@@ -35,9 +35,6 @@ int main(){
   gsl_integration_workspace *z = gsl_integration_workspace_alloc(Nint);
   gsl_function F2;
   // parametros del problema (o algo asi)
-  double a = 1.0;
-  double a_dm = 1.0;
-  double beta = 2.0;
 
   mod=fopen("model.dat","w");
   params.a = a;

@@ -1,10 +1,9 @@
 CC = gcc		
 
-  CFLAGS = -c -O3 -I/home/$(USER)/local/include/ -I/usr/include/
-  LFLAGS = -lm -L/home/$(USER)/local/lib -Wl,-R /home/$(USER)/local
+CFLAGS = -c -pg -I/home/$(USER)/local/include/ -I/usr/include/
+LFLAGS = -pg -lm -L/home/$(USER)/local/lib -Wl,-R /home/$(USER)/local
 
-one_contribution:
-	echo Estoy compilando $@.c
+fit_sigmav:
 	$(CC) $(CFLAGS) $@.c -o $@.o
 	$(CC) $@.o $(LFLAGS) -lgsl -lgslcblas -lm -o $@.x
 # 	mv $@ $@.x
