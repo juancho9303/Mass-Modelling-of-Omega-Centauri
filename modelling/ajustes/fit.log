@@ -1,0 +1,46 @@
+
+
+*******************************************************************************
+Wed Mar  2 13:20:07 2016
+
+
+FIT:    data read from "datos2_ready_parsec_cut.dat" u 1:(log($2))
+        format = x:z
+        #datapoints = 40
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 2312.83           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 5.3173
+
+initial set of free parameter values
+
+a               = 1
+b               = 1
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 5.6839
+rel. change during last iteration : -6.54068e-10
+
+degrees of freedom    (FIT_NDF)                        : 38
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.386751
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.149576
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = -0.573017        +/- 0.0128       (2.234%)
+b               = 8.88789          +/- 0.09543      (1.074%)
+
+
+correlation matrix of the fit parameters:
+
+               a      b      
+a               1.000 
+b              -0.768  1.000 

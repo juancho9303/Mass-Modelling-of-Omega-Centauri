@@ -170,7 +170,7 @@ int main(int argc, char *argv[])
 				R[i] = R[i]*0.1;
 			      
 			      evaluate_integral(R[i], beta, gamma, a_dm, a_s, M_dm, M_s, &sig_p[i], &R_arcmin[i]);
-			      printf ("%16.8lf %16.8lf\n", R_arcmin, sig_p_i);
+			      printf ("%16.8lf %16.8lf %g\n", R_arcmin, sig_p_i, i);
 			       //fprintf (chi_cua, "%g %g\n", R_arcmin, sig_p_i);
 			    }
 			  printf ("\n");
