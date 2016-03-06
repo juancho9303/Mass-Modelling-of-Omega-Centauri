@@ -21,7 +21,7 @@ struct param
   double beta, a_s, a_dm, M_s, M_dm, R;  
 };
 
-#include "routines.c"
+#include "routines_AD.c"
 
 int evaluate_integral(double R, double beta, double gamma, double a_dm, double a_s, double M_dm, double M_s, double *sig_p, double *R_arcmin)
 {
