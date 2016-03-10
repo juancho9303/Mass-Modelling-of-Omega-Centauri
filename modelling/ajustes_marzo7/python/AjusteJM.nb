@@ -1,0 +1,303 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     12488,        294]
+NotebookOptionsPosition[     11923,        272]
+NotebookOutlinePosition[     12259,        287]
+CellTagsIndexPosition[     12216,        284]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"data", "=", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"0.50", ",", "13.27"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"1.50", ",", "13.12"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"2.50", ",", "12.54"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"3.50", ",", "12.28"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"4.50", ",", "12.03"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"6.50", ",", "11.24"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"10.00", ",", "11.28"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"14.00", ",", "7.78"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"18.00", ",", "6.50"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"22.00", ",", "5.25"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"26.00", ",", "4.71"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"36.50", ",", "4.67"}], "}"}]}], "}"}]}], ";"}], 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.647308855166385*^9, 3.6473088868495846`*^9}, {
+   3.6473090192831926`*^9, 3.6473090247228317`*^9}, {3.6473092258094544`*^9, 
+   3.6473092551811695`*^9}, 3.64730941907815*^9, 3.647309452316388*^9, {
+   3.6647447128763437`*^9, 3.664744714362433*^9}, {3.664745268411086*^9, 
+   3.6647452703116302`*^9}, {3.6647458071094923`*^9, 3.664746008328961*^9}, {
+   3.66475270238713*^9, 3.664752705032168*^9}, {3.6647528144335413`*^9, 
+   3.664752894242467*^9}, {3.664753028177177*^9, 3.6647530324516*^9}, {
+   3.664753066268165*^9, 3.664753161947131*^9}, {3.664753230917252*^9, 
+   3.664753233186325*^9}, {3.664753292589205*^9, 3.664753298198389*^9}, 
+   3.664753724708626*^9, {3.664753885972218*^9, 3.664753886358227*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"fiteo", "=", 
+    RowBox[{"NonlinearModelFit", "[", 
+     RowBox[{"data", ",", 
+      RowBox[{"Ms", "*", "Mdm", "*", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"-", "1.0"}], ")"}], "/", 
+         RowBox[{"(", 
+          RowBox[{"(", 
+           RowBox[{"2.0", "*", "as\.b3", "*", 
+            RowBox[{"(", 
+             RowBox[{"as", "-", "adm"}], ")"}], "\:2074", "*", "adm", "*", 
+            "adm", "*", 
+            RowBox[{"(", 
+             RowBox[{"as", "+", "r"}], ")"}], "*", 
+            RowBox[{"(", 
+             RowBox[{"as", "+", "r"}], ")"}], "*", 
+            RowBox[{"(", 
+             RowBox[{"adm", "+", "r"}], ")"}]}], ")"}], ")"}]}], ")"}], "*", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"2.0", "*", 
+           RowBox[{"(", 
+            RowBox[{"as", "-", "adm"}], ")"}], "\:2074", "*", 
+           RowBox[{"(", 
+            RowBox[{"as", "+", "r"}], ")"}], "*", 
+           RowBox[{"(", 
+            RowBox[{"as", "+", "r"}], ")"}], "*", 
+           RowBox[{"(", 
+            RowBox[{"adm", "+", "r"}], ")"}], "*", "log", 
+           RowBox[{"(", "r", ")"}]}], ")"}], "-", 
+         RowBox[{"(", 
+          RowBox[{"2.0", "*", "adm", "*", "adm", "*", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"6.0", "*", "as", "*", "as"}], "-", 
+             RowBox[{"4.0", "*", "as", "*", "adm"}], "+", 
+             RowBox[{"adm", "*", "adm"}]}], ")"}], "*", 
+           RowBox[{"(", 
+            RowBox[{"as", "+", "r"}], ")"}], "*", 
+           RowBox[{"(", 
+            RowBox[{"as", "+", "r"}], ")"}], "*", 
+           RowBox[{"(", 
+            RowBox[{"adm", "+", "r"}], ")"}], "*", "log", 
+           RowBox[{"(", 
+            RowBox[{"as", "+", "r"}], ")"}]}], ")"}], "+", 
+         RowBox[{"as", "*", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"as", "-", "adm"}], ")"}], "*", "adm", "*", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"2.0", "*", "as\:2074"}], "+", 
+               RowBox[{"4.0", "*", "as\.b3", "*", "r"}], "-", 
+               RowBox[{"2.0", "*", "adm", "*", "adm", "*", "r", "*", 
+                RowBox[{"(", 
+                 RowBox[{"adm", "+", "r"}], ")"}]}], "+", 
+               RowBox[{"3.0", "*", "as", "*", "adm", "*", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"-", "adm"}], "*", "adm"}], "+", 
+                  RowBox[{"adm", "*", "r"}], "+", 
+                  RowBox[{"2.0", "*", "r", "*", "r"}]}], ")"}]}], "+", 
+               RowBox[{"as", "*", "as", "*", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"7.0", "*", "adm", "*", "adm"}], "+", 
+                  RowBox[{"7.0", "*", "adm", "*", "r"}], "+", 
+                  RowBox[{"2.0", "*", "r", "*", "r"}]}], ")"}]}]}], ")"}]}], 
+            "-", 
+            RowBox[{"(", 
+             RowBox[{"2.0", "*", "as", "*", "as", "*", 
+              RowBox[{"(", 
+               RowBox[{"as", "-", 
+                RowBox[{"4.0", "*", "adm"}]}], ")"}], "*", 
+              RowBox[{"(", 
+               RowBox[{"as", "+", "r"}], ")"}], "*", 
+              RowBox[{"(", 
+               RowBox[{"as", "+", "r"}], ")"}], "*", 
+              RowBox[{"(", 
+               RowBox[{"adm", "+", "r"}], ")"}], "*", "log", 
+              RowBox[{"(", 
+               RowBox[{"adm", "+", "r"}], ")"}]}], ")"}]}], ")"}]}]}], 
+        ")"}]}], ",", 
+      RowBox[{"{", 
+       RowBox[{"Ms", ",", "Mdm", ",", "as", ",", "adm"}], "}"}], ",", "r"}], 
+     "]"}]}], ";"}], "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.584918039449786*^9, 3.584918058668879*^9}, {
+   3.647284534806916*^9, 3.647284679364809*^9}, {3.647284737158844*^9, 
+   3.647284738045491*^9}, {3.647284771569178*^9, 3.6472847886944523`*^9}, {
+   3.647285193741284*^9, 3.64728520244009*^9}, {3.647285383200955*^9, 
+   3.647285425855393*^9}, {3.647285458554533*^9, 3.647285458726388*^9}, {
+   3.647286551783083*^9, 3.647286556799403*^9}, {3.647286644428136*^9, 
+   3.647286674699852*^9}, {3.647286900953438*^9, 3.6472869129557867`*^9}, {
+   3.647294130964675*^9, 3.647294132861866*^9}, {3.64729626404961*^9, 
+   3.647296272278679*^9}, {3.6472969822027063`*^9, 3.6472969944425783`*^9}, {
+   3.647304150054432*^9, 3.64730415356847*^9}, {3.647304219822587*^9, 
+   3.6473042199921227`*^9}, {3.647304530143248*^9, 3.647304548568906*^9}, {
+   3.64730656171751*^9, 3.647306610084361*^9}, {3.64730668779316*^9, 
+   3.647306691477087*^9}, {3.6473080803418026`*^9, 3.6473080900983305`*^9}, {
+   3.647308222124239*^9, 3.647308223497158*^9}, {3.647308283481941*^9, 
+   3.6473083187005053`*^9}, {3.6473083647773347`*^9, 3.647308365415762*^9}, {
+   3.647309321683354*^9, 3.6473093285639563`*^9}, 3.6473095605192213`*^9, {
+   3.6473097617689433`*^9, 3.6473097898557353`*^9}, {3.6473098680066833`*^9, 
+   3.647309883808257*^9}, {3.647310746349496*^9, 3.6473107477044635`*^9}, {
+   3.6473110019105225`*^9, 3.647311006137352*^9}, {3.6647450477814302`*^9, 
+   3.664745090459818*^9}, {3.6647452261186028`*^9, 3.6647452320924788`*^9}, {
+   3.6647455861617317`*^9, 3.664745592472167*^9}, 3.6647460579710703`*^9, {
+   3.664752457689744*^9, 3.664752477283804*^9}, {3.664752528559218*^9, 
+   3.6647525330165*^9}, {3.664752564927277*^9, 3.664752637764896*^9}, {
+   3.664752700197541*^9, 3.664752721733529*^9}, {3.6647527595872183`*^9, 
+   3.664752762332026*^9}, {3.664752897135779*^9, 3.6647528999998293`*^9}, {
+   3.664752960354287*^9, 3.664752962859573*^9}, {3.664753300806136*^9, 
+   3.664753303977729*^9}, 3.664753360898252*^9, {3.6647534012400093`*^9, 
+   3.6647534016425333`*^9}, {3.6647534346023893`*^9, 3.664753458005431*^9}, {
+   3.664753495494206*^9, 3.664753541781356*^9}, {3.664753680277276*^9, 
+   3.664753681397043*^9}, {3.664753924818215*^9, 3.6647539267243013`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Power", "::", "infy"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Infinite expression \[NoBreak]\\!\\(1\\/0.`\\)\[NoBreak] \
+encountered. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/infy\\\", ButtonNote -> \
+\\\"Power::infy\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.664753899521851*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NonlinearModelFit", "::", "nrlnum"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"The function value \[NoBreak]\\!\\({ComplexInfinity, \
+ComplexInfinity, ComplexInfinity, ComplexInfinity, ComplexInfinity, \
+ComplexInfinity, ComplexInfinity, ComplexInfinity, ComplexInfinity, \
+ComplexInfinity, ComplexInfinity, ComplexInfinity}\\)\[NoBreak] is not a list \
+of real numbers with dimensions \[NoBreak]\\!\\({12}\\)\[NoBreak] at \
+\[NoBreak]\\!\\({Ms, Mdm, as, adm}\\)\[NoBreak] = \[NoBreak]\\!\\({1.`, 1.`, \
+1.`, 1.`}\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/NonlinearModelFit\\\", ButtonNote -> \
+\\\"NonlinearModelFit::nrlnum\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.664753899578323*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Power", "::", "infy"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Infinite expression \[NoBreak]\\!\\(1\\/0.`\\)\[NoBreak] \
+encountered. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/infy\\\", ButtonNote -> \
+\\\"Power::infy\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.664753899617127*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NonlinearModelFit", "::", "nrlnum"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"The function value \[NoBreak]\\!\\({ComplexInfinity, \
+ComplexInfinity, ComplexInfinity, ComplexInfinity, ComplexInfinity, \
+ComplexInfinity, ComplexInfinity, ComplexInfinity, ComplexInfinity, \
+ComplexInfinity, ComplexInfinity, ComplexInfinity}\\)\[NoBreak] is not a list \
+of real numbers with dimensions \[NoBreak]\\!\\({12}\\)\[NoBreak] at \
+\[NoBreak]\\!\\({Ms, Mdm, as, adm}\\)\[NoBreak] = \[NoBreak]\\!\\({1.`, 1.`, \
+1.`, 1.`}\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/NonlinearModelFit\\\", ButtonNote -> \
+\\\"NonlinearModelFit::nrlnum\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.6647538996694193`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"fiteo", "[", "\"\<ParameterTable\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.64730984439989*^9, 3.6473098601724415`*^9}, {
+  3.647309965966278*^9, 3.647310002179508*^9}, {3.664745601062674*^9, 
+  3.664745601516851*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{"fiteo", "[", "r", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"r", ",", "0", ",", "20"}], "}"}], ",", 
+   RowBox[{"PlotStyle", "\[Rule]", "Red"}], ",", 
+   RowBox[{"Epilog", "\[RuleDelayed]", 
+    RowBox[{"Point", "[", "data", "]"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.647285273936925*^9, 3.647285274468855*^9}, {
+  3.6472856531611843`*^9, 3.647285653408366*^9}, {3.647296285178439*^9, 
+  3.6472962865397787`*^9}, {3.647309477063381*^9, 3.647309484781546*^9}, {
+  3.6473095483981094`*^9, 3.647309551139943*^9}, {3.64731111603188*^9, 
+  3.6473111202817855`*^9}, {3.64731119229387*^9, 3.647311227546455*^9}, {
+  3.6647456040891933`*^9, 3.664745604451405*^9}, {3.664753388414751*^9, 
+  3.6647533885735598`*^9}}]
+},
+WindowSize->{675, 710},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+FrontEndVersion->"10.0 for Linux x86 (64-bit) (September 9, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[545, 20, 1740, 40, 121, "Input"],
+Cell[CellGroupData[{
+Cell[2310, 64, 5967, 124, 363, "Input"],
+Cell[8280, 190, 447, 10, 43, "Message"],
+Cell[8730, 202, 849, 15, 94, "Message"],
+Cell[9582, 219, 447, 10, 43, "Message"],
+Cell[10032, 231, 851, 15, 94, "Message"]
+}, Open  ]],
+Cell[10898, 249, 244, 4, 32, "Input"],
+Cell[11145, 255, 774, 15, 32, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)

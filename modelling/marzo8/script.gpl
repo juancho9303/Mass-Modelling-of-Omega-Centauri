@@ -1,0 +1,15 @@
+plot 'sigma.dat'pt 7 ps 1.2
+replot 'chi_cuadrado.dat' u 1:2 w l
+reset
+set grid
+set terminal png
+set output 'sigma.png'
+set nokey
+set title 'Sigma Proyectada vs R'
+set xrange [0:40]
+set yrange [4:14]
+set xlabel 'Radius in Arcmin'
+set ylabel 'Projected velocity dispersion in km/s'
+plot 'sigma.dat'pt 7 ps 1.2
+replot 'chi_cuadrado.dat' u 1:2 w l
+pause -1
