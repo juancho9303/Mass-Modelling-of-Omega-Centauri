@@ -152,18 +152,19 @@ int main(int argc, char *argv[])
     nread = fscanf(sigma,"%lf %lf %lf", &R_o[j], &sig_p_o[j], &numb_error[j]);
   fclose(sigma);
   
+  a_s =  2.23;  //STELLAR SCALENGTH OF 2.234 PARSECS FROM THE FITTING OF NOYOLA'S DATA
+  
   // THE VARIATIONS OF THE PARAMETERS
 
-  gamma_ini  = 0.1;        gamma_end  = 3.0;      Delta_gamma  = 0.8;
-  adm_ini    = 1.0;        adm_end    = 60.0;     Delta_adm    = 6.0;
-  as_ini     = 1.0;         as_end    = 60.0;     Delta_as     = 6.0;
-  Mdm_ini    = 1.0;        Mdm_end    = 80.0;     Delta_Mdm    = 8.0;
-  Ms_ini     = 1.0;        Ms_end     = 80.0;     Delta_Ms     = 8.0;
-  beta_ini   = 0.00001;    beta_end   = 1.0;      Delta_beta   = 0.2;
+  gamma_ini  = 0.1;        gamma_end  = 3.0;      Delta_gamma  = 0.5;
+  adm_ini    = 1.0;        adm_end    = 60.0;     Delta_adm    = 5.0;
+  Mdm_ini    = 1.0;        Mdm_end    = 80.0;     Delta_Mdm    = 5.0;
+  Ms_ini     = 1.0;        Ms_end     = 80.0;     Delta_Ms     = 5.0;
+  beta_ini   = 0.00001;    beta_end   = 1.0;      Delta_beta   = 0.1;
 
   // THIS LINE CALCULATES THE NUMBER OF ITERATIONS FOR THE USER'S REFERENCE
   int Ntotal_iterations, counter, cuenta;
-  Ntotal_iterations = (int) ( ((beta_end-beta_ini)/Delta_beta)*((gamma_end-gamma_ini)/Delta_gamma)*((adm_end-adm_ini)/Delta_adm)*((as_end-as_ini)/Delta_as)*((Mdm_end-Mdm_ini)/Delta_Mdm)*((Ms_end-Ms_ini)/Delta_Ms) );
+  Ntotal_iterations = (int) ( ((beta_end-beta_ini)/Delta_beta)*((gamma_end-gamma_ini)/Delta_gamma)*((adm_end-adm_ini)/Delta_adm)*((Mdm_end-Mdm_ini)/Delta_Mdm)*((Ms_end-Ms_ini)/Delta_Ms) );
   
   printf("  Running %d iterations in parameter space\n", Ntotal_iterations);
   
@@ -181,62 +182,59 @@ int main(int argc, char *argv[])
   for(beta = beta_ini; beta <= beta_end; beta = beta + Delta_beta)
     { 
       for(gamma = gamma_ini; gamma <= gamma_end;  gamma = gamma + Delta_gamma)
-	{
+	{     
 	  for(a_dm = adm_ini; a_dm <= adm_end;  a_dm = a_dm + Delta_adm)
-	    {     
-	      for(a_s = as_ini; a_s <= as_end;  a_s = a_s + Delta_as)
+	    {
+	      // THIS IS TO AVOID INDETERMINATIONS IN SOME DENOMINATORS
+	      if (a_s != a_dm)
 		{
-		  // THIS IS TO AVOID INDETERMINATIONS IN SOME DENOMINATORS
-		  if (a_s != a_dm)
+		  for(M_dm = Mdm_ini; M_dm < Mdm_end;  M_dm = M_dm + Delta_Mdm)
 		    {
-		      for(M_dm = Mdm_ini; M_dm < Mdm_end;  M_dm = M_dm + Delta_Mdm)
+		      for(M_s = Ms_ini; M_s < Ms_end;  M_s = M_s + Delta_Ms)
 			{
-			  for(M_s = Ms_ini; M_s < Ms_end;  M_s = M_s + Delta_Ms)
+			  for(i = 0; i < K; i ++)
 			    {
-			      for(i = 0; i < K; i ++)
-				{
-				  evaluate_integral(R[i], beta, gamma, a_dm, a_s, M_dm, M_s, &sig_p[i], &R_arcmin[i]);
-				  //printf("%d R = %lf I=%lf\n",i, log10(R[i]), sig_p[i]);
-				}
+			      evaluate_integral(R[i], beta, gamma, a_dm, a_s, M_dm, M_s, &sig_p[i], &R_arcmin[i]);
+			      //printf("%d R = %lf I=%lf\n",i, log10(R[i]), sig_p[i]);
+			    }
 			  
-			      // ALLOC MEMORY FOR THE INTERPOLATION IN EACH STEP
-			      gsl_interp_accel *acc  =  gsl_interp_accel_alloc ();
-			      gsl_spline *spline     =  gsl_spline_alloc (gsl_interp_cspline, 90);
+			  // ALLOC MEMORY FOR THE INTERPOLATION IN EACH STEP
+			  gsl_interp_accel *acc  =  gsl_interp_accel_alloc ();
+			  gsl_spline *spline     =  gsl_spline_alloc (gsl_interp_cspline, 90);
 			  
-			      gsl_spline_init (spline, R_arcmin, sig_p, 90);
-			      
-			      chi2 = 0.0;
-			      for(j=0; j<NUMBER_OF_SIGMA_BINS; j++)
-				{
-				  sig_p_i = gsl_spline_eval (spline, R_o[j], acc);
-				  chi2 += ( (sig_p_i-sig_p_o[j])*(sig_p_i-sig_p_o[j]) ) / numb_error[j];
-				  //printf("%16.8lf\t %16.8lf\n", sig_p_i, chi2);
-				}
-			      
-			      // FREE MEMORY
-			      gsl_spline_free (spline);
-			      gsl_interp_accel_free (acc);
-			      
-			      // CALCULATION OF XI SQUARE TO FIND THE OPTIMIZED PARAMETERS
-			      if(chi2 < chi_min)
-				{
-				  chi_min   = chi2;
-				  a_dm_min  = a_dm;
-				  a_s_min   = a_s;
-				  M_dm_min  = M_dm;
-				  M_s_min   = M_s;
-				  gamma_min = gamma;
-				  beta_min = beta;
-				}
-			      
-			      if((counter%1000) == 0)
-				printf("Ready %d iterations of %d\n",counter, Ntotal_iterations);
-			      counter++;
-			      
-			    }// for Ms
-			}// for Mdm	      
-		    }// if for the singularity
-		}//for as
+			  gsl_spline_init (spline, R_arcmin, sig_p, 90);
+			  
+			  chi2 = 0.0;
+			  for(j=0; j<NUMBER_OF_SIGMA_BINS; j++)
+			    {
+			      sig_p_i = gsl_spline_eval (spline, R_o[j], acc);
+			      chi2 += ( (sig_p_i-sig_p_o[j])*(sig_p_i-sig_p_o[j]) ) / numb_error[j];
+			      //printf("%16.8lf\t %16.8lf\n", sig_p_i, chi2);
+			    }
+			  
+			  // FREE MEMORY
+			  gsl_spline_free (spline);
+			  gsl_interp_accel_free (acc);
+			  
+			  // CALCULATION OF XI SQUARE TO FIND THE OPTIMIZED PARAMETERS
+			  if(chi2 < chi_min)
+			    {
+			      chi_min   = chi2;
+			      a_dm_min  = a_dm;
+			      a_s_min   = a_s;
+			      M_dm_min  = M_dm;
+			      M_s_min   = M_s;
+			      gamma_min = gamma;
+			      beta_min = beta;
+			    }
+			  
+			  if((counter%1000) == 0)
+			    printf("Ready %d iterations of %d\n",counter, Ntotal_iterations);
+			  counter++;
+			  
+			}// for Ms
+		    }// for Mdm	      
+		}// if for the singularity
 	    }// for adm
 	}//for gamma
     }//for beta
@@ -257,7 +255,7 @@ int main(int argc, char *argv[])
   
   printf("xi=%16.8lf beta=%16.8lf a_dm/pc=%16.8lf a_s/pc=%16.8lf M_dm/Msun=%16.8elf M_s/Msun=%16.8e gamma=%lf\n",
 	 chi_min, beta_min, a_dm_min, a_s_min, (1.0e5)*M_dm_min, (1.0e5)*M_s_min, gamma_min);
-  
+   
   script = fopen( "script.gpl", "w" );
   fprintf( script, "plot 'sigma.dat'pt 7 ps 1.2\n" );
   fprintf( script, "replot 'best_model.dat' u 1:2 w l\n");

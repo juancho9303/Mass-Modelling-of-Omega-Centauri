@@ -63,7 +63,7 @@ int evaluate_integral(double R, double beta, double gamma, double a_dm, double a
   //////////////////////////////////////////////////////////////
   //  THIS IS JUST TO PRINT THE INTEGRAND TO SEE ITS BEHAVIOR  //
   ///////////////////////////////////////////////////////////////
-  /* 
+   
     {
     FILE *pf=NULL;
     double r;
@@ -75,7 +75,7 @@ int evaluate_integral(double R, double beta, double gamma, double a_dm, double a
     fclose(pf);
     exit(0);
     } 
-  */
+  
   ///////////////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////////////
   

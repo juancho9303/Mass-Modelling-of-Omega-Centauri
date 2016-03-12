@@ -38,7 +38,7 @@ struct param
 
 // THE FILE ROUTINES.C HAS THE LARGE EQUATIONS OF THE INTEGRAND 
 
-#include "routines.c"
+#include "routines_AD.c"
 
 //THIS IS THE FUNCTION THAT CONTAINS ALL THE CALCULATIONS, INCLUDING THE INTEGRALS AND INTERPOLATIONS 
 
@@ -154,16 +154,16 @@ int main(int argc, char *argv[])
   
   // THE VARIATIONS OF THE PARAMETERS
 
-  gamma_ini  = 0.1;        gamma_end  = 3.0;      Delta_gamma  = 0.8;
-  adm_ini    = 1.0;        adm_end    = 60.0;     Delta_adm    = 6.0;
-  as_ini     = 1.0;         as_end    = 60.0;     Delta_as     = 6.0;
-  Mdm_ini    = 1.0;        Mdm_end    = 80.0;     Delta_Mdm    = 8.0;
-  Ms_ini     = 1.0;        Ms_end     = 80.0;     Delta_Ms     = 8.0;
-  beta_ini   = 0.00001;    beta_end   = 1.0;      Delta_beta   = 0.2;
+  gamma_ini  = 0.1;        gamma_end  = 3.0;      Delta_gamma  = 0.2;
+  adm_ini    = 1.0;        adm_end    = 60.0;     Delta_adm    = 1.0;
+  as_ini     = 1.0;        as_end     = 60.0;     Delta_as     = 1.0;
+  Mdm_ini    = 1.0;        Mdm_end    = 80.0;     Delta_Mdm    = 1.0;
+  Ms_ini     = 1.0;        Ms_end     = 80.0;     Delta_Ms     = 1.0;
+  beta_ini   = 0.0001;     beta_end   = 1.0;      Delta_beta   = 0.1;
 
   // THIS LINE CALCULATES THE NUMBER OF ITERATIONS FOR THE USER'S REFERENCE
   int Ntotal_iterations, counter, cuenta;
-  Ntotal_iterations = (int) ( ((beta_end-beta_ini)/Delta_beta)*((gamma_end-gamma_ini)/Delta_gamma)*((adm_end-adm_ini)/Delta_adm)*((as_end-as_ini)/Delta_as)*((Mdm_end-Mdm_ini)/Delta_Mdm)*((Ms_end-Ms_ini)/Delta_Ms) );
+  Ntotal_iterations = (int) ( ((beta_end-beta_ini)/Delta_beta)*((gamma_end-gamma_ini)/Delta_gamma)*((adm_end-adm_ini)/Delta_adm)*((Mdm_end-Mdm_ini)/Delta_Mdm)*((Ms_end-Ms_ini)/Delta_Ms) );
   
   printf("  Running %d iterations in parameter space\n", Ntotal_iterations);
   
@@ -260,17 +260,17 @@ int main(int argc, char *argv[])
   
   script = fopen( "script.gpl", "w" );
   fprintf( script, "plot 'sigma.dat'pt 7 ps 1.2\n" );
-  fprintf( script, "replot 'best_model.dat' u 1:2 w l\n");
-  fprintf( script, "reset\n");
+  //fprintf( script, "replot 'best_model.dat' u 1:2 w l\n");
+  //fprintf( script, "reset\n");
   fprintf(script, "set grid\nset terminal png\nset output 'sigma.png'\nset nokey\n");
   fprintf( script, "set title 'Sigma Proyectada vs R'\n" );
   fprintf( script, "set xrange [0:40]\n" );
   fprintf( script, "set yrange [4:14]\n" );
   fprintf( script, "set xlabel 'Radius in Arcmin'\n" );
   fprintf( script, "set ylabel 'Projected velocity dispersion in km/s'\n" );
-  fprintf( script, "plot 'sigma.dat'pt 7 ps 1.2\n" );
+  //fprintf( script, "plot 'sigma.dat'pt 7 ps 1.2\n" );
   fprintf( script, "replot 'best_model.dat' u 1:2 w l\n");
-  fprintf( script, "pause -1\n");
+  //fprintf( script, "pause -1\n");
   fclose(script);
   
   warn = system("gnuplot script.gpl");

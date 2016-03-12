@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      3320,        111]
-NotebookOptionsPosition[      2975,         94]
-NotebookOutlinePosition[      3311,        109]
-CellTagsIndexPosition[      3268,        106]
+NotebookDataLength[      3444,        119]
+NotebookOptionsPosition[      3138,        103]
+NotebookOutlinePosition[      3474,        118]
+CellTagsIndexPosition[      3431,        115]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -67,29 +67,38 @@ Cell[BoxData[
    3.666632331040915*^9}}],
 
 Cell[BoxData[
- RowBox[{
-  StyleBox[
-   RowBox[{"Integrate", "::", "idiv"}], "MessageName"], 
+ RowBox[{"ConditionalExpression", "[", 
   RowBox[{
-  ":", " "}], "\<\"Integral of \[NoBreak]\\!\\(\\((a + x)\\)\\^5\\/x\\)\
-\[NoBreak] does not converge on \[NoBreak]\\!\\({r, \
-\[Infinity]}\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
-ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
-ButtonData:>\\\"paclet:ref/message/Integrate/idiv\\\", ButtonNote -> \
-\\\"Integrate::idiv\\\"]\\)\"\>"}]], "Message", "MSG",
- CellChangeTimes->{3.666632324179838*^9}],
-
-Cell[BoxData[
- RowBox[{
-  SubsuperscriptBox["\[Integral]", "r", "\[Infinity]"], 
-  RowBox[{
-   FractionBox[
-    SuperscriptBox[
-     RowBox[{"(", 
-      RowBox[{"a", "+", "x"}], ")"}], "5"], "x"], 
-   RowBox[{"\[DifferentialD]", "x"}]}]}]], "Output",
- CellChangeTimes->{3.666570143062327*^9, 3.666572876577797*^9, 
-  3.666632324235198*^9}]
+   RowBox[{
+    RowBox[{"-", 
+     FractionBox[
+      RowBox[{
+       RowBox[{"25", " ", 
+        SuperscriptBox["a", "3"]}], "+", 
+       RowBox[{"52", " ", 
+        SuperscriptBox["a", "2"], " ", "r"}], "+", 
+       RowBox[{"42", " ", "a", " ", 
+        SuperscriptBox["r", "2"]}], "+", 
+       RowBox[{"12", " ", 
+        SuperscriptBox["r", "3"]}]}], 
+      RowBox[{"12", " ", 
+       SuperscriptBox["a", "4"], " ", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{"a", "+", "r"}], ")"}], "4"]}]]}], "+", 
+    FractionBox[
+     RowBox[{"Log", "[", 
+      FractionBox[
+       RowBox[{"a", "+", "r"}], "r"], "]"}], 
+     SuperscriptBox["a", "5"]]}], ",", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Re", "[", "r", "]"}], ">", "0"}], "&&", 
+    RowBox[{
+     RowBox[{"Im", "[", "r", "]"}], "\[Equal]", "0"}]}]}], "]"}]], "Output",
+ CellChangeTimes->{
+  3.666570143062327*^9, 3.666572876577797*^9, {3.666632324235198*^9, 
+   3.6666323343324738`*^9}}]
 }, Open  ]]
 },
 WindowSize->{675, 710},
@@ -110,8 +119,7 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 1514, 44, 99, "Input"],
-Cell[2097, 68, 520, 11, 48, "Message"],
-Cell[2620, 81, 339, 10, 53, "Output"]
+Cell[2097, 68, 1025, 32, 98, "Output"]
 }, Open  ]]
 }
 ]
