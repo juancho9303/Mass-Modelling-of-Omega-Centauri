@@ -34,5 +34,9 @@
 \contentsline {subsection}{\numberline {3.5.1}RVSAO}{50}{subsection.107}
 \contentsline {subsection}{\numberline {3.5.2}FXCOR}{53}{subsection.113}
 \contentsline {chapter}{\numberline {4}Modelling}{56}{chapter.118}
-\contentsline {chapter}{\numberline {5}Conclusions}{57}{chapter.121}
-\contentsline {chapter}{Bibliography}{58}{chapter*.122}
+\contentsline {section}{\numberline {4.1}Mass determination of Omega Centauri}{56}{section.119}
+\contentsline {subsection}{\numberline {4.1.1}Stellar Population Synthesis with Starlight}{56}{subsection.120}
+\contentsline {subsection}{\numberline {4.1.2}Modified Hernquist Model}{58}{subsection.123}
+\contentsline {subsection}{\numberline {4.1.3}Color-Magnitude diagrams}{58}{subsection.124}
+\contentsline {chapter}{\numberline {5}Conclusions}{59}{chapter.125}
+\contentsline {chapter}{Bibliography}{60}{chapter*.126}
