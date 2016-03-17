@@ -15,9 +15,9 @@ int main (void)
   lim[2]=2.0;
   lim[3]=3.0;
   lim[4]=4.0;
-  lim[5]=6.0;
-  lim[6]=8.0;
-  lim[7]=12.0;
+  lim[5]=7.0;
+  lim[6]=10.0;
+  lim[7]=13.0;
   lim[8]=16.0;
   lim[9]=20.0;
   lim[10]=24.0;
@@ -26,7 +26,7 @@ int main (void)
   counter = 0.0;
   
   double pos[N],vel[N],err[N],vel_sq, sum;
-  double mean, median, skew, sd, kurtosis;
+  double mean, median, skew, sd, kurtosis, error;
   
     
   FILE *velo, *sig, *script;
@@ -65,7 +65,7 @@ int main (void)
       printf ("Skewness is %g\n", skew);
       printf ("kurtosis is %g\n\n", kurtosis);
       //printf("Sigma in the bin is: %.2f\n\n", sig);
-      fprintf(sig, "%.2f\t %.2f\n", (lim[j]+lim[j+1])*0.5, sd);
+      fprintf(sig, "%.2f\t %.2f\t %d\n", (lim[j]+lim[j+1])*0.5, sd, counter);
       
     }
     fclose(sig);
@@ -73,10 +73,11 @@ int main (void)
     script = fopen( "script1.gpl", "w" );
       fprintf(script, "set grid\nset terminal png\nset output 'Sigma_vs_rad.png'\nset nokey\n");
       fprintf( script, "set title 'Sigma vs Radius'\n" );
+      //fprintf( script, "set logscale x\n" );
       fprintf( script, "set xlabel 'Radius in Arcmin'\n" );
       //fprintf( script, "set yrange [25:100]\n" );
       fprintf( script, "set ylabel 'Sigma (km/s)'\n" );
-      fprintf( script, "plot 'sigma.dat' u 1:2 w l\n");
+      fprintf( script, "plot 'sigma.dat' u 1:2 pt 7 ps 1\n");
       fclose(script);
       
       warn = system("gnuplot script1.gpl");

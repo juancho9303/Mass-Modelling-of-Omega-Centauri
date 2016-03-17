@@ -4,6 +4,5 @@ set output 'Sigma_vs_rad.png'
 set nokey
 set title 'Sigma vs Radius'
 set xlabel 'Radius in Arcmin'
-set yrange [25:100]
 set ylabel 'Sigma (km/s)'
-plot 'sigma.dat' u 1:2:3 w yerrorbars lt 12, '' using 1:2 w p pt 7 ps 0.8 lt 12
+plot 'sigma.dat' u 1:2 pt 7 ps 1

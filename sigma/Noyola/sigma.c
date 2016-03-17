@@ -13,7 +13,7 @@ int main (void)
   double dis[N],vel[N],min[N],err[N];
   
   FILE *data, *velo, *script;
-  data = fopen("data.dat", "r");
+  data = fopen("data_g3.dat", "r");
   velo = fopen("velocity.dat" , "w");
   
   for(i=0; i<N; i++)
