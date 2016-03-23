@@ -110,7 +110,7 @@ M(r)=M\frac{r^{2}}{(r+a)^{2}}
 Surface brightness 
  
  \begin{equation}
- I(R)=\frac{M}{2\pi a^{2}\gamma\left(1-s^{2}\right)^{2}}\left[\left(2+s^{2}\right)X(s)-3\right]
+ I(R)=\frac{M}{2\pi a^{2}\Gamma\left(1-s^{2}\right)^{2}}\left[\left(2+s^{2}\right)X(s)-3\right]
  \end{equation}
  
  where $s=R/a$, $R$ is the projected radius and:
@@ -128,7 +128,7 @@ For computational simplicity we have written some of the trigonometric functions
 Line of sight velocity dispersion
 
  \begin{equation}
- I(R)\sigma_{p}^{2}(R)=\frac{2}{\gamma}\int_{R}^{\infty}\left(1-\beta\frac{R^{2}}{r^{2}}\right)\frac{\rho\bar{v_{r}^{2}}rdr}{\sqrt{r^{2}-R^{2}}}
+ I(R)\sigma_{p}^{2}(R)=\frac{2}{\Gamma}\int_{R}^{\infty}\left(1-\beta\frac{R^{2}}{r^{2}}\right)\frac{\rho\bar{v_{r}^{2}}rdr}{\sqrt{r^{2}-R^{2}}}
  \end{equation}
 
 Now, for the velocity dispersion we have:
@@ -146,7 +146,7 @@ Where
 So the projected velocity dispersion becomes:
 
 \begin{equation}
-\sigma_{p}^{2}(R)=\frac{2}{I(R)\gamma}\int_{R}^{\infty}\left(1-\beta\frac{R^{2}}{r^{2}}\right)\left(G\int_{r}^{\infty}\frac{\rho(r)M(r)}{r^{2}}dr\right)\frac{rdr}{\sqrt{r^{2}-R^{2}}}
+\sigma_{p}^{2}(R)=\frac{2}{I(R)\Gamma}\int_{R}^{\infty}\left(1-\beta\frac{R^{2}}{r^{2}}\right)\left(G\int_{r}^{\infty}\frac{\rho(r)M(r)}{r^{2}}dr\right)\frac{rdr}{\sqrt{r^{2}-R^{2}}}
 \end{equation}
 
 For our modelling, we assume that the mass of the cluster is the sum of the mass of stars and the mass of non-baryonic matter so that their contributions to the density and mass profiles become:
@@ -200,5 +200,46 @@ c_{5}=2a_{dm}^{2}\left(a_{dm}-4a_{s}\right)\left(a_{dm}+r\right)^{2}\left(a_{s}+
 C=\left(M_{dm}M_{s}/c_{1}\right)\left(c_{2}+c_{3}+a_{dm}\left(-\left(a_{dm}-a_{s}\right)a_{s}c_{4}+c_{5}\right)\right)
 \]
 
+\subsection{Results}
 
+\subsubsection{All parameters}
+
+results:
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular*}{1.0\textwidth}{@{\extracolsep{\fill} } c c c c c c c}
+    \hline
+    \textbf{Experiment} & \textbf{$\beta$} & \textbf{$a_{dm}$} (pc) & \textbf{$a_{s}$} (pc) & \textbf{$M_{dm}$} ($M_{\odot}$) & \textbf{$M_{s}$} ($M_{\odot}$) & \textbf{$\Gamma$}\\ \hline
+	AD & $0.6$ &	$16$ &	$52.8$ &	$2.1 \times 10^{6}$ &	$2.72 \times 10^{6}$ &	$2.3$\\
+	fix $a_s$ &	$0.79$ &	$57.9$ &	$2.23$ &	$8 \times 10^{5}$ &	$3.43 \times 10 ^{6}$ &	$2.1$\\
+	full &	$0.04$ &	$11.8$ &	$57.8$ &	$6 \times 10^{5}$ &	$9 \times 10^{5}$ &	$2.1$\\ \hline
+	noDM &	$0.78$ &	$ a = 2.96$ & &	$  M = 3 \times 10^{6}$ & & 	$1.94$\\
+    \hline
+  \end{tabular*} 
+\caption[It]{Ie}
+\end{center}
+  
+\end{table}
+
+
+
+
+\subsubsection{Fix mass to light ratio}
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular*}{1.0\textwidth}{@{\extracolsep{\fill} } c c c c c c c}
+    \hline
+    \textbf{Experiment} & \textbf{$\beta$} & \textbf{$a_{dm}$} (pc) & \textbf{$a_{s}$} (pc) & \textbf{$M_{dm}$} ($M_{\odot}$) & \textbf{$M_{s}$} ($M_{\odot}$) & \textbf{$\Gamma$}\\ \hline
+	AD & $0.2$ &	$15.2$ &	$59.8$ &	$1.4 \times 10^{6}$ &	$2.1 \times 10^{6}$ &	$2.5$\\
+	fix $a_s$ &	$0.801$ &	$3.0$ &	$2.23$ &	$5 \times 10^{5}$ &	$1.0 \times 10 ^{5}$ &	$2.5$\\
+	full &	$0.9$ &	$16.0$ &	$44.6$ &	$1.62 \times 10^{6}$ &	$1.42 \times 10^{6}$ &	$2.5$\\ \hline
+	noDM &	$0.38$ &	$ a = 2.38$ & &	$  M = 2.03 \times 10^{6}$ & & 	$2.5$\\
+    \hline
+  \end{tabular*} 
+\caption[It]{Ie}
+\end{center}
+  
+\end{table}
 
