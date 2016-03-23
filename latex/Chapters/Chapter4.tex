@@ -95,5 +95,110 @@ The stellar mass should in principle, by smaller or at least equals to the dynam
 
 \subsection{Modified Hernquist Model}
 
-\subsection{Color-Magnitude diagrams}
+Density profile
+
+\begin{equation}
+\rho(r)=\frac{M}{2\pi}\frac{a}{r}\frac{1}{\left(r+a\right)^{3}}
+\end{equation}
+
+Cumulative mass
+
+\begin{equation}
+M(r)=M\frac{r^{2}}{(r+a)^{2}}
+\end{equation}
+ 
+Surface brightness 
+ 
+ \begin{equation}
+ I(R)=\frac{M}{2\pi a^{2}\gamma\left(1-s^{2}\right)^{2}}\left[\left(2+s^{2}\right)X(s)-3\right]
+ \end{equation}
+ 
+ where $s=R/a$, $R$ is the projected radius and:
+
+\begin{equation}
+X(s)=\frac{1}{\sqrt{1-s^{2}}}sech^{-1}s\qquad for\qquad0\leq s\leq1
+\end{equation}
+
+\begin{equation}
+X(s)=\frac{1}{\sqrt{s^{2}-1}}sec^{-1}s\qquad for\qquad1\leq s<\infty
+\end{equation}
+
+For computational simplicity we have written some of the trigonometric functions just like Hernquist did: $sec^{-1}s = cos^{-1}(1/s)$ and $sech^{-1} = ln[(1+\sqrt{1-s^{2}})/s]$
+
+Line of sight velocity dispersion
+
+ \begin{equation}
+ I(R)\sigma_{p}^{2}(R)=\frac{2}{\gamma}\int_{R}^{\infty}\left(1-\beta\frac{R^{2}}{r^{2}}\right)\frac{\rho\bar{v_{r}^{2}}rdr}{\sqrt{r^{2}-R^{2}}}
+ \end{equation}
+
+Now, for the velocity dispersion we have:
+
+\begin{equation}
+\bar{v_{r}^{2}}=\sigma_{r}^{2}=\frac{1}{\rho(r)}\int_{r}^{\infty}\rho(r)\frac{d\phi}{dr}dr
+\end{equation}
+
+Where 
+
+\begin{equation}
+\frac{d\phi}{dr}=\frac{GM(r)}{r^{2}}
+\end{equation}
+
+So the projected velocity dispersion becomes:
+
+\begin{equation}
+\sigma_{p}^{2}(R)=\frac{2}{I(R)\gamma}\int_{R}^{\infty}\left(1-\beta\frac{R^{2}}{r^{2}}\right)\left(G\int_{r}^{\infty}\frac{\rho(r)M(r)}{r^{2}}dr\right)\frac{rdr}{\sqrt{r^{2}-R^{2}}}
+\end{equation}
+
+For our modelling, we assume that the mass of the cluster is the sum of the mass of stars and the mass of non-baryonic matter so that their contributions to the density and mass profiles become:
+
+\begin{equation}
+\rho(r)=\rho_{\star}(r)+\rho_{DM}(r)\qquad and \qquad M(r)=M_{\star}(r)+M_{DM}(r)
+\end{equation} 
+
+\begin{equation}
+A=a_{\star}\left(-\frac{25a_{\star}^{3}+52a_{\star}^{2}r+42a_{\star}r^{2}+12r^{3}}{12a_{\star}^{4}\left(a_{\star}+r\right)^{4}}+\frac{Log\left[\frac{a_{\star}+r}{r}\right]}{a_{\star}^{5}}\right)
+\end{equation}
+
+\begin{equation}
+D=a_{dm}\left(-\frac{25a_{dm}^{3}+52a_{dm}^{2}r+42a_{dm}r^{2}+12r^{3}}{12a_{dm}^{4}\left(a_{dm}+r\right)^{4}}+\frac{Log\left[\frac{a_{dm}+r}{r}\right]}{a_{dm}^{5}}\right)
+\end{equation}
+
+\[
+b_{1}=2a_{s}^{2}(a_{s}-a_{dm})^{4}a_{dm}^{2}(a_{s}+r)^{2}(a_{dm}+r)
+\]
+\[
+b_{2}=-2\left(a_{s}-a_{dm}\right)^{4}\left(a_{s}+r\right)^{2}\left(a_{dm}+r\right)Log[r]
+\]
+\[
+b_{3}=2a_{dm}^{2}\left(6a_{s}^{2}-4a_{s}a_{dm}+a_{dm}^{2}\right)\left(a_{s}+r\right)^{2}\left(a_{dm}+r\right)Log[a_{s}+r]
+\]
+\[
+b_{4}=2a_{s}^{4}+4a_{s}^{3}r-2a_{dm}r(a_{dm}+r)+3a_{s}a_{dm}\left(-a_{dm}^{2}+a_{dm}r+2r^{2}\right)+a_{s}^{2}\left(7a_{dm}^{2}+7a_{dm}r+2r^{2}\right)
+\]
+\[
+b_{5}=2a_{s}^{2}\left(a_{s}-4a_{dm}\right)\left(a_{s}+r\right)^{2}\left(a_{dm}+r\right)Log[a_{dm}+r]
+\]
+\[
+B=\left(M_{s}M_{dm}/b_{1}\right)\left(b_{2}+b_{3}+a_{s}\left(-\left(a_{s}-a_{dm}\right)a_{dm}b_{4}+b_{5}\right)\right)
+\]
+\[
+c_{1}=2a_{dm}^{2}(a_{dm}-a_{s})^{4}a_{s}^{2}(a_{dm}+r)^{2}(a_{s}+r)
+\]
+\[
+c_{2}=-2\left(a_{dm}-a_{s}\right)^{4}\left(a_{dm}+r\right)^{2}\left(a_{s}+r\right)Log[r]
+\]
+\[
+c_{3}=2a_{s}^{2}\left(6a_{dm}^{2}-4a_{dm}a_{s}+a_{s}^{2}\right)\left(a_{dm}+r\right)^{2}\left(a_{s}+r\right)Log[a_{dm}+r]
+\]
+\[
+c_{4}=2a_{dm}^{4}+4a_{dm}^{3}r-2a_{s}r(a_{s}+r)+3a_{dm}a_{s}\left(-a_{s}^{2}+a_{s}r+2r^{2}\right)+a_{dm}^{2}\left(7a_{s}^{2}+7a_{s}r+2r^{2}\right)
+\]
+\[
+c_{5}=2a_{dm}^{2}\left(a_{dm}-4a_{s}\right)\left(a_{dm}+r\right)^{2}\left(a_{s}+r\right)Log[a_{s}+r]
+\]
+\[
+C=\left(M_{dm}M_{s}/c_{1}\right)\left(c_{2}+c_{3}+a_{dm}\left(-\left(a_{dm}-a_{s}\right)a_{s}c_{4}+c_{5}\right)\right)
+\]
+
+
 

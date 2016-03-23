@@ -37,6 +37,5 @@
 \contentsline {section}{\numberline {4.1}Mass determination of Omega Centauri}{56}{section.119}
 \contentsline {subsection}{\numberline {4.1.1}Stellar Population Synthesis with Starlight}{56}{subsection.120}
 \contentsline {subsection}{\numberline {4.1.2}Modified Hernquist Model}{59}{subsection.129}
-\contentsline {subsection}{\numberline {4.1.3}Color-Magnitude diagrams}{59}{subsection.130}
-\contentsline {chapter}{\numberline {5}Conclusions}{60}{chapter.131}
-\contentsline {chapter}{Bibliography}{61}{chapter*.132}
+\contentsline {chapter}{\numberline {5}Conclusions}{62}{chapter.142}
+\contentsline {chapter}{Bibliography}{63}{chapter*.143}

@@ -1,0 +1,10 @@
+set grid
+set terminal png
+set output 'vel_vs_rad.png'
+set nokey
+set title 'Velocity vs Radius'
+set xlabel 'Radius in Arcmin'
+set ylabel 'Radial Velocity (km/s)'
+set xrange [0:50]
+set yrange [170:290]
+plot 'velocity.dat' u 1:2:3 pt 20 ps 0.6 lc '17' with errorbars

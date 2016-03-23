@@ -1,0 +1,10 @@
+IRAF rvsao.emsao 2.8.2 juan@juan-UX303LA  04-Feb-2016 00:25
+File: NGC1904_b_1
+Object: NGC1904  RA: 05:24:11.69 Dec: -24:31:59.9 2000.0
+Observed 2003-Apr-27 23:50:49.20 = JD 2452757.4936 BCV: -13.54
+Combined vel =     0.00 +-    0.00 km/sec, z= 0.0000 
+Emission vel =   -13.54 +-    0.68 km/sec, z= -0.000 for 0/2 lines
+
+Line  Rest lam  Obs. lam    Pixel     z         vel    dvel    eqw    wt
+  Hd   4101.70   4162.91     0.00  0.0000    -13.54    0.00   0.00  0.000 X1
+  Hg   4340.50   4411.85  1056.14  0.0164   4914.39   53.81   0.10  0.000 X4

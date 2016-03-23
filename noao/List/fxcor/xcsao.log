@@ -20,3 +20,24 @@ RA: 09:17:29.92 Dec: 29:15:09.6 2000.0
 2005-Mar-17 05:27:00.00 =HJD2453446.7259 BCV: -19.91
 2979.2A- 7000.0A 2048 points, filter: 5 20 125 250 apodize 0.05 fit 0.5 best 1
 Temp:           eatemp vel: -4986.1  tsh:   0.00 HCV: -19.91 Peak:   0.000 h:0.984 R: 1.556E8 CZ: -4986.1 +/-   0.000 1
+IRAF rvsao.xcsao 2.8.2 juan@juan-UX303LA  04-Feb-2016 00:20
+
+NGC1904_b_1 Object: NGC1904 
+RA: 05:24:11.69 Dec: -24:31:59.9 2000.0
+2003-Apr-27 23:50:49.20 =HJD2452757.4906 BCV: -13.54
+3360.0A- 6420.0A 2048 points, filter: 5 20 125 250 apodize 0.05 fit 0.5 best 1
+Temp:         habtemp0 vel:   0.00  tsh:   0.00 HCV:   0.00 Peak: -16.518 h:0.601 R:   8.55 CZ: -30.059 +/-  37.155 1 +tc
+IRAF rvsao.xcsao 2.8.2 juan@juan-UX303LA  04-Feb-2016 00:21
+
+NGC1904_b_1 Object: NGC1904 
+RA: 05:24:11.69 Dec: -24:31:59.9 2000.0
+2003-Apr-27 23:50:49.20 =HJD2452757.4906 BCV: -13.54
+3360.0A- 6420.0A 2048 points, filter: 5 20 125 250 apodize 0.05 fit 0.5 best 1
+Temp:         habtemp0 vel:   0.00  tsh:   0.00 HCV:   0.00 Peak: -16.518 h:0.601 R:   8.55 CZ: -30.059 +/-  37.155 1 +tc
+IRAF rvsao.xcsao 2.8.2 juan@juan-UX303LA  04-Feb-2016 10:22
+
+NGC1904_b_1 Object: NGC1904 
+RA: 05:24:11.69 Dec: -24:31:59.9 2000.0
+2003-Apr-27 23:50:49.20 =HJD2452757.4906 BCV: -13.54
+3360.0A- 6420.0A 2048 points, filter: 5 20 125 250 apodize 0.05 fit 0.5 best 1
+Temp:         habtemp0 vel:   0.00  tsh:   0.00 HCV:   0.00 Peak: -16.518 h:0.601 R:   8.55 CZ: -30.059 +/-  37.155 1 +tc

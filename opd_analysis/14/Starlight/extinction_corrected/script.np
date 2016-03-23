@@ -1,0 +1,12 @@
+plot "Omega_Cen_S_gnuplot.result"  u 1:((4040*$2)+800) w l notitle
+replot "Omega_cen.dat" w l notitle
+set grid
+set terminal png
+set output 'comparison.png'
+set title 'Comparison betwen original and synthetic spectra'
+set xrange [7750:8850]
+#set xrange [7750:8850]
+set xlabel 'Wavelength'
+set ylabel 'Intensity'
+replot "Omega_cen.dat" w l notitle
+
