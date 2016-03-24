@@ -149,56 +149,115 @@ So the projected velocity dispersion becomes:
 \sigma_{p}^{2}(R)=\frac{2}{I(R)\Gamma}\int_{R}^{\infty}\left(1-\beta\frac{R^{2}}{r^{2}}\right)\left(G\int_{r}^{\infty}\frac{\rho(r)M(r)}{r^{2}}dr\right)\frac{rdr}{\sqrt{r^{2}-R^{2}}}
 \end{equation}
 
-For our modelling, we assume that the mass of the cluster is the sum of the mass of stars and the mass of non-baryonic matter so that their contributions to the density and mass profiles become:
+We do various experiments and fits for our modelling, first, the simplest of all models is the one where we assume that the cluster doesn't have dark matter whatsoever, in this case there only will be one mass contribution and only one scalength (the stellar scalength) then the solution of the last equation would be:
 
 \begin{equation}
-\rho(r)=\rho_{\star}(r)+\rho_{DM}(r)\qquad and \qquad M(r)=M_{\star}(r)+M_{DM}(r)
+\sigma_{p}^{2}(R)=\frac{GM^{2}a}{I(R)\Gamma\pi}\int_{R}^{\infty}\alpha(r)\left(\frac{Log\left(\frac{a+r}{r}\right)}{a^{5}}-\frac{25a^{3}+52a^{2}r+42ar^{2}+12r^{3}}{12a^{4}\left(a+r\right)^{4}}\right)dr
+\end{equation}
+
+Where $a$ is the scalength and where, in order to shorten the equation we take $\alpha(r)$ as 
+
+\begin{equation}
+\alpha(r)=\left(1-\beta\frac{R^{2}}{r^{2}}\right)\frac{r}{\sqrt{r^{2}-R^{2}}}
+\end{equation}
+
+Now, as we want to focus on the dark matter content of the cluster, we assume that the mass of the cluster is the sum of the mass of stars and the mass of non-baryonic matter so that their contributions to the density and mass profiles become:
+
+\begin{equation}
+\rho(r)=\rho_{\star}(r)+\rho_{dm}(r)\qquad and \qquad M(r)=M_{s}(r)+M_{dm}(r)
+\end{equation} 
+
+In this case, the projected velocity dispersion takes a much more complicated form as follows:
+
+\begin{equation}
+\begin{aligned}	
+\sigma_{p}^{2}(R) &= \frac{G}{I(R)\Gamma\pi}\int_{R}^{\infty}\alpha(r)\Biggl[\underbrace{\int_{r}^{\infty}\frac{M_{s}^{2}a_{s}dr}{r\left(r+a_{s}\right)^{5}}}_{\mathbf{A}(r)}+\underbrace{\int_{r}^{\infty}\frac{M_{s}M_{dm}a_{s}dr}{r\left(r+a_{s}\right)^{3}\left(r+a_{dm}\right)^{2}}}_{\mathbf{B}(r)}\right\\      &\left +\underbrace{\int_{r}^{\infty}\frac{M_{dm}M_{s}a_{dm}dr}{r\left(r+a_{dm}\right)^{3}\left(r+a_{s}\right)^{2}}}_{\mathbf{C}(r)}+\underbrace{\int_{r}^{\infty}\frac{M_{dm}^{2}a_{dm}dr}{r\left(r+a_{dm}\right)^{5}}}_{\mathbf{D}(r)}\Biggr] dr
+\end{aligned}
+\end{equation}
+
+The functional form of the density involves the use of a stellar scalength ($a_{s}$) and a dark matter scalength ($a_{dm}$), Now, the integrals $\mathbf{A}(r),\mathbf{B}(r),\mathbf{C}(r)$ and $\mathbf{D}(r)$ have the following analytical solutions:
+
+\begin{equation}
+\textbf{A}(r)=a_{s}\left(-\frac{25a_{s}^{3}+52a_{s}^{2}r+42a_{s}r^{2}+12r^{3}}{12a_{s}^{4}\left(a_{s}+r\right)^{4}}+\frac{Log\left[\frac{a_{s}+r}{r}\right]}{a_{s}^{5}}\right)
+\end{equation}
+
+\begin{equation}
+\textbf{D}(r)=a_{dm}\left(-\frac{25a_{dm}^{3}+52a_{dm}^{2}r+42a_{dm}r^{2}+12r^{3}}{12a_{dm}^{4}\left(a_{dm}+r\right)^{4}}+\frac{Log\left[\frac{a_{dm}+r}{r}\right]}{a_{dm}^{5}}\right)
+\end{equation}
+
+\begin{equation}
+\textbf{B}(r)=\frac{\left(M_{s}M_{dm}\right)\left(\mathbf{b_{2}}+\mathbf{b_{3}}+a_{s}\left(-\left(a_{s}-a_{dm}\right)a_{dm}\mathbf{b_{4}}+\mathbf{b_{5}}\right)\right)}{\mathbf{b_{1}}}
+\end{equation}
+
+\begin{equation}
+With \left\lbrace
+\begin{array}{lllll}
+\mathbf{b_{1}}=2a_{s}^{2}(a_{s}-a_{dm})^{4}a_{dm}^{2}(a_{s}+r)^{2}(a_{dm}+r)\\
+\mathbf{b_{2}}=-2\left(a_{s}-a_{dm}\right)^{4}\left(a_{s}+r\right)^{2}\left(a_{dm}+r\right)Log[r]\\
+\mathbf{b_{3}}=2a_{dm}^{2}\left(6a_{s}^{2}-4a_{s}a_{dm}+a_{dm}^{2}\right)\left(a_{s}+r\right)^{2}\left(a_{dm}+r\right)Log[a_{s}+r]\\
+\begin{aligned}	
+\mathbf{b_{4}} &= 2a_{s}^{4}+4a_{s}^{3}r-2a_{dm}r(a_{dm}+r)+3a_{s}a_{dm}\left(-a_{dm}^{2}+a_{dm}r+2r^{2}\right)\\      &+a_{s}^{2}\left(7a_{dm}^{2}+7a_{dm}r+2r^{2}\right)
+\end{aligned}\\
+\mathbf{b_{5}}=2a_{s}^{2}\left(a_{s}-4a_{dm}\right)\left(a_{s}+r\right)^{2}\left(a_{dm}+r\right)Log[a_{dm}+r]
+\end{array}
+\right.
 \end{equation} 
 
 \begin{equation}
-A=a_{\star}\left(-\frac{25a_{\star}^{3}+52a_{\star}^{2}r+42a_{\star}r^{2}+12r^{3}}{12a_{\star}^{4}\left(a_{\star}+r\right)^{4}}+\frac{Log\left[\frac{a_{\star}+r}{r}\right]}{a_{\star}^{5}}\right)
+\textbf{C}(r)=\frac{\left(M_{dm}M_{s}\right)\left(\mathbf{c_{2}}+\mathbf{c_{3}}+a_{dm}\left(-\left(a_{dm}-a_{s}\right)a_{s}\mathbf{c_{4}}+\mathbf{c_{5}}\right)\right)}{\mathbf{c_{1}}}
 \end{equation}
 
 \begin{equation}
-D=a_{dm}\left(-\frac{25a_{dm}^{3}+52a_{dm}^{2}r+42a_{dm}r^{2}+12r^{3}}{12a_{dm}^{4}\left(a_{dm}+r\right)^{4}}+\frac{Log\left[\frac{a_{dm}+r}{r}\right]}{a_{dm}^{5}}\right)
+With \left\lbrace
+\begin{array}{lllll}
+\mathbf{c_{1}}=2a_{dm}^{2}(a_{dm}-a_{s})^{4}a_{s}^{2}(a_{dm}+r)^{2}(a_{s}+r)\\
+\mathbf{c_{2}}=-2\left(a_{dm}-a_{s}\right)^{4}\left(a_{dm}+r\right)^{2}\left(a_{s}+r\right)Log[r]\\
+\mathbf{c_{3}}=2a_{s}^{2}\left(6a_{dm}^{2}-4a_{dm}a_{s}+a_{s}^{2}\right)\left(a_{dm}+r\right)^{2}\left(a_{s}+r\right)Log[a_{dm}+r]\\
+\begin{aligned}	
+\mathbf{c_{4}} &= 2a_{dm}^{4}+4a_{dm}^{3}r-2a_{s}r(a_{s}+r)+3a_{dm}a_{s}\left(-a_{s}^{2}+a_{s}r+2r^{2}\right)\\      &+a_{dm}^{2}\left(7a_{s}^{2}+7a_{s}r+2r^{2}\right)
+\end{aligned}\\
+\mathbf{c_{5}} =2a_{dm}^{2}\left(a_{dm}-4a_{s}\right)\left(a_{dm}+r\right)^{2}\left(a_{s}+r\right)Log[a_{s}+r]
+\end{array}
+\right.
+\end{equation} 
+
+All data (decir los papers de donde salieron todos estos datos)
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=12cm]{images/vel_vs_rad.png}
+\caption[Pg]{Pd}
+\end{figure}
+
+Error calculation:
+
+Because all the databases provided the associated error to the measurements of the radial velocities, we had to make the proper calculation of the error of the velocity dispersion:
+
+The velocity dispersion is (as mentioned before) the standard deviation of the velocity
+
+\begin{equation}
+\sigma = f(v) = \sqrt{\frac{\sum_{i=1}^{n}\left(v_{i}-v\right)^{2}}{N}}
 \end{equation}
 
-\[
-b_{1}=2a_{s}^{2}(a_{s}-a_{dm})^{4}a_{dm}^{2}(a_{s}+r)^{2}(a_{dm}+r)
-\]
-\[
-b_{2}=-2\left(a_{s}-a_{dm}\right)^{4}\left(a_{s}+r\right)^{2}\left(a_{dm}+r\right)Log[r]
-\]
-\[
-b_{3}=2a_{dm}^{2}\left(6a_{s}^{2}-4a_{s}a_{dm}+a_{dm}^{2}\right)\left(a_{s}+r\right)^{2}\left(a_{dm}+r\right)Log[a_{s}+r]
-\]
-\[
-b_{4}=2a_{s}^{4}+4a_{s}^{3}r-2a_{dm}r(a_{dm}+r)+3a_{s}a_{dm}\left(-a_{dm}^{2}+a_{dm}r+2r^{2}\right)+a_{s}^{2}\left(7a_{dm}^{2}+7a_{dm}r+2r^{2}\right)
-\]
-\[
-b_{5}=2a_{s}^{2}\left(a_{s}-4a_{dm}\right)\left(a_{s}+r\right)^{2}\left(a_{dm}+r\right)Log[a_{dm}+r]
-\]
-\[
-B=\left(M_{s}M_{dm}/b_{1}\right)\left(b_{2}+b_{3}+a_{s}\left(-\left(a_{s}-a_{dm}\right)a_{dm}b_{4}+b_{5}\right)\right)
-\]
-\[
-c_{1}=2a_{dm}^{2}(a_{dm}-a_{s})^{4}a_{s}^{2}(a_{dm}+r)^{2}(a_{s}+r)
-\]
-\[
-c_{2}=-2\left(a_{dm}-a_{s}\right)^{4}\left(a_{dm}+r\right)^{2}\left(a_{s}+r\right)Log[r]
-\]
-\[
-c_{3}=2a_{s}^{2}\left(6a_{dm}^{2}-4a_{dm}a_{s}+a_{s}^{2}\right)\left(a_{dm}+r\right)^{2}\left(a_{s}+r\right)Log[a_{dm}+r]
-\]
-\[
-c_{4}=2a_{dm}^{4}+4a_{dm}^{3}r-2a_{s}r(a_{s}+r)+3a_{dm}a_{s}\left(-a_{s}^{2}+a_{s}r+2r^{2}\right)+a_{dm}^{2}\left(7a_{s}^{2}+7a_{s}r+2r^{2}\right)
-\]
-\[
-c_{5}=2a_{dm}^{2}\left(a_{dm}-4a_{s}\right)\left(a_{dm}+r\right)^{2}\left(a_{s}+r\right)Log[a_{s}+r]
-\]
-\[
-C=\left(M_{dm}M_{s}/c_{1}\right)\left(c_{2}+c_{3}+a_{dm}\left(-\left(a_{dm}-a_{s}\right)a_{s}c_{4}+c_{5}\right)\right)
-\]
+For our purpose it is calculated in radial bins. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=12cm]{images/vel_vs_rad_bins.png}
+\caption[Pg]{Pd}
+\end{figure}
+
+The error associated with this measurements can be easily calculated using the general error propagation formula:
+
+\begin{equation}
+\sigma(v\pm\Delta v)\approx \sigma(v)\pm\frac{\partial \sigma}{\partial v}\Delta v
+\end{equation}
+
+\begin{equation}
+\Delta \sigma = \frac{1}{\sqrt{N}}\left(\sum_{i=1}^{n}\left(v_{i}-v\right)^{2}\right)^{-1/2}\sum_{i=1}^{n}\left(v_{i}-v\right)\Delta v
+\end{equation}
+
+
 
 \subsection{Results}
 
@@ -216,7 +275,7 @@ C=\left(M_{dm}M_{s}/c_{1}\right)\left(c_{2}+c_{3}+a_{dm}\left(-\left(a_{dm}-a_{s
 \begin{tabular*}{1.0\textwidth}{@{\extracolsep{\fill} } c c c c c c c}
     \hline
     \textbf{Experiment} & \textbf{$\beta$} & \textbf{$a_{dm}$} (pc) & \textbf{$a_{s}$} (pc) & \textbf{$M_{dm}$} ($M_{\odot}$) & \textbf{$M_{s}$} ($M_{\odot}$) & \textbf{$\Gamma$}\\ \hline
-	AD & $0.62$ &	$15.8$ &	$29.0$ &	$5.6 \times 10^{5}$ &	$8.0 \times 10^{4}$ &	$2.2$\\
+	No Crossed terms & $0.62$ &	$15.8$ &	$29.0$ &	$5.6 \times 10^{5}$ &	$8.0 \times 10^{4}$ &	$2.2$\\
 	Fix $a_s$ &	$0.0001$ &	$9.0$ &	$2.23$ &	$1.12 \times 10^{5}$ &	$1.06 \times 10 ^{6}$ &	$1.5$\\
 	Full &	$0.46$ &	$15.2$ &	$52.6$ &	$9 \times 10^{5}$ &	$9 \times 10^{5}$ &	$0.38$\\ \hline
 	No Dark Matter &	$0.26$ &	$ a = 3.64$ & &	$  M = 1.98 \times 10^{6}$ & & 	$1.24$\\
@@ -242,7 +301,7 @@ C=\left(M_{dm}M_{s}/c_{1}\right)\left(c_{2}+c_{3}+a_{dm}\left(-\left(a_{dm}-a_{s
 \begin{tabular*}{1.0\textwidth}{@{\extracolsep{\fill} } c c c c c c c}
     \hline
     \textbf{Experiment} & \textbf{$\beta$} & \textbf{$a_{dm}$} (pc) & \textbf{$a_{s}$} (pc) & \textbf{$M_{dm}$} ($M_{\odot}$) & \textbf{$M_{s}$} ($M_{\odot}$) & \textbf{$\Gamma$}\\ \hline
-	AD & $0.35$ &	$16.4$ &	$55.62$ &	$1.62 \times 10^{6}$ &	$2.1 \times 10^{6}$ &	$2.5$\\
+	No Crossed terms & $0.35$ &	$16.4$ &	$55.62$ &	$1.62 \times 10^{6}$ &	$2.1 \times 10^{6}$ &	$2.5$\\
 	Fix $a_s$ &	$0.001$ &	$3.0$ &	$2.23$ &	$3 \times 10^{5}$ &	$5.0 \times 10 ^{5}$ &	$2.5$\\
 	Full &	$0.72$ &	$20.0$ &	$44.4$ &	$5.2 \times 10^{5}$ &	$8.0 \times 10^{4}$ &	$2.5$\\ \hline
 	No Dark Matter &	$0.001$ &	$ a = 3.15$ & &	$  M = 1.52 \times 10^{6}$ & & 	$2.5$\\
@@ -268,7 +327,7 @@ C=\left(M_{dm}M_{s}/c_{1}\right)\left(c_{2}+c_{3}+a_{dm}\left(-\left(a_{dm}-a_{s
 \begin{tabular*}{1.0\textwidth}{@{\extracolsep{\fill} } c c c c c c c}
     \hline
     \textbf{Experiment} & \textbf{$\beta$} & \textbf{$a_{dm}$} (pc) & \textbf{$a_{s}$} (pc) & \textbf{$M_{dm}$} ($M_{\odot}$) & \textbf{$M_{s}$} ($M_{\odot}$) & \textbf{$\Gamma$}\\ \hline
-	AD & $0.6$ &	$16$ &	$52.8$ &	$2.1 \times 10^{6}$ &	$2.72 \times 10^{6}$ &	$2.3$\\
+	No Crossed terms & $0.6$ &	$16$ &	$52.8$ &	$2.1 \times 10^{6}$ &	$2.72 \times 10^{6}$ &	$2.3$\\
 	Fix $a_s$ &	$0.79$ &	$57.9$ &	$2.23$ &	$8 \times 10^{5}$ &	$3.43 \times 10 ^{6}$ &	$2.1$\\
 	Full &	$0.04$ &	$11.8$ &	$57.8$ &	$6 \times 10^{5}$ &	$9 \times 10^{5}$ &	$2.1$\\ \hline
 	No Dark Matter &	$0.78$ &	$ a = 2.96$ & &	$  M = 3 \times 10^{6}$ & & 	$1.94$\\
@@ -292,7 +351,7 @@ C=\left(M_{dm}M_{s}/c_{1}\right)\left(c_{2}+c_{3}+a_{dm}\left(-\left(a_{dm}-a_{s
 \begin{tabular*}{1.0\textwidth}{@{\extracolsep{\fill} } c c c c c c c}
     \hline
     \textbf{Experiment} & \textbf{$\beta$} & \textbf{$a_{dm}$} (pc) & \textbf{$a_{s}$} (pc) & \textbf{$M_{dm}$} ($M_{\odot}$) & \textbf{$M_{s}$} ($M_{\odot}$) & \textbf{$\Gamma$}\\ \hline
-	AD & $0.2$ &	$15.2$ &	$59.8$ &	$1.4 \times 10^{6}$ &	$2.1 \times 10^{6}$ &	$2.5$\\
+	No Crossed terms & $0.2$ &	$15.2$ &	$59.8$ &	$1.4 \times 10^{6}$ &	$2.1 \times 10^{6}$ &	$2.5$\\
 	Fix $a_s$ &	$0.801$ &	$3.0$ &	$2.23$ &	$5 \times 10^{5}$ &	$1.0 \times 10 ^{5}$ &	$2.5$\\
 	Full &	$0.9$ &	$16.0$ &	$44.6$ &	$1.62 \times 10^{6}$ &	$1.42 \times 10^{6}$ &	$2.5$\\ \hline
 	No Dark Matter &	$0.38$ &	$ a = 2.38$ & &	$  M = 2.03 \times 10^{6}$ & & 	$2.5$\\
