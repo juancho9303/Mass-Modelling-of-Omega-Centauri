@@ -44,7 +44,7 @@ The synthetic spectrum and the original one look like this:
 \caption[Synthetic spectrum of STARLIGHT]{Synthetic spectrum of Starlight in red, shifted in the y axis for doing the comparison with the original spectrum of Omega Centauri in blue.}
 \end{figure}
  
-Now, besides the synthetic spectrum, the output file contains some useful results that one can use to calculate the mass of the stellar system. In our case, the relevant parameter that STARLIGHT gives is:
+Now, besides the synthetic spectrum, the output file contains some useful results that one can use to calculate the mass of the stellar system. In our case, the relevant parameter that STARLIGHT gives is the stellar mass parameter given by:
 
 \begin{equation}
 Mcor\_tot = 3.29446 \times 10^{7}
@@ -56,11 +56,11 @@ And using the formula:
 M_{\star}=Mcor\_tot\times10^{-17}\times4\pi d^{2}\times\left(3.826\times10^{33}\right)^{-1}
 \end{equation}
 
-Yields a stellar mass of $M_{\star}=243.462M_{\odot}$
+Where $d$ is the luminosity distance in cm, yields a stellar mass of $M_{\star}=243.462M_{\odot}$
 
 This mass is the stellar mass contained in the detection area (that in our set up configuration in OPD ends up to be $A_{D}=0.36\,pc^{2}$) of the integrated spectrum that we analysed with STARLIGHT so if we want to calculate the whole stellar mass of the Globular system we must extrapolate this result to its whole effective area, noting that this will increase the error of the calculation.
 
-If we take the cluster's tidal radius to be 45' (Trager et al. 1995) and it's distance to the sun of $4808.39\,pc$ then the total effective area (where the stellar mass could be calculated using stellar population synthesis) is $A_{OC}=12445.9\,pc^{2}$. 
+If we take the cluster's tidal radius of 40' and it's distance to the sun of $4808.39\,pc$ using a distance modulus of 13.41, then the total effective area (where the stellar mass could be calculated using stellar population synthesis) is $A_{OC}=9833.8\,pc^{2}$. 
 
 Finally, the total stellar mass of the Cluster using this technique can be calculation using:
 
@@ -71,14 +71,14 @@ M_{\star T} = N \times M_{\star}
 Where N is the number of detection areas within the total effective area of Omega Centauri ($A_{OC}/A_{D}$) of about 31844.8. So that our calculation of the stellar mass is finally:
 
 \begin{equation}
-M_{\star T} = 6.2734 \times 10^{6}M_{\odot}
+M_{\star T} = 6.61 \times 10^{6}M_{\odot}
 \end{equation}
  
 This result is actually higher than some values  of the dynamical mass found in the literature:
 
 \begin{table}[H]
 \begin{center}
-  \begin{tabular*}{0.55\textwidth}{@{\extracolsep{\fill} } |  c | c | }
+  \begin{tabular}{|  c | c | }
     \hline
     \textbf{Paper} & \textbf{Mass} \\ \hline
     Van de Ven et al. 2008 & $\sim 2.5 \times 10^{6} M_{\odot}$ \\
@@ -86,7 +86,7 @@ This result is actually higher than some values  of the dynamical mass found in 
     Meylan et al. 1995 & $\sim 5.1 \times 10^{6} M_{\odot}$ \\
     Jalali et al. 2011 & $\sim 2.5 \times 10^{6} M_{\odot}$ \\
     \hline
-  \end{tabular*}
+  \end{tabular}
 \end{center} 
 \caption[Mass Omega Centauri]{Reported values of Omega Centauri's dynamical mass}
 \end{table}
@@ -152,7 +152,7 @@ So the projected velocity dispersion becomes:
 We do various experiments and fits for our modelling, first, the simplest of all models is the one where we assume that the cluster doesn't have dark matter whatsoever, in this case there only will be one mass contribution and only one scalength (the stellar scalength) then the solution of the last equation would be:
 
 \begin{equation}
-\sigma_{p}^{2}(R)=\frac{GM^{2}a}{I(R)\Gamma\pi}\int_{R}^{\infty}\alpha(r)\left(\frac{Log\left(\frac{a+r}{r}\right)}{a^{5}}-\frac{25a^{3}+52a^{2}r+42ar^{2}+12r^{3}}{12a^{4}\left(a+r\right)^{4}}\right)dr
+\sigma_{p}^{2}(R)=\frac{GM^{2}a}{I(R)\Gamma\pi}\int_{R}^{\infty}\alpha(r)\left(\frac{\log{\left(\frac{a+r}{r}\right)}}{a^{5}}-\frac{25a^{3}+52a^{2}r+42ar^{2}+12r^{3}}{12a^{4}\left(a+r\right)^{4}}\right)dr
 \end{equation}
 
 Where $a$ is the scalength and where, in order to shorten the equation we take $\alpha(r)$ as 
@@ -178,11 +178,11 @@ In this case, the projected velocity dispersion takes a much more complicated fo
 The functional form of the density involves the use of a stellar scalength ($a_{s}$) and a dark matter scalength ($a_{dm}$), Now, the integrals $\mathbf{A}(r),\mathbf{B}(r),\mathbf{C}(r)$ and $\mathbf{D}(r)$ have the following analytical solutions:
 
 \begin{equation}
-\textbf{A}(r)=a_{s}\left(-\frac{25a_{s}^{3}+52a_{s}^{2}r+42a_{s}r^{2}+12r^{3}}{12a_{s}^{4}\left(a_{s}+r\right)^{4}}+\frac{Log\left[\frac{a_{s}+r}{r}\right]}{a_{s}^{5}}\right)
+\textbf{A}(r)=a_{s}\left(-\frac{25a_{s}^{3}+52a_{s}^{2}r+42a_{s}r^{2}+12r^{3}}{12a_{s}^{4}\left(a_{s}+r\right)^{4}}+\frac{\log{\left[\frac{a_{s}+r}{r}\right]}}{a_{s}^{5}}\right)
 \end{equation}
 
 \begin{equation}
-\textbf{D}(r)=a_{dm}\left(-\frac{25a_{dm}^{3}+52a_{dm}^{2}r+42a_{dm}r^{2}+12r^{3}}{12a_{dm}^{4}\left(a_{dm}+r\right)^{4}}+\frac{Log\left[\frac{a_{dm}+r}{r}\right]}{a_{dm}^{5}}\right)
+\textbf{D}(r)=a_{dm}\left(-\frac{25a_{dm}^{3}+52a_{dm}^{2}r+42a_{dm}r^{2}+12r^{3}}{12a_{dm}^{4}\left(a_{dm}+r\right)^{4}}+\frac{\log{\left[\frac{a_{dm}+r}{r}\right]}}{a_{dm}^{5}}\right)
 \end{equation}
 
 \begin{equation}
@@ -193,12 +193,13 @@ The functional form of the density involves the use of a stellar scalength ($a_{
 With \left\lbrace
 \begin{array}{lllll}
 \mathbf{b_{1}}=2a_{s}^{2}(a_{s}-a_{dm})^{4}a_{dm}^{2}(a_{s}+r)^{2}(a_{dm}+r)\\
-\mathbf{b_{2}}=-2\left(a_{s}-a_{dm}\right)^{4}\left(a_{s}+r\right)^{2}\left(a_{dm}+r\right)Log[r]\\
-\mathbf{b_{3}}=2a_{dm}^{2}\left(6a_{s}^{2}-4a_{s}a_{dm}+a_{dm}^{2}\right)\left(a_{s}+r\right)^{2}\left(a_{dm}+r\right)Log[a_{s}+r]\\
+\mathbf{b_{2}}=-2\left(a_{s}-a_{dm}\right)^{4}\left(a_{s}+r\right)^{2}\left(a_{dm}+r\right)\log{r}\\
+\mathbf{b_{3}}=2a_{dm}^{2}\left(6a_{s}^{2}-4a_{s}a_{dm}+a_{dm}^{2}\right)
+\left(a_{s}+r\right)^{2}\left(a_{dm}+r\right)\log{[a_{s}+r]}\\
 \begin{aligned}	
 \mathbf{b_{4}} &= 2a_{s}^{4}+4a_{s}^{3}r-2a_{dm}r(a_{dm}+r)+3a_{s}a_{dm}\left(-a_{dm}^{2}+a_{dm}r+2r^{2}\right)\\      &+a_{s}^{2}\left(7a_{dm}^{2}+7a_{dm}r+2r^{2}\right)
 \end{aligned}\\
-\mathbf{b_{5}}=2a_{s}^{2}\left(a_{s}-4a_{dm}\right)\left(a_{s}+r\right)^{2}\left(a_{dm}+r\right)Log[a_{dm}+r]
+\mathbf{b_{5}}=2a_{s}^{2}\left(a_{s}-4a_{dm}\right)\left(a_{s}+r\right)^{2}\left(a_{dm}+r\right)\log{[a_{dm}+r]}
 \end{array}
 \right.
 \end{equation} 
@@ -211,12 +212,13 @@ With \left\lbrace
 With \left\lbrace
 \begin{array}{lllll}
 \mathbf{c_{1}}=2a_{dm}^{2}(a_{dm}-a_{s})^{4}a_{s}^{2}(a_{dm}+r)^{2}(a_{s}+r)\\
-\mathbf{c_{2}}=-2\left(a_{dm}-a_{s}\right)^{4}\left(a_{dm}+r\right)^{2}\left(a_{s}+r\right)Log[r]\\
-\mathbf{c_{3}}=2a_{s}^{2}\left(6a_{dm}^{2}-4a_{dm}a_{s}+a_{s}^{2}\right)\left(a_{dm}+r\right)^{2}\left(a_{s}+r\right)Log[a_{dm}+r]\\
+\mathbf{c_{2}}=-2\left(a_{dm}-a_{s}\right)^{4}\left(a_{dm}+r\right)^{2}\left(a_{s}+r\right)\log{r}\\
+\mathbf{c_{3}}=2a_{s}^{2}\left(6a_{dm}^{2}-4a_{dm}a_{s}+a_{s}^{2}\right)\left(a_{dm}+r\right)^{2}
+\left(a_{s}+r\right)\log{[a_{dm}+r]}\\
 \begin{aligned}	
 \mathbf{c_{4}} &= 2a_{dm}^{4}+4a_{dm}^{3}r-2a_{s}r(a_{s}+r)+3a_{dm}a_{s}\left(-a_{s}^{2}+a_{s}r+2r^{2}\right)\\      &+a_{dm}^{2}\left(7a_{s}^{2}+7a_{s}r+2r^{2}\right)
 \end{aligned}\\
-\mathbf{c_{5}} =2a_{dm}^{2}\left(a_{dm}-4a_{s}\right)\left(a_{dm}+r\right)^{2}\left(a_{s}+r\right)Log[a_{s}+r]
+\mathbf{c_{5}} =2a_{dm}^{2}\left(a_{dm}-4a_{s}\right)\left(a_{dm}+r\right)^{2}\left(a_{s}+r\right)\log{[a_{s}+r]}
 \end{array}
 \right.
 \end{equation} 
@@ -250,7 +252,7 @@ For our purpose it is calculated in radial bins.
 The error associated with this measurements can be easily calculated using the general error propagation formula:
 
 \begin{equation}
-\sigma(v\pm\Delta v)\approx \sigma(v)\pm\frac{\partial \sigma}{\partial v}\Delta v
+\sigma(v\pm\Delta v)\approx \sigma(v)\pm \underbrace{\frac{\partial \sigma}{\partial v}\Delta v}_{\Delta \sigma}
 \end{equation}
 
 \begin{equation}
@@ -263,7 +265,6 @@ The error associated with this measurements can be easily calculated using the g
 
 \subsubsection{All parameters 12}
 
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{images/all_params_refinado_12.png}
@@ -272,15 +273,15 @@ The error associated with this measurements can be easily calculated using the g
 
 \begin{table}[H]
 \begin{center}
-\begin{tabular*}{1.0\textwidth}{@{\extracolsep{\fill} } c c c c c c c}
+\begin{tabular}{| c | c | c | c | c | c | c| }
     \hline
-    \textbf{Experiment} & \textbf{$\beta$} & \textbf{$a_{dm}$} (pc) & \textbf{$a_{s}$} (pc) & \textbf{$M_{dm}$} ($M_{\odot}$) & \textbf{$M_{s}$} ($M_{\odot}$) & \textbf{$\Gamma$}\\ \hline
-	No Crossed terms & $0.62$ &	$15.8$ &	$29.0$ &	$5.6 \times 10^{5}$ &	$8.0 \times 10^{4}$ &	$2.2$\\
-	Fix $a_s$ &	$0.0001$ &	$9.0$ &	$2.23$ &	$1.12 \times 10^{5}$ &	$1.06 \times 10 ^{6}$ &	$1.5$\\
+    \textbf{Experiment} & $\mathbf{\beta}$ & $\mathbf{a_{dm}} (pc)$ & $\mathbf{a_{s}} (pc)$ & $\mathbf{M_{dm}}$ ($M_{\odot}$) & $\mathbf{M_{s}}$ ($M_{\odot}$) & $\mathbf{\Gamma}$\\ \hline
+	No Crossed terms & $0.62$ &	$15.8$ &	$29.0$ &	$5.6 \times 10^{5}$ &	$8.0 \times 10^{4}$ &	$2.2$\\ \hline
+	Fix $a_s$ &	$0.0001$ &	$9.0$ &	$2.23$ &	$1.12 \times 10^{5}$ &	$1.06 \times 10 ^{6}$ &	$1.5$\\ \hline
 	Full &	$0.46$ &	$15.2$ &	$52.6$ &	$9 \times 10^{5}$ &	$9 \times 10^{5}$ &	$0.38$\\ \hline
-	No Dark Matter &	$0.26$ &	$ a = 3.64$ & &	$  M = 1.98 \times 10^{6}$ & & 	$1.24$\\
+	No Dark Matter &	$0.26$ &	$ a = 3.64$ & ----- &	$  M = 1.98 \times 10^{6}$ & ----- & 	$1.24$\\
     \hline
-  \end{tabular*} 
+  \end{tabular} 
 \caption[It]{Ie}
 \end{center}
   
@@ -298,15 +299,15 @@ The error associated with this measurements can be easily calculated using the g
 
 \begin{table}[H]
 \begin{center}
-\begin{tabular*}{1.0\textwidth}{@{\extracolsep{\fill} } c c c c c c c}
+\begin{tabular}{| c| c| c| c| c| c| c|}
     \hline
-    \textbf{Experiment} & \textbf{$\beta$} & \textbf{$a_{dm}$} (pc) & \textbf{$a_{s}$} (pc) & \textbf{$M_{dm}$} ($M_{\odot}$) & \textbf{$M_{s}$} ($M_{\odot}$) & \textbf{$\Gamma$}\\ \hline
-	No Crossed terms & $0.35$ &	$16.4$ &	$55.62$ &	$1.62 \times 10^{6}$ &	$2.1 \times 10^{6}$ &	$2.5$\\
-	Fix $a_s$ &	$0.001$ &	$3.0$ &	$2.23$ &	$3 \times 10^{5}$ &	$5.0 \times 10 ^{5}$ &	$2.5$\\
+    \textbf{Experiment} & $\mathbf{\beta}$ & $\mathbf{a_{dm}} (pc)$ & $\mathbf{a_{s}} (pc)$ & $\mathbf{M_{dm}}$ ($M_{\odot}$) & $\mathbf{M_{s}}$ ($M_{\odot}$) & $\mathbf{\Gamma}$\\ \hline
+	No Crossed terms & $0.35$ &	$16.4$ &	$55.62$ &	$1.62 \times 10^{6}$ &	$2.1 \times 10^{6}$ &	$2.5$\\ \hline
+	Fix $a_s$ &	$0.001$ &	$3.0$ &	$2.23$ &	$3 \times 10^{5}$ &	$5.0 \times 10 ^{5}$ &	$2.5$\\ \hline
 	Full &	$0.72$ &	$20.0$ &	$44.4$ &	$5.2 \times 10^{5}$ &	$8.0 \times 10^{4}$ &	$2.5$\\ \hline
-	No Dark Matter &	$0.001$ &	$ a = 3.15$ & &	$  M = 1.52 \times 10^{6}$ & & 	$2.5$\\
+	No Dark Matter &	$0.001$ &	$ a = 3.15$ & ----- &	$  M = 1.52 \times 10^{6}$ & ----- & 	$2.5$\\
     \hline
-  \end{tabular*} 
+  \end{tabular} 
 \caption[It]{Ie}
 \end{center}
   
@@ -324,15 +325,15 @@ The error associated with this measurements can be easily calculated using the g
 
 \begin{table}[H]
 \begin{center}
-\begin{tabular*}{1.0\textwidth}{@{\extracolsep{\fill} } c c c c c c c}
+\begin{tabular}{| c| c| c| c| c| c| c|}
     \hline
-    \textbf{Experiment} & \textbf{$\beta$} & \textbf{$a_{dm}$} (pc) & \textbf{$a_{s}$} (pc) & \textbf{$M_{dm}$} ($M_{\odot}$) & \textbf{$M_{s}$} ($M_{\odot}$) & \textbf{$\Gamma$}\\ \hline
-	No Crossed terms & $0.6$ &	$16$ &	$52.8$ &	$2.1 \times 10^{6}$ &	$2.72 \times 10^{6}$ &	$2.3$\\
-	Fix $a_s$ &	$0.79$ &	$57.9$ &	$2.23$ &	$8 \times 10^{5}$ &	$3.43 \times 10 ^{6}$ &	$2.1$\\
+    \textbf{Experiment} & $\mathbf{\beta}$ & $\mathbf{a_{dm}} (pc)$ & $\mathbf{a_{s}} (pc)$ & $\mathbf{M_{dm}}$ ($M_{\odot}$) & $\mathbf{M_{s}}$ ($M_{\odot}$) & $\mathbf{\Gamma}$\\ \hline
+	No Crossed terms & $0.6$ &	$16$ &	$52.8$ &	$2.1 \times 10^{6}$ &	$2.72 \times 10^{6}$ &	$2.3$\\ \hline
+	Fix $a_s$ &	$0.79$ &	$57.9$ &	$2.23$ &	$8 \times 10^{5}$ &	$3.43 \times 10 ^{6}$ &	$2.1$\\ \hline
 	Full &	$0.04$ &	$11.8$ &	$57.8$ &	$6 \times 10^{5}$ &	$9 \times 10^{5}$ &	$2.1$\\ \hline
-	No Dark Matter &	$0.78$ &	$ a = 2.96$ & &	$  M = 3 \times 10^{6}$ & & 	$1.94$\\
+	No Dark Matter &	$0.78$ &	$ a = 2.96$ & ----- &	$  M = 3 \times 10^{6}$ & ----- & 	$1.94$\\
     \hline
-  \end{tabular*} 
+  \end{tabular} 
 \caption[It]{Ie}
 \end{center}
   
@@ -348,15 +349,15 @@ The error associated with this measurements can be easily calculated using the g
 
 \begin{table}[H]
 \begin{center}
-\begin{tabular*}{1.0\textwidth}{@{\extracolsep{\fill} } c c c c c c c}
+\begin{tabular}{| c| c| c| c| c| c| c|}
     \hline
-    \textbf{Experiment} & \textbf{$\beta$} & \textbf{$a_{dm}$} (pc) & \textbf{$a_{s}$} (pc) & \textbf{$M_{dm}$} ($M_{\odot}$) & \textbf{$M_{s}$} ($M_{\odot}$) & \textbf{$\Gamma$}\\ \hline
-	No Crossed terms & $0.2$ &	$15.2$ &	$59.8$ &	$1.4 \times 10^{6}$ &	$2.1 \times 10^{6}$ &	$2.5$\\
-	Fix $a_s$ &	$0.801$ &	$3.0$ &	$2.23$ &	$5 \times 10^{5}$ &	$1.0 \times 10 ^{5}$ &	$2.5$\\
+    \textbf{Experiment} & $\mathbf{\beta}$ & $\mathbf{a_{dm}} (pc)$ & $\mathbf{a_{s}} (pc)$ & $\mathbf{M_{dm}}$ ($M_{\odot}$) & $\mathbf{M_{s}}$ ($M_{\odot}$) & $\mathbf{\Gamma}$\\ \hline
+	No Crossed terms & $0.2$ &	$15.2$ &	$59.8$ &	$1.4 \times 10^{6}$ &	$2.1 \times 10^{6}$ &	$2.5$\\ \hline
+	Fix $a_s$ &	$0.801$ &	$3.0$ &	$2.23$ &	$5 \times 10^{5}$ &	$1.0 \times 10 ^{5}$ &	$2.5$\\ \hline
 	Full &	$0.9$ &	$16.0$ &	$44.6$ &	$1.62 \times 10^{6}$ &	$1.42 \times 10^{6}$ &	$2.5$\\ \hline
-	No Dark Matter &	$0.38$ &	$ a = 2.38$ & &	$  M = 2.03 \times 10^{6}$ & & 	$2.5$\\
+	No Dark Matter &	$0.38$ &	$ a = 2.38$ & ----- &	$  M = 2.03 \times 10^{6}$ & ----- & 	$2.5$\\
     \hline
-  \end{tabular*} 
+  \end{tabular} 
 \caption[It]{Ie}
 \end{center}
   

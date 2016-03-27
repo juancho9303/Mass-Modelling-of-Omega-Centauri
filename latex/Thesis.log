@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.1)  24 MAR 2016 00:39
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.1)  26 MAR 2016 21:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -565,6 +565,18 @@ LaTeX Info: Redefining \nameref on input line 32.
 ------------------------------------------------------------------------------
  Title Page
 ------------------------------------------------------------------------------
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 54.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\omega' on input line 54.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 54.
+
 <images/Escudo-UdeA.png, id=176, 245.91875pt x 349.305pt>
 File: images/Escudo-UdeA.png Graphic file (type png)
 
@@ -647,14 +659,14 @@ Chapter 1.
 
 
 
-] [2]) (./Chapters/Chapter2.tex [3]
+] [2] [3]) (./Chapters/Chapter2.tex
 Chapter 2.
 ------------------------------------------------------------------------------
  2 Theoretical Framework
 ------------------------------------------------------------------------------
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no © in font cmr10!
-<images/m15.jpg, id=424, 903.375pt x 752.8125pt>
+<images/m15.jpg, id=426, 903.375pt x 752.8125pt>
 File: images/m15.jpg Graphic file (type jpg)
  <use images/m15.jpg>
 Package pdftex.def Info: images/m15.jpg used on input line 15.
@@ -667,88 +679,88 @@ LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
 [4
 
 ] [5 <./images/m15.jpg>]
-<images/3_gcs.png, id=438, 961.34157pt x 316.18124pt>
+<images/3_gcs.png, id=440, 961.34157pt x 316.18124pt>
 File: images/3_gcs.png Graphic file (type png)
  <use images/3_gcs.png>
-Package pdftex.def Info: images/3_gcs.png used on input line 41.
+Package pdftex.def Info: images/3_gcs.png used on input line 39.
 (pdftex.def)             Requested size: 412.56496pt x 135.68993pt.
 
 [6 <./images/3_gcs.png>] [7] [8]
-<images/core_collapse.png, id=458, 496.85625pt x 459.96844pt>
+<images/core_collapse.png, id=459, 496.85625pt x 459.96844pt>
 File: images/core_collapse.png Graphic file (type png)
 
 <use images/core_collapse.png>
-Package pdftex.def Info: images/core_collapse.png used on input line 95.
+Package pdftex.def Info: images/core_collapse.png used on input line 93.
 (pdftex.def)             Requested size: 341.43306pt x 316.08716pt.
  [9]
-<images/anisotropy_core_collapse.png, id=464, 632.3625pt x 365.86688pt>
+<images/anisotropy_core_collapse.png, id=465, 632.3625pt x 365.86688pt>
 File: images/anisotropy_core_collapse.png Graphic file (type png)
 
 <use images/anisotropy_core_collapse.png>
 Package pdftex.def Info: images/anisotropy_core_collapse.png used on input line
- 107.
+ 105.
 (pdftex.def)             Requested size: 341.43306pt x 197.54842pt.
  [10 <./images/core_collapse.png>]
 [11 <./images/anisotropy_core_collapse.png>]
-<images/m55_diagram.jpg, id=476, 410.18108pt x 410.18108pt>
+<images/m55_diagram.jpg, id=477, 410.18108pt x 410.18108pt>
 File: images/m55_diagram.jpg Graphic file (type jpg)
 
 <use images/m55_diagram.jpg>
-Package pdftex.def Info: images/m55_diagram.jpg used on input line 128.
+Package pdftex.def Info: images/m55_diagram.jpg used on input line 126.
 (pdftex.def)             Requested size: 183.68916pt x 183.69101pt.
 
-<images/hrcolour.jpg, id=477, 642.4pt x 523.9575pt>
+<images/hrcolour.jpg, id=478, 642.4pt x 523.9575pt>
 File: images/hrcolour.jpg Graphic file (type jpg)
  <use images/hrcolour.jpg>
-Package pdftex.def Info: images/hrcolour.jpg used on input line 133.
+Package pdftex.def Info: images/hrcolour.jpg used on input line 131.
 (pdftex.def)             Requested size: 225.43265pt x 183.86757pt.
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
 
 [12 <./images/m55_diagram.jpg> <./images/hrcolour.jpg>]
-<images/metallicity_gcs.jpg, id=482, 310.2792pt x 216.81pt>
+<images/metallicity_gcs.jpg, id=483, 310.2792pt x 216.81pt>
 File: images/metallicity_gcs.jpg Graphic file (type jpg)
 
 <use images/metallicity_gcs.jpg>
-Package pdftex.def Info: images/metallicity_gcs.jpg used on input line 146.
+Package pdftex.def Info: images/metallicity_gcs.jpg used on input line 144.
 (pdftex.def)             Requested size: 284.52756pt x 198.83243pt.
 
-<images/orbits_gcs.jpg, id=484, 488.0634pt x 515.0442pt>
+<images/orbits_gcs.jpg, id=485, 488.0634pt x 515.0442pt>
 File: images/orbits_gcs.jpg Graphic file (type jpg)
 
 <use images/orbits_gcs.jpg>
-Package pdftex.def Info: images/orbits_gcs.jpg used on input line 158.
+Package pdftex.def Info: images/orbits_gcs.jpg used on input line 156.
 (pdftex.def)             Requested size: 284.52756pt x 300.27406pt.
  [13 <./images/metallicity_gcs.jpg>]
-<images/4_gcs.png, id=489, 603.0028pt x 453.94594pt>
+<images/4_gcs.png, id=490, 603.0028pt x 453.94594pt>
 File: images/4_gcs.png Graphic file (type png)
  <use images/4_gcs.png>
-Package pdftex.def Info: images/4_gcs.png used on input line 166.
+Package pdftex.def Info: images/4_gcs.png used on input line 164.
 (pdftex.def)             Requested size: 284.52756pt x 214.19273pt.
 
 [14 <./images/orbits_gcs.jpg>] [15 <./images/4_gcs.png>] [16] [17] [18]
 [19]
-<images/circular_velocity_vs_radius.png, id=537, 465.23813pt x 403.5075pt>
+<images/circular_velocity_vs_radius.png, id=538, 465.23813pt x 403.5075pt>
 File: images/circular_velocity_vs_radius.png Graphic file (type png)
 
 <use images/circular_velocity_vs_radius.png>
 Package pdftex.def Info: images/circular_velocity_vs_radius.png used on input l
-ine 354.
+ine 352.
 (pdftex.def)             Requested size: 284.52756pt x 246.77954pt.
  [20 <./images/circular_velocity_vs_radius.png>] [21] [22] [23] [24] [25]
-<images/fornax-2-400.jpg, id=586, 401.5pt x 392.46625pt>
+<images/fornax-2-400.jpg, id=588, 401.5pt x 392.46625pt>
 File: images/fornax-2-400.jpg Graphic file (type jpg)
 
 <use images/fornax-2-400.jpg>
-Package pdftex.def Info: images/fornax-2-400.jpg used on input line 529.
+Package pdftex.def Info: images/fornax-2-400.jpg used on input line 527.
 (pdftex.def)             Requested size: 187.8616pt x 183.63872pt.
 
-<images/fornax-3-400.jpg, id=587, 401.5pt x 392.46625pt>
+<images/fornax-3-400.jpg, id=589, 401.5pt x 392.46625pt>
 File: images/fornax-3-400.jpg Graphic file (type jpg)
 
 <use images/fornax-3-400.jpg>
-Package pdftex.def Info: images/fornax-3-400.jpg used on input line 534.
+Package pdftex.def Info: images/fornax-3-400.jpg used on input line 532.
 (pdftex.def)             Requested size: 187.8616pt x 183.63872pt.
  [26] [27 <./images/fornax-2-400.jpg> <./images/fornax-3-400.jpg>]) (./Chapters
 /Chapter3.tex [28]
@@ -756,7 +768,7 @@ Chapter 3.
 ------------------------------------------------------------------------------
  3 Observations and Analysis
 ------------------------------------------------------------------------------
-<images/opd.jpg, id=603, 66.9702pt x 55.04565pt>
+<images/opd.jpg, id=605, 66.9702pt x 55.04565pt>
 File: images/opd.jpg Graphic file (type jpg)
  <use images/opd.jpg>
 Package pdftex.def Info: images/opd.jpg used on input line 15.
@@ -764,7 +776,7 @@ Package pdftex.def Info: images/opd.jpg used on input line 15.
  [29
 
 ]
-<images/opd-spectrograph.jpg, id=609, 602.25pt x 401.5pt>
+<images/opd-spectrograph.jpg, id=613, 602.25pt x 401.5pt>
 File: images/opd-spectrograph.jpg Graphic file (type jpg)
 
 <use images/opd-spectrograph.jpg>
@@ -777,164 +789,164 @@ Missing character: There is no Â in font cmr10!
 Missing character: There is no ° in font cmr10!
 Missing character: There is no Â in font cmr10!
 Missing character: There is no ° in font cmr10!
- <images/opd-photometry.jpg, id=620, 770.88pt x 578.16pt>
+ <images/opd-photometry.jpg, id=628, 770.88pt x 578.16pt>
 File: images/opd-photometry.jpg Graphic file (type jpg)
 
 <use images/opd-photometry.jpg>
 Package pdftex.def Info: images/opd-photometry.jpg used on input line 81.
 (pdftex.def)             Requested size: 227.62204pt x 170.71451pt.
  [32 <./images/opd-photometry.jpg>] [33]
-<images/ngc_5139_dirty.png, id=630, 487.06969pt x 483.30562pt>
+<images/ngc_5139_dirty.png, id=641, 487.06969pt x 483.30562pt>
 File: images/ngc_5139_dirty.png Graphic file (type png)
 
 <use images/ngc_5139_dirty.png>
 Package pdftex.def Info: images/ngc_5139_dirty.png used on input line 114.
 (pdftex.def)             Requested size: 196.21284pt x 194.69788pt.
 
-<images/ruido.png, id=631, 484.05844pt x 483.30562pt>
+<images/ruido.png, id=642, 484.05844pt x 483.30562pt>
 File: images/ruido.png Graphic file (type png)
  <use images/ruido.png>
 Package pdftex.def Info: images/ruido.png used on input line 119.
 (pdftex.def)             Requested size: 196.21284pt x 195.90732pt.
 
-[34] <images/flat_I.png, id=636, 356.83313pt x 317.68687pt>
+[34] <images/flat_I.png, id=647, 356.83313pt x 317.68687pt>
 File: images/flat_I.png Graphic file (type png)
 
 <use images/flat_I.png>
 Package pdftex.def Info: images/flat_I.png used on input line 139.
 (pdftex.def)             Requested size: 227.62204pt x 202.64993pt.
  [35 <./images/ngc_5139_dirty.png> <./images/ruido.png>] <images/NGC5139_red.pn
-g, id=641, 294.34969pt x 297.36093pt>
+g, id=653, 294.34969pt x 297.36093pt>
 File: images/NGC5139_red.png Graphic file (type png)
 
 <use images/NGC5139_red.png>
 Package pdftex.def Info: images/NGC5139_red.png used on input line 153.
 (pdftex.def)             Requested size: 227.62204pt x 229.95322pt.
  [36 <./images/flat_I.png>]
-<images/mag_vs_ap_size.png, id=646, 515.67656pt x 286.82156pt>
+<images/mag_vs_ap_size.png, id=659, 515.67656pt x 286.82156pt>
 File: images/mag_vs_ap_size.png Graphic file (type png)
 
 <use images/mag_vs_ap_size.png>
 Package pdftex.def Info: images/mag_vs_ap_size.png used on input line 165.
 (pdftex.def)             Requested size: 341.43306pt x 189.91113pt.
  [37 <./images/NGC5139_red.png>] [38 <./images/mag_vs_ap_size.png>] <images/psf
-.png, id=655, 480.29437pt x 359.09157pt>
+.png, id=671, 480.29437pt x 359.09157pt>
 File: images/psf.png Graphic file (type png)
 
 <use images/psf.png>
 Package pdftex.def Info: images/psf.png used on input line 189.
 (pdftex.def)             Requested size: 227.62204pt x 170.18123pt.
- <images/psf2.png, id=656, 223.58531pt x 224.33812pt>
+ <images/psf2.png, id=672, 223.58531pt x 224.33812pt>
 File: images/psf2.png Graphic file (type png)
 
 <use images/psf2.png>
 Package pdftex.def Info: images/psf2.png used on input line 197.
 (pdftex.def)             Requested size: 142.26378pt x 142.74408pt.
  [39 <./images/psf.png>]
-<images/psf3.png, id=662, 191.21437pt x 213.79875pt>
+<images/psf3.png, id=680, 191.21437pt x 213.79875pt>
 File: images/psf3.png Graphic file (type png)
  <use images/psf3.png>
 Package pdftex.def Info: images/psf3.png used on input line 205.
 (pdftex.def)             Requested size: 142.26378pt x 159.07309pt.
 
 [40 <./images/psf2.png> <./images/psf3.png>]
-<images/cluster_dirty.png, id=667, 207.02344pt x 320.69812pt>
+<images/cluster_dirty.png, id=686, 207.02344pt x 320.69812pt>
 File: images/cluster_dirty.png Graphic file (type png)
 
 <use images/cluster_dirty.png>
-Package pdftex.def Info: images/cluster_dirty.png used on input line 244.
+Package pdftex.def Info: images/cluster_dirty.png used on input line 242.
 (pdftex.def)             Requested size: 187.8616pt x 291.02342pt.
 
-<images/cluster_clean.png, id=668, 206.27063pt x 320.69812pt>
+<images/cluster_clean.png, id=687, 206.27063pt x 320.69812pt>
 File: images/cluster_clean.png Graphic file (type png)
 
 <use images/cluster_clean.png>
-Package pdftex.def Info: images/cluster_clean.png used on input line 249.
+Package pdftex.def Info: images/cluster_clean.png used on input line 247.
 (pdftex.def)             Requested size: 187.8616pt x 292.08041pt.
  [41] [42 <./images/cluster_dirty.png> <./images/cluster_clean.png>]
-<images/calib_star_apall.png, id=677, 459.21562pt x 350.05782pt>
+<images/calib_star_apall.png, id=699, 459.21562pt x 350.05782pt>
 File: images/calib_star_apall.png Graphic file (type png)
 
 <use images/calib_star_apall.png>
-Package pdftex.def Info: images/calib_star_apall.png used on input line 277.
+Package pdftex.def Info: images/calib_star_apall.png used on input line 275.
 (pdftex.def)             Requested size: 256.0748pt x 195.21379pt.
  [43 <./images/calib_star_apall.png>]
-<images/lamp_day1_2.png, id=682, 463.7325pt x 350.05782pt>
+<images/lamp_day1_2.png, id=707, 463.7325pt x 350.05782pt>
 File: images/lamp_day1_2.png Graphic file (type png)
 
 <use images/lamp_day1_2.png>
-Package pdftex.def Info: images/lamp_day1_2.png used on input line 288.
+Package pdftex.def Info: images/lamp_day1_2.png used on input line 286.
 (pdftex.def)             Requested size: 187.8616pt x 141.81001pt.
 
-<images/lamp1.png, id=683, 776.9025pt x 577.40718pt>
+<images/lamp1.png, id=708, 776.9025pt x 577.40718pt>
 File: images/lamp1.png Graphic file (type png)
  <use images/lamp1.png>
-Package pdftex.def Info: images/lamp1.png used on input line 293.
+Package pdftex.def Info: images/lamp1.png used on input line 291.
 (pdftex.def)             Requested size: 187.8616pt x 139.6202pt.
 
-<images/calib_star_wave.png, id=684, 465.99094pt x 353.06906pt>
+<images/calib_star_wave.png, id=709, 465.99094pt x 353.06906pt>
 File: images/calib_star_wave.png Graphic file (type png)
 
 <use images/calib_star_wave.png>
-Package pdftex.def Info: images/calib_star_wave.png used on input line 306.
+Package pdftex.def Info: images/calib_star_wave.png used on input line 304.
 (pdftex.def)             Requested size: 227.62204pt x 172.46121pt.
  [44 <./images/lamp_day1_2.png> <./images/lamp1.png>] [45 <./images/calib_star_
 wave.png>]
-<images/Espectros.png, id=694, 481.8pt x 361.35pt>
+<images/Espectros.png, id=723, 499.11469pt x 361.35pt>
 File: images/Espectros.png Graphic file (type png)
- <use images/Espectros.png>
-Package pdftex.def Info: images/Espectros.png used on input line 323.
-(pdftex.def)             Requested size: 204.56409pt x 153.42009pt.
 
-<images/Espectros2.png, id=695, 481.8pt x 361.35pt>
+<use images/Espectros.png>
+Package pdftex.def Info: images/Espectros.png used on input line 321.
+(pdftex.def)             Requested size: 204.56409pt x 148.09932pt.
+ <images/Espectros2.png, id=724, 481.8pt x 361.35pt>
 File: images/Espectros2.png Graphic file (type png)
 
 <use images/Espectros2.png>
-Package pdftex.def Info: images/Espectros2.png used on input line 328.
+Package pdftex.def Info: images/Espectros2.png used on input line 326.
 (pdftex.def)             Requested size: 204.56409pt x 153.42009pt.
  [46 <./images/Espectros.png> <./images/Espectros2.png>] [47] <images/calib_sta
-r_flux.png, id=706, 462.97969pt x 356.0803pt>
+r_flux.png, id=736, 462.97969pt x 356.0803pt>
 File: images/calib_star_flux.png Graphic file (type png)
 
 <use images/calib_star_flux.png>
-Package pdftex.def Info: images/calib_star_flux.png used on input line 377.
+Package pdftex.def Info: images/calib_star_flux.png used on input line 375.
 (pdftex.def)             Requested size: 227.62204pt x 175.06767pt.
-
-<images/cluster_star_flux.png, id=707, 444.91219pt x 346.29375pt>
+ [48 <./images/calib_star_flux.png>]
+<images/cluster_star_flux.png, id=743, 444.91219pt x 346.29375pt>
 File: images/cluster_star_flux.png Graphic file (type png)
 
 <use images/cluster_star_flux.png>
-Package pdftex.def Info: images/cluster_star_flux.png used on input line 395.
+Package pdftex.def Info: images/cluster_star_flux.png used on input line 393.
 (pdftex.def)             Requested size: 227.62204pt x 177.16757pt.
- [48 <./images/calib_star_flux.png>] [49 <./images/cluster_star_flux.png>]
-<images/xcsao.png, id=716, 709.14937pt x 281.55188pt>
+ [49 <./images/cluster_star_flux.png>]
+<images/xcsao.png, id=750, 709.14937pt x 258.21469pt>
 File: images/xcsao.png Graphic file (type png)
  <use images/xcsao.png>
-Package pdftex.def Info: images/xcsao.png used on input line 417.
-(pdftex.def)             Requested size: 284.52756pt x 112.96674pt.
+Package pdftex.def Info: images/xcsao.png used on input line 415.
+(pdftex.def)             Requested size: 284.52756pt x 103.60318pt.
 
-<images/template.png, id=717, 426.09187pt x 349.305pt>
+<images/template.png, id=751, 426.09187pt x 349.305pt>
 File: images/template.png Graphic file (type png)
 
 <use images/template.png>
 Package pdftex.def Info: images/template.png used on input line 444.
 (pdftex.def)             Requested size: 204.56409pt x 167.7018pt.
  [50 <./images/xcsao.png>]
-<images/bcvcor.png, id=722, 469.00218pt x 421.575pt>
+<images/bcvcor.png, id=759, 469.00218pt x 421.575pt>
 File: images/bcvcor.png Graphic file (type png)
  <use images/bcvcor.png>
 Package pdftex.def Info: images/bcvcor.png used on input line 453.
 (pdftex.def)             Requested size: 284.52756pt x 255.7516pt.
 
 [51 <./images/template.png>]
-<images/emsao.png, id=731, 1014.03844pt x 534.49687pt>
+<images/emsao.png, id=770, 1014.03844pt x 534.49687pt>
 File: images/emsao.png Graphic file (type png)
  <use images/emsao.png>
 Package pdftex.def Info: images/emsao.png used on input line 462.
 (pdftex.def)             Requested size: 369.88582pt x 194.96332pt.
 
 [52 <./images/bcvcor.png>]
-<images/fxcor.png, id=738, 476.53032pt x 360.59718pt>
+<images/fxcor.png, id=778, 476.53032pt x 360.59718pt>
 File: images/fxcor.png Graphic file (type png)
  <use images/fxcor.png>
 Package pdftex.def Info: images/fxcor.png used on input line 474.
@@ -948,14 +960,14 @@ Chapter 4.
 ------------------------------------------------------------------------------
 [56
 
-] <images/extinction.png, id=759, 835.62187pt x 499.8675pt>
+] <images/extinction.png, id=806, 835.62187pt x 499.8675pt>
 File: images/extinction.png Graphic file (type png)
 
 <use images/extinction.png>
 Package pdftex.def Info: images/extinction.png used on input line 29.
 (pdftex.def)             Requested size: 284.52756pt x 170.20439pt.
 
-<images/comparison.png, id=760, 481.8pt x 361.35pt>
+<images/comparison.png, id=807, 481.8pt x 361.35pt>
 File: images/comparison.png Graphic file (type png)
 
 <use images/comparison.png>
@@ -1057,68 +1069,68 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[61] <images/vel_vs_rad.png, id=805, 481.8pt x 361.35pt>
+[61] <images/vel_vs_rad.png, id=856, 481.8pt x 361.35pt>
 File: images/vel_vs_rad.png Graphic file (type png)
 
 <use images/vel_vs_rad.png>
-Package pdftex.def Info: images/vel_vs_rad.png used on input line 228.
+Package pdftex.def Info: images/vel_vs_rad.png used on input line 230.
 (pdftex.def)             Requested size: 341.43306pt x 256.0806pt.
  [62 <./images/vel_vs_rad.png>]
-<images/vel_vs_rad_bins.png, id=814, 481.8pt x 361.35pt>
+<images/vel_vs_rad_bins.png, id=866, 481.8pt x 361.35pt>
 File: images/vel_vs_rad_bins.png Graphic file (type png)
 
 <use images/vel_vs_rad_bins.png>
-Package pdftex.def Info: images/vel_vs_rad_bins.png used on input line 246.
+Package pdftex.def Info: images/vel_vs_rad_bins.png used on input line 248.
 (pdftex.def)             Requested size: 341.43306pt x 256.0806pt.
 
-<images/all_params_refinado_12.png, id=815, 928.21782pt x 685.05937pt>
+<images/all_params_refinado_12.png, id=867, 928.21782pt x 685.05937pt>
 File: images/all_params_refinado_12.png Graphic file (type png)
 
 <use images/all_params_refinado_12.png>
 Package pdftex.def Info: images/all_params_refinado_12.png used on input line 2
-69.
+70.
 (pdftex.def)             Requested size: 426.79134pt x 314.99524pt.
 
-Overfull \hbox (9.31827pt too wide) in paragraph at lines 269--270
+Overfull \hbox (9.31827pt too wide) in paragraph at lines 270--271
  [][] 
  []
 
 [63 <./images/vel_vs_rad_bins.png>]
-<images/fix_gamma_refinado_12.png, id=825, 928.21782pt x 685.05937pt>
+<images/fix_gamma_refinado_12.png, id=878, 928.21782pt x 685.05937pt>
 File: images/fix_gamma_refinado_12.png Graphic file (type png)
 
 <use images/fix_gamma_refinado_12.png>
 Package pdftex.def Info: images/fix_gamma_refinado_12.png used on input line 29
-5.
+6.
 (pdftex.def)             Requested size: 426.79134pt x 314.99524pt.
 
-Overfull \hbox (9.31827pt too wide) in paragraph at lines 295--296
+Overfull \hbox (9.31827pt too wide) in paragraph at lines 296--297
  [][] 
  []
 
 [64 <./images/all_params_refinado_12.png>]
-<images/all_params_refinado_10.png, id=831, 928.21782pt x 685.05937pt>
+<images/all_params_refinado_10.png, id=888, 928.21782pt x 685.05937pt>
 File: images/all_params_refinado_10.png Graphic file (type png)
 
 <use images/all_params_refinado_10.png>
 Package pdftex.def Info: images/all_params_refinado_10.png used on input line 3
-21.
+22.
 (pdftex.def)             Requested size: 426.79134pt x 314.99524pt.
 
-Overfull \hbox (9.31827pt too wide) in paragraph at lines 321--322
+Overfull \hbox (9.31827pt too wide) in paragraph at lines 322--323
  [][] 
  []
 
 [65 <./images/fix_gamma_refinado_12.png>]
-<images/fix_gamma_refinado_10.png, id=837, 928.21782pt x 678.28406pt>
+<images/fix_gamma_refinado_10.png, id=897, 928.21782pt x 678.28406pt>
 File: images/fix_gamma_refinado_10.png Graphic file (type png)
 
 <use images/fix_gamma_refinado_10.png>
 Package pdftex.def Info: images/fix_gamma_refinado_10.png used on input line 34
-5.
+6.
 (pdftex.def)             Requested size: 426.79134pt x 311.8799pt.
 
-Overfull \hbox (9.31827pt too wide) in paragraph at lines 345--346
+Overfull \hbox (9.31827pt too wide) in paragraph at lines 346--347
  [][] 
  []
 
@@ -1140,48 +1152,223 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 307.
  (./Thesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 307.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 307.
-Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: C0E9C37D4D6D6EEB592905EEEE6FC9F4;7525.
 
+
+Package rerunfilecheck Warning: File `Thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Thesis.out':
+(rerunfilecheck)             Before: C0E9C37D4D6D6EEB592905EEEE6FC9F4;7525
+(rerunfilecheck)             After:  221AFE9360D03D6D5CC0CE7EF0CB8ED8;7393.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 307.
  ) 
 Here is how much of TeX's memory you used:
- 13588 strings out of 494985
- 193924 string characters out of 6180357
+ 13654 strings out of 494985
+ 194931 string characters out of 6180357
  268282 words of memory out of 5000000
- 16274 multiletter control sequences out of 15000+600000
- 19867 words of font info for 72 fonts, out of 8000000 for 9000
+ 16285 multiletter control sequences out of 15000+600000
+ 22670 words of font info for 83 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  49i,17n,45p,13209b,480s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols
-/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on Thesis.pdf (80 pages, 6200583 bytes).
+pdfTeX warning (dest): name{table.caption.168} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.166} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.163} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.160} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.157} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.128} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.110} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.80} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.165} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.162} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.159} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.156} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.151} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.149} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.123} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.114} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.112} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.109} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.105} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.102} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.98} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.96} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.93} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.89} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.86} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.82} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.79} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.77} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter*.169} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.167} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.164} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.161} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.158} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.155} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.154} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.129} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.120} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.119} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.118} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.113} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.107} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.106} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.103} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.99} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.97} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.95} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.94} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.90} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.87} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.84} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.81} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.78} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.76} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.75} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{section.74} has been referenced but does not exist,
+ replaced by a fixed one
+
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
+ib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on Thesis.pdf (80 pages, 6290059 bytes).
 PDF statistics:
- 1002 PDF objects out of 1200 (max. 8388607)
- 829 compressed objects within 9 object streams
- 266 named destinations out of 1000 (max. 500000)
+ 1084 PDF objects out of 1200 (max. 8388607)
+ 896 compressed objects within 9 object streams
+ 320 named destinations out of 1000 (max. 500000)
  580 words of extra memory for PDF output out of 10000 (max. 10000000)
 
