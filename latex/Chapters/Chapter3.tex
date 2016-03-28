@@ -8,7 +8,7 @@ The spectroscopic data allows us to determine the relative motion of individual 
 
 \section{Observational Procedures}
 
-Our stay in OPD consisted of two days in the main dome for the spectroscopic data (using the Perkin-Elmer (P\&E) telescope with a 1.6m mirror and the Cassegrain Spectrograph) and four days in a smaller dome for the photometric data in the IAG telescope with a 0.6m mirror. In the following photograph, the domes of the observatory that we used for our observations:
+Our stay in OPD consisted of two days in the main dome for the spectroscopic data (using the Perkin-Elmer (P\&E) telescope with a 1.6m mirror and the Cassegrain Spectrograph) and four days in a smaller dome for the photometric data in the IAG telescope with a 0.6m mirror. Figure 3.1 shows the configuration of telescopes in the observatory.
 
 \begin{figure}[H]
 \centering
@@ -18,7 +18,7 @@ Our stay in OPD consisted of two days in the main dome for the spectroscopic dat
 
 \subsection{Spectroscopic Data}
 
-The first two days (May 14th and 15th) we took the spectroscopic data in the telescope P\&E with a diameter of 1.6m. The main instrument was the Cassegrain spectrograph with a CCD Ikon-L camera and Filters UBVRI. The control software we used was the recently installed software TCSPD which is built in a LabView environment for Windows (2010). Here's a photo of the telescope from inside the dome:
+The first two days (May 14th and 15th) we took the spectroscopic data in the telescope P\&E with a diameter of 1.6m. The main instrument was the Cassegrain spectrograph with a CCD Ikon-L camera and Filters UBVRI. The control software we used was the recently installed software TCSPD which is built in a LabView environment for Windows (2010). Figure 3.2 shows the telescope from inside the dome.
 
 \begin{figure}[H]
 \centering
@@ -74,7 +74,7 @@ On May 15th, we used the slit of 3.0", and used a central wavelength of 5500 Ang
 
 \subsection{Photometric Data}
 
-The photometric data was acquired in the next four days (from May 16th to May 19th) in the 0.6m IAG telescope in OPD. We used the Johnson system for the different filters which were easily shifted with the given software in the control computers. 
+The photometric data was acquired in the next four days (from May 16th to May 19th) in the 0.6m IAG telescope in OPD. We used the Johnson system for the different filters which were easily shifted with the given software in the control computers. Figure 3.3 shows the telescope from inside the dome.
 
 \begin{figure}[H]
 \centering
@@ -106,7 +106,7 @@ The photometry was made by the two traditional methods, PSF photometry and Apert
 
 But first, the reduction of the data had to be done. The first step is to characterize the calibration images in order to see if there are any errors associated with the instrument or the way that the observations were made. By doing this we found that most of the flat-field images had brightness gradients in the corners and this was a problem we needed to correct because the increased value on the counts in these corners would affect the normalization of the super-flat that we would use to reduce the science data. Another systematic error that we found in all of our calibration and science frames was the presence of a strange water-looking figure at the top left corner of them, although it can be removed with the correct reduction, it obviously affected the CCD sensitivity by the time of the observations. Also, some filters showed a higher sensitivity to this systematic errors but at the end, the photometry could be made in the best data so that the dirty images don't affect our results.
 
-In order to see how the data would be affected by the systematic errors we just mentioned, we produced a composite image using three images with the filters U,V and R and we did the same with the flats in those filters, the results are shown in the following figure:
+In order to see how the data would be affected by the systematic errors we just mentioned, we produced a composite image using three images with the filters U,V and R and we did the same with the flats in those filters, the results are shown in figures 3.4 and 3.5.
   
 \begin{figure}[H]
   \centering
@@ -127,7 +127,7 @@ Once all the characterization is made we can reduce our important data using IRA
 
 - Building a Superbias: \textit{Zerocombine} allows us to create the superbias using the median.
 
-- Substracting the Superbias to every flat and science data: We substract the Superbias to every flat frame with no distiction on the filter, this is easily made using the task \textit{imarith}, we also substract them from the original science images.
+- Substracting the Superbias to every flat and science data: We substract the Superbias to every flat frame with no distinction on the filter, this is easily made using the task \textit{imarith}, we also substract them from the original science images.
 
 - Building Superflats: It is necessary to create a Superflat frame for each filter because the response of the CCD and will be different for different wavelengths, we use the task \textit{imcombine} to do this and this time we use the mode for better results.   
 
@@ -146,7 +146,7 @@ Once all the characterization is made we can reduce our important data using IRA
 
 Now that the reduction has been made and the corrections pixel by pixel have been applied, we can proceed to do the photometry using the simplest technique, known as Aperture Photometry which consists of adding up the pixel counts within a circle centered on each star of the cluster and subtracting the quotient of the per-pixel average value of nearby sky count divided by the number of pixels within the aperture. This will result in the raw flux value of the target object. This Aperture Photometry was done using the task \textit{Phot}:
 
-For stars in the NGC5139 cluster, one must choose a very small aperture of the sky because the surrounding stars contribute to the flux that needs to be extracted and they are very close to each other, as we can see in the following figure: 
+For stars in $\omega$ Centauri, one must choose a very small aperture of the sky because the surrounding stars contribute to the flux that needs to be extracted and they are very close to each other, the crowded region of the center of $\omega$ Centauri is shown in figure 3.7. 
 
 \begin{figure}[H]
 \centering
@@ -158,7 +158,7 @@ With the task \textit{imexamine} I find a value for the FWHM of 6.4 which I will
 
 Another important value to take into account before editing the parameters in \textit{phot} is the medium value of the background on the sky, in the case of this cluster, I do an average on many different places in the background of the image and find a value of sigma for the image that is equal to 53.45.
 
-Now the photometry is done by changing some of the parameters including the readnoise and the gain. In the \textit{fitskyparts} task inside phot I set the inner radius called annulus to be 25.6 (4FWHM) and the intermediate width called dannulus of 16 (2.5FWHM). Finally, before running the task I make sure I do the photometry using various apertures because I want to see which one minimizes the errors. I set apertures to be 1FWHM, 1.5FWHM, 2FWHM, 2.5FWHM, 3FWHM, 3.5FWHM and finally run the task. The results of the magnitude found for one of the star as a function of the size of the aperture is displayed below:
+Now the photometry is done by changing some of the parameters including the readnoise and the gain. In the \textit{fitskyparts} task inside phot I set the inner radius called annulus to be 25.6 (4FWHM) and the intermediate width called dannulus of 16 (2.5FWHM). Finally, before running the task I make sure I do the photometry using various apertures because I want to see which one minimizes the errors. I set apertures to be 1FWHM, 1.5FWHM, 2FWHM, 2.5FWHM, 3FWHM, 3.5FWHM and finally run the task. The results of the magnitude found for one of the star as a function of the size of the aperture is displayed in figure 3.8.
 
 \begin{figure}[H]
 \centering
@@ -166,7 +166,7 @@ Now the photometry is done by changing some of the parameters including the read
 \caption[Photometry results of Magnitudes vs Size of apertures]{The magnitude decreases for bigger appertures}
 \end{figure}
 
-As we can see in the figure above, the magnitude of the chosen star in the cluster decreases for bigger apertures but so does the error because the space around the star is crowded with more stars and noise coming from the stars in the background so we infer that for crowded areas like this one the best choice is a small aperture. Although the results may not be as convincing, the use of another technique of photometry allows us to compare the results and see if the choice of a small aperture is a good way to fix or avoid the problem of the big noise of the background. For this purpose we use the technique of Point Spread Function (PSF) Photometry.
+As we can see in figure 3.8, the magnitude of the chosen star in the cluster decreases for bigger apertures but so does the error because the space around the star is crowded with more stars and noise coming from the stars in the background so we infer that for crowded areas like this one the best choice is a small aperture. Although the results may not be as convincing, the use of another technique of photometry allows us to compare the results and see if the choice of a small aperture is a good way to fix or avoid the problem of the big noise of the background. For this purpose we use the technique of Point Spread Function (PSF) Photometry.
 
 \subsection{PSF Photometry}
 
@@ -182,7 +182,7 @@ The task \textit{tvmark} allows me to highlight the stars of the cluster in the 
 
 The best way to correctly select the stars that will be used for the modelling of the PSF is by using the task \textit{pstselect} that will select the stars that are well isolated using statistical techniques. 
 
-Once the stars are selected, the next step is to use the task \textit{psf} which matches the point spread functions of the input images, by running this task, one can visualize how the PSF is modelled for each star and accept or decline the results to be stored, the interactive mode allows us to take the decision by analysing the modelling like the one we can see in the following image of the xterm:
+Once the stars are selected, the next step is to use the task \textit{psf} which matches the point spread functions of the input images, by running this task, one can visualize how the PSF is modelled for each star and accept or decline the results to be stored, the interactive mode allows us to take the decision by analysing the modelling like the one we can see in figure 3.9 where it actually shown that the target star is saturated but has the proper behaviour of the Gaussian fit.
 
 \begin{figure}[H]
 \centering
@@ -190,7 +190,7 @@ Once the stars are selected, the next step is to use the task \textit{psf} which
 \caption[PSF modelling]{PSF modelling, the interactive mode allows us to accept of decline the result by pressing ``a" or ``d", in this case the PSF is not a soft curve with a Gaussian behaviour so it can probably be discarded}
 \end{figure}
 
-After running \textit{psf}, there will be created an image that contains the residuals of the psf modelling which can be seen like this:
+After running \textit{psf}, there will be created an image that contains the residuals of the psf modelling which can be seen in figure 3.10.
 
 \begin{figure}[H]
 \centering
@@ -198,7 +198,7 @@ After running \textit{psf}, there will be created an image that contains the res
 \caption[PSF residuals]{PSF residuals}
 \end{figure}
 
-With the task \textit{seepsf} another image will be created but this time it will actually look like a star:
+With the task \textit{seepsf} another image will be created but this time it will actually look like a star as shown in figure 3.11
 
 \begin{figure}[H]
 \centering
@@ -207,6 +207,13 @@ With the task \textit{seepsf} another image will be created but this time it wil
 \end{figure}
 
 Finally, after the modelling of the PSF was made, the task \textit{allstar} does the photometry of the cluster using the results we just stored in the current directory. The results of the PSF photometry gave us magnitudes smaller for those stars than the results given by the aperture photometry but there is a constant difference for all the stars which we can assume to be a calibration constant between the two methods. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=12cm]{images/HR-diagram.png}
+\caption[Pf]{Sd}
+\end{figure}
+
 
 \section{Spectroscopy}
 
@@ -234,7 +241,7 @@ blkrep AvgFlatCols AvgFlatColsMaster 475 1
 
 - Finally, the task we use to remove the cosmic rays is \textit{lacos}, and it gives very accurate results, as it shows the ``mask" image with the removed cosmic rays.
 
-The vertical axis of the spectra is the dispersion axis and the horizontal axis is the spatial separation between stars. To visualize the reductions we have the following figures taken from the dirty and reduced NGC5139 spectrum (Day of observation May 14th):
+Figures 3.13 and 3.14 show......The vertical axis of the spectra is the dispersion axis and the horizontal axis is the spatial separation between stars. To visualize the reductions we have the following figures taken from the dirty and reduced NGC5139 spectrum (Day of observation May 14th):
 
 \begin{figure}[H]
   \centering
@@ -268,7 +275,7 @@ Interactively, one must choose very precisely the background regions to extract 
 
 If a good choice of the background and the dispersion axis is well fitted, the task runs straightforward to get the spectrum of the star. In the case of the calibration lamps, the procedure is quite similar because the extraction of their spectrum is done with \textit{apsum}, which is very similar to \textit{apall}. 
 
-For the calibration star HR4468, the extracted spectrum looks like the one shown in figure
+For the calibration star HR4468, the extracted spectrum looks like the one shown in figure 3.15.
 
 \begin{figure}[H]
 \centering
@@ -278,7 +285,7 @@ For the calibration star HR4468, the extracted spectrum looks like the one shown
 
 \subsection{Wavelength Calibration}
 
-Once the spectrum is extracted, the following step is to calibrate it in wavelength in order to make it useful for scientific analysis. The wavelength calibration is made with the use of many tasks of IRAF like \textit{Identify}, \textit{Refspec} and \textit{Dispcor}. First, with \textit{identify} I use the interactive window in IRAF to select some prominent lines in the spectrum of the calibration lamps and assign them their correct wavelength using the theoretic spectrum of the lamp. In this case our calibration lamps were Ne-Ar (for May 14$^{th}$) and He-Ar (for May 15$^{th}$)  and OPD observatory provided us the theoretic distribution of emission lines of them. As we can see below:
+Once the spectrum is extracted, the following step is to calibrate it in wavelength in order to make it useful for scientific analysis. The wavelength calibration is made with the use of many tasks of IRAF like \textit{Identify}, \textit{Refspec} and \textit{Dispcor}. First, with \textit{identify} I use the interactive window in IRAF to select some prominent lines in the spectrum of the calibration lamps and assign them their correct wavelength using the theoretic spectrum of the lamp. In this case our calibration lamps were Ne-Ar (for May 14$^{th}$) and He-Ar (for May 15$^{th}$)  and OPD observatory provided us the theoretic distribution of emission lines of them. The lines look like the ones shown in figures 3.16 and 3.17
 
 \begin{figure}[H]
   \centering
@@ -297,7 +304,7 @@ Running \textit{identify} in the interactive mode and using ``m" to select the l
 
 The task that actually does the calibration on wavelength for the science targets is \textit{dispcor}, it is only necessary to run the task over all the targets with their own wavelength calibrated lamp to get the calibrated spectrum which is the useful and important file to make the analysis of the width of the lines and their redshift.
 
-The wavelength calibrated spectrum of the star HR4468, after running \textit{dispcor} is:
+The wavelength calibrated spectrum of the star HR4468, after running \textit{dispcor} is show in figure 3.18.
 
 \begin{figure}[H]
 \centering
@@ -313,7 +320,7 @@ The same procedure consisting on saving a database file with the emission lines 
 
 We used this procedure to calibrate in wavelength $HR4468$ and see if both methods gave different results. The relevance of this procedure is that it allows us to see if we have any systematic problems or errors in the calibrations that would then affect our science data.
 
-After the wavelength calibration was made for the stellar spectrum, we note a difference of around $0.65 \textrm{\AA}$ as we can see in the following figure:
+After the wavelength calibration was made for the stellar spectrum, we note a difference of around $0.65 \textrm{\AA}$ as we can see in figures 3.19 and 3.20.
 
 \begin{figure}[H]
   \centering
@@ -368,7 +375,7 @@ After the flux calibration, I notice that the extremes of the spectra have irreg
 imcopy flux\_calib\_star\_fits[45:1860,*] cut\_flux\_calib\_star.fits
 \end{center}
 
-The wavelength and flux calibrated spectrum of the star HR4468, now ready to be used for radial velocities determination looks like this:
+The wavelength and flux calibrated spectrum of the star HR4468, now ready to be used for radial velocities determination is displayed in figure 3.21.
 
 \begin{figure}[H]
 \centering
@@ -386,7 +393,7 @@ Now, with the image ready in 1-D, I use the task \textit{wspectext} to create th
 wspectext ready\_flux\_star.0001.fits normal\_cut\_flux\_star\_calib.txt
 \end{center}
 
-In principle, the same procedures hold for the star in the Globular Clusters, even though it must be made more carefully because the background noise and the crowded space surrounding them affects the spectra and it might change the values of the radial velocities, an example of a wavelength and flux calibrated spectrum of one of the stars in the NGC5139 cluster is:
+In principle, the same procedures hold for the star in the Globular Clusters, even though it must be made more carefully because the background noise and the crowded space surrounding them affects the spectra and it might change the values of the radial velocities, an example of a wavelength and flux calibrated spectrum of one of the stars in the NGC5139 cluster is shown in figure 3.22.
 
 \begin{figure}[H]
 \centering
@@ -408,7 +415,7 @@ This package is the radial velocity analysis package of the Smithsonian Astrophy
 
 The program XCSAO is the most important one in the RVSAO package, it implements the cross-correlation method and interactive algorithms to properly prepare the spectra for a correct radial velocity analysis such as the removal of the continuum and the emission line suppression. For using this task, one must provide the spectrum of the object and a template spectrum (preferably in the rest frame so that the emission and absorption lines are in their proper wavelength) that will be used for the cross correlation, it also requires the starting and ending wavelength, the type of Fourier filtering and many other details according to the user's desires and interests.
 
-By using one of IRAF's templates \textit{``habtemp0.fits"} that covers the range of 2884.1547$\textrm{\AA}$ to 7037.3375$\textrm{\AA}$ we can directly run XCSAO on a stellar spectrum that will use the Fourier transform to cross correlate them and give an approximate value of the radial velocity of the star an printed in an irafterm window as seen below: 
+By using one of IRAF's templates \textit{``habtemp0.fits"} that covers the range of 2884.1547$\textrm{\AA}$ to 7037.3375$\textrm{\AA}$ we can directly run XCSAO on a stellar spectrum that will use the Fourier transform to cross correlate them and give an approximate value of the radial velocity of the star an printed in an irafterm window as seen in figure 3.23. 
 
 \begin{figure}[H]
 \centering

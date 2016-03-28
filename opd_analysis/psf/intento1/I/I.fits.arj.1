@@ -1,0 +1,2306 @@
+#K IRAF       = NOAO/IRAFV2.16.1        version    %-23s     
+#K HOST       = juan-UX303LA            computer   %-23s     
+#K DATE       = 2016-03-27              yyyy-mm-dd %-23s     
+#K TIME       = 16:13:32                hh:mm:ss   %-23s     
+#K PACKAGE    = daophot                 name       %-23s     
+#K TASK       = allstar                 name       %-23s     
+#K IMAGE      = I.fits                  imagename  %-23s     
+#K PHOTFILE   = I.fits.mag.1            filename   %-23s     
+#K PSFIMAGE   = I_psf.fits              imagename  %-23s     
+#K ALLSTARFIL = I.fits.als.1            filename   %-23s     
+#K REJFILE    = I.fits.arj.1            filename   %-23s     
+#K SUBIMAGE   = I.fits.sub.1            imagename  %-23s     
+#K SCALE      = 1.                      units/pix  %-23.7g   
+#K DATAMIN    = INDEF                   counts     %-23.7g   
+#K DATAMAX    = INDEF                   counts     %-23.7g   
+#K GAIN       = 1.                      e-/adu     %-23.7g   
+#K READNOISE  = 0.                      electrons  %-23.7g   
+#K OTIME      = INDEF                   timeunit   %-23s     
+#K XAIRMASS   = INDEF                   number     %-23.7g   
+#K IFILTER    = INDEF                   filter     %-23s     
+#K RECENTER   = yes                     switch     %-23b     
+#K GRPSKY     = yes                     switch     %-23b     
+#K FITSKY     = no                      switch     %-23b     
+#K PSFMAG     = 7.446                   magnitude  %-23.7g   
+#K PSFRAD     = 1.                      scaleunit  %-23.7g   
+#K FITRAD     = 1.                      scaleunit  %-23.7g   
+#K ANNULUS    = 53.25                   scaleunit  %-23.7g   
+#K DANNULUS   = 31.95                   scaleunit  %-23.7g   
+#K MAXITER    = 50                      number     %-23d     
+#K MAXGROUP   = 60                      number     %-23d     
+#K FLATERROR  = 0.75                    percentage %-23.7g   
+#K PROFERROR  = 5.                      percentage %-23.7g   
+#K CLIPEXP    = 6                       number     %-23d     
+#K CLIPRANGE  = 2.5                     sigma      %-23.7g   
+#K MERGERAD   = INDEF                   scaleunit  %-23.7g   
+#
+#N ID    XCENTER   YCENTER   MAG         MERR          MSKY           NITER    \
+#U ##    pixels    pixels    magnitudes  magnitudes    counts         ##       \
+#F %-9d  %-10.3f   %-10.3f   %-12.3f     %-14.3f       %-15.7g        %-6d      
+#
+#N         SHARPNESS   CHI         PIER  PERROR                                \
+#U         ##          ##          ##    perrors                               \
+#F         %-23.3f     %-12.3f     %-6d  %-13s                                  
+#
+1247     931.953   1394.000  INDEF       INDEF         18569.29       0        \
+           INDEF       INDEF       6     Merged                                 
+1155     1322.000  1257.641  INDEF       INDEF         18838.24       0        \
+           INDEF       INDEF       6     Merged                                 
+1134     608.387   1235.212  INDEF       INDEF         17994.07       0        \
+           INDEF       INDEF       6     Merged                                 
+902      420.557   976.264   INDEF       INDEF         16968.8        0        \
+           INDEF       INDEF       6     Merged                                 
+734      928.397   843.184   INDEF       INDEF         18122.65       0        \
+           INDEF       INDEF       6     Merged                                 
+702      1095.867  819.202   INDEF       INDEF         18626.12       0        \
+           INDEF       INDEF       6     Merged                                 
+634      1355.360  768.936   INDEF       INDEF         19384.77       0        \
+           INDEF       INDEF       6     Merged                                 
+608      757.660   749.613   INDEF       INDEF         16860.8        0        \
+           INDEF       INDEF       6     Merged                                 
+578      1370.129  722.243   INDEF       INDEF         18008.91       0        \
+           INDEF       INDEF       6     Merged                                 
+447      387.000   619.201   INDEF       INDEF         18678.25       0        \
+           INDEF       INDEF       6     Merged                                 
+457      1161.203  618.983   INDEF       INDEF         19392.56       0        \
+           INDEF       INDEF       6     Merged                                 
+270      789.469   459.412   INDEF       INDEF         19128.53       0        \
+           INDEF       INDEF       6     Merged                                 
+275      837.681   455.422   INDEF       INDEF         17241.62       0        \
+           INDEF       INDEF       6     Merged                                 
+208      1483.844  391.950   INDEF       INDEF         20464.13       0        \
+           INDEF       INDEF       6     Merged                                 
+200      1483.155  391.425   INDEF       INDEF         20224.37       0        \
+           INDEF       INDEF       6     Merged                                 
+177      1410.786  359.124   INDEF       INDEF         18736.98       0        \
+           INDEF       INDEF       6     Merged                                 
+182      1320.770  357.859   INDEF       INDEF         21264.1        0        \
+           INDEF       INDEF       6     Merged                                 
+149      1526.459  325.476   INDEF       INDEF         18090.72       0        \
+           INDEF       INDEF       6     Merged                                 
+135      595.435   301.663   INDEF       INDEF         17814.33       0        \
+           INDEF       INDEF       6     Merged                                 
+133      972.187   301.464   INDEF       INDEF         16470.1        0        \
+           INDEF       INDEF       6     Merged                                 
+111      418.728   240.574   INDEF       INDEF         27548.88       0        \
+           INDEF       INDEF       6     Merged                                 
+77       1342.655  186.517   INDEF       INDEF         20721.39       0        \
+           INDEF       INDEF       6     Merged                                 
+65       1654.289  171.316   INDEF       INDEF         20417.12       0        \
+           INDEF       INDEF       6     Merged                                 
+41       449.106   112.433   INDEF       INDEF         17707.85       0        \
+           INDEF       INDEF       6     Merged                                 
+2        833.780   1.374     INDEF       INDEF         19794.67       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1        819.012   1.475     INDEF       INDEF         18020.22       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+3        1289.859  4.871     INDEF       INDEF         18378.62       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+4        1906.627  12.818    INDEF       INDEF         16034.75       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+5        469.561   15.373    INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+6        920.796   17.244    INDEF       INDEF         23000.59       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+7        1489.122  21.752    INDEF       INDEF         54216.92       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+8        903.057   24.026    INDEF       INDEF         20512.36       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+9        1478.152  25.080    INDEF       INDEF         18835.8        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+10       52.264    28.764    INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+11       1154.885  31.708    INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+12       1350.235  32.276    INDEF       INDEF         19841.41       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+13       419.453   40.077    INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+14       1420.274  44.914    INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+15       870.102   51.312    INDEF       INDEF         19147.87       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+16       1274.942  53.917    INDEF       INDEF         19645.75       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+17       1606.926  54.336    INDEF       INDEF         17384.04       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+18       736.990   55.735    INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+19       874.507   60.050    INDEF       INDEF         19975.46       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+20       222.911   60.833    INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+21       1282.880  61.142    INDEF       INDEF         18966.54       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+22       1037.818  66.511    INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+23       1208.274  68.259    INDEF       INDEF         18821.19       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+25       291.560   71.881    INDEF       INDEF         16450.07       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+27       1941.668  74.227    INDEF       INDEF         16358.54       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+28       1116.857  78.308    INDEF       INDEF         50523.83       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+26       1133.086  78.670    INDEF       INDEF         17581.05       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+29       48.530    81.403    INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+30       1847.629  82.007    INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+33       252.784   82.545    INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+36       1985.524  84.118    INDEF       INDEF         19143.87       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+34       1998.700  84.967    INDEF       INDEF         73908.5        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+37       480.147   93.733    INDEF       INDEF         18459.         0        \
+           INDEF       INDEF       3     Npix_too_few                           
+39       1040.780  101.061   INDEF       INDEF         20868.99       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+40       1827.074  104.170   INDEF       INDEF         18285.16       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+43       448.663   112.141   INDEF       INDEF         16965.63       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+44       1370.724  118.748   INDEF       INDEF         19200.79       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+45       1439.826  124.000   INDEF       INDEF         19226.43       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+46       46.752    124.243   INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+47       1075.038  127.097   INDEF       INDEF         26605.82       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+49       1518.030  128.913   INDEF       INDEF         17311.16       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+48       886.092   129.337   INDEF       INDEF         18361.53       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+50       205.181   130.818   INDEF       INDEF         21065.78       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+52       406.000   131.639   INDEF       INDEF         18398.66       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+51       589.731   131.870   INDEF       INDEF         20608.72       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+53       1090.848  131.898   INDEF       INDEF         52369.32       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+55       1975.394  135.145   INDEF       INDEF         20288.57       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+58       1034.995  137.276   INDEF       INDEF         20980.82       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+59       1306.953  138.994   INDEF       INDEF         16995.49       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+60       848.191   144.862   INDEF       INDEF         17276.78       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+61       1022.967  147.586   INDEF       INDEF         22487.64       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+62       1840.951  155.063   INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+63       1880.318  163.107   INDEF       INDEF         17631.89       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+67       1723.984  173.481   INDEF       INDEF         18309.78       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+68       577.746   174.995   INDEF       INDEF         16269.77       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+70       1113.529  176.127   INDEF       INDEF         19854.36       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+69       1089.878  176.636   INDEF       INDEF         18448.26       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+71       905.672   178.213   INDEF       INDEF         16738.12       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+72       949.281   180.760   INDEF       INDEF         16734.46       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+75       1120.629  189.994   INDEF       INDEF         21146.94       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+76       141.054   190.050   INDEF       INDEF         17772.65       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+80       1798.662  200.188   INDEF       INDEF         17164.92       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+79       958.915   200.605   INDEF       INDEF         48444.97       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+81       1385.731  202.068   INDEF       INDEF         18832.9        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+83       84.738    204.875   INDEF       INDEF         17373.52       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+84       998.819   206.795   INDEF       INDEF         17912.55       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+82       999.000   207.896   INDEF       INDEF         18550.75       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+86       964.253   207.895   INDEF       INDEF         17135.85       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+85       23.203    210.723   INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+88       961.281   211.786   INDEF       INDEF         17019.3        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+87       1433.392  212.903   INDEF       INDEF         16974.93       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+89       800.403   215.904   INDEF       INDEF         19054.11       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+90       1699.649  216.080   INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+93       585.480   218.140   INDEF       INDEF         55057.86       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+95       1864.448  220.934   INDEF       INDEF         17975.84       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+92       1508.118  220.971   INDEF       INDEF         17514.87       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+94       1315.983  221.497   INDEF       INDEF         16515.57       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+96       340.996   223.149   INDEF       INDEF         16637.26       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+98       1382.968  224.731   INDEF       INDEF         20333.2        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+101      1641.078  225.000   INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+97       1149.514  226.051   INDEF       INDEF         18536.33       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+104      597.891   227.134   INDEF       INDEF         19328.56       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+105      884.825   227.902   INDEF       INDEF         19747.98       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+106      1827.862  232.882   INDEF       INDEF         22139.63       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+110      1152.021  234.639   INDEF       INDEF         19449.98       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+112      700.739   238.258   INDEF       INDEF         20908.38       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+103      419.235   240.279   INDEF       INDEF         34582.05       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+113      1081.161  247.443   INDEF       INDEF         20453.9        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+114      423.844   248.953   INDEF       INDEF         52377.93       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+115      1788.227  250.100   INDEF       INDEF         19030.96       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+120      1798.000  254.501   INDEF       INDEF         19151.37       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+116      850.073   254.530   INDEF       INDEF         18280.13       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+124      1232.870  266.957   INDEF       INDEF         17858.86       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+123      1294.403  267.002   INDEF       INDEF         16942.98       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+122      706.157   267.235   INDEF       INDEF         18350.95       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+126      875.265   272.913   INDEF       INDEF         16447.73       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+125      759.856   273.536   INDEF       INDEF         17179.36       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+128      1090.810  280.906   INDEF       INDEF         19607.08       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+129      1010.736  283.937   INDEF       INDEF         19085.17       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+132      777.059   287.427   INDEF       INDEF         16800.55       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+138      972.823   300.788   INDEF       INDEF         16699.49       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+139      1820.069  301.989   INDEF       INDEF         16655.84       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+136      209.094   301.995   INDEF       INDEF         17193.04       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+142      410.205   310.006   INDEF       INDEF         17097.25       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+143      622.933   314.375   INDEF       INDEF         18934.88       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+145      1110.893  316.967   INDEF       INDEF         18735.31       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+147      1945.079  320.231   INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+148      1592.781  322.918   INDEF       INDEF         17281.89       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+150      1651.763  323.660   INDEF       INDEF         23289.55       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+151      1096.095  323.855   INDEF       INDEF         18306.39       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+152      1541.069  325.993   INDEF       INDEF         65644.68       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+153      885.947   326.800   INDEF       INDEF         17051.16       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+157      918.399   334.129   INDEF       INDEF         18351.68       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+159      1971.704  337.190   INDEF       INDEF         24126.79       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+161      1364.437  339.075   INDEF       INDEF         18281.19       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+162      1154.125  341.289   INDEF       INDEF         18543.5        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+165      584.150   343.148   INDEF       INDEF         20416.77       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+160      769.553   343.898   INDEF       INDEF         17453.15       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+167      1830.571  344.975   INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+166      886.957   345.800   INDEF       INDEF         19765.6        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+170      864.918   347.055   INDEF       INDEF         18039.22       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+172      879.245   348.000   INDEF       INDEF         17161.41       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+173      1676.998  349.240   INDEF       INDEF         20517.28       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+169      1266.900  349.704   INDEF       INDEF         19077.15       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+174      1182.086  352.334   INDEF       INDEF         18026.07       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+176      1000.755  355.884   INDEF       INDEF         18190.04       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+178      1262.255  358.075   INDEF       INDEF         21362.87       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+183      1410.786  359.124   INDEF       INDEF         18736.98       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+180      1061.624  360.828   INDEF       INDEF         18610.59       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+181      1151.822  361.872   INDEF       INDEF         19109.14       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+186      973.170   366.399   INDEF       INDEF         19410.01       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+187      1137.077  367.335   INDEF       INDEF         20376.87       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+184      1229.367  369.190   INDEF       INDEF         16396.51       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+189      404.000   370.188   INDEF       INDEF         18509.27       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+191      586.011   370.528   INDEF       INDEF         18463.84       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+190      60.211    372.307   INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+193      1028.875  374.968   INDEF       INDEF         19810.7        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+195      721.966   376.127   INDEF       INDEF         24331.52       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+194      1062.990  376.905   INDEF       INDEF         18482.66       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+196      951.915   382.271   INDEF       INDEF         19044.93       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+201      863.454   386.034   INDEF       INDEF         18081.02       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+198      1144.203  386.631   INDEF       INDEF         19213.59       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+199      1350.781  388.784   INDEF       INDEF         16251.34       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+206      1141.806  390.700   INDEF       INDEF         19251.02       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+203      532.318   391.114   INDEF       INDEF         17595.61       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+204      1483.155  391.425   INDEF       INDEF         20224.37       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+202      1193.768  393.305   INDEF       INDEF         17453.39       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+207      1157.688  399.114   INDEF       INDEF         20067.6        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+211      1226.942  401.143   INDEF       INDEF         17951.44       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+213      1495.135  401.842   INDEF       INDEF         39237.73       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+210      1060.742  402.294   INDEF       INDEF         17107.5        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+209      1041.188  403.183   INDEF       INDEF         18671.62       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+212      830.747   404.814   INDEF       INDEF         17102.92       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+214      889.360   405.167   INDEF       INDEF         19378.29       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+218      1157.289  406.094   INDEF       INDEF         17730.25       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+217      503.240   408.892   INDEF       INDEF         16994.39       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+224      1264.538  418.849   INDEF       INDEF         18600.14       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+222      1963.888  419.951   INDEF       INDEF         18854.84       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+225      526.744   422.028   INDEF       INDEF         20319.55       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+223      481.526   423.000   INDEF       INDEF         18009.59       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+228      1103.636  424.990   INDEF       INDEF         18749.89       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+226      653.980   425.258   INDEF       INDEF         19591.96       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+229      931.203   425.890   INDEF       INDEF         17216.16       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+233      908.890   426.658   INDEF       INDEF         17154.93       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+231      454.034   427.483   INDEF       INDEF         18054.46       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+230      336.360   427.918   INDEF       INDEF         21083.33       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+232      1752.594  428.915   INDEF       INDEF         17645.4        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+235      1112.199  430.737   INDEF       INDEF         16932.57       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+237      757.407   431.189   INDEF       INDEF         19422.88       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+236      1585.610  432.075   INDEF       INDEF         21116.64       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+239      299.085   434.122   INDEF       INDEF         18959.57       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+244      503.000   434.246   INDEF       INDEF         17478.41       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+240      534.082   434.825   INDEF       INDEF         17136.3        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+243      987.918   436.892   INDEF       INDEF         22570.22       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+247      381.089   440.027   INDEF       INDEF         47831.29       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+251      1067.840  441.133   INDEF       INDEF         17691.86       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+249      896.554   442.153   INDEF       INDEF         21414.52       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+250      436.861   442.575   INDEF       INDEF         18376.95       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+256      586.178   442.619   INDEF       INDEF         17712.22       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+245      585.066   442.646   INDEF       INDEF         17749.25       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+248      667.733   443.070   INDEF       INDEF         17407.14       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+252      1132.815  443.241   INDEF       INDEF         17089.07       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+253      1189.133  443.512   INDEF       INDEF         18764.49       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+254      1240.966  444.606   INDEF       INDEF         24229.15       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+258      746.159   445.887   INDEF       INDEF         19186.98       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+262      918.811   448.070   INDEF       INDEF         16890.86       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+260      262.172   448.248   INDEF       INDEF         21313.69       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+261      350.322   448.791   INDEF       INDEF         19290.54       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+267      1009.310  449.244   INDEF       INDEF         18888.95       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+264      757.593   452.003   INDEF       INDEF         18946.75       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+268      751.617   453.790   INDEF       INDEF         16967.12       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+265      1421.774  453.810   INDEF       INDEF         17093.72       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+266      837.858   455.367   INDEF       INDEF         17534.69       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+271      823.332   458.944   INDEF       INDEF         18505.69       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+272      1171.034  459.581   INDEF       INDEF         18723.96       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+273      1196.990  460.043   INDEF       INDEF         18377.89       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+274      633.344   464.026   INDEF       INDEF         18155.2        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+277      717.178   466.751   INDEF       INDEF         18889.51       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+278      1326.273  466.957   INDEF       INDEF         18604.04       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+280      1268.944  471.592   INDEF       INDEF         17544.92       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+288      715.897   474.026   INDEF       INDEF         17983.91       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+285      1260.186  474.069   INDEF       INDEF         18538.82       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+284      1846.843  474.825   INDEF       INDEF         21033.73       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+289      468.738   475.945   INDEF       INDEF         19545.51       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+286      1382.960  476.756   INDEF       INDEF         19272.91       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+287      1697.550  476.919   INDEF       INDEF         17498.38       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+290      610.102   478.789   INDEF       INDEF         17794.82       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+294      1383.152  479.688   INDEF       INDEF         18227.95       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+295      587.902   483.352   INDEF       INDEF         18971.04       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+291      1040.556  484.977   INDEF       INDEF         16906.35       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+293      975.731   485.030   INDEF       INDEF         16998.23       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+297      1238.775  485.744   INDEF       INDEF         19571.21       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+303      667.335   487.162   INDEF       INDEF         18339.8        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+299      664.971   488.990   INDEF       INDEF         17148.36       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+298      617.149   489.406   INDEF       INDEF         22411.57       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+309      1546.885  490.426   INDEF       INDEF         18445.76       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+302      470.630   491.060   INDEF       INDEF         54572.22       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+306      1181.180  491.395   INDEF       INDEF         17981.92       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+307      1920.549  491.667   INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+308      751.213   493.043   INDEF       INDEF         17386.81       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+313      930.967   497.624   INDEF       INDEF         17517.28       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+304      1551.300  497.898   INDEF       INDEF         19167.36       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+312      1332.137  500.257   INDEF       INDEF         20795.3        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+315      862.359   502.217   INDEF       INDEF         18024.04       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+314      373.774   502.259   INDEF       INDEF         16438.99       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+316      993.955   502.265   INDEF       INDEF         17018.52       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+319      1857.680  506.028   INDEF       INDEF         19549.21       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+322      1186.182  508.733   INDEF       INDEF         17273.31       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+326      1978.420  509.909   INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+320      792.890   510.868   INDEF       INDEF         16442.63       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+327      994.668   514.089   INDEF       INDEF         18352.06       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+328      626.860   516.092   INDEF       INDEF         17264.41       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+329      1372.877  517.919   INDEF       INDEF         19477.54       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+332      1130.199  522.380   INDEF       INDEF         17155.31       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+335      1809.936  522.904   INDEF       INDEF         16254.81       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+333      1288.455  522.994   INDEF       INDEF         19138.8        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+331      400.840   523.011   INDEF       INDEF         20669.98       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+330      1592.542  523.989   INDEF       INDEF         16109.19       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+334      1299.753  524.000   INDEF       INDEF         18474.81       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+337      1664.128  526.212   INDEF       INDEF         18887.3        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+339      1898.903  527.123   INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+340      999.419   528.035   INDEF       INDEF         17605.55       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+343      232.967   528.231   INDEF       INDEF         22697.21       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+341      1149.036  528.554   INDEF       INDEF         17441.18       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+342      1150.426  528.908   INDEF       INDEF         17627.38       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+336      1121.473  529.075   INDEF       INDEF         17812.46       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+348      1122.896  530.218   INDEF       INDEF         18256.64       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+344      687.773   530.212   INDEF       INDEF         17239.05       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+345      1848.187  531.860   INDEF       INDEF         19128.32       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+347      1057.062  532.871   INDEF       INDEF         17736.23       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+351      1151.146  534.913   INDEF       INDEF         17609.91       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+349      804.850   534.923   INDEF       INDEF         17696.34       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+354      1846.265  535.300   INDEF       INDEF         19253.25       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+352      1454.162  537.870   INDEF       INDEF         19442.57       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+359      1454.861  541.889   INDEF       INDEF         19624.86       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+355      1493.846  541.996   INDEF       INDEF         17610.89       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+353      743.669   542.000   INDEF       INDEF         17097.35       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+356      1192.294  543.851   INDEF       INDEF         18292.56       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+358      779.886   545.705   INDEF       INDEF         17843.5        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+362      919.935   548.680   INDEF       INDEF         17140.79       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+364      1249.112  550.063   INDEF       INDEF         18533.49       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+361      539.197   550.997   INDEF       INDEF         18252.32       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+365      229.372   551.139   INDEF       INDEF         59216.18       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+368      477.984   555.176   INDEF       INDEF         19592.58       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+366      1343.299  555.737   INDEF       INDEF         20834.55       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+369      1701.705  558.909   INDEF       INDEF         17404.16       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+371      938.941   560.336   INDEF       INDEF         18682.92       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+372      948.988   561.841   INDEF       INDEF         23181.53       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+374      1451.036  561.986   INDEF       INDEF         21697.27       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+373      799.745   562.129   INDEF       INDEF         16753.12       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+375      995.142   564.257   INDEF       INDEF         18028.         0        \
+           INDEF       INDEF       3     Npix_too_few                           
+378      1267.934  565.632   INDEF       INDEF         18240.54       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+377      838.030   566.501   INDEF       INDEF         17207.01       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+379      963.616   567.125   INDEF       INDEF         17155.04       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+381      1103.115  567.946   INDEF       INDEF         17718.04       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+380      580.631   568.097   INDEF       INDEF         21251.35       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+382      1348.000  568.204   INDEF       INDEF         19569.45       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+383      590.045   568.215   INDEF       INDEF         18401.96       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+385      1016.361  569.080   INDEF       INDEF         16819.73       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+386      719.906   569.899   INDEF       INDEF         17837.79       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+387      861.691   572.023   INDEF       INDEF         17030.84       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+389      1980.223  572.761   INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+399      1124.937  573.490   INDEF       INDEF         16678.66       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+392      1357.167  573.671   INDEF       INDEF         22430.75       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+390      596.230   573.755   INDEF       INDEF         19154.5        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+391      980.467   575.958   INDEF       INDEF         17576.33       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+393      1028.065  576.064   INDEF       INDEF         17792.8        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+394      1159.962  576.536   INDEF       INDEF         17505.55       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+397      1081.037  577.115   INDEF       INDEF         18075.14       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+396      949.137   579.151   INDEF       INDEF         22135.61       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+400      1048.781  580.273   INDEF       INDEF         19129.18       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+404      1107.293  582.846   INDEF       INDEF         17000.91       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+401      1365.673  582.941   INDEF       INDEF         20602.02       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+407      823.880   584.000   INDEF       INDEF         17037.9        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+403      1090.004  585.005   INDEF       INDEF         16680.14       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+418      947.090   585.658   INDEF       INDEF         19731.89       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+412      837.108   586.716   INDEF       INDEF         18070.96       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+402      421.342   586.990   INDEF       INDEF         17201.42       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+413      423.829   587.000   INDEF       INDEF         17045.96       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+416      1436.912  587.558   INDEF       INDEF         18608.7        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+406      348.738   588.126   INDEF       INDEF         18147.61       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+417      1474.844  589.047   INDEF       INDEF         17291.57       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+410      1354.575  590.000   INDEF       INDEF         20557.4        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+415      854.416   590.098   INDEF       INDEF         18009.36       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+414      761.823   591.896   INDEF       INDEF         17917.93       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+421      1357.965  592.739   INDEF       INDEF         20365.05       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+419      1146.689  595.935   INDEF       INDEF         24043.64       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+420      1160.182  597.902   INDEF       INDEF         19890.29       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+429      1358.092  597.979   INDEF       INDEF         20386.46       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+423      1069.672  598.855   INDEF       INDEF         19051.58       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+424      438.058   599.082   INDEF       INDEF         17652.48       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+425      683.073   599.373   INDEF       INDEF         17195.04       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+432      1379.218  604.226   INDEF       INDEF         21425.51       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+431      961.014   605.354   INDEF       INDEF         17198.3        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+434      890.123   605.860   INDEF       INDEF         20039.64       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+435      1019.337  606.051   INDEF       INDEF         18584.04       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+437      1155.151  607.470   INDEF       INDEF         20745.64       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+436      992.597   608.016   INDEF       INDEF         18185.72       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+445      992.132   609.273   INDEF       INDEF         18434.5        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+440      1138.863  608.610   INDEF       INDEF         22229.87       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+439      864.760   609.800   INDEF       INDEF         17642.43       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+441      715.000   611.068   INDEF       INDEF         19408.65       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+444      1082.333  612.889   INDEF       INDEF         16474.07       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+443      1504.682  612.976   INDEF       INDEF         61590.06       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+438      1408.057  613.337   INDEF       INDEF         18581.25       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+448      1242.908  617.027   INDEF       INDEF         20547.52       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+451      813.967   618.862   INDEF       INDEF         16734.14       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+446      387.000   619.201   INDEF       INDEF         18678.25       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+450      1161.093  619.247   INDEF       INDEF         19129.45       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+449      883.025   619.907   INDEF       INDEF         17571.49       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+453      2023.497  619.999   INDEF       INDEF         19931.61       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+460      1519.121  621.389   INDEF       INDEF         17532.47       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+456      762.076   623.643   INDEF       INDEF         17233.52       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+459      1314.254  624.887   INDEF       INDEF         17608.74       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+458      743.937   625.408   INDEF       INDEF         19541.28       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+463      1488.410  626.965   INDEF       INDEF         19546.79       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+462      1012.092  627.012   INDEF       INDEF         18961.39       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+465      1051.685  629.159   INDEF       INDEF         20314.1        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+466      1180.695  629.851   INDEF       INDEF         17405.95       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+464      798.056   630.315   INDEF       INDEF         17318.17       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+469      1958.096  630.384   INDEF       INDEF         19059.01       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+468      1334.148  631.741   INDEF       INDEF         19319.06       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+467      1221.930  632.000   INDEF       INDEF         19207.01       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+474      1932.284  638.817   INDEF       INDEF         19734.03       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+472      537.381   640.000   INDEF       INDEF         19423.01       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+475      870.942   640.479   INDEF       INDEF         17530.8        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+471      1156.000  641.000   INDEF       INDEF         17764.23       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+473      832.896   641.095   INDEF       INDEF         17552.56       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+476      1047.289  643.082   INDEF       INDEF         17282.54       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+477      204.640   643.499   INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+479      1219.916  644.641   INDEF       INDEF         19199.36       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+482      1079.136  646.634   INDEF       INDEF         17402.16       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+485      1466.929  648.710   INDEF       INDEF         18729.01       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+486      888.884   649.909   INDEF       INDEF         18179.87       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+488      1138.438  650.951   INDEF       INDEF         17316.61       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+493      1092.921  654.269   INDEF       INDEF         20300.41       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+494      1754.606  654.605   INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+497      1060.598  657.167   INDEF       INDEF         17483.53       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+505      922.153   657.732   INDEF       INDEF         17208.49       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+500      1082.189  658.349   INDEF       INDEF         18121.19       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+496      960.275   658.818   INDEF       INDEF         19369.78       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+501      1158.821  659.388   INDEF       INDEF         18911.64       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+503      884.746   659.913   INDEF       INDEF         17242.12       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+506      1164.204  666.392   INDEF       INDEF         19009.07       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+510      1474.910  670.055   INDEF       INDEF         19551.89       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+512      1079.005  672.570   INDEF       INDEF         17825.58       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+513      700.963   672.726   INDEF       INDEF         17405.47       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+511      217.750   675.033   INDEF       INDEF         18040.35       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+516      1146.049  677.079   INDEF       INDEF         19146.25       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+514      1286.899  677.883   INDEF       INDEF         18053.45       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+517      656.043   678.627   INDEF       INDEF         18346.05       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+518      745.229   678.799   INDEF       INDEF         17886.24       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+520      1032.856  678.981   INDEF       INDEF         17199.95       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+523      1468.642  679.100   INDEF       INDEF         19022.77       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+521      1229.951  679.930   INDEF       INDEF         17493.04       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+519      788.822   679.984   INDEF       INDEF         16566.66       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+526      903.806   680.224   INDEF       INDEF         17439.5        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+531      1261.060  680.400   INDEF       INDEF         19034.03       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+524      1208.094  682.866   INDEF       INDEF         17797.21       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+528      1248.194  682.914   INDEF       INDEF         19132.37       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+525      35.149    683.384   INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+522      1428.921  683.393   INDEF       INDEF         19748.46       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+529      1307.521  683.907   INDEF       INDEF         16849.12       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+536      1538.973  685.935   INDEF       INDEF         17036.87       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+538      1421.659  686.201   INDEF       INDEF         20485.45       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+530      1653.951  686.528   INDEF       INDEF         18328.98       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+532      878.443   687.102   INDEF       INDEF         17651.14       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+535      1501.028  688.800   INDEF       INDEF         18077.01       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+539      1114.966  689.430   INDEF       INDEF         18195.12       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+534      1094.923  689.863   INDEF       INDEF         18007.93       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+540      965.859   692.004   INDEF       INDEF         19746.39       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+541      1052.757  692.251   INDEF       INDEF         17114.71       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+542      637.716   693.823   INDEF       INDEF         17865.64       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+543      762.750   694.812   INDEF       INDEF         18725.42       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+545      1093.616  695.116   INDEF       INDEF         17941.9        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+546      1790.209  698.117   INDEF       INDEF         18477.06       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+549      1633.047  701.553   INDEF       INDEF         18588.07       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+552      1071.857  701.835   INDEF       INDEF         20163.48       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+554      1258.581  701.908   INDEF       INDEF         21286.04       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+553      193.008   702.155   INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+555      930.857   703.052   INDEF       INDEF         17833.16       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+557      1683.245  703.229   INDEF       INDEF         48629.86       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+559      1196.076  703.706   INDEF       INDEF         16919.71       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+558      716.972   703.952   INDEF       INDEF         18494.67       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+564      1631.981  704.826   INDEF       INDEF         16649.35       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+561      1270.282  707.285   INDEF       INDEF         18805.02       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+567      1680.341  714.923   INDEF       INDEF         18127.15       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+568      719.953   715.422   INDEF       INDEF         18184.53       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+569      1754.827  718.371   INDEF       INDEF         17814.26       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+570      830.763   718.720   INDEF       INDEF         20345.85       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+571      690.383   719.955   INDEF       INDEF         17863.15       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+575      1992.724  720.436   INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+573      1369.351  721.795   INDEF       INDEF         17827.64       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+574      1073.082  722.487   INDEF       INDEF         18524.72       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+572      67.921    722.775   INDEF       INDEF         17575.84       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+576      815.133   722.861   INDEF       INDEF         17846.13       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+577      901.237   723.752   INDEF       INDEF         18574.35       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+580      329.357   725.339   INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+581      1153.597  726.014   INDEF       INDEF         17464.01       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+579      1786.665  727.052   INDEF       INDEF         20916.72       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+585      1267.935  727.162   INDEF       INDEF         17292.45       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+584      1119.721  728.140   INDEF       INDEF         18707.94       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+587      1407.546  729.053   INDEF       INDEF         17044.56       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+590      906.396   732.064   INDEF       INDEF         18024.69       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+593      799.984   734.658   INDEF       INDEF         18385.41       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+594      955.195   735.744   INDEF       INDEF         21033.82       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+595      929.908   736.179   INDEF       INDEF         20233.67       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+592      1904.993  737.110   INDEF       INDEF         18859.84       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+597      886.246   738.949   INDEF       INDEF         20518.07       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+599      1626.224  739.979   INDEF       INDEF         20962.14       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+601      1447.052  740.325   INDEF       INDEF         19033.58       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+598      432.964   741.141   INDEF       INDEF         18428.62       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+607      1654.120  741.902   INDEF       INDEF         17614.53       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+604      1067.605  743.006   INDEF       INDEF         20392.77       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+605      1900.680  743.258   INDEF       INDEF         17556.16       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+606      950.698   744.258   INDEF       INDEF         21018.36       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+610      960.187   746.597   INDEF       INDEF         18765.44       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+612      522.117   747.473   INDEF       INDEF         21914.02       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+613      1101.373  748.008   INDEF       INDEF         17657.78       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+614      1290.145  749.029   INDEF       INDEF         17165.98       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+616      873.405   749.062   INDEF       INDEF         19103.39       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+623      796.917   750.000   INDEF       INDEF         19149.96       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+617      1015.765  751.967   INDEF       INDEF         17504.08       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+615      796.946   752.168   INDEF       INDEF         18493.12       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+621      947.070   754.011   INDEF       INDEF         20711.34       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+620      1092.578  754.055   INDEF       INDEF         21953.         0        \
+           INDEF       INDEF       3     Npix_too_few                           
+624      1080.936  756.298   INDEF       INDEF         52362.93       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+628      462.965   760.644   INDEF       INDEF         19130.37       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+622      461.728   760.902   INDEF       INDEF         18860.74       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+626      1065.986  761.530   INDEF       INDEF         23261.74       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+627      1570.159  762.049   INDEF       INDEF         19689.2        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+629      1097.477  762.878   INDEF       INDEF         21709.86       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+631      622.025   766.567   INDEF       INDEF         19271.86       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+633      894.416   766.821   INDEF       INDEF         18653.94       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+636      832.673   767.031   INDEF       INDEF         17685.74       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+638      884.704   769.137   INDEF       INDEF         18952.25       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+649      1355.182  769.612   INDEF       INDEF         19468.05       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+639      1080.865  770.259   INDEF       INDEF         26078.59       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+642      937.035   772.049   INDEF       INDEF         17262.07       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+645      1119.536  774.036   INDEF       INDEF         17492.5        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+643      375.780   774.774   INDEF       INDEF         52112.21       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+648      1107.692  775.070   INDEF       INDEF         17016.07       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+644      962.972   776.103   INDEF       INDEF         17641.71       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+654      374.191   778.021   INDEF       INDEF         18150.54       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+653      1291.724  780.691   INDEF       INDEF         20253.29       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+655      1311.058  781.866   INDEF       INDEF         17994.37       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+657      607.581   785.917   INDEF       INDEF         18672.14       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+661      957.706   787.000   INDEF       INDEF         20679.94       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+658      862.977   788.277   INDEF       INDEF         18503.59       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+660      1497.954  789.136   INDEF       INDEF         25637.94       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+662      1076.273  789.753   INDEF       INDEF         19271.27       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+663      1349.930  791.024   INDEF       INDEF         19490.71       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+664      679.666   792.766   INDEF       INDEF         17528.8        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+667      1168.120  793.389   INDEF       INDEF         19078.55       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+670      989.895   793.880   INDEF       INDEF         17214.48       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+666      1092.164  793.968   INDEF       INDEF         20158.74       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+669      613.837   794.551   INDEF       INDEF         17834.39       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+668      1762.773  795.647   INDEF       INDEF         17360.95       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+673      1125.740  798.876   INDEF       INDEF         17791.37       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+672      1058.947  799.211   INDEF       INDEF         17313.91       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+674      935.238   800.652   INDEF       INDEF         18270.53       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+676      809.616   801.126   INDEF       INDEF         16728.48       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+671      463.784   801.375   INDEF       INDEF         19329.51       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+677      945.892   801.489   INDEF       INDEF         20371.99       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+675      1013.835  801.672   INDEF       INDEF         19682.27       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+678      973.918   802.031   INDEF       INDEF         20550.2        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+681      841.658   802.874   INDEF       INDEF         17087.67       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+679      870.526   804.064   INDEF       INDEF         24906.98       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+680      1045.926  806.036   INDEF       INDEF         20438.07       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+683      1350.398  806.187   INDEF       INDEF         17913.33       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+685      857.043   807.893   INDEF       INDEF         18395.32       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+682      886.381   807.983   INDEF       INDEF         23629.66       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+687      1332.019  810.817   INDEF       INDEF         16972.03       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+690      1242.035  811.052   INDEF       INDEF         17652.54       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+689      959.519   811.128   INDEF       INDEF         18144.74       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+684      991.158   811.692   INDEF       INDEF         18643.05       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+692      1159.225  811.694   INDEF       INDEF         18425.95       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+696      1148.242  813.114   INDEF       INDEF         17656.97       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+693      1044.166  814.344   INDEF       INDEF         21115.62       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+695      1373.112  814.445   INDEF       INDEF         17891.08       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+691      891.291   814.790   INDEF       INDEF         27052.97       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+701      882.981   815.804   INDEF       INDEF         26490.35       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+697      1025.517  816.061   INDEF       INDEF         19119.57       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+700      1054.063  817.700   INDEF       INDEF         22112.09       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+698      477.090   817.955   INDEF       INDEF         18239.13       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+699      686.913   818.215   INDEF       INDEF         18846.08       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+686      1095.131  818.552   INDEF       INDEF         18292.35       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+705      526.836   822.615   INDEF       INDEF         17776.16       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+703      1409.273  822.904   INDEF       INDEF         18271.74       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+706      1160.051  822.990   INDEF       INDEF         18146.37       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+707      1709.464  823.149   INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+711      1124.244  823.661   INDEF       INDEF         16819.35       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+721      677.029   824.908   INDEF       INDEF         24175.5        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+712      748.984   825.281   INDEF       INDEF         17209.11       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+713      640.627   826.911   INDEF       INDEF         19980.52       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+722      1392.932  831.216   INDEF       INDEF         19861.46       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+717      670.020   832.229   INDEF       INDEF         24251.24       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+718      1060.411  832.810   INDEF       INDEF         23449.54       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+716      1298.144  832.824   INDEF       INDEF         24073.86       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+719      1291.160  835.122   INDEF       INDEF         22366.63       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+720      1146.076  835.572   INDEF       INDEF         16991.34       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+727      1372.032  837.764   INDEF       INDEF         17616.33       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+728      1473.064  838.123   INDEF       INDEF         18344.27       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+725      1082.057  838.410   INDEF       INDEF         19320.96       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+729      146.060   839.723   INDEF       INDEF         22561.1        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+731      1043.465  839.932   INDEF       INDEF         19569.46       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+726      1181.376  840.141   INDEF       INDEF         18754.86       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+736      1109.787  841.053   INDEF       INDEF         16608.32       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+738      795.964   841.983   INDEF       INDEF         18836.62       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+737      493.886   842.204   INDEF       INDEF         24679.44       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+733      887.114   842.476   INDEF       INDEF         18855.53       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+740      957.895   842.808   INDEF       INDEF         18989.13       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+741      1297.315  842.897   INDEF       INDEF         25456.76       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+735      928.397   843.184   INDEF       INDEF         18122.65       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+744      904.886   844.409   INDEF       INDEF         19710.48       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+745      614.440   844.887   INDEF       INDEF         19574.95       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+742      1384.447  845.017   INDEF       INDEF         19713.21       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+751      1177.853  845.789   INDEF       INDEF         18616.62       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+748      1327.091  846.571   INDEF       INDEF         20533.62       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+743      711.205   846.626   INDEF       INDEF         17337.9        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+746      674.522   846.899   INDEF       INDEF         20361.67       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+747      839.677   846.954   INDEF       INDEF         17247.43       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+749      894.055   847.377   INDEF       INDEF         17592.5        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+763      757.336   852.172   INDEF       INDEF         18178.19       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+756      1112.012  852.245   INDEF       INDEF         16677.68       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+758      1577.016  852.538   INDEF       INDEF         17821.34       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+759      439.029   852.875   INDEF       INDEF         19983.66       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+760      1039.001  855.827   INDEF       INDEF         17962.85       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+765      968.839   856.132   INDEF       INDEF         19638.02       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+761      1999.038  856.729   INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+768      1289.818  857.156   INDEF       INDEF         18060.39       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+772      1862.006  857.817   INDEF       INDEF         19778.82       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+769      1069.033  858.576   INDEF       INDEF         18545.25       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+767      1221.883  859.633   INDEF       INDEF         19571.09       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+770      1388.843  860.195   INDEF       INDEF         21960.32       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+771      679.572   861.011   INDEF       INDEF         17655.08       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+777      1035.350  864.896   INDEF       INDEF         18001.02       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+778      1255.005  866.437   INDEF       INDEF         16842.88       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+776      806.199   867.330   INDEF       INDEF         17005.09       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+780      992.977   869.000   INDEF       INDEF         19632.46       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+781      1780.063  869.361   INDEF       INDEF         18053.92       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+785      643.108   872.925   INDEF       INDEF         19202.52       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+787      759.235   873.000   INDEF       INDEF         18220.43       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+788      800.950   873.465   INDEF       INDEF         17804.33       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+786      1088.039  873.547   INDEF       INDEF         18447.87       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+783      847.000   874.023   INDEF       INDEF         19187.87       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+784      1442.118  874.273   INDEF       INDEF         17148.72       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+791      264.461   874.604   INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+792      1351.129  875.043   INDEF       INDEF         17347.36       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+790      1359.071  875.164   INDEF       INDEF         17877.92       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+800      1594.657  875.887   INDEF       INDEF         19113.65       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+794      820.206   875.953   INDEF       INDEF         19788.26       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+793      539.261   875.969   INDEF       INDEF         18048.52       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+798      1314.358  876.883   INDEF       INDEF         17095.97       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+797      1185.416  876.904   INDEF       INDEF         17910.58       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+796      963.188   877.000   INDEF       INDEF         19259.55       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+802      964.696   877.013   INDEF       INDEF         19154.44       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+799      1370.388  878.000   INDEF       INDEF         18927.79       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+803      1445.893  880.482   INDEF       INDEF         19147.09       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+805      1485.632  885.000   INDEF       INDEF         18512.96       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+807      998.591   886.024   INDEF       INDEF         17783.29       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+808      1125.920  886.032   INDEF       INDEF         19409.52       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+806      828.722   887.152   INDEF       INDEF         18614.41       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+813      1174.814  888.395   INDEF       INDEF         17600.6        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+810      1425.875  888.611   INDEF       INDEF         20657.5        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+817      1223.325  888.827   INDEF       INDEF         17579.04       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+804      1175.113  890.407   INDEF       INDEF         17554.49       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+815      1058.595  891.969   INDEF       INDEF         17674.83       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+819      877.941   895.000   INDEF       INDEF         19015.17       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+812      1140.164  895.384   INDEF       INDEF         19261.08       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+814      859.230   895.788   INDEF       INDEF         19590.55       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+824      936.182   897.399   INDEF       INDEF         17617.37       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+823      865.819   897.772   INDEF       INDEF         20369.64       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+822      522.754   898.743   INDEF       INDEF         17328.33       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+825      1281.224  901.977   INDEF       INDEF         18446.98       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+826      1199.000  902.397   INDEF       INDEF         18128.91       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+827      953.862   902.932   INDEF       INDEF         19044.85       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+828      995.568   904.107   INDEF       INDEF         17573.11       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+834      1194.631  906.793   INDEF       INDEF         19116.36       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+831      1181.975  906.949   INDEF       INDEF         20188.61       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+835      1729.433  907.933   INDEF       INDEF         31112.96       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+833      1069.125  908.559   INDEF       INDEF         17386.02       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+837      637.569   912.859   INDEF       INDEF         17602.63       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+836      1420.922  913.083   INDEF       INDEF         17854.75       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+842      1421.935  914.786   INDEF       INDEF         18673.03       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+838      1256.936  914.011   INDEF       INDEF         19965.88       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+840      811.261   915.085   INDEF       INDEF         17147.8        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+841      721.124   918.659   INDEF       INDEF         16193.63       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+843      831.591   919.960   INDEF       INDEF         18181.13       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+846      555.799   920.000   INDEF       INDEF         17129.27       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+848      1163.662  925.819   INDEF       INDEF         18892.24       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+849      1258.333  926.821   INDEF       INDEF         20835.75       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+850      1514.422  927.009   INDEF       INDEF         17980.66       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+853      1191.846  927.819   INDEF       INDEF         18520.98       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+847      919.121   928.534   INDEF       INDEF         19031.65       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+854      1371.093  929.234   INDEF       INDEF         18049.41       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+851      1175.021  929.720   INDEF       INDEF         20811.92       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+855      690.011   930.769   INDEF       INDEF         18011.5        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+858      662.556   930.856   INDEF       INDEF         18205.62       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+859      843.275   932.923   INDEF       INDEF         19340.76       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+857      1041.891  933.280   INDEF       INDEF         19341.04       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+867      662.153   935.549   INDEF       INDEF         18014.38       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+870      1259.969  937.565   INDEF       INDEF         21698.13       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+874      1390.774  938.895   INDEF       INDEF         18668.13       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+869      1075.762  939.035   INDEF       INDEF         17112.95       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+866      12.076    940.287   INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+871      1547.000  941.300   INDEF       INDEF         18728.9        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+875      1644.941  941.582   INDEF       INDEF         17953.96       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+877      1434.921  942.162   INDEF       INDEF         16889.65       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+876      1025.154  942.789   INDEF       INDEF         18654.9        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+872      872.052   943.060   INDEF       INDEF         18086.62       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+879      1039.922  943.960   INDEF       INDEF         23047.87       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+881      691.905   944.643   INDEF       INDEF         19998.13       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+882      860.253   945.825   INDEF       INDEF         19518.3        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+883      813.103   946.336   INDEF       INDEF         21358.77       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+880      1141.027  946.683   INDEF       INDEF         16335.58       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+887      827.079   949.105   INDEF       INDEF         19239.15       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+886      344.934   949.998   INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+884      892.603   951.059   INDEF       INDEF         18441.03       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+889      1027.877  953.455   INDEF       INDEF         18757.88       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+890      1749.995  954.021   INDEF       INDEF         17233.74       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+893      1347.866  955.733   INDEF       INDEF         17293.89       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+894      594.074   956.451   INDEF       INDEF         16358.88       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+892      726.721   957.840   INDEF       INDEF         21969.05       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+891      1262.875  958.943   INDEF       INDEF         17142.82       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+896      1019.259  962.164   INDEF       INDEF         20428.41       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+897      1483.667  963.749   INDEF       INDEF         22040.34       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+903      751.973   966.019   INDEF       INDEF         17450.53       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+901      1170.898  966.829   INDEF       INDEF         18294.37       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+900      1053.185  966.923   INDEF       INDEF         17821.35       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+904      1006.962  969.951   INDEF       INDEF         17129.2        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+910      1357.773  970.004   INDEF       INDEF         20711.28       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+908      1699.360  970.053   INDEF       INDEF         16968.94       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+909      942.333   972.943   INDEF       INDEF         17078.02       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+915      1255.097  974.765   INDEF       INDEF         17683.4        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+913      1080.799  976.682   INDEF       INDEF         17524.92       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+914      1320.501  976.870   INDEF       INDEF         18252.68       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+911      467.251   978.005   INDEF       INDEF         17478.43       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+918      1062.902  978.321   INDEF       INDEF         18451.67       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+916      1276.960  978.937   INDEF       INDEF         18302.33       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+921      1148.796  982.839   INDEF       INDEF         18217.82       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+917      675.689   983.835   INDEF       INDEF         18376.82       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+924      828.710   984.773   INDEF       INDEF         17865.17       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+923      312.188   988.288   INDEF       INDEF         18684.63       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+925      1245.064  988.328   INDEF       INDEF         17526.72       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+926      232.756   990.225   INDEF       INDEF         18480.43       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+927      777.194   991.174   INDEF       INDEF         17356.03       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+933      207.018   991.406   INDEF       INDEF         19388.14       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+931      1743.684  993.924   INDEF       INDEF         18305.79       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+930      1508.946  995.531   INDEF       INDEF         17244.46       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+932      885.241   996.788   INDEF       INDEF         18185.46       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+934      1358.171  997.893   INDEF       INDEF         22129.87       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+929      1053.467  998.000   INDEF       INDEF         18572.42       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+939      1356.222  1000.797  INDEF       INDEF         22489.57       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+940      638.064   1011.131  INDEF       INDEF         18467.11       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+943      923.065   1011.534  INDEF       INDEF         17560.77       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+945      882.124   1011.716  INDEF       INDEF         17273.24       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+947      510.933   1012.636  INDEF       INDEF         20184.79       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+950      255.769   1013.276  INDEF       INDEF         17768.76       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+953      1115.073  1016.330  INDEF       INDEF         16334.64       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+956      1076.072  1017.073  INDEF       INDEF         19492.98       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+954      1159.264  1017.225  INDEF       INDEF         17258.55       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+961      932.378   1018.846  INDEF       INDEF         20177.56       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+958      530.760   1019.839  INDEF       INDEF         19368.46       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+964      587.676   1021.959  INDEF       INDEF         19152.01       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+962      1057.142  1022.886  INDEF       INDEF         17446.38       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+963      1242.199  1023.651  INDEF       INDEF         18784.64       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+966      710.394   1025.936  INDEF       INDEF         18894.42       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+970      1196.903  1026.583  INDEF       INDEF         17019.54       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+969      1405.000  1027.766  INDEF       INDEF         57791.71       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+968      1329.606  1028.187  INDEF       INDEF         19135.41       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+971      647.181   1029.400  INDEF       INDEF         20162.25       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+972      1526.097  1032.513  INDEF       INDEF         22658.98       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+974      725.831   1037.323  INDEF       INDEF         24875.48       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+977      974.019   1041.162  INDEF       INDEF         19943.55       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+981      1170.227  1041.723  INDEF       INDEF         16651.56       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+979      1624.633  1042.797  INDEF       INDEF         63357.71       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+978      1085.538  1042.864  INDEF       INDEF         18643.15       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+983      1223.073  1045.991  INDEF       INDEF         17495.07       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+988      974.495   1047.880  INDEF       INDEF         17912.04       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+984      1270.170  1048.746  INDEF       INDEF         19898.62       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+987      1020.328  1051.753  INDEF       INDEF         17495.78       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+989      1585.112  1053.000  INDEF       INDEF         17649.38       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+991      803.103   1053.147  INDEF       INDEF         16928.43       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+992      1259.715  1055.880  INDEF       INDEF         18677.03       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+993      1037.037  1057.031  INDEF       INDEF         18832.13       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+994      995.162   1058.318  INDEF       INDEF         17165.6        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+996      914.667   1059.015  INDEF       INDEF         17715.07       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+995      887.917   1060.209  INDEF       INDEF         18240.59       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+997      935.920   1062.478  INDEF       INDEF         18275.85       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+998      608.036   1067.865  INDEF       INDEF         18269.25       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+999      1279.258  1068.823  INDEF       INDEF         17973.63       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1002     1157.891  1070.103  INDEF       INDEF         17130.19       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1001     843.119   1070.644  INDEF       INDEF         16915.25       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1003     1784.090  1072.124  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1000     261.604   1075.000  INDEF       INDEF         19434.5        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1004     723.033   1075.245  INDEF       INDEF         17981.53       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1011     949.923   1081.170  INDEF       INDEF         18275.19       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1010     827.830   1081.765  INDEF       INDEF         17651.37       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1013     715.000   1083.029  INDEF       INDEF         17032.75       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1014     1609.973  1084.879  INDEF       INDEF         17122.41       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1015     1068.322  1084.897  INDEF       INDEF         17413.25       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1012     517.094   1086.198  INDEF       INDEF         18703.5        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1019     57.309    1088.738  INDEF       INDEF         21208.12       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1020     2016.089  1089.945  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1025     873.764   1093.270  INDEF       INDEF         18209.61       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1022     1289.158  1093.652  INDEF       INDEF         19033.5        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1021     1127.408  1093.856  INDEF       INDEF         20822.         0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1027     1072.875  1099.295  INDEF       INDEF         19274.93       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1029     1275.906  1106.114  INDEF       INDEF         17113.55       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1031     1023.005  1107.807  INDEF       INDEF         18455.04       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1028     1189.897  1108.582  INDEF       INDEF         17564.5        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1032     1176.259  1109.292  INDEF       INDEF         19529.63       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1034     972.032   1110.454  INDEF       INDEF         17228.33       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1037     1439.457  1112.060  INDEF       INDEF         17292.71       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1036     333.996   1112.478  INDEF       INDEF         21074.59       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1038     1506.000  1112.486  INDEF       INDEF         18348.91       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1043     641.442   1115.114  INDEF       INDEF         21413.58       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1033     640.421   1116.000  INDEF       INDEF         21722.96       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1040     610.826   1115.855  INDEF       INDEF         16419.29       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1042     245.188   1117.248  INDEF       INDEF         21269.13       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1041     721.097   1117.608  INDEF       INDEF         17901.11       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1039     1089.885  1117.942  INDEF       INDEF         20110.73       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1046     1302.033  1123.366  INDEF       INDEF         19872.59       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1044     1121.020  1123.797  INDEF       INDEF         18902.06       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1045     664.266   1124.060  INDEF       INDEF         18026.54       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1048     695.420   1126.841  INDEF       INDEF         20810.21       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1047     1345.236  1126.979  INDEF       INDEF         17825.87       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1051     1150.236  1128.975  INDEF       INDEF         18242.21       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1052     1218.046  1129.663  INDEF       INDEF         17989.21       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1053     1033.304  1131.719  INDEF       INDEF         19020.4        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1054     627.523   1135.000  INDEF       INDEF         20807.55       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1057     1452.407  1139.059  INDEF       INDEF         17745.36       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1060     805.677   1139.091  INDEF       INDEF         17637.16       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1061     966.103   1139.254  INDEF       INDEF         18264.66       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1066     1376.985  1139.500  INDEF       INDEF         19603.24       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1062     1422.034  1140.253  INDEF       INDEF         18481.3        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1063     961.911   1140.694  INDEF       INDEF         22019.11       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1065     1604.524  1140.871  INDEF       INDEF         19042.98       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1064     1128.010  1143.904  INDEF       INDEF         17645.67       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1068     1346.637  1145.826  INDEF       INDEF         18323.97       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1067     723.373   1146.859  INDEF       INDEF         17269.         0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1069     949.213   1149.000  INDEF       INDEF         18666.24       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1070     1300.977  1149.560  INDEF       INDEF         17989.24       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1075     720.971   1150.325  INDEF       INDEF         16935.77       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1071     266.801   1150.571  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1073     969.829   1152.413  INDEF       INDEF         20407.07       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1074     1423.901  1153.000  INDEF       INDEF         18189.27       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1072     892.000   1153.268  INDEF       INDEF         18714.39       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1076     159.965   1154.984  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1078     1375.428  1156.995  INDEF       INDEF         18713.39       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1079     1196.193  1158.217  INDEF       INDEF         18745.51       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1077     454.434   1159.958  INDEF       INDEF         17941.86       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1082     1014.097  1161.897  INDEF       INDEF         18099.36       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1084     458.089   1162.578  INDEF       INDEF         18008.95       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1085     1287.263  1165.179  INDEF       INDEF         17260.33       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1088     905.067   1170.526  INDEF       INDEF         17437.42       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1086     424.814   1171.285  INDEF       INDEF         43798.26       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1089     1120.095  1171.863  INDEF       INDEF         16499.95       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1092     1121.865  1176.904  INDEF       INDEF         16426.55       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1094     1255.009  1177.981  INDEF       INDEF         18006.75       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1093     1179.995  1178.563  INDEF       INDEF         18885.11       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1098     919.876   1185.959  INDEF       INDEF         16864.77       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1103     1061.890  1187.411  INDEF       INDEF         17282.81       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1102     892.857   1189.836  INDEF       INDEF         17180.83       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1101     717.657   1190.124  INDEF       INDEF         18960.67       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1099     413.051   1191.687  INDEF       INDEF         17840.89       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1105     1155.993  1192.444  INDEF       INDEF         16202.4        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1104     1372.452  1193.031  INDEF       INDEF         25924.03       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1108     1752.821  1195.775  INDEF       INDEF         20630.35       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1111     813.854   1196.864  INDEF       INDEF         19555.68       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1107     1301.160  1197.110  INDEF       INDEF         19106.86       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1110     656.187   1197.608  INDEF       INDEF         17607.72       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1109     1433.050  1198.504  INDEF       INDEF         18281.74       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1113     711.295   1204.065  INDEF       INDEF         18034.14       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1115     1061.784  1208.784  INDEF       INDEF         17685.56       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1114     1439.988  1208.786  INDEF       INDEF         49719.35       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1118     1746.847  1212.874  INDEF       INDEF         23063.55       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1119     1079.028  1214.974  INDEF       INDEF         16509.24       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1117     455.633   1215.180  INDEF       INDEF         18832.11       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1116     1254.289  1215.794  INDEF       INDEF         17443.93       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1122     1367.405  1216.000  INDEF       INDEF         16647.91       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1120     924.865   1216.809  INDEF       INDEF         17053.22       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1121     1584.585  1217.817  INDEF       INDEF         16846.36       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1123     1545.689  1219.734  INDEF       INDEF         17390.01       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1124     448.272   1220.826  INDEF       INDEF         18605.87       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1126     241.997   1223.810  INDEF       INDEF         18109.71       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1129     1116.637  1227.916  INDEF       INDEF         18134.79       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1130     1184.647  1229.046  INDEF       INDEF         17831.87       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1131     609.000   1234.782  INDEF       INDEF         17959.92       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1132     1700.840  1235.905  INDEF       INDEF         18150.66       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1137     704.503   1236.925  INDEF       INDEF         16729.42       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1136     360.850   1237.757  INDEF       INDEF         18638.1        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1133     1444.889  1238.307  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1135     1030.982  1240.038  INDEF       INDEF         18267.77       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1140     1656.049  1243.126  INDEF       INDEF         17591.01       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1142     1040.956  1246.924  INDEF       INDEF         18382.98       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1144     1262.940  1246.975  INDEF       INDEF         17741.41       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1139     1262.142  1248.395  INDEF       INDEF         17622.29       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1143     788.945   1248.590  INDEF       INDEF         23660.68       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1145     1504.195  1253.266  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1147     412.145   1254.703  INDEF       INDEF         16087.25       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1149     1472.092  1255.144  INDEF       INDEF         17382.69       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1146     342.118   1255.739  INDEF       INDEF         18667.33       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1151     1303.917  1256.542  INDEF       INDEF         62452.38       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1150     1011.482  1256.950  INDEF       INDEF         17288.67       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1154     47.028    1259.853  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1159     1250.003  1265.813  INDEF       INDEF         24245.96       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1158     984.843   1265.892  INDEF       INDEF         18852.16       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1157     133.136   1266.665  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1156     1038.975  1267.625  INDEF       INDEF         18114.91       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1163     679.705   1268.173  INDEF       INDEF         16424.62       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1161     2029.761  1268.223  INDEF       INDEF         17053.81       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1162     471.717   1268.748  INDEF       INDEF         16633.8        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1164     1440.659  1269.969  INDEF       INDEF         21554.93       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1166     886.201   1270.855  INDEF       INDEF         18524.2        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1165     907.088   1273.026  INDEF       INDEF         18506.02       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1168     401.828   1275.971  INDEF       INDEF         18854.87       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1170     1201.006  1278.191  INDEF       INDEF         21323.7        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1169     1561.125  1278.447  INDEF       INDEF         17841.43       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1172     1820.371  1280.861  INDEF       INDEF         19022.76       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1173     1861.902  1281.752  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1175     1562.113  1282.363  INDEF       INDEF         17717.63       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1174     1247.866  1287.471  INDEF       INDEF         18865.16       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1177     709.025   1290.230  INDEF       INDEF         18043.95       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1178     1385.375  1291.975  INDEF       INDEF         21931.32       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1179     754.872   1293.479  INDEF       INDEF         16108.47       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1181     1903.873  1294.163  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1182     907.972   1297.211  INDEF       INDEF         19632.84       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1184     57.825    1297.639  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1183     400.992   1298.111  INDEF       INDEF         20648.2        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1186     1799.814  1298.748  INDEF       INDEF         16602.36       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1185     1119.446  1299.149  INDEF       INDEF         18780.77       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1188     890.111   1300.917  INDEF       INDEF         18322.37       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1189     1758.608  1300.989  INDEF       INDEF         17765.41       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1191     1178.408  1302.845  INDEF       INDEF         19747.08       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1193     1124.097  1307.858  INDEF       INDEF         19423.94       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1195     1539.147  1310.627  INDEF       INDEF         18738.91       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1194     1449.103  1311.154  INDEF       INDEF         19516.27       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1201     1450.174  1312.405  INDEF       INDEF         19170.89       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1200     667.083   1313.808  INDEF       INDEF         18997.9        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1197     1615.029  1316.196  INDEF       INDEF         18748.35       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1199     1868.962  1318.028  INDEF       INDEF         23902.11       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1202     1462.101  1319.939  INDEF       INDEF         63038.58       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1198     1832.598  1323.000  INDEF       INDEF         17424.18       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1203     982.055   1323.317  INDEF       INDEF         20466.66       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1205     1373.957  1323.886  INDEF       INDEF         21583.88       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1207     265.098   1328.310  INDEF       INDEF         51534.41       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1208     1313.000  1329.410  INDEF       INDEF         18717.32       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1211     1433.077  1333.739  INDEF       INDEF         20149.73       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1212     1677.348  1334.555  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1213     1086.308  1337.798  INDEF       INDEF         18614.43       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1210     640.453   1337.912  INDEF       INDEF         16790.63       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1215     905.998   1341.556  INDEF       INDEF         19080.36       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1218     1585.197  1343.059  INDEF       INDEF         17756.61       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1219     1065.832  1346.268  INDEF       INDEF         17620.55       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1221     902.868   1347.508  INDEF       INDEF         19847.96       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1222     494.011   1352.031  INDEF       INDEF         17530.57       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1226     1280.100  1352.638  INDEF       INDEF         18890.43       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1223     1084.236  1353.671  INDEF       INDEF         18592.59       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1227     1088.000  1356.679  INDEF       INDEF         18913.73       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1230     1205.353  1360.069  INDEF       INDEF         22372.27       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1229     857.143   1361.958  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1231     1507.971  1362.461  INDEF       INDEF         23882.62       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1232     1657.534  1365.979  INDEF       INDEF         17449.27       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1233     1010.366  1366.891  INDEF       INDEF         19265.28       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1236     901.839   1369.048  INDEF       INDEF         19608.3        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1237     934.184   1371.185  INDEF       INDEF         62174.02       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1234     409.921   1372.567  INDEF       INDEF         18260.81       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1238     1357.985  1373.356  INDEF       INDEF         17640.68       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1239     971.545   1374.892  INDEF       INDEF         21506.74       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1241     1513.288  1381.000  INDEF       INDEF         23206.87       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1243     176.094   1381.268  INDEF       INDEF         17466.02       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1246     1696.101  1385.831  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1242     1984.990  1386.705  INDEF       INDEF         17323.79       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1248     1723.664  1389.721  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1244     933.653   1390.022  INDEF       INDEF         18274.88       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1251     932.000   1393.180  INDEF       INDEF         18775.74       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1250     1437.348  1394.007  INDEF       INDEF         18993.8        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1252     1613.025  1398.805  INDEF       INDEF         17629.78       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1253     1773.745  1400.757  INDEF       INDEF         18352.09       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1254     1254.262  1404.179  INDEF       INDEF         16539.25       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1257     1526.113  1408.442  INDEF       INDEF         16317.82       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1258     899.001   1411.591  INDEF       INDEF         23622.18       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1261     1020.728  1415.723  INDEF       INDEF         16882.37       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1263     915.234   1425.687  INDEF       INDEF         22016.66       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1265     928.094   1428.537  INDEF       INDEF         37146.21       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1264     302.548   1429.063  INDEF       INDEF         25358.63       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1267     1477.026  1431.619  INDEF       INDEF         16174.07       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1268     1703.190  1434.190  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1269     871.225   1442.643  INDEF       INDEF         18814.85       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1271     1628.348  1443.884  INDEF       INDEF         17490.04       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1272     926.602   1447.828  INDEF       INDEF         19737.26       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1273     660.132   1449.142  INDEF       INDEF         19710.32       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1274     674.277   1450.218  INDEF       INDEF         18151.98       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1276     1097.857  1454.603  INDEF       INDEF         18157.06       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1278     755.244   1457.207  INDEF       INDEF         17615.03       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1277     816.103   1460.769  INDEF       INDEF         18244.57       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1281     771.970   1462.548  INDEF       INDEF         16418.81       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1279     1003.118  1463.050  INDEF       INDEF         62526.26       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1282     365.051   1467.572  INDEF       INDEF         23801.32       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1280     1021.769  1468.109  INDEF       INDEF         18504.29       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1283     1922.943  1469.237  INDEF       INDEF         20209.79       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1287     1349.316  1471.011  INDEF       INDEF         17201.68       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1286     799.677   1471.080  INDEF       INDEF         56518.07       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1285     707.831   1471.121  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1284     1016.011  1473.286  INDEF       INDEF         62539.21       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1289     1619.508  1475.131  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1288     1058.853  1475.633  INDEF       INDEF         20203.07       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1294     1010.187  1484.593  INDEF       INDEF         19993.15       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1293     1560.101  1485.887  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1295     1023.151  1486.677  INDEF       INDEF         62542.48       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1291     980.731   1486.726  INDEF       INDEF         19360.74       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1296     982.099   1489.560  INDEF       INDEF         19448.98       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1298     1765.243  1497.970  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1299     11.094    1503.358  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1301     861.966   1506.447  INDEF       INDEF         18157.17       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1300     799.738   1507.714  INDEF       INDEF         22123.16       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1304     1725.820  1512.277  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1306     1442.296  1516.940  INDEF       INDEF         23492.54       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1308     1672.851  1525.947  INDEF       INDEF         28522.8        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1309     868.103   1526.925  INDEF       INDEF         22038.67       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1310     832.970   1529.462  INDEF       INDEF         18895.54       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1312     193.846   1540.940  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1313     412.921   1546.198  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1315     902.240   1548.021  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1316     992.196   1568.256  INDEF       INDEF         16788.74       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1317     1519.071  1580.708  INDEF       INDEF         23536.72       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1318     785.242   1583.240  INDEF       INDEF         17598.09       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1319     1497.057  1587.818  INDEF       INDEF         22279.73       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1320     1475.397  1590.052  INDEF       INDEF         55967.05       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1322     1994.022  1595.727  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1323     1093.808  1597.207  INDEF       INDEF         28065.06       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1325     1045.008  1600.974  INDEF       INDEF         20547.13       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1327     1956.544  1605.419  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1329     1326.943  1608.597  INDEF       INDEF         18013.88       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1330     1081.409  1615.888  INDEF       INDEF         19272.95       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1332     957.427   1627.852  INDEF       INDEF         16352.05       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1333     1054.998  1634.015  INDEF       INDEF         18773.86       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1335     2020.335  1640.012  INDEF       INDEF         18798.51       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1336     1840.087  1644.163  INDEF       INDEF         18856.79       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1337     680.100   1645.456  INDEF       INDEF         17885.69       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1338     136.054   1652.865  INDEF       INDEF         27665.89       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1341     748.810   1662.834  INDEF       INDEF         18888.33       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1344     1492.609  1676.319  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1345     559.448   1678.019  INDEF       INDEF         18453.18       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1349     1417.380  1680.169  INDEF       INDEF         18118.53       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1346     1410.698  1683.273  INDEF       INDEF         17908.78       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1347     585.533   1683.504  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1348     1256.660  1686.032  INDEF       INDEF         18174.75       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1351     1399.182  1698.680  INDEF       INDEF         19652.03       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1353     784.262   1708.906  INDEF       INDEF         18348.36       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1354     957.112   1709.844  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1357     758.682   1722.842  INDEF       INDEF         17031.4        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1358     1449.182  1726.797  INDEF       INDEF         49824.37       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1360     817.240   1730.444  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1362     1450.717  1731.805  INDEF       INDEF         64276.58       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1361     863.035   1732.067  INDEF       INDEF         17416.38       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1363     103.326   1737.609  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1364     1527.625  1743.211  INDEF       INDEF         19068.7        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1366     1035.650  1746.931  INDEF       INDEF         16614.33       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1368     1456.214  1748.891  INDEF       INDEF         19679.26       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1369     158.655   1758.096  INDEF       INDEF         16617.89       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1370     300.027   1758.994  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1373     590.118   1778.353  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1375     407.647   1790.832  INDEF       INDEF         19929.11       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1377     948.291   1807.068  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1378     1648.055  1809.550  INDEF       INDEF         50577.63       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1381     1152.411  1824.130  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1382     105.271   1826.824  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1383     1434.972  1832.471  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1384     883.270   1836.904  INDEF       INDEF         17240.69       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1385     1330.042  1853.619  INDEF       INDEF         17697.95       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1386     329.880   1855.545  INDEF       INDEF         18461.23       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1387     2017.992  1861.280  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1389     1792.031  1874.482  INDEF       INDEF         65875.38       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1396     529.926   1892.828  INDEF       INDEF         18426.12       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1395     1364.490  1894.961  INDEF       INDEF         17106.48       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1398     1642.801  1895.030  INDEF       INDEF         17927.69       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1397     870.689   1897.857  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1400     1726.993  1904.873  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1399     680.843   1904.977  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1401     1081.271  1910.223  INDEF       INDEF         17493.03       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1403     35.437    1916.696  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1404     897.841   1921.010  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1405     1035.020  1928.000  INDEF       INDEF         18817.86       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1406     1595.676  1932.023  INDEF       INDEF         18193.89       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1408     275.198   1935.584  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1412     400.557   1942.966  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1409     545.077   1943.486  INDEF       INDEF         17148.99       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1414     1639.510  1960.036  INDEF       INDEF         16658.89       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1415     327.108   1962.381  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1416     231.056   1967.446  INDEF       INDEF         22088.87       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1417     1956.514  1980.112  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1418     1198.344  1983.884  INDEF       INDEF         17343.34       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1419     1303.587  1985.906  INDEF       INDEF         46806.74       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1422     688.533   2001.123  INDEF       INDEF         22226.68       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1423     1109.847  2002.118  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1424     18.278    2016.446  INDEF       INDEF         INDEF          0        \
+           INDEF       INDEF       2     Bad_sky                                
+1425     928.943   2030.332  INDEF       INDEF         19749.16       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1426     1646.031  2031.157  INDEF       INDEF         23326.83       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+35       1159.290  88.742    INDEF       INDEF         18029.23       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+107      68.668    233.787   INDEF       INDEF         17221.76       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+119      826.847   257.912   INDEF       INDEF         19643.8        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+144      860.906   316.631   INDEF       INDEF         18306.32       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+158      1791.706  337.244   INDEF       INDEF         17581.53       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+171      1073.738  347.840   INDEF       INDEF         51412.54       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+175      1321.668  357.819   INDEF       INDEF         19576.15       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+215      1636.797  405.658   INDEF       INDEF         20429.56       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+221      754.706   418.894   INDEF       INDEF         19756.34       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+238      1247.722  433.250   INDEF       INDEF         21177.51       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+360      406.820   548.636   INDEF       INDEF         17985.79       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+367      1469.670  550.760   INDEF       INDEF         19524.39       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+370      1567.757  558.722   INDEF       INDEF         20269.48       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+388      340.309   572.003   INDEF       INDEF         62820.73       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+398      1815.751  576.666   INDEF       INDEF         24909.95       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+409      1040.778  586.720   INDEF       INDEF         18683.29       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+411      1887.891  586.761   INDEF       INDEF         16249.38       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+560      1430.334  710.812   INDEF       INDEF         20427.32       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+618      757.419   749.852   INDEF       INDEF         16860.8        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+630      1006.686  765.732   INDEF       INDEF         19104.27       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+694      1179.461  814.894   INDEF       INDEF         17733.84       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+714      773.767   826.724   INDEF       INDEF         17212.38       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+715      876.641   832.135   INDEF       INDEF         20946.84       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+774      1330.735  864.767   INDEF       INDEF         17889.37       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+782      1009.692  870.764   INDEF       INDEF         17126.5        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+811      172.769   890.700   INDEF       INDEF         17924.46       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+955      932.646   1022.794  INDEF       INDEF         17865.74       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1009     818.730   1078.948  INDEF       INDEF         21595.14       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1017     873.667   1091.828  INDEF       INDEF         18246.92       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1023     1661.776  1095.354  INDEF       INDEF         17299.73       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1030     1518.056  1107.216  INDEF       INDEF         62827.89       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1055     827.317   1135.780  INDEF       INDEF         19990.79       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1091     1311.820  1172.756  INDEF       INDEF         17873.39       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1090     1072.010  1176.272  INDEF       INDEF         18145.08       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1100     1182.940  1188.783  INDEF       INDEF         17556.06       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1097     752.447   1188.849  INDEF       INDEF         18754.71       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1125     1560.829  1220.866  INDEF       INDEF         18077.68       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1141     645.737   1243.744  INDEF       INDEF         18115.83       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1152     615.695   1262.757  INDEF       INDEF         17597.67       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1190     1055.762  1305.729  INDEF       INDEF         17134.32       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1196     647.695   1316.767  INDEF       INDEF         18183.84       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1235     1987.800  1367.158  INDEF       INDEF         65127.21       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1249     1143.857  1392.916  INDEF       INDEF         18989.59       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1262     327.665   1421.804  INDEF       INDEF         22327.84       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1270     1672.725  1440.769  INDEF       INDEF         18108.85       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1297     1341.739  1487.746  INDEF       INDEF         18302.96       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1302     1331.747  1507.797  INDEF       INDEF         17850.65       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1326     519.807   1601.778  INDEF       INDEF         21177.46       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1367     1470.191  1752.006  INDEF       INDEF         64231.6        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1371     620.646   1769.782  INDEF       INDEF         18854.06       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1390     1812.297  1878.140  INDEF       INDEF         57297.11       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1420     1296.699  1997.179  INDEF       INDEF         59034.13       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+32       1987.583  82.634    INDEF       INDEF         20139.75       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+57       1729.495  136.536   INDEF       INDEF         17123.92       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+66       1654.697  171.784   INDEF       INDEF         20417.12       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+78       844.471   198.515   INDEF       INDEF         16358.54       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+91       1024.596  218.599   INDEF       INDEF         16663.38       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+108      1411.449  234.703   INDEF       INDEF         16557.02       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+127      1896.469  273.642   INDEF       INDEF         18245.49       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+197      1063.432  378.657   INDEF       INDEF         18106.96       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+301      1039.460  486.524   INDEF       INDEF         16982.24       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+426      2006.648  596.727   INDEF       INDEF         17066.24       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+481      1602.645  643.615   INDEF       INDEF         16564.55       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+537      618.643   693.777   INDEF       INDEF         20628.68       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+600      1075.776  741.315   INDEF       INDEF         23278.45       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+755      482.689   851.731   INDEF       INDEF         18415.22       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1024     1072.560  1097.551  INDEF       INDEF         17589.35       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1171     905.730   1272.460  INDEF       INDEF         18203.93       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1167     1428.438  1274.046  INDEF       INDEF         20127.41       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1180     1246.565  1288.548  INDEF       INDEF         19062.92       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1214     1978.556  1339.576  INDEF       INDEF         16705.05       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1343     1552.511  1671.758  INDEF       INDEF         16015.77       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1372     621.417   1771.374  INDEF       INDEF         18379.77       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1411     1008.505  1940.596  INDEF       INDEF         16680.78       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1413     546.539   1944.447  INDEF       INDEF         18319.63       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+839      1368.716  913.752   INDEF       INDEF         18305.45       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+1391     1002.288  1886.422  INDEF       INDEF         16705.59       0        \
+           INDEF       INDEF       5     Too_faint                              
+1394     1005.638  1889.828  INDEF       INDEF         17327.41       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+504      1491.761  658.743   INDEF       INDEF         19293.19       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+919      420.741   976.712   INDEF       INDEF         16968.8        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+959      955.979   1013.497  INDEF       INDEF         18223.3        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+499      1488.604  656.661   INDEF       INDEF         19166.31       0        \
+           INDEF       INDEF       5     Too_faint                              
+566      1433.766  709.655   INDEF       INDEF         20929.7        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+878      1003.335  947.778   INDEF       INDEF         18208.21       0        \
+           INDEF       INDEF       3     Npix_too_few                           
+946      951.109   1013.517  INDEF       INDEF         18013.9        0        \
+           INDEF       INDEF       3     Npix_too_few                           
+888      1005.574  946.586   INDEF       INDEF         17975.12       0        \
+           INDEF       INDEF       5     Too_faint                              
