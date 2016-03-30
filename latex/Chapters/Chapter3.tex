@@ -170,15 +170,17 @@ As we can see in figure 3.8, the magnitude of the chosen star in the cluster dec
 
 \subsection{PSF Photometry}
 
-There exist many ways to count photons for an image taken with a CCD camera, but all of these ways obey the same principle of energy distribution in luminous objects. The point spread function for each of these objects is an assigned measure from the probabilistic distributions that approach quite well to the count of photons that one wants to do in the photometric analysis of astronomical images. The PSF photometry technique makes the most of the PSF of the objects using certain packages and tasks in a slightly different way than aperture photometry.
+There exist many ways to count photons for an image taken with a CCD camera, but all of these ways obey the same principle of energy distribution in luminous objects. The point spread function for each of these objects is an assigned measure from the probabilistic distributions that approach quite well to the count of photons that one wants to do in the photometric analysis of astronomical images. The PSF photometry technique advantage of the PSF of the objects using certain packages and tasks in a slightly different way than aperture photometry.
 
-When doing photometry in a very crowded field, such as a globular cluster (NGC5139 in this case), where the profiles of stars overlap significantly, one must use de-blending techniques, such as point spread function (PSF) fitting, to determine the individual flux values of the overlapping sources. 
+When doing photometry in a very crowded field, such as a globular cluster ($\omega$ Centauri in our case), where the profiles of stars overlap significantly, one must use de-blending techniques, such as point spread function (PSF) fitting, to determine the individual flux values of the overlapping sources because the noise of the background and the surrounding stars will always affect the aperture photometry in such a crowded cluster. 
 
-This time, I made PSF photometry to some of the stars in the same cluster I started with (NGC5139), I chose bright ones that were relatively isolated to surrounding stars in order to make the estimations more accurate. First I use the same value of the PSF of some of those stars that I found doing the aperture photometry (6.4), this time the value of the sky is going to be higher because this value is going to determine the ammount of stars that the task \textit{daofind} will select to do the photometry and I'm only interested in the brighter ones, a value of 2000 would filter out many of the fainter stars and the background. This values is using the standard deviation and making an average over many values found by the command ``m" in the interactive mode of \textit{imexamine}. 
+We selected our best data obtained in OPD to make a color-magnitude diagram of $\omega$ Centauri. Out of all the photometric images, we selected two images in the V and I band with exposition times of 480 seconds. We measured the instrumental magnitudes of thousands of stars in the cluster, by first doing the PSF modelling with some bright stars that were relatively isolated to surrounding stars in order to make the estimations more accurately.
 
-After setting all the parameters of \textit{phot}, \textit{daopars} and \textit{findpars}, I run \textit{daofind} which will find the stars that match the criteria I mentioned above and will create a text file with the coordinates of those stars and will give to each star an ID.
+First, by determining the FWHM of some of the stars and the standard deviation of the background, we can edit the parameters of the tasks \textit{datapars}, \textit{fitskypars} and \textit{daofind} which are all included in the noao/digiphot/daophot package of IRAF. This values are found using the task \textit{imexamine} on interactive mode with ``a" for the FWHM of the stars and ``m" for the standard deviation of the background. 
 
-The task \textit{tvmark} allows me to highlight the stars of the cluster in the display mode using the text file with the coordinates, and \textit{txdump} allows me to  put explicitly the coordinates of those stars in a text file that I use for the aperture photometry to make the first guess of the PSF of the stars.
+After setting all the parameters of all of the individual tasks, we run \textit{daofind} which will find the stars that match the criteria we mentioned above and will create a text file with the coordinates of those stars and will give to each star an ID.
+
+The task \textit{tvmark} allows us to highlight the stars of the cluster in the display mode using the text file with the coordinates, and \textit{txdump} allows me to  put explicitly the coordinates of those stars in a text file that I use for the aperture photometry to make the first guess of the PSF of the stars.
 
 The best way to correctly select the stars that will be used for the modelling of the PSF is by using the task \textit{pstselect} that will select the stars that are well isolated using statistical techniques. 
 
@@ -186,8 +188,8 @@ Once the stars are selected, the next step is to use the task \textit{psf} which
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=8cm]{images/psf.png}
-\caption[PSF modelling]{PSF modelling, the interactive mode allows us to accept of decline the result by pressing ``a" or ``d", in this case the PSF is not a soft curve with a Gaussian behaviour so it can probably be discarded}
+\includegraphics[width=12cm]{images/psf.png}
+\caption[PSF modelling]{Some examples of the PSF modelling. The interactive mode allows us to accept of decline the result by pressing ``a" or ``d". In the top left and bottom right panels, the PSF can't be modelled correctly because they contain the contributions of various stars, the bottom left image is too saturated and is declined as well. The one at the top right has little noise and is the closest to a soft Gaussian behaviour (even though it is still a little saturated) so it can be accepted to model the PSF.}
 \end{figure}
 
 After running \textit{psf}, there will be created an image that contains the residuals of the psf modelling which can be seen in figure 3.10.
@@ -507,4 +509,25 @@ With $r_{e}$ the half mass radius (where half of the galaxy light is contained)
 Our radial velocity determination involves the necessity of creating or finding very accurate templates because as it has been mentioned, the results of the correlation are highly dependent on the quality of the absorption and emission lines in them.   
 
 
+\section{More data}
 
+
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{| c | c| }
+    \hline
+    \textbf{Article} & \textbf{Mass} ($M_{\odot}$) \\ \hline
+    Mandushev et al. 1991 & $2.4 \times 10^{6}$  \\ \hline
+    Pryor \& Meylan & $3.98 \times 10^{6}$  \\ \hline
+    Meylan et al. 1995 & $5.1 \times 10^{6}$  \\ \hline
+    Majewski et al. 2000 & $5.1 \times 10^{6}$  \\ \hline
+    Van de Ven et al. 2006 & $2.5 \times 10^{6}$  \\ \hline
+    Cassini et al. 2009 & $3.0 \times 10^{6}$  \\ \hline
+    Valcarce \& Catelan, 2011 & $3.0 \times 10^{6}$  \\ \hline
+    Jalali et al. 2011 & $2.5 \times 10^{6}$  \\
+    \hline
+  \end{tabular} 
+\caption[Mass Omega Centauri]{Reported values of Omega Centauri's dynamical mass}
+\end{center}
+\end{table}

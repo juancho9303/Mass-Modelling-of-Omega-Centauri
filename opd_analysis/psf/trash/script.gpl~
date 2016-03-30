@@ -1,0 +1,10 @@
+set grid
+set terminal png
+set output 'HR-diagram.png'
+set nokey
+set title 'Color-Magnitude Diagram of Omega Centauri'
+set xrange [0:3]
+set yrange [20:14.5]
+set xlabel 'V-I'
+set ylabel 'V'
+plot 'vicosida.dat' u ($6-$3):6 pt 20 ps 1.2 lc '58'
