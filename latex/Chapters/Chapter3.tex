@@ -82,7 +82,7 @@ The photometric data was acquired in the next four days (from May 16th to May 19
 \caption[IAG Telescope used for Photometry]{IAG telescope used for the photometric data}
 \end{figure}
 
-On May 16th, we took all the calibration images, consisting of 20 bias frames with an exposition time of 0,00001 seconds; also 22, 11, 11, 20 and 10 flat frames for the B,I,R,U,V filters respectively, their exposition times differed, for  U filter we took various frames of 60 and 30 seconds, for the B filter we took frames of 30 seconds each, 15s for I, 60s for R and 3s for V. We took our ``focus" images to calibrate the instrument, and also various skyflats for all the filters. We targeted the following globular clusters and calibration stars in different filters: NGC5272, HR4961, NGC4590, NGC5139 AND NGC6397. The exposition time for the clusters was of 600 seconds and 2 and 4 seconds for the calibration star. 
+On May 16th, we took all the calibration images, consisting of 20 bias frames with an exposition time of 0,00001 seconds; also 22, 11, 11, 20 and 10 flat frames for the B,I,R,U,V filters respectively, their exposition times differed, for  U filter we took various frames of 60 and 30 seconds, for the B filter we took frames of 30 seconds each, 15s for I, 60s for R and 3s for V. We took our ``focus" images to calibrate the instrument, and also various skyflats for all the filters. We targeted the following globular clusters and calibration stars in different filters: NGC5272, HR4961, NGC4590, NGC5139 and NGC6397. The exposition time for the clusters was of 600 seconds and 2 and 4 seconds for the calibration star. 
 
 May 17th was a terrible night for observations because the sky was too cloudy and the only useful data we could get were dome flats for the filters I,R and V that we could use instead of the bad dome flats of the first day. The reduction using the flats of another day are decent but this is not the ideal situation since mechanical movements of the instrument might slightly change its configuration and therefore it probably ends up with a reduction that is not the ideal one for science purposes.  
 
@@ -162,11 +162,11 @@ Now the photometry is done by changing some of the parameters including the read
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=12cm]{images/mag_vs_ap_size.png}
-\caption[Photometry results of Magnitudes vs Size of apertures]{The magnitude decreases for bigger appertures}
+\includegraphics[width=10cm]{images/aperture_size.png}
+\caption[Photometry results of Magnitudes vs Size of apertures]{Magnitude dependence on the aperture size for the aperture photometry procedures. The X-axis are chosen in terms of the measured value of the FWHM. We note that while the magnitude decreases for bigger apertures, the associated error increases because the cluster is too crowded.}
 \end{figure}
 
-As we can see in figure 3.8, the magnitude of the chosen star in the cluster decreases for bigger apertures but so does the error because the space around the star is crowded with more stars and noise coming from the stars in the background so we infer that for crowded areas like this one the best choice is a small aperture. Although the results may not be as convincing, the use of another technique of photometry allows us to compare the results and see if the choice of a small aperture is a good way to fix or avoid the problem of the big noise of the background. For this purpose we use the technique of Point Spread Function (PSF) Photometry.
+As we can see in figure 3.8, the magnitude of the chosen star in the cluster decreases for bigger apertures but the error increases because the space around the star is crowded with more stars and noise coming from the stars in the background so we infer that for crowded areas like this one the best choice is a small aperture. Although the results may not be as convincing, the use of another technique of photometry allows us to compare the results and see if the choice of a small aperture is a good way to fix or avoid the problem of the big noise of the background. For this purpose we use the technique of Point Spread Function (PSF) Photometry.
 
 \subsection{PSF Photometry}
 
@@ -210,10 +210,14 @@ With the task \textit{seepsf} another image will be created but this time it wil
 
 Finally, after the modelling of the PSF was made, the task \textit{allstar} does the photometry of the cluster using the results we just stored in the current directory. The results of the PSF photometry gave us magnitudes smaller for those stars than the results given by the aperture photometry but there is a constant difference for all the stars which we can assume to be a calibration constant between the two methods. 
 
+When the PSF photometry is ready for the two filters (I and V) we can use the tasks \textit{tdump} and \textit{tmatch} to extract the instrumental magnitudes for the H-R diagram. 
+
+Our color-magnitude diagram in the V and I bands is shown in figure 3.12.
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=12cm]{images/HR-diagram.png}
-\caption[Pf]{Sd}
+\caption[Pf]{Color magnitude diagram of $\omega$ Centauri in the I and V bands made with OPD data observed on May 18$^{th}$. The horizontal branch (HB) can be identified in the left crowded area of the diagram, as well as some stars belonging to the Turn off (TO) and main sequence (MS)  regions in the bottom right of the diagram. The red giant branch should be in the top right region but it's not observed probably due to the saturation problems and the precision of the instrument used for the photometric data}
 \end{figure}
 
 
@@ -427,7 +431,7 @@ By using one of IRAF's templates \textit{``habtemp0.fits"} that covers the range
 
 The results of RVSAO have a really strong dependence on the quality of the template used for the cross correlation, and some of the IRAF spectra have different wavelength ranges and flux values on the characteristic lines so that they won't give reliable results. One is forced to create a template spectrum with the most prominent lines to be used to correlate the object spectrum. One task that can be very useful in the creation of the templates is \textit{rspectext} that creates an image spectrum from an ascii table where the user can set the dispersion to be assigned to the spectra, and the appropriate values for the flux and intensity of absorption or emission lines.
 
-One of our created templates that holds information about some absorption lines including the calcium triplet and made using \textit{rspectext} is shown in the following figure:
+One of our created templates that holds information about some absorption lines including the calcium triplet and made using \textit{rspectext} is shown in figure 3.23.
 
 \begin{figure}[H]
   \centering

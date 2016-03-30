@@ -182,15 +182,9 @@ We can visualize their orbits in the following figure:
 \caption[Illustration of the orbits of Globular Clusters around a spiral galaxy]{Illustration of the orbits of some Globular Cluster in a spiral galaxy like the Milky Way. Picture from the Oregon University webpage}
 \end{figure}
 
-To determine the physical orbits of stars in globular clusters, and infer the velocity dispersions it is required to know their proper motions in addition to their radial velocities. This can be achieved by measuring the doppler broadening of the spectral lines in the clusters as we can see in the following figure
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=10cm]{images/4_gcs.png}
-\caption[Spectral line broadening]{Observed spectral line broadening due to the proper motions of stars in the cluster, note that the observed $\Delta\lambda$ is given by the blue shift or red shift of each individual star contributing to the broadening of the line, this gives important information about the velocity dispersion that will be discussed in a following section. Taken from lecture notes of the University of Arizona}
-\end{figure}
-
-Studying the doppler shift of the characteristic spectral lines for individual stars is also an useful technique to infer the dynamic properties of GCs. We will study further the mass models that fit best to Globular Clusters and the dynamical structure in the following section.
+-----------------------------------
+orbits and doppler lines
+--------------------------
 
 \section{$\omega$ Centauri}
 
@@ -366,8 +360,8 @@ We can directly integrate the mass to get the potential for the three discussed 
 \Phi(r) = -4\pi G\rho_{0}a^{2} \times \left\lbrace
 \begin{array}{lll}
 ln(1+r/a) & \text{for a Jaffe model}\\
-\frac{1}{2(1+r/a)} & \text{for a Hernquist model}\\
-\frac{ln(1+r/a)}{r/a} & \text{for a NFW model}
+\frac{1}{2}(1+r/a)^{-1} & \text{for a Hernquist model}\\
+ln(1+r/a)(r/a)^{-1} & \text{for a NFW model}
 \end{array}
 \right.
 \end{equation} 
@@ -392,9 +386,9 @@ One of the other approximations we make is that the orbits of stars in the syste
 
 As a star moves through a stellar system, it will feel the gravitational force due to all other stars. We want to determine if the motion of the stars is mainly determined by the average gravitational force of all other stars combined, or if it is mostly sensitive to the force due to nearby stars, in order to do this we must refer to some parameters of time that we properly define like \textbf{relaxation} and \textbf{crossing} time. 
 
-Relaxation usually means the return of a perturbed system into equilibrium. In the clusters, stellar encounters eventually lead to dynamical relaxation, until we say that the system is in a thermal equilibrium. 
+Relaxation time refers to the time that is necessary for the particles (stars) in the system to change significantly their velocity, so that they lose all memory of their initial orbits. In other words, it is the time taken for the cumulative effect of chance encounters between stars to be so great that the actual orbit of a star cannot be described, even approximately, by the theoretical orbit which is derived by ignoring chance encounters and considering only the effect of the smoothed-out distribution of mass in the system (D. Asoka Mendis, 1970). 
 
-The crossing time refers to the typical time that would take to a star to cross the whole system, in terms of the size of the system $r$ and the velocity $v$ of the stars, this time is:
+The other fundamental parameter we need to defind is the crossing time which refers to the typical time that would take to a star to cross the whole system, in terms of the size of the system $r$ and the velocity $v$ of the stars, this time is:
 
 \begin{equation}
 t_{cross}=\frac{r}{v}
