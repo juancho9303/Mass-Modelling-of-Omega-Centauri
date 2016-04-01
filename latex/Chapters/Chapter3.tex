@@ -63,10 +63,10 @@ We made the observations of dome flats, bias frames, comparison lamp frames, cal
     \hline
   \end{tabular}
 \end{center} 
-\caption[Observed objects in OPD]{Observed objects in OPD observatory, the table contains the equatorial coordinates of the objects and the days each object was observed, the check mark indicates that the object was observed and the x mark indicates it was not observed. The details of the observations for each day are explained right ahead.}
+\caption[Observed objects in OPD]{Observed objects in OPD observatory, column 1 is the name of the observed object, column 2 and 3 are the equatorial coordinates of the objects, columns 4, 5, 6, 7 and 8 are the observation dates, where the 14$^{th}$ and 15$^{th}$ were the days we observed the spectroscopic data and the rest of days we observed photometric data. The check mark indicates that the object was observed and  \xmark$ $  indicates it was not observed. The details of the observations for each day are explained right ahead.}
 \end{table}
 
-Now, our set up configuration for the spectrograph was the following:
+Our set up configuration for the spectrograph was the following:
 
 On May 14th, a diffraction grating of 900 lines per mm, a CCD IkonL and the central wavelength for the observations of 8500 Angstroms (with possibility of rotation of the slit 90°, +45° and -45°). We used the slit of 2.52" and obtained data for the globular clusters: NGC5020, NGC5272, NGC4833, NGC4590, NGC5139, NGC5286, NGC6752, NGC6397, NGC6723, NGC6715 and NGC6541 using exposition times of 600 and 900 seconds. We also observed the calibration stars: HR4963 and HR4468 with exposures of 7 and 5 seconds. As it was the first day, we needed to be very careful in calibrating our instruments on order to have the objects in the right focus, we also made the rotation of the slit to use all the diffraction angles of the observations and our comparison lamps were of Ne-Ar.
 
@@ -90,11 +90,13 @@ On May 18th we were more organized since we were getting familiar with the obser
 
 On May 19th we observed the Clusters NGC5139, NGC4590, NGC6723, NGC6715, NGC6541, NGC6970, NGC5286,    NGC6397, NGC6541 and NGC6715, the calibration stars HR6386 and HR6308, 20 bias frames and flats for each filter.
 
+It is important to mention that we had several tracking problems with the photometric data, and this affects the PSF of the photometry, the problems were due to a bad set up configuration of the telescope in OPD. Although we were able to get some decent data, for the most part the tracking problems made the stars look like ellipsoids thus making it hard for us to trust the photometric data for this thesis. Even though we did not use the data to its full potential, we explain the reduction and extraction procedures as a guide for the reader.
+
 \section{First step for Anaysis}
 
 Our first goal in starting the analysis of all the relevant data was to organize all the images in order to reduce the time required to make the reductions. For every day the calibrations images, trash, calibration stars and objects were separated and they were given their correct names as they were in the headers and compared with the information sheets we filled at the time we were doing the observations.
 
-The next step was the reduction of all the images with the calibration files for each day, I started the photometric data to acquire certain skills in the use of IRAF because the reduction of the spectroscopic data was a little more complex and needed a deeper understanding of IRAF packages. 
+The next step was the reduction of all the images with the calibration files for each day, we started the photometric data to acquire certain skills in the use of IRAF because the reduction of the spectroscopic data was a little more complex and needed a deeper understanding of IRAF packages. 
 
 We started with the cluster NGC-5139 ($ \omega $ Centauri) because we got lots of data for that cluster in OPD and also because $ \omega $ Centauri is a well known globular cluster since it is the largest in our galaxy and we can get a lot of information from the databases. 
 
@@ -112,12 +114,12 @@ In order to see how the data would be affected by the systematic errors we just 
   \centering
   \begin{minipage}[b]{0.47\textwidth}
     \includegraphics[width=\textwidth]{images/ngc_5139_dirty.png}
-    \caption[Dirty image of NGC5139]{Composite image of NGC5139 without being previously reduced}
+    \caption[Dirty image of NGC5139]{Composite image of NGC5139 in the U,V and R filters without being previously reduced, note that there is a significant amount of noise all over the image, specially in the borders. There is also a big strange object that might be a mote of dust in the top left corner.}
   \end{minipage}
   \hfill
   \begin{minipage}[b]{0.47\textwidth}
     \includegraphics[width=\textwidth]{images/ruido.png}
-    \caption[Clean image of NGC5139]{Composite image of the flats showing the noise that needs to be extracted}
+    \caption[Clean image of NGC5139]{Composite image of the flats in the U,V and R filters showing the noise that needs to be extracted and which is present in all the filters, so that we can state that the mote-of-dust looking dirt and the border noise are a set up problem and not a problem for each single filter.}
   \end{minipage}
 \end{figure}
 
@@ -166,7 +168,7 @@ Now the photometry is done by changing some of the parameters including the read
 \caption[Photometry results of Magnitudes vs Size of apertures]{Magnitude dependence on the aperture size for the aperture photometry procedures. The X-axis are chosen in terms of the measured value of the FWHM. We note that while the magnitude decreases for bigger apertures, the associated error increases because the cluster is too crowded.}
 \end{figure}
 
-As we can see in figure 3.8, the magnitude of the chosen star in the cluster decreases for bigger apertures but the error increases because the space around the star is crowded with more stars and noise coming from the stars in the background so we infer that for crowded areas like this one the best choice is a small aperture. Although the results may not be as convincing, the use of another technique of photometry allows us to compare the results and see if the choice of a small aperture is a good way to fix or avoid the problem of the big noise of the background. For this purpose we use the technique of Point Spread Function (PSF) Photometry.
+As we can see in figure 3.8, the magnitude of the chosen star in the cluster decreases for bigger apertures but the error increases because the space around the star is crowded with more stars and noise coming from the stars in the background so we infer that for crowded areas like this one the best choice is a small aperture. Although the results may not be as convincing, the use of another technique of photometry allows us to compare the results and see if the choice of a small aperture is a good way to fix or avoid the problem of the big noise of the background. For this purpose we use the technique of Point Spread Function (PSF) Photometry. Based on the manual ``Creating a PSF for photometry with DAOphot" by Dave Zurek, 1999.
 
 \subsection{PSF Photometry}
 
@@ -225,6 +227,8 @@ Our color-magnitude diagram in the V and I bands is shown in figure 3.12.
 
 This was the most important part of our observational data since it had the best quality we could obtain in the many domes of the observatory. Also, spectra of this kind is not easy to find in the scientific databases so we have important data to work with. The first spectroscopic procedures were also made for $ \omega $ Centauri cluster since we need to master the reduction and extraction techniques first in order to be able to start the scientific work about the mass modelling of the clusters.
 
+We based our reduction and extraction procedures on ``A User's Guide to Reducing Slit Spectra with IRAF", by Phil Massey, Frank Valdes, and Jeannette Barnes, April 1992. 
+
 \subsection{Spectroscopic Reduction}
 
 The spectroscopic reduction is made by following some steps taking into account that we did not take any Skyflats so we need to create a response function using our dome flats. The steps are:
@@ -247,20 +251,16 @@ blkrep AvgFlatCols AvgFlatColsMaster 475 1
 
 - Finally, the task we use to remove the cosmic rays is \textit{lacos}, and it gives very accurate results, as it shows the ``mask" image with the removed cosmic rays.
 
-Figures 3.13 and 3.14 show......
-
-
-
-The vertical axis of the spectra is the dispersion axis and the horizontal axis is the spatial separation between stars. To visualize the reductions we have the following figures taken from the dirty and reduced NGC5139 spectrum (Day of observation May 14th):
+Figures 3.13 and 3.14 show a dirty and a clean spectrum, where every strong vertical trace is the spectrum of a star. The vertical direction is the dispersion (in wavelength) of the spectrum and the horizontal direction is the spatial separation between stars. Note that there are some strong horizontal lines that span all the spatial direction of the spectrum even in the clean one, they are atmospheric lines that need to be considered in the wavelength and flux calibration of the spectra.
 
 \begin{figure}[H]
   \centering
-  \begin{minipage}[b]{0.45\textwidth}
+  \begin{minipage}[b]{0.49\textwidth}
     \includegraphics[width=\textwidth]{images/cluster_dirty.png}
     \caption[Dirty spectrum of NGC5139]{The dirty cluster spectrum has a small signal to noise ratio, besides border effects (such as a big gradient) that need to be trimmed and cosmic rays.}
   \end{minipage}
   \hfill
-  \begin{minipage}[b]{0.45\textwidth}
+  \begin{minipage}[b]{0.49\textwidth}
     \includegraphics[width=\textwidth]{images/cluster_clean.png}
     \caption[Clean spectrum of NGC5139]{The clean spectrum without the bad data at the borders that needed to be trimmed, with a higher signal to noise ratio and the cosmic rays removed}
   \end{minipage}
@@ -345,7 +345,9 @@ After the wavelength calibration was made for the stellar spectrum, we note a di
   \end{minipage}
 \end{figure}
 
-What this shows is that the radial velocities that we compute may have a small systematic depending on the method we use for the wavelength calibration since even a small shift on the lines would be equal to a difference in velocities of tenths of kilometres per second, thus introducing a big systematic error in our data that would completely affect our modelling. The error bar in the velocities associated with the position of the lines of the spectrum is then too big to give us reliable information about the velocity dispersion in the inner region of the clusters so the calibrations have to be perfected.
+What this shows is that the radial velocities that we compute may have a small systematic depending on the method we use for the wavelength calibration since even a small shift on the lines would be equal to a difference in velocities of tenths of kilometres per second, thus introducing a big systematic error in our data that would completely affect our modelling. The error bar in the velocities associated with the position of the lines of the spectrum is then too big to give us reliable information about the velocity dispersion in the inner region of the clusters so the calibrations have to be improved.
+
+We needed to find a better solution for this problem because the projected radial velocities are the most important data for our modelling, so we searched for reliable databases that we shall introduce in the ``Databases" section at the end of this chapter. 
 
 
 \subsection{Flux Calibration}
@@ -445,21 +447,21 @@ One of our created templates that holds information about some absorption lines 
   \begin{tabular}{| c|  c|  c| }
     \hline
     Wavelength & Intensity & Line \\ \hline
-    8497.84 & -0.8 & CaII \\
-    8542.09 & -0.89 & CaII \\
-    8598.49 & -0.872 & HI \\
-    8661.74 & -1.0 & CaII \\
+    8497.84 & -0.8 & CaII \\ \hline
+    8542.09 & -0.89 & CaII \\ \hline 
+    8598.49 & -0.872 & HI \\ \hline 
+    8661.74 & -1.0 & CaII \\ \hline
     8750.91 & -0.97 & HI \\
     \hline
   \end{tabular} 
     \end{center}
-\caption[Imput data for the creation of template with rspectext]{Imput data for the creation of template with rspectext, the values of the intensity of the absorption lines are determined by the user according to the strength or the features involving the stellar spectra, the name of the lines is not relevant for the creation of the template}
+\caption[Imput data for the creation of template with rspectext]{Imput data for the creation of template with rspectext. The user specifies the value of the wavelength $\lambda$ (Column 1), the approximate intensity of the lines (Column 2) and the name of the spectral feature (Column 3).}
 \end{table}
   \hfill
     \end{minipage}
   \begin{minipage}[b]{0.49\textwidth}
     \includegraphics[width=\textwidth]{images/template.png}
-    \caption[Results of the template spectrum created by rspectext]{Results of the template spectrum created by rspectext in the given wavelength range, this template does not have any emission lines since our spectra didn't have strong emission features.}
+    \caption[Results of the template spectrum created by rspectext]{Results of the template spectrum created by rspectext in the given wavelength range with the values of table 3.2, this template does not have any emission lines since our spectra didn't have strong emission features.}
   \end{minipage}
 \end{figure}
 

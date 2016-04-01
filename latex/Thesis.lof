@@ -2,52 +2,50 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces M15 Globular cluster}}{5}{figure.caption.11}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces ESO and Hubble images of Globular Clusters}}{6}{figure.caption.12}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Evolution of an ergodic Plummer model over time}}{9}{figure.caption.14}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Evolution of the velocity anisotropy parameter}}{10}{figure.caption.15}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Hubble image of Fornax-2 Globular Cluster}}{12}{figure.caption.17}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Hubble Space Telescope image of Fornax-3 Globular Cluster}}{12}{figure.caption.17}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Color Magnitude diagram of M55}}{14}{figure.caption.19}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces HR Diagram for Stars}}{14}{figure.caption.19}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Age vs Metallicity for some Globular Clusters}}{15}{figure.caption.20}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Illustration of the orbits of Globular Clusters around a spiral galaxy}}{16}{figure.caption.21}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Circular speed vs radius for the Jaffe, Hernquist, and NFW models}}{22}{figure.caption.48}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Evolution of an ergodic Plummer model over time}}{10}{figure.caption.14}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Evolution of the velocity anisotropy parameter}}{11}{figure.caption.15}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Hubble image of Fornax-2 Globular Cluster}}{13}{figure.caption.17}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Hubble Space Telescope image of Fornax-3 Globular Cluster}}{13}{figure.caption.17}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Color Magnitude diagram of M55}}{15}{figure.caption.19}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces HR Diagram for Stars}}{15}{figure.caption.19}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Illustration of the orbits of Globular Clusters around a spiral galaxy}}{16}{figure.caption.20}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces OPD Observatory}}{29}{figure.caption.74}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Perkin-Elmer telescope used for Spectroscopy}}{29}{figure.caption.76}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces IAG Telescope used for Photometry}}{31}{figure.caption.79}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Dirty image of NGC5139}}{34}{figure.caption.82}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Clean image of NGC5139}}{34}{figure.caption.82}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Normalized Superflat for the filter I}}{35}{figure.caption.83}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces NGC5139 as observed in the V filter}}{36}{figure.caption.85}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Photometry results of Magnitudes vs Size of apertures}}{37}{figure.caption.86}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces PSF modelling}}{39}{figure.caption.88}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces PSF residuals}}{39}{figure.caption.89}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces PSF image created by the task Seepsf}}{40}{figure.caption.90}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Pf}}{41}{figure.caption.91}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Dirty spectrum of NGC5139}}{43}{figure.caption.94}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Clean spectrum of NGC5139}}{43}{figure.caption.94}
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Spectrum of calibration star HR4468}}{44}{figure.caption.96}
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Emission lines for the Ne-Ar calibration lamp}}{45}{figure.caption.98}
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Theoric emisison lines of a Ne-Ar lamp}}{45}{figure.caption.98}
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Wavelength calibrated spectrum of HR4468}}{46}{figure.caption.99}
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Comparison between the two wavelength calibration methods}}{47}{figure.caption.100}
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Zoomed comparison between the two wavelength calibration methods}}{47}{figure.caption.100}
-\contentsline {figure}{\numberline {3.21}{\ignorespaces Flux calibrated spectrum of HR4468}}{49}{figure.caption.102}
-\contentsline {figure}{\numberline {3.22}{\ignorespaces Spectrum of a prominent star of the NGC5139 globular cluster}}{50}{figure.caption.103}
-\contentsline {figure}{\numberline {3.23}{\ignorespaces XCSAO results}}{51}{figure.caption.106}
-\contentsline {figure}{\numberline {3.24}{\ignorespaces Results of the template spectrum created by rspectext}}{52}{figure.caption.107}
-\contentsline {figure}{\numberline {3.25}{\ignorespaces The nature of the barycenter shift of radial velocities}}{53}{figure.caption.109}
-\contentsline {figure}{\numberline {3.26}{\ignorespaces EMSAO results with the identification of lines}}{54}{figure.caption.110}
-\contentsline {figure}{\numberline {3.27}{\ignorespaces FXCOR results for NGC1904}}{55}{figure.caption.112}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces OPD Observatory}}{30}{figure.caption.80}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Perkin-Elmer telescope used for Spectroscopy}}{30}{figure.caption.82}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces IAG Telescope used for Photometry}}{33}{figure.caption.85}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Dirty image of NGC5139}}{36}{figure.caption.88}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Clean image of NGC5139}}{36}{figure.caption.88}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Normalized Superflat for the filter I}}{37}{figure.caption.89}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces NGC5139 as observed in the V filter}}{38}{figure.caption.91}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Photometry results of Magnitudes vs Size of apertures}}{39}{figure.caption.92}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces PSF modelling}}{41}{figure.caption.94}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces PSF residuals}}{41}{figure.caption.95}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces PSF image created by the task Seepsf}}{42}{figure.caption.96}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Pf}}{43}{figure.caption.97}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Dirty spectrum of NGC5139}}{45}{figure.caption.100}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Clean spectrum of NGC5139}}{45}{figure.caption.100}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Spectrum of calibration star HR4468}}{46}{figure.caption.102}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Emission lines for the Ne-Ar calibration lamp}}{47}{figure.caption.104}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Theoric emisison lines of a Ne-Ar lamp}}{47}{figure.caption.104}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Wavelength calibrated spectrum of HR4468}}{48}{figure.caption.105}
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Comparison between the two wavelength calibration methods}}{49}{figure.caption.106}
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Zoomed comparison between the two wavelength calibration methods}}{49}{figure.caption.106}
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Flux calibrated spectrum of HR4468}}{51}{figure.caption.108}
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Spectrum of a prominent star of the NGC5139 globular cluster}}{52}{figure.caption.109}
+\contentsline {figure}{\numberline {3.23}{\ignorespaces XCSAO results}}{53}{figure.caption.112}
+\contentsline {figure}{\numberline {3.24}{\ignorespaces Results of the template spectrum created by rspectext}}{54}{figure.caption.113}
+\contentsline {figure}{\numberline {3.25}{\ignorespaces The nature of the barycenter shift of radial velocities}}{55}{figure.caption.115}
+\contentsline {figure}{\numberline {3.26}{\ignorespaces EMSAO results with the identification of lines}}{56}{figure.caption.116}
+\contentsline {figure}{\numberline {3.27}{\ignorespaces FXCOR results for NGC1904}}{57}{figure.caption.118}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Pg}}{61}{figure.caption.141}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Pg}}{62}{figure.caption.143}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Pg}}{63}{figure.caption.147}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Pg}}{64}{figure.caption.149}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Pg}}{65}{figure.caption.152}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Pg}}{66}{figure.caption.154}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Extinction Correction}}{68}{figure.caption.158}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Synthetic spectrum of STARLIGHT}}{68}{figure.caption.159}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces En}}{70}{figure.caption.165}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces En}}{71}{figure.caption.167}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Pg}}{64}{figure.caption.146}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Pg}}{64}{figure.caption.147}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Pg}}{66}{figure.caption.152}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Pg}}{67}{figure.caption.154}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Pg}}{68}{figure.caption.157}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Pg}}{69}{figure.caption.159}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Extinction Correction}}{71}{figure.caption.163}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Synthetic spectrum of STARLIGHT}}{71}{figure.caption.164}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces En}}{73}{figure.caption.170}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces En}}{74}{figure.caption.172}
 \addvspace {10\p@ }

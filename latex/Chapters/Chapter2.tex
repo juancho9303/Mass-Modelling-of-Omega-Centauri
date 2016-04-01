@@ -151,15 +151,7 @@ Of the GC's stellar populations, around half the stars are a single generation o
 
 The proportion of polluted stars found in the Milky Way's globular clusters is much higher than astronomers expected, suggesting that a large chunk of the first-generation star population is missing. A leading explanation for this is that the clusters once contained many more stars, but a large fraction of the first-generation stars were ejected from the cluster at some time in its past.
 
-An interesting plot relating the age of the Globular Clusters to their metallicity is shown in the following figure:
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=10cm]{images/metallicity_gcs.jpg}
-\caption[Age vs Metallicity for some Globular Clusters]{Age estimations vs metallicity of Open (circles) and Globular (triangles) Clusters. Taken from https://universe-review.ca}
-\end{figure}
-
-Before now, we didn't know whether globular clusters in smaller galaxies had multiple generations or not, but our observations show clearly that they do \cite{15}. This finding means that a leading theory on how these mixed-generation globular clusters formed cannot be correct, and astronomers will have to think once more about how these mysterious objects in the Milky Way and further afield came to exist.
+In the past, we didn't know whether globular clusters in smaller galaxies had multiple stellar generations or not, but recent observations show clearly that they do \cite{15}. This finding means that a leading theory on how these mixed-generation globular clusters formed cannot be correct, and astronomers will have to think once more about how these mysterious objects in the Milky Way and further afield came to exist.
 
 The other fundamental observational procedures to study GC's are Radial velocity measurements that have revealed that most Globular Clusters are moving in highly eccentric elliptical orbits that take them far outside the Milky Way; they form a halo of roughly spherical shape which is highly concentrated to the Galactic Center, but reaches out to a distance of several thousands of parsecs, much more than the dimension of the Galaxy's disk. As they don't participate in the Galaxy's disk rotation, they can have high relative velocities of several 100 km/s with respect to our Solar System; this is what shows up in the radial velocity measurements. 
 
@@ -369,15 +361,43 @@ ln(1+r/a)(r/a)^{-1} & \text{for a NFW model}
 \right.
 \end{equation} 
 
-From the above equations, and taking into account the potential energy for each model, it can be proved that the Jaffe and Hernquist models have gravitational radii $r_{r}=2a$ and $6a$ respectively, while for the NFW model $r_{g}$ is undefined. The circular speed, given by these potentials for each model is shown in the following figure: 
+As will be mentioned in the modelling chapter, we focus on the Hernquist model and make some modifications on it. We use this model because it is a well known model that closely approximates the de Vaucouleurs law for elliptical galaxies and has analytical solutions that can be useful for our computational purposes. In order to introduce the model as done by Lars Hernquist in 1989 with his An analytical model for spherical galaxies and bulges" let's start by considering the density profile that resembles a $R^{1/4}$ (de Vaucouleurs) at small radii
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=10cm]{images/circular_velocity_vs_radius.png}
-\caption[Circular speed vs radius for the Jaffe, Hernquist, and NFW models]{Circular speed vs radius for the models of Jaffe, Hernquist and NFW, taken from Binney \& Tremaine, Galactic Dynamics 2$^{nd}$ edition.}
-\end{figure}
+\begin{equation}
+\rho(r)=\frac{M}{2\pi}\frac{a}{r}\frac{1}{\left(r+a\right)^{3}}
+\end{equation}
 
-The next step in the analysis of the dynamics and stability of Globular Clusters is to understand the physics of spherical distribution of systems and how the solutions for their equilibrium dynamics can be easily reached. As we shall see, a good consideration for the simplification of the mathematical treatment of Globular Clusters (with good physical reasons) is that these systems are not collisional.
+Where $a$ is the scalength and M is the total mass of the distribution. The cumulative mass distribution corresponding to this density profile is
+
+\begin{equation}
+M(r)=M\frac{r^{2}}{\left(r+a\right)^{2}}
+\end{equation}  
+
+And the potential takes the form
+
+\begin{equation}
+\phi(r)=-\frac{GM}{r+a}
+\end{equation}
+
+Now, the projected surface brightness in the Hernquist model in terms of the mass-to-light ratio $\Gamma$ and the projected radius $R$ is: 
+ 
+\begin{equation}
+I(R)=\frac{M}{2\pi a^{2}\Gamma\left(1-s^{2}\right)^{2}}\left[\left(2+s^{2}\right)X(s)-3\right]
+\end{equation}
+ 
+where $s=R/a$, $R$ is the projected radius and:
+
+\begin{equation}
+X(s)=\frac{1}{\sqrt{1-s^{2}}}sech^{-1}s\qquad for\qquad0\leq s\leq1
+\end{equation}
+
+\begin{equation}
+X(s)=\frac{1}{\sqrt{s^{2}-1}}sec^{-1}s\qquad for\qquad1\leq s<\infty
+\end{equation}
+
+We will come back to these equations in chapter 4 where we do the modelling and the modifications to Hernquist profile.
+
+The next step in the analysis of the dynamics of Globular Clusters is to understand the physics of spherical distribution of systems and how the solutions for their equilibrium dynamics can be easily reached. As we shall see, a good consideration for the simplification of the mathematical treatment of Globular Clusters (with good physical reasons) is that these systems are not collisional.
 
 \subsection{Collisionless Systems}
 
@@ -535,3 +555,16 @@ Finally, it is important to introduce a useful parameter called the \textbf{Anis
 
 If $\beta=0$, then $\overline{v}_{r}^{2}=\overline{v}_{\phi}^{2}=\overline{v}_{\theta}^{2}$ and we have zero anisotropy (there are no preferred directions for the stars in the system and the velocity dispersion tensor is completely symmetric) as in the ideal case of a spherical system in equilibrium. On the other hand, when $\beta=1$ we have that the system has total anisotropy.
 
+In the context of the Jeans equations, the surface brightness $I(R)$ and the projected velocity dispersion $\sigma_{p}$ can be set in terms of the luminosity density $\nu$ and the velocity dispersion $\bar{v_{r}^{2}}$ (Binney \& Tremaine 1987). For the simplest case in which $\beta=0$ we have
+
+\begin{equation}
+I(R)\sigma_{p}^{2}(R)=2\int_{R}^{\infty}\frac{\nu\bar{v_{r}^{2}}rdr}{\sqrt{r^{2}-R^{2}}}
+\end{equation}     
+
+And for a more general case with $\beta \neq 0$ and writting explicitely the mass-to-light ratio $\Gamma=\rho / \nu$ we have
+
+\begin{equation}
+I(R)\sigma_{p}^{2}(R)=\frac{2}{\Gamma}\int_{R}^{\infty}\left(1-\beta\frac{R^{2}}{r^{2}}\right)\frac{\nu\bar{v_{r}^{2}}rdr}{\sqrt{r^{2}-R^{2}}}
+\end{equation}
+
+Which is going to be a fundamental equation in this thesis since it is the starting point of our modelling and because it allows us to use the observational data of projected velocity dispersions in the cluster.  
