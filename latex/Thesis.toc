@@ -34,8 +34,8 @@
 \contentsline {section}{\numberline {3.6}Databases}{58}{section.122}
 \contentsline {chapter}{\numberline {4}Modelling}{60}{chapter.125}
 \contentsline {section}{\numberline {4.1}Modified Hernquist Model}{60}{section.126}
-\contentsline {subsection}{\numberline {4.1.1}Full Modelling}{65}{subsection.151}
-\contentsline {subsection}{\numberline {4.1.2}Fix mass-to-light ratio}{67}{subsection.156}
-\contentsline {section}{\numberline {4.2}Stellar Population Synthesis with Starlight}{69}{section.161}
-\contentsline {chapter}{\numberline {5}Conclusions}{75}{chapter.174}
-\contentsline {chapter}{Bibliography}{76}{chapter*.175}
+\contentsline {subsection}{\numberline {4.1.1}Full Modelling}{65}{subsection.152}
+\contentsline {subsection}{\numberline {4.1.2}Fix mass-to-light ratio}{67}{subsection.157}
+\contentsline {section}{\numberline {4.2}Stellar Population Synthesis with Starlight}{70}{section.163}
+\contentsline {chapter}{\numberline {5}Conclusions}{77}{chapter.180}
+\contentsline {chapter}{Bibliography}{78}{chapter*.181}

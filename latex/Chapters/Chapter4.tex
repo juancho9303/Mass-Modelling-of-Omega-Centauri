@@ -2,12 +2,9 @@
 
 We used various techniques for the mass modelling of $\omega$ Centauri, so that we could make a good approximation to its dynamic and stellar mass. In order to do this, we decided to use the Hernquist profile and made some modifications on it so that dark matter contributions would also be included.  
 
-
 \section{Modified Hernquist Model}
 
-Four experiments:
-
-As introduced in chapter 2, the density profile for the Hernquist model is
+Our modelling is based on significant modifications to the Hernquist profile, as introduced in chapter 2, the density profile for this model is
 
 \begin{equation}
 \rho(r)=\frac{M}{2\pi}\frac{a}{r}\frac{1}{\left(r+a\right)^{3}}
@@ -43,7 +40,7 @@ As mentioned in the theoretical framework chapter, the line of sight velocity di
 I(R)\sigma_{p}^{2}(R)=\frac{2}{\Gamma}\int_{R}^{\infty}\left(1-\beta\frac{R^{2}}{r^{2}}\right)\frac{\rho\bar{v_{r}^{2}}rdr}{\sqrt{r^{2}-R^{2}}}
 \end{equation}
 
-And the velocity dispersion is
+And the velocity dispersion, in terms of the potential and the density is
 
 \begin{equation}
 \bar{v_{r}^{2}}=\sigma_{r}^{2}=\frac{1}{\rho(r)}\int_{r}^{\infty}\rho(r)\frac{d\phi}{dr}dr
@@ -61,7 +58,7 @@ So the projected velocity dispersion becomes:
 \sigma_{p}^{2}(R)=\frac{2}{I(R)\Gamma}\int_{R}^{\infty}\left(1-\beta\frac{R^{2}}{r^{2}}\right)\left(G\int_{r}^{\infty}\frac{\rho(r)M(r)}{r^{2}}dr\right)\frac{rdr}{\sqrt{r^{2}-R^{2}}}
 \end{equation}
 
-We do various experiments and fits for our modelling, first, the simplest of all models is the one where we assume that the cluster doesn't have dark matter whatsoever, in this case there only will be one mass contribution and only one scalength (the stellar scalength) so the solution of the last equation would be:
+We do various experiments for our modelling, the simplest of all models is the one where we assume that the cluster doesn't have dark matter whatsoever, in this case there only will be one mass contribution and only one scalength (the stellar scalength) so the solution of the last equation would be:
 
 \begin{equation}
 \sigma_{p}^{2}(R)=\frac{GM^{2}a}{I(R)\Gamma\pi}\int_{R}^{\infty}\alpha(r)\left(\frac{\log{\left(\frac{a+r}{r}\right)}}{a^{5}}-\frac{25a^{3}+52a^{2}r+42ar^{2}+12r^{3}}{12a^{4}\left(a+r\right)^{4}}\right)dr
@@ -135,7 +132,7 @@ With \left\lbrace
 \right.
 \end{equation} 
 
-Now, as mentioned in the last chapter, we used many databases for projected radial velocities in order to properly do our fit and modelling. The data is shown in figure -------
+As we mentioned in the last chapter, we used many databases for projected radial velocities in order to properly do our fit and modelling. The data is shown in figure 4.1
 
 \begin{figure}[H]
 \centering
@@ -143,7 +140,7 @@ Now, as mentioned in the last chapter, we used many databases for projected radi
 \caption[Pg]{Pd}
 \end{figure}
 
-Because we need to calculate the projected velocity dispersion profile, we need to cut in radial bins as hown in figure ---------. 
+Because we need to calculate the projected velocity dispersion profile, we need to cut in radial bins as shown in figure 4.2 
 
 \begin{figure}[H]
 \centering
@@ -167,13 +164,25 @@ In order to do a proper modelling and fitting we need to take into account the e
 \Delta \sigma = \frac{1}{\sqrt{N}}\left(\sum_{i=1}^{n}\left(v_{i}-v\right)^{2}\right)^{-1/2}\sum_{i=1}^{n}\left(v_{i}-v\right)\Delta v
 \end{equation}
 
-With the radial projected velocity dispersion (and its error) we can start with the fitting to find the optimized parameters in our various experiments. Because the functions that we wanted to fit did not have an analytic solution, we decided use a $\chi^{2}$ method instead.
+With the radial projected velocity dispersion (and its error) we can start with the fitting to find the optimized parameters in our various experiments. Because the functions that we wanted to fit did not have an analytic solution, we decided use a $\chi^{2}$ method instead. 
 
+This approximation method allows to fit curves to the observational data so that the parameters would be optimized, that is, the combination of parameters would allow the curve to fit well the observational data. Our programs written in C were set so that the $\chi^{2}$ was calculated for every combination of the parameters (every entry of the parameters matrix) but it will only save the values of the parameters that make the smallest $\chi^{2}$. If we call $f(x_{i})$ the value of our fitting for the bin $i$ and if $y_{i}$ is the observational value of the projected velocity dispersion in the same bin, we show that our calculation of this approximation method is given by 
 
+\begin{equation}
+\chi^{2}=\sum_{i=1}^{n}\frac{1}{N_{i}}{\left(f\left(x_{i}\right)-y_{i}\right)}^{2}
+\end{equation}
+
+Where $N_{i}$ is the number of velocities used to calculate the velocity dispersion in bin $i$ (this was included to give more weight to the radial bins that were calculated with a higher number of data), and $n$ is the number of radial bins. By doing these runs over big $\Delta$s and then refining them, we obtain the following results for each of our experiments.
   
 \subsection{Full Modelling}
 
-\textbf{All parameters 12}
+This set of experiments consisted of the variation of every parameter of our modelling, that is, dark matter mass $M_{dm}$, stellar mass $M_{s}$, dark matter scalength $a_{dm}$, stellar scalength $a_{s}$, mass-to-light ratio $\Gamma$ and parameter of anisotropy $\beta$.
+
+Because some authors (Jalali et al. 2012) state that there might be a medium-mass black hole at the center of $\omega$ Centauri, we decided to conduct two different fittings, one with the central region of the cluster (12 radial bins) and other without the central region of the cluster (10 radial bins), 
+
+\textbf{Full fits with 12 radial bins}
+
+We figure 4.3
 
 \begin{figure}[H]
 \centering
@@ -189,7 +198,7 @@ With the radial projected velocity dispersion (and its error) we can start with 
 	No Crossed terms & $0.62$ &	$15.8$ &	$29.0$ &	$5.6 \times 10^{5}$ &	$8.0 \times 10^{4}$ &	$2.2$\\ \hline
 	Fix $a_s$ &	$0.0001$ &	$9.0$ &	$2.23$ &	$1.12 \times 10^{5}$ &	$1.06 \times 10 ^{6}$ &	$1.5$\\ \hline
 	Full &	$0.46$ &	$15.2$ &	$52.6$ &	$9 \times 10^{5}$ &	$9 \times 10^{5}$ &	$0.38$\\ \hline
-	No Dark Matter &	$0.26$ &	$ a = 3.64$ & ----- &	$  M = 1.98 \times 10^{6}$ & ----- & 	$1.24$\\
+	No Dark Matter &	$0.26$ & -------	& $ a = 3.64$  &	------- & $  M = 1.98 \times 10^{6}$ & 	$1.24$\\
     \hline
   \end{tabular} 
 \caption[It]{Ie}
@@ -197,7 +206,9 @@ With the radial projected velocity dispersion (and its error) we can start with 
   
 \end{table}
 
-\textbf{All parameters 10}
+\textbf{Full fits with 10 radial bins}
+
+figure 4.4
 
 \begin{figure}[H]
 \centering
@@ -213,7 +224,7 @@ With the radial projected velocity dispersion (and its error) we can start with 
 	No Crossed terms & $0.6$ &	$16$ &	$52.8$ &	$2.1 \times 10^{6}$ &	$2.72 \times 10^{6}$ &	$2.3$\\ \hline
 	Fix $a_s$ &	$0.79$ &	$57.9$ &	$2.23$ &	$8 \times 10^{5}$ &	$3.43 \times 10 ^{6}$ &	$2.1$\\ \hline
 	Full &	$0.04$ &	$11.8$ &	$57.8$ &	$6 \times 10^{5}$ &	$9 \times 10^{5}$ &	$2.1$\\ \hline
-	No Dark Matter &	$0.78$ &	$ a = 2.96$ & ----- &	$  M = 3 \times 10^{6}$ & ----- & 	$1.94$\\
+	No Dark Matter &	$0.78$ &	------ & $ a = 2.96$ &	------- & $  M = 3 \times 10^{6}$ & 	$1.94$\\
     \hline
   \end{tabular} 
 \caption[It]{Ie}
@@ -223,7 +234,24 @@ With the radial projected velocity dispersion (and its error) we can start with 
 
 \subsection{Fix mass-to-light ratio}
 
-\textbf{Fix mass-to-light ratio 12}
+In this set of experiments, the mass-to-light ratio $\Gamma$ is a fix value that we found by fitting the effective radius in a de Vaucouleurs profile on the surface brightness of Eva Noyola's observational data (Noyola et al. 2013) shown in figure 4.5
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=10cm]{images/noyola.png}
+\caption[Pg]{Surface brightness profile for $\omega$ Centauri. The circles show
+Noyola's measured photometric points. The triangles show photometric points obtained
+from ground based images by Trager et al. The dashed line
+is Trager’s Chebychev fit. The solid line is Noyola's smooth fit that we don't use for our fitting of the scalength. Figure taken from Noyola et al. 2013}
+\end{figure}
+
+Our fitting (easily made with Mathematica) gives us an effective radius of $R_{e}=4.048$ and using the relation $R_{e}\approx1.8153a$ (Hernquist 1989), we find a stellar scalength of $a=2.23$ that we use for our set of experiments. The other parameters ($M_{dm}$, $M_{s}$, $a_{dm}$, $a_{s}$, $\beta$) were again varied to find the smallest $\chi^{2}$.
+
+Once again, we do our experiments with 10 and 12 radial bins (for the problems that the black hole could do in the fitting).
+
+\textbf{Fix mass-to-light ratio with 12 radial bins}
+
+figure 4.6
 
 \begin{figure}[H]
 \centering
@@ -239,7 +267,7 @@ With the radial projected velocity dispersion (and its error) we can start with 
 	No Crossed terms & $0.35$ &	$16.4$ &	$55.62$ &	$1.62 \times 10^{6}$ &	$2.1 \times 10^{6}$ &	$2.5$\\ \hline
 	Fix $a_s$ &	$0.001$ &	$3.0$ &	$2.23$ &	$3 \times 10^{5}$ &	$5.0 \times 10 ^{5}$ &	$2.5$\\ \hline
 	Full &	$0.72$ &	$20.0$ &	$44.4$ &	$5.2 \times 10^{5}$ &	$8.0 \times 10^{4}$ &	$2.5$\\ \hline
-	No Dark Matter &	$0.001$ &	$ a = 3.15$ & ----- &	$  M = 1.52 \times 10^{6}$ & ----- & 	$2.5$\\
+	No Dark Matter &	$0.001$ &	----- & $ a = 3.15$ &	----- & $  M = 1.52 \times 10^{6}$ & 	$2.5$\\
     \hline
   \end{tabular} 
 \caption[It]{Ie}
@@ -247,7 +275,9 @@ With the radial projected velocity dispersion (and its error) we can start with 
   
 \end{table}
 
-\textbf{Fix mass-to-light ratio 10}
+\textbf{Fix mass-to-light ratio with 10 radial bins}
+
+figure 4.7
 
 \begin{figure}[H]
 \centering
@@ -263,7 +293,7 @@ With the radial projected velocity dispersion (and its error) we can start with 
 	No Crossed terms & $0.2$ &	$15.2$ &	$59.8$ &	$1.4 \times 10^{6}$ &	$2.1 \times 10^{6}$ &	$2.5$\\ \hline
 	Fix $a_s$ &	$0.801$ &	$3.0$ &	$2.23$ &	$5 \times 10^{5}$ &	$1.0 \times 10 ^{5}$ &	$2.5$\\ \hline
 	Full &	$0.9$ &	$16.0$ &	$44.6$ &	$1.62 \times 10^{6}$ &	$1.42 \times 10^{6}$ &	$2.5$\\ \hline
-	No Dark Matter &	$0.38$ &	$ a = 2.38$ & ----- &	$  M = 2.03 \times 10^{6}$ & ----- & 	$2.5$\\
+	No Dark Matter &	$0.38$ &	------ & $ a = 2.38$ &	------ & $  M = 2.03 \times 10^{6}$ & 	$2.5$\\
     \hline
   \end{tabular} 
 \caption[It]{Ie}
@@ -399,6 +429,47 @@ The stellar mass should in principle, by smaller or at least equals to the dynam
     \textbf{Experiment} & $\mathbf{\beta}$ & $\mathbf{a_{dm}} (pc)$ & $\mathbf{a_{s}} (pc)$ & $\mathbf{M_{dm}}$ ($M_{\odot}$) & $\mathbf{M_{s}}$ ($M_{\odot}$) & $\mathbf{\Gamma}$\\ \hline
 	Fix $a_s$ &	$0.88$ &	$56.98$ &	$2.23$ &	$8 \times 10^{4}$ &	$6.61 \times 10 ^{6}$ &	$1.6$\\ \hline
 	Full &	$0.96$ &	$7.6$ &	$12.0$ &	$6.88 \times 10^{5}$ &	$6.61 \times 10^{6}$ &	$0.9$\\ \hline
+  \end{tabular} 
+\caption[It]{Ie}
+\end{center}
+  
+\end{table}
+
+By taking an error bar of 25\% we do the same procedures but with the smallest value of the mass that the error bar allows us to use, in this case the value of the stellar mass is $M_{s}=4.9 \times 10^{6} M_{\odot}$
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=15cm]{images/Starlight_25_10.png}
+\caption[En]{Tct.}
+\end{figure}
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{| c| c| c| c| c| c| c|}
+    \hline
+    \textbf{Experiment} & $\mathbf{\beta}$ & $\mathbf{a_{dm}} (pc)$ & $\mathbf{a_{s}} (pc)$ & $\mathbf{M_{dm}}$ ($M_{\odot}$) & $\mathbf{M_{s}}$ ($M_{\odot}$) & $\mathbf{\Gamma}$\\ \hline
+	Fix $a_s$ &	$0.88$ &	$56.98$ &	$2.23$ &	$9 \times 10^{4}$ &	$4.9 \times 10 ^{6}$ &	$1.1$\\ \hline
+	Full &	$0.92$ &	$7.26$ &	$37.98$ &	$1.35 \times 10^{6}$ &	$4.9 \times 10^{6}$ &	$0.72$\\ \hline
+  \end{tabular} 
+\caption[It]{Ie}
+\end{center}
+  
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=15cm]{images/Starlight_25_12.png}
+\caption[En]{Tct.}
+\end{figure}
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{| c| c| c| c| c| c| c|}
+    \hline
+    \textbf{Experiment} & $\mathbf{\beta}$ & $\mathbf{a_{dm}} (pc)$ & $\mathbf{a_{s}} (pc)$ & $\mathbf{M_{dm}}$ ($M_{\odot}$) & $\mathbf{M_{s}}$ ($M_{\odot}$) & $\mathbf{\Gamma}$\\ \hline
+	Fix $a_s$ &	$0.88$ &	$56.98$ &	$2.23$ &	$9 \times 10^{4}$ &	$4.9 \times 10 ^{6}$ &	$0.82$\\ \hline
+	Full &	$0.98$ &	$13.26$ &	$31.98$ &	$1.98 \times 10^{6}$ &	$4.9 \times 10^{6}$ &	$0.66$\\ \hline
   \end{tabular} 
 \caption[It]{Ie}
 \end{center}
