@@ -1,6 +1,5 @@
 \chapter{Theoretical Framework}
 
-
 Typical galaxies all around the Universe hold different structures such as stellar systems of between $ 10^{2} $ and $ 10^{6} $ stars which orbit their galactic core . We call these interesting systems star clusters and they are basically divided into three main types: Open Clusters, stellar associations and \textbf{Globular Clusters}. Open clusters are stellar systems that can contain from hundreds to thousands of stars, they are formed continuously in the Galactic disk and most of them are relatively young (younger than 1 Gyr). Old open clusters are rare since their gravitational stability is very low and can be easily disrupted by gravitational shocks from passing interstellar gas clouds. It seems likely that most of the stars in the galactic disk were formed in open clusters that have dissolved since then. 
 
 Stellar associations such as young associations of stars that can contain 10 to 100 massive stars of spectral class O and B, and are known as OB associations. These associations also contain hundreds or thousands of low- and intermediate-mass stars.
@@ -537,10 +536,8 @@ The last term on the left hand side becomes $\nu \delta_{ij}$ in an orthogonal c
 
 Where we used the relation between the second moments and the velocity dispersion, finally differentiating the second term on the left hand side, part of the result cancels part of the third term and we arrive to the \textbf{Jeans' equations} for a collisionless fluid
 
-\begin{equation}
-\begin{aligned}	
-	\nu \frac{\partial \overline{v}_j}{\partial t} + \overline{v}_i\nu \frac{\partial\overline{v}_j}{\partial x_{i}} &= -\nu \frac{\partial\Phi}{\partial x_{j}}-\frac{\partial}{\partial x_{i}}(\nu \sigma_{ij}^{2})\quad\quad (j=1,2,3) \\     acceleration + viscosity &= gravity + pressure
-	\end{aligned}
+\begin{equation}	
+	\underbrace{\nu \frac{\partial \overline{v}_j}{\partial t}}_{acceleration} + \underbrace{\overline{v}_i\nu \frac{\partial\overline{v}_j}{\partial x_{i}}}_{viscosity} = \underbrace{-\nu \frac{\partial\Phi}{\partial x_{j}}}_{gravity} - \underbrace{\frac{\partial}{\partial x_{i}}(\nu \sigma_{ij}^{2})}_{pressure}\quad\quad (j=1,2,3)
 \end{equation}
 
 One important use of the Jeans' equations is to calculate the number density and potential self-consistently, assuming
@@ -562,7 +559,7 @@ In the context of the Jeans equations, the surface brightness $I(R)$ and the pro
 I(R)\sigma_{p}^{2}(R)=2\int_{R}^{\infty}\frac{\nu\bar{v_{r}^{2}}rdr}{\sqrt{r^{2}-R^{2}}}
 \end{equation}     
 
-And for a more general case with $\beta \neq 0$ and writting explicitely the mass-to-light ratio $\Gamma=\rho / \nu$ we have
+And for a more general case with $\beta \neq 0$ and writing explicitly the mass-to-light ratio $\Gamma=\rho / \nu$ we have
 
 \begin{equation}
 I(R)\sigma_{p}^{2}(R)=\frac{2}{\Gamma}\int_{R}^{\infty}\left(1-\beta\frac{R^{2}}{r^{2}}\right)\frac{\nu\bar{v_{r}^{2}}rdr}{\sqrt{r^{2}-R^{2}}}
