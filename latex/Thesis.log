@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.1)  1 APR 2016 20:11
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.1)  2 APR 2016 16:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1213,12 +1213,7 @@ No file Thesis.bbl.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 312.
 [79]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 312.
- (./Thesis.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
+ (./Thesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 312.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 312.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
@@ -1232,7 +1227,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 312.
 Here is how much of TeX's memory you used:
  13644 strings out of 494985
  194701 string characters out of 6180357
- 268282 words of memory out of 5000000
+ 268298 words of memory out of 5000000
  16303 multiletter control sequences out of 15000+600000
  24702 words of font info for 91 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
@@ -1261,7 +1256,7 @@ nts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on Thesis.pdf (89 pages, 6240328 bytes).
+Output written on Thesis.pdf (89 pages, 6240311 bytes).
 PDF statistics:
  1072 PDF objects out of 1200 (max. 8388607)
  866 compressed objects within 9 object streams
