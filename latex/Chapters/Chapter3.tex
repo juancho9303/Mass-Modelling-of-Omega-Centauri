@@ -133,13 +133,12 @@ Once all the characterization is made we can reduce our important data using IRA
 
 - Building Superflats: It is necessary to create a Superflat frame for each filter because the response of the CCD and will be different for different wavelengths, we use the task \textit{imcombine} to do this and this time we use the mode for better results.   
 
-- Divide the Superflats by the median: In order to normalize the flatfields we find the mode of each frame with \textit{imstatistics} and then divide them by that value
-
+- Divide the Superflats by the median: In order to normalize the flatfields we find the mode of each frame with \textit{imstatistics} and then divide them by that value using \textit{imarith}. An example of the normalized superflat at this point of the procedures is shown in figure 3.6.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{images/flat_I.png}
-\caption[Normalized Superflat for the filter I]{Example of one of the Normalized Superflats for the I filter}
+\caption[Normalized Superflat for the filter I]{Example of one of the Normalized Superflats in the I filter. This frame contains most of the noise that we want to extract from our science data because it contains background contamination and the instrumental noise such as motes of dust of imperfections in the instruments that could lighten or obscure the science data. Note that in the top left corner, the mote of dust looks very big and affects considerable a huge detection area and it must be removed using this normalized flat on the science frame.}
 \end{figure}
 
 - Reduce the science data: Finally, we divide the original images of the clusters and stars (with the bias substractet) by the normalized Superflat to get the reduced images. This can easily be made using the task \textit{imarith}.
@@ -153,7 +152,7 @@ For stars in $\omega$ Centauri, one must choose a very small aperture of the sky
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{images/NGC5139_red.png}
-\caption[NGC5139 as observed in the V filter]{One of our observations of NGC5139 in the V filter with an exposition time of 480 seconds}
+\caption[NGC5139 as observed in the V filter]{One of our reduced observations of $\omega$ Centauri in the V filter with an exposition time of 480 seconds. Note that the center of the cluster is too crowded so the photometry procedures must be done very carefully in order to reduce to the maximum the amount of noise that contributes to the stellar light contributions. The mote of dust in the top left corner (present in most of our observations) was successfully removed as it can be seen in this figure and it can now be used for aperture and PSF photometry.}
 \end{figure}
 
 With the task \textit{imexamine} I find a value for the FWHM of 6.4 which I will use to set the size of the apertures to do the photometry. For the size of the aperture containing each star I chose an aperture size of four times the FWHM of the point spread function associated to the stars because it is the one that best fits the photometry and minimizes the error (calculated for some stars pressing ``a" with the \textit{imexamine} task) and for the width of the aperture I chose I value of 2.5 times the FWHM.
@@ -530,7 +529,7 @@ In the first part of our modelling, we focus on the radial profile of the projec
 \begin{tabular}{| c | c| c| }
     \hline
     \textbf{Article} & \textbf{Bibcode} & \textbf{Description} \\ \hline
-     Da Costa et al. 2008 & 2008AJ....136..506D & 1355 stars. $\sim$204 are cluster stars \\ \hline
+     Da Costa et al. 2008 & 2008AJ....136..506D & 1355 stars. $\sim$204 cluster stars \\ \hline
      Johnson et al. 2008 & 2008ApJ...681.1505J & 180 cluster stars \\ \hline
      Mayor et al. 1997 & 1997AJ....114.1087M & 481 stars. $\sim$381 cluster stars \\ \hline
      Pancino et al. 2007& 2007ApJ...661L.155P & 649 cluster stars \\ \hline

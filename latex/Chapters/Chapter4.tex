@@ -4,7 +4,7 @@ We used various techniques for the mass modelling of $\omega$ Centauri, so that 
 
 \section{Modified Hernquist Model}
 
-Our modelling is based on significant modifications to the Hernquist profile. As introduced in chapter 2, the density profile for this model is
+Our modelling is based on significant modifications to the Hernquist profile (Hernquist 1989).  We use this model because it is a well known model that closely approximates the de Vaucouleurs law for elliptical galaxies and has analytical solutions that can be useful for our computational purposes. As introduced in chapter 2, the density profile for this model is
 
 \begin{equation}
 \rho(r)=\frac{M}{2\pi}\frac{a}{r}\frac{1}{\left(r+a\right)^{3}}
@@ -32,15 +32,13 @@ X(s)=\frac{1}{\sqrt{1-s^{2}}}sech^{-1}s\qquad for\qquad0\leq s\leq1
 X(s)=\frac{1}{\sqrt{s^{2}-1}}sec^{-1}s\qquad for\qquad1\leq s<\infty
 \end{equation}
 
-For computational simplicity we have written some of the trigonometric functions just like Hernquist did: $sec^{-1}s = cos^{-1}(1/s)$ and $sech^{-1} = ln[(1+\sqrt{1-s^{2}})/s]$
-
-As mentioned in the theoretical framework chapter, the line of sight velocity dispersion in the more general case with the anisotropy parameter different from 0 we have
+For computational simplicity we have written some of the trigonometric functions just like Hernquist did: $sec^{-1}s = cos^{-1}(1/s)$ and $sech^{-1} = ln[(1+\sqrt{1-s^{2}})/s]$. As mentioned in the theoretical framework chapter, the line of sight velocity dispersion in the more general case with the anisotropy parameter different from 0 we have
 
 \begin{equation}
 I(R)\sigma_{p}^{2}(R)=\frac{2}{\Gamma}\int_{R}^{\infty}\left(1-\beta\frac{R^{2}}{r^{2}}\right)\frac{\rho\bar{v_{r}^{2}}rdr}{\sqrt{r^{2}-R^{2}}}
 \end{equation}
 
-And the velocity dispersion, in terms of the potential and the density is
+And the radial velocity dispersion (introduced in chapter 2), in terms of the potential and the density is
 
 \begin{equation}
 \bar{v_{r}^{2}}=\sigma_{r}^{2}=\frac{1}{\rho(r)}\int_{r}^{\infty}\rho(r)\frac{d\phi}{dr}dr
@@ -80,7 +78,7 @@ In this case, the projected velocity dispersion takes a much more complicated fo
 
 \begin{equation}
 \begin{aligned}	
-\sigma_{p}^{2}(R) &= \frac{G}{I(R)\Gamma\pi}\int_{R}^{\infty}\alpha(r)\Biggl[\underbrace{\int_{r}^{\infty}\frac{M_{s}^{2}a_{s}dr}{r\left(r+a_{s}\right)^{5}}}_{\mathbf{A}(r)}+\underbrace{\int_{r}^{\infty}\frac{M_{s}M_{dm}a_{s}dr}{r\left(r+a_{s}\right)^{3}\left(r+a_{dm}\right)^{2}}}_{\mathbf{B}(r)}\right\\      &\left +\underbrace{\int_{r}^{\infty}\frac{M_{dm}M_{s}a_{dm}dr}{r\left(r+a_{dm}\right)^{3}\left(r+a_{s}\right)^{2}}}_{\mathbf{C}(r)}+\underbrace{\int_{r}^{\infty}\frac{M_{dm}^{2}a_{dm}dr}{r\left(r+a_{dm}\right)^{5}}}_{\mathbf{D}(r)}\Biggr] dr
+\sigma_{p}^{2}(R) &= \frac{G}{I(R)\Gamma\pi}\int_{R}^{\infty}\alpha(r)\Biggl[\underbrace{\int_{r}^{\infty}\frac{M_{s}^{2}a_{s}dr}{r\left(r+a_{s}\right)^{5}}}_{\mathbf{A}(r)}+\underbrace{\int_{r}^{\infty}\frac{M_{s}M_{dm}a_{s}dr}{r\left(r+a_{s}\right)^{3}\left(r+a_{dm}\right)^{2}}}_{\mathbf{B}(r)}\right\\     &+ \underbrace{\int_{r}^{\infty}\frac{M_{dm}M_{s}a_{dm}dr}{r\left(r+a_{dm}\right)^{3}\left(r+a_{s}\right)^{2}}}_{\mathbf{C}(r)}+\underbrace{\int_{r}^{\infty}\frac{M_{dm}^{2}a_{dm}dr}{r\left(r+a_{dm}\right)^{5}}}_{\mathbf{D}(r)}\Biggr] dr
 \end{aligned}
 \end{equation}
 
@@ -166,19 +164,29 @@ In order to do a proper modelling and fitting we need to take into account the e
 
 With the radial projected velocity dispersion (and its error) we can start with the fitting to find the optimized parameters in our various experiments. Because the functions that we wanted to fit did not have an analytic solution, we decided use a $\chi^{2}$ method instead. 
 
-This approximation method allows to fit curves to the observational data so that the parameters would be optimized, that is, the combination of parameters would allow the curve to fit well the observational data. Our programs written in C were set so that the $\chi^{2}$ was calculated for every combination of the parameters (every entry of the parameters matrix) but it will only save the values of the parameters that make the smallest $\chi^{2}$. If we call $f(x_{i})$ the value of our fitting for the bin $i$ and if $y_{i}$ is the observational value of the projected velocity dispersion in the same bin, we show that our calculation of this approximation method is given by 
+This approximation method allows to fit curves to the observational data so that the parameters would be optimized, that is, the combination of parameters would allow the curve to fit well the observational data. Our programs written in C were set so that the $\chi^{2}$ was calculated for every combination of the parameters (every entry of the parameters matrix) but it will only save the values of the parameters that make the smallest $\chi^{2}$. If we call $\sigma_{M}(r_{i})$ the value of our modelling for the radial bin $i$ and if $\sigma_{i}$ is the observational value of the projected velocity dispersion in the same bin, we show that our calculation of this approximation method is given by 
 
 \begin{equation}
-\chi^{2}=\sum_{i=1}^{n}\frac{1}{N_{i}}{\left(f\left(x_{i}\right)-y_{i}\right)}^{2}
+\chi^{2}=\sum_{i=1}^{n}\frac{1}{N_{i}}{\left(\sigma_{M}\left(r_{i}\right)-\sigma_{i}\right)}^{2}
 \end{equation}
 
 Where $N_{i}$ is the number of velocities used to calculate the velocity dispersion in bin $i$ (this was included to give more weight to the radial bins that were calculated with a higher number of data), and $n$ is the number of radial bins. By doing these runs over big $\Delta$s and then refining them, we obtain the following results for each of our experiments.
   
 \subsection{Full Modelling}
 
-This set of experiments consisted of the variation of every parameter of our modelling, that is, dark matter mass $M_{dm}$, stellar mass $M_{s}$, dark matter scalength $a_{dm}$, stellar scalength $a_{s}$, mass-to-light ratio $\Gamma$ and parameter of anisotropy $\beta$.
+This first set of experiments consisted of the variation of every parameter of our modelling, that is, dark matter mass $M_{dm}$, stellar mass $M_{s}$, dark matter scalength $a_{dm}$, stellar scalength $a_{s}$, mass-to-light ratio $\Gamma$ and parameter of anisotropy $\beta$.
 
-Because some authors (Jalali et al. 2012) state that there might be a medium-mass black hole at the center of $\omega$ Centauri, we decided to conduct two different fittings, one with the central region of the cluster (12 radial bins) and other without the central region of the cluster (10 radial bins), 
+Because some authors (Jalali et al. 2012) state that there might be a medium-mass black hole at the center of $\omega$ Centauri, we decided to conduct two different fittings, one with the central region of the cluster (12 radial bins) and other without the central region of the cluster (10 radial bins), and in each group of experiments we made four basic assumptions to take into account all the possibilities of our modelling:
+
+\textbf{\textit{i)}} We don't use the crossed terms in equation 4.13, because we wanted to see how relevant they were in the modelling, we call this ``\textit{No crossed terms}". 
+
+\textbf{\textit{ii)}} We assume a constant stellar scalength taken from the literature, we call this ``\textit{Fix $a_{s}$}".
+
+\textbf{\textit{iii)}} We don't assume any of our parameters to be constant, we call this ``\textit{full modelling}". 
+
+\textbf{\textit{iv)}} We assume the cluster doesn't have any dark matter so the solution of the equation 4.9 is much simpler and it's given by 4.10, we call this ``\textit{No Dark matter}".
+
+Now, let's see the results for all of these experiments with the graphs that show the fitting and the optimized values of the parameters found for the minimum $\chi^{2}$
 
 \textbf{Full fits with 12 radial bins}
 
