@@ -11,31 +11,31 @@
 \contentsline {section}{\numberline {2.2}Formation and evolution}{7}{section.13}
 \contentsline {section}{\numberline {2.3}Observational Properties}{11}{section.16}
 \contentsline {section}{\numberline {2.4}$\omega $ Centauri}{17}{section.23}
-\contentsline {section}{\numberline {2.5}Mass models and Dynamics}{19}{section.26}
-\contentsline {subsection}{\numberline {2.5.1}Potential Theory of Spherical Systems}{20}{subsection.27}
-\contentsline {subsection}{\numberline {2.5.2}Collisionless Systems}{25}{subsection.55}
-\contentsline {subsection}{\numberline {2.5.3}Dynamics}{26}{subsection.58}
-\contentsline {chapter}{\numberline {3}Observations and Analysis}{32}{chapter.82}
-\contentsline {section}{\numberline {3.1}Observational Procedures}{32}{section.83}
-\contentsline {subsection}{\numberline {3.1.1}Spectroscopic Data}{33}{subsection.85}
-\contentsline {subsection}{\numberline {3.1.2}Photometric Data}{36}{subsection.88}
-\contentsline {section}{\numberline {3.2}First step for Anaysis}{37}{section.90}
-\contentsline {section}{\numberline {3.3}Photometry}{38}{section.91}
-\contentsline {subsection}{\numberline {3.3.1}Aperture Photometry}{40}{subsection.94}
-\contentsline {subsection}{\numberline {3.3.2}PSF Photometry}{43}{subsection.97}
-\contentsline {section}{\numberline {3.4}Spectroscopy}{46}{section.102}
-\contentsline {subsection}{\numberline {3.4.1}Spectroscopic Reduction}{46}{subsection.103}
-\contentsline {subsection}{\numberline {3.4.2}Extraction}{48}{subsection.105}
-\contentsline {subsection}{\numberline {3.4.3}Wavelength Calibration}{49}{subsection.107}
-\contentsline {subsection}{\numberline {3.4.4}Flux Calibration}{52}{subsection.111}
-\contentsline {section}{\numberline {3.5}Radial velocity determination}{55}{section.114}
-\contentsline {subsection}{\numberline {3.5.1}RVSAO}{56}{subsection.115}
-\contentsline {subsection}{\numberline {3.5.2}FXCOR}{59}{subsection.121}
-\contentsline {section}{\numberline {3.6}Databases}{61}{section.126}
-\contentsline {chapter}{\numberline {4}Modelling}{63}{chapter.129}
-\contentsline {section}{\numberline {4.1}Modified Hernquist Model}{63}{section.130}
-\contentsline {subsection}{\numberline {4.1.1}Full Modelling}{68}{subsection.156}
-\contentsline {subsection}{\numberline {4.1.2}Fix mass-to-light ratio}{70}{subsection.161}
-\contentsline {section}{\numberline {4.2}Stellar Population Synthesis with Starlight}{73}{section.167}
-\contentsline {chapter}{\numberline {5}Conclusions}{80}{chapter.184}
-\contentsline {chapter}{Bibliography}{81}{chapter*.185}
+\contentsline {section}{\numberline {2.5}Mass models and Dynamics}{22}{section.28}
+\contentsline {subsection}{\numberline {2.5.1}Potential Theory of Spherical Systems}{22}{subsection.29}
+\contentsline {subsection}{\numberline {2.5.2}Collisionless Systems}{27}{subsection.57}
+\contentsline {subsection}{\numberline {2.5.3}Dynamics}{29}{subsection.60}
+\contentsline {chapter}{\numberline {3}Observations and Analysis}{34}{chapter.84}
+\contentsline {section}{\numberline {3.1}Observational Procedures}{34}{section.85}
+\contentsline {subsection}{\numberline {3.1.1}Spectroscopic Data}{35}{subsection.87}
+\contentsline {subsection}{\numberline {3.1.2}Photometric Data}{38}{subsection.90}
+\contentsline {section}{\numberline {3.2}First step for Anaysis}{39}{section.92}
+\contentsline {section}{\numberline {3.3}Photometry}{40}{section.93}
+\contentsline {subsection}{\numberline {3.3.1}Aperture Photometry}{42}{subsection.96}
+\contentsline {subsection}{\numberline {3.3.2}PSF Photometry}{45}{subsection.99}
+\contentsline {section}{\numberline {3.4}Spectroscopy}{48}{section.104}
+\contentsline {subsection}{\numberline {3.4.1}Spectroscopic Reduction}{48}{subsection.105}
+\contentsline {subsection}{\numberline {3.4.2}Extraction}{50}{subsection.107}
+\contentsline {subsection}{\numberline {3.4.3}Wavelength Calibration}{51}{subsection.109}
+\contentsline {subsection}{\numberline {3.4.4}Flux Calibration}{54}{subsection.113}
+\contentsline {section}{\numberline {3.5}Radial velocity determination}{57}{section.116}
+\contentsline {subsection}{\numberline {3.5.1}RVSAO}{58}{subsection.117}
+\contentsline {subsection}{\numberline {3.5.2}FXCOR}{61}{subsection.123}
+\contentsline {section}{\numberline {3.6}Databases}{63}{section.128}
+\contentsline {chapter}{\numberline {4}Modelling}{65}{chapter.131}
+\contentsline {section}{\numberline {4.1}Modified Hernquist Model}{65}{section.132}
+\contentsline {subsection}{\numberline {4.1.1}Full Modelling}{70}{subsection.158}
+\contentsline {subsection}{\numberline {4.1.2}Fix mass-to-light ratio}{72}{subsection.163}
+\contentsline {section}{\numberline {4.2}Stellar Population Synthesis with Starlight}{75}{section.169}
+\contentsline {chapter}{\numberline {5}Conclusions}{82}{chapter.185}
+\contentsline {chapter}{Bibliography}{83}{chapter*.186}
