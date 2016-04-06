@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.1)  6 APR 2016 01:24
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.1)  6 APR 2016 02:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -758,21 +758,15 @@ File: images/Omega_Centauri.jpg Graphic file (type jpg)
 <use images/Omega_Centauri.jpg>
 Package pdftex.def Info: images/Omega_Centauri.jpg used on input line 217.
 (pdftex.def)             Requested size: 341.43306pt x 320.96642pt.
-Missing character: There is no â in font cmr9!
-Missing character: There is no € in font cmr9!
-Missing character: There is no ” in font cmr9!
-Missing character: There is no â in font cmr9!
-Missing character: There is no € in font cmr9!
-Missing character: There is no ” in font cmr9!
  [18]
-<images/rotation_omega.png, id=489, 695.59875pt x 895.09406pt>
+<images/rotation_omega.png, id=490, 695.59875pt x 895.09406pt>
 File: images/rotation_omega.png Graphic file (type png)
 
 <use images/rotation_omega.png>
 Package pdftex.def Info: images/rotation_omega.png used on input line 227.
 (pdftex.def)             Requested size: 284.52756pt x 366.13048pt.
  [19 <./images/Omega_Centauri.jpg>]
-<images/ngc5139_2.jpg, id=495, 556.32843pt x 639.13782pt>
+<images/ngc5139_2.jpg, id=497, 556.32843pt x 639.13782pt>
 File: images/ngc5139_2.jpg Graphic file (type jpg)
 
 <use images/ngc5139_2.jpg>
@@ -785,7 +779,7 @@ Chapter 3.
 ------------------------------------------------------------------------------
  3 Observations and Analysis
 ------------------------------------------------------------------------------
-<images/opd.jpg, id=608, 66.9702pt x 55.04565pt>
+<images/opd.jpg, id=609, 66.9702pt x 55.04565pt>
 File: images/opd.jpg Graphic file (type jpg)
  <use images/opd.jpg>
 Package pdftex.def Info: images/opd.jpg used on input line 15.
@@ -793,7 +787,7 @@ Package pdftex.def Info: images/opd.jpg used on input line 15.
  [34
 
 ]
-<images/opd-spectrograph.jpg, id=613, 602.25pt x 401.5pt>
+<images/opd-spectrograph.jpg, id=614, 602.25pt x 401.5pt>
 File: images/opd-spectrograph.jpg Graphic file (type jpg)
 
 <use images/opd-spectrograph.jpg>
@@ -806,108 +800,108 @@ Missing character: There is no Â in font cmr10!
 Missing character: There is no ° in font cmr10!
 Missing character: There is no Â in font cmr10!
 Missing character: There is no ° in font cmr10!
- [37] <images/opd-photometry.jpg, id=628, 770.88pt x 578.16pt>
+ [37] <images/opd-photometry.jpg, id=629, 770.88pt x 578.16pt>
 File: images/opd-photometry.jpg Graphic file (type jpg)
 
 <use images/opd-photometry.jpg>
 Package pdftex.def Info: images/opd-photometry.jpg used on input line 81.
 (pdftex.def)             Requested size: 227.62204pt x 170.71451pt.
  [38 <./images/opd-photometry.jpg>] [39]
-<images/ngc_5139_dirty.png, id=638, 487.06969pt x 483.30562pt>
+<images/ngc_5139_dirty.png, id=639, 487.06969pt x 483.30562pt>
 File: images/ngc_5139_dirty.png Graphic file (type png)
 
 <use images/ngc_5139_dirty.png>
 Package pdftex.def Info: images/ngc_5139_dirty.png used on input line 116.
 (pdftex.def)             Requested size: 196.21284pt x 194.69788pt.
 
-<images/ruido.png, id=639, 484.05844pt x 483.30562pt>
+<images/ruido.png, id=640, 484.05844pt x 483.30562pt>
 File: images/ruido.png Graphic file (type png)
  <use images/ruido.png>
 Package pdftex.def Info: images/ruido.png used on input line 121.
 (pdftex.def)             Requested size: 196.21284pt x 195.90732pt.
 
-[40] <images/flat_I.png, id=644, 356.83313pt x 317.68687pt>
+[40] <images/flat_I.png, id=645, 356.83313pt x 317.68687pt>
 File: images/flat_I.png Graphic file (type png)
 
 <use images/flat_I.png>
 Package pdftex.def Info: images/flat_I.png used on input line 140.
 (pdftex.def)             Requested size: 227.62204pt x 202.64993pt.
  [41 <./images/ngc_5139_dirty.png> <./images/ruido.png>] <images/NGC5139_red.pn
-g, id=649, 294.34969pt x 297.36093pt>
+g, id=650, 294.34969pt x 297.36093pt>
 File: images/NGC5139_red.png Graphic file (type png)
 
 <use images/NGC5139_red.png>
 Package pdftex.def Info: images/NGC5139_red.png used on input line 154.
 (pdftex.def)             Requested size: 227.62204pt x 229.95322pt.
  [42 <./images/flat_I.png>]
-<images/aperture_size.png, id=654, 475.7775pt x 631.60968pt>
+<images/aperture_size.png, id=655, 475.7775pt x 631.60968pt>
 File: images/aperture_size.png Graphic file (type png)
 
 <use images/aperture_size.png>
 Package pdftex.def Info: images/aperture_size.png used on input line 166.
 (pdftex.def)             Requested size: 284.52756pt x 377.73512pt.
  [43 <./images/NGC5139_red.png>] [44 <./images/aperture_size.png>] [45] <images
-/psf.png, id=669, 942.52126pt x 554.07pt>
+/psf.png, id=670, 942.52126pt x 554.07pt>
 File: images/psf.png Graphic file (type png)
 
 <use images/psf.png>
 Package pdftex.def Info: images/psf.png used on input line 192.
 (pdftex.def)             Requested size: 341.43306pt x 200.7163pt.
- <images/psf2.png, id=670, 223.58531pt x 224.33812pt>
+ <images/psf2.png, id=671, 223.58531pt x 224.33812pt>
 File: images/psf2.png Graphic file (type png)
 
 <use images/psf2.png>
 Package pdftex.def Info: images/psf2.png used on input line 200.
 (pdftex.def)             Requested size: 142.26378pt x 142.74408pt.
- <images/psf3.png, id=671, 191.21437pt x 213.79875pt>
+ <images/psf3.png, id=672, 191.21437pt x 213.79875pt>
 File: images/psf3.png Graphic file (type png)
 
 <use images/psf3.png>
 Package pdftex.def Info: images/psf3.png used on input line 208.
 (pdftex.def)             Requested size: 142.26378pt x 159.07309pt.
  [46 <./images/psf.png> <./images/psf2.png>]
-<images/HR-diagram.png, id=677, 481.8pt x 368.87813pt>
+<images/HR-diagram.png, id=678, 481.8pt x 368.87813pt>
 File: images/HR-diagram.png Graphic file (type png)
 
 <use images/HR-diagram.png>
 Package pdftex.def Info: images/HR-diagram.png used on input line 220.
 (pdftex.def)             Requested size: 341.43306pt x 261.4156pt.
  [47 <./images/psf3.png>] [48 <./images/HR-diagram.png>] <images/cluster_dirty.
-png, id=687, 207.02344pt x 320.69812pt>
+png, id=688, 207.02344pt x 320.69812pt>
 File: images/cluster_dirty.png Graphic file (type png)
 
 <use images/cluster_dirty.png>
 Package pdftex.def Info: images/cluster_dirty.png used on input line 258.
 (pdftex.def)             Requested size: 204.56409pt x 316.89511pt.
 
-<images/cluster_clean.png, id=688, 206.27063pt x 320.69812pt>
+<images/cluster_clean.png, id=689, 206.27063pt x 320.69812pt>
 File: images/cluster_clean.png Graphic file (type png)
 
 <use images/cluster_clean.png>
 Package pdftex.def Info: images/cluster_clean.png used on input line 263.
 (pdftex.def)             Requested size: 204.56409pt x 318.04996pt.
  [49] [50 <./images/cluster_dirty.png> <./images/cluster_clean.png>]
-<images/calib_star_apall.png, id=697, 459.21562pt x 350.05782pt>
+<images/calib_star_apall.png, id=698, 459.21562pt x 350.05782pt>
 File: images/calib_star_apall.png Graphic file (type png)
 
 <use images/calib_star_apall.png>
 Package pdftex.def Info: images/calib_star_apall.png used on input line 291.
 (pdftex.def)             Requested size: 256.0748pt x 195.21379pt.
  [51 <./images/calib_star_apall.png>]
-<images/lamp_day1_2.png, id=704, 463.7325pt x 350.05782pt>
+<images/lamp_day1_2.png, id=705, 463.7325pt x 350.05782pt>
 File: images/lamp_day1_2.png Graphic file (type png)
 
 <use images/lamp_day1_2.png>
 Package pdftex.def Info: images/lamp_day1_2.png used on input line 302.
 (pdftex.def)             Requested size: 187.8616pt x 141.81001pt.
 
-<images/lamp1.png, id=705, 776.9025pt x 577.40718pt>
+<images/lamp1.png, id=706, 776.9025pt x 577.40718pt>
 File: images/lamp1.png Graphic file (type png)
  <use images/lamp1.png>
 Package pdftex.def Info: images/lamp1.png used on input line 307.
 (pdftex.def)             Requested size: 187.8616pt x 139.6202pt.
 
-<images/calib_star_wave.png, id=706, 465.99094pt x 353.06906pt>
+<images/calib_star_wave.png, id=707, 465.99094pt x 353.06906pt>
 File: images/calib_star_wave.png Graphic file (type png)
 
 <use images/calib_star_wave.png>
@@ -915,61 +909,61 @@ Package pdftex.def Info: images/calib_star_wave.png used on input line 320.
 (pdftex.def)             Requested size: 227.62204pt x 172.46121pt.
  [52 <./images/lamp_day1_2.png> <./images/lamp1.png>] [53 <./images/calib_star_
 wave.png>]
-<images/Espectros.png, id=718, 499.11469pt x 361.35pt>
+<images/Espectros.png, id=719, 499.11469pt x 361.35pt>
 File: images/Espectros.png Graphic file (type png)
 
 <use images/Espectros.png>
 Package pdftex.def Info: images/Espectros.png used on input line 337.
 (pdftex.def)             Requested size: 204.56409pt x 148.09932pt.
- <images/Espectros2.png, id=719, 481.8pt x 361.35pt>
+ <images/Espectros2.png, id=720, 481.8pt x 361.35pt>
 File: images/Espectros2.png Graphic file (type png)
 
 <use images/Espectros2.png>
 Package pdftex.def Info: images/Espectros2.png used on input line 342.
 (pdftex.def)             Requested size: 204.56409pt x 153.42009pt.
  [54 <./images/Espectros.png> <./images/Espectros2.png>] [55] <images/calib_sta
-r_flux.png, id=730, 462.97969pt x 356.0803pt>
+r_flux.png, id=731, 462.97969pt x 356.0803pt>
 File: images/calib_star_flux.png Graphic file (type png)
 
 <use images/calib_star_flux.png>
 Package pdftex.def Info: images/calib_star_flux.png used on input line 393.
 (pdftex.def)             Requested size: 227.62204pt x 175.06767pt.
  [56 <./images/calib_star_flux.png>]
-<images/cluster_star_flux.png, id=737, 444.91219pt x 346.29375pt>
+<images/cluster_star_flux.png, id=738, 444.91219pt x 346.29375pt>
 File: images/cluster_star_flux.png Graphic file (type png)
 
 <use images/cluster_star_flux.png>
 Package pdftex.def Info: images/cluster_star_flux.png used on input line 411.
 (pdftex.def)             Requested size: 227.62204pt x 177.16757pt.
  [57 <./images/cluster_star_flux.png>]
-<images/xcsao.png, id=744, 709.14937pt x 258.21469pt>
+<images/xcsao.png, id=745, 709.14937pt x 258.21469pt>
 File: images/xcsao.png Graphic file (type png)
  <use images/xcsao.png>
 Package pdftex.def Info: images/xcsao.png used on input line 433.
 (pdftex.def)             Requested size: 284.52756pt x 103.60318pt.
 
 [58 <./images/xcsao.png>]
-<images/template.png, id=750, 426.09187pt x 349.305pt>
+<images/template.png, id=751, 426.09187pt x 349.305pt>
 File: images/template.png Graphic file (type png)
 
 <use images/template.png>
 Package pdftex.def Info: images/template.png used on input line 462.
 (pdftex.def)             Requested size: 204.56409pt x 167.7018pt.
- <images/bcvcor.png, id=751, 469.00218pt x 421.575pt>
+ <images/bcvcor.png, id=752, 469.00218pt x 421.575pt>
 File: images/bcvcor.png Graphic file (type png)
 
 <use images/bcvcor.png>
 Package pdftex.def Info: images/bcvcor.png used on input line 471.
 (pdftex.def)             Requested size: 284.52756pt x 255.7516pt.
  [59 <./images/template.png>]
-<images/emsao.png, id=759, 1014.03844pt x 534.49687pt>
+<images/emsao.png, id=760, 1014.03844pt x 534.49687pt>
 File: images/emsao.png Graphic file (type png)
  <use images/emsao.png>
 Package pdftex.def Info: images/emsao.png used on input line 480.
 (pdftex.def)             Requested size: 369.88582pt x 194.96332pt.
 
 [60 <./images/bcvcor.png>]
-<images/fxcor.png, id=766, 476.53032pt x 360.59718pt>
+<images/fxcor.png, id=767, 476.53032pt x 360.59718pt>
 File: images/fxcor.png Graphic file (type png)
  <use images/fxcor.png>
 Package pdftex.def Info: images/fxcor.png used on input line 492.
@@ -1038,21 +1032,21 @@ I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
-[67] <images/vel_vs_rad.png, id=819, 481.8pt x 361.35pt>
+[67] <images/vel_vs_rad.png, id=820, 481.8pt x 361.35pt>
 File: images/vel_vs_rad.png Graphic file (type png)
 
 <use images/vel_vs_rad.png>
 Package pdftex.def Info: images/vel_vs_rad.png used on input line 137.
 (pdftex.def)             Requested size: 341.43306pt x 256.0806pt.
 
-<images/vel_vs_rad_bins.png, id=820, 481.8pt x 361.35pt>
+<images/vel_vs_rad_bins.png, id=821, 481.8pt x 361.35pt>
 File: images/vel_vs_rad_bins.png Graphic file (type png)
 
 <use images/vel_vs_rad_bins.png>
 Package pdftex.def Info: images/vel_vs_rad_bins.png used on input line 145.
 (pdftex.def)             Requested size: 341.43306pt x 256.0806pt.
  [68 <./images/vel_vs_rad.png>] [69 <./images/vel_vs_rad_bins.png>] [70]
-<images/all_params_refinado_12.png, id=844, 928.21782pt x 685.05937pt>
+<images/all_params_refinado_12.png, id=845, 928.21782pt x 685.05937pt>
 File: images/all_params_refinado_12.png Graphic file (type png)
 
 <use images/all_params_refinado_12.png>
@@ -1069,7 +1063,7 @@ Overfull \hbox (11.30066pt too wide) in paragraph at lines 203--212
  [] 
  []
 
-<images/all_params_refinado_10.png, id=845, 928.21782pt x 685.05937pt>
+<images/all_params_refinado_10.png, id=846, 928.21782pt x 685.05937pt>
 File: images/all_params_refinado_10.png Graphic file (type png)
 
 <use images/all_params_refinado_10.png>
@@ -1240,7 +1234,7 @@ cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on Thesis.pdf (94 pages, 22842951 bytes).
+Output written on Thesis.pdf (94 pages, 22845368 bytes).
 PDF statistics:
  1100 PDF objects out of 1200 (max. 8388607)
  884 compressed objects within 9 object streams
