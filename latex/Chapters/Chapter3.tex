@@ -28,7 +28,7 @@ The first two days (May 14th and 15th) we took the spectroscopic data in the tel
 
 We made the observations of dome flats, bias frames, comparison lamp frames, calibration stars, some galaxies and certain globular clusters of the milky Way organized by the best observation times using Simbad and Stellarium for the estimations of the coordinates and times respectively. The objects we observed in OPD are organized in Table 3.1.
 
-\begin{table}[H]
+\begin{table}
 \begin{center}
   \begin{tabular}{| c| c| c| c| c| c| c| c| }
     \hline
@@ -127,13 +127,13 @@ What we can infer from these images is that the flat fields and the bias frames 
 
 Once all the characterization is made we can reduce our important data using IRAF following the conventional steps consisting of: 
 
-- Building a Superbias: \textit{Zerocombine} allows us to create the superbias using the median.
+$\rightarrow$ Building a Superbias: \textit{Zerocombine} allows us to create the superbias using the median.
 
-- Substracting the Superbias to every flat and science data: We substract the Superbias to every flat frame with no distinction on the filter, this is easily made using the task \textit{imarith}, we also substract them from the original science images.
+$\rightarrow$ Substracting the Superbias to every flat and science data: We substract the Superbias to every flat frame with no distinction on the filter, this is easily made using the task \textit{imarith}, we also substract them from the original science images.
 
-- Building Superflats: It is necessary to create a Superflat frame for each filter because the response of the CCD and will be different for different wavelengths, we use the task \textit{imcombine} to do this and this time we use the mode for better results.   
+$\rightarrow$ Building Superflats: It is necessary to create a Superflat frame for each filter because the response of the CCD and will be different for different wavelengths, we use the task \textit{imcombine} to do this and this time we use the mode for better results.   
 
-- Divide the Superflats by the median: In order to normalize the flatfields we find the mode of each frame with \textit{imstatistics} and then divide them by that value using \textit{imarith}. An example of the normalized superflat at this point of the procedures is shown in figure 3.6.
+$\rightarrow$ Divide the Superflats by the median: In order to normalize the flatfields we find the mode of each frame with \textit{imstatistics} and then divide them by that value using \textit{imarith}. An example of the normalized superflat at this point of the procedures is shown in figure 3.6.
 
 \begin{figure}[H]
 \centering
@@ -141,7 +141,7 @@ Once all the characterization is made we can reduce our important data using IRA
 \caption[Normalized Superflat for the filter I]{Example of one of the Normalized Superflats in the I filter. This frame contains most of the noise that we want to extract from our science data because it contains background contamination and the instrumental noise such as motes of dust of imperfections in the instruments that could lighten or obscure the science data. Note that in the top left corner, the mote of dust looks very big and affects considerable a huge detection area and it must be removed using this normalized flat on the science frame.}
 \end{figure}
 
-- Reduce the science data: Finally, we divide the original images of the clusters and stars (with the bias substractet) by the normalized Superflat to get the reduced images. This can easily be made using the task \textit{imarith}.
+$\rightarrow$ Reduce the science data: Finally, we divide the original images of the clusters and stars (with the bias substractet) by the normalized Superflat to get the reduced images. This can easily be made using the task \textit{imarith}.
 
 \subsection{Aperture Photometry}
 
@@ -232,23 +232,23 @@ We based our reduction and extraction procedures on ``A User's Guide to Reducing
 
 The spectroscopic reduction is made by following some steps taking into account that we did not take any Skyflats so we need to create a response function using our dome flats. The steps are:
 
-- First we make a Superbias combining all the bias frames and then we subtract it from all the lamp, targets and flat field frames.
+$\rightarrow$ First we make a Superbias combining all the bias frames and then we subtract it from all the lamp, targets and flat field frames.
 
-- It was important to analyse the flats to see which ones are saturated, we consider that values over 65,000 counts (using implot) show saturated data. The ones that we could trust for May 14th were ten images called flats\_0012 to flats\_0021.
+$\rightarrow$ It was important to analyse the flats to see which ones are saturated, we consider that values over 65,000 counts (using implot) show saturated data. The ones that we could trust for May 14th were ten images called flats\_0012 to flats\_0021.
 
-- The pre-superflat is made using the median given the number of images.
+$\rightarrow$ The pre-superflat is made using the median given the number of images.
 
-- We need to make a trimming in all images because there are some regions in the images that show unexpected luminosity, this is probably due to border errors in the camera or the obturator time of relaxation. The zones we decided to cut (in pixels) were [0-100] and [575-691].  
+$\rightarrow$ We need to make a trimming in all images because there are some regions in the images that show unexpected luminosity, this is probably due to border errors in the camera or the obturator time of relaxation. The zones we decided to cut (in pixels) were [0-100] and [575-691].  
 
-- A critical step is the creation of a response function, this is made by collapsing the pre-superflat to one column using \textit{blkavg}. The useful image for the creation of the Superflat is done by combining this column with \textit{blkrep}. This gives us an image that's uniformly distributed in the dispersion axis with the following IRAF commands.
+$\rightarrow$ A critical step is the creation of a response function, this is made by collapsing the pre-superflat to one column using \textit{blkavg}. The useful image for the creation of the Superflat is done by combining this column with \textit{blkrep}. This gives us an image that's uniformly distributed in the dispersion axis with the following IRAF commands.
 
 blkavg MasterFlat.fits[1:475,*] AvgFlatCols 475 1
 
 blkrep AvgFlatCols AvgFlatColsMaster 475 1
 
-- The pre-superflat is now divided by the response function we created (AvgFlatColsMaster) and this gives us the Superflat that we will use to reduce our data.
+$\rightarrow$ The pre-superflat is now divided by the response function we created (AvgFlatColsMaster) and this gives us the Superflat that we will use to reduce our data.
 
-- Finally, the task we use to remove the cosmic rays is \textit{lacos}, and it gives very accurate results, as it shows the ``mask" image with the removed cosmic rays.
+$\rightarrow$ Finally, the task we use to remove the cosmic rays is \textit{lacos}, and it gives very accurate results, as it shows the ``mask" image with the removed cosmic rays.
 
 Figures 3.13 and 3.14 show a dirty and a clean spectrum, where every strong vertical trace is the spectrum of a star. The vertical direction is the dispersion (in wavelength) of the spectrum and the horizontal direction is the spatial separation between stars. Note that there are some strong horizontal lines that span all the spatial direction of the spectrum even in the clean one, they are atmospheric lines that need to be considered in the wavelength and flux calibration of the spectra.
 
@@ -298,12 +298,12 @@ Once the spectrum is extracted, the following step is to calibrate it in wavelen
 
 \begin{figure}[H]
   \centering
-  \begin{minipage}[b]{0.45\textwidth}
+  \begin{minipage}[b]{0.48\textwidth}
     \includegraphics[width=\textwidth]{images/lamp_day1_2.png}
     \caption[Emission lines for the Ne-Ar calibration lamp]{Emission lines of the Ne-Ar calibration lamp that need to be wavelength calibrated ,the horizontal axis is in pixels and needs to be calibrated to units of wavelength}
   \end{minipage}
   \hfill
-  \begin{minipage}[b]{0.45\textwidth}
+  \begin{minipage}[b]{0.48\textwidth}
     \includegraphics[width=\textwidth]{images/lamp1.png}
     \caption[Theoric emisison lines of a Ne-Ar lamp]{The theoretic emission lines of the Ne-Ar lamp provided by OPD that we use to make the wavelength calibration, note that the lines to be matched are going in the opposite direction}
   \end{minipage}
@@ -436,7 +436,7 @@ By using one of IRAF's templates \textit{``habtemp0.fits"} that covers the range
 
 The results of RVSAO have a really strong dependence on the quality of the template used for the cross correlation, and some of the IRAF spectra have different wavelength ranges and flux values on the characteristic lines so that they won't give reliable results. One is forced to create a template spectrum with the most prominent lines to be used to correlate the object spectrum. One task that can be very useful in the creation of the templates is \textit{rspectext} that creates an image spectrum from an ascii table where the user can set the dispersion to be assigned to the spectra, and the appropriate values for the flux and intensity of absorption or emission lines.
 
-One of our created templates that holds information about some absorption lines including the calcium triplet and made using \textit{rspectext} is shown in figure 3.23.
+One of our created templates that holds information about some absorption lines including the calcium triplet and made using \textit{rspectext} is shown in table 3.2 and figure 3.23.
 
 \begin{figure}[H]
   \centering
@@ -464,7 +464,7 @@ One of our created templates that holds information about some absorption lines 
   \end{minipage}
 \end{figure}
 
-Another important issue to be addressed when we analyse radial velocities is the fact that our ground based observations are done in a moving system around the Sun and around the galaxy so that the Doppler shift of the lines would be affected by this relative movement of the Earth with respect to the Sun's velocity that the Earth is attached to. The issue can be seen in the following figure.
+Another important issue to be addressed when we analyse radial velocities is the fact that our ground based observations are done in a moving system around the Sun and around the galaxy so that the Doppler shift of the lines would be affected by this relative movement of the Earth with respect to the Sun's velocity that the Earth is attached to. The issue can be seen in the figure 3.24.
 
 \begin{figure}[H]
 \centering
@@ -473,7 +473,7 @@ Another important issue to be addressed when we analyse radial velocities is the
 \end{figure}
 
 The barycenter correction of the spectra can be made using the task BCVCOR, the task calculates the correction of the barycenter velocity according to the date of the observation and edits the header of the image so that this information will be stored and read by other tasks like XCSAO by the time the radial velocity calculation is to be made. Another important task of the RVSAO package is EMSAO that computes redshifts by identifying shifted emission lines in the spectrum with respect to templates with emission lines in the rest frame. This task might be very useful if the spectra has strong emission features but the cross correlation techniques used by XCSAO might give a better choice if the spectrum has important absorption lines.
-As seen in the following figure, EMSAO identifies the strong features of the spectrum to be measured using files in the IRAF database that contain information about emission lines with their given wavelength:   
+As seen in the figure 3.26, EMSAO identifies the strong features of the spectrum to be measured using files in the IRAF database that contain information about emission lines with their given wavelength.  
 
 \begin{figure}[H]
 \centering
@@ -485,7 +485,7 @@ One of the other techniques we used to study velocity dispersions in GCs spectra
 
 \subsection{FXCOR}
 
-This IRAF package, very useful for radial determination decomposes every signal in a sum of sinusoidal functions through the Fourier transformation of a spectrum that has been wavelength calibrated. The product of the transformed signals generates the correlation function, which is similar to a Gaussian function and displayed in the irafterm after the task has been run. The stronger the correlation is, the higher the peak of the curve is, to a maximum of 1 (for the perfect correlation) in the case of an autocorrelation. Regarding the results of the correlation, the peak height is index of the superposing grade of the two spectra because it depends on the presence of the same absorption (or emission) lines as explained by V. Guglielmo et al. 2009 \cite{16}. 
+This IRAF package, very useful for radial determination decomposes every signal in a sum of sinusoidal functions through the Fourier transformation of a spectrum that has been wavelength calibrated. The product of the transformed signals generates the correlation function, which is similar to a Gaussian function and displayed in the irafterm after the task has been run. The stronger the correlation is, the higher the peak of the curve is, to a maximum of 1 (for the perfect correlation) in the case of an autocorrelation. Regarding the results of the correlation, the peak height is index of the superposing grade of the two spectra because it depends on the presence of the same absorption (or emission) lines as explained by V. Guglielmo et al. 2009.  See figure 3.27 for the results of the correlation.
 
 \begin{figure}[H]
 \centering
