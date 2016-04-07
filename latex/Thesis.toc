@@ -22,7 +22,7 @@
 \contentsline {section}{\numberline {3.2}First step for Anaysis}{40}{section.94}
 \contentsline {section}{\numberline {3.3}Photometry}{41}{section.95}
 \contentsline {subsection}{\numberline {3.3.1}Aperture Photometry}{43}{subsection.98}
-\contentsline {subsection}{\numberline {3.3.2}PSF Photometry}{46}{subsection.101}
+\contentsline {subsection}{\numberline {3.3.2}PSF Photometry}{45}{subsection.101}
 \contentsline {section}{\numberline {3.4}Spectroscopy}{49}{section.106}
 \contentsline {subsection}{\numberline {3.4.1}Spectroscopic Reduction}{49}{subsection.107}
 \contentsline {subsection}{\numberline {3.4.2}Extraction}{51}{subsection.109}

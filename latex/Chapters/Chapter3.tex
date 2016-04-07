@@ -98,9 +98,7 @@ Our first goal in starting the analysis of all the relevant data was to organize
 
 The next step was the reduction of all the images with the calibration files for each day, we started the photometric data to acquire certain skills in the use of IRAF because the reduction of the spectroscopic data was a little more complex and needed a deeper understanding of IRAF packages. 
 
-We started with the cluster NGC-5139 ($ \omega $ Centauri) because we got lots of data for that cluster in OPD and also because $ \omega $ Centauri is a well known globular cluster since it is the largest in our galaxy and we can get a lot of information from the databases. 
-
-After the photometry of that cluster, the most relevant part of the reduction was to be made. The reduction and analysis of the spectroscopic data (May 14th and 15th), the methods for these reductions are quite special and are the most relevant part of the analysis because that is our most valuable information. The reduction was to be made very carefully because a good spectroscopic analysis depends upon a good reduction of the data. Just as with the photometric data, the first procedures were made for the Cluster NGC5139 to understand and master the techniques of the reduction and extractions.
+We did all of our procedures for $\omega$ Centauri, though they could be used for any other stellar system with those characteristics. After the photometry of that cluster, the most relevant part of the reduction was to be made. The reduction and analysis of the spectroscopic data (May 14th and 15th), the methods for these reductions are quite special and are the most relevant part of the analysis because that is our most valuable information. The reduction was to be made very carefully because a good spectroscopic analysis depends upon a good reduction of the data.
 
 \section{Photometry}
 
@@ -114,7 +112,7 @@ In order to see how the data would be affected by the systematic errors we just 
   \centering
   \begin{minipage}[b]{0.47\textwidth}
     \includegraphics[width=\textwidth]{images/ngc_5139_dirty.png}
-    \caption[Dirty image of NGC5139]{Composite image of NGC5139 in the U,V and R filters without being previously reduced, note that there is a significant amount of noise all over the image, specially in the borders. There is also a big strange object that might be a mote of dust in the top left corner.}
+    \caption[Dirty image of NGC5139]{Composite image of $\omega$ Centauri in the U,V and R filters without being previously reduced, note that there is a significant amount of noise all over the image, specially in the borders. There is also a big strange object that might be a mote of dust in the top left corner.}
   \end{minipage}
   \hfill
   \begin{minipage}[b]{0.47\textwidth}
@@ -171,7 +169,7 @@ As we can see in figure 3.8, the magnitude of the chosen star in the cluster dec
 
 \subsection{PSF Photometry}
 
-There exist many ways to count photons for an image taken with a CCD camera, but all of these ways obey the same principle of energy distribution in luminous objects. The point spread function for each of these objects is an assigned measure from the probabilistic distributions that approach quite well to the count of photons that one wants to do in the photometric analysis of astronomical images. The PSF photometry technique advantage of the PSF of the objects using certain packages and tasks in a slightly different way than aperture photometry.
+There exist many ways to count photons (photometry) for an image taken with a CCD camera, but all of these ways obey the same principle of energy distribution in luminous objects. The point spread function (PSF) of an object is an assigned measure from the probabilistic distributions of the response of an imaging system to the object and it can be used to approach to the count of photons that one wants to do in the photometric analysis of astronomical images. The PSF photometry technique takes advantage of the PSF of the objects using certain packages and tasks in a slightly different way than aperture photometry.
 
 When doing photometry in a very crowded field, such as a globular cluster ($\omega$ Centauri in our case), where the profiles of stars overlap significantly, one must use de-blending techniques, such as point spread function (PSF) fitting, to determine the individual flux values of the overlapping sources because the noise of the background and the surrounding stars will always affect the aperture photometry in such a crowded cluster. 
 
@@ -221,12 +219,9 @@ Our color-magnitude diagram in the V and I bands is shown in figure 3.12.
 \caption[Color magnitude diagram of Omega Centauri with our photometric data]{Color magnitude diagram of $\omega$ Centauri in the I and V bands made with OPD data observed on May 18$^{th}$. The horizontal branch (HB) can be identified in the left crowded area of the diagram, as well as some stars belonging to the Turn off (TO) and main sequence (MS)  regions in the bottom right of the diagram. The red giant branch should be in the top right region but it's not observed probably due to the saturation problems and the precision of the instrument used for the photometric data}
 \end{figure}
 
-
 \section{Spectroscopy}
 
-This was the most important part of our observational data since it had the best quality we could obtain in the many domes of the observatory. Also, spectra of this kind is not easy to find in the scientific databases so we have important data to work with. The first spectroscopic procedures were also made for $ \omega $ Centauri cluster since we need to master the reduction and extraction techniques first in order to be able to start the scientific work about the mass modelling of the clusters.
-
-We based our reduction and extraction procedures on ``A User's Guide to Reducing Slit Spectra with IRAF", by Phil Massey, Frank Valdes, and Jeannette Barnes, April 1992. 
+In this section, we go through the procedures of reduction, extraction, calibrations and analysis of the spectra obtained in OPD. The spectroscopic data was the most important part of our observational data in Pico dos Dias since it had the best quality we could obtain in the many domes of the observatory. Also, spectra of this kind is not easy to find in the scientific databases so it could be used for one part of our modelling. We based our reduction and extraction procedures on ``A User's Guide to Reducing Slit Spectra with IRAF", by Phil Massey, Frank Valdes, and Jeannette Barnes, April 1992. 
 
 \subsection{Spectroscopic Reduction}
 
@@ -404,12 +399,12 @@ Now, with the image ready in 1-D, I use the task \textit{wspectext} to create th
 wspectext ready\_flux\_star.0001.fits normal\_cut\_flux\_star\_calib.txt
 \end{center}
 
-In principle, the same procedures hold for the star in the Globular Clusters, even though it must be made more carefully because the background noise and the crowded space surrounding them affects the spectra and it might change the values of the radial velocities, an example of a wavelength and flux calibrated spectrum of one of the stars in the NGC5139 cluster is shown in figure 3.22.
+In principle, the same procedures hold for the star in the Globular Clusters, even though it must be made more carefully because the background noise and the crowded space surrounding them affects the spectra and it might change the values of the radial velocities, an example of a wavelength and flux calibrated spectrum of one of the stars in $\omega$ Centauri is shown in figure 3.22.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=8cm]{images/cluster_star_flux.png}
-\caption[Spectrum of a prominent star of the NGC5139 globular cluster]{Spectrum of one of the most prominent stars in the NGC5139 cluster, after all the calibrations have been made}
+\caption[Spectrum of a prominent star of the NGC5139 globular cluster]{Spectrum of one of the most prominent stars in $\omega$ Centauri, after all the calibrations have been made}
 \end{figure}
 
 Although the noise is evidently higher than in the case of the spectrum of the calibration star, it is possible to see (even with the naked eye) two of the calcium strong absorption lines around 8543\AA$ $ and 8663\AA. After all of these procedures have been made to the important stars in the clusters and the calibration stars, the next step is to explore the best way to determine radial velocities with the use of some sophisticated tasks in IRAF such as \textit{RVSAO}, as we discuss in the next section. 
@@ -473,7 +468,7 @@ Another important issue to be addressed when we analyse radial velocities is the
 \end{figure}
 
 The barycenter correction of the spectra can be made using the task BCVCOR, the task calculates the correction of the barycenter velocity according to the date of the observation and edits the header of the image so that this information will be stored and read by other tasks like XCSAO by the time the radial velocity calculation is to be made. Another important task of the RVSAO package is EMSAO that computes redshifts by identifying shifted emission lines in the spectrum with respect to templates with emission lines in the rest frame. This task might be very useful if the spectra has strong emission features but the cross correlation techniques used by XCSAO might give a better choice if the spectrum has important absorption lines.
-As seen in the figure 3.26, EMSAO identifies the strong features of the spectrum to be measured using files in the IRAF database that contain information about emission lines with their given wavelength.  
+As seen in the figure 3.26, EMSAO identifies the strong features of the spectrum to be measured using files in the IRAF database that contain information about emission lines with their given wavelength (this procedure was done for $\omega$ Centauri and other GCs but here we show the results for the cluster NGC1904).  
 
 \begin{figure}[H]
 \centering
@@ -520,7 +515,7 @@ Our radial velocity determination involves the necessity of creating or finding 
 
 \section{Databases}
 
-Besides our observational data we decided to use different published databases from all over the world in order to do our modelling. We searched for high quality and well-reported data that gave us good confidence upon our results.
+Besides our observational data we decided to use different published databases from all over the world in order to do our modelling for $\omega$ Centauri. We searched for high quality and well-reported data that gave us good confidence upon our results.
  
 In the first part of our modelling, we focus on the radial profile of the projected velocity dispersion so we needed radial velocities of stars in the cluster. The radial-velocity databases that we decided to use (after filtering out repeated or low quality data) are organized in table 3.3.
 
@@ -537,6 +532,6 @@ In the first part of our modelling, we focus on the radial profile of the projec
      Reijins et al. 2006 & 2006A\& A...445..503R & 1966 stars. $\sim$1592 cluster stars \\ \hline
      
   \end{tabular} 
-\caption[Database]{Reported values of Omega Centauri's radial velocities, each of the databases included their measured error and were J2000 Julian date.}
+\caption[Database]{Reported values of Omega Centauri's radial velocities, each of the databases included their measured error and were J2000 Julian date. Most of these databases used FXCOR for the determination of the radial velocities of the stars.}
 \end{center}
 \end{table}
