@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.1)  7 APR 2016 12:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.1)  7 APR 2016 13:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -702,17 +702,18 @@ File: images/core_collapse.png Graphic file (type png)
 
 <use images/core_collapse.png>
 Package pdftex.def Info: images/core_collapse.png used on input line 73.
-(pdftex.def)             Requested size: 341.43306pt x 316.08716pt.
- [9] [10 <./images/core_collapse.png>]
-<images/anisotropy_core_collapse.png, id=450, 632.3625pt x 365.86688pt>
+(pdftex.def)             Requested size: 284.52756pt x 263.40596pt.
+ [9]
+<images/anisotropy_core_collapse.png, id=444, 632.3625pt x 365.86688pt>
 File: images/anisotropy_core_collapse.png Graphic file (type png)
 
 <use images/anisotropy_core_collapse.png>
 Package pdftex.def Info: images/anisotropy_core_collapse.png used on input line
  85.
 (pdftex.def)             Requested size: 341.43306pt x 197.54842pt.
- [11 <./images/anisotropy_core_collapse.png>] [12] <images/m55_diagram.jpg, id=
-462, 410.18108pt x 410.18108pt>
+ [10 <./images/core_collapse.png>]
+[11 <./images/anisotropy_core_collapse.png>] [12]
+<images/m55_diagram.jpg, id=462, 410.18108pt x 410.18108pt>
 File: images/m55_diagram.jpg Graphic file (type jpg)
 
 <use images/m55_diagram.jpg>
@@ -732,7 +733,7 @@ File: images/metal.png Graphic file (type png)
 <use images/metal.png>
 Package pdftex.def Info: images/metal.png used on input line 136.
 (pdftex.def)             Requested size: 227.62204pt x 223.26744pt.
- [14]
+ [14 <./images/metal.png>]
 <images/fornax-2-400.jpg, id=474, 401.5pt x 392.46625pt>
 File: images/fornax-2-400.jpg Graphic file (type jpg)
 
@@ -751,14 +752,14 @@ Underfull \hbox (badness 1221) in paragraph at lines 153--153
  []\OT1/cmr/bx/sc/9 FIGURE 2.9: |\OT1/cmr/m/n/9 Hub-ble Space Tele- 
  []
 
-[15 <./images/metal.png>] [16 <./images/fornax-2-400.jpg> <./images/fornax-3-40
-0.jpg>] <images/Globulars4.png, id=485, 481.8pt x 387.69844pt>
+[15 <./images/fornax-2-400.jpg> <./images/fornax-3-400.jpg>]
+<images/Globulars4.png, id=481, 481.8pt x 387.69844pt>
 File: images/Globulars4.png Graphic file (type png)
 
 <use images/Globulars4.png>
 Package pdftex.def Info: images/Globulars4.png used on input line 169.
 (pdftex.def)             Requested size: 284.52756pt x 228.95897pt.
-
+ [16]
 <images/orbits_gcs.jpg, id=488, 488.0634pt x 515.0442pt>
 File: images/orbits_gcs.jpg Graphic file (type jpg)
 
@@ -782,21 +783,21 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 File: images/Omega_Centauri.jpg Graphic file (type jpg)
 
 <use images/Omega_Centauri.jpg>
-Package pdftex.def Info: images/Omega_Centauri.jpg used on input line 232.
+Package pdftex.def Info: images/Omega_Centauri.jpg used on input line 234.
 (pdftex.def)             Requested size: 284.52756pt x 267.47202pt.
  [20 <./images/Omega_Centauri.jpg>]
 <images/rotation_omega.png, id=515, 695.59875pt x 895.09406pt>
 File: images/rotation_omega.png Graphic file (type png)
 
 <use images/rotation_omega.png>
-Package pdftex.def Info: images/rotation_omega.png used on input line 242.
+Package pdftex.def Info: images/rotation_omega.png used on input line 244.
 (pdftex.def)             Requested size: 227.62204pt x 292.89618pt.
  [21 <./images/rotation_omega.png>]
 <images/ngc5139_2.jpg, id=521, 556.32843pt x 639.13782pt>
 File: images/ngc5139_2.jpg Graphic file (type jpg)
 
 <use images/ngc5139_2.jpg>
-Package pdftex.def Info: images/ngc5139_2.jpg used on input line 253.
+Package pdftex.def Info: images/ngc5139_2.jpg used on input line 255.
 (pdftex.def)             Requested size: 284.52756pt x 326.88246pt.
  [22 <./images/ngc5139_2.jpg>] [23] [24] [25]
 [26] [27] [28] [29] [30] [31] [32] [33] [34]) (./Chapters/Chapter3.tex [35]
@@ -995,7 +996,7 @@ Package pdftex.def Info: images/fxcor.png used on input line 487.
 (pdftex.def)             Requested size: 284.52756pt x 215.31454pt.
 
 [62 <./images/emsao.png>] [63 <./images/fxcor.png>]
-Overfull \hbox (4.94066pt too wide) in paragraph at lines 524--535
+Overfull \hbox (4.94066pt too wide) in paragraph at lines 523--534
  [] 
  []
 
@@ -1219,7 +1220,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 332.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 332.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 332.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: D155DDE9C35709C6D42E87DA016948B9;6282.
+(rerunfilecheck)             Checksum: 17F73337F72A6E243641B0460C1539E3;6396.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1260,7 +1261,7 @@ cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on Thesis.pdf (95 pages, 22947675 bytes).
+Output written on Thesis.pdf (95 pages, 22948973 bytes).
 PDF statistics:
  1124 PDF objects out of 1200 (max. 8388607)
  902 compressed objects within 10 object streams
