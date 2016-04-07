@@ -32,10 +32,10 @@
 \contentsline {subsection}{\numberline {3.5.1}RVSAO}{59}{subsection.119}
 \contentsline {subsection}{\numberline {3.5.2}FXCOR}{62}{subsection.125}
 \contentsline {section}{\numberline {3.6}Databases}{64}{section.130}
-\contentsline {chapter}{\numberline {4}Modelling}{66}{chapter.133}
-\contentsline {section}{\numberline {4.1}Modified Hernquist Model}{66}{section.134}
-\contentsline {subsection}{\numberline {4.1.1}Full Modelling}{71}{subsection.160}
-\contentsline {subsection}{\numberline {4.1.2}Fix mass-to-light ratio}{73}{subsection.165}
-\contentsline {section}{\numberline {4.2}Stellar Population Synthesis with Starlight}{76}{section.171}
-\contentsline {chapter}{\numberline {5}Conclusions}{83}{chapter.187}
-\contentsline {chapter}{Bibliography}{84}{chapter*.188}
+\contentsline {chapter}{\numberline {4}Modelling}{65}{chapter.132}
+\contentsline {section}{\numberline {4.1}Modified Hernquist Model}{65}{section.133}
+\contentsline {subsection}{\numberline {4.1.1}Full Modelling}{71}{subsection.159}
+\contentsline {subsection}{\numberline {4.1.2}Fix mass-to-light ratio}{75}{subsection.165}
+\contentsline {section}{\numberline {4.2}Stellar Population Synthesis with Starlight}{77}{section.170}
+\contentsline {chapter}{\numberline {5}Conclusions}{83}{chapter.186}
+\contentsline {chapter}{Bibliography}{84}{chapter*.187}

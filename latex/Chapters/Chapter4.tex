@@ -130,20 +130,20 @@ With \left\lbrace
 \right.
 \end{equation} 
 
-As we mentioned in the last chapter, we used many databases for projected radial velocities in order to properly do our fit and modelling. The data is shown in figure 4.1
+As we mentioned in the last chapter, we used many databases for projected radial velocities in order to properly do our fit and modelling. The radial velocities as a function of the projected radius is shown in figure 4.1
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=12cm]{images/vel_vs_rad.png}
-\caption[Pg]{Pd}
+\includegraphics[width=11cm]{images/vel_vs_rad.png}
+\caption[Radial velocity database]{Radial velocities vs projected radius in arcmin. The data is taken from all the databases that gave us a good level of confidence, note that all the data have their respective error.}
 \end{figure}
 
-Because we need to calculate the projected velocity dispersion profile, we need to cut in radial bins as shown in figure 4.2 
+Because we need to calculate the projected velocity dispersion profile, we need to cut in radial bins as shown in figure 4.2. 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=12cm]{images/vel_vs_rad_bins.png}
-\caption[Pg]{Pd}
+\includegraphics[width=11cm]{images/vel_vs_rad_bins.png}
+\caption[Radial bins used to calculate velocity dispersions]{Radial bins that we use to calculate the radial projected velocity dispersion in the cluster}
 \end{figure}
 
 The velocity dispersion is the standard deviation of the velocity
@@ -164,7 +164,7 @@ In order to do a proper modelling and fitting we need to take into account the e
 
 With the radial projected velocity dispersion (and its error) we can start with the fitting to find the optimized parameters in our various experiments. Because the functions that we wanted to fit did not have an analytic solution, we decided use a $\chi^{2}$ method instead. 
 
-This approximation method allows to fit curves to the observational data so that the parameters would be optimized, that is, the combination of parameters would allow the curve to fit well the observational data. Our programs written in C were set so that the $\chi^{2}$ was calculated for every combination of the parameters (every entry of the parameters matrix) but it will only save the values of the parameters that make the smallest $\chi^{2}$. If we call $\sigma_{M}(r_{i})$ the value of our modelling for the radial bin $i$ and if $\sigma_{i}$ is the observational value of the projected velocity dispersion in the same bin, we show that our calculation of this approximation method is given by 
+This approximation method allows to fit curves to the observational data so that the parameters would be optimized, that is, the combination of parameters would allow the curve to fit well the observational data. Our programs were set so that the $\chi^{2}$ was calculated for every combination of the parameters (every entry of the parameters matrix) but it will only save the values of the parameters that make the smallest $\chi^{2}$. If we call $\sigma_{M}(r_{i})$ the value of our modelling for the radial bin $i$ and if $\sigma_{i}$ is the observational value of the projected velocity dispersion in the same bin, we show that our calculation of this approximation method is given by 
 
 \begin{equation}
 \chi^{2}=\sum_{i=1}^{n}\frac{1}{N_{i}}{\left(\sigma_{M}\left(r_{i}\right)-\sigma_{i}\right)}^{2}
@@ -178,27 +178,38 @@ This first set of experiments consisted of the variation of every parameter of o
 
 Because some authors (Jalali et al. 2012) state that there might be a medium-mass black hole at the center of $\omega$ Centauri, we decided to conduct two different fittings, one with the central region of the cluster (12 radial bins) and other without the central region of the cluster (10 radial bins), and in each group of experiments we made four basic assumptions to take into account all the possibilities of our modelling:
 
-\textbf{\textit{i)}} We don't use the crossed terms in equation 4.13, because we wanted to see how relevant they were in the modelling, we call this ``\textit{No crossed terms}". 
+\textbf{\textit{i)}} We don't use the crossed terms in equation 4.13, because we wanted to see how relevant they were in the modelling, we call this ``\textbf{\textit{No crossed terms}}". 
 
-\textbf{\textit{ii)}} We assume a constant stellar scalength taken from the literature, we call this ``\textit{Fix $a_{s}$}".
+\textbf{\textit{ii)}} We assume a constant stellar scalength, we call this ``\textbf{\textit{Fix $a_{s}$}}". Because we wanted to be as accurate as possible in our modelling we found a way to calculate the stellar scalength and use is as a constraint to our modelling. We found the value of $a_{s}$ by fitting the effective radius in a de Vaucouleurs profile on the surface brightness of Eva Noyola's observational data (Noyola et al. 2013) shown in figure 4.5
 
-\textbf{\textit{iii)}} We don't assume any of our parameters to be constant, we call this ``\textit{full modelling}". 
+\begin{figure}[H]
+\centering
+\includegraphics[width=8cm]{images/noyola.png}
+\caption[Surface brightness profile of Omega Centauri]{Surface brightness profile for $\omega$ Centauri. The circles show
+Noyola's measured photometric points. The triangles show photometric points obtained from ground based images by Trager et al. The dashed line is Trager’s Chebychev fit. The solid line is Noyola's smooth fit that we don't use for our fitting of the scalength. Figure taken from Noyola et al. 2013}
+\end{figure}
 
-\textbf{\textit{iv)}} We assume the cluster doesn't have any dark matter so the solution of the equation 4.9 is much simpler and it's given by 4.10, we call this ``\textit{No Dark matter}".
+Our fitting gives us an effective radius of $R_{e}=4.048$ and using the relation $R_{e}\approx1.8153a$ (Hernquist 1989), we find a stellar scalength of $a=2.23$ that we use for our set of experiments.
+
+\textbf{\textit{iii)}} We don't assume any of our parameters to be constant, we call this ``\textbf{\textit{Full}}". 
+
+\textbf{\textit{iv)}} We assume the cluster doesn't have any dark matter so the solution of the equation 4.9 is much simpler and it's given by 4.10, we call this ``\textbf{\textit{No Dark matter}}".
 
 Now, let's see the results for all of these experiments with the graphs that show the fitting and the optimized values of the parameters found for the minimum $\chi^{2}$
 
-\textbf{Full fits with 12 radial bins}
+\newpage
 
-We figure 4.3
+\begin{center}
+\textbf{Full fits with 12 radial bins}
+\end{center}
+
+In this set of experiments we do the variation of all the parameters and we use the whole sample of 12 velocity dispersions to be fitted. The results are summarized in figure 4.3 and table 4.1.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{images/all_params_refinado_12.png}
-\caption[Pg]{Pd}
+\caption[Best fit of the full model for 12 radial bins]{Best fit to the observational data of the four experiments for our full model with the 12 radial bins.}
 \end{figure}
-
-Table 4.1
 
 \begin{table}[H]
 \begin{center}
@@ -211,22 +222,23 @@ Table 4.1
 	No Dark Matter &	$0.26$ & $\thicksim$	& $ a = 3.64$  & $\thicksim$ & $  M = 1.98 \times 10^{6}$ & 	$1.24$\\
     \hline
   \end{tabular} 
-\caption[It]{Ie}
+\caption[Optimized parameters for our full model with the 12 radial bins.]{The optimized parameters for each of the experiments for our full model with the 12 radial bins.}
 \end{center}
-  
 \end{table}
 
-\textbf{Full fits with 10 radial bins}
+\newpage
 
-figure 4.4
+\begin{center}
+\textbf{Full fits with 10 radial bins}
+\end{center}
+
+In this set of experiments we do the variation of all the parameters and we use the 10 of the 12 points of the velocity dispersions because we want to avoid the problems in the center of the cluster and search for a smoother behaviour in the fitting of our model. The results are summarized in figure 4.4 and table 4.2.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{images/all_params_refinado_10.png}
-\caption[Pg]{Pd}
+\caption[Best fit of the full model for 10 radial bins]{Best fit to the observational data of the four experiments for our full model with the 10 outer radial bins.}
 \end{figure}
-
-Table 4.2
 
 \begin{table}[H]
 \begin{center}
@@ -239,39 +251,26 @@ Table 4.2
 	No Dark Matter &	$0.78$ &	$\thicksim$ & $ a = 2.96$ &	$\thicksim$ & $  M = 3 \times 10^{6}$ & 	$1.94$\\
     \hline
   \end{tabular} 
-\caption[It]{Ie}
+\caption[Optimized parameters for our full model with the 10 outer radial bins.]{The optimized parameters for each of the experiments for our full model with the 10 outer radial bins.}
 \end{center}
   
 \end{table}
 
 \subsection{Fix mass-to-light ratio}
 
-In this set of experiments, the mass-to-light ratio $\Gamma$ is a fix value that we found by fitting the effective radius in a de Vaucouleurs profile on the surface brightness of Eva Noyola's observational data (Noyola et al. 2013) shown in figure 4.5
+In this set of experiments, the mass-to-light ratio we used was $\Gamma = 2.5$ (Van de Ven et al. 2005) and the results were the following: 
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=10cm]{images/noyola.png}
-\caption[Pg]{Surface brightness profile for $\omega$ Centauri. The circles show
-Noyola's measured photometric points. The triangles show photometric points obtained
-from ground based images by Trager et al. The dashed line
-is Trager’s Chebychev fit. The solid line is Noyola's smooth fit that we don't use for our fitting of the scalength. Figure taken from Noyola et al. 2013}
-\end{figure}
-
-Our fitting gives us an effective radius of $R_{e}=4.048$ and using the relation $R_{e}\approx1.8153a$ (Hernquist 1989), we find a stellar scalength of $a=2.23$ that we use for our set of experiments. The other parameters ($M_{dm}$, $M_{s}$, $a_{dm}$, $a_{s}$, $\beta$) were again varied to find the smallest $\chi^{2}$.
-
-Once again, we do our experiments with 10 and 12 radial bins (for the problems that the black hole could do in the fitting) and we take into account the four possibilities discussed above.
-
+\begin{center}
 \textbf{Fix mass-to-light ratio with 12 radial bins}
+\end{center}
 
-figure 4.6
+We vary all the parameters except for the mass to light ratio $\Gamma$ that, as we just showed, has a value of $2.5$ and we use 12 points to fit the model. The results are summarized in figure 4.6 and table 4.3.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{images/fix_gamma_refinado_12.png}
-\caption[Pg]{Pd}
+\caption[Best fit of our model with a fix mass-to-light ratio for the 12 radial bins]{Best fit to the observational data of the four experiments for our model with a fix mass-to-light ratio with the 12 radial bins.}
 \end{figure}
-
-Table 4.3
 
 \begin{table}[H]
 \begin{center}
@@ -284,22 +283,23 @@ Table 4.3
 	No Dark Matter &	$0.001$ &	$\thicksim$ & $ a = 3.15$ &	$\thicksim$ & $  M = 1.52 \times 10^{6}$ & 	$2.5$\\
     \hline
   \end{tabular} 
-\caption[It]{Ie}
+\caption[Optimized parameters for our fix mass-to-light ratio model with the 12 radial bins.]{The optimized parameters for each of the experiments for our fix mass-to-light ratio model with the 12 radial bins.}
 \end{center}
-  
 \end{table}
 
-\textbf{Fix mass-to-light ratio with 10 radial bins}
+\newpage
 
-figure 4.7
+\begin{center}
+\textbf{Fix mass-to-light ratio with 10 radial bins}
+\end{center}
+
+Again, we set the mass-to-light ratio to $2.5$ and vary the rest of the parameters. This time we use 10 outer points to fit our model. The results are summarized in figure 4.7 and table 4.4.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{images/fix_gamma_refinado_10.png}
-\caption[Pg]{Pd}
+\caption[Best fit of our model with a fix mass-to-light ratio for the 10 radial bins]{Best fit to the observational data of the four experiments for our model with a fix mass-to-light ratio with the 10 outer radial bins.}
 \end{figure}
-
-Table 4.4
 
 \begin{table}[H]
 \begin{center}
@@ -312,11 +312,9 @@ Table 4.4
 	No Dark Matter &	$0.38$ &	$\thicksim$ & $ a = 2.38$ &	$\thicksim$ & $  M = 2.03 \times 10^{6}$ & 	$2.5$\\
     \hline
   \end{tabular} 
-\caption[It]{Ie}
+\caption[Optimized parameters for our fix mass-to-light ratio model with the 10 outer radial bins.]{The optimized parameters for each of the experiments for our fix mass-to-light ratio model with the 10 outer radial bins.}
 \end{center}
-  
 \end{table}
-
 
 \section{Stellar Population Synthesis with Starlight}
 
@@ -390,38 +388,13 @@ M_{s T} = 6.61 \times 10^{6}M_{\odot}
  
 This result is actually higher than some values  of the dynamical mass found in the literature and it should in principle, be smaller or at least equals to the dynamical mass, this discrepancy in our first approach to the mass determination is probably due to errors given by the extrapolation of the results of the detection area to the whole area of the cluster, because our detection area was very small ($\sim 0.2 \, arcmin^{2}$) compared to the cluster's size of more than $6,000 \, arcmin^{2}$. Still, the stellar population technique is consistent with the order of magnitude of the cluster's mass previously reported.  
 
-Figure 4.10
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=15cm]{images/Starlight_1.png}
-\caption[En]{Tt.}
-\end{figure}
-
-Table 4.5
-
-\begin{table}[H]
-\begin{center}
-\begin{tabular}{| c| c| c| c| c| c| c|}
-    \hline
-    \textbf{Experiment} & $\mathbf{\beta}$ & $\mathbf{a_{dm}} (pc)$ & $\mathbf{a_{s}} (pc)$ & $\mathbf{M_{dm}}$ ($M_{\odot}$) & $\mathbf{M_{s}}$ ($M_{\odot}$) & $\mathbf{\Gamma}$\\ \hline
-	Fix $a_s$ &	$0.95$ &	$58.0$ &	$2.23$ &	$8 \times 10^{4}$ &	$6.61 \times 10 ^{6}$ &	$2.3$\\ \hline
-	Full &	$0.96$ &	$7.36$ &	$50.0$ &	$1.35 \times 10^{6}$ &	$6.61 \times 10^{6}$ &	$1.88$\\ \hline
-  \end{tabular} 
-\caption[It]{Ie}
-\end{center}
-  
-\end{table}
-
-figure 4.11
+Now, if we perform the same experiments that we did before but this time we set the constraint of a stellar mass to the mass that we found with Starlight then we would get the following results summarized in figure 4.11 and table 4.5 (for the 12 radial bins)
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{images/Starlight_2.png}
-\caption[En]{Tct.}
+\caption[Best fit of our model with the mass found with the Starlight procedures for the 12 radial bins]{Best fit to the observational data of the four experiments for our model with the Starlight procedures for the 12 radial bins.}
 \end{figure}
-
-Table 4.6
 
 \begin{table}[H]
 \begin{center}
@@ -431,45 +404,39 @@ Table 4.6
 	Fix $a_s$ &	$0.88$ &	$56.98$ &	$2.23$ &	$8 \times 10^{4}$ &	$6.61 \times 10 ^{6}$ &	$1.6$\\ \hline
 	Full &	$0.96$ &	$7.6$ &	$12.0$ &	$6.88 \times 10^{5}$ &	$6.61 \times 10^{6}$ &	$0.9$\\ \hline
   \end{tabular} 
-\caption[It]{Ie}
+\caption[Optimized parameters for our model with the mass found with the Starlight procedures for the 12 radial bins.]{The optimized parameters for each of the experiments for our model with the mass found with the Starlight procedures for the 12 radial bins.}
 \end{center}
-  
 \end{table}
 
-By taking an error bar of 25\% we do the same procedures but with the smallest value of the mass that the error bar allows us to use, in this case the value of the stellar mass is $M_{s}=4.9 \times 10^{6} M_{\odot}$
-
-figure 4.12
+And doing it again for the 10 outer radial bins and the same experiments we get the results given in figure 4.10 and table 4.6
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=15cm]{images/Starlight_25_10.png}
-\caption[En]{Tct.}
+\includegraphics[width=15cm]{images/Starlight_1.png}
+\caption[Best fit of our model with the mass found with the Starlight procedures for the 10 outer radial bins]{Best fit to the observational data of the four experiments for our model with the Starlight procedures for the 10 outer radial bins.}
 \end{figure}
-
-Table 4.7
 
 \begin{table}[H]
 \begin{center}
 \begin{tabular}{| c| c| c| c| c| c| c|}
     \hline
     \textbf{Experiment} & $\mathbf{\beta}$ & $\mathbf{a_{dm}} (pc)$ & $\mathbf{a_{s}} (pc)$ & $\mathbf{M_{dm}}$ ($M_{\odot}$) & $\mathbf{M_{s}}$ ($M_{\odot}$) & $\mathbf{\Gamma}$\\ \hline
-	Fix $a_s$ &	$0.88$ &	$56.98$ &	$2.23$ &	$9 \times 10^{4}$ &	$4.9 \times 10 ^{6}$ &	$1.1$\\ \hline
-	Full &	$0.92$ &	$7.26$ &	$37.98$ &	$1.35 \times 10^{6}$ &	$4.9 \times 10^{6}$ &	$0.72$\\ \hline
+	Fix $a_s$ &	$0.95$ &	$58.0$ &	$2.23$ &	$8 \times 10^{4}$ &	$6.61 \times 10 ^{6}$ &	$2.3$\\ \hline
+	Full &	$0.96$ &	$7.36$ &	$50.0$ &	$1.35 \times 10^{6}$ &	$6.61 \times 10^{6}$ &	$1.88$\\ \hline
   \end{tabular} 
-\caption[It]{Ie}
+\caption[Optimized parameters for our model with the mass found with the Starlight procedures for the 10 outer radial bins.]{The optimized parameters for each of the experiments for our model with the mass found with the Starlight procedures for the 10 outer radial bins.}
 \end{center}
-  
 \end{table}
 
-figure 4.13
+As a last experiment, we want to take into account the big error bar in our calculation of the stellar mass found by Starlight, so comparing it with the reported values we decided to use the lowest possible value that an estimated error bar of 25\% would allow us to use. In this case the value of the stellar mass is $M_{s}=4.9 \times 10^{6} M_{\odot}$
+
+For the 12 radial bins the results are shown in figure 4.12 and table 4.7.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{images/Starlight_25_12.png}
-\caption[En]{Tct.}
+\caption[Best fits for our model with a mass value based on the Starlight procedures for the 12 radial bins.]{Best fit for each of the experiments for our model with a mass value found with the Starlight procedures for the 12 radial bins.}
 \end{figure}
-
-Table 4.8
 
 \begin{table}[H]
 \begin{center}
@@ -479,7 +446,27 @@ Table 4.8
 	Fix $a_s$ &	$0.88$ &	$56.98$ &	$2.23$ &	$9 \times 10^{4}$ &	$4.9 \times 10 ^{6}$ &	$0.82$\\ \hline
 	Full &	$0.98$ &	$13.26$ &	$31.98$ &	$1.98 \times 10^{6}$ &	$4.9 \times 10^{6}$ &	$0.66$\\ \hline
   \end{tabular} 
-\caption[It]{Ie}
+\caption[Optimized parameters for our model with a mass value based on the Starlight procedures for the 12 radial bins.]{The optimized parameters for each of the experiments for our model with a mass value found with the Starlight procedures for the 12 radial bins.}
 \end{center}
-  
 \end{table}
+
+And finally, for the 10 outer radial bins, we have the results of the best fits shown in figure 4.13 and table 4.8
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=15cm]{images/Starlight_25_10.png}
+\caption[Best fits for our model with a mass value based on the Starlight procedures for the 10 outer radial bins.]{Best fit for each of the experiments for our model with a mass value found with the Starlight procedures for the 10 outer radial bins.}
+\end{figure}
+
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{| c| c| c| c| c| c| c|}
+    \hline
+    \textbf{Experiment} & $\mathbf{\beta}$ & $\mathbf{a_{dm}} (pc)$ & $\mathbf{a_{s}} (pc)$ & $\mathbf{M_{dm}}$ ($M_{\odot}$) & $\mathbf{M_{s}}$ ($M_{\odot}$) & $\mathbf{\Gamma}$\\ \hline
+	Fix $a_s$ &	$0.88$ &	$56.98$ &	$2.23$ &	$9 \times 10^{4}$ &	$4.9 \times 10 ^{6}$ &	$1.1$\\ \hline
+	Full &	$0.92$ &	$7.26$ &	$37.98$ &	$1.35 \times 10^{6}$ &	$4.9 \times 10^{6}$ &	$0.72$\\ \hline
+  \end{tabular} 
+\caption[Optimized parameters for our model with a mass value based on the Starlight procedures for the 10 outer radial bins.]{The optimized parameters for each of the experiments for our model with a mass value found with the Starlight procedures for the 10 outer radial bins.}
+\end{center}  
+\end{table}
+
