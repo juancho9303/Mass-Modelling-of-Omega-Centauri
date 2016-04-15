@@ -38,4 +38,5 @@
 \contentsline {subsection}{\numberline {4.1.2}Fix mass-to-light ratio}{75}{subsection.165}
 \contentsline {section}{\numberline {4.2}Stellar Population Synthesis with Starlight}{77}{section.170}
 \contentsline {chapter}{\numberline {5}Conclusions}{83}{chapter.186}
-\contentsline {chapter}{Bibliography}{84}{chapter*.187}
+\contentsline {section}{\numberline {5.1}Future improvements}{85}{section.187}
+\contentsline {chapter}{Bibliography}{86}{chapter*.188}
