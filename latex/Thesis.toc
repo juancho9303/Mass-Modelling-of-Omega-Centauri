@@ -39,4 +39,4 @@
 \contentsline {section}{\numberline {4.2}Stellar Population Synthesis with Starlight}{77}{section.170}
 \contentsline {chapter}{\numberline {5}Conclusions}{83}{chapter.186}
 \contentsline {section}{\numberline {5.1}Future improvements}{85}{section.187}
-\contentsline {chapter}{Bibliography}{86}{chapter*.188}
+\contentsline {chapter}{Bibliography}{87}{chapter*.188}
