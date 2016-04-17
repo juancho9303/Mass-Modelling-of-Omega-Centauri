@@ -10,7 +10,7 @@ Our modelling is based on significant modifications to the Hernquist profile (He
 \rho(r)=\frac{M}{2\pi}\frac{a}{r}\frac{1}{\left(r+a\right)^{3}}
 \end{equation}
 
-It's associated cumulative mass is
+Where $a$ is the scalength. It's associated cumulative mass is
 
 \begin{equation}
 M(r)=M\frac{r^{2}}{(r+a)^{2}}
@@ -111,6 +111,8 @@ With \left\lbrace
 \right.
 \end{equation} 
 
+And
+
 \begin{equation}
 \textbf{C}(r)=\frac{\left(M_{dm}M_{s}\right)\left(\mathbf{c_{2}}+\mathbf{c_{3}}+a_{dm}\left(-\left(a_{dm}-a_{s}\right)a_{s}\mathbf{c_{4}}+\mathbf{c_{5}}\right)\right)}{\mathbf{c_{1}}}
 \end{equation}
@@ -143,7 +145,7 @@ Because we need to calculate the projected velocity dispersion profile, we need 
 \begin{figure}[H]
 \centering
 \includegraphics[width=11cm]{images/vel_vs_rad_bins.png}
-\caption[Radial bins used to calculate velocity dispersions]{Radial bins that we use to calculate the radial projected velocity dispersion in the cluster}
+\caption[Radial bins used to calculate velocity dispersions]{Radial bins that we use to calculate the radial projected velocity dispersion in the cluster using equation 4.20}
 \end{figure}
 
 The velocity dispersion is the standard deviation of the velocity
@@ -157,6 +159,8 @@ In order to do a proper modelling and fitting we need to take into account the e
 \begin{equation}
 \sigma(v\pm\Delta v)\approx \sigma(v)\pm \underbrace{\frac{\partial \sigma}{\partial v}\Delta v}_{\Delta \sigma}
 \end{equation}
+
+So the error of the projected velocity dispersion is
 
 \begin{equation}
 \Delta \sigma = \frac{1}{\sqrt{N}}\left(\sum_{i=1}^{n}\left(v_{i}-v\right)^{2}\right)^{-1/2}\sum_{i=1}^{n}\left(v_{i}-v\right)\Delta v
@@ -189,13 +193,13 @@ Because some authors (Jalali et al. 2012) state that there might be a medium-mas
 Noyola's measured photometric points. The triangles show photometric points obtained from ground based images by Trager et al. The dashed line is Trager’s Chebychev fit. The solid line is Noyola's smooth fit that we don't use for our fitting of the scalength. Figure taken from Noyola et al. 2013}
 \end{figure}
 
-Our fitting gives us an effective radius of $R_{e}=4.048$ and using the relation $R_{e}\approx1.8153a$ (Hernquist 1989), we find a stellar scalength of $a=2.23$ that we use for our set of experiments.
+Our fitting gives us an effective radius of $R_{e}=4.048$ and using the relation $R_{e}\approx1.8153a$ (Hernquist 1989), we find a stellar scalength of $a_{s}=2.23$ that we use for our set of experiments.
 
 \textbf{\textit{iii)}} We don't assume any of our parameters to be constant, we call this ``\textbf{\textit{Full}}". 
 
 \textbf{\textit{iv)}} We assume the cluster doesn't have any dark matter so the solution of the equation 4.9 is much simpler and it's given by 4.10, we call this ``\textbf{\textit{No Dark matter}}".
 
-Now, let's see the results for all of these experiments with the graphs that show the fitting and the optimized values of the parameters found for the minimum $\chi^{2}$
+Now, let's see the results for all of these experiments with the graphs that show the fitting and the optimized values of the parameters found for the minimum $\chi^{2}$:
 
 \newpage
 
@@ -342,7 +346,7 @@ On our case, we have to multiply by a factor of 1.216746 the intensity of the sp
 \caption[Extinction Correction]{This figure shows an integrated spectrum of the central region of Omega Centauri before and after the extinction correction is applied. The black line has the original flux values and the black line has the corrected flux, that is, the flux that would be observed if there wasn't any interstellar medium that obscures the light coming from the object.}
 \end{figure}
 
-Before running STARLIGHT one must assure that the wavelength range is correctly specified in the configuration file that also includes the database of the template spectra and the bad data organized in a mask file. When all of these is ready it is straightforward to run STARLIGHT with the following command:
+Before running STARLIGHT one must assure that the wavelength range is correctly specified in the configuration file that also includes the database of the template spectra and the bad data organized in a mask file. When all of these is ready it is straightforward to run STARLIGHT with the following command (in a linux-based computer):
 
 \begin{center}
 ./StarlightChains\_v04.exe $<$ Omega\_cen.in
@@ -353,7 +357,7 @@ The synthetic spectrum and the original one are shown in figure 4.9.
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{images/comparison.png}
-\caption[Synthetic spectrum of STARLIGHT]{Synthetic spectrum of Starlight in red, shifted in the y axis for doing the comparison with the original spectrum of Omega Centauri in blue.}
+\caption[Synthetic spectrum of STARLIGHT]{Synthetic spectrum of Starlight in red, shifted in the y axis for doing the comparison with the original spectrum of Omega Centauri in blue. Note how similar the spectra are, meaining that the results given by Starlight were very accurate}
 \end{figure}
  
 Now, besides the synthetic spectrum, the output file contains some useful results that one can use to calculate the mass of the stellar system. In our case, the relevant parameter that STARLIGHT gives is the stellar mass parameter given by:
@@ -393,7 +397,7 @@ Now, if we perform the same experiments that we did before but this time we set 
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{images/Starlight_2.png}
-\caption[Best fit of our model with the mass found with the Starlight procedures for the 12 radial bins]{Best fit to the observational data of the four experiments for our model with the Starlight procedures for the 12 radial bins.}
+\caption[Best fit of our model with the mass found with the Starlight procedures for the 12 radial bins]{Best fit to the observational data of the four experiments for our model with the Starlight procedures for the 12 radial bins. Note that the fitting with a fixed stellar scalength was very bad and didn't give us any valuable results of the parameters.}
 \end{figure}
 
 \begin{table}[H]
@@ -455,7 +459,7 @@ And finally, for the 10 outer radial bins, we have the results of the best fits 
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{images/Starlight_25_10.png}
-\caption[Best fits for our model with a mass value based on the Starlight procedures for the 10 outer radial bins.]{Best fit for each of the experiments for our model with a mass value found with the Starlight procedures for the 10 outer radial bins.}
+\caption[Best fits for our model with a mass value based on the Starlight procedures for the 10 outer radial bins.]{Best fit for each of the experiments for our model with a mass value found with the Starlight procedures for the 10 outer radial bins. Note that again, the fitting for the model with the fixed stellar scalength was very bad and didn't give any trustworthy results.}
 \end{figure}
 
 \begin{table}[H]

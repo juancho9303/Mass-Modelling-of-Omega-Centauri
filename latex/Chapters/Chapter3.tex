@@ -2,9 +2,9 @@
 
 \chapter{Observations and Analysis}
 
-In order to study this problem about the dynamics of Globular Clusters in our galaxy we need scientific data that allows us to build a model that fits our observations. Under supervision of professor Juan Carlos Mu\~noz Cuartas and with three other undergraduate students from the University of Antioquia a trip to the OPD (Pico dos Dias Observatory) was made to Brazil in May 2014, besides the observational experience of the students, the main purpose of the trip was to get important data for this project. We needed two sets of data corresponding to spectra and photometric images of different Globular Clusters
+In order to study $\omega$ Centauri, we need accurate data to build a robust model. Under supervision of professor Juan Carlos Mu\~noz Cuartas and with three other undergraduate students from the University of Antioquia, we made a trip to the OPD (Pico dos Dias Observatory in Brazil) in May 2014, besides the observational experience of the students, the main purpose of the trip was to get spectroscopic and photometric data of local globular clusters that would eventually be useful for this thesis.
 
-The spectroscopic data allows us to determine the relative motion of individual stars (in the case of individual spectra) to infer the velocity dispersion profile. The integrated spectra can give us information about the stellar populations and it can also be used to infer composite velocity dispersions due to the Doppler broadening of the spectral lines. The photometric data allows us to study the surface brightness distribution for them. We can use all of this information to infer the properties of the globular clusters' mass distribution in order to build complete dynamical models and therefore infer the amount of dark matter present in the globular clusters (if there is any).
+The spectroscopic data allows us to determine the relative motion of individual stars (in the case of individual spectra) to infer the velocity dispersion profile. The integrated spectra can give us information about the stellar populations and it can also be used to infer composite velocity dispersions due to the Doppler broadening of the spectral lines. The photometric data allows us to study the surface brightness distribution for them and it also allows us to make color-magnitude diagrams of the stellar systems.
 
 \section{Observational Procedures}
 
@@ -18,7 +18,7 @@ Our stay in OPD consisted of two days in the main dome for the spectroscopic dat
 
 \subsection{Spectroscopic Data}
 
-The first two days (May 14th and 15th) we took the spectroscopic data in the telescope P\&E with a diameter of 1.6m. The main instrument was the Cassegrain spectrograph with a CCD Ikon-L camera and Filters UBVRI. The control software we used was the recently installed software TCSPD which is built in a LabView environment for Windows (2010). Figure 3.2 shows the telescope from inside the dome.
+The first two days (May 14th and 15th) we took the spectroscopic data in the telescope P\&E with a diameter of 1.6m. The main instrument was the Cassegrain spectrograph with a CCD Ikon-L camera and Filters UBVRI. The control software we used was the recently installed software TCSPD which is built in a LabView environment for Windows (2010). Figure 3.2 shows the telescope from inside the dome and the objects we observed in OPD are organized in Table 3.1.
 
 \begin{figure}[H]
 \centering
@@ -26,7 +26,7 @@ The first two days (May 14th and 15th) we took the spectroscopic data in the tel
 \caption[Perkin-Elmer telescope used for Spectroscopy]{Perkin-Elmer telescope in the main dome in OPD used for the spectroscopic observations. Dominici et al. 2008}
 \end{figure}
 
-We made the observations of dome flats, bias frames, comparison lamp frames, calibration stars, some galaxies and certain globular clusters of the milky Way organized by the best observation times using Simbad and Stellarium for the estimations of the coordinates and times respectively. The objects we observed in OPD are organized in Table 3.1.
+We made the observations of dome flats, bias frames, comparison lamp frames, calibration stars, some galaxies and certain globular clusters of the milky Way organized by the best observation times using Simbad and Stellarium for the estimations of the coordinates and times respectively. 
 
 \begin{table}
 \begin{center}
@@ -153,19 +153,19 @@ For stars in $\omega$ Centauri, one must choose a very small aperture of the sky
 \caption[NGC5139 as observed in the V filter]{One of our reduced observations of $\omega$ Centauri in the V filter with an exposition time of 480 seconds. Note that the center of the cluster is too crowded so the photometry procedures must be done very carefully in order to reduce to the maximum the amount of noise that contributes to the stellar light contributions. The mote of dust in the top left corner (present in most of our observations) was successfully removed as it can be seen in this figure and it can now be used for aperture and PSF photometry.}
 \end{figure}
 
-With the task \textit{imexamine} I find a value for the FWHM of 6.4 which I will use to set the size of the apertures to do the photometry. For the size of the aperture containing each star I chose an aperture size of four times the FWHM of the point spread function associated to the stars because it is the one that best fits the photometry and minimizes the error (calculated for some stars pressing ``a" with the \textit{imexamine} task) and for the width of the aperture I chose I value of 2.5 times the FWHM.
+With the task \textit{imexamine} we find a value for the FWHM of 6.4 which we used to set the size of the apertures to do the photometry. For the size of the aperture containing each star we chose an aperture size of four times the FWHM of the point spread function associated to the stars because it is the one that best fits the photometry and minimizes the error (calculated for some stars pressing ``a" with the \textit{imexamine} task) and for the width of the aperture we chose a value of 2.5 times the FWHM.
 
-Another important value to take into account before editing the parameters in \textit{phot} is the medium value of the background on the sky, in the case of this cluster, I do an average on many different places in the background of the image and find a value of sigma for the image that is equal to 53.45.
+Another important value to take into account before editing the parameters in \textit{phot} is the medium value of the background on the sky, in the case of this cluster, we do an average on many different places in the background of the image and find a value of sigma for the image that is equal to 53.45.
 
-Now the photometry is done by changing some of the parameters including the readnoise and the gain. In the \textit{fitskyparts} task inside phot I set the inner radius called annulus to be 25.6 (4FWHM) and the intermediate width called dannulus of 16 (2.5FWHM). Finally, before running the task I make sure I do the photometry using various apertures because I want to see which one minimizes the errors. I set apertures to be 1FWHM, 1.5FWHM, 2FWHM, 2.5FWHM, 3FWHM, 3.5FWHM and finally run the task. The results of the magnitude found for one of the star as a function of the size of the aperture is displayed in figure 3.8.
+Now the photometry is done by changing some of the parameters including the readnoise and the gain. In the \textit{fitskyparts} task inside phot we set the inner radius called annulus to be 25.6 (4FWHM) and the intermediate width called dannulus of 16 (2.5FWHM). Finally, before running the task we make sure we do the photometry using various apertures because we want to see which one minimizes the errors. We set apertures to be 1FWHM, 1.5FWHM, 2FWHM, 2.5FWHM, 3FWHM, 3.5FWHM and finally run the task. The results of the magnitude found for one of the star as a function of the size of the aperture is displayed in figure 3.8.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=10cm]{images/aperture_size.png}
-\caption[Photometry results of Magnitudes vs Size of apertures]{Magnitude dependence on the aperture size for the aperture photometry procedures. The X-axis are chosen in terms of the measured value of the FWHM. We note that while the magnitude decreases for bigger apertures, the associated error increases because the cluster is too crowded.}
+\caption[Photometry results of Magnitudes vs Size of apertures]{Magnitude dependence on the size of the aperture for the aperture photometry procedures. The X-axis are chosen in terms of the measured value of the FWHM. We note that while the magnitude decreases for bigger apertures, the associated error increases because the cluster is too crowded.}
 \end{figure}
 
-As we can see in figure 3.8, the magnitude of the chosen star in the cluster decreases for bigger apertures but the error increases because the space around the star is crowded with more stars and noise coming from the stars in the background so we infer that for crowded areas like this one the best choice is a small aperture. Although the results may not be as convincing, the use of another technique of photometry allows us to compare the results and see if the choice of a small aperture is a good way to fix or avoid the problem of the big noise of the background. For this purpose we use the technique of Point Spread Function (PSF) Photometry. Based on the manual ``Creating a PSF for photometry with DAOphot" by Dave Zurek, 1999.
+As we can see in figure 3.8, the magnitude of the chosen star in the cluster decreases for bigger apertures but the error increases because the space around the star is crowded with more stars and noise coming from the stars in the background so we infer that for crowded areas like this one the best choice is a small aperture. Although the results may not be as convincing, the use of another technique of photometry allows us to compare the results and see if the choice of a small aperture is a good way to fix or avoid the problem of the big noise of the background. For this purpose we made the Point Spread Function (PSF) Photometry. Based on the manual ``Creating a PSF for photometry with DAOphot" by Dave Zurek, 1999.
 
 \subsection{PSF Photometry}
 
@@ -173,7 +173,7 @@ There exist many ways to count photons (photometry) for an image taken with a CC
 
 When doing photometry in a very crowded field, such as a globular cluster ($\omega$ Centauri in our case), where the profiles of stars overlap significantly, one must use de-blending techniques, such as point spread function (PSF) fitting, to determine the individual flux values of the overlapping sources because the noise of the background and the surrounding stars will always affect the aperture photometry in such a crowded cluster. 
 
-We selected our best data obtained in OPD to make a color-magnitude diagram of $\omega$ Centauri. Out of all the photometric images, we selected two images in the V and I band with exposition times of 480 seconds. We measured the instrumental magnitudes of thousands of stars in the cluster, by first doing the PSF modelling with some bright stars that were relatively isolated to surrounding stars in order to make the estimations more accurately.
+We selected our best data obtained in OPD to make a color-magnitude diagram of $\omega$ Centauri. Out of all the photometric images, we selected two images in the V and I band with exposition times of 480 seconds taken on May 18$^{th}$. We measured the instrumental magnitudes of thousands of stars in the cluster, by first doing the PSF modelling with some bright stars that were relatively isolated to surrounding stars in order to make the estimations more accurately.
 
 First, by determining the FWHM of some of the stars and the standard deviation of the background, we can edit the parameters of the tasks \textit{datapars}, \textit{fitskypars} and \textit{daofind} which are all included in the noao/digiphot/daophot package of IRAF. This values are found using the task \textit{imexamine} on interactive mode with ``a" for the FWHM of the stars and ``m" for the standard deviation of the background. 
 
@@ -207,16 +207,16 @@ With the task \textit{seepsf} another image will be created but this time it wil
 \caption[PSF image created by the task Seepsf]{Seepsf converts a sampled PSF lookup table to a PSF image which can be visualized}
 \end{figure}
 
-Finally, after the modelling of the PSF was made, the task \textit{allstar} does the photometry of the cluster using the results we just stored in the current directory. The results of the PSF photometry gave us magnitudes smaller for those stars than the results given by the aperture photometry but there is a constant difference for all the stars which we can assume to be a calibration constant between the two methods. 
+Finally, after the modelling of the PSF was made, the task \textit{allstar} does the photometry of the cluster using the results we just stored in the current directory. The results of the PSF photometry gave us magnitudes smaller for those stars than the results given by the aperture photometry but there is a constant difference for all the stars which we can assume to be a calibration constant between the two methods.
 
-When the PSF photometry is ready for the two filters (I and V) we can use the tasks \textit{tdump} and \textit{tmatch} to extract the instrumental magnitudes for the H-R diagram. 
+When the PSF photometry is ready for the two filters (I and V) we can use the tasks \textit{tdump} and \textit{tmatch} to extract the instrumental magnitudes. We note that our V-band image has some saturation problems so the PSF didn't come out as accurate as expected. This affects many of the calculated magnitudes of the stars so that we needed to be careful in choosing only the non-saturated stars, taking out more than half of the final data to reproduce our color-magnitude diagram of the cluster 
 
-Our color-magnitude diagram in the V and I bands is shown in figure 3.12.
+The final color-magnitude diagram in the V and I bands is shown in figure 3.12.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=12cm]{images/HR-diagram.png}
-\caption[Color magnitude diagram of Omega Centauri with our photometric data]{Color magnitude diagram of $\omega$ Centauri in the I and V bands made with OPD data observed on May 18$^{th}$. The horizontal branch (HB) can be identified in the left crowded area of the diagram, as well as some stars belonging to the Turn off (TO) and main sequence (MS)  regions in the bottom right of the diagram. The red giant branch should be in the top right region but it's not observed probably due to the saturation problems and the precision of the instrument used for the photometric data}
+\caption[Color magnitude diagram of Omega Centauri with our photometric data]{Color magnitude diagram of $\omega$ Centauri in the I and V bands made with OPD data observed on May 18$^{th}$. The horizontal branch (HB) can be identified in the left crowded area of the diagram, as well as some stars belonging to the main sequence (MS)  region in the bottom right of the diagram. The turn off is not observed probably due to the saturation problems and the precision of the instrument used for the photometric data}
 \end{figure}
 
 \section{Spectroscopy}
@@ -251,7 +251,7 @@ Figures 3.13 and 3.14 show a dirty and a clean spectrum, where every strong vert
   \centering
   \begin{minipage}[b]{0.49\textwidth}
     \includegraphics[width=\textwidth]{images/cluster_dirty.png}
-    \caption[Dirty spectrum of NGC5139]{The dirty cluster spectrum has a small signal to noise ratio, besides border effects (such as a big gradient) that need to be trimmed and cosmic rays.}
+    \caption[Dirty spectrum of NGC5139]{The dirty cluster spectrum has a small signal to noise ratio, besides border effects (such as a big gradient) and cosmic rays that need to be trimmed or taken out.}
   \end{minipage}
   \hfill
   \begin{minipage}[b]{0.49\textwidth}
@@ -354,7 +354,7 @@ In the first part, the calibration is made with one of the stars that are alread
 
 \textbf{The task standard}
 
-The task standard determines calibration pass-bands and writes them to a file called ``std". The trick here is to specify the location of the the input extinction and flux calibration files. To do that, I edit the parameters of standard with the following routes:
+The task standard determines calibration pass-bands and writes them to a file called ``std". The trick here is to specify the location of the the input extinction and flux calibration files. To do that, we edit the parameters of standard with the following routes:
 
 Extinction file:                              onedstds\$/ctioextindt.dat
 
@@ -362,7 +362,7 @@ Directory containing calibration data:   onedstds\$ctionewcal/
 
 Starname in calibration list:                l9239
 
-Where I chose the Star l9239 because it has the spectral range that we use in our calibration Stars. And running the task interactively would be enough for this step.
+Where we chose the Star l9239 because it has the spectral range that we use in our calibration Stars. And running the task interactively would be enough for this step.
 
 \textbf{The task sensfunc}
 
@@ -375,7 +375,7 @@ Finally ``q" exists the \textit{sensfunc} task and writes the sens.0001 image.
 
 The solution to each star to be calibrated is done with the task \textit{calibrate}. Editing the parameters of calibrate to set the appropriate extinction table: extinct onedstds\$ /ctioextinct.dat would be enough for this purpose. The task is run over all the wavelength calibrated spectra which had their airmass and other parameters appropriately set by the eso.set procedure. And finally it gives the flux-calibrated spectra ready for the relevant analysis concerning radial velocities.
 
-After the flux calibration, I notice that the extremes of the spectra have irregularities given by the flux calibration procedures, but that can be cut because they don't have any relevant information. For the star calibration I create a new copy from pixel 45 to 1860, and the same y-range than the original image using imcopy:
+After the flux calibration, we notice that the extremes of the spectra have irregularities given by the flux calibration procedures, but that can be cut because they don't have any relevant information. For the star calibration we create a new copy from pixel 45 to 1860, and the same y-range than the original image using imcopy:
 
 \begin{center}
 imcopy flux\_calib\_star\_fits[45:1860,*] cut\_flux\_calib\_star.fits
@@ -389,11 +389,11 @@ The wavelength and flux calibrated spectrum of the star HR4468, now ready to be 
 \caption[Flux calibrated spectrum of HR4468]{Flux calibrated spectrum of HR4468 calibration star}
 \end{figure}
 
-In order to normalize the spectrum, first I find the maximum value in the spectrum using minmax and then I divide the whole image by this value. 
+In order to normalize the spectrum, first we find the maximum value in the spectrum using minmax and then I divide the whole image by this value. 
 
-Something that can be very useful is to have the data of the spectrum in a different format so that it's information can be well used and analysed with simple programs like gnuplot, for this purpose, it is useful to create an Ascii table from the spectrum. For this purpose I need to first convert my image to a 1D image using the task \textit{scopy} and setting format=onedspec (this is only necessary if the spectrum was extracted in 2-D).
+Something that can be very useful is to have the data of the spectrum in a different format so that it's information can be well used and analysed with simple programs like gnuplot, for this purpose, it is useful to create an Ascii table from the spectrum. For this purpose we need to first convert my image to a 1D image using the task \textit{scopy} and setting format=onedspec (this is only necessary if the spectrum was extracted in 2-D).
 
-Now, with the image ready in 1-D, I use the task \textit{wspectext} to create the Ascii table like this:
+Now, with the image ready in 1-D, we use the task \textit{wspectext} to create the Ascii table like this:
 
 \begin{center}
 wspectext ready\_flux\_star.0001.fits normal\_cut\_flux\_star\_calib.txt
@@ -407,7 +407,7 @@ In principle, the same procedures hold for the star in the Globular Clusters, ev
 \caption[Spectrum of a prominent star of the NGC5139 globular cluster]{Spectrum of one of the most prominent stars in $\omega$ Centauri, after all the calibrations have been made}
 \end{figure}
 
-Although the noise is evidently higher than in the case of the spectrum of the calibration star, it is possible to see (even with the naked eye) two of the calcium strong absorption lines around 8543\AA$ $ and 8663\AA. After all of these procedures have been made to the important stars in the clusters and the calibration stars, the next step is to explore the best way to determine radial velocities with the use of some sophisticated tasks in IRAF such as \textit{RVSAO}, as we discuss in the next section. 
+Although the noise is evidently higher than in the case of the spectrum of the calibration star, it is possible to see (even with the naked eye) two of the calcium strong absorption lines around 8543\AA$ $ and 8663\AA. After all of these procedures have been made to the important stars in the clusters and the calibration stars, the next step is to explore and understand the best way to determine radial velocities with the use of some sophisticated tasks in IRAF such as \textit{RVSAO}, as we discuss in the next section. 
 
 \section{Radial velocity determination}
 
