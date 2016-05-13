@@ -15,28 +15,28 @@
 \contentsline {subsection}{\numberline {2.5.1}Potential Theory of Spherical Systems}{24}{subsection.31}
 \contentsline {subsection}{\numberline {2.5.2}Collisionless Systems}{29}{subsection.59}
 \contentsline {subsection}{\numberline {2.5.3}Dynamics}{31}{subsection.62}
-\contentsline {chapter}{\numberline {3}Observations and Analysis}{37}{chapter.86}
-\contentsline {section}{\numberline {3.1}Observational Procedures}{37}{section.87}
-\contentsline {subsection}{\numberline {3.1.1}Spectroscopic Data}{38}{subsection.89}
-\contentsline {subsection}{\numberline {3.1.2}Photometric Data}{40}{subsection.92}
-\contentsline {section}{\numberline {3.2}First step for Anaysis}{41}{section.94}
-\contentsline {section}{\numberline {3.3}Photometry}{42}{section.95}
-\contentsline {subsection}{\numberline {3.3.1}Aperture Photometry}{44}{subsection.98}
-\contentsline {subsection}{\numberline {3.3.2}PSF Photometry}{46}{subsection.101}
-\contentsline {section}{\numberline {3.4}Spectroscopy}{50}{section.106}
-\contentsline {subsection}{\numberline {3.4.1}Spectroscopic Reduction}{50}{subsection.107}
-\contentsline {subsection}{\numberline {3.4.2}Extraction}{52}{subsection.109}
-\contentsline {subsection}{\numberline {3.4.3}Wavelength Calibration}{53}{subsection.111}
-\contentsline {subsection}{\numberline {3.4.4}Flux Calibration}{56}{subsection.115}
-\contentsline {section}{\numberline {3.5}Radial velocity determination}{59}{section.118}
-\contentsline {subsection}{\numberline {3.5.1}RVSAO}{60}{subsection.119}
-\contentsline {subsection}{\numberline {3.5.2}FXCOR}{63}{subsection.125}
-\contentsline {section}{\numberline {3.6}Databases}{65}{section.130}
-\contentsline {chapter}{\numberline {4}Modelling}{66}{chapter.132}
-\contentsline {section}{\numberline {4.1}Modified Hernquist Model}{66}{section.133}
-\contentsline {subsection}{\numberline {4.1.1}Full Modelling}{72}{subsection.159}
-\contentsline {subsection}{\numberline {4.1.2}Fix mass-to-light ratio}{76}{subsection.165}
-\contentsline {section}{\numberline {4.2}Stellar Population Synthesis with Starlight}{78}{section.170}
-\contentsline {chapter}{\numberline {5}Conclusions}{84}{chapter.186}
-\contentsline {section}{\numberline {5.1}Future improvements}{86}{section.187}
-\contentsline {chapter}{Bibliography}{88}{chapter*.188}
+\contentsline {chapter}{\numberline {3}Observations and Analysis}{36}{chapter.86}
+\contentsline {section}{\numberline {3.1}Observational Procedures}{36}{section.87}
+\contentsline {subsection}{\numberline {3.1.1}Spectroscopic Data}{37}{subsection.89}
+\contentsline {subsection}{\numberline {3.1.2}Photometric Data}{39}{subsection.92}
+\contentsline {section}{\numberline {3.2}First step for Anaysis}{40}{section.94}
+\contentsline {section}{\numberline {3.3}Photometry}{41}{section.95}
+\contentsline {subsection}{\numberline {3.3.1}Aperture Photometry}{43}{subsection.98}
+\contentsline {subsection}{\numberline {3.3.2}PSF Photometry}{45}{subsection.101}
+\contentsline {section}{\numberline {3.4}Spectroscopy}{49}{section.106}
+\contentsline {subsection}{\numberline {3.4.1}Spectroscopic Reduction}{49}{subsection.107}
+\contentsline {subsection}{\numberline {3.4.2}Extraction}{51}{subsection.109}
+\contentsline {subsection}{\numberline {3.4.3}Wavelength Calibration}{52}{subsection.111}
+\contentsline {subsection}{\numberline {3.4.4}Flux Calibration}{55}{subsection.115}
+\contentsline {section}{\numberline {3.5}Radial velocity determination}{58}{section.118}
+\contentsline {subsection}{\numberline {3.5.1}RVSAO}{59}{subsection.119}
+\contentsline {subsection}{\numberline {3.5.2}FXCOR}{62}{subsection.125}
+\contentsline {section}{\numberline {3.6}Databases}{64}{section.130}
+\contentsline {chapter}{\numberline {4}Modelling}{65}{chapter.132}
+\contentsline {section}{\numberline {4.1}Modified Hernquist Model}{65}{section.133}
+\contentsline {subsection}{\numberline {4.1.1}Full Modelling}{71}{subsection.159}
+\contentsline {subsection}{\numberline {4.1.2}Fix mass-to-light ratio}{75}{subsection.165}
+\contentsline {section}{\numberline {4.2}Stellar Population Synthesis with Starlight}{77}{section.170}
+\contentsline {chapter}{\numberline {5}Conclusions}{83}{chapter.186}
+\contentsline {section}{\numberline {5.1}Future improvements}{85}{section.187}
+\contentsline {chapter}{Bibliography}{87}{chapter*.188}
