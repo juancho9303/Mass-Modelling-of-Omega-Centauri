@@ -1,0 +1,10 @@
+plot 'sigma.dat' using 1:2:3 w yerrorbars ls 4, '' using 1:2 w lines ls 4 lw 2 notitle
+set grid
+set terminal png
+set output 'Sigma10.png'
+set nokey
+set title 'Sigma vs Radius'
+set xlabel 'Radius in Arcmin'
+set xrange [0:16]
+set ylabel 'Sigma (km/s)'
+replot 'sigma.dat' u 1:2:(sprintf("[%.2f,%.2f]",$5,$6)) with labels offset char 1,1

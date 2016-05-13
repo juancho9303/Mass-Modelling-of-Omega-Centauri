@@ -56,12 +56,12 @@ int main (void)
 	      skew = gsl_stats_skew(vel, 1, counter);
 	      kurtosis = gsl_stats_kurtosis (vel, 1, counter); 
 
-	      sum1 = pow((vel[i]-mean)*(vel[i]-mean),(-0.5));
+	      sum1 = (vel[i]-mean)*(vel[i]-mean);
 	      sum1++;
 	      sum2 = (vel[i]-mean)*err[i];
 	      sum2++;
 	      //error = 1.0/(sqrt(counter)) * (pow(,(-0.5))) * () * err[i];
-	       error = 1.0/(sqrt(counter)) * sum1 * sum2;
+	      error = 1.0/(sqrt(counter)) * pow(sum1,-0.5) * sum2;
 
 	    }
 	}

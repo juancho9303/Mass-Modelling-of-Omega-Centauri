@@ -1,0 +1,11 @@
+set grid
+set terminal png
+set output 'sigma2.png'
+#set nokey
+set title 'Sigma Proyectada vs R'
+set boxwidth 0.3
+set xrange [0.07:18.5]
+set yrange [2:13]
+set xlabel 'Radius in Arcmin'
+set ylabel 'Projected velocity dispersion in km/s'
+plot 'sigma.dat' using 1:2:3  w yerrorbars ls 1 title "A ojo", '' using 1:2 w lines ls 1 lw 2 notitle

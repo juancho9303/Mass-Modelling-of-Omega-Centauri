@@ -1,0 +1,28 @@
+plot 'sigma.dat' using 1:2:3 w yerrorbars ls 1, '' using 1:2 w lines ls 1 lw 1 notitle
+replot 'sigma2.dat' using 1:2:3 w yerrorbars ls 2, '' using 1:2 w lines ls 2 lw 1 notitle
+replot 'sigma3.dat' using 1:2:3 w yerrorbars ls 3, '' using 1:2 w lines ls 3 lw 1 notitle
+replot 'sigma4.dat' using 1:2:3 w yerrorbars ls 4, '' using 1:2 w lines ls 4 lw 1 notitle
+replot 'sigma5.dat' using 1:2:3 w yerrorbars ls 5, '' using 1:2 w lines ls 5 lw 1 notitle
+replot 'sigma6.dat' using 1:2:3 w yerrorbars ls 6, '' using 1:2 w lines ls 6 lw 1 notitle
+replot 'sigma7.dat' using 1:2:3 w yerrorbars ls 7, '' using 1:2 w lines ls 7 lw 1 notitle
+replot 'sigma8.dat' using 1:2:3 w yerrorbars ls 8, '' using 1:2 w lines ls 8 lw 1 notitle
+replot 'sigma9.dat' using 1:2:3 w yerrorbars ls 9, '' using 1:2 w lines ls 9 lw 1 notitle
+replot 'sigma11.dat' using 1:2:3 w yerrorbars ls 11, '' using 1:2 w lines ls 11 lw 1 notitle
+replot 'sigma12.dat' using 1:2:3 w yerrorbars ls 12, '' using 1:2 w lines ls 12 lw 1 notitle
+replot 'sigma13.dat' using 1:2:3 w yerrorbars ls 13, '' using 1:2 w lines ls 13 lw 1 notitle
+replot 'sigma14.dat' using 1:2:3 w yerrorbars ls 14, '' using 1:2 w lines ls 14 lw 1 notitle
+replot 'sigma15.dat' using 1:2:3 w yerrorbars ls 15, '' using 1:2 w lines ls 15 lw 1 notitle
+replot 'sigma16.dat' using 1:2:3 w yerrorbars ls 16, '' using 1:2 w lines ls 16 lw 1 notitle
+replot 'sigma17.dat' using 1:2:3 w yerrorbars ls 17, '' using 1:2 w lines ls 17 lw 1 notitle
+replot 'sigma18.dat' using 1:2:3 w yerrorbars ls 18, '' using 1:2 w lines ls 18 lw 1 notitle
+set grid
+set terminal png
+set output 'Sigma11.png'
+set nokey
+#set logscale
+set title 'Sigma vs Radius'
+set xlabel 'Radius in Arcmin'
+set xrange [0.29:16]
+set yrange [3:8]
+set ylabel 'Sigma (km/s)'
+replot 'sigma10.dat' using (log10($1)):2 w lp

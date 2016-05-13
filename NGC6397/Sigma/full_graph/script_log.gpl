@@ -1,0 +1,15 @@
+plot 'a_ojo.dat' using 1:2:3  w yerrorbars ls 1 title "A ojo", '' using 1:2 w lines ls 1 lw 2 notitle
+replot 'logaritmico.dat' using 1:2:3  w yerrorbars ls 6 title "Logaritmico", '' using 1:2 w lines ls 6 lw 2 notitle
+replot 'numero_constante.dat' using 1:2:3  w yerrorbars ls 3 title "Numero constante de estrellas por bin", '' using 1:2 w lines ls 3 lw 2 notitle
+set grid
+set terminal png
+set output 'sigma.png'
+#set nokey
+set title 'Sigma Proyectada vs R'
+set boxwidth 0.3
+set logscale x
+set xrange [0.07:20]
+set yrange [2:13]
+set xlabel 'Radius in Arcmin'
+set ylabel 'Projected velocity dispersion in km/s'
+replot 'como_Omega_Cen.dat' using 1:2:3  w yerrorbars ls 4 title "bines de Omega Cen", '' using 1:2 w lines ls 4 lw 2 notitle

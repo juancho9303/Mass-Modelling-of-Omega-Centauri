@@ -1,0 +1,28 @@
+plot 'sigma.dat' using (log10(60*$1)):2 w lp ls 1
+replot 'sigma2.dat' using (log10(60*$1)):2 w lp ls 2
+replot 'sigma3.dat' using (log10(60*$1)):2 w lp ls 3
+replot 'sigma4.dat' using (log10(60*$1)):2 w lp ls 4
+replot 'sigma5.dat' using (log10(60*$1)):2 w lp ls 5
+replot 'sigma6.dat' using (log10(60*$1)):2 w lp ls 6
+replot 'sigma7.dat' using (log10(60*$1)):2 w lp ls 7
+replot 'sigma8.dat' using (log10(60*$1)):2 w lp ls 8
+replot 'sigma9.dat' using (log10(60*$1)):2 w lp ls 9
+  replot 'sigma11.dat' using (log10(60*$1)):2 w lp ls 11
+  replot 'sigma12.dat' using (log10(60*$1)):2 w lp ls 12
+  replot 'sigma13.dat' using (log10(60*$1)):2 w lp ls 13
+  replot 'sigma14.dat' using (log10(60*$1)):2 w lp ls 14
+  replot 'sigma15.dat' using (log10(60*$1)):2 w lp ls 15
+  replot 'sigma16.dat' using (log10(60*$1)):2 w lp ls 16
+  replot 'sigma17.dat' using (log10(60*$1)):2 w lp ls 17
+  replot 'sigma18.dat' using (log10(60*$1)):2 w lp ls 18
+set grid
+set terminal png
+set output 'Sigma11.png'
+set nokey
+#set logscale
+set title 'Sigma vs Radius'
+set xlabel 'Radius in Arcmin'
+set xrange [:]
+set yrange [3:8]
+set ylabel 'Sigma (km/s)'
+replot 'sigma10.dat' using (log10(60*$1)):2 w lp
