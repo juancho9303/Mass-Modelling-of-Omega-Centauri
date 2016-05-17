@@ -104,7 +104,9 @@ We did all of our procedures for $\omega$ Centauri, though they could be used fo
 
 The photometry was made by the two traditional methods, PSF photometry and Aperture Photometry; even though the magnitudes calculated using both methods are quite different, the calibration constant between the two methods gave a good relation between them and made us trust the photometry results.
 
-But first, the reduction of the data had to be done. The first step is to characterize the calibration images in order to see if there are any errors associated with the instrument or the way that the observations were made. By doing this we found that most of the flat-field images had brightness gradients in the corners and this was a problem we needed to correct because the increased value on the counts in these corners would affect the normalization of the super-flat that we would use to reduce the science data. Another systematic error that we found in all of our calibration and science frames was the presence of a strange water-looking figure at the top left corner of them, although it can be removed with the correct reduction, it obviously affected the CCD sensitivity by the time of the observations. Also, some filters showed a higher sensitivity to this systematic errors but at the end, the photometry could be made in the best data so that the dirty images don't affect our results.
+But first, the reduction of the data had to be done. The first step is to characterize the calibration images in order to see if there are any errors associated with the instrument or the way that the observations were made. By doing this we found that most of the flat-field images had brightness gradients in the corners and this was a problem we needed to correct because the increased value on the counts in these corners would affect the normalization of the super-flat that we would use to reduce the science data. 
+
+Another systematic error that we found in all of our calibration and science frames was the presence of a strange water-looking figure at the top left corner of them, although it can be removed with the correct reduction, it obviously affected the CCD sensitivity by the time of the observations. Also, some filters showed a higher sensitivity to this systematic errors but at the end, the photometry could be made in the best data so that the dirty images don't affect our results.
 
 In order to see how the data would be affected by the systematic errors we just mentioned, we produced a composite image using three images with the filters U,V and R and we did the same with the flats in those filters, the results are shown in figures 3.4 and 3.5.
   
@@ -179,11 +181,11 @@ First, by determining the FWHM of some of the stars and the standard deviation o
 
 After setting all the parameters of all of the individual tasks, we run \textit{daofind} which will find the stars that match the criteria we mentioned above and will create a text file with the coordinates of those stars and will give to each star an ID.
 
-The task \textit{tvmark} allows us to highlight the stars of the cluster in the display mode using the text file with the coordinates, and \textit{txdump} allows me to  put explicitly the coordinates of those stars in a text file that I use for the aperture photometry to make the first guess of the PSF of the stars.
+The task \textit{tvmark} allows us to highlight the stars of the cluster in the display mode using the text file with the coordinates, and \textit{txdump} allows us to  put explicitly the coordinates of those stars in a text file that we can be used for the aperture photometry to make the first guess of the PSF of the stars.
 
-The best way to correctly select the stars that will be used for the modelling of the PSF is by using the task \textit{pstselect} that will select the stars that are well isolated using statistical techniques. 
+The best way to correctly select the stars that will be used for the modelling of the PSF is by using the task \textit{pstselect} that will select the stars that are well isolated. 
 
-Once the stars are selected, the next step is to use the task \textit{psf} which matches the point spread functions of the input images, by running this task, one can visualize how the PSF is modelled for each star and accept or decline the results to be stored, the interactive mode allows us to take the decision by analysing the modelling like the one we can see in figure 3.9 where it actually shown that the target star is saturated but has the proper behaviour of the Gaussian fit.
+Once the stars are selected, the next step is to use the task \textit{psf} which matches the point spread functions of the input images, by running this task, one can visualize how the PSF is modelled for each star and accept or decline the results to be stored, the interactive mode allows us to take the decision by analysing the modelling like the one we can see in figure 3.9 where it actually shows that the target star is saturated but has the proper behaviour of the Gaussian fit.
 
 \begin{figure}[H]
 \centering
@@ -191,7 +193,7 @@ Once the stars are selected, the next step is to use the task \textit{psf} which
 \caption[PSF modelling]{Some examples of the PSF modelling. The interactive mode allows us to accept of decline the result by pressing ``a" or ``d". In the top left and bottom right panels, the PSF can't be modelled correctly because they contain the contributions of various stars, the bottom left image is too saturated and is declined as well. The one at the top right has little noise and is the closest to a soft Gaussian behaviour (even though it is still a little saturated) so it can be accepted to model the PSF.}
 \end{figure}
 
-After running \textit{psf}, there will be created an image that contains the residuals of the psf modelling which can be seen in figure 3.10.
+After running \textit{psf}, there will be an image that contains the residuals of the psf modelling which can be seen in figure 3.10.
 
 \begin{figure}[H]
 \centering
@@ -209,19 +211,17 @@ With the task \textit{seepsf} another image will be created but this time it wil
 
 Finally, after the modelling of the PSF was made, the task \textit{allstar} does the photometry of the cluster using the results we just stored in the current directory. The results of the PSF photometry gave us magnitudes smaller for those stars than the results given by the aperture photometry but there is a constant difference for all the stars which we can assume to be a calibration constant between the two methods.
 
-When the PSF photometry is ready for the two filters (I and V) we can use the tasks \textit{tdump} and \textit{tmatch} to extract the instrumental magnitudes. We note that our V-band image has some saturation problems so the PSF didn't come out as accurate as expected. This affects many of the calculated magnitudes of the stars so that we needed to be careful in choosing only the non-saturated stars, taking out more than half of the final data to reproduce our color-magnitude diagram of the cluster 
-
-The final color-magnitude diagram in the V and I bands is shown in figure 3.12.
-
 \begin{figure}[H]
 \centering
-\includegraphics[width=12cm]{images/HR-diagram.png}
+\includegraphics[width=11cm]{images/HR-diagram.png}
 \caption[Color magnitude diagram of Omega Centauri with our photometric data]{Color magnitude diagram of $\omega$ Centauri in the I and V bands made with OPD data observed on May 18$^{th}$. The horizontal branch (HB) can be identified in the left crowded area of the diagram, as well as some stars belonging to the main sequence (MS)  region in the bottom right of the diagram. The turn off is not observed probably due to the saturation problems and the precision of the instrument used for the photometric data}
 \end{figure}
 
+When the PSF photometry is ready for the two filters (I and V) we can use the tasks \textit{tdump} and \textit{tmatch} to extract the instrumental magnitudes. We note that our V-band image has some saturation problems so the PSF didn't come out as accurate as expected. This affects many of the calculated magnitudes of the stars so that we needed to be careful in choosing only the non-saturated stars, taking out more than half of the final data to reproduce our color-magnitude diagram of the cluster. The final color-magnitude diagram in the V and I bands is shown in figure 3.12.
+
 \section{Spectroscopy}
 
-In this section, we go through the procedures of reduction, extraction, calibrations and analysis of the spectra obtained in OPD. The spectroscopic data was the most important part of our observational data in Pico dos Dias since it had the best quality we could obtain in the many domes of the observatory. Also, spectra of this kind is not easy to find in the scientific databases so it could be used for one part of our modelling. We based our reduction and extraction procedures on ``A User's Guide to Reducing Slit Spectra with IRAF", by Phil Massey, Frank Valdes, and Jeannette Barnes, April 1992. 
+In this section, we go through the procedures of reduction, extraction, calibrations and analysis of the spectra obtained at OPD. The spectroscopic data was the most important part of our observational data in Pico dos Dias since it had the best quality we could obtain in the many domes of the observatory. Also, spectra of this kind is not easy to find in the scientific databases so it could be used for one part of our modelling. We based our reduction and extraction procedures on ``A User's Guide to Reducing Slit Spectra with IRAF", by Phil Massey, Frank Valdes, and Jeannette Barnes, April 1992. 
 
 \subsection{Spectroscopic Reduction}
 
@@ -264,7 +264,7 @@ The images above are just a fraction of the whole image which is actually longer
 
 \subsection{Extraction}
 
-Once the reduction is ready, we can proceed with the extraction of the spectra of the calibration stars and also the spectra of the stars in the clusters, this procedure is made with the task \textit{apall}. First, I did the extraction of the two calibration stars for each night of observation. For May 14th our calibration stars were HR4963 and HR4468 and for May 15th our calibration stars were HR4468 and HR7950.
+Once the reduction is ready, we can proceed with the extraction of the spectra of the calibration stars and also the spectra of the stars in the clusters, this procedure is made with the task \textit{apall}. First, we did the extraction of the two calibration stars for each night of observation. For May 14th our calibration stars were HR4963 and HR4468 and for May 15th our calibration stars were HR4468 and HR7950.
 
 Taking special care of correctly choosing the background, and with the following parameter configuration:
 
@@ -283,13 +283,17 @@ For the calibration star HR4468, the extracted spectrum looks like the one shown
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=9cm]{images/calib_star_apall.png}
+\includegraphics[width=12cm]{images/calib_star_apall.png}
 \caption[Spectrum of calibration star HR4468]{Extracted spectrum of HR4468, note that the dispersion axis is still in terms of pixels instead of Angstroms, this is fixed by doing the wavelength calibration, also the direction will be shifted because the strong sodium absorption lines are in the left end of the spectrum and they should be in the right end}
 \end{figure}
 
 \subsection{Wavelength Calibration}
 
-Once the spectrum is extracted, the following step is to calibrate it in wavelength in order to make it useful for scientific analysis. The wavelength calibration is made with the use of many tasks of IRAF like \textit{Identify}, \textit{Refspec} and \textit{Dispcor}. First, with \textit{identify} I use the interactive window in IRAF to select some prominent lines in the spectrum of the calibration lamps and assign them their correct wavelength using the theoretic spectrum of the lamp. In this case our calibration lamps were Ne-Ar (for May 14$^{th}$) and He-Ar (for May 15$^{th}$)  and OPD observatory provided us the theoretic distribution of emission lines of them. The lines look like the ones shown in figures 3.16 and 3.17
+Once the spectrum is extracted, the following step is to calibrate it in wavelength in order to make it useful for scientific analysis. The wavelength calibration is made with the use of many tasks of IRAF like \textit{Identify}, \textit{Refspec} and \textit{Dispcor}. 
+
+First, with \textit{identify} we use the interactive window in IRAF to select some prominent lines in the spectrum of the calibration lamps and assign them their correct wavelength using the theoretic spectrum of the lamp. In this case our calibration lamps were Ne-Ar (for May 14$^{th}$) and He-Ar (for May 15$^{th}$)  and OPD observatory provided us the theoretic distribution of emission lines of them. 
+
+The lines look like the ones shown in figures 3.16 and 3.17
 
 \begin{figure}[H]
   \centering
@@ -304,17 +308,15 @@ Once the spectrum is extracted, the following step is to calibrate it in wavelen
   \end{minipage}
 \end{figure}
 
-Running \textit{identify} in the interactive mode and using ``m" to select the larger lines and typing the wavelength, the task creates a file stored in a new folder ``database" with the pixels with their corresponding values in units of Angstroms. After that, the targets (Calibration Stars and Globular Clusters) need to be calibrated with these files so it is necessary to edit their header to assign them the reference frames. It is enough to change the REFSPEC1 image key header on each lamp file in order to set the wavelength calibration. 
-
-The task that actually does the calibration on wavelength for the science targets is \textit{dispcor}, it is only necessary to run the task over all the targets with their own wavelength calibrated lamp to get the calibrated spectrum which is the useful and important file to make the analysis of the width of the lines and their redshift.
-
-The wavelength calibrated spectrum of the star HR4468, after running \textit{dispcor} is show in figure 3.18.
+Running \textit{identify} in the interactive mode and using ``m" to select the larger lines and typing the wavelength, the task creates a file stored in a new folder ``database" with the pixels with their corresponding values in units of Angstroms. After that, the science data need to be calibrated with these files so it is necessary to edit their header to assign them the reference frames. It is enough to change the REFSPEC1 image key header on each lamp file in order to set the wavelength calibration. 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=8cm]{images/calib_star_wave.png}
-\caption[Wavelength calibrated spectrum of HR4468]{The spectrum has been wavelength calibrated as we can see in the horizontal axis which is in units of Angstroms. Note that the strong absorption lines are now in the right part of the spectrum, this is because in the process of making the wavelength calibration, the direction of the axis was changed.}
+\includegraphics[width=11cm]{images/calib_star_wave.png}
+\caption[Wavelength calibrated spectrum of HR4468]{The wavelength calibrated spectrum in units of Angstroms. Note that the strong absorption lines are now in the right part of the spectrum because in the wavelength calibration, the direction of the axis was changed.}
 \end{figure}
+
+The task that actually does this calibration is \textit{dispcor}, it is only necessary to run the task over all the targets with their own wavelength calibrated lamp to get the calibrated spectrum. The wavelength calibrated spectrum of the star HR4468, after running \textit{dispcor} is show in figure 3.18.
 
 In order to see if the wavelength calibration (using the lamps spectra) was correct we used another technique consisting of using a sky spectrum (with no stars or contaminating objects) and identifying some of the atmospheric lines on it, the calibration of the science data is then made with the identified lines in this spectrum. This should be an accurate procedure since the spectrum of the sky is taken exactly with the same instrument and configuration than the science objects and it contains the same atmospheric lines that the GCs spectra. 
 
@@ -366,7 +368,7 @@ Where we chose the Star l9239 because it has the spectral range that we use in o
 
 \textbf{The task sensfunc}
 
-The task \textit{standard} just recorded response of each standard star so the next step is to put the results together and find a proper wavelength dependence of instrumental sensitivity and atmosphere transparency using the task \textit{sensfunc}. It creates an image with a default name sens.0001. IRAF needs to have some general idea of atmospheric extinction before to start, so I set again extinct onedstds\$ /ctioextinct.dat.
+The task \textit{standard} just recorded response of each standard star so the next step is to put the results together and find a proper wavelength dependence of instrumental sensitivity and atmosphere transparency using the task \textit{sensfunc}. It creates an image with a default name sens.0001. IRAF needs to have some general idea of atmospheric extinction before to start, so we set again extinct onedstds\$ /ctioextinct.dat.
 
 Now, running the task interactively and taking into account that the function used to fit the instrumental response will be usually of very high order. A good idea is to use spline3 fitting (:function spline3) with some 20 pieces, i.e. (:order 20).
 Finally ``q" exists the \textit{sensfunc} task and writes the sens.0001 image.
@@ -385,13 +387,13 @@ The wavelength and flux calibrated spectrum of the star HR4468, now ready to be 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=8cm]{images/calib_star_flux.png}
+\includegraphics[width=12cm]{images/calib_star_flux.png}
 \caption[Flux calibrated spectrum of HR4468]{Flux calibrated spectrum of HR4468 calibration star}
 \end{figure}
 
-In order to normalize the spectrum, first we find the maximum value in the spectrum using minmax and then I divide the whole image by this value. 
+In order to normalize the spectrum, first we find the maximum value in the spectrum using minmax and then we divide the whole image by this value. 
 
-Something that can be very useful is to have the data of the spectrum in a different format so that it's information can be well used and analysed with simple programs like gnuplot, for this purpose, it is useful to create an Ascii table from the spectrum. For this purpose we need to first convert my image to a 1D image using the task \textit{scopy} and setting format=onedspec (this is only necessary if the spectrum was extracted in 2-D).
+Something that can be very useful is to have the data of the spectrum in a different format so that it's information can be well used and analysed with simple programs like gnuplot, for this purpose, it is useful to create an Ascii table from the spectrum. For this purpose we need to first convert our image to a 1D image using the task \textit{scopy} and setting format=onedspec (this is only necessary if the spectrum was extracted in 2-D).
 
 Now, with the image ready in 1-D, we use the task \textit{wspectext} to create the Ascii table like this:
 
@@ -403,7 +405,7 @@ In principle, the same procedures hold for the star in the Globular Clusters, ev
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=8cm]{images/cluster_star_flux.png}
+\includegraphics[width=12cm]{images/cluster_star_flux.png}
 \caption[Spectrum of a prominent star of the NGC5139 globular cluster]{Spectrum of one of the most prominent stars in $\omega$ Centauri, after all the calibrations have been made}
 \end{figure}
 
@@ -425,11 +427,13 @@ By using one of IRAF's templates \textit{``habtemp0.fits"} that covers the range
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=10cm]{images/xcsao.png}
+\includegraphics[width=12cm]{images/xcsao.png}
 \caption[XCSAO results]{The relevant part of XCSAO results, the cross correlation in this case is god and shows a well-behaved peack, the radial velocity of the star in this case is around $-30km/s$}
 \end{figure}
 
-The results of RVSAO have a really strong dependence on the quality of the template used for the cross correlation, and some of the IRAF spectra have different wavelength ranges and flux values on the characteristic lines so that they won't give reliable results. One is forced to create a template spectrum with the most prominent lines to be used to correlate the object spectrum. One task that can be very useful in the creation of the templates is \textit{rspectext} that creates an image spectrum from an ascii table where the user can set the dispersion to be assigned to the spectra, and the appropriate values for the flux and intensity of absorption or emission lines.
+The results of RVSAO have a really strong dependence on the quality of the template used for the cross correlation, and some of the IRAF spectra have different wavelength ranges and flux values on the characteristic lines so that they won't give reliable results. One is forced to create a template spectrum with the most prominent lines to be used to correlate the object spectrum. 
+
+One task that can be very useful in the creation of the templates is \textit{rspectext} that creates an image spectrum from an ascii table where the user can set the dispersion to be assigned to the spectra, and the appropriate values for the flux and intensity of absorption or emission lines.
 
 One of our created templates that holds information about some absorption lines including the calcium triplet and made using \textit{rspectext} is shown in table 3.2 and figure 3.23.
 
@@ -459,15 +463,20 @@ One of our created templates that holds information about some absorption lines 
   \end{minipage}
 \end{figure}
 
-Another important issue to be addressed when we analyse radial velocities is the fact that our ground based observations are done in a moving system around the Sun and around the galaxy so that the Doppler shift of the lines would be affected by this relative movement of the Earth with respect to the Sun's velocity that the Earth is attached to. The issue can be seen in the figure 3.24.
+Another important issue to be addressed when we analyse radial velocities is the fact that our ground based observations are done in a moving system around the Sun and around the galaxy so that the Doppler shift of the lines would be affected by this relative movement of the Earth with respect to the Sun's velocity that the Earth is attached to. 
+
+The issue can be seen in the figure 3.24.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=10cm]{images/bcvcor.png}
+\includegraphics[width=12cm]{images/bcvcor.png}
 \caption[The nature of the barycenter shift of radial velocities]{Correction of radial velocity observed from the earth to the radial velocity observed from the center of mass of the solar system shown at two different times in the earth's orbit, M. Kurtz, D. Mink 1993 \cite{1}}
 \end{figure}
 
-The barycenter correction of the spectra can be made using the task BCVCOR, the task calculates the correction of the barycenter velocity according to the date of the observation and edits the header of the image so that this information will be stored and read by other tasks like XCSAO by the time the radial velocity calculation is to be made. Another important task of the RVSAO package is EMSAO that computes redshifts by identifying shifted emission lines in the spectrum with respect to templates with emission lines in the rest frame. This task might be very useful if the spectra has strong emission features but the cross correlation techniques used by XCSAO might give a better choice if the spectrum has important absorption lines.
+The barycenter correction of the spectra can be made using the task BCVCOR, the task calculates the correction of the barycenter velocity according to the date of the observation and edits the header of the image so that this information will be stored and read by other tasks like XCSAO by the time the radial velocity calculation is to be made. 
+
+Another important task of the RVSAO package is EMSAO that computes redshifts by identifying shifted emission lines in the spectrum with respect to templates with emission lines in the rest frame. This task might be very useful if the spectra has strong emission features but the cross correlation techniques used by XCSAO might give a better choice if the spectrum has important absorption lines.
+
 As seen in the figure 3.26, EMSAO identifies the strong features of the spectrum to be measured using files in the IRAF database that contain information about emission lines with their given wavelength (this procedure was done for $\omega$ Centauri and other GCs but here we show the results for the cluster NGC1904).  
 
 \begin{figure}[H]
@@ -535,4 +544,6 @@ In the first part of our modelling, we focus on the radial profile of the projec
 \end{center}
 \end{table}
 
-Most of the radial velocity studies of $\omega$ Centauri that we found were made using one or two of the databases of table 3.3 so they were referred in most papers. Our selection criteria for the reliable data was based on how there were able to determine whether they were dealing with cluster members or with filed stars, and also by selecting preferably the ones that contained information about the outer region of the cluster (not only the center) because we wanted a smooth fit of a model that could reach the reported tidal radius of 45 arcmin (Trager, King \& Djorgovski 1995). We were very careful in using only data that had a reported error.
+Most of the radial velocity studies of $\omega$ Centauri that we found were made using one or two of the databases of table 3.3 so they were referred in most papers. Our selection criteria for the reliable data was based on how there were able to determine whether they were dealing with cluster members or with field stars, and also by selecting preferably the ones that contained information about the outer region of the cluster (not only the center) because we wanted a smooth fit of a model that could reach the reported tidal radius of 45 arcmin (Trager, King \& Djorgovski 1995). We were very careful in using only data that had a reported error.
+
+At the end, we had a large sample of 3749 stars distributed from a radial distance of 0.2 arcmin to 45 arcmin reaching the tidal radius of the cluster.  

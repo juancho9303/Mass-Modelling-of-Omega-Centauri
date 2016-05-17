@@ -26,13 +26,13 @@
 \contentsline {figure}{\numberline {3.9}{\ignorespaces PSF modelling}}{47}{figure.caption.102}
 \contentsline {figure}{\numberline {3.10}{\ignorespaces PSF residuals}}{47}{figure.caption.103}
 \contentsline {figure}{\numberline {3.11}{\ignorespaces PSF image created by the task Seepsf}}{48}{figure.caption.104}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Color magnitude diagram of Omega Centauri with our photometric data}}{49}{figure.caption.105}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Dirty spectrum of NGC5139}}{51}{figure.caption.108}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Clean spectrum of NGC5139}}{51}{figure.caption.108}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Color magnitude diagram of Omega Centauri with our photometric data}}{48}{figure.caption.105}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Dirty spectrum of NGC5139}}{50}{figure.caption.108}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Clean spectrum of NGC5139}}{50}{figure.caption.108}
 \contentsline {figure}{\numberline {3.15}{\ignorespaces Spectrum of calibration star HR4468}}{52}{figure.caption.110}
 \contentsline {figure}{\numberline {3.16}{\ignorespaces Emission lines for the Ne-Ar calibration lamp}}{53}{figure.caption.112}
 \contentsline {figure}{\numberline {3.17}{\ignorespaces Theoric emisison lines of a Ne-Ar lamp}}{53}{figure.caption.112}
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Wavelength calibrated spectrum of HR4468}}{54}{figure.caption.113}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Wavelength calibrated spectrum of HR4468}}{53}{figure.caption.113}
 \contentsline {figure}{\numberline {3.19}{\ignorespaces Comparison between the two wavelength calibration methods}}{55}{figure.caption.114}
 \contentsline {figure}{\numberline {3.20}{\ignorespaces Zoomed comparison between the two wavelength calibration methods}}{55}{figure.caption.114}
 \contentsline {figure}{\numberline {3.21}{\ignorespaces Flux calibrated spectrum of HR4468}}{57}{figure.caption.116}
@@ -45,15 +45,16 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Radial velocity database}}{69}{figure.caption.153}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Radial bins used to calculate velocity dispersions}}{69}{figure.caption.154}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Surface brightness profile of Omega Centauri}}{71}{figure.caption.160}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Best fit of the full model for 12 radial bins}}{73}{figure.caption.161}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Best fit of the full model for 10 radial bins}}{74}{figure.caption.163}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Best fit of our model with a fix mass-to-light ratio for the 12 radial bins}}{75}{figure.caption.166}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Best fit of our model with a fix mass-to-light ratio for the 10 radial bins}}{76}{figure.caption.168}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Extinction Correction}}{78}{figure.caption.172}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Synthetic spectrum of STARLIGHT}}{78}{figure.caption.173}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Best fit of our model with the mass found with the Starlight procedures for the 12 radial bins}}{80}{figure.caption.178}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Best fit of our model with the mass found with the Starlight procedures for the 10 outer radial bins}}{81}{figure.caption.180}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Best fits for our model with a mass value based on the Starlight procedures for the 12 radial bins.}}{81}{figure.caption.182}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Best fits for our model with a mass value based on the Starlight procedures for the 10 outer radial bins.}}{82}{figure.caption.184}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Histograms for some of the radial bins in our profile}}{70}{figure.caption.156}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Extinction Correction}}{72}{figure.caption.163}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Synthetic spectrum of STARLIGHT}}{73}{figure.caption.164}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Surface brightness profile of Omega Centauri}}{75}{figure.caption.169}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Best fit of the full model for 12 radial bins}}{76}{figure.caption.172}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Best fit of the full model for 10 radial bins}}{77}{figure.caption.175}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Best fit of our model with a fix mass-to-light ratio for the 12 radial bins}}{78}{figure.caption.178}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Best fit of our model with a fix mass-to-light ratio for the 10 radial bins}}{79}{figure.caption.181}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Best fit of our model with the mass found with the Starlight procedures for the 12 radial bins}}{80}{figure.caption.184}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Best fit of our model with the mass found with the Starlight procedures for the 10 outer radial bins}}{81}{figure.caption.187}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Best fits for our model with a mass value based on the Starlight procedures for the 12 radial bins.}}{82}{figure.caption.190}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Best fits for our model with a mass value based on the Starlight procedures for the 10 outer radial bins.}}{82}{figure.caption.192}
 \addvspace {10\p@ }
