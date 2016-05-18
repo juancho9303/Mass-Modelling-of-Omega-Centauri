@@ -36,14 +36,14 @@
 \contentsline {section}{\numberline {4.1}Hernquist Model}{65}{section.133}
 \contentsline {section}{\numberline {4.2}Setting constraints}{71}{section.160}
 \contentsline {subsection}{\numberline {4.2.1}Stellar Population Synthesis with Starlight}{71}{subsection.161}
-\contentsline {section}{\numberline {4.3}Results}{76}{section.170}
-\contentsline {subsection}{\numberline {4.3.1}Full Modelling including the inner region of the cluster}{76}{subsection.171}
-\contentsline {subsection}{\numberline {4.3.2}Full Modelling for the outer region of the cluster}{77}{subsection.174}
-\contentsline {subsection}{\numberline {4.3.3}Fix mass-to-light ratio including the inner region of the cluster}{78}{subsection.177}
-\contentsline {subsection}{\numberline {4.3.4}Fix mass-to-light ratio for the outer region of the cluster}{79}{subsection.180}
-\contentsline {subsection}{\numberline {4.3.5}Fix stellar mass including the inner region of the cluster}{80}{subsection.183}
-\contentsline {subsection}{\numberline {4.3.6}Fix stellar mass including for the outer region of the cluster}{81}{subsection.186}
-\contentsline {subsection}{\numberline {4.3.7}Starlight's stellar mass final analysis}{81}{subsection.189}
-\contentsline {chapter}{\numberline {5}Conclusions}{84}{chapter.194}
-\contentsline {section}{\numberline {5.1}Future improvements}{86}{section.195}
-\contentsline {chapter}{Bibliography}{88}{chapter*.196}
+\contentsline {section}{\numberline {4.3}Results}{77}{section.171}
+\contentsline {subsection}{\numberline {4.3.1}Full Modelling including the inner region of the cluster}{77}{subsection.172}
+\contentsline {subsection}{\numberline {4.3.2}Full Modelling for the outer region of the cluster}{78}{subsection.175}
+\contentsline {subsection}{\numberline {4.3.3}Fix mass-to-light ratio including the inner region of the cluster}{79}{subsection.178}
+\contentsline {subsection}{\numberline {4.3.4}Fix mass-to-light ratio for the outer region of the cluster}{80}{subsection.181}
+\contentsline {subsection}{\numberline {4.3.5}Fix stellar mass including the inner region of the cluster}{81}{subsection.184}
+\contentsline {subsection}{\numberline {4.3.6}Fix stellar mass including for the outer region of the cluster}{81}{subsection.187}
+\contentsline {subsection}{\numberline {4.3.7}Starlight's stellar mass final analysis}{82}{subsection.190}
+\contentsline {chapter}{\numberline {5}Conclusions}{85}{chapter.195}
+\contentsline {section}{\numberline {5.1}Future improvements}{87}{section.196}
+\contentsline {chapter}{Bibliography}{89}{chapter*.197}

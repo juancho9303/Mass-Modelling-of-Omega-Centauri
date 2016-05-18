@@ -238,9 +238,15 @@ And using the formula for the total mass in units of solar masses:
 M_{s}(M_{\odot})=M_{cor\_tot}\times10^{-17}\times4\pi d^{2}\times\left(3.826\times10^{33}\right)^{-1}
 \end{equation}
 
-Where $d$ is the luminosity distance in cm. This equation yields a stellar mass of $M_{\star}=243.462M_{\odot}$
+Where $d$ is the luminosity distance in cm. This equation yields a stellar mass of $M_{\star}=243.462M_{\odot}$ but it is only the mass estimated from the integrated spectrum of the detector area in the cluster, that as shown in Figure 4.6 is only a portion of the whole cluster.
 
-This mass is the stellar mass contained in the detection area (that in our set up configuration in OPD ends up to be $A_{D}=0.36\,pc^{2}$) of the integrated spectrum that we analysed with STARLIGHT so if we want to calculate the whole stellar mass of the system we must extrapolate this result to its whole effective area, noting that this will increase the error of the calculation.
+\begin{figure}[H]
+\centering
+\includegraphics[width=12cm]{images/OmegaCentauriii.jpg}
+\caption[Si]{S3}
+\end{figure}
+
+As this mass is the stellar mass contained only in the detection area (that in our set up configuration in OPD ends up to be $A_{D}=0.36\,pc^{2}$) we must extrapolate this result to its whole effective area to calculate the whole stellar mass of the system, noting that this will increase the error of the calculation.
 
 If we take the cluster's tidal radius of 40' and it's distance to the sun of $4808.39\,pc$ using a distance modulus of 13.41, then the total effective area (where the stellar mass could be calculated using stellar population synthesis) is $A_{OC}=9833.8\,pc^{2}$. 
 
@@ -258,14 +264,13 @@ M_{s T} = 6.61 \times 10^{6}M_{\odot}
  
 This result is actually larger than some values  of the dynamical mass found in the literature and it should in principle, be smaller or at least equal to the dynamical mass, this discrepancy in our first approach to the mass determination is probably due to errors given by the extrapolation of the results of the detection area to the whole area of the cluster, because our detection area was very small ($\sim 0.2 \, arcmin^{2}$) compared to the cluster's size of more than $6,000 \, arcmin^{2}$. Still, the stellar population technique is consistent with the order of magnitude of the cluster's mass previously reported. 
 
-
 This first set of experiments consisted of the variation of every parameter of our modelling, that is, dark matter mass $M_{dm}$, stellar mass $M_{s}$, dark matter scalength $a_{dm}$, stellar scalength $a_{s}$, mass-to-light ratio $\Gamma$ and parameter of anisotropy $\beta$.
 
 Because some authors (Jalali et al. 2012) state that there might be a medium-mass black hole at the center of $\omega$ Centauri, we decided to conduct two different fittings, one with the central region of the cluster (12 radial bins) and other without the central region of the cluster (10 radial bins), and in each group of experiments we made four basic assumptions to take into account all the possibilities of our modelling:
 
 \textbf{\textit{i)}} In this one, we don't use the crossed terms in equation 4.13, because we wanted to see how relevant they were in the modelling, we call this ``\textbf{\textit{No crossed terms}}". 
 
-\textbf{\textit{ii)}} We assume a constant stellar scalength, we call this ``\textbf{\textit{Fix $a_{s}$}}". Because we wanted to be as accurate as possible in our modelling we found a way to calculate the stellar scalength and use is as a constraint to our modelling. We found the value of $a_{s}$ by fitting the effective radius in a de Vaucouleurs profile on the surface brightness of Eva Noyola's observational data (Noyola et al. 2013) shown in figure 4.4
+\textbf{\textit{ii)}} We assume a constant stellar scalength, we call this ``\textbf{\textit{Fix $a_{s}$}}". Because we wanted to be as accurate as possible in our modelling we found a way to calculate the stellar scalength and use is as a constraint to our modelling. We found the value of $a_{s}$ by fitting the effective radius in a de Vaucouleurs profile on the surface brightness of Eva Noyola's observational data (Noyola et al. 2013) shown in figure 4.7
 
 \begin{figure}[H]
 \centering
@@ -282,13 +287,11 @@ Our fitting gives us an effective radius of $R_{e}=4.048$ and using the relation
 
 Now we describe one by one the experiments we made to model the mass distribution of the globular cluster using the $\chi^{2}$ minimization technique.
 
-%\newpage
-
 \section{Results}
 
 \subsection{Full Modelling including the inner region of the cluster}
 
-In this set of experiments we do the variation of all the parameters and we use the whole sample of 12 velocity dispersions to be fitted. The results are summarized in figure 4.5 and table 4.1.
+In this set of experiments we do the variation of all the parameters and we use the whole sample of 12 velocity dispersions to be fitted. The results are summarized in figure 4.8 and table 4.1.
 
 \begin{figure}[H]
 \centering
@@ -311,11 +314,9 @@ In this set of experiments we do the variation of all the parameters and we use 
 \end{center}
 \end{table}
 
-%\newpage
-
 \subsection{Full Modelling for the outer region of the cluster}
 
-In this set of experiments we do the variation of all the parameters and we use the 10 of the 12 points of the velocity dispersions because we want to avoid the problems in the center of the cluster and search for a smoother behaviour in the fitting of our model. The results are summarized in figure 4.6 and table 4.2.
+In this set of experiments we do the variation of all the parameters and we use the 10 of the 12 points of the velocity dispersions because we want to avoid the problems in the center of the cluster and search for a smoother behaviour in the fitting of our model. The results are summarized in figure 4.9 and table 4.2.
 
 \begin{figure}[H]
 \centering
@@ -339,14 +340,11 @@ In this set of experiments we do the variation of all the parameters and we use 
   
 \end{table}
 
-%\subsection{Fix mass-to-light ratio}
-
 In the following set of experiments, the mass-to-light ratio we used was $\Gamma = 2.5$ (Van de Ven et al. 2005) and the results were the following: 
 
 \subsection{Fix mass-to-light ratio including the inner region of the cluster}
 
-
-We vary all the parameters except for the mass to light ratio $\Gamma$ that, as we just showed, has a value of $2.5$ and we use 12 points to fit the model. The results are summarized in figure 4.7 and table 4.3.
+We vary all the parameters except for the mass to light ratio $\Gamma$ that, as we just showed, has a value of $2.5$ and we use 12 points to fit the model. The results are summarized in figure 4.10 and table 4.3.
 
 \begin{figure}[H]
 \centering
@@ -369,11 +367,9 @@ We vary all the parameters except for the mass to light ratio $\Gamma$ that, as 
 \end{center}
 \end{table}
 
-%\newpage
-
 \subsection{Fix mass-to-light ratio for the outer region of the cluster}
 
-Again, we set the mass-to-light ratio to $2.5$ and vary the rest of the parameters. This time we use 10 outer points to fit our model. The results are summarized in figure 4.8 and table 4.4.
+Again, we set the mass-to-light ratio to $2.5$ and vary the rest of the parameters. This time we use 10 outer points to fit our model. The results are summarized in figure 4.11 and table 4.4.
 
 \begin{figure}[H]
 \centering
@@ -400,7 +396,7 @@ Now, if we perform the same experiments that we did before but this time we set 
 
 \subsection{Fix stellar mass including the inner region of the cluster}
 
- summarized in figure 4.11 and table 4.5 (for the 12 radial bins)
+ summarized in figure 4.12 and table 4.5 (for the 12 radial bins)
 
 \begin{figure}[H]
 \centering
@@ -422,7 +418,7 @@ Now, if we perform the same experiments that we did before but this time we set 
 
 \subsection{Fix stellar mass including for the outer region of the cluster}
 
-the results given in figure 4.12 and table 4.6
+the results given in figure 4.13 and table 4.6
 
 \begin{figure}[H]
 \centering
@@ -446,7 +442,7 @@ the results given in figure 4.12 and table 4.6
 
 As a last experiment, we want to take into account the big error bar in our calculation of the stellar mass found by Starlight, so comparing it with the reported values we decided to use the lowest possible value that an estimated error bar of 25\% would allow us to use. In this case the value of the stellar mass is $M_{s}=4.9 \times 10^{6} M_{\odot}$
 
-For the 12 radial bins the results are shown in figure 4.13 and table 4.7.
+For the 12 radial bins the results are shown in figure 4.14 and table 4.7.
 
 \begin{figure}[H]
 \centering
@@ -466,7 +462,7 @@ For the 12 radial bins the results are shown in figure 4.13 and table 4.7.
 \end{center}
 \end{table}
 
-And finally, for the 10 outer radial bins, we have the results of the best fits shown in figure 4.14 and table 4.8
+And finally, for the 10 outer radial bins, we have the results of the best fits shown in figure 4.15 and table 4.8
 
 \begin{figure}[H]
 \centering
