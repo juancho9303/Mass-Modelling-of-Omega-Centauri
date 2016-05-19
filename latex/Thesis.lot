@@ -7,12 +7,15 @@
 \contentsline {table}{\numberline {3.2}{\ignorespaces Imput data for the creation of template with rspectext}}{60}{table.caption.122}
 \contentsline {table}{\numberline {3.3}{\ignorespaces Database}}{64}{table.caption.131}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Optimized parameters for our full model with the 12 radial bins.}}{77}{table.caption.174}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Optimized parameters for our full model with the 10 outer radial bins.}}{78}{table.caption.177}
-\contentsline {table}{\numberline {4.3}{\ignorespaces Optimized parameters for our fix mass-to-light ratio model with the 12 radial bins.}}{79}{table.caption.180}
-\contentsline {table}{\numberline {4.4}{\ignorespaces Optimized parameters for our fix mass-to-light ratio model with the 10 outer radial bins.}}{80}{table.caption.183}
-\contentsline {table}{\numberline {4.5}{\ignorespaces Optimized parameters for our model with the mass found with the Starlight procedures for the 12 radial bins.}}{81}{table.caption.186}
-\contentsline {table}{\numberline {4.6}{\ignorespaces Optimized parameters for our model with the mass found with the Starlight procedures for the 10 outer radial bins.}}{82}{table.caption.189}
-\contentsline {table}{\numberline {4.7}{\ignorespaces Optimized parameters for our model with a mass value based on the Starlight procedures for the 12 radial bins.}}{83}{table.caption.192}
-\contentsline {table}{\numberline {4.8}{\ignorespaces Optimized parameters for our model with a mass value based on the Starlight procedures for the 10 outer radial bins.}}{84}{table.caption.194}
+\contentsline {table}{\numberline {4.1}{\ignorespaces My caption\relax }}{77}{table.caption.174}
+\contentsline {table}{\numberline {4.2}{\ignorespaces My caption\relax }}{78}{table.caption.176}
+\contentsline {table}{\numberline {4.3}{\ignorespaces My caption\relax }}{78}{table.caption.177}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Optimized parameters for our full model with the inner region.}}{79}{table.caption.180}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Optimized parameters for our full model without the inner region.}}{80}{table.caption.182}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Optimized parameters for our fix mass-to-light ratio model with the inner region.}}{81}{table.caption.184}
+\contentsline {table}{\numberline {4.7}{\ignorespaces Optimized parameters for our fix mass-to-light ratio model without the inner region.}}{82}{table.caption.186}
+\contentsline {table}{\numberline {4.8}{\ignorespaces Optimized parameters for our model with the mass found with the Starlight procedures with the inner region.}}{83}{table.caption.188}
+\contentsline {table}{\numberline {4.9}{\ignorespaces Optimized parameters for our model with the mass found with the Starlight procedures without the inner region.}}{84}{table.caption.190}
+\contentsline {table}{\numberline {4.10}{\ignorespaces Optimized parameters for our model with a mass value based on the Starlight procedures with the inner region.}}{84}{table.caption.193}
+\contentsline {table}{\numberline {4.11}{\ignorespaces Optimized parameters for our model with a mass value based on the Starlight procedures without the inner region.}}{85}{table.caption.195}
 \addvspace {10\p@ }
