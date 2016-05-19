@@ -235,7 +235,7 @@ Where $d$ is the luminosity distance in cm. This equation yields a stellar mass 
 \begin{figure}[H]
 \centering
 \includegraphics[width=12cm]{images/OmegaCentauriii.jpg}
-\caption[Si]{S3}
+\caption[Illustration of the detected area of the integrated spectrum]{Illustration of the detected area of the integrated spectrum of $\omega$ Centauri. The marked region represents the detected area in a bigger scale than it truly is, and has the angular dimensions shown in the figure. The dotted line represents the effective radius of the cluster (also in scale) that we use to extrapolate the results found for the detected area and make an approximation to what the whole stellar mass would be if we had an integrated spectrum of the whole globular cluster.}
 \end{figure}
 
 As this mass is the stellar mass contained only in the detection area (that in our set up configuration in OPD ends up to be $A_{D}=0.36\,pc^{2}$) we must extrapolate this result to its whole effective area to calculate the whole stellar mass of the system, noting that this will increase the error of the calculation.
@@ -279,16 +279,16 @@ The fitting gives an effective radius of $R_{e}=4.048pc$. We then use the relati
 Some authors (Jalali et al. 2012, Anderson \& Roeland. 2006) state that there might be a medium-mass black hole at the center of $\omega$ Centauri, so we need to take this into account if we want to make a proper modelling that is not affected by the presence of such a massive body in the velocity dispersion profile of the system.
 
 In some of our experiments, we will include the central region of the cluster (0.5 to 2.0 arcmin) and in the other set of experiments we will exclude these regions. In terms of the estimated bins, it means that some of the experiments will use the two first radial bins and the other experiments won't. 
-
+Note that in the above figures, there is a 
 \section{Procedures}
 
 For the mass modelling of the cluster, we do various experiments for studying the mass distribution of the cluster using the solutions to equations 4.10 and 4.13 taking into account the mentioned constraints. In order to do so, we run 24 different experiments that consist of the variation of every parameter of our modelling (that is, dark matter mass $M_{dm}$, stellar mass $M_{s}$, dark matter scalength $a_{dm}$, stellar scalength $a_{s}$, mass-to-light ratio $\Gamma$ and parameter of anisotropy $\beta$) depending on the conditions that we set for each experiment individually. Our procedures follow the following order:
 
-First, we constraint half of our experiments to the total velocity dispersion profile including the center of the cluster (0.5 to 45 arcmin) and we call this set of experiments "With Central Region"; the other half of the experiments is constrained to only the outer half of the cluster (2.0 to 45 arcmin) and we call them "Without Central Region". Next, we use the constraints given by the mass to light ratio found in the literature in a series of experiments that we call "Fixed $\Gamma$", also we use the constraint of the stellar mass (found with Starlight) $M_s$ that we call "Fixed $M_s$" and finally a set of experiments that don't have any of this constraints that we call "Full".
+First, we constraint half of our experiments to the total velocity dispersion profile including the center of the cluster (0.5 to 45 arcmin) and we call this set of experiments ``With Central Region"; the other half of the experiments is constrained to only the outer half of the cluster (2.0 to 45 arcmin) and we call them ``Without Central Region". Next, we use the constraints given by the mass to light ratio found in the literature in a series of experiments that we call ``Fixed $\Gamma$". Also we use the constraint of the stellar mass (found with Starlight) $M_s$ that we call ``Fixed $M_s$" and finally a set of experiments that don't have any of this constraints that we call ``Full".
 
 Now, for each of this sets of experiments we apply some other constraints that are shown as follows: 
 
-\textbf{\textit{i)}} In this one, we don't use the crossed terms in equation 4.13, because we wanted to see how relevant they were in the modelling, we call this ``\textbf{\textit{No crossed terms}}". 
+\textbf{\textit{i)}} In this one, we don't use the crossed terms (B(r) and C(r)) in equation 4.13, because we wanted to see how relevant they were in the modelling, we call this ``\textbf{\textit{No crossed terms}}". 
 
 \textbf{\textit{ii)}} We assume a constant stellar scalength, we call this ``\textbf{\textit{Fixed $a_{s}$}}", and we use the value of 2,23 found with the surface brightness technique. 
 
@@ -296,22 +296,22 @@ Now, for each of this sets of experiments we apply some other constraints that a
 
 \textbf{\textit{iv)}} We assume the cluster doesn't have any dark matter so the solution of the equation 4.9 is much simpler and it's given by 4.10, we call this ``\textbf{\textit{No Dark matter}}".
 
-The following table contains summarizes the experiments that we do and the order in which they were respectively done
+The following table summarizes the experiments that we do and the order in which they were respectively done
 
 \begin{table}[H]
 \centering
 \label{my-label}
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
 \hline
-\multicolumn{1}{|l|}{\multirow{3}{*}{}} & \multicolumn{4}{c|}{\multirow{2}{*}{\textbf{With Central Region}}}                      & \multicolumn{4}{c|}{\multirow{2}{*}{\textbf{Without Central Region}}}                     \\
-\multicolumn{1}{|l|}{}                  & \multicolumn{4}{c|}{}                                                                   & \multicolumn{4}{c|}{}                                                                     \\ \cline{2-9} 
-\multicolumn{1}{|l|}{}                  & \textbf{Full}    & \textbf{Fixed $\gamma$}    & \multicolumn{2}{c|}{\textbf{Fixed $M_s$}} & \textbf{Full}     & \textbf{Fixed $\gamma$}     & \multicolumn{2}{c|}{\textbf{Fixed $M_s$}} \\ \hline
+\multicolumn{1}{|c|}{\multirow{3}{*}{\textbf{Experiment}}} & \multicolumn{4}{c|}{\multirow{2}{*}{\textbf{With Central Region}}}                      & \multicolumn{4}{c|}{\multirow{2}{*}{\textbf{Without Central Region}}}                     \\
+\multicolumn{1}{|l|}{}                  & \multicolumn{4}{c|}{}                                                                   & \multicolumn{4}{c|}{}                                                                    \\ \cline{2-9} 
+\multicolumn{1}{|l|}{}                  & \textbf{Full}    & \textbf{Fixed $\Gamma$}    & \multicolumn{2}{c|}{\textbf{Fixed $M_s$}} & \textbf{Full}     & \textbf{Fixed $\Gamma$}     & \multicolumn{2}{c|}{\textbf{Fixed $M_s$}} \\ \hline
 \textbf{No Crossed Terms}               & 1                & 5                       & $\sim$               & $\sim$              & 9                 & 13                       & $\sim$               & $\sim$              \\ \hline
 \textbf{Fixed $a_s$}                       & 2                & 6                       & 17                   & 21                  & 10                & 14                       & 19                   & 23                  \\ \hline
 \textbf{Full}                           & 3                & 7                       & 18                   & 22                  & 11                & 15                       & 20                   & 24                  \\ \hline
 \textbf{No Dark Matter}                 & 4                & 8                       & $\sim$               & $\sim$              & 12                & 16                       & $\sim$               & $\sim$              \\ \hline
 \end{tabular}
-\caption{My caption}
+\caption[Characteristics of all the experiments]{Characteristics of all the experiments in our modelling. Every experiment is represented with a number for reference in the analysis section. For all the studied constraints (such as the central region, stellar mass, stellar scalength, etc), the experiments are organized as shown above.}
 \end{table}
 
 The method that we use for finding the best values of each and every parameter in our experiments had to be able to calculate several large integrals and optimize all the given parameters. For this purpose we wrote some C-based programs that contained the integrals given in equations 4.10 and 4.13 and used many \textit{gsl} routines that allow us to make integrals, interpolations and optimize the large number of calculations. Because the functions that we wanted to fit did not have an analytic solution, we decided use a $\chi^{2}$ minimization method instead. 
@@ -324,7 +324,7 @@ This approximation method allows to fit curves to the observational data so that
 
 Where $N_{i}$ is the number of velocities used to calculate the velocity dispersion in bin $i$ (this was included to give more weight to the radial bins that were calculated with a higher number of data), and $n$ is the number of radial bins.
 
-Because we needed to vary the parameters as much as possible to take into account all the entries of the parameter matrix, we started every experiment by running the programs with a big $\Delta$ for every parameter and a large range as summarizes in table 4.2:
+Because we needed to vary the parameters as much as possible to take into account all the entries of the parameter matrix. We started every experiment by running the programs with a large range using the literature data and reported values as a reference, and we used a big $\Delta$ for every parameter because the computational time required for every fit is too long for a small shift in the values of the parameters. This is summarized in table 4.2.
 
 \begin{table}[H]
 \centering
@@ -336,10 +336,10 @@ Because we needed to vary the parameters as much as possible to take into accoun
 \textbf{$\mathbf{\Delta}$}  & 0.2  & 0.2      & 5.0     & 5.0     & 5.0      & 5.0            \\ \hline
 \textbf{Range} & 0.1 - 3.0      & 0.001 - 1.0        & 1.0 - 80.0      & 1.0 - 80.0   & 1.0 - 60.0      & 1.0 - 60.0            \\ \hline
 \end{tabular}
-\caption{My caption}
+\caption[Thick runs characteristics]{Characteristics of the first runs of our modelling that involve a huge range in the parameter space (to reach for all the possible values of the parameters) and a thick $\Delta$ (for computational time purposes).}
 \end{table}
 
-After this programs have been run, and we have found the parameters that best fit the observational data, we do a second run of the programs for each experiments with a smaller delta around the fitted parameter in the first run to make a better approximation of the real values as shown in table 4.3.
+After these programs have been run, and we have found some values of the parameters that best fit the observational data, we do a second run of the programs for each experiments with a smaller delta around the fitted parameter in the first run to make a better approximation of the real values as shown in table 4.3.
 
 \begin{table}[H]
 \centering
@@ -351,36 +351,50 @@ After this programs have been run, and we have found the parameters that best fi
 \textbf{$\mathbf{\Delta}$}  &  0.1 &  0.01     &  0.2    &  0.2   &  0.2    &  0.2          \\ \hline
 \textbf{Range} & $\Gamma_{1}\pm 0.2$   & $\beta_{1}\pm 0.03$        & $M_{s}_{1}\pm 2.0$      & $M_{dm}_{1}\pm 2.0$   & $a_{s}_{1}\pm 2.0$      & $a_{dm}_{1}\pm 2.0$            \\ \hline
 \end{tabular}
-\caption{My caption}
+\caption[Characteristics of the refined runs of the modelling]{Characteristics of the refined runs of the modelling. Note that the range used in these runs is a small region around the values found with the thick runs of the programs. Also, the $\Delta$ around which the parameters change is very small compared to the thick runs, so that the fitting of all the parameters is effectively refined.}
 \end{table}
 
+The results and interpretation of all the experiments are explained in the next section.
 
 \section{Results}
 
-In this set of experiments we do the variation of all the parameters and we use the whole sample of 12 velocity dispersions to be fitted. The results are summarized in figure 4.8 and table 4.4.
+In this section, we discuss the results given by the fitting of all the conducted experiments after the refined runs of the programs have been made. Every experiment will be referred to it's given number in table 4.1, where it's characteristics are explicitly shown.
+
+\subsection{Full fits with inner region (Experiments 1,2,3,4)}
+
+This set of experiments consist of the variation of all the parameters with the velocity dispersion profile that includes the central region of the globular cluster (the first two radial bins). The results of the fitted curve with the optimized parameters are shown in figure 4.8
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{images/all_params_refinado_12.png}
-\caption[Best fit of the full model with the inner region]{Best fit to the observational data of the four experiments for our full model with the inner region of the cluster.}
+\caption[Best fit of the full model with the inner region]{Best fit to the observational data of experiments 1,2,3, and 4 for our full model with the inner region of the cluster (in orange) and the observational data of radial velocity dispersions in the chosen radial bins (red). They are shown in different plots because in some cases they overlap too much for their behaviour to be clearly seen.}
+
 \end{figure}
+
+Note that in the above figures, the fitted curves reproduced the observational data consistently although every line has its own characteristics. In the case of experiments 1,3 and 4, there is an awkward behaviour of the line in the inner region that didn't seem to be a problem in the solution of the large integrals in equation 4.13 so it could be due to physical reasons such as a massive body in that region (we don't have enough arguments to explain why this strange behaviour only occurs in the fits where we include the inner region of the cluster). 
+
+The fitted values for the parameters that reproduce figure 4.8 are shown in table 4.4.
 
 \begin{table}[H]
 \begin{center}
 \begin{tabular}{| c | c | c | c | c | c | c| }
     \hline
     \textbf{Experiment} & $\mathbf{\beta}$ & $\mathbf{a_{dm}} (pc)$ & $\mathbf{a_{s}} (pc)$ & $\mathbf{M_{dm}}$ ($M_{\odot}$) & $\mathbf{M_{s}}$ ($M_{\odot}$) & $\mathbf{\Gamma}$\\ \hline
-	No Crossed terms & $0.62$ &	$15.8$ &	$29.0$ &	$5.6 \times 10^{5}$ &	$8.0 \times 10^{4}$ &	$2.2$\\ \hline
-	Fixed $a_s$ &	$0.0001$ &	$9.0$ &	$2.23$ &	$1.12 \times 10^{5}$ &	$1.06 \times 10 ^{6}$ &	$1.5$\\ \hline
-	Full &	$0.46$ &	$15.2$ &	$52.6$ &	$9 \times 10^{5}$ &	$9 \times 10^{5}$ &	$0.38$\\ \hline
-	No Dark Matter &	$0.26$ & $\thicksim$	& $3.64$  & $\thicksim$ & $  1.98 \times 10^{6}$ & 	$1.24$\\
+	No Crossed terms (1) & $0.62$ &	$15.8$ &	$29.0$ &	$5.6 \times 10^{5}$ &	$8.0 \times 10^{4}$ &	$2.2$\\ \hline
+	Fixed $a_s$ (2) &	$0.0001$ &	$9.0$ &	$2.23$ &	$1.12 \times 10^{5}$ &	$1.06 \times 10 ^{6}$ &	$1.5$\\ \hline
+	Full (3) &	$0.46$ &	$15.2$ &	$52.6$ &	$9 \times 10^{5}$ &	$9 \times 10^{5}$ &	$0.38$\\ \hline
+	No Dark Matter (4) &	$0.26$ & $\thicksim$	& $3.64$  & $\thicksim$ & $  1.98 \times 10^{6}$ & 	$1.24$\\
     \hline
   \end{tabular} 
-\caption[Optimized parameters for our full model with the inner region.]{The optimized parameters for each of the experiments for our full model with the inner region of the cluster.}
+\caption[Optimized parameters for our full model with the inner region.]{The optimized parameters for each of the experiments for our full model with the inner region of the cluster. }
 \end{center}
 \end{table}
 
-In this set of experiments we do the variation of all the parameters and we use the 10 of the 12 points of the velocity dispersions because we want to avoid the problems in the center of the cluster and search for a smoother behaviour in the fitting of our model. The results are summarized in figure 4.9 and table 4.5.
+\subsection{Full fits without the inner region (Experiments 9,10,11,12)}
+
+In this set of experiments we do the variation of all the parameters and we use only the outer region of the cluster (2.0 to 45 arcmin) because we want to avoid the problems in the center of the cluster and search for a smoother behaviour in the fitting of our model. 
+
+Figure 4.9 shows the fitted lines for experiments 9,10,11 and 12.
 
 \begin{figure}[H]
 \centering
@@ -388,25 +402,30 @@ In this set of experiments we do the variation of all the parameters and we use 
 \caption[Best fit of the full model without the inner region]{Best fit to the observational data of the four experiments for our full model without the inner region of the cluster.}
 \end{figure}
 
+The first thing we notice is that the strange behaviour in the centre of the cluster is different than in the previous fits, and is only shown in experiments 9 and 11. The curves are very satisfactory because they fit very well the observational data and show a smooth behaviour as expected. 
+
+The optimized parameters for this set of experiments are displayed in table 4.5.
+
 \begin{table}[H]
 \begin{center}
 \begin{tabular}{| c| c| c| c| c| c| c|}
     \hline
     \textbf{Experiment} & $\mathbf{\beta}$ & $\mathbf{a_{dm}} (pc)$ & $\mathbf{a_{s}} (pc)$ & $\mathbf{M_{dm}}$ ($M_{\odot}$) & $\mathbf{M_{s}}$ ($M_{\odot}$) & $\mathbf{\Gamma}$\\ \hline
-	No Crossed terms & $0.6$ &	$16$ &	$52.8$ &	$2.1 \times 10^{6}$ &	$2.72 \times 10^{6}$ &	$2.3$\\ \hline
-	Fixed $a_s$ &	$0.79$ &	$57.9$ &	$2.23$ &	$8 \times 10^{5}$ &	$3.43 \times 10 ^{6}$ &	$2.1$\\ \hline
-	Full &	$0.04$ &	$11.8$ &	$57.8$ &	$6 \times 10^{5}$ &	$9 \times 10^{5}$ &	$2.1$\\ \hline
-	No Dark Matter &	$0.78$ &	$\thicksim$ & $2.96$ &	$\thicksim$ & $ 3 \times 10^{6}$ & 	$1.94$\\
+	No Crossed terms (9) & $0.6$ &	$16$ &	$52.8$ &	$2.1 \times 10^{6}$ &	$2.72 \times 10^{6}$ &	$2.3$\\ \hline
+	Fixed (10) $a_s$ &	$0.79$ &	$57.9$ &	$2.23$ &	$8 \times 10^{5}$ &	$3.43 \times 10 ^{6}$ &	$2.1$\\ \hline
+	Full (11) &	$0.04$ &	$11.8$ &	$57.8$ &	$6 \times 10^{5}$ &	$9 \times 10^{5}$ &	$2.1$\\ \hline
+	No Dark Matter (12) &	$0.78$ &	$\thicksim$ & $2.96$ &	$\thicksim$ & $ 3 \times 10^{6}$ & 	$1.94$\\
     \hline
   \end{tabular} 
 \caption[Optimized parameters for our full model without the inner region.]{The optimized parameters for each of the experiments for our full model without the inner region of the cluster.}
 \end{center}
-  
 \end{table}
 
-In the following set of experiments, the mass-to-light ratio we used was $\Gamma = 2.5$ (Van de Ven et al. 2005) and the results were the following: 
+\subsection{Fixed $\Gamma$ ratio with the inner region (Experiments 5,6,7,8)}
 
-We vary all the parameters except for the mass to light ratio $\Gamma$ that, as we just showed, has a value of $2.5$ and we use 12 points to fit the model. The results are summarized in figure 4.10 and table 4.6.
+In the following set of experiments, we constrained the mass-to-light ratio to that found by Van de Ven et al. 2005 with a value of $\Gamma = 2.5$. 
+
+The first group of experiments are 5, 6, 7 and 8 as named in table 4.1. The constant mass-to-light ratio $\Gamma$ allows us to make a slightly more precise fitting of the other parameters because it needs a shorter computational time to calculate the other parameters. The fitted curves are shown in figure 4.10. 
 
 \begin{figure}[H]
 \centering
@@ -414,22 +433,26 @@ We vary all the parameters except for the mass to light ratio $\Gamma$ that, as 
 \caption[Best fit of our model with a fix mass-to-light ratio with the inner region]{Best fit to the observational data of the four experiments for our model with a fix mass-to-light ratio with the inner region of the cluster.}
 \end{figure}
 
+table 4.6.
+
 \begin{table}[H]
 \begin{center}
 \begin{tabular}{| c| c| c| c| c| c| c|}
     \hline
     \textbf{Experiment} & $\mathbf{\beta}$ & $\mathbf{a_{dm}} (pc)$ & $\mathbf{a_{s}} (pc)$ & $\mathbf{M_{dm}}$ ($M_{\odot}$) & $\mathbf{M_{s}}$ ($M_{\odot}$) & $\mathbf{\Gamma}$\\ \hline
-	No Crossed terms & $0.35$ &	$16.4$ &	$55.62$ &	$1.62 \times 10^{6}$ &	$2.1 \times 10^{6}$ &	$2.5$\\ \hline
-	Fixed $a_s$ &	$0.001$ &	$3.0$ &	$2.23$ &	$3 \times 10^{5}$ &	$5.0 \times 10 ^{5}$ &	$2.5$\\ \hline
-	Full &	$0.72$ &	$20.0$ &	$44.4$ &	$5.2 \times 10^{5}$ &	$8.0 \times 10^{4}$ &	$2.5$\\ \hline
-	No Dark Matter &	$0.001$ &	$\thicksim$ & $ 3.15$ &	$\thicksim$ & $ 1.52 \times 10^{6}$ & 	$2.5$\\
+	No Crossed terms (5) & $0.35$ &	$16.4$ &	$55.62$ &	$1.62 \times 10^{6}$ &	$2.1 \times 10^{6}$ &	$2.5$\\ \hline
+	Fixed $a_s$ (6) &	$0.001$ &	$3.0$ &	$2.23$ &	$3 \times 10^{5}$ &	$5.0 \times 10 ^{5}$ &	$2.5$\\ \hline
+	Full &	$0.72$ (7) &	$20.0$ &	$44.4$ &	$5.2 \times 10^{5}$ &	$8.0 \times 10^{4}$ &	$2.5$\\ \hline
+	No Dark Matter (8) &	$0.001$ &	$\thicksim$ & $ 3.15$ &	$\thicksim$ & $ 1.52 \times 10^{6}$ & 	$2.5$\\
     \hline
   \end{tabular} 
 \caption[Optimized parameters for our fix mass-to-light ratio model with the inner region.]{The optimized parameters for each of the experiments for our fix mass-to-light ratio model with the inner region of the cluster.}
 \end{center}
 \end{table}
 
-Again, we set the mass-to-light ratio to $2.5$ and vary the rest of the parameters. This time we use 10 outer points to fit our model. The results are summarized in figure 4.11 and table 4.7.
+\subsection{Fixed $\Gamma$ ratio without the inner region (Experiments 13,14,15,16)}
+
+Again, we set the mass-to-light ratio to $2.5$ and vary the rest of the parameters exluding the inner region of the cluster (0.5-2.0 arcmin) in experiments 13, 14, 15 and 16. The fitted curves are shown in figure 4.11
 
 \begin{figure}[H]
 \centering
@@ -437,44 +460,54 @@ Again, we set the mass-to-light ratio to $2.5$ and vary the rest of the paramete
 \caption[Best fit of our model with a fix mass-to-light ratio without the inner region]{Best fit to the observational data of the four experiments for our model with a fix mass-to-light ratio without the inner region f the cluster.}
 \end{figure}
 
+ and table 4.7.
+
 \begin{table}[H]
 \begin{center}
 \begin{tabular}{| c| c| c| c| c| c| c|}
     \hline
     \textbf{Experiment} & $\mathbf{\beta}$ & $\mathbf{a_{dm}} (pc)$ & $\mathbf{a_{s}} (pc)$ & $\mathbf{M_{dm}}$ ($M_{\odot}$) & $\mathbf{M_{s}}$ ($M_{\odot}$) & $\mathbf{\Gamma}$\\ \hline
-	No Crossed terms & $0.2$ &	$15.2$ &	$59.8$ &	$1.4 \times 10^{6}$ &	$2.1 \times 10^{6}$ &	$2.5$\\ \hline
-	Fixed $a_s$ &	$0.801$ &	$3.0$ &	$2.23$ &	$5 \times 10^{5}$ &	$1.0 \times 10 ^{5}$ &	$2.5$\\ \hline
-	Full &	$0.9$ &	$16.0$ &	$44.6$ &	$1.62 \times 10^{6}$ &	$1.42 \times 10^{6}$ &	$2.5$\\ \hline
-	No Dark Matter &	$0.38$ &	$\thicksim$ & $ 2.38$ &	$\thicksim$ & $  2.03 \times 10^{6}$ & 	$2.5$\\
+	No Crossed terms (13) & $0.2$ &	$15.2$ &	$59.8$ &	$1.4 \times 10^{6}$ &	$2.1 \times 10^{6}$ &	$2.5$\\ \hline
+	Fixed $a_s$ (14) &	$0.801$ &	$3.0$ &	$2.23$ &	$5 \times 10^{5}$ &	$1.0 \times 10 ^{5}$ &	$2.5$\\ \hline
+	Full (15) &	$0.9$ &	$16.0$ &	$44.6$ &	$1.62 \times 10^{6}$ &	$1.42 \times 10^{6}$ &	$2.5$\\ \hline
+	No Dark Matter (16) &	$0.38$ &	$\thicksim$ & $ 2.38$ &	$\thicksim$ & $  2.03 \times 10^{6}$ & 	$2.5$\\
     \hline
   \end{tabular} 
 \caption[Optimized parameters for our fix mass-to-light ratio model without the inner region.]{The optimized parameters for each of the experiments for our fix mass-to-light ratio model without the inner region of the cluster.}
 \end{center}
 \end{table} 
 
-Now, if we perform the same experiments that we did before but this time we set the constraint of a stellar mass to the mass that we found with Starlight then we would get the following results
+Now, we set the constraint of a stellar mass to the mass that we found with Starlight and get the following results.
 
- summarized in figure 4.12 and table 4.8 (for the 12 radial bins)
+\subsection{Fixed Stellar Mass with the inner region (Experiments 17,18)}
+
+We noted that the experiments where we didn't use the crossed terms in equation 4.13 differed very strongly from the experiments where we solved the whole equation. This means that those crossed terms need to be included in the correct fitting so we decided not to waste time running the ``No Crossed Terms" programs in the following experiments. Also, the ``No Dark Matter" experiments are not conducted since we would already be already constraining the total mass to be the stellar mass found with Starlight so that it would be a waste of time to run those programs.
+
+The experiments we run are ``Full" and ``Fix $a_s$" named as 17 and 18 in table 4.1 and the results are shown in figure 4.12.
 
 \begin{figure}[H]
-\centering
+\centering(14)
 \includegraphics[width=15cm]{images/Starlight_2.png}
 \caption[Best fit of our model with the mass found with the Starlight procedures with the inner region]{Best fit to the observational data of the four experiments for our model with the Starlight procedures with the inner region of the cluster. Note that the fitting with a fixed stellar scalength was very bad and didn't give us any valuable results of the parameters.}
 \end{figure}
+
+and table 4.8 
 
 \begin{table}[H]
 \begin{center}
 \begin{tabular}{| c| c| c| c| c| c| c|}
     \hline
     \textbf{Experiment} & $\mathbf{\beta}$ & $\mathbf{a_{dm}} (pc)$ & $\mathbf{a_{s}} (pc)$ & $\mathbf{M_{dm}}$ ($M_{\odot}$) & $\mathbf{M_{s}}$ ($M_{\odot}$) & $\mathbf{\Gamma}$\\ \hline
-	Fixed $a_s$ &	$0.88$ &	$56.98$ &	$2.23$ &	$8 \times 10^{4}$ &	$6.61 \times 10 ^{6}$ &	$1.6$\\ \hline
-	Full &	$0.96$ &	$7.6$ &	$12.0$ &	$6.88 \times 10^{5}$ &	$6.61 \times 10^{6}$ &	$0.9$\\ \hline
+	Fixed $a_s$ (17) &	$0.88$ &	$56.98$ &	$2.23$ &	$8 \times 10^{4}$ &	$6.61 \times 10 ^{6}$ &	$1.6$\\ \hline
+	Full (18) &	$0.96$ &	$7.6$ &	$12.0$ &	$6.88 \times 10^{5}$ &	$6.61 \times 10^{6}$ &	$0.9$\\ \hline
   \end{tabular} 
 \caption[Optimized parameters for our model with the mass found with the Starlight procedures with the inner region.]{The optimized parameters for each of the experiments for our model with the mass found with the Starlight procedures with the inner region of the cluster.}
 \end{center}
 \end{table}
 
-the results given in figure 4.13 and table 4.9
+\subsection{Fixed Stellar Mass without the inner region (Experiments 19,20)}
+
+Once again, we want to see how the centre of the cluster affects our results so we run experiments 19 and 20 for the outer region of $\omega$ Centauri. The fitted cures are shown in figure 4.13. 
 
 \begin{figure}[H]
 \centering
@@ -482,23 +515,26 @@ the results given in figure 4.13 and table 4.9
 \caption[Best fit of our model with the mass found with the Starlight procedures without the inner region]{Best fit to the observational data of the four experiments for our model without the Starlight procedures with the inner region of the cluster.}
 \end{figure}
 
+and table 4.9
+
 \begin{table}[H]
 \begin{center}
 \begin{tabular}{| c| c| c| c| c| c| c|}
     \hline
     \textbf{Experiment} & $\mathbf{\beta}$ & $\mathbf{a_{dm}} (pc)$ & $\mathbf{a_{s}} (pc)$ & $\mathbf{M_{dm}}$ ($M_{\odot}$) & $\mathbf{M_{s}}$ ($M_{\odot}$) & $\mathbf{\Gamma}$\\ \hline
-	Fixed $a_s$ &	$0.95$ &	$58.0$ &	$2.23$ &	$8 \times 10^{4}$ &	$6.61 \times 10 ^{6}$ &	$2.3$\\ \hline
-	Full &	$0.96$ &	$7.36$ &	$50.0$ &	$1.35 \times 10^{6}$ &	$6.61 \times 10^{6}$ &	$1.88$\\ \hline
+	Fixed $a_s$ (19) &	$0.95$ &	$58.0$ &	$2.23$ &	$8 \times 10^{4}$ &	$6.61 \times 10 ^{6}$ &	$2.3$\\ \hline
+	Full (20) &	$0.96$ &	$7.36$ &	$50.0$ &	$1.35 \times 10^{6}$ &	$6.61 \times 10^{6}$ &	$1.88$\\ \hline
   \end{tabular} 
 \caption[Optimized parameters for our model with the mass found with the Starlight procedures without the inner region.]{The optimized parameters for each of the experiments for our model with the mass found with the Starlight procedures without the inner region of the cluster.}
 \end{center}
 \end{table}
 
-\subsection{Starlight's stellar mass final analysis}
 
-As a last experiment, we want to take into account the big error bar in our calculation of the stellar mass found by Starlight, so comparing it with the reported values we decided to use the lowest possible value that an estimated error bar of 25\% would allow us to use. In this case the value of the stellar mass is $M_{s}=4.9 \times 10^{6} M_{\odot}$
+As the two last experiments, we want to take into account the big error bar in our calculation of the stellar mass found by Starlight, so comparing it with the reported values we decided to use the lowest possible value that an estimated error bar of 25\% would allow us to use. In this case the value of the stellar mass is $M_{s}=4.9 \times 10^{6} M_{\odot}$
 
-For the 12 radial bins the results are shown in figure 4.14 and table 4.10.
+\subsection{Final Fixed Stellar Mass with the inner region (Experiments 21,22)}
+
+shown in figure 4.14
 
 \begin{figure}[H]
 \centering
@@ -506,19 +542,23 @@ For the 12 radial bins the results are shown in figure 4.14 and table 4.10.
 \caption[Best fits for our model with a mass value based on the Starlight procedures with the inner region.]{Best fit for each of the experiments for our model with a mass value found with the Starlight procedures with the inner region of the cluster.}
 \end{figure}
 
+ and table 4.10.
+
 \begin{table}[H]
 \begin{center}
 \begin{tabular}{| c| c| c| c| c| c| c|}
     \hline
     \textbf{Experiment} & $\mathbf{\beta}$ & $\mathbf{a_{dm}} (pc)$ & $\mathbf{a_{s}} (pc)$ & $\mathbf{M_{dm}}$ ($M_{\odot}$) & $\mathbf{M_{s}}$ ($M_{\odot}$) & $\mathbf{\Gamma}$\\ \hline
-	Fixed $a_s$ &	$0.88$ &	$56.98$ &	$2.23$ &	$9 \times 10^{4}$ &	$4.9 \times 10 ^{6}$ &	$0.82$\\ \hline
-	Full &	$0.98$ &	$13.26$ &	$31.98$ &	$1.98 \times 10^{6}$ &	$4.9 \times 10^{6}$ &	$0.66$\\ \hline
+	Fixed $a_s$ (21) &	$0.88$ &	$56.98$ &	$2.23$ &	$9 \times 10^{4}$ &	$4.9 \times 10 ^{6}$ &	$0.82$\\ \hline
+	Full (22) &	$0.98$ &	$13.26$ &	$31.98$ &	$1.98 \times 10^{6}$ &	$4.9 \times 10^{6}$ &	$0.66$\\ \hline
   \end{tabular} 
 \caption[Optimized parameters for our model with a mass value based on the Starlight procedures with the inner region.]{The optimized parameters for each of the experiments for our model with a mass value found with the Starlight procedures with the inner region of the cluster.}
 \end{center}
 \end{table}
 
-And finally, for the 10 outer radial bins, we have the results of the best fits shown in figure 4.15 and table 4.11
+\subsection{Final Fixed Stellar Mass without the inner region (Experiments 23,24)}
+
+And finally, excluding the innermost region of the cluster, we have the results of the best fits shown in figure 4.15
 
 \begin{figure}[H]
 \centering
@@ -526,13 +566,15 @@ And finally, for the 10 outer radial bins, we have the results of the best fits 
 \caption[Best fits for our model with a mass value based on the Starlight procedures without the inner region.]{Best fit for each of the experiments for our model with a mass value found with the Starlight procedures without the inner region of the cluster. Note that again, the fitting for the model with the fixed stellar scalength was very bad and didn't give any trustworthy results.}
 \end{figure}
 
+ and table 4.11
+
 \begin{table}[H]
 \begin{center}
 \begin{tabular}{| c| c| c| c| c| c| c|}
     \hline
     \textbf{Experiment} & $\mathbf{\beta}$ & $\mathbf{a_{dm}} (pc)$ & $\mathbf{a_{s}} (pc)$ & $\mathbf{M_{dm}}$ ($M_{\odot}$) & $\mathbf{M_{s}}$ ($M_{\odot}$) & $\mathbf{\Gamma}$\\ \hline
-	Fixed $a_s$ &	$0.88$ &	$56.98$ &	$2.23$ &	$9 \times 10^{4}$ &	$4.9 \times 10 ^{6}$ &	$1.1$\\ \hline
-	Full &	$0.92$ &	$7.26$ &	$37.98$ &	$1.35 \times 10^{6}$ &	$4.9 \times 10^{6}$ &	$0.72$\\ \hline
+	Fixed $a_s$ (23) &	$0.88$ &	$56.98$ &	$2.23$ &	$9 \times 10^{4}$ &	$4.9 \times 10 ^{6}$ &	$1.1$\\ \hline
+	Full (24) &	$0.92$ &	$7.26$ &	$37.98$ &	$1.35 \times 10^{6}$ &	$4.9 \times 10^{6}$ &	$0.72$\\ \hline
   \end{tabular} 
 \caption[Optimized parameters for our model with a mass value based on the Starlight procedures without the inner region.]{The optimized parameters for each of the experiments for our model with a mass value found with the Starlight procedures without the inner region of the cluster.}
 \end{center}  
