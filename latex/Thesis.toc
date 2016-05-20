@@ -30,8 +30,8 @@
 \contentsline {subsection}{\numberline {3.4.4}Flux Calibration}{54}{subsection.115}
 \contentsline {section}{\numberline {3.5}Radial velocity determination}{57}{section.118}
 \contentsline {subsection}{\numberline {3.5.1}RVSAO}{58}{subsection.119}
-\contentsline {subsection}{\numberline {3.5.2}FXCOR}{61}{subsection.125}
-\contentsline {section}{\numberline {3.6}Databases}{63}{section.130}
+\contentsline {subsection}{\numberline {3.5.2}FXCOR}{60}{subsection.125}
+\contentsline {section}{\numberline {3.6}Databases}{62}{section.130}
 \contentsline {chapter}{\numberline {4}Modelling}{64}{chapter.132}
 \contentsline {section}{\numberline {4.1}Hernquist Model}{64}{section.133}
 \contentsline {section}{\numberline {4.2}Setting constraints}{70}{section.159}
