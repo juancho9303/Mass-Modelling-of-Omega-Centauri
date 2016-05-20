@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.1)  20 MAY 2016 01:12
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.1)  20 MAY 2016 01:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1230,7 +1230,12 @@ Overfull \hbox (2.8537pt too wide) in paragraph at lines 349--356
  [][] 
  []
 
-[77] <images/all_params_refinado_12.png, id=980, 912.40875pt x 635.37375pt>
+[77]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 369.
+
+<images/all_params_refinado_12.png, id=980, 912.40875pt x 635.37375pt>
 File: images/all_params_refinado_12.png Graphic file (type png)
 
 <use images/all_params_refinado_12.png>
@@ -1241,6 +1246,10 @@ Package pdftex.def Info: images/all_params_refinado_12.png used on input line 3
 Overfull \hbox (9.31827pt too wide) in paragraph at lines 371--372
  [][] 
  []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 380.
 
 [78 <./images/all_params_refinado_12.png>]
 
@@ -1259,7 +1268,10 @@ Overfull \hbox (9.31827pt too wide) in paragraph at lines 406--407
  [][] 
  []
 
-[79]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 414.
+
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 430.
@@ -1272,8 +1284,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 430.
 
-[80 <./images/all_params_refinado_10.png>]
-<images/fix_gamma_refinado_12.png, id=997, 928.21782pt x 648.92438pt>
+[79]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 436.
+
+<images/fix_gamma_refinado_12.png, id=991, 928.21782pt x 648.92438pt>
 File: images/fix_gamma_refinado_12.png Graphic file (type png)
 
 <use images/fix_gamma_refinado_12.png>
@@ -1285,11 +1301,11 @@ Overfull \hbox (9.31827pt too wide) in paragraph at lines 438--439
  [][] 
  []
 
+[80 <./images/all_params_refinado_10.png>]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 446.
 
-[81 <./images/fix_gamma_refinado_12.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 464.
@@ -1302,6 +1318,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 464.
 
+[81 <./images/fix_gamma_refinado_12.png>]
 <images/fix_gamma_refinado_10.png, id=1004, 928.21782pt x 648.17157pt>
 File: images/fix_gamma_refinado_10.png Graphic file (type png)
 
@@ -1314,15 +1331,7 @@ Overfull \hbox (9.31827pt too wide) in paragraph at lines 470--471
  [][] 
  []
 
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 476.
-
 [82 <./images/fix_gamma_refinado_10.png>]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 502.
-
 <images/Starlight_2.png, id=1010, 889.82437pt x 364.36125pt>
 File: images/Starlight_2.png Graphic file (type png)
 
@@ -1338,12 +1347,8 @@ Overfull \hbox (9.31827pt too wide) in paragraph at lines 504--505
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 510.
 
-[83]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 527.
-
-<images/Starlight_1.png, id=1015, 892.83563pt x 362.85562pt>
+[83 <./images/Starlight_2.png>]
+<images/Starlight_1.png, id=1016, 892.83563pt x 362.85562pt>
 File: images/Starlight_1.png Graphic file (type png)
 
 <use images/Starlight_1.png>
@@ -1358,12 +1363,8 @@ Overfull \hbox (9.31827pt too wide) in paragraph at lines 529--530
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 535.
 
-[84 <./images/Starlight_2.png>]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 554.
-
-<images/Starlight_25_12.png, id=1021, 884.55469pt x 353.82187pt>
+[84 <./images/Starlight_1.png>]
+<images/Starlight_25_12.png, id=1022, 884.55469pt x 353.82187pt>
 File: images/Starlight_25_12.png Graphic file (type png)
 
 <use images/Starlight_25_12.png>
@@ -1378,12 +1379,8 @@ Overfull \hbox (9.31827pt too wide) in paragraph at lines 556--557
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 562.
 
-[85 <./images/Starlight_1.png>]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 579.
-
-<images/Starlight_25_10.png, id=1027, 896.59969pt x 350.05782pt>
+[85 <./images/Starlight_25_12.png>]
+<images/Starlight_25_10.png, id=1028, 896.59969pt x 350.05782pt>
 File: images/Starlight_25_10.png Graphic file (type png)
 
 <use images/Starlight_25_10.png>
@@ -1394,12 +1391,7 @@ Overfull \hbox (9.31827pt too wide) in paragraph at lines 581--582
  [][] 
  []
 
-[86 <./images/Starlight_25_12.png> <./images/Starlight_25_10.png>]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 587.
-
-) (./Chapters/Chapter5.tex [87]
+[86 <./images/Starlight_25_10.png>]) (./Chapters/Chapter5.tex [87]
 Chapter 5.
 ------------------------------------------------------------------------------
  5 Conclusions
@@ -1476,7 +1468,7 @@ cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on Thesis.pdf (104 pages, 23390160 bytes).
+Output written on Thesis.pdf (104 pages, 23390208 bytes).
 PDF statistics:
  1269 PDF objects out of 1440 (max. 8388607)
  1031 compressed objects within 11 object streams
