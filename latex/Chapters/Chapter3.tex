@@ -10,7 +10,7 @@ The spectroscopic data allows us to determine the relative motion of individual 
 
 Our stay in OPD consisted of two days in the main dome for the spectroscopic data (using the Perkin-Elmer (P\&E) telescope with a 1.6m mirror and the Cassegrain Spectrograph) and four days in a smaller dome for the photometric data in the IAG telescope with a 0.6m mirror. Figure 3.1 shows the configuration of telescopes in the observatory.
 
-\begin{figure}[H]
+\begin{figure}[]
 \centering
 \includegraphics[width=10cm]{images/opd.jpg}
 \caption[OPD Observatory]{OPD observatory seen from the air, the big dome was used for the spectroscopic data and the small dome at the low right part of the photo for the photometric data. Dominici et al. 2008}
@@ -110,7 +110,7 @@ Another systematic error that we found in all of our calibration and science fra
 
 In order to see how the data would be affected by the systematic errors we just mentioned, we produced a composite image using three images with the filters U,V and R and we did the same with the flats in those filters, the results are shown in figures 3.4 and 3.5.
   
-\begin{figure}[H]
+\begin{figure}[]
   \centering
   \begin{minipage}[b]{0.47\textwidth}
     \includegraphics[width=\textwidth]{images/ngc_5139_dirty.png}
@@ -135,7 +135,7 @@ $\rightarrow$ Building Superflats: It is necessary to create a Superflat frame f
 
 $\rightarrow$ Divide the Superflats by the median: In order to normalize the flatfields we find the mode of each frame with \textit{imstatistics} and then divide them by that value using \textit{imarith}. An example of the normalized superflat at this point of the procedures is shown in figure 3.6.
 
-\begin{figure}[H]
+\begin{figure}[]
 \centering
 \includegraphics[width=8cm]{images/flat_I.png}
 \caption[Normalized Superflat for the filter I]{Example of one of the Normalized Superflats in the I filter. This frame contains most of the noise that we want to extract from our science data because it contains background contamination and the instrumental noise such as motes of dust of imperfections in the instruments that could lighten or obscure the science data. Note that in the top left corner, the mote of dust looks very big and affects considerable a huge detection area and it must be removed using this normalized flat on the science frame.}
@@ -211,7 +211,7 @@ With the task \textit{seepsf} another image will be created but this time it wil
 
 Finally, after the modelling of the PSF was made, the task \textit{allstar} does the photometry of the cluster using the results we just stored in the current directory. The results of the PSF photometry gave us magnitudes smaller for those stars than the results given by the aperture photometry but there is a constant difference for all the stars which we can assume to be a calibration constant between the two methods.
 
-\begin{figure}[H]
+\begin{figure}[]
 \centering
 \includegraphics[width=11cm]{images/HR-diagram.png}
 \caption[Color magnitude diagram of Omega Centauri with our photometric data]{Color magnitude diagram of $\omega$ Centauri in the I and V bands made with OPD data observed on May 18$^{th}$. The horizontal branch (HB) can be identified in the left crowded area of the diagram, as well as some stars belonging to the main sequence (MS)  region in the bottom right of the diagram. The turn off is not observed probably due to the saturation problems and the precision of the instrument used for the photometric data}
@@ -247,7 +247,7 @@ $\rightarrow$ Finally, the task we use to remove the cosmic rays is \textit{laco
 
 Figures 3.13 and 3.14 show a dirty and a clean spectrum, where every strong vertical trace is the spectrum of a star. The vertical direction is the dispersion (in wavelength) of the spectrum and the horizontal direction is the spatial separation between stars. Note that there are some strong horizontal lines that span all the spatial direction of the spectrum even in the clean one, they are atmospheric lines that need to be considered in the wavelength and flux calibration of the spectra.
 
-\begin{figure}[H]
+\begin{figure}[]
   \centering
   \begin{minipage}[b]{0.49\textwidth}
     \includegraphics[width=\textwidth]{images/cluster_dirty.png}
@@ -260,7 +260,7 @@ Figures 3.13 and 3.14 show a dirty and a clean spectrum, where every strong vert
   \end{minipage}
 \end{figure}
 
-The images above are just a fraction of the whole image which is actually longer in the vertical direction, we show only a fraction for visual purposes. As we did not take skyflats, some telluric lines are visible even in the reduced spectrum but this can be solved doing a correct calibration and carefully examining the extraction of the spectra of the stars.
+Figures 3.13 and 3.14 are just a fraction of the whole image which is actually longer in the vertical direction, we show only a fraction for visual purposes. As we did not take skyflats, some telluric lines are visible even in the reduced spectrum but this can be solved doing a correct calibration and carefully examining the extraction of the spectra of the stars.
 
 \subsection{Extraction}
 
@@ -467,7 +467,7 @@ Another important issue to be addressed when we analyse radial velocities is the
 
 The issue can be seen in the figure 3.24.
 
-\begin{figure}[H]
+\begin{figure}[]
 \centering
 \includegraphics[width=12cm]{images/bcvcor.png}
 \caption[The nature of the barycenter shift of radial velocities]{Correction of radial velocity observed from the earth to the radial velocity observed from the center of mass of the solar system shown at two different times in the earth's orbit, M. Kurtz, D. Mink 1993 \cite{1}}
@@ -479,7 +479,7 @@ Another important task of the RVSAO package is EMSAO that computes redshifts by 
 
 As seen in the figure 3.26, EMSAO identifies the strong features of the spectrum to be measured using files in the IRAF database that contain information about emission lines with their given wavelength (this procedure was done for $\omega$ Centauri and other GCs but here we show the results for the cluster NGC1904).  
 
-\begin{figure}[H]
+\begin{figure}[]
 \centering
 \includegraphics[width=13cm]{images/emsao.png}
 \caption[EMSAO results with the identification of lines]{EMSAO results with the identification of strong absorption lines in the integrated spectrum of the Globular Cluster NGC1904 but few emission, note that the spectrum has already a barycentric velocity correction (BCV) of $-13km/s$, specified in the header as explained before.}
@@ -491,7 +491,7 @@ One of the other techniques we used to study velocity dispersions in GCs spectra
 
 This IRAF package, very useful for radial determination decomposes every signal in a sum of sinusoidal functions through the Fourier transformation of a spectrum that has been wavelength calibrated. The product of the transformed signals generates the correlation function, which is similar to a Gaussian function and displayed in the irafterm after the task has been run. The stronger the correlation is, the higher the peak of the curve is, to a maximum of 1 (for the perfect correlation) in the case of an autocorrelation. Regarding the results of the correlation, the peak height is index of the superposing grade of the two spectra because it depends on the presence of the same absorption (or emission) lines as explained by V. Guglielmo et al. 2009.  See figure 3.27 for the results of the correlation.
 
-\begin{figure}[H]
+\begin{figure}[]
 \centering
 \includegraphics[width=10cm]{images/fxcor.png}
 \caption[FXCOR results for NGC1904]{FXCOR cross correlation results for NGC1904 with the IRAF template habtemp0 with a measured radial velocity of $-9.655km/s$, note that the peak has a well-behaved shape and it is the strongest peak so that the correlation gave good results.}

@@ -10,44 +10,44 @@
 \contentsline {section}{\numberline {2.1}Basics of Globular Clusters}{6}{section.10}
 \contentsline {section}{\numberline {2.2}Formation and evolution}{8}{section.13}
 \contentsline {section}{\numberline {2.3}Observational Properties}{12}{section.16}
-\contentsline {section}{\numberline {2.4}$\omega $ Centauri}{20}{section.25}
-\contentsline {section}{\numberline {2.5}Mass models and Dynamics}{24}{section.30}
-\contentsline {subsection}{\numberline {2.5.1}Potential Theory of Spherical Systems}{24}{subsection.31}
+\contentsline {section}{\numberline {2.4}$\omega $ Centauri}{19}{section.25}
+\contentsline {section}{\numberline {2.5}Mass models and Dynamics}{23}{section.30}
+\contentsline {subsection}{\numberline {2.5.1}Potential Theory of Spherical Systems}{23}{subsection.31}
 \contentsline {subsection}{\numberline {2.5.2}Collisionless Systems}{29}{subsection.59}
-\contentsline {subsection}{\numberline {2.5.3}Dynamics}{31}{subsection.62}
+\contentsline {subsection}{\numberline {2.5.3}Dynamics}{30}{subsection.62}
 \contentsline {chapter}{\numberline {3}Observations and Analysis}{36}{chapter.86}
 \contentsline {section}{\numberline {3.1}Observational Procedures}{36}{section.87}
-\contentsline {subsection}{\numberline {3.1.1}Spectroscopic Data}{37}{subsection.89}
+\contentsline {subsection}{\numberline {3.1.1}Spectroscopic Data}{36}{subsection.89}
 \contentsline {subsection}{\numberline {3.1.2}Photometric Data}{39}{subsection.92}
 \contentsline {section}{\numberline {3.2}First step for Anaysis}{40}{section.94}
 \contentsline {section}{\numberline {3.3}Photometry}{41}{section.95}
-\contentsline {subsection}{\numberline {3.3.1}Aperture Photometry}{43}{subsection.98}
+\contentsline {subsection}{\numberline {3.3.1}Aperture Photometry}{42}{subsection.98}
 \contentsline {subsection}{\numberline {3.3.2}PSF Photometry}{45}{subsection.101}
-\contentsline {section}{\numberline {3.4}Spectroscopy}{49}{section.106}
-\contentsline {subsection}{\numberline {3.4.1}Spectroscopic Reduction}{49}{subsection.107}
-\contentsline {subsection}{\numberline {3.4.2}Extraction}{51}{subsection.109}
-\contentsline {subsection}{\numberline {3.4.3}Wavelength Calibration}{52}{subsection.111}
-\contentsline {subsection}{\numberline {3.4.4}Flux Calibration}{55}{subsection.115}
-\contentsline {section}{\numberline {3.5}Radial velocity determination}{58}{section.118}
-\contentsline {subsection}{\numberline {3.5.1}RVSAO}{59}{subsection.119}
-\contentsline {subsection}{\numberline {3.5.2}FXCOR}{62}{subsection.125}
-\contentsline {section}{\numberline {3.6}Databases}{64}{section.130}
-\contentsline {chapter}{\numberline {4}Modelling}{65}{chapter.132}
-\contentsline {section}{\numberline {4.1}Hernquist Model}{65}{section.133}
-\contentsline {section}{\numberline {4.2}Setting constraints}{71}{section.159}
-\contentsline {subsection}{\numberline {4.2.1}Stellar mass}{71}{subsection.160}
-\contentsline {subsection}{\numberline {4.2.2}Stellar scalength}{75}{subsection.169}
-\contentsline {subsection}{\numberline {4.2.3}Central region}{76}{subsection.172}
-\contentsline {section}{\numberline {4.3}Procedures}{76}{section.173}
-\contentsline {section}{\numberline {4.4}Results}{79}{section.178}
-\contentsline {subsection}{\numberline {4.4.1}Full fits with inner region (Experiments 1,2,3,4)}{79}{subsection.179}
-\contentsline {subsection}{\numberline {4.4.2}Full fits without the inner region (Experiments 9,10,11,12)}{80}{subsection.182}
-\contentsline {subsection}{\numberline {4.4.3}Fixed $\Gamma $ ratio with the inner region (Experiments 5,6,7,8)}{81}{subsection.185}
-\contentsline {subsection}{\numberline {4.4.4}Fixed $\Gamma $ ratio without the inner region (Experiments 13,14,15,16)}{82}{subsection.188}
-\contentsline {subsection}{\numberline {4.4.5}Fixed Stellar Mass with the inner region (Experiments 17,18)}{83}{subsection.191}
-\contentsline {subsection}{\numberline {4.4.6}Fixed Stellar Mass without the inner region (Experiments 19,20)}{84}{subsection.194}
-\contentsline {subsection}{\numberline {4.4.7}Final Fixed Stellar Mass with the inner region (Experiments 21,22)}{85}{subsection.197}
-\contentsline {subsection}{\numberline {4.4.8}Final Fixed Stellar Mass without the inner region (Experiments 23,24)}{86}{subsection.200}
+\contentsline {section}{\numberline {3.4}Spectroscopy}{48}{section.106}
+\contentsline {subsection}{\numberline {3.4.1}Spectroscopic Reduction}{48}{subsection.107}
+\contentsline {subsection}{\numberline {3.4.2}Extraction}{49}{subsection.109}
+\contentsline {subsection}{\numberline {3.4.3}Wavelength Calibration}{51}{subsection.111}
+\contentsline {subsection}{\numberline {3.4.4}Flux Calibration}{54}{subsection.115}
+\contentsline {section}{\numberline {3.5}Radial velocity determination}{57}{section.118}
+\contentsline {subsection}{\numberline {3.5.1}RVSAO}{58}{subsection.119}
+\contentsline {subsection}{\numberline {3.5.2}FXCOR}{61}{subsection.125}
+\contentsline {section}{\numberline {3.6}Databases}{63}{section.130}
+\contentsline {chapter}{\numberline {4}Modelling}{64}{chapter.132}
+\contentsline {section}{\numberline {4.1}Hernquist Model}{64}{section.133}
+\contentsline {section}{\numberline {4.2}Setting constraints}{70}{section.159}
+\contentsline {subsection}{\numberline {4.2.1}Stellar mass}{70}{subsection.160}
+\contentsline {subsection}{\numberline {4.2.2}Stellar scalength}{73}{subsection.169}
+\contentsline {subsection}{\numberline {4.2.3}Central region}{74}{subsection.172}
+\contentsline {section}{\numberline {4.3}Procedures}{75}{section.173}
+\contentsline {section}{\numberline {4.4}Results}{77}{section.178}
+\contentsline {subsection}{\numberline {4.4.1}Full fits with inner region (Experiments 1, 2, 3 and 4)}{77}{subsection.179}
+\contentsline {subsection}{\numberline {4.4.2}Full fits without the inner region (Experiments 9, 10, 11 and 12)}{79}{subsection.182}
+\contentsline {subsection}{\numberline {4.4.3}Fixed $\Gamma $ ratio with the inner region (Experiments 5, 6, 7 and 8)}{80}{subsection.185}
+\contentsline {subsection}{\numberline {4.4.4}Fixed $\Gamma $ ratio without the inner region (Experiments 13, 14, 15 and 16)}{82}{subsection.188}
+\contentsline {subsection}{\numberline {4.4.5}Fixed Stellar Mass with the inner region (Experiments 17 and 18)}{83}{subsection.191}
+\contentsline {subsection}{\numberline {4.4.6}Fixed Stellar Mass without the inner region (Experiments 19 and 20)}{84}{subsection.194}
+\contentsline {subsection}{\numberline {4.4.7}Final Fixed Stellar Mass with the inner region (Experiments 21 and 22)}{85}{subsection.197}
+\contentsline {subsection}{\numberline {4.4.8}Final Fixed Stellar Mass without the inner region (Experiments 23 and 24)}{86}{subsection.200}
 \contentsline {chapter}{\numberline {5}Conclusions}{88}{chapter.203}
 \contentsline {section}{\numberline {5.1}Future improvements}{90}{section.204}
 \contentsline {chapter}{Bibliography}{92}{chapter*.205}

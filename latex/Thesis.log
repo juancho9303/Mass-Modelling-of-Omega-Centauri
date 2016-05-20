@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.1)  19 MAY 2016 16:13
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.1)  20 MAY 2016 01:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -689,7 +689,7 @@ Missing character: There is no Ã in font cmr10!
 Missing character: There is no © in font cmr10!
 [5
 
-] <images/m15.jpg, id=491, 903.375pt x 752.8125pt>
+] <images/m15.jpg, id=494, 903.375pt x 752.8125pt>
 File: images/m15.jpg Graphic file (type jpg)
  <use images/m15.jpg>
 Package pdftex.def Info: images/m15.jpg used on input line 17.
@@ -699,21 +699,29 @@ Package pdftex.def Info: images/m15.jpg used on input line 17.
 LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
 (Font)              using `OT1/cmr/bx/n' instead on input line 18.
 
-[6 <./images/m15.jpg>] <images/3_gcs.png, id=498, 961.34157pt x 316.18124pt>
+[6 <./images/m15.jpg>] <images/3_gcs.png, id=502, 961.34157pt x 316.18124pt>
 File: images/3_gcs.png Graphic file (type png)
 
 <use images/3_gcs.png>
 Package pdftex.def Info: images/3_gcs.png used on input line 39.
 (pdftex.def)             Requested size: 412.56496pt x 135.68993pt.
  [7] [8 <./images/3_gcs.png>] [9]
-<images/core_collapse.png, id=515, 496.85625pt x 459.96844pt>
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 71.
+
+<images/core_collapse.png, id=518, 496.85625pt x 459.96844pt>
 File: images/core_collapse.png Graphic file (type png)
 
 <use images/core_collapse.png>
 Package pdftex.def Info: images/core_collapse.png used on input line 73.
 (pdftex.def)             Requested size: 284.52756pt x 263.40596pt.
  [10]
-<images/anisotropy_core_collapse.png, id=520, 632.3625pt x 365.86688pt>
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 83.
+
+<images/anisotropy_core_collapse.png, id=523, 632.3625pt x 365.86688pt>
 File: images/anisotropy_core_collapse.png Graphic file (type png)
 
 <use images/anisotropy_core_collapse.png>
@@ -722,35 +730,35 @@ Package pdftex.def Info: images/anisotropy_core_collapse.png used on input line
 (pdftex.def)             Requested size: 341.43306pt x 197.54842pt.
  [11 <./images/core_collapse.png>]
 [12 <./images/anisotropy_core_collapse.png>] [13]
-<images/m55_diagram.jpg, id=538, 410.18108pt x 410.18108pt>
+<images/m55_diagram.jpg, id=541, 410.18108pt x 410.18108pt>
 File: images/m55_diagram.jpg Graphic file (type jpg)
 
 <use images/m55_diagram.jpg>
 Package pdftex.def Info: images/m55_diagram.jpg used on input line 116.
 (pdftex.def)             Requested size: 183.68916pt x 183.69101pt.
 
-<images/color-magnitude.png, id=539, 301.125pt x 280.04625pt>
+<images/color-magnitude.png, id=542, 301.125pt x 280.04625pt>
 File: images/color-magnitude.png Graphic file (type png)
 
 <use images/color-magnitude.png>
 Package pdftex.def Info: images/color-magnitude.png used on input line 121.
 (pdftex.def)             Requested size: 229.61145pt x 213.54669pt.
  [14 <./images/m55_diagram.jpg> <./images/color-magnitude.png>] <images/metal.p
-ng, id=545, 432.86719pt x 424.58624pt>
+ng, id=548, 432.86719pt x 424.58624pt>
 File: images/metal.png Graphic file (type png)
 
 <use images/metal.png>
 Package pdftex.def Info: images/metal.png used on input line 136.
 (pdftex.def)             Requested size: 227.62204pt x 223.26744pt.
  [15 <./images/metal.png>]
-<images/fornax-2-400.jpg, id=552, 401.5pt x 392.46625pt>
+<images/fornax-2-400.jpg, id=555, 401.5pt x 392.46625pt>
 File: images/fornax-2-400.jpg Graphic file (type jpg)
 
 <use images/fornax-2-400.jpg>
 Package pdftex.def Info: images/fornax-2-400.jpg used on input line 147.
 (pdftex.def)             Requested size: 204.56409pt x 199.96349pt.
 
-<images/fornax-3-400.jpg, id=553, 401.5pt x 392.46625pt>
+<images/fornax-3-400.jpg, id=556, 401.5pt x 392.46625pt>
 File: images/fornax-3-400.jpg Graphic file (type jpg)
 
 <use images/fornax-3-400.jpg>
@@ -762,20 +770,20 @@ Underfull \hbox (badness 1221) in paragraph at lines 153--153
  []
 
 [16 <./images/fornax-2-400.jpg> <./images/fornax-3-400.jpg>]
-<images/Globulars4.png, id=558, 481.8pt x 387.69844pt>
+<images/Globulars4.png, id=561, 481.8pt x 387.69844pt>
 File: images/Globulars4.png Graphic file (type png)
 
 <use images/Globulars4.png>
 Package pdftex.def Info: images/Globulars4.png used on input line 169.
 (pdftex.def)             Requested size: 284.52756pt x 228.95897pt.
- [17]
-<images/orbits_gcs.jpg, id=565, 488.0634pt x 515.0442pt>
+ [17 <./images/Globulars4.png>]
+<images/orbits_gcs.jpg, id=570, 488.0634pt x 515.0442pt>
 File: images/orbits_gcs.jpg Graphic file (type jpg)
 
 <use images/orbits_gcs.jpg>
 Package pdftex.def Info: images/orbits_gcs.jpg used on input line 177.
 (pdftex.def)             Requested size: 227.62204pt x 240.20824pt.
- [18 <./images/Globulars4.png> <./images/orbits_gcs.jpg>]
+ [18 <./images/orbits_gcs.jpg>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 201.
@@ -788,34 +796,51 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 201.
 
-[19] <images/Omega_Centauri.jpg, id=583, 8070.15pt x 7588.35pt>
+[19]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 232.
+
+<images/Omega_Centauri.jpg, id=586, 8070.15pt x 7588.35pt>
 File: images/Omega_Centauri.jpg Graphic file (type jpg)
 
 <use images/Omega_Centauri.jpg>
 Package pdftex.def Info: images/Omega_Centauri.jpg used on input line 234.
 (pdftex.def)             Requested size: 341.43306pt x 320.96642pt.
- [20]
-<images/rotation_omega.png, id=590, 695.59875pt x 895.09406pt>
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 244.
+
+<images/rotation_omega.png, id=587, 695.59875pt x 895.09406pt>
 File: images/rotation_omega.png Graphic file (type png)
 
 <use images/rotation_omega.png>
 Package pdftex.def Info: images/rotation_omega.png used on input line 246.
 (pdftex.def)             Requested size: 227.62204pt x 292.89618pt.
- [21 <./images/Omega_Centauri.jpg>]
-<images/ngc5139_2.jpg, id=596, 556.32843pt x 639.13782pt>
+ [20]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 253.
+
+<images/ngc5139_2.jpg, id=594, 556.32843pt x 639.13782pt>
 File: images/ngc5139_2.jpg Graphic file (type jpg)
 
 <use images/ngc5139_2.jpg>
-Package pdftex.def Info: images/ngc5139_2.jpg used on input line 256.
+Package pdftex.def Info: images/ngc5139_2.jpg used on input line 255.
 (pdftex.def)             Requested size: 284.52756pt x 326.88246pt.
- [22 <./images/rotation_omega.png>] [23 <./images/ngc5139_2.jpg>] [24] [25] [26
-] [27] [28] [29] [30] [31] [32] [33] [34])
-(./Chapters/Chapter3.tex [35]
+ [21 <./images/Omega_Centauri.jpg>] [22 <./images/rotation_omega.png>] [23 <./i
+mages/ngc5139_2.jpg>] [24] [25] [26] [27] [28]
+[29] [30] [31] [32] [33] [34]) (./Chapters/Chapter3.tex [35]
 Chapter 3.
 ------------------------------------------------------------------------------
  3 Observations and Analysis
 ------------------------------------------------------------------------------
-<images/opd.jpg, id=707, 66.9702pt x 55.04565pt>
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 13.
+
+<images/opd.jpg, id=710, 66.9702pt x 55.04565pt>
 File: images/opd.jpg Graphic file (type jpg)
  <use images/opd.jpg>
 Package pdftex.def Info: images/opd.jpg used on input line 15.
@@ -823,7 +848,7 @@ Package pdftex.def Info: images/opd.jpg used on input line 15.
  [36
 
 ]
-<images/opd-spectrograph.jpg, id=712, 602.25pt x 401.5pt>
+<images/opd-spectrograph.jpg, id=715, 602.25pt x 401.5pt>
 File: images/opd-spectrograph.jpg Graphic file (type jpg)
 
 <use images/opd-spectrograph.jpg>
@@ -836,189 +861,220 @@ Missing character: There is no Â in font cmr10!
 Missing character: There is no ° in font cmr10!
 Missing character: There is no Â in font cmr10!
 Missing character: There is no ° in font cmr10!
- [38] <images/opd-photometry.jpg, id=723, 770.88pt x 578.16pt>
+ [38] <images/opd-photometry.jpg, id=726, 770.88pt x 578.16pt>
 File: images/opd-photometry.jpg Graphic file (type jpg)
 
 <use images/opd-photometry.jpg>
 Package pdftex.def Info: images/opd-photometry.jpg used on input line 81.
 (pdftex.def)             Requested size: 227.62204pt x 170.71451pt.
  [39 <./images/opd-photometry.jpg>] [40]
-<images/ngc_5139_dirty.png, id=733, 487.06969pt x 483.30562pt>
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 113.
+
+<images/ngc_5139_dirty.png, id=736, 487.06969pt x 483.30562pt>
 File: images/ngc_5139_dirty.png Graphic file (type png)
 
 <use images/ngc_5139_dirty.png>
 Package pdftex.def Info: images/ngc_5139_dirty.png used on input line 116.
 (pdftex.def)             Requested size: 196.21284pt x 194.69788pt.
 
-<images/ruido.png, id=734, 484.05844pt x 483.30562pt>
+<images/ruido.png, id=737, 484.05844pt x 483.30562pt>
 File: images/ruido.png Graphic file (type png)
  <use images/ruido.png>
 Package pdftex.def Info: images/ruido.png used on input line 121.
 (pdftex.def)             Requested size: 196.21284pt x 195.90732pt.
 
-[41] <images/flat_I.png, id=739, 356.83313pt x 317.68687pt>
-File: images/flat_I.png Graphic file (type png)
+[41]
 
-<use images/flat_I.png>
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 138.
+
+<images/flat_I.png, id=742, 356.83313pt x 317.68687pt>
+File: images/flat_I.png Graphic file (type png)
+ <use images/flat_I.png>
 Package pdftex.def Info: images/flat_I.png used on input line 140.
 (pdftex.def)             Requested size: 227.62204pt x 202.64993pt.
- [42 <./images/ngc_5139_dirty.png> <./images/ruido.png>] <images/NGC5139_red.pn
-g, id=744, 294.34969pt x 297.36093pt>
+
+[42 <./images/ngc_5139_dirty.png> <./images/ruido.png>]
+<images/NGC5139_red.png, id=747, 294.34969pt x 297.36093pt>
 File: images/NGC5139_red.png Graphic file (type png)
 
 <use images/NGC5139_red.png>
 Package pdftex.def Info: images/NGC5139_red.png used on input line 154.
 (pdftex.def)             Requested size: 227.62204pt x 229.95322pt.
- [43 <./images/flat_I.png>]
-<images/aperture_size.png, id=749, 487.06969pt x 494.59781pt>
+ [43 <./images/flat_I.png> <./images/NGC5139_red.png>] <images/aperture_size.pn
+g, id=753, 487.06969pt x 494.59781pt>
 File: images/aperture_size.png Graphic file (type png)
 
 <use images/aperture_size.png>
 Package pdftex.def Info: images/aperture_size.png used on input line 166.
 (pdftex.def)             Requested size: 284.52756pt x 288.92723pt.
- [44 <./images/NGC5139_red.png>] [45 <./images/aperture_size.png>] <images/psf.
-png, id=761, 942.52126pt x 554.07pt>
+ [44 <./images/aperture_size.png>] [45]
+<images/psf.png, id=764, 942.52126pt x 554.07pt>
 File: images/psf.png Graphic file (type png)
-
-<use images/psf.png>
+ <use images/psf.png>
 Package pdftex.def Info: images/psf.png used on input line 192.
 (pdftex.def)             Requested size: 341.43306pt x 200.7163pt.
- [46] <images/psf2.png, id=766, 223.58531pt x 224.33812pt>
-File: images/psf2.png Graphic file (type png)
 
-<use images/psf2.png>
+<images/psf2.png, id=765, 223.58531pt x 224.33812pt>
+File: images/psf2.png Graphic file (type png)
+ <use images/psf2.png>
 Package pdftex.def Info: images/psf2.png used on input line 200.
 (pdftex.def)             Requested size: 142.26378pt x 142.74408pt.
- <images/psf3.png, id=767, 191.21437pt x 213.79875pt>
+
+[46 <./images/psf.png>] <images/psf3.png, id=771, 191.21437pt x 213.79875pt>
 File: images/psf3.png Graphic file (type png)
 
 <use images/psf3.png>
 Package pdftex.def Info: images/psf3.png used on input line 208.
 (pdftex.def)             Requested size: 142.26378pt x 159.07309pt.
- [47 <./images/psf.png> <./images/psf2.png>]
-<images/HR-diagram.png, id=773, 481.8pt x 368.87813pt>
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 214.
+
+<images/HR-diagram.png, id=772, 481.8pt x 368.87813pt>
 File: images/HR-diagram.png Graphic file (type png)
 
 <use images/HR-diagram.png>
 Package pdftex.def Info: images/HR-diagram.png used on input line 216.
 (pdftex.def)             Requested size: 312.9803pt x 239.63284pt.
- [48 <./images/psf3.png> <./images/HR-diagram.png>]
-[49] <images/cluster_dirty.png, id=783, 207.02344pt x 320.69812pt>
+ [47 <./images/psf2.png> <./images/psf3.png>]
+[48 <./images/HR-diagram.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 250.
+
+<images/cluster_dirty.png, id=782, 207.02344pt x 320.69812pt>
 File: images/cluster_dirty.png Graphic file (type png)
 
 <use images/cluster_dirty.png>
 Package pdftex.def Info: images/cluster_dirty.png used on input line 253.
 (pdftex.def)             Requested size: 204.56409pt x 316.89511pt.
 
-<images/cluster_clean.png, id=784, 206.27063pt x 320.69812pt>
+<images/cluster_clean.png, id=783, 206.27063pt x 320.69812pt>
 File: images/cluster_clean.png Graphic file (type png)
 
 <use images/cluster_clean.png>
 Package pdftex.def Info: images/cluster_clean.png used on input line 258.
 (pdftex.def)             Requested size: 204.56409pt x 318.04996pt.
- [50 <./images/cluster_dirty.png> <./images/cluster_clean.png>]
-<images/calib_star_apall.png, id=789, 441.14813pt x 340.27126pt>
+ [49] [50 <./images/cluster_dirty.png> <./images/cluster_clean.png>]
+<images/calib_star_apall.png, id=792, 441.14813pt x 340.27126pt>
 File: images/calib_star_apall.png Graphic file (type png)
 
 <use images/calib_star_apall.png>
 Package pdftex.def Info: images/calib_star_apall.png used on input line 286.
 (pdftex.def)             Requested size: 341.43306pt x 263.37pt.
- [51]
-<images/lamp_day1_2.png, id=795, 463.7325pt x 350.05782pt>
+
+<images/lamp_day1_2.png, id=793, 463.7325pt x 350.05782pt>
 File: images/lamp_day1_2.png Graphic file (type png)
 
 <use images/lamp_day1_2.png>
 Package pdftex.def Info: images/lamp_day1_2.png used on input line 301.
 (pdftex.def)             Requested size: 200.38528pt x 151.26437pt.
 
-<images/lamp1.png, id=796, 776.9025pt x 577.40718pt>
+<images/lamp1.png, id=794, 776.9025pt x 577.40718pt>
 File: images/lamp1.png Graphic file (type png)
  <use images/lamp1.png>
 Package pdftex.def Info: images/lamp1.png used on input line 306.
 (pdftex.def)             Requested size: 200.38528pt x 148.92409pt.
 
-[52 <./images/calib_star_apall.png>]
-<images/calib_star_wave.png, id=802, 443.40656pt x 336.50719pt>
+[51 <./images/calib_star_apall.png>]
+<images/calib_star_wave.png, id=801, 443.40656pt x 336.50719pt>
 File: images/calib_star_wave.png Graphic file (type png)
 
 <use images/calib_star_wave.png>
 Package pdftex.def Info: images/calib_star_wave.png used on input line 315.
 (pdftex.def)             Requested size: 312.9803pt x 237.54053pt.
- [53 <./images/lamp_day1_2.png> <./images/lamp1.png> <./images/calib_star_wave.
+ [52 <./images/lamp_day1_2.png> <./images/lamp1.png> <./images/calib_star_wave.
 png>]
-<images/Espectros.png, id=810, 499.11469pt x 361.35pt>
+<images/Espectros.png, id=809, 499.11469pt x 361.35pt>
 File: images/Espectros.png Graphic file (type png)
 
 <use images/Espectros.png>
 Package pdftex.def Info: images/Espectros.png used on input line 334.
 (pdftex.def)             Requested size: 204.56409pt x 148.09932pt.
- <images/Espectros2.png, id=811, 481.8pt x 361.35pt>
+ <images/Espectros2.png, id=810, 481.8pt x 361.35pt>
 File: images/Espectros2.png Graphic file (type png)
 
 <use images/Espectros2.png>
 Package pdftex.def Info: images/Espectros2.png used on input line 339.
 (pdftex.def)             Requested size: 204.56409pt x 153.42009pt.
- [54] [55 <./images/Espectros.png> <./images/Espectros2.png>] [56] <images/cali
-b_star_flux.png, id=826, 448.67625pt x 339.51843pt>
+ [53] [54 <./images/Espectros.png> <./images/Espectros2.png>] [55] <images/cali
+b_star_flux.png, id=825, 448.67625pt x 339.51843pt>
 File: images/calib_star_flux.png Graphic file (type png)
 
 <use images/calib_star_flux.png>
 Package pdftex.def Info: images/calib_star_flux.png used on input line 390.
 (pdftex.def)             Requested size: 341.43306pt x 258.37341pt.
- [57 <./images/calib_star_flux.png>]
-<images/cluster_star_flux.png, id=833, 444.91219pt x 346.29375pt>
+ [56 <./images/calib_star_flux.png>]
+<images/cluster_star_flux.png, id=831, 444.91219pt x 346.29375pt>
 File: images/cluster_star_flux.png Graphic file (type png)
 
 <use images/cluster_star_flux.png>
 Package pdftex.def Info: images/cluster_star_flux.png used on input line 408.
 (pdftex.def)             Requested size: 341.43306pt x 265.754pt.
- [58 <./images/cluster_star_flux.png>]
-<images/xcsao.png, id=839, 709.14937pt x 258.21469pt>
+ [57 <./images/cluster_star_flux.png>]
+<images/xcsao.png, id=838, 709.14937pt x 258.21469pt>
 File: images/xcsao.png Graphic file (type png)
  <use images/xcsao.png>
 Package pdftex.def Info: images/xcsao.png used on input line 430.
 (pdftex.def)             Requested size: 341.43306pt x 124.32382pt.
 
-[59 <./images/xcsao.png>]
-<images/template.png, id=845, 426.09187pt x 349.305pt>
+[58 <./images/xcsao.png>]
+<images/template.png, id=844, 426.09187pt x 349.305pt>
 File: images/template.png Graphic file (type png)
 
 <use images/template.png>
 Package pdftex.def Info: images/template.png used on input line 461.
 (pdftex.def)             Requested size: 204.56409pt x 167.7018pt.
- <images/bcvcor.png, id=846, 469.00218pt x 421.575pt>
-File: images/bcvcor.png Graphic file (type png)
 
-<use images/bcvcor.png>
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 470.
+
+<images/bcvcor.png, id=845, 469.00218pt x 421.575pt>
+File: images/bcvcor.png Graphic file (type png)
+ <use images/bcvcor.png>
 Package pdftex.def Info: images/bcvcor.png used on input line 472.
 (pdftex.def)             Requested size: 341.43306pt x 306.9045pt.
- [60 <./images/template.png>]
-<images/emsao.png, id=854, 677.53125pt x 502.12593pt>
+
+[59 <./images/template.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 482.
+
+<images/emsao.png, id=853, 677.53125pt x 502.12593pt>
 File: images/emsao.png Graphic file (type png)
  <use images/emsao.png>
 Package pdftex.def Info: images/emsao.png used on input line 484.
 (pdftex.def)             Requested size: 369.88582pt x 274.13208pt.
 
-[61 <./images/bcvcor.png>]
-<images/fxcor.png, id=860, 459.96844pt x 343.2825pt>
+[60 <./images/bcvcor.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 494.
+
+<images/fxcor.png, id=859, 459.96844pt x 343.2825pt>
 File: images/fxcor.png Graphic file (type png)
  <use images/fxcor.png>
 Package pdftex.def Info: images/fxcor.png used on input line 496.
 (pdftex.def)             Requested size: 284.52756pt x 212.36151pt.
 
-[62 <./images/emsao.png>] [63 <./images/fxcor.png>]
+[61 <./images/emsao.png>] [62 <./images/fxcor.png>]
 Overfull \hbox (4.94066pt too wide) in paragraph at lines 532--543
  [] 
  []
 
-) (./Chapters/Chapter4.tex [64]
+) (./Chapters/Chapter4.tex [63]
 Chapter 4.
 ------------------------------------------------------------------------------
  4 Modelling
 ------------------------------------------------------------------------------
-[65
+[64
 
-] [66]
+] [65]
 ! Missing } inserted.
 <inserted text> 
                 }
@@ -1069,58 +1125,70 @@ I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
-[67] <images/vel_vs_rad.png, id=909, 481.8pt x 361.35pt>
+[66]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 139.
+
+<images/vel_vs_rad.png, id=908, 481.8pt x 361.35pt>
 File: images/vel_vs_rad.png Graphic file (type png)
 
 <use images/vel_vs_rad.png>
-Package pdftex.def Info: images/vel_vs_rad.png used on input line 139.
-(pdftex.def)             Requested size: 312.9803pt x 234.74239pt.
- [68]
-<images/vel_vs_rad_bins.png, id=917, 481.8pt x 361.35pt>
+Package pdftex.def Info: images/vel_vs_rad.png used on input line 141.
+(pdftex.def)             Requested size: 369.88582pt x 277.42433pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 147.
+
+<images/vel_vs_rad_bins.png, id=909, 481.8pt x 361.35pt>
 File: images/vel_vs_rad_bins.png Graphic file (type png)
 
 <use images/vel_vs_rad_bins.png>
-Package pdftex.def Info: images/vel_vs_rad_bins.png used on input line 147.
-(pdftex.def)             Requested size: 312.9803pt x 234.74239pt.
- [69 <./images/vel_vs_rad.png> <./images/vel_vs_rad_bins.png>] <images/bines.pn
-g, id=925, 760.34062pt x 581.17125pt>
-File: images/bines.png Graphic file (type png)
+Package pdftex.def Info: images/vel_vs_rad_bins.png used on input line 149.
+(pdftex.def)             Requested size: 369.88582pt x 277.42433pt.
 
-<use images/bines.png>
-Package pdftex.def Info: images/bines.png used on input line 161.
+<images/bines.png, id=910, 760.34062pt x 581.17125pt>
+File: images/bines.png Graphic file (type png)
+ <use images/bines.png>
+Package pdftex.def Info: images/bines.png used on input line 163.
 (pdftex.def)             Requested size: 426.79134pt x 326.22519pt.
 
-Overfull \hbox (9.31827pt too wide) in paragraph at lines 161--162
+Overfull \hbox (9.31827pt too wide) in paragraph at lines 163--164
  [][] 
  []
 
-[70 <./images/bines.png>] [71]
-<images/extinction.png, id=938, 835.62187pt x 499.8675pt>
+[67] [68 <./images/vel_vs_rad.png> <./images/vel_vs_rad_bins.png>] [69 <./image
+s/bines.png>] [70] <images/extinction.png, id=938, 835.62187pt x 499.8675pt>
 File: images/extinction.png Graphic file (type png)
 
 <use images/extinction.png>
-Package pdftex.def Info: images/extinction.png used on input line 203.
+Package pdftex.def Info: images/extinction.png used on input line 205.
 (pdftex.def)             Requested size: 284.52756pt x 170.20439pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 217.
 
 <images/comparison.png, id=939, 481.8pt x 361.35pt>
 File: images/comparison.png Graphic file (type png)
 
 <use images/comparison.png>
-Package pdftex.def Info: images/comparison.png used on input line 217.
+Package pdftex.def Info: images/comparison.png used on input line 219.
 (pdftex.def)             Requested size: 284.52756pt x 213.39867pt.
- [72 <./images/extinction.png>]
-<images/OmegaCentauriii.jpg, id=946, 1032.85875pt x 766.865pt>
+ [71 <./images/extinction.png>]
+<images/OmegaCentauriii.jpg, id=947, 1032.85875pt x 766.865pt>
 File: images/OmegaCentauriii.jpg Graphic file (type jpg)
 
 <use images/OmegaCentauriii.jpg>
-Package pdftex.def Info: images/OmegaCentauriii.jpg used on input line 237.
+Package pdftex.def Info: images/OmegaCentauriii.jpg used on input line 239.
 (pdftex.def)             Requested size: 341.43306pt x 253.49919pt.
- [73 <./images/comparison.png>] [74 <./images/OmegaCentauriii.jpg>] <images/noy
-ola.png, id=960, 454.69875pt x 427.5975pt>
+ [72 <./images/comparison.png> <./images/OmegaCentauriii.jpg>] <images/noyola.p
+ng, id=953, 454.69875pt x 427.5975pt>
 File: images/noyola.png Graphic file (type png)
 
 <use images/noyola.png>
-Package pdftex.def Info: images/noyola.png used on input line 265.
+Package pdftex.def Info: images/noyola.png used on input line 267.
 (pdftex.def)             Requested size: 312.9803pt x 294.3314pt.
 Missing character: There is no â in font cmr9!
 Missing character: There is no € in font cmr9!
@@ -1128,160 +1196,206 @@ Missing character: There is no ™ in font cmr9!
 Missing character: There is no â in font cmr9!
 Missing character: There is no € in font cmr9!
 Missing character: There is no ™ in font cmr9!
- [75 <./images/noyola.png>] [76] [77]
-Overfull \hbox (5.0757pt too wide) in paragraph at lines 332--339
+ [73] [74 <./images/noyola.png>] [75] [76]
+Overfull \hbox (5.0757pt too wide) in paragraph at lines 334--341
  [][] 
  []
 
 ! Double subscript.
-l.352 ...   & $\beta_{1}\pm 0.03$        & $M_{s}_
+l.354 ...   & $\beta_{1}\pm 0.03$        & $M_{s}_
                                                   {1}\pm 2.0$      & $M_{dm}...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.352 ...     & $M_{s}_{1}\pm 2.0$      & $M_{dm}_
+l.354 ...     & $M_{s}_{1}\pm 2.0$      & $M_{dm}_
                                                   {1}\pm 2.0$   & $a_{s}_{1}...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.352 ...0$      & $M_{dm}_{1}\pm 2.0$   & $a_{s}_
+l.354 ...0$      & $M_{dm}_{1}\pm 2.0$   & $a_{s}_
                                                   {1}\pm 2.0$      & $a_{dm}...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.352 ...0$   & $a_{s}_{1}\pm 2.0$      & $a_{dm}_
+l.354 ...0$   & $a_{s}_{1}\pm 2.0$      & $a_{dm}_
                                                   {1}\pm 2.0$            \\ ...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 
-Overfull \hbox (2.8537pt too wide) in paragraph at lines 347--354
+Overfull \hbox (2.8537pt too wide) in paragraph at lines 349--356
  [][] 
  []
 
-[78] <images/all_params_refinado_12.png, id=981, 912.40875pt x 635.37375pt>
+[77] <images/all_params_refinado_12.png, id=980, 912.40875pt x 635.37375pt>
 File: images/all_params_refinado_12.png Graphic file (type png)
 
 <use images/all_params_refinado_12.png>
 Package pdftex.def Info: images/all_params_refinado_12.png used on input line 3
-69.
+71.
 (pdftex.def)             Requested size: 426.79134pt x 297.20053pt.
 
-Overfull \hbox (9.31827pt too wide) in paragraph at lines 369--370
+Overfull \hbox (9.31827pt too wide) in paragraph at lines 371--372
  [][] 
  []
 
-[79 <./images/all_params_refinado_12.png>]
-<images/all_params_refinado_10.png, id=987, 928.21782pt x 637.63219pt>
+[78 <./images/all_params_refinado_12.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 404.
+
+<images/all_params_refinado_10.png, id=986, 928.21782pt x 637.63219pt>
 File: images/all_params_refinado_10.png Graphic file (type png)
 
 <use images/all_params_refinado_10.png>
 Package pdftex.def Info: images/all_params_refinado_10.png used on input line 4
-01.
+06.
 (pdftex.def)             Requested size: 426.79134pt x 293.18788pt.
 
-Overfull \hbox (9.31827pt too wide) in paragraph at lines 401--402
+Overfull \hbox (9.31827pt too wide) in paragraph at lines 406--407
  [][] 
  []
 
-[80]
+[79]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 424.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Gamma' on input line 424.
+(hyperref)                removing `math shift' on input line 430.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 424.
+(hyperref)                removing `\Gamma' on input line 430.
 
-[81 <./images/all_params_refinado_10.png>]
-<images/fix_gamma_refinado_12.png, id=999, 928.21782pt x 648.92438pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 430.
+
+[80 <./images/all_params_refinado_10.png>]
+<images/fix_gamma_refinado_12.png, id=997, 928.21782pt x 648.92438pt>
 File: images/fix_gamma_refinado_12.png Graphic file (type png)
 
 <use images/fix_gamma_refinado_12.png>
 Package pdftex.def Info: images/fix_gamma_refinado_12.png used on input line 43
-2.
+8.
 (pdftex.def)             Requested size: 426.79134pt x 298.38011pt.
 
-Overfull \hbox (9.31827pt too wide) in paragraph at lines 432--433
+Overfull \hbox (9.31827pt too wide) in paragraph at lines 438--439
  [][] 
  []
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 453.
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 446.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Gamma' on input line 453.
-
+[81 <./images/fix_gamma_refinado_12.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 453.
+(hyperref)                removing `math shift' on input line 464.
 
-<images/fix_gamma_refinado_10.png, id=1000, 928.21782pt x 648.17157pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Gamma' on input line 464.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 464.
+
+<images/fix_gamma_refinado_10.png, id=1004, 928.21782pt x 648.17157pt>
 File: images/fix_gamma_refinado_10.png Graphic file (type png)
 
 <use images/fix_gamma_refinado_10.png>
-Package pdftex.def Info: images/fix_gamma_refinado_10.png used on input line 45
-9.
+Package pdftex.def Info: images/fix_gamma_refinado_10.png used on input line 47
+0.
 (pdftex.def)             Requested size: 426.79134pt x 298.03397pt.
 
-Overfull \hbox (9.31827pt too wide) in paragraph at lines 459--460
+Overfull \hbox (9.31827pt too wide) in paragraph at lines 470--471
  [][] 
  []
 
-[82 <./images/fix_gamma_refinado_12.png>] [83 <./images/fix_gamma_refinado_10.p
-ng>] <images/Starlight_2.png, id=1011, 889.82437pt x 364.36125pt>
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 476.
+
+[82 <./images/fix_gamma_refinado_10.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 502.
+
+<images/Starlight_2.png, id=1010, 889.82437pt x 364.36125pt>
 File: images/Starlight_2.png Graphic file (type png)
 
 <use images/Starlight_2.png>
-Package pdftex.def Info: images/Starlight_2.png used on input line 490.
+Package pdftex.def Info: images/Starlight_2.png used on input line 504.
 (pdftex.def)             Requested size: 426.79134pt x 174.75797pt.
 
-Overfull \hbox (9.31827pt too wide) in paragraph at lines 489--491
- [] 
+Overfull \hbox (9.31827pt too wide) in paragraph at lines 504--505
+ [][] 
  []
 
-<images/Starlight_1.png, id=1012, 892.83563pt x 362.85562pt>
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 510.
+
+[83]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 527.
+
+<images/Starlight_1.png, id=1015, 892.83563pt x 362.85562pt>
 File: images/Starlight_1.png Graphic file (type png)
 
 <use images/Starlight_1.png>
-Package pdftex.def Info: images/Starlight_1.png used on input line 514.
+Package pdftex.def Info: images/Starlight_1.png used on input line 529.
 (pdftex.def)             Requested size: 426.79134pt x 173.45448pt.
 
-Overfull \hbox (9.31827pt too wide) in paragraph at lines 514--515
+Overfull \hbox (9.31827pt too wide) in paragraph at lines 529--530
  [][] 
  []
 
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 535.
+
 [84 <./images/Starlight_2.png>]
-<images/Starlight_25_12.png, id=1018, 884.55469pt x 353.82187pt>
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 554.
+
+<images/Starlight_25_12.png, id=1021, 884.55469pt x 353.82187pt>
 File: images/Starlight_25_12.png Graphic file (type png)
 
 <use images/Starlight_25_12.png>
-Package pdftex.def Info: images/Starlight_25_12.png used on input line 541.
+Package pdftex.def Info: images/Starlight_25_12.png used on input line 556.
 (pdftex.def)             Requested size: 426.79134pt x 170.71797pt.
 
-Overfull \hbox (9.31827pt too wide) in paragraph at lines 541--542
+Overfull \hbox (9.31827pt too wide) in paragraph at lines 556--557
  [][] 
  []
 
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 562.
+
 [85 <./images/Starlight_1.png>]
-<images/Starlight_25_10.png, id=1024, 896.59969pt x 350.05782pt>
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 579.
+
+<images/Starlight_25_10.png, id=1027, 896.59969pt x 350.05782pt>
 File: images/Starlight_25_10.png Graphic file (type png)
 
 <use images/Starlight_25_10.png>
-Package pdftex.def Info: images/Starlight_25_10.png used on input line 565.
+Package pdftex.def Info: images/Starlight_25_10.png used on input line 581.
 (pdftex.def)             Requested size: 426.79134pt x 166.63171pt.
 
-Overfull \hbox (9.31827pt too wide) in paragraph at lines 565--566
+Overfull \hbox (9.31827pt too wide) in paragraph at lines 581--582
  [][] 
  []
 
-[86 <./images/Starlight_25_12.png>]) (./Chapters/Chapter5.tex [87 <./images/Sta
-rlight_25_10.png>]
+[86 <./images/Starlight_25_12.png> <./images/Starlight_25_10.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 587.
+
+) (./Chapters/Chapter5.tex [87]
 Chapter 5.
 ------------------------------------------------------------------------------
  5 Conclusions
@@ -1313,7 +1427,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 393.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 393.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 393.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 7899856081F713EA58113F0758F07C76;10171.
+(rerunfilecheck)             Checksum: 8E1480A1530FC20D07A4FA2AA2F5F8E8;10443.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1326,7 +1440,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 393.
 Here is how much of TeX's memory you used:
  13809 strings out of 494985
  197092 string characters out of 6180357
- 269858 words of memory out of 5000000
+ 270858 words of memory out of 5000000
  16401 multiletter control sequences out of 15000+600000
  25229 words of font info for 93 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
@@ -1358,10 +1472,10 @@ cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on Thesis.pdf (104 pages, 23384373 bytes).
+Output written on Thesis.pdf (104 pages, 23390090 bytes).
 PDF statistics:
- 1266 PDF objects out of 1440 (max. 8388607)
- 1028 compressed objects within 11 object streams
+ 1269 PDF objects out of 1440 (max. 8388607)
+ 1031 compressed objects within 11 object streams
  342 named destinations out of 1000 (max. 500000)
  686 words of extra memory for PDF output out of 10000 (max. 10000000)
 
