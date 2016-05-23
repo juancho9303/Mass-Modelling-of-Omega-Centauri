@@ -2,8 +2,8 @@
 \vspace {1em}
 \contentsline {chapter}{Acknowledgements}{iii}{dummy.2}
 \vspace {1em}
-\contentsline {chapter}{List of Figures}{vi}{dummy.4}
-\contentsline {chapter}{List of Tables}{viii}{dummy.6}
+\contentsline {chapter}{List of Figures}{v}{dummy.4}
+\contentsline {chapter}{List of Tables}{vi}{dummy.6}
 \vspace {2em}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.8}
 \contentsline {chapter}{\numberline {2}Theoretical Framework}{5}{chapter.9}
