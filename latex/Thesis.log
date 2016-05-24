@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.1)  20 MAY 2016 10:07
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.1)  24 MAY 2016 13:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1477,7 +1477,7 @@ cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on Thesis.pdf (104 pages, 23390191 bytes).
+Output written on Thesis.pdf (104 pages, 23390186 bytes).
 PDF statistics:
  1269 PDF objects out of 1440 (max. 8388607)
  1031 compressed objects within 11 object streams
