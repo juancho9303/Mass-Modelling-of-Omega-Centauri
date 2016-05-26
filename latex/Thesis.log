@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.1)  26 MAY 2016 00:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.1)  26 MAY 2016 01:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1265,50 +1265,50 @@ Overfull \hbox (9.31827pt too wide) in paragraph at lines 402--403
 [79] [80 <./images/all_params_refinado_10.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 426.
+(hyperref)                removing `math shift' on input line 428.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Gamma' on input line 426.
+(hyperref)                removing `\Gamma' on input line 428.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 426.
+(hyperref)                removing `math shift' on input line 428.
 
 <images/fix_gamma_refinado_12.png, id=991, 928.21782pt x 648.92438pt>
 File: images/fix_gamma_refinado_12.png Graphic file (type png)
 
 <use images/fix_gamma_refinado_12.png>
 Package pdftex.def Info: images/fix_gamma_refinado_12.png used on input line 43
-4.
+6.
 (pdftex.def)             Requested size: 426.79134pt x 298.38011pt.
 
-Overfull \hbox (9.31827pt too wide) in paragraph at lines 434--435
+Overfull \hbox (9.31827pt too wide) in paragraph at lines 436--437
  [][] 
  []
 
 [81 <./images/fix_gamma_refinado_12.png>] [82]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 464.
+(hyperref)                removing `math shift' on input line 466.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Gamma' on input line 464.
+(hyperref)                removing `\Gamma' on input line 466.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 464.
+(hyperref)                removing `math shift' on input line 466.
 
 <images/fix_gamma_refinado_10.png, id=1003, 928.21782pt x 648.17157pt>
 File: images/fix_gamma_refinado_10.png Graphic file (type png)
 
 <use images/fix_gamma_refinado_10.png>
 Package pdftex.def Info: images/fix_gamma_refinado_10.png used on input line 47
-0.
+2.
 (pdftex.def)             Requested size: 426.79134pt x 298.03397pt.
 
-Overfull \hbox (9.31827pt too wide) in paragraph at lines 470--471
+Overfull \hbox (9.31827pt too wide) in paragraph at lines 472--473
  [][] 
  []
 
@@ -1317,10 +1317,10 @@ Overfull \hbox (9.31827pt too wide) in paragraph at lines 470--471
 File: images/Starlight_2.png Graphic file (type png)
 
 <use images/Starlight_2.png>
-Package pdftex.def Info: images/Starlight_2.png used on input line 504.
+Package pdftex.def Info: images/Starlight_2.png used on input line 506.
 (pdftex.def)             Requested size: 426.79134pt x 174.75797pt.
 
-Overfull \hbox (9.31827pt too wide) in paragraph at lines 504--505
+Overfull \hbox (9.31827pt too wide) in paragraph at lines 506--507
  [][] 
  []
 
@@ -1329,10 +1329,10 @@ Overfull \hbox (9.31827pt too wide) in paragraph at lines 504--505
 File: images/Starlight_1.png Graphic file (type png)
 
 <use images/Starlight_1.png>
-Package pdftex.def Info: images/Starlight_1.png used on input line 533.
+Package pdftex.def Info: images/Starlight_1.png used on input line 535.
 (pdftex.def)             Requested size: 426.79134pt x 173.45448pt.
 
-Overfull \hbox (9.31827pt too wide) in paragraph at lines 533--534
+Overfull \hbox (9.31827pt too wide) in paragraph at lines 535--536
  [][] 
  []
 
@@ -1341,10 +1341,10 @@ Overfull \hbox (9.31827pt too wide) in paragraph at lines 533--534
 File: images/Starlight_25_12_1.png Graphic file (type png)
 
 <use images/Starlight_25_12_1.png>
-Package pdftex.def Info: images/Starlight_25_12_1.png used on input line 562.
+Package pdftex.def Info: images/Starlight_25_12_1.png used on input line 564.
 (pdftex.def)             Requested size: 426.79134pt x 166.30064pt.
 
-Overfull \hbox (9.31827pt too wide) in paragraph at lines 562--563
+Overfull \hbox (9.31827pt too wide) in paragraph at lines 564--565
  [][] 
  []
 
@@ -1353,14 +1353,14 @@ Overfull \hbox (9.31827pt too wide) in paragraph at lines 562--563
 File: images/Starlight_25_10_1.png Graphic file (type png)
 
 <use images/Starlight_25_10_1.png>
-Package pdftex.def Info: images/Starlight_25_10_1.png used on input line 589.
+Package pdftex.def Info: images/Starlight_25_10_1.png used on input line 591.
 (pdftex.def)             Requested size: 426.79134pt x 171.7147pt.
 
-Overfull \hbox (9.31827pt too wide) in paragraph at lines 589--590
+Overfull \hbox (9.31827pt too wide) in paragraph at lines 591--592
  [][] 
  []
 
-) [88 <./images/Starlight_25_10_1.png>] (./Chapters/Chapter5.tex [89]
+[88 <./images/Starlight_25_10_1.png>]) (./Chapters/Chapter5.tex [89]
 Chapter 5.
 ------------------------------------------------------------------------------
  5 Conclusions
@@ -1438,7 +1438,7 @@ share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on Thesis.pdf (106 pages, 23373191 bytes).
+Output written on Thesis.pdf (106 pages, 23374210 bytes).
 PDF statistics:
  1277 PDF objects out of 1440 (max. 8388607)
  1038 compressed objects within 11 object streams
