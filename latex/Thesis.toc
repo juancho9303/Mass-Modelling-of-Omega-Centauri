@@ -38,16 +38,16 @@
 \contentsline {subsection}{\numberline {4.2.1}Stellar mass}{69}{subsection.159}
 \contentsline {subsection}{\numberline {4.2.2}Stellar scalength}{73}{subsection.168}
 \contentsline {subsection}{\numberline {4.2.3}Central region}{74}{subsection.171}
-\contentsline {section}{\numberline {4.3}Procedures}{75}{section.172}
-\contentsline {section}{\numberline {4.4}Results}{78}{section.177}
-\contentsline {subsection}{\numberline {4.4.1}Full fits with inner region (Experiments 1, 2, 3 and 4)}{78}{subsection.178}
-\contentsline {subsection}{\numberline {4.4.2}Full fits without the inner region (Experiments 9, 10, 11 and 12)}{80}{subsection.181}
-\contentsline {subsection}{\numberline {4.4.3}Fixed $\Gamma $ ratio with the inner region (Experiments 5, 6, 7 and 8)}{81}{subsection.184}
-\contentsline {subsection}{\numberline {4.4.4}Fixed $\Gamma $ ratio without the inner region (Experiments 13, 14, 15 and 16)}{83}{subsection.187}
+\contentsline {section}{\numberline {4.3}Procedures}{74}{section.172}
+\contentsline {section}{\numberline {4.4}Results}{77}{section.177}
+\contentsline {subsection}{\numberline {4.4.1}Full fits with inner region (Experiments 1, 2, 3 and 4)}{77}{subsection.178}
+\contentsline {subsection}{\numberline {4.4.2}Full fits without the inner region (Experiments 9, 10, 11 and 12)}{79}{subsection.181}
+\contentsline {subsection}{\numberline {4.4.3}Fixed $\Gamma $ with the inner region (Experiments 5, 6, 7 and 8)}{81}{subsection.184}
+\contentsline {subsection}{\numberline {4.4.4}Fixed $\Gamma $ without the inner region (Experiments 13, 14, 15 and 16)}{83}{subsection.187}
 \contentsline {subsection}{\numberline {4.4.5}Fixed Stellar Mass with the inner region (Experiments 17 and 18)}{84}{subsection.190}
-\contentsline {subsection}{\numberline {4.4.6}Fixed Stellar Mass without the inner region (Experiments 19 and 20)}{85}{subsection.193}
-\contentsline {subsection}{\numberline {4.4.7}Final Fixed Stellar Mass with the inner region (Experiments 21 and 22)}{86}{subsection.196}
-\contentsline {subsection}{\numberline {4.4.8}Final Fixed Stellar Mass without the inner region (Experiments 23 and 24)}{87}{subsection.199}
-\contentsline {chapter}{\numberline {5}Conclusions}{89}{chapter.202}
-\contentsline {section}{\numberline {5.1}Future improvements}{91}{section.203}
-\contentsline {chapter}{Bibliography}{93}{chapter*.204}
+\contentsline {subsection}{\numberline {4.4.6}Fixed Stellar Mass without the inner region (Experiments 19 and 20)}{86}{subsection.193}
+\contentsline {subsection}{\numberline {4.4.7}Final Fixed Stellar Mass with the inner region (Experiments 21 and 22)}{87}{subsection.196}
+\contentsline {subsection}{\numberline {4.4.8}Final Fixed Stellar Mass without the inner region (Experiments 23 and 24)}{88}{subsection.199}
+\contentsline {chapter}{\numberline {5}Conclusions}{90}{chapter.202}
+\contentsline {section}{\numberline {5.1}Future improvements}{92}{section.203}
+\contentsline {chapter}{Bibliography}{94}{chapter*.204}
